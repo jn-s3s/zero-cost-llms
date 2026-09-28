@@ -1,0 +1,7 @@
+__pycache__
+/data/*
+!/data/google_rate_limits.html
+.env
+/node_modules
+/.qoder
+/test.html

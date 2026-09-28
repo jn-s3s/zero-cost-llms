@@ -1,0 +1,90 @@
+name: Fetch models
+
+on:
+    schedule:
+        - cron: "0 0 * * *"
+    workflow_dispatch:
+
+permissions:
+    contents: write
+
+concurrency:
+    group: models-data-updates
+    cancel-in-progress: false
+
+jobs:
+    fetch-models:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository
+              uses: actions/checkout@v4
+            - uses: actions/setup-python@v5
+              with:
+                  python-version: "3.11"
+            - name: Fetch models
+              env:
+                  GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+              run: python fetch_models.py --output "$RUNNER_TEMP/model-output"
+            # A single failing provider must not discard the data the other
+            # providers already fetched, so publish even when the job is red.
+            - name: Publish model data on isolated branch
+              if: success() || failure()
+              run: |
+                  data_worktree="$RUNNER_TEMP/models-data-worktree"
+                  mkdir -p "$RUNNER_TEMP/model-output"
+                  remote_branch=$(git ls-remote --heads origin refs/heads/models-data)
+                  if [[ -n "$remote_branch" ]]; then
+                    git fetch origin refs/heads/models-data:refs/remotes/origin/models-data
+                    git worktree add -b models-data "$data_worktree" refs/remotes/origin/models-data
+                  else
+                    git worktree add --detach "$data_worktree" HEAD
+                    git -C "$data_worktree" checkout --orphan models-data
+                    git -C "$data_worktree" rm -rf --ignore-unmatch .
+                  fi
+
+                  cd "$data_worktree"
+                  # Older data-branch commits, if any, must not leave non-data files behind.
+                  git ls-files -z | while IFS= read -r -d '' path; do
+                    if [[ "$path" != data/* ]]; then
+                      git rm -f -- "$path"
+                    fi
+                  done
+                  mkdir -p data
+                  # No --delete: a provider that failed today keeps its last good file
+                  # instead of 404ing for downstream consumers.
+                  rsync -a "$RUNNER_TEMP/model-output/" data/
+                  python - "$GITHUB_WORKSPACE/providers.json" data <<'PY'
+                  import json
+                  import pathlib
+                  import sys
+
+                  # Prune only what the catalogue proves is obsolete. An unreadable
+                  # or empty catalogue keeps every published file in place rather
+                  # than wiping the data branch.
+                  try:
+                      raw = pathlib.Path(sys.argv[1]).read_text(encoding="utf-8")
+                      entries = json.loads(raw)
+                      configured = {
+                          entry["id"]
+                          for entry in entries
+                          if isinstance(entry, dict) and isinstance(entry.get("id"), str)
+                      }
+                  except Exception as error:
+                      print(f"providers.json is unusable, keeping all data files: {error}")
+                      raise SystemExit(0)
+                  if not configured:
+                      print("providers.json lists no provider ids, keeping all data files")
+                      raise SystemExit(0)
+                  for stale in pathlib.Path(sys.argv[2]).glob("*.json"):
+                      if stale.stem not in configured:
+                          stale.unlink()
+                  PY
+                  git add -A
+                  if git diff --cached --quiet; then
+                    echo 'No model data changes to commit.'
+                    exit 0
+                  fi
+                  git config user.name 'github-actions[bot]'
+                  git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+                  git commit -m 'Update free model data'
+                  git push origin HEAD:refs/heads/models-data

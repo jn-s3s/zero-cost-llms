@@ -1,0 +1,249 @@
+[
+    {
+        "id": "openrouter",
+        "name": "OpenRouter",
+        "homepage": "https://openrouter.ai",
+        "signupUrl": "https://openrouter.ai/signup",
+        "docsUrl": "https://openrouter.ai/docs",
+        "api": {
+            "baseUrl": "https://openrouter.ai/api/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": false,
+                "note": "Free models has `:free` suffix or `stealth` as prefix in its `data.id`"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "openrouter/free",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "other_source": [],
+        "quota": {
+            "type": "limited",
+            "limits": {
+                "rpm": 20,
+                "tpm": null,
+                "rpd": 50,
+                "monthly": null,
+                "notes": "Unlock 1000 RPD with $10+ credit"
+            },
+            "reset": {
+                "cadence": "daily",
+                "note": "Resets at midnight UTC"
+            }
+        },
+        "requirement": {
+            "key": true,
+            "phone-verified": false,
+            "linked-card": false
+        },
+        "ENV_VAR": "OPENROUTER_API_KEY"
+    },
+    {
+        "id": "requesty",
+        "name": "Requesty",
+        "homepage": "https://requesty.ai",
+        "signupUrl": "https://app.requesty.ai/sign-up",
+        "docsUrl": "https://docs.requesty.ai",
+        "api": {
+            "baseUrl": "https://router.requesty.ai/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": false,
+                "note": "Free models have input_price and output_price equal to 0 (when output_price is present)."
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "other_source": [],
+        "quota": {
+            "type": "limited",
+            "limits": {
+                "rpm": 20,
+                "tpm": null,
+                "rpd": 200,
+                "monthly": null,
+                "notes": "Unlock 1000 RPD and 60 RPM with $5+ credit"
+            },
+            "reset": {
+                "cadence": "daily",
+                "note": ""
+            }
+        },
+        "requirement": {
+            "key": true,
+            "phone-verified": false,
+            "linked-card": false
+        },
+        "ENV_VAR": "REQUESTY_API_KEY"
+    },
+    {
+        "id": "routeway",
+        "name": "Routeway",
+        "homepage": "https://routeway.ai",
+        "signupUrl": "https://routeway.ai",
+        "docsUrl": "https://docs.routeway.ai/getting-started/models",
+        "api": {
+            "baseUrl": "https://api.routeway.ai/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": false,
+                "note": "Free models has `:free` suffix"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "deepseek-v4-flash:free",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "other_source": [],
+        "quota": {
+            "type": "limited",
+            "limits": {
+                "rpm": 20,
+                "tpm": null,
+                "rpd": 200,
+                "monthly": null,
+                "notes": ""
+            },
+            "reset": {
+                "cadence": "daily",
+                "note": ""
+            }
+        },
+        "requirement": {
+            "key": true,
+            "phone-verified": false,
+            "linked-card": false
+        },
+        "ENV_VAR": "ROUTEWAY_API_KEY"
+    },
+    {
+        "id": "googleai",
+        "name": "Google AI",
+        "homepage": "https://aistudio.google.com",
+        "signupUrl": "https://aistudio.google.com",
+        "docsUrl": "https://ai.google.dev/gemini-api/docs",
+        "api": {
+            "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+            "models": {
+                "endpoint": "/models",
+                "auth": true,
+                "note": "Requires GOOGLE_API_KEY; only models with free Standard input and output pricing are included."
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "models/gemini-flash-latest",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "other_source": [
+            {
+                "url": "https://ai.google.dev/gemini-api/docs/pricing",
+                "type": "docs - html",
+                "auth": false,
+                "note": "page including pricing of each model"
+            },
+            {
+                "url": "https://aistudio.google.com/rate-limit",
+                "type": "docs - html",
+                "auth": true,
+                "note": "per model quotas"
+            }
+        ],
+        "quota": {
+            "type": "limited",
+            "limits": {
+                "rpm": null,
+                "tpm": null,
+                "rpd": null,
+                "monthly": null,
+                "notes": "Per-model quotas."
+            },
+            "reset": {
+                "cadence": "daily",
+                "note": "Resets at midnight UTC"
+            }
+        },
+        "requirement": {
+            "key": true,
+            "phone-verified": false,
+            "linked-card": true
+        },
+        "ENV_VAR": "GOOGLE_API_KEY"
+    },
+
+    {
+        "id": "nvidia",
+        "name": "NVIDIA NIM",
+        "homepage": "https://build.nvidia.com",
+        "signupUrl": "https://build.nvidia.com",
+        "docsUrl": "https://docs.nvidia.com/nim",
+        "api": {
+            "baseUrl": "https://integrate.api.nvidia.com/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": false,
+                "note": ""
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "models/gemini-flash-latest",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "other_source": [
+            {
+                "url": "https://ai.google.dev/gemini-api/docs/pricing",
+                "type": "docs - html",
+                "auth": false,
+                "note": "page including pricing of each model"
+            },
+            {
+                "url": "https://aistudio.google.com/rate-limit",
+                "type": "docs - html",
+                "auth": true,
+                "note": "per model quotas"
+            }
+        ],
+        "quota": {
+            "type": "limited",
+            "limits": {
+                "rpm": 40,
+                "tpm": null,
+                "rpd": null,
+                "monthly": null,
+                "notes": ""
+            },
+            "reset": {
+                "cadence": "rolling",
+                "note": ""
+            }
+        },
+        "requirement": {
+            "key": true,
+            "phone-verified": true,
+            "linked-card": true
+        },
+        "ENV_VAR": "NVIDIA_API_KEY"
+    }
+]
