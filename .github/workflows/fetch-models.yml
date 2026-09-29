@@ -15,26 +15,69 @@ concurrency:
 jobs:
     fetch-models:
         runs-on: ubuntu-latest
+        timeout-minutes: 20
         steps:
             - name: Check out repository
               uses: actions/checkout@v4
             - uses: actions/setup-python@v5
               with:
                   python-version: "3.11"
+            - name: Seed the output with the published data
+              id: seed
+              run: |
+                  set -o pipefail
+                  mkdir -p "$RUNNER_TEMP/model-output"
+                  remote_branch=$(git ls-remote --heads origin refs/heads/models-data)
+                  if [[ -z "$remote_branch" ]]; then
+                    echo 'No models-data branch yet, fetching into an empty output.'
+                    exit 0
+                  fi
+                  git fetch --no-tags origin +refs/heads/models-data:refs/remotes/origin/models-data
+                  # A branch bootstrapped from another tree can exist without any
+                  # data/ directory, which is as nothing-to-seed as no branch at all.
+                  if [[ -z "$(git ls-tree --name-only refs/remotes/origin/models-data data)" ]]; then
+                    echo 'models-data has no data/ tree, fetching into an empty output.'
+                    exit 0
+                  fi
+                  # Unpack into a scratch directory first, so an archive that fails
+                  # halfway cannot leave a truncated file to be published.
+                  mkdir -p "$RUNNER_TEMP/models-data-seed"
+                  git archive refs/remotes/origin/models-data data \
+                    | tar -x --strip-components=1 -C "$RUNNER_TEMP/models-data-seed"
+                  cp -a "$RUNNER_TEMP/models-data-seed/." "$RUNNER_TEMP/model-output/"
             - name: Fetch models
               env:
                   GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
               run: python fetch_models.py --output "$RUNNER_TEMP/model-output"
-            # A single failing provider must not discard the data the other
-            # providers already fetched, so publish even when the job is red.
+            - name: Report providers that failed
+              run: |
+                  python - "$RUNNER_TEMP/model-output" <<'PY'
+                  import json
+                  import pathlib
+                  import sys
+
+                  # Only the wrapper top level is read, so a model object that
+                  # mentions status cannot be mistaken for a failed provider.
+                  # Any other value is replaced before printing, because it comes
+                  # off the remote branch into a workflow command line.
+                  for path in sorted(pathlib.Path(sys.argv[1]).glob("*.json")):
+                      try:
+                          status = json.loads(path.read_text(encoding="utf-8"))["status"]
+                      except Exception:
+                          status = None
+                      if status not in ("success", "failed"):
+                          status = "unreadable"
+                      if status != "success":
+                          print(f"::warning::{path.stem} fetch failed ({status})")
+                  PY
             - name: Publish model data on isolated branch
-              if: success() || failure()
+              if: steps.seed.outcome == 'success'
               run: |
                   data_worktree="$RUNNER_TEMP/models-data-worktree"
                   mkdir -p "$RUNNER_TEMP/model-output"
                   remote_branch=$(git ls-remote --heads origin refs/heads/models-data)
                   if [[ -n "$remote_branch" ]]; then
-                    git fetch origin refs/heads/models-data:refs/remotes/origin/models-data
+                    git fetch origin +refs/heads/models-data:refs/remotes/origin/models-data
                     git worktree add -b models-data "$data_worktree" refs/remotes/origin/models-data
                   else
                     git worktree add --detach "$data_worktree" HEAD
@@ -50,31 +93,40 @@ jobs:
                     fi
                   done
                   mkdir -p data
-                  # No --delete: a provider that failed today keeps its last good file
-                  # instead of 404ing for downstream consumers.
+                  # No --delete: keeping a failed provider's last good file is the
+                  # script's job, and this covers a run that died before it could
+                  # record the failure at all.
                   rsync -a "$RUNNER_TEMP/model-output/" data/
                   python - "$GITHUB_WORKSPACE/providers.json" data <<'PY'
                   import json
                   import pathlib
+                  import re
                   import sys
 
-                  # Prune only what the catalogue proves is obsolete. An unreadable
-                  # or empty catalogue keeps every published file in place rather
-                  # than wiping the data branch.
+                  # Prune only what the catalogue proves is obsolete. An unreadable,
+                  # unusable or empty catalogue keeps every published file in place
+                  # rather than wiping the data branch.
                   try:
                       raw = pathlib.Path(sys.argv[1]).read_text(encoding="utf-8")
                       entries = json.loads(raw)
-                      configured = {
-                          entry["id"]
-                          for entry in entries
-                          if isinstance(entry, dict) and isinstance(entry.get("id"), str)
-                      }
                   except Exception as error:
                       print(f"providers.json is unusable, keeping all data files: {error}")
                       raise SystemExit(0)
-                  if not configured:
-                      print("providers.json lists no provider ids, keeping all data files")
+                  # An entry the fetch script would have refused cannot be used as
+                  # proof that its provider was removed on purpose.
+                  usable = (
+                      isinstance(entry, dict)
+                      and isinstance(entry.get("id"), str)
+                      and re.fullmatch(r"[a-z0-9][a-z0-9_-]*", entry["id"])
+                      for entry in entries
+                  )
+                  if not isinstance(entries, list) or not all(usable):
+                      print("providers.json has an unusable entry, keeping all data files")
                       raise SystemExit(0)
+                  if not entries:
+                      print("providers.json lists no providers, keeping all data files")
+                      raise SystemExit(0)
+                  configured = {entry["id"] for entry in entries}
                   for stale in pathlib.Path(sys.argv[2]).glob("*.json"):
                       if stale.stem not in configured:
                           stale.unlink()

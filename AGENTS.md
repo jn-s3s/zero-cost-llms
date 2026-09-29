@@ -24,6 +24,8 @@ Core stack:
 | Format (JSON, etc) | `npx prettier --write <file>`   |
 | Run script         | `uv run python fetch_models.py` |
 
+`uv run python fetch_models.py` exits `0` when every provider's outcome reached its file. That is not the same as every provider succeeding: read each `data/<id>.json` `status`, because a provider failure is stored in the data rather than in the exit code.
+
 **Always** run linting and formatting on every changed file before considering a change finished. Use `uv` / `uvx` for all Python tooling - never use `py -m pip`, `py -m ruff`, `.venv\Scripts\pip`, or any other Python/package manager.
 
 All conditions MUST pass before a change is considered finished. There is no test framework configured in this repo. Do not invent or run a test command.
@@ -37,6 +39,7 @@ All conditions MUST pass before a change is considered finished. There is no tes
 | `providers/__init__.py`              | `REGISTRY` mapping provider ids to fetching modules.                                      |
 | `providers/base.py`                  | `Provider` protocol plus the shared `models_url` config helper.                           |
 | `providers/http_client.py`           | Shared `get_url` with the HTTPS-only check and transient-failure retries.                 |
+| `providers/html_tree.py`             | Shared HTML element tree used by the providers that scrape a rendered page.               |
 | `providers/<id>.py`                  | One module per provider exposing `fetch(provider_config)`.                                |
 | `data/`                              | Generated JSON files (gitignored) plus the committed rate-limit snapshot.                 |
 | `.github/workflows/fetch-models.yml` | Daily fetch and publish to the `models-data` branch.                                      |
