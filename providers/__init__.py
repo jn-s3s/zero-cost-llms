@@ -1,10 +1,11 @@
 """Registry mapping provider ids to their fetching modules."""
 
-from . import googleai, openrouter, requesty, routeway
+from . import googleai, nvidia, openrouter, requesty, routeway
 from .base import Provider
 
 REGISTRY = {
     "googleai": googleai,
+    "nvidia": nvidia,
     "openrouter": openrouter,
     "requesty": requesty,
     "routeway": routeway,

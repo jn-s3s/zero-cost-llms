@@ -206,23 +206,17 @@
                 "endpoint": "/chat/completions",
                 "auth": true,
                 "body": {
-                    "model": "models/gemini-flash-latest",
+                    "model": "nvidia/nemotron-3-super-120b-a12b",
                     "messages": [{ "role": "user", "content": "Hi" }]
                 }
             }
         },
         "other_source": [
             {
-                "url": "https://ai.google.dev/gemini-api/docs/pricing",
+                "url": "https://build.nvidia.com/models?filters=nimType%3Anim_type_preview&pageSize=100",
                 "type": "docs - html",
                 "auth": false,
-                "note": "page including pricing of each model"
-            },
-            {
-                "url": "https://aistudio.google.com/rate-limit",
-                "type": "docs - html",
-                "auth": true,
-                "note": "per model quotas"
+                "note": "page including free models with 'Free Endpoint' filtered"
             }
         ],
         "quota": {
@@ -242,7 +236,7 @@
         "requirement": {
             "key": true,
             "phone-verified": true,
-            "linked-card": true
+            "linked-card": false
         },
         "ENV_VAR": "NVIDIA_API_KEY"
     }
