@@ -6,98 +6,16 @@ import json
 import os
 import re
 import sys
-from collections.abc import Iterator
-from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlencode
 
 from providers.base import models_url
+from providers.html_tree import Node, parse_html
 from providers.http_client import get_url
 
 ROOT = Path(__file__).resolve().parent.parent
 RATE_LIMITS_SNAPSHOT = "data/google_rate_limits.html"
-
-
-class Node:
-    """A single element in a parsed HTML document tree."""
-
-    def __init__(
-        self,
-        tag: str = "",
-        attrs: list[tuple[str, str | None]] = (),
-        parent: Node | None = None,
-    ) -> None:
-        self.tag = tag
-        self.attrs = dict(attrs)
-        self.parent = parent
-        self.children: list[Node | str] = []
-
-    def walk(self) -> Iterator[Node]:
-        """Yield this node and all of its descendants in document order."""
-        yield self
-        for child in self.children:
-            if isinstance(child, Node):
-                yield from child.walk()
-
-    def text(self) -> str:
-        """Return the concatenated text content of this node."""
-        return "".join(
-            child.text() if isinstance(child, Node) else child
-            for child in self.children
-        )
-
-    def has_class(self, name: str) -> bool:
-        """Return whether this node carries the given CSS class."""
-        classes = self.attrs.get("class") or ""
-        return name in classes.split()
-
-
-class Document(HTMLParser):
-    """Parse HTML into a tree of :class:`Node` objects."""
-
-    VOID = frozenset(
-        {
-            "area",
-            "base",
-            "br",
-            "col",
-            "embed",
-            "hr",
-            "img",
-            "input",
-            "link",
-            "meta",
-            "param",
-            "source",
-            "track",
-            "wbr",
-        }
-    )
-
-    def __init__(self) -> None:
-        super().__init__(convert_charrefs=True)
-        self.root = Node()
-        self.stack = [self.root]
-
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        node = Node(tag, attrs, self.stack[-1])
-        self.stack[-1].children.append(node)
-        if tag not in self.VOID:
-            self.stack.append(node)
-
-    def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        self.handle_starttag(tag, attrs)
-        if tag not in self.VOID:
-            self.stack.pop()
-
-    def handle_endtag(self, tag: str) -> None:
-        for index in range(len(self.stack) - 1, 0, -1):
-            if self.stack[index].tag == tag:
-                del self.stack[index:]
-                break
-
-    def handle_data(self, data: str) -> None:
-        self.stack[-1].children.append(data)
+MAX_PAGES = 20
 
 
 def heading_model_ids(heading_group: Node) -> set[str]:
@@ -181,11 +99,10 @@ def google_free_ids(html: str | bytes) -> set[str]:
     elements holding its pricing tables; a model counts as free when its
     Standard table lists free input and output prices.
     """
-    doc = Document()
-    doc.feed(html.decode("utf-8") if isinstance(html, bytes) else html)
+    root = parse_html(html)
     found: set[str] = set()
     pending: set[str] = set()
-    for node in doc.root.walk():
+    for node in root.walk():
         if node.has_class("models-section"):
             pending = heading_model_ids(node)
             continue
@@ -279,10 +196,9 @@ def parse_rate_limits(html: str | bytes) -> dict[str, dict[str, int | None]]:
         A mapping of model id to ``{"rpm": int | None, "tpm": int | None,
         "rpd": int | None}`` for every model row.
     """
-    doc = Document()
-    doc.feed(html.decode("utf-8") if isinstance(html, bytes) else html)
+    root = parse_html(html)
     limits: dict[str, dict[str, int | None]] = {}
-    for row in doc.root.walk():
+    for row in root.walk():
         if row.tag != "tr":
             continue
         cells = [
@@ -317,9 +233,9 @@ def fetch(provider_config: dict) -> list[dict]:
         The provider's free models as a list of dictionaries.
 
     Raises:
-        ValueError: If "GOOGLE_API_KEY" is not set, the models list repeats a
-            page token, "other_source" lists no pricing page, or the pricing
-            page lists no free Standard models.
+        ValueError: If "GOOGLE_API_KEY" is not set, the models list runs past
+            MAX_PAGES, repeats a page token, "other_source" lists no pricing
+            page, or the pricing page lists no free Standard models.
     """
     key = os.environ.get("GOOGLE_API_KEY")
     if not key:
@@ -328,7 +244,7 @@ def fetch(provider_config: dict) -> list[dict]:
     models = []
     token = None
     seen_tokens = set()
-    while True:
+    for _ in range(MAX_PAGES):
         page_url = url + ("?" + urlencode({"pageToken": token}) if token else "")
         page = json.loads(get_url(page_url, {"x-goog-api-key": key}))
         models.extend(page["models"])
@@ -338,6 +254,8 @@ def fetch(provider_config: dict) -> list[dict]:
         if token in seen_tokens:
             raise ValueError("Google models.list repeated nextPageToken")
         seen_tokens.add(token)
+    else:
+        raise ValueError(f"Google models.list served more than {MAX_PAGES} pages")
     pricing_url = next(
         (
             source["url"]
