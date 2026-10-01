@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import json
 
+from lib.http_client import get_url
 from providers.base import models_url
-from providers.http_client import get_url
 
 
 def _requesty_is_free(model: dict) -> bool:

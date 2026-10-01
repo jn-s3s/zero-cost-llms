@@ -9,9 +9,9 @@ import sys
 from pathlib import Path
 from urllib.parse import urlencode
 
+from lib.html_tree import Node, parse_html
+from lib.http_client import get_url
 from providers.base import models_url
-from providers.html_tree import Node, parse_html
-from providers.http_client import get_url
 
 ROOT = Path(__file__).resolve().parent.parent
 RATE_LIMITS_SNAPSHOT = "data/google_rate_limits.html"

@@ -12,8 +12,8 @@ import tempfile
 import traceback
 from pathlib import Path
 
+from lib.http_client import one_line, safe_text
 from providers import get_provider
-from providers.http_client import one_line, safe_text
 
 ROOT = Path(__file__).resolve().parent
 

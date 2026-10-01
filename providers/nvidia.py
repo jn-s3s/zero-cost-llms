@@ -4,9 +4,9 @@ from __future__ import annotations
 
 import json
 
+from lib.html_tree import parse_html
+from lib.http_client import get_url
 from providers.base import models_url
-from providers.html_tree import parse_html
-from providers.http_client import get_url
 
 FREE_PAGE_MARKER = "nim_type_preview"
 
