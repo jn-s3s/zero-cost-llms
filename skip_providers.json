@@ -1,0 +1,47 @@
+[
+    {
+        "id": "ovhclouds",
+        "name": "OVHCloud",
+        "reason": "Location based registration, with indentity verification"
+    },
+    {
+        "id": "siliconflow",
+        "name": "SiliconFlow",
+        "reason": "Location based registration, with indentity verification (China)"
+    },
+    {
+        "id": "dashscope",
+        "name": "DashScope",
+        "reason": "Location based registration, with payment method requirements"
+    },
+    {
+        "id": "scaleway",
+        "name": "Scaleway",
+        "reason": "Required payment method, and once you"
+    },
+    {
+        "id": "vercel",
+        "name": "Vercel Gateway",
+        "reason": "VPN restriction heavy sign up, will fallback to mobile verification every time"
+    },
+    {
+        "id": "sambanova",
+        "name": "Sambanova",
+        "reason": "No free tier anymore"
+    },
+    {
+        "id": "novita",
+        "name": "Novita",
+        "reason": "Unfulfilled promo. Said to receive voucher upon linking card, but in just 10mins, the voucher vanished"
+    },
+    {
+        "id": "ibm-watsonx",
+        "name": "IBM watsonx",
+        "reason": "30 days trial only for 300k tokens on non-relevant LLMs. Heavy project and IAM setup"
+    },
+    {
+        "id": "hugging-face",
+        "name": "Hugging Face Inference Providers",
+        "reason": "Tiny inference credits at $0.10 per month."
+    }
+]
