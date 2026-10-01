@@ -5,10 +5,9 @@ __pycache__/
 /.ruff_cache/
 /.venv/
 
-# Generated catalogues: every run rewrites data/<id>.json, so only the
-# hand-saved rate-limit capture is meant to be committed
+# Generated catalogues: every run rewrites data/<id>.json, so nothing here is
+# meant to be committed. Hand-saved captures live in data_templates/
 /data/*
-!/data/google_rate_limits.html
 
 # Local keys, while .env.example stays tracked as the reference
 .env
