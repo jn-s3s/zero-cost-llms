@@ -1,0 +1,36 @@
+{
+  "status": "success",
+  "count": 1,
+  "updatedAt": "2026-10-01T12:22:14.926915+00:00",
+  "lastFailedAt": null,
+  "lastFailedMessage": null,
+  "data": [
+    {
+      "id": "qfmodel",
+      "display_name": "Qwen3.8-Flash",
+      "is_enabled": true,
+      "is_new": true,
+      "is_vl": true,
+      "support_disable_reasoning": false,
+      "price_factor": 0,
+      "efforts": [
+        "low",
+        "medium",
+        "xhigh"
+      ],
+      "default_effort": "medium",
+      "max_input_tokens": 180000,
+      "default_context_window": 200000,
+      "available_context_windows": [
+        200000,
+        400000,
+        1000000
+      ],
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:14.926915+00:00",
+      "lastSeen": "2026-10-01T12:22:14.926915+00:00",
+      "removedDate": null,
+      "status": null
+    }
+  ]
+}

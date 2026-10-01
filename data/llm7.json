@@ -1,0 +1,357 @@
+{
+  "status": "success",
+  "count": 6,
+  "updatedAt": "2026-10-01T12:22:12.754811+00:00",
+  "lastFailedAt": null,
+  "lastFailedMessage": null,
+  "data": [
+    {
+      "id": "DeepSeek-V4-Flash-0731",
+      "object": "model",
+      "created": 1790849735,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.02,
+        "output": 0.04,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 400000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": true,
+      "reasoning": true,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": true,
+        "json_mode": true,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 99.51,
+      "availability": {
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 98.59
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
+      "lastSeen": "2026-10-01T12:22:12.754811+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "GLM-5.3-Flash",
+      "object": "model",
+      "created": 1790849735,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.02,
+        "output": 0.04,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 400000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": false,
+      "reasoning": true,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": true,
+        "json_mode": false,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 100.0,
+      "availability": {
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 100.0
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
+      "lastSeen": "2026-10-01T12:22:12.754811+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "codestral-latest",
+      "object": "model",
+      "created": 1790846575,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.01,
+        "output": 0.02,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 32000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": true,
+      "reasoning": false,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": false,
+        "json_mode": true,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 99.64,
+      "availability": {
+        "old": 99.17,
+        "mid": 99.58,
+        "recent": 100.0
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
+      "lastSeen": "2026-10-01T12:22:12.754811+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gpt-oss:20b",
+      "object": "model",
+      "created": 1790849837,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.03,
+        "output": 0.05,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 128000,
+        "chars": null
+      },
+      "usage_based_only": true,
+      "stream": true,
+      "json_mode": true,
+      "reasoning": false,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": false,
+        "json_mode": true,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 100.0,
+      "availability": {
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 100.0
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
+      "lastSeen": "2026-10-01T12:22:12.754811+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "minimax-m2.7",
+      "object": "model",
+      "created": 1790849735,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.03,
+        "output": 0.05,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 180000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": false,
+      "json_mode": true,
+      "reasoning": true,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": true,
+        "json_mode": true,
+        "stream": false,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 94.37,
+      "availability": {
+        "old": 94.05,
+        "mid": 96.58,
+        "recent": 91.58
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
+      "lastSeen": "2026-10-01T12:22:12.754811+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "mistral-Nemo-Instruct-2407",
+      "object": "model",
+      "created": 1790849984,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.03,
+        "output": 0.03,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 128000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": true,
+      "reasoning": false,
+      "tools_calling": false,
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "reasoning": false,
+        "json_mode": true,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 99.13,
+      "availability": {
+        "old": 97.59,
+        "mid": 100.0,
+        "recent": 100.0
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
+      "lastSeen": "2026-10-01T12:22:12.754811+00:00",
+      "removedDate": null,
+      "status": null
+    }
+  ]
+}

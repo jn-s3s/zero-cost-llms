@@ -1,0 +1,93 @@
+{
+  "status": "success",
+  "count": 6,
+  "updatedAt": "2026-10-01T12:22:13.541187+00:00",
+  "lastFailedAt": null,
+  "lastFailedMessage": null,
+  "data": [
+    {
+      "id": "agnes-video-2.5-flash",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "supported_endpoint_types": [
+        "openai"
+      ],
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.541187+00:00",
+      "lastSeen": "2026-10-01T12:22:13.541187+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "agnes-3.0-flash",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "supported_endpoint_types": [
+        "openai"
+      ],
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.541187+00:00",
+      "lastSeen": "2026-10-01T12:22:13.541187+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "agnes-image-2.1-flash",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "supported_endpoint_types": [
+        "openai"
+      ],
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.541187+00:00",
+      "lastSeen": "2026-10-01T12:22:13.541187+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "agnes-image-2.0-flash",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "supported_endpoint_types": [
+        "openai"
+      ],
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.541187+00:00",
+      "lastSeen": "2026-10-01T12:22:13.541187+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "agnes-2.5-flash",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "supported_endpoint_types": [
+        "openai"
+      ],
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.541187+00:00",
+      "lastSeen": "2026-10-01T12:22:13.541187+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "agnes-image-2.5-flash",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "custom",
+      "supported_endpoint_types": [
+        "openai"
+      ],
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.541187+00:00",
+      "lastSeen": "2026-10-01T12:22:13.541187+00:00",
+      "removedDate": null,
+      "status": null
+    }
+  ]
+}

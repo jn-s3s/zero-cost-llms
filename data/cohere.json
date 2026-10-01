@@ -1,0 +1,99 @@
+{
+  "status": "success",
+  "count": 9,
+  "updatedAt": "2026-10-01T12:22:12.301549+00:00",
+  "lastFailedAt": null,
+  "lastFailedMessage": null,
+  "data": [
+    {
+      "id": "command-a-03-2025",
+      "object": "model",
+      "owned_by": "cohere",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.301549+00:00",
+      "lastSeen": "2026-10-01T12:22:12.301549+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "command-a-plus-05-2026",
+      "object": "model",
+      "owned_by": "cohere",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.301549+00:00",
+      "lastSeen": "2026-10-01T12:22:12.301549+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "command-a-reasoning-08-2025",
+      "object": "model",
+      "owned_by": "cohere",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.301549+00:00",
+      "lastSeen": "2026-10-01T12:22:12.301549+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "command-a-translate-08-2025",
+      "object": "model",
+      "owned_by": "cohere",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.301549+00:00",
+      "lastSeen": "2026-10-01T12:22:12.301549+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "command-a-vision-07-2025",
+      "object": "model",
+      "owned_by": "cohere",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.301549+00:00",
+      "lastSeen": "2026-10-01T12:22:12.301549+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "command-r-08-2024",
+      "object": "model",
+      "owned_by": "cohere",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.301549+00:00",
+      "lastSeen": "2026-10-01T12:22:12.301549+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "command-r-plus-08-2024",
+      "object": "model",
+      "owned_by": "cohere",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.301549+00:00",
+      "lastSeen": "2026-10-01T12:22:12.301549+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "command-r7b-12-2024",
+      "object": "model",
+      "owned_by": "cohere",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.301549+00:00",
+      "lastSeen": "2026-10-01T12:22:12.301549+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "north-mini-code-1-0",
+      "object": "model",
+      "owned_by": "cohere",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.301549+00:00",
+      "lastSeen": "2026-10-01T12:22:12.301549+00:00",
+      "removedDate": null,
+      "status": null
+    }
+  ]
+}

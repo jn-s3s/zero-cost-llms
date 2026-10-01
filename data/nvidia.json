@@ -1,0 +1,251 @@
+{
+  "status": "success",
+  "count": 22,
+  "updatedAt": "2026-10-01T12:22:08.831453+00:00",
+  "lastFailedAt": null,
+  "lastFailedMessage": null,
+  "data": [
+    {
+      "id": "deepseek-ai/deepseek-v4.1-flash",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "deepseek-ai",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "google/diffusiongemma-26b-a4b-it",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "google",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "google/gemma-4-31b-it",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "google",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "meta/llama-3.2-11b-vision-instruct",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "meta",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "meta/llama-3.2-90b-vision-instruct",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "meta",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "meta/llama-guard-4-12b",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "meta",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "meta/muse-glimmer-30b",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "meta",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "moonshotai/kimi-k3",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "moonshotai",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/ising-calibration-1.5-31b",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3-embed-1b",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3.5-content-safety",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/riva-translate-4b-instruct-v1.1",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/riva-translate-4b-instruct-v2",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "openai",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "poolside/laguna-xs-2.1",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "poolside",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "z-ai/glm-5.3",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "z-ai",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "z-ai/glm-5.3-flash",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "z-ai",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-10-01T12:22:08.831453+00:00",
+      "removedDate": null,
+      "status": null
+    }
+  ]
+}

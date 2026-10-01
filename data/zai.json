@@ -1,0 +1,48 @@
+{
+  "status": "success",
+  "count": 3,
+  "updatedAt": "2026-10-01T12:22:10.310670+00:00",
+  "lastFailedAt": null,
+  "lastFailedMessage": null,
+  "data": [
+    {
+      "id": "GLM-4.7-Flash",
+      "object": "model",
+      "owned_by": "zai",
+      "rate_limits": {
+        "concurrency": 1
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:10.310670+00:00",
+      "lastSeen": "2026-10-01T12:22:10.310670+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "GLM-4.5-Flash",
+      "object": "model",
+      "owned_by": "zai",
+      "rate_limits": {
+        "concurrency": 2
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:10.310670+00:00",
+      "lastSeen": "2026-10-01T12:22:10.310670+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "GLM-4.6V-Flash",
+      "object": "model",
+      "owned_by": "zai",
+      "rate_limits": {
+        "concurrency": 1
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:10.310670+00:00",
+      "lastSeen": "2026-10-01T12:22:10.310670+00:00",
+      "removedDate": null,
+      "status": null
+    }
+  ]
+}

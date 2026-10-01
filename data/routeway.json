@@ -1,0 +1,530 @@
+{
+  "status": "success",
+  "count": 9,
+  "updatedAt": "2026-10-01T12:22:07.623238+00:00",
+  "lastFailedAt": null,
+  "lastFailedMessage": null,
+  "data": [
+    {
+      "id": "gemma-4-26b-a4b-it-chimerax:free",
+      "name": "Gemma 4 26b A4b It Chimerax (Free)",
+      "short_name": "Gemma 4 26b A4b It Chimerax (Free)",
+      "description": "Gemma 4 26b A4b It Chimerax is a community creative finetune for general-purpose text generation, instruction following, reasoning, and multimodal chat. Use of this model remains subject to Routeway's Acceptable Use Policy and Terms of Service.",
+      "context_length": 62000,
+      "created": 0,
+      "owned_by": "google",
+      "available": true,
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": true,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {},
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
+      "lastSeen": "2026-10-01T12:22:07.623238+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gemma-4-26b-a4b-it-darksoul:free",
+      "name": "Gemma 4 26b A4b It Darksoul (Free)",
+      "short_name": "Gemma 4 26b A4b It Darksoul (Free)",
+      "description": "Gemma 4 26b A4b It Darksoul is a community creative finetune for general-purpose text generation, instruction following, reasoning, and multimodal chat. Use of this model remains subject to Routeway's Acceptable Use Policy and Terms of Service.",
+      "context_length": 62000,
+      "created": 0,
+      "owned_by": "google",
+      "available": true,
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": true,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {},
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
+      "lastSeen": "2026-10-01T12:22:07.623238+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gemma-4-26b-a4b-it-luminous:free",
+      "name": "Gemma 4 26b A4b It Luminous (Free)",
+      "short_name": "Gemma 4 26b A4b It Luminous (Free)",
+      "description": "Gemma 4 26b A4b It Luminous is a community creative finetune for general-purpose text generation, instruction following, reasoning, and multimodal chat. Use of this model remains subject to Routeway's Acceptable Use Policy and Terms of Service.",
+      "context_length": 62000,
+      "created": 0,
+      "owned_by": "google",
+      "available": true,
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": true,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {},
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
+      "lastSeen": "2026-10-01T12:22:07.623238+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gemma-4-26b-a4b-it-moonlight:free",
+      "name": "Gemma 4 26b A4b It Moonlight (Free)",
+      "short_name": "Gemma 4 26b A4b It Moonlight (Free)",
+      "description": "Gemma 4 26b A4b It Moonlight is a community creative finetune for general-purpose text generation, instruction following, reasoning, and multimodal chat. Use of this model remains subject to Routeway's Acceptable Use Policy and Terms of Service.",
+      "context_length": 62000,
+      "created": 0,
+      "owned_by": "google",
+      "available": true,
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": true,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {},
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
+      "lastSeen": "2026-10-01T12:22:07.623238+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gemma-4-26b-a4b-it-musica:free",
+      "name": "Gemma 4 26b A4b It Musica (Free)",
+      "short_name": "Gemma 4 26b A4b It Musica (Free)",
+      "description": "Gemma 4 26b A4b It Musica is a community creative finetune for general-purpose text generation, instruction following, reasoning, and multimodal chat. Use of this model remains subject to Routeway's Acceptable Use Policy and Terms of Service.",
+      "context_length": 62000,
+      "created": 0,
+      "owned_by": "google",
+      "available": true,
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": true,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {},
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
+      "lastSeen": "2026-10-01T12:22:07.623238+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "deepseek-v4-flash:free",
+      "name": "DeepSeek: DeepSeek V4 Flash (Free)",
+      "short_name": "DeepSeek V4 Flash (Free)",
+      "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with a 1M-token context window, built for fast inference, high-throughput workloads, reasoning, coding, and agent workflows.",
+      "context_length": 42000,
+      "created": 1788220800,
+      "owned_by": "deepseek-ai",
+      "available": true,
+      "available_after": "2026-09-01T00:00:00Z",
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": false,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": null,
+      "use_case": [
+        "coding",
+        "math",
+        "daily_use"
+      ],
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
+      "lastSeen": "2026-10-01T12:22:07.623238+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "minimax-m2.7:free",
+      "name": "MiniMax: MiniMax M2.7 (Free)",
+      "short_name": "MiniMax M2.7 (Free)",
+      "description": "MiniMax M2.7 is the first model deeply involved in iterating on its own training. It excels in real-world software engineering (SWE-Pro 56.22%), end-to-end project delivery (VIBE-Pro 55.6%), and complex office workflows with strong tool-use compliance and agentic capabilities.",
+      "context_length": 42000,
+      "created": 1788220800,
+      "owned_by": "minimax",
+      "available": true,
+      "available_after": "2026-09-01T00:00:00Z",
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": false,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": null,
+      "sub": true,
+      "use_case": [
+        "coding",
+        "math",
+        "daily_use"
+      ],
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
+      "lastSeen": "2026-10-01T12:22:07.623238+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "muse-glimmer-30b:free",
+      "name": "Meta: Glimmer 30B (Free)",
+      "short_name": "Glimmer 30B (Free)",
+      "description": "Muse Glimmer 30B is a dense, open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark and optimized for autonomous agents on consumer hardware",
+      "context_length": 131072,
+      "created": 1786406400,
+      "owned_by": "meta",
+      "available": true,
+      "hallucination_rate": 0.0,
+      "endpoints": [
+        "/v1/chat/completions"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": true,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {
+        "artificial_analysis_intelligence_index": null,
+        "artificial_analysis_coding_index": null,
+        "artificial_analysis_math_index": null,
+        "mmlu_pro": null,
+        "gpqa": null,
+        "hle": null,
+        "livecodebench": null,
+        "scicode": null,
+        "math_500": null,
+        "aime": null,
+        "aime_25": null,
+        "ifbench": null,
+        "lcr": null,
+        "terminalbench_hard": null,
+        "tau2": null
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
+      "lastSeen": "2026-10-01T12:22:07.623238+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gemma-4-26b-a4b-it-meromero:free",
+      "name": "Gemma 4 26B A4B IT MeroMero (Free)",
+      "short_name": "Gemma 4 26B MeroMero (Free)",
+      "description": "Gemma 4 26B A4B IT MeroMero is a community creative finetune for general-purpose text generation, instruction following, reasoning, and multimodal chat. Use of this model remains subject to Routeway's Acceptable Use Policy and Terms of Service.",
+      "context_length": 62000,
+      "created": 0,
+      "owned_by": "google",
+      "available": true,
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": true,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {},
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
+      "lastSeen": "2026-10-01T12:22:07.623238+00:00",
+      "removedDate": null,
+      "status": null
+    }
+  ]
+}

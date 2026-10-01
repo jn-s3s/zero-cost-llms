@@ -1,0 +1,196 @@
+{
+  "status": "success",
+  "count": 17,
+  "updatedAt": "2026-10-01T12:22:13.898396+00:00",
+  "lastFailedAt": null,
+  "lastFailedMessage": null,
+  "data": [
+    {
+      "id": "stealth/space-bunny-alpha",
+      "object": "model",
+      "created": 1790174884,
+      "owned_by": "stealth",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-sante:free",
+      "object": "model",
+      "created": 1788545946,
+      "owned_by": "inclusionai",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "qwen/qwen3.8-27b:free",
+      "object": "model",
+      "created": 1786722910,
+      "owned_by": "qwen",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "object": "model",
+      "created": 1786680361,
+      "owned_by": "dots-studio",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "object": "model",
+      "created": 1786470519,
+      "owned_by": "liquid",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3.5-lightning:free",
+      "object": "model",
+      "created": 1786452751,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "thinkingmachines/inkling-small:free",
+      "object": "model",
+      "created": 1785443117,
+      "owned_by": "thinkingmachines",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "poolside/laguna-s-2.1:free",
+      "object": "model",
+      "created": 1784652683,
+      "owned_by": "poolside",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "thinkingmachines/inkling:free",
+      "object": "model",
+      "created": 1784325956,
+      "owned_by": "thinkingmachines",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "poolside/laguna-xs-2.1:free",
+      "object": "model",
+      "created": 1783002429,
+      "owned_by": "poolside",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "cohere/north-mini-code:free",
+      "object": "model",
+      "created": 1781723748,
+      "owned_by": "cohere",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3.5-content-safety:free",
+      "object": "model",
+      "created": 1780581864,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "object": "model",
+      "created": 1780551208,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "object": "model",
+      "created": 1777393095,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "object": "model",
+      "created": 1775227989,
+      "owned_by": "google",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "google/gemma-4-31b-it:free",
+      "object": "model",
+      "created": 1775148486,
+      "owned_by": "google",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "object": "model",
+      "created": 1773245239,
+      "owned_by": "nvidia",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-01T12:22:13.898396+00:00",
+      "removedDate": null,
+      "status": null
+    }
+  ]
+}
