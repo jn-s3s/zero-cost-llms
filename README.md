@@ -170,3 +170,19 @@ show the list and the failure at the same time. Each failed provider is also rai
 warning annotation on the run, since a provider failure alone no longer turns the job red, and
 a seed step that cannot reach the branch stops the run rather than publishing a half-read
 tree. The branch holds nothing but `data/`.
+
+## Contributing and governance
+
+| Document                                 | Covers                                                                    |
+| ---------------------------------------- | ------------------------------------------------------------------------- |
+| [API reference](docs/index.md)           | Published endpoints per provider, served as the GitHub Page               |
+| [CONTRIBUTING.md](CONTRIBUTING.md)       | Setup, adding or updating a provider, refreshing a snapshot, verification |
+| [SECURITY.md](SECURITY.md)               | Reporting a vulnerability or a leaked provider key                        |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Expected behaviour in project spaces                                      |
+| [CHANGELOG.md](CHANGELOG.md)             | Dated history, derived from commits while the project is untagged         |
+| [LICENSE](LICENSE)                       | MIT terms covering the script and the published `data/` files             |
+
+The two ways a provider's list can be wrong have different routes. A provider that silently
+publishes paid models as free, or a leaked key, is a security report. A stale capture in
+`data_templates/` that makes a list shrink or grow is an ordinary bug, reported through the
+stale-snapshot issue form.

@@ -1,0 +1,50 @@
+name: New free-model provider
+description: Suggest a provider whose free models can be collected.
+title: "New provider: "
+labels: []
+body:
+    - type: input
+      id: provider-name
+      attributes:
+          label: Provider name
+          description: The public name of the provider.
+      validations:
+          required: true
+    - type: input
+      id: provider-id
+      attributes:
+          label: Suggested provider id
+          description: Must match `[a-z0-9][a-z0-9_-]*` and be unused in `providers.json`.
+      validations:
+          required: true
+    - type: input
+      id: models-url
+      attributes:
+          label: Model catalogue URL
+          description: Link to the model API or catalogue page.
+      validations:
+          required: true
+    - type: input
+      id: free-source-url
+      attributes:
+          label: Free-model evidence URL
+          description: Link to pricing, free-tier eligibility or limits documentation.
+      validations:
+          required: true
+    - type: textarea
+      id: free-rule
+      attributes:
+          label: How to identify free models
+          description: Explain the model fields or page content that distinguish free models.
+      validations:
+          required: true
+    - type: dropdown
+      id: catalogue-auth
+      attributes:
+          label: Does fetching the model catalogue require a key?
+          options:
+              - "Yes"
+              - "No"
+              - Unknown
+      validations:
+          required: true
