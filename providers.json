@@ -2,15 +2,20 @@
     {
         "id": "openrouter",
         "name": "OpenRouter",
-        "homepage": "https://openrouter.ai",
-        "signupUrl": "https://openrouter.ai/signup",
-        "docsUrl": "https://openrouter.ai/docs",
+        "keyEnvVar": "OPENROUTER_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
         "api": {
             "baseUrl": "https://openrouter.ai/api/v1",
             "models": {
                 "endpoint": "/models",
                 "auth": false,
-                "note": "Free models has `:free` suffix or `stealth` as prefix in its `data.id`"
+                "note": "Free models has `:free` suffix or `stealth` as prefix in `data[].id`"
             },
             "test": {
                 "endpoint": "/chat/completions",
@@ -21,40 +26,76 @@
                 }
             }
         },
-        "other_source": [],
-        "quota": {
-            "type": "limited",
-            "limits": {
-                "rpm": 20,
-                "tpm": null,
-                "rpd": 50,
-                "monthly": null,
-                "notes": "Unlock 1000 RPD with $10+ credit"
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "rpm": 20,
+                    "rpd": 50,
+                    "notes": "New user without adding $10+ credits"
+                },
+                "reset": {
+                    "cadence": "daily",
+                    "note": "Resets at 00:00 UTC"
+                }
             },
-            "reset": {
-                "cadence": "daily",
-                "note": "Resets at midnight UTC"
+            {
+                "type": "recharged-free",
+                "limits": {
+                    "rpm": 20,
+                    "rpd": 1000,
+                    "notes": "Limits increase for adding $10+ credits"
+                },
+                "reset": {
+                    "cadence": "daily",
+                    "note": "Resets at 00:00 UTC"
+                }
             }
-        },
-        "requirement": {
-            "key": true,
-            "phone-verified": false,
-            "linked-card": false
-        },
-        "ENV_VAR": "OPENROUTER_API_KEY"
+        ],
+        "other_source": [
+            {
+                "url": "https://openrouter.ai/docs/api_reference/limits#rate-limits",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning limits. RPM, RPD"
+            },
+            {
+                "url": "https://www.reddit.com/r/openrouter/comments/1jeknm9/comment/mjwmwjg/",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning rate limit reset time. X-RateLimit-Reset"
+            }
+        ],
+        "channels": {
+            "homepage": "https://openrouter.ai",
+            "signup": "https://openrouter.ai/signup",
+            "docs": "https://openrouter.ai/docs",
+            "discord": "https://openrouter.ai/discord",
+            "support": "https://openrouter.ai/support",
+            "support-email": "support@openrouter.ai",
+            "github": "https://github.com/OpenRouterTeam",
+            "x": "https://x.com/OpenRouter",
+            "linkedin": "https://www.linkedin.com/company/openrouter",
+            "status": "https://status.openrouter.ai"
+        }
     },
     {
         "id": "requesty",
         "name": "Requesty",
-        "homepage": "https://requesty.ai",
-        "signupUrl": "https://app.requesty.ai/sign-up",
-        "docsUrl": "https://docs.requesty.ai",
+        "keyEnvVar": "REQUESTY_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
         "api": {
             "baseUrl": "https://router.requesty.ai/v1",
             "models": {
                 "endpoint": "/models",
                 "auth": false,
-                "note": "Free models have input_price and output_price equal to 0 (when output_price is present)."
+                "note": "Free models have `input_price` and `output_price` equal to `0` (when `output_price` is present) in `data[]`. Can filter out expired model using dates in `data[].retires`"
             },
             "test": {
                 "endpoint": "/chat/completions",
@@ -65,40 +106,71 @@
                 }
             }
         },
-        "other_source": [],
-        "quota": {
-            "type": "limited",
-            "limits": {
-                "rpm": 20,
-                "tpm": null,
-                "rpd": 200,
-                "monthly": null,
-                "notes": "Unlock 1000 RPD and 60 RPM with $5+ credit"
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "rpm": 20,
+                    "rpd": 200,
+                    "notes": "Free organization"
+                },
+                "reset": {
+                    "cadence": "daily",
+                    "note": "Not mentioned in any docs the reset time"
+                }
             },
-            "reset": {
-                "cadence": "daily",
-                "note": ""
+            {
+                "type": "recharged-free",
+                "limits": {
+                    "rpm": 60,
+                    "rpd": 1000,
+                    "notes": "Paying organization. Not mentioned in any docs about 'paying org' means, but the minimum top-up of credits is $5"
+                },
+                "reset": {
+                    "cadence": "daily",
+                    "note": "Not mentioned in any docs the reset time"
+                }
             }
-        },
-        "requirement": {
-            "key": true,
-            "phone-verified": false,
-            "linked-card": false
-        },
-        "ENV_VAR": "REQUESTY_API_KEY"
+        ],
+        "other_source": [
+            {
+                "url": "https://docs.requesty.ai/features/free-models#request-limits",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning limits. RPM, RPD"
+            }
+        ],
+        "channels": {
+            "homepage": "https://requesty.ai",
+            "signup": "https://app.requesty.ai/sign-up",
+            "docs": "https://docs.requesty.ai",
+            "discord": "https://discord.gg/Td3rwAHgt4",
+            "x": "https://x.com/RequestyAI",
+            "linkedin": "https://www.linkedin.com/company/requesty",
+            "youtube": "https://www.youtube.com/@requestyAI",
+            "github": "https://github.com/requestyai",
+            "support": "https://www.requesty.ai/support",
+            "support-email": "support@requesty.ai",
+            "status": "https://status.requesty.ai"
+        }
     },
     {
         "id": "routeway",
         "name": "Routeway",
-        "homepage": "https://routeway.ai",
-        "signupUrl": "https://routeway.ai",
-        "docsUrl": "https://docs.routeway.ai/getting-started/models",
+        "keyEnvVar": "ROUTEWAY_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
         "api": {
             "baseUrl": "https://api.routeway.ai/v1",
             "models": {
                 "endpoint": "/models",
                 "auth": false,
-                "note": "Free models has `:free` suffix"
+                "note": "Free models has `:free` suffix in `data[].id`"
             },
             "test": {
                 "endpoint": "/chat/completions",
@@ -109,92 +181,113 @@
                 }
             }
         },
-        "other_source": [],
-        "quota": {
-            "type": "limited",
-            "limits": {
-                "rpm": 20,
-                "tpm": null,
-                "rpd": 200,
-                "monthly": null,
-                "notes": ""
-            },
-            "reset": {
-                "cadence": "daily",
-                "note": ""
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "rpm": 5,
+                    "rpd": 200,
+                    "notes": "New user"
+                },
+                "reset": {
+                    "cadence": "daily",
+                    "note": "Resets at 00:00 UTC"
+                }
             }
-        },
-        "requirement": {
-            "key": true,
-            "phone-verified": false,
-            "linked-card": false
-        },
-        "ENV_VAR": "ROUTEWAY_API_KEY"
+        ],
+        "other_source": [
+            {
+                "url": "https://docs.routeway.ai/getting-started/rate-limits#rate-limit-tiers",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning limits and rate limit reset time. RPM, RPD"
+            }
+        ],
+        "channels": {
+            "homepage": "https://routeway.ai",
+            "signup": "https://routeway.ai",
+            "docs": "https://docs.routeway.ai",
+            "discord": "https://discord.gg/qAffJBtVd7",
+            "support": "https://routeway.ai/support",
+            "support-email": "support@routeway.ai",
+            "status": "https://status.routeway.ai"
+        }
     },
     {
         "id": "googleai",
         "name": "Google AI",
-        "homepage": "https://aistudio.google.com",
-        "signupUrl": "https://aistudio.google.com",
-        "docsUrl": "https://ai.google.dev/gemini-api/docs",
+        "keyEnvVar": "GOOGLE_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": true,
+            "linked-github": false
+        },
         "api": {
             "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
             "models": {
                 "endpoint": "/models",
                 "auth": true,
-                "note": "Requires GOOGLE_API_KEY; only models with free Standard input and output pricing are included."
+                "note": "List all models, filter out free models using pricing docs"
             },
             "test": {
                 "endpoint": "/chat/completions",
                 "auth": true,
                 "body": {
-                    "model": "models/gemini-flash-latest",
+                    "model": "models/gemini-3.6-flash",
                     "messages": [{ "role": "user", "content": "Hi" }]
                 }
             }
         },
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "notes": "Per-model quotas"
+                },
+                "reset": {
+                    "cadence": "daily",
+                    "note": "Resets at midnight UTC"
+                }
+            }
+        ],
         "other_source": [
             {
                 "url": "https://ai.google.dev/gemini-api/docs/pricing",
-                "type": "docs - html",
+                "type": "pricing",
                 "auth": false,
-                "note": "page including pricing of each model"
+                "note": "Page mentioning pricing of each model. Free tier columns identifies free models"
             },
             {
                 "url": "https://aistudio.google.com/rate-limit",
-                "type": "docs - html",
+                "type": "quota",
                 "auth": true,
-                "note": "per model quotas"
+                "note": "Page mentioning per model quotas",
+                "snapshot": "data_templates/google_rate_limits.html"
             }
         ],
-        "quota": {
-            "type": "limited",
-            "limits": {
-                "rpm": null,
-                "tpm": null,
-                "rpd": null,
-                "monthly": null,
-                "notes": "Per-model quotas."
-            },
-            "reset": {
-                "cadence": "daily",
-                "note": "Resets at midnight UTC"
-            }
-        },
-        "requirement": {
-            "key": true,
-            "phone-verified": false,
-            "linked-card": true
-        },
-        "ENV_VAR": "GOOGLE_API_KEY"
+        "channels": {
+            "homepage": "https://aistudio.google.com",
+            "signup": "https://aistudio.google.com",
+            "docs": "https://ai.google.dev/gemini-api/docs",
+            "forum": "https://discuss.ai.google.dev",
+            "github": "https://github.com/google-gemini",
+            "x": "https://x.com/googleaidevs",
+            "linkedin": "https://www.linkedin.com/showcase/googleaidevs"
+        }
     },
-
     {
         "id": "nvidia",
         "name": "NVIDIA NIM",
-        "homepage": "https://build.nvidia.com",
-        "signupUrl": "https://build.nvidia.com",
-        "docsUrl": "https://docs.nvidia.com/nim",
+        "keyEnvVar": "NVIDIA_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "email",
+            "phone-verified": true,
+            "linked-card": false,
+            "linked-github": false
+        },
         "api": {
             "baseUrl": "https://integrate.api.nvidia.com/v1",
             "models": {
@@ -211,33 +304,1003 @@
                 }
             }
         },
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "rpm": 40,
+                    "notes": "Around 40 RPM, per model limit not mentioned in any docs"
+                },
+                "reset": {
+                    "cadence": "rolling",
+                    "note": "Reset time starts when you hit rate limit in a model"
+                }
+            }
+        ],
         "other_source": [
             {
                 "url": "https://build.nvidia.com/models?filters=nimType%3Anim_type_preview&pageSize=100",
-                "type": "docs - html",
+                "type": "models",
                 "auth": false,
-                "note": "page including free models with 'Free Endpoint' filtered"
+                "note": "Page mentioning free models with 'Free Endpoint' filtered"
             }
         ],
-        "quota": {
-            "type": "limited",
-            "limits": {
-                "rpm": 40,
-                "tpm": null,
-                "rpd": null,
-                "monthly": null,
-                "notes": ""
+        "channels": {
+            "homepage": "https://build.nvidia.com",
+            "signup": "https://build.nvidia.com/?modal=signin",
+            "docs": "https://docs.nvidia.com/nim",
+            "forum": "https://forums.developer.nvidia.com/c/ai-data-science/nvidia-nim/678",
+            "community": "https://developer.nvidia.com/community",
+            "github": "https://github.com/NVIDIA"
+        }
+    },
+    {
+        "id": "groq",
+        "name": "Groq",
+        "keyEnvVar": "GROQ_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://api.groq.com/openai/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": true,
+                "note": "All models are open for free tier users"
             },
-            "reset": {
-                "cadence": "rolling",
-                "note": ""
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "openai/gpt-oss-20b",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
             }
         },
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "notes": "Per-model quotas"
+                },
+                "reset": {
+                    "cadence": "rolling",
+                    "note": "Reset time starts when you hit rate limit in a model"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://console.groq.com/docs/rate-limits#rate-limits",
+                "type": "quota",
+                "auth": false,
+                "note": "Page mentioning per model quotas: RPM, RPD, TPM, TPD, ASH, ASD"
+            }
+        ],
+        "channels": {
+            "homepage": "https://groq.com",
+            "signup": "https://console.groq.com/login",
+            "docs": "https://console.groq.com/docs",
+            "community": "https://community.groq.com",
+            "github": "https://github.com/groq",
+            "x": "https://x.com/GroqLLC",
+            "linkedin": "https://www.linkedin.com/company/groq",
+            "status": "https://groqstatus.com"
+        }
+    },
+    {
+        "id": "ollama-cloud",
+        "name": "Ollama Cloud",
+        "keyEnvVar": "OLLAMA_API_KEY",
+        "keylessUsage": false,
         "requirement": {
-            "key": true,
-            "phone-verified": true,
-            "linked-card": false
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
         },
-        "ENV_VAR": "NVIDIA_API_KEY"
+        "api": {
+            "baseUrl": "https://ollama.com/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": false,
+                "note": "List all models, filter out free models using settings page"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "gpt-oss:20b",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "notes": "Monthly credits, not publicly specified"
+                },
+                "reset": {
+                    "cadence": "monthly",
+                    "note": "Starter credits on free plan resets monthly"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://ollama.com/settings",
+                "type": "settings",
+                "auth": true,
+                "note": "Page mentioning free models",
+                "snapshot": "data_templates/ollama_cloud_free_models.html"
+            },
+            {
+                "url": "https://ollama.com/blog/transparent-pricing",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning free monthly usage"
+            }
+        ],
+        "channels": {
+            "homepage": "https://ollama.com",
+            "signup": "https://signin.ollama.com/sign-up",
+            "docs": "https://docs.ollama.com",
+            "github": "https://github.com/ollama/ollama",
+            "discord": "https://discord.com/invite/ollama",
+            "x": "https://x.com/ollama",
+            "reddit": "https://www.reddit.com/r/ollama",
+            "support-email": "support@ollama.com"
+        }
+    },
+    {
+        "id": "cloudflare",
+        "name": "Cloudflare AI",
+        "accountEnvVar": "CLOUDFLARE_ACCOUNT_ID",
+        "keyEnvVar": "CLOUDFLARE_API_TOKEN",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai",
+            "models": {
+                "endpoint": "/models/search",
+                "auth": true,
+                "note": "Paid models has `{'property_id': 'require_workers_paid', 'value': 'true'}]` in `result[].properties[]`"
+            },
+            "test": {
+                "endpoint": "/v1/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "@cf/qwen/qwen3.8-27b",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "rpm": 300,
+                    "notes": "10,000 Neurons per day"
+                },
+                "reset": {
+                    "cadence": "daily",
+                    "note": "Resets at 00:00 UTC"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "http://developers.cloudflare.com/workers-ai/platform/pricing/",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning limits. Neurons per day"
+            },
+            {
+                "url": "https://developers.cloudflare.com/workers-ai/platform/limits/#text-generation",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning limits. RPM"
+            }
+        ],
+        "channels": {
+            "homepage": "https://developers.cloudflare.com/workers-ai",
+            "signup": "https://dash.cloudflare.com/sign-up",
+            "docs": "https://developers.cloudflare.com/workers-ai",
+            "discord": "https://discord.cloudflare.com",
+            "community": "https://community.cloudflare.com",
+            "github": "https://github.com/cloudflare/ai",
+            "x": "https://x.com/cloudflaredev",
+            "status": "https://www.cloudflarestatus.com",
+            "support": "https://support.cloudflare.com"
+        }
+    },
+    {
+        "id": "zai",
+        "name": "ZAI",
+        "keyEnvVar": "ZAI_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://api.z.ai/api/coding/paas/v4",
+            "models": {
+                "endpoint": "/models",
+                "auth": true,
+                "note": "List all models, filter out free models using pricing page"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "GLM-4.5-Flash",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "notes": "Per-model quotas"
+                },
+                "reset": {
+                    "cadence": null,
+                    "note": "Not specified for free API"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://docs.z.ai/guides/overview/pricing",
+                "type": "pricing",
+                "auth": false,
+                "note": "Page mentioning free models. Free models have input and ouput columns marked as free"
+            },
+            {
+                "url": "https://z.ai/manage-apikey/rate-limits",
+                "type": "quota",
+                "auth": true,
+                "note": "Page mentioning per model quotas",
+                "snapshot": "data_templates/zai_rate_limits.html"
+            }
+        ],
+        "channels": {
+            "homepage": "https://z.ai",
+            "signup": "https://chat.z.ai/auth",
+            "docs": "https://docs.z.ai",
+            "support": "https://z.ai/contact",
+            "support-email": "user_feedback@z.ai",
+            "github": "https://github.com/zai-org",
+            "discord": "https://discord.gg/QR7SARHRxK",
+            "x": "https://x.com/Zai_org",
+            "linkedin": "https://www.linkedin.com/company/zdotai"
+        }
+    },
+    {
+        "id": "orcarouter",
+        "name": "OrcaRouter",
+        "keyEnvVar": "ORCAROUTER_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": true
+        },
+        "api": {
+            "baseUrl": "https://api.orcarouter.ai/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": false,
+                "note": "Free models has `-free` and `/free` suffix in `data[].id`"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "z-ai/glm-5.3-flash-free",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "rpm": 20,
+                    "rpd": 50,
+                    "notes": "New user without adding $20+ credits"
+                },
+                "reset": {
+                    "cadence": "daily",
+                    "note": "Resets at 00:00 UTC"
+                }
+            },
+            {
+                "type": "recharged-free",
+                "limits": {
+                    "rpm": 20,
+                    "rpd": 1000,
+                    "notes": "Limits increase for adding $20+ credits"
+                },
+                "reset": {
+                    "cadence": "daily",
+                    "note": "Resets at 00:00 UTC"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://prtimes.jp/main/html/rd/p/000000061.000138449.html",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning limits. RPM, RPD"
+            }
+        ],
+        "channels": {
+            "homepage": "https://orcarouter.ai",
+            "signup": "https://www.orcarouter.ai/register",
+            "docs": "https://docs.orcarouter.ai",
+            "support": "https://www.orcarouter.ai/support",
+            "support-email": "support@orcarouter.ai",
+            "github": "https://github.com/Continuum-AI-Corp/OrcaRouter-Lite",
+            "x": "https://x.com/OrcaRouter",
+            "linkedin": "https://www.linkedin.com/company/orcarouter"
+        }
+    },
+    {
+        "id": "kilo",
+        "name": "Kilo",
+        "keyEnvVar": "KILO_API_KEY",
+        "keylessUsage": true,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://api.kilo.ai/api/gateway",
+            "models": {
+                "endpoint": "/models",
+                "auth": false,
+                "note": "Free models has `'isFree': true` in `data[]`. Filter out expired model using `expiration_date` in `data[]`"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": false,
+                "body": {
+                    "model": "kilo-auto/free",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "rph": 200,
+                    "notes": "Free models per IP"
+                },
+                "reset": {
+                    "cadence": "rolling",
+                    "note": "Reset time starts when you hit rate limit in a model"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://kilo.ai/docs/gateway/usage-and-billing#free-model-rate-limits",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning limits. RPH"
+            }
+        ],
+        "channels": {
+            "homepage": "https://kilo.ai",
+            "signup": "https://app.kilo.ai/users/sign_in",
+            "docs": "https://kilo.ai/docs",
+            "support": "https://kilo.ai/support",
+            "discord": "https://kilo.ai/discord",
+            "github": "https://github.com/Kilo-Org/kilocode",
+            "x": "https://x.com/kilocode",
+            "reddit": "https://www.reddit.com/r/kilocode",
+            "linkedin": "https://www.linkedin.com/company/kilo",
+            "bluesky": "https://bsky.app/profile/kilo.ai",
+            "blog": "https://blog.kilo.ai"
+        }
+    },
+    {
+        "id": "pollinations",
+        "name": "Pollinations AI",
+        "keyEnvVar": "POLLINATIONS_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "github-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": true
+        },
+        "api": {
+            "baseUrl": "https://gen.pollinations.ai/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": false,
+                "note": "Free models are marked with `:free` suffix in `data[].id`. Credits can be used in other model, list all models"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": false,
+                "body": {
+                    "model": "community/YoannDev90/poolside-laguna-s-2.1:free",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "free",
+                "limits": {
+                    "notes": "Per-model quotas. The RPM is indicated in `data[].per_user_rpm`"
+                },
+                "reset": {
+                    "cadence": "rolling",
+                    "note": "Not mentioned in any docs the reset time"
+                }
+            },
+            {
+                "type": "limited",
+                "limits": {
+                    "notes": "Per-model quotas. The RPM is indicated in `data[].per_user_rpm`. Minimum credits can be gain is 4.5 (around 6M tokens for deepseek-v4-flash)."
+                },
+                "reset": {
+                    "cadence": "rolling",
+                    "note": "Not mentioned in any docs the reset time"
+                }
+            }
+        ],
+        "other_source": [],
+        "channels": {
+            "homepage": "https://pollinations.ai",
+            "signup": "https://enter.pollinations.ai",
+            "docs": "https://gen.pollinations.ai/docs",
+            "github": "https://github.com/pollinations",
+            "discord": "https://discord.gg/pollinations-ai-885844321461485618",
+            "x": "https://x.com/pollinations_ai",
+            "instagram": "https://www.instagram.com/pollinations_ai",
+            "linkedin": "https://www.linkedin.com/company/pollinations-ai",
+            "reddit": "https://www.reddit.com/r/pollinations_ai",
+            "youtube": "https://www.youtube.com/c/pollinations",
+            "status": "https://model-monitor.pollinations.ai",
+            "email": "hello@pollinations.ai"
+        }
+    },
+    {
+        "id": "opencode-zen",
+        "name": "OpenCode Zen",
+        "keyEnvVar": "OPENCODE_ZEN_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://opencode.ai/zen/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": false,
+                "note": "Free models has `-free` suffix in `data[].id`"
+            },
+            "test": {
+                "note": "OpenCode's free tier can only be used from within OpenCode"
+            }
+        },
+        "quota": [
+            {
+                "type": "limited",
+                "limits": {
+                    "notes": "Quota exists, but it does not publish its size. Usage limited to Opencode CLI, Opencode Desktop and Opencode VSCode extension"
+                },
+                "reset": {
+                    "cadence": "rolling",
+                    "note": "Not specified for free API"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://opencode.ai/docs/zen#pricing",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning free models. Free models have input and ouput columns marked as free"
+            },
+            {
+                "url": "https://github.com/anomalyco/opencode/blob/dev/packages/console/app/src/routes/zen/util/ipRateLimiter.ts",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning rate limit reset time."
+            }
+        ],
+        "channels": {
+            "homepage": "https://opencode.ai",
+            "signup": "https://opencode.ai/auth",
+            "docs": "https://opencode.ai/docs",
+            "github": "https://github.com/anomalyco/opencode",
+            "discord": "https://discord.gg/opencode",
+            "x": "https://x.com/opencode",
+            "support-email": "help@anoma.ly"
+        }
+    },
+    {
+        "id": "mistral",
+        "name": "Mistral LP",
+        "keyEnvVar": "MISTRAL_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://api.mistral.ai/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": true,
+                "note": "List all models, filter out free models using limits page"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "codestral-latest",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "limited",
+                "limits": {
+                    "notes": "Per-model quotas"
+                },
+                "reset": {
+                    "cadence": null,
+                    "note": "Not specified for free API"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://admin.mistral.ai/plateforme/limits",
+                "type": "quota",
+                "auth": true,
+                "note": "Page mentioning free models and per model quotas",
+                "snapshot": "data_templates/mistral_rate_limits.html"
+            }
+        ],
+        "channels": {
+            "homepage": "https://mistral.ai",
+            "signup": "https://v2.auth.mistral.ai/login",
+            "docs": "https://docs.mistral.ai",
+            "support": "https://help.mistral.ai",
+            "github": "https://github.com/mistralai",
+            "discord": "https://discord.com/invite/mistralai",
+            "x": "https://x.com/mistralai",
+            "linkedin": "https://www.linkedin.com/company/mistralai",
+            "youtube": "https://www.youtube.com/@MistralAIOfficial",
+            "status": "https://status.mistral.ai"
+        }
+    },
+    {
+        "id": "cohere",
+        "name": "Cohere",
+        "keyEnvVar": "COHERE_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://api.cohere.ai/compatibility/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": true,
+                "note": "List all models, filter out free models using limits page"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "command-a-03-2025",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "limited",
+                "limits": {
+                    "rpm": 20,
+                    "notes": "Limited to 1,000 API calls a month"
+                },
+                "reset": {
+                    "cadence": "monthly",
+                    "note": "Not specified for free API"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://docs.cohere.com/v2/docs/rate-limits#chat-api-per-model",
+                "type": "quota",
+                "auth": false,
+                "note": "Page mentioning limits. RPM"
+            }
+        ],
+        "channels": {
+            "homepage": "https://cohere.com",
+            "signup": "https://dashboard.cohere.com/welcome/register",
+            "docs": "https://docs.cohere.com",
+            "support-email": "support@cohere.com",
+            "github": "https://github.com/cohere-ai",
+            "discord": "https://discord.com/invite/co-mmunity",
+            "x": "https://x.com/Cohere",
+            "linkedin": "https://www.linkedin.com/company/cohere-ai",
+            "youtube": "https://www.youtube.com/@CohereAI",
+            "status": "https://status.cohere.com"
+        }
+    },
+    {
+        "id": "llm7",
+        "name": "LLM7",
+        "keyEnvVar": "LLM7_API_KEY",
+        "keylessUsage": true,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://api.llm7.io/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": false,
+                "note": "Free models has `'tier': 'turbo'` in `data[]`"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": false,
+                "body": {
+                    "model": "codestral-latest",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "limited-anon",
+                "limits": {
+                    "rps": 1,
+                    "rpm": 10,
+                    "rph": 60,
+                    "tpd": 500000,
+                    "notes": "Anonymous users"
+                },
+                "reset": {
+                    "cadence": "rolling",
+                    "note": "Reset time starts when you hit rate limit in a model"
+                }
+            },
+            {
+                "type": "limited",
+                "limits": {
+                    "rps": 2,
+                    "rpm": 40,
+                    "rph": 100,
+                    "tpd": 1000000,
+                    "notes": "Free API Token"
+                },
+                "reset": {
+                    "cadence": "rolling",
+                    "note": "Reset time starts when you hit rate limit in a model"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://docs.llm7.io/limits#text-generation-/v1/chat/completions",
+                "type": "reference",
+                "auth": true,
+                "note": "Page mentioning limits. RPS, RPM, RPH, TPD"
+            }
+        ],
+        "channels": {
+            "homepage": "https://llm7.io",
+            "signup": "https://dash.llm7.io",
+            "docs": "https://docs.llm7.io",
+            "github": "https://github.com/chigwell/llm7.io",
+            "support-email": "support@llm7.io"
+        }
+    },
+    {
+        "id": "agnes",
+        "name": "Agnes AI",
+        "keyEnvVar": "AGNES_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://apihub.agnes-ai.com/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": true,
+                "note": "List all models, filter out free models using pricing page"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "agnes-3.0-flash",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "limited",
+                "limits": {
+                    "text-rpm": 10,
+                    "image-rpm": 20,
+                    "video-rpm": 1,
+                    "notes": "All are effective RPM, rather than allowed RPM from docs. Video RPM is just 500secs/day"
+                },
+                "reset": {
+                    "cadence": "rolling",
+                    "note": "Not specified for free API"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://wiki.agnes-ai.com/en/docs/pricing#text-models",
+                "type": "pricing",
+                "auth": false,
+                "note": "Page mentioning free models. Free models is listed below `Current offers`, for each section `Text models`, `Image models` and `Video models`"
+            },
+            {
+                "url": "https://wiki.agnes-ai.com/en/docs/tokenplan#3-text-model-rpm-limits",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning limits. effective RPM for text, image, and video models"
+            }
+        ],
+        "channels": {
+            "homepage": "https://agnes-ai.com",
+            "signup": "https://platform.agnes-ai.com/login",
+            "docs": "https://agnes-ai.com/doc/overview",
+            "github": "https://github.com/AgnesAI-Labs",
+            "x": "https://x.com/agnesai_sapiens",
+            "linkedin": "https://www.linkedin.com/company/agnesaisapiens",
+            "instagram": "https://www.instagram.com/agnesai_sapiens",
+            "support-email": "support@agnes-ai.com"
+        }
+    },
+    {
+        "id": "cline",
+        "name": "Cline",
+        "keyEnvVar": "CLINE_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://api.cline.bot/api/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": false,
+                "note": "Free models has `:free` suffix or `stealth` as prefix in `data[].id`"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "poolside/laguna-s-2.1:free",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "limited",
+                "limits": {
+                    "notes": "Quota exists, but it does not publish its size. Usage limited to Cline CLI, Cline Desktop and Cline VSCode extension"
+                },
+                "reset": {
+                    "cadence": "rolling",
+                    "note": "Not specified for free API"
+                }
+            }
+        ],
+        "other_source": [],
+        "channels": {
+            "homepage": "https://cline.bot",
+            "signup": "https://cline.bot/get-cline",
+            "docs": "https://docs.cline.bot",
+            "support": "https://cline.bot/contact",
+            "github": "https://github.com/cline/cline",
+            "github-discussions": "https://github.com/cline/cline/discussions",
+            "discord": "https://discord.gg/cline",
+            "reddit": "https://www.reddit.com/r/CLine",
+            "x": "https://x.com/cline"
+        }
+    },
+    {
+        "id": "qoder",
+        "name": "Qoder",
+        "keyEnvVar": "QODER_ACCESS_TOKEN",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://api.qoder.com/api/v1/forward",
+            "models": {
+                "endpoint": "/models",
+                "auth": true,
+                "note": "Free models has `'price_factor': 0` in `data[]`"
+            },
+            "test": {
+                "note": "Qoders's models can only be used from within Qoder"
+            }
+        },
+        "quota": [
+            {
+                "type": "trial",
+                "limits": {
+                    "notes": "14-day Pro plan trial, with 300 credits"
+                },
+                "reset": {
+                    "cadence": null,
+                    "note": "These trial and credits expire 14 days after they're granted"
+                }
+            },
+            {
+                "type": "limited",
+                "limits": {
+                    "notes": "100 credit (around 30 requests) per day"
+                },
+                "reset": {
+                    "cadence": "daily",
+                    "note": "100 claimable credits at 02:00 UTC time"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://docs.qoder.com/cloud-agents/api/forward/models/list",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning models API"
+            },
+            {
+                "url": "https://docs.qoder.com/account/pricing",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning free plan"
+            },
+            {
+                "url": "http://docs.qoder.com/events/100credits",
+                "type": "reference",
+                "auth": false,
+                "note": "Page mentioning 100 credit per day promo claimable at 02:00 UTC"
+            },
+            {
+                "url": "https://qoder.com/account/usage?usage_category=cloud&tab=earned",
+                "type": "reference",
+                "auth": true,
+                "note": "Page mentioning expiration of 100 credit (30 days upon claiming date)"
+            }
+        ],
+        "channels": {
+            "homepage": "https://qoder.com",
+            "signup": "https://qoder.com/users/sign-up",
+            "docs": "https://docs.qoder.com",
+            "forum": "https://forum.qoder.com",
+            "github": "https://github.com/QoderAI",
+            "discord": "https://discord.gg/8NrHCxESyQ",
+            "x": "https://x.com/Qoder_ai_ide",
+            "youtube": "https://www.youtube.com/@qoder_ai",
+            "reddit": "https://www.reddit.com/r/Qoder",
+            "email": "contact@qoder.com"
+        }
+    },
+    {
+        "id": "cerebras",
+        "name": "Cerebras",
+        "keyEnvVar": "CEREBRAS_API_KEY",
+        "keylessUsage": false,
+        "requirement": {
+            "login-method": "google-auth",
+            "phone-verified": false,
+            "linked-card": false,
+            "linked-github": false
+        },
+        "api": {
+            "baseUrl": "https://api.cerebras.ai/v1",
+            "models": {
+                "endpoint": "/models",
+                "auth": true,
+                "note": "List all models"
+            },
+            "test": {
+                "endpoint": "/chat/completions",
+                "auth": true,
+                "body": {
+                    "model": "gpt-oss-120b",
+                    "messages": [{ "role": "user", "content": "Hi" }]
+                }
+            }
+        },
+        "quota": [
+            {
+                "type": "trial",
+                "limits": {
+                    "notes": "Per-model quotas. $5 credits"
+                },
+                "reset": {
+                    "cadence": null,
+                    "note": "These credits expire 30 days after they're granted"
+                }
+            }
+        ],
+        "other_source": [
+            {
+                "url": "https://inference-docs.cerebras.ai/support/rate-limits#limits-by-tier",
+                "type": "quota",
+                "auth": false,
+                "note": "Page mentioning per model quotas. RPM, TPM, TPH, TPD"
+            }
+        ],
+        "channels": {
+            "homepage": "https://www.cerebras.ai",
+            "signup": "https://cloud.cerebras.ai",
+            "docs": "https://inference-docs.cerebras.ai",
+            "support": "https://www.cerebras.ai/build-with-us",
+            "support-email": "support@cerebras.net",
+            "github": "https://github.com/Cerebras",
+            "discord": "https://cerebras.ai/discord",
+            "linkedin": "https://www.linkedin.com/company/cerebras-systems",
+            "status": "https://status.cerebras.ai"
+        }
     }
 ]

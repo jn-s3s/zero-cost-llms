@@ -8,8 +8,6 @@ from lib.html_tree import parse_html
 from lib.http_client import get_url
 from providers.base import models_url
 
-FREE_PAGE_MARKER = "nim_type_preview"
-
 SEPARATOR_FOLD = str.maketrans({".": "-", "_": "-"})
 
 
@@ -69,7 +67,7 @@ def fetch(provider_config: dict) -> list[dict]:
         (
             source["url"]
             for source in provider_config["other_source"]
-            if FREE_PAGE_MARKER in source["url"]
+            if source["type"] == "models"
         ),
         None,
     )

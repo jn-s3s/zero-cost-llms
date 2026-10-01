@@ -6,15 +6,15 @@ import json
 import os
 import re
 import sys
-from pathlib import Path
 from urllib.parse import urlencode
 
 from lib.html_tree import Node, parse_html
 from lib.http_client import get_url
+from lib.limit_value import parse_limit_value
+from lib.rate_limits import attach_rate_limits
+from lib.repo_root import REPO_ROOT
 from providers.base import models_url
 
-ROOT = Path(__file__).resolve().parent.parent
-RATE_LIMITS_SNAPSHOT = "data/google_rate_limits.html"
 MAX_PAGES = 20
 
 
@@ -129,22 +129,6 @@ def google_free_ids(html: str | bytes) -> set[str]:
     return found
 
 
-def _parse_limit_value(text: str) -> int | None:
-    """Parse a rate limit like '250K', '1M', '14.4K', 'Unlimited', or '0'."""
-    text = text.strip()
-    if not text or text == "-" or text.lower() == "unlimited":
-        return None
-    text = text.replace(",", "")
-    multiplier = 1
-    if text.upper().endswith("K"):
-        multiplier = 1_000
-        text = text[:-1]
-    elif text.upper().endswith("M"):
-        multiplier = 1_000_000
-        text = text[:-1]
-    return int(float(text) * multiplier)
-
-
 def _model_id(cells: list[Node]) -> str | None:
     """Return the model id from the Model cell of a rate-limits row."""
     model = next(
@@ -158,7 +142,7 @@ def _model_id(cells: list[Node]) -> str | None:
     return model.attrs.get("data-test-id") if model is not None else None
 
 
-def _column_limit(cells: list[Node], column: str) -> int | None:
+def _column_limit(cells: list[Node], column: str) -> int | float | None:
     """Return the limit value (after ``/``) from a rate-limits cell."""
     cell = next(
         (
@@ -176,10 +160,10 @@ def _column_limit(cells: list[Node], column: str) -> int | None:
     )
     if value is None or "/" not in value:
         return None
-    return _parse_limit_value(value.split("/", 1)[1])
+    return parse_limit_value(value.split("/", 1)[1])
 
 
-def parse_rate_limits(html: str | bytes) -> dict[str, dict[str, int | None]]:
+def parse_rate_limits(html: str | bytes) -> dict[str, dict[str, int | float | None]]:
     """Parse the Google AI Studio rate-limits HTML table.
 
     Each row lists one model with a ``data-test-id`` on its Model cell and
@@ -193,11 +177,11 @@ def parse_rate_limits(html: str | bytes) -> dict[str, dict[str, int | None]]:
         html: The rate-limits page markup.
 
     Returns:
-        A mapping of model id to ``{"rpm": int | None, "tpm": int | None,
-        "rpd": int | None}`` for every model row.
+        A mapping of model id to ``{"rpm": int | float | None, "tpm": ...,
+        "rpd": ...}`` for every model row.
     """
     root = parse_html(html)
-    limits: dict[str, dict[str, int | None]] = {}
+    limits: dict[str, dict[str, int | float | None]] = {}
     for row in root.walk():
         if row.tag != "tr":
             continue
@@ -219,12 +203,22 @@ def parse_rate_limits(html: str | bytes) -> dict[str, dict[str, int | None]]:
     return limits
 
 
+def _rate_limit_model_id(model: dict, limits: dict[str, dict]) -> str:
+    model_id = model["name"].removeprefix("models/")
+    if model_id.endswith("-preview") and model_id not in limits:
+        fallback_id = model_id.removesuffix("-preview")
+        if fallback_id in limits:
+            return fallback_id
+    return model_id
+
+
 def fetch(provider_config: dict) -> list[dict]:
     """Fetch the free Google AI models.
 
-    The models list requires a "GOOGLE_API_KEY"; free status is decided by
-    scraping the pricing page referenced in "other_source" for Standard
-    tables whose input and output prices are free of charge.
+    The models list requires the API key named by the entry's "keyEnvVar";
+    free status is decided by scraping the pricing page referenced in
+    "other_source" for Standard tables whose input and output prices are free
+    of charge.
 
     Args:
         provider_config: A provider entry from providers.json.
@@ -233,13 +227,15 @@ def fetch(provider_config: dict) -> list[dict]:
         The provider's free models as a list of dictionaries.
 
     Raises:
-        ValueError: If "GOOGLE_API_KEY" is not set, the models list runs past
-            MAX_PAGES, repeats a page token, "other_source" lists no pricing
-            page, or the pricing page lists no free Standard models.
+        ValueError: If the "keyEnvVar" environment variable is not set, the
+            models list runs past MAX_PAGES, repeats a page token,
+            "other_source" lists no pricing page, or the pricing page lists no
+            free Standard models.
     """
-    key = os.environ.get("GOOGLE_API_KEY")
+    key_env_var = provider_config["keyEnvVar"]
+    key = os.environ.get(key_env_var)
     if not key:
-        raise ValueError("GOOGLE_API_KEY is required for Google models.list")
+        raise ValueError(f"{key_env_var} is required for Google models.list")
     url = models_url(provider_config)
     models = []
     token = None
@@ -260,7 +256,7 @@ def fetch(provider_config: dict) -> list[dict]:
         (
             source["url"]
             for source in provider_config["other_source"]
-            if "pricing" in source["url"]
+            if source["type"] == "pricing"
         ),
         None,
     )
@@ -275,27 +271,30 @@ def fetch(provider_config: dict) -> list[dict]:
     models = [
         model for model in models if model["name"].removeprefix("models/") in free_ids
     ]
-    # The snapshot is saved by hand from the signed-in rate-limit page, so it
-    # drifts from the live quotas; report which models it cannot cover.
-    rate_limits_path = ROOT / RATE_LIMITS_SNAPSHOT
+    rate_limit_snapshot = next(
+        (
+            source["snapshot"]
+            for source in provider_config["other_source"]
+            if source["type"] == "quota"
+        ),
+        None,
+    )
+    if rate_limit_snapshot is None:
+        raise ValueError("no rate-limit snapshot listed in other_source")
+
+    rate_limits_path = REPO_ROOT / rate_limit_snapshot
     if rate_limits_path.exists():
         limits = parse_rate_limits(rate_limits_path.read_text(encoding="utf-8"))
-        uncovered = []
-        for model in models:
-            model_id = model["name"].removeprefix("models/")
-            if model_id in limits:
-                model["rate_limits"] = limits[model_id]
-            else:
-                uncovered.append(model_id)
-        if uncovered:
-            print(
-                f"googleai: no saved rate limits for {len(uncovered)} free models: "
-                + ", ".join(sorted(uncovered)),
-                file=sys.stderr,
-            )
+        attach_rate_limits(
+            models,
+            limits,
+            "googleai",
+            model_id_of=lambda model: _rate_limit_model_id(model, limits),
+            saved=True,
+        )
     else:
         print(
-            f"googleai: {RATE_LIMITS_SNAPSHOT} is missing, publishing no rate limits",
+            f"googleai: {rate_limit_snapshot} is missing, publishing no rate limits",
             file=sys.stderr,
         )
     return models

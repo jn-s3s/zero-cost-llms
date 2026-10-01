@@ -13,12 +13,12 @@ import traceback
 from pathlib import Path
 
 from lib.http_client import one_line, safe_text
+from lib.repo_root import REPO_ROOT
 from providers import get_provider
-
-ROOT = Path(__file__).resolve().parent
 
 SAFE_PROVIDER_ID = re.compile(r"[a-z0-9][a-z0-9_-]*")
 MAX_FAILED_MESSAGE_CHARS = 300
+REMOVED_RETENTION_DAYS = 90
 
 
 def fetch_provider(provider: dict) -> list[dict]:
@@ -72,6 +72,29 @@ def _now() -> str:
     return datetime.datetime.now(datetime.timezone.utc).isoformat()
 
 
+def _removed_is_older(removed_at: object, cutoff: datetime.datetime) -> bool:
+    """Return whether a removal happened before the retention cutoff.
+
+    Args:
+        removed_at: The entry's ``removedDate`` value, whatever the file holds.
+        cutoff: Entries removed at or before this instant are pruned.
+
+    Returns:
+        True when the entry leaves the retained history window. A missing or
+        unreadable date counts as expired so undated leftovers cannot live
+        forever.
+    """
+    if not isinstance(removed_at, str):
+        return True
+    try:
+        parsed = datetime.datetime.fromisoformat(removed_at)
+    except ValueError:
+        return True
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=datetime.timezone.utc)
+    return parsed < cutoff
+
+
 def _target(output: Path, provider_id: str) -> Path:
     """Return the file a provider's data is stored in.
 
@@ -108,12 +131,13 @@ def _wrapper(
             did.
 
     Returns:
-        The object written to the provider's file, with ``count`` derived from
-        ``data`` here so the published pair can never disagree.
+        The object written to the provider's file, with ``count`` counting the
+        active (non-removed) models in ``data`` so the published pair can
+        never disagree.
     """
     return {
         "status": status,
-        "count": len(models),
+        "count": sum(1 for model in models if model.get("presence") != "removed"),
         "updatedAt": updated_at,
         "lastFailedAt": failed_at,
         "lastFailedMessage": failed_message,
@@ -152,7 +176,13 @@ def save_provider(output: Path, provider_id: str, models: list[dict]) -> None:
     """Write a successful fetch as the provider's latest result.
 
     The new model list is stored under ``data`` with a fresh ``updatedAt`` and
-    ``count``, while the failure details of the previous run, if any, are kept.
+    lifecycle fields: every model carries ``presence``, ``firstSeen``,
+    ``lastSeen``, ``removedDate`` and ``status``. Models missing from the new
+    list are kept and marked ``removed`` so history survives, while ``count``
+    only counts the active models. Removed entries are dropped once their
+    ``removedDate`` is older than ``REMOVED_RETENTION_DAYS``, so a provider
+    with heavy churn stays bounded. The failure details of the previous run, if
+    any, are kept.
 
     Args:
         output: Directory to write the JSON file into.
@@ -175,12 +205,60 @@ def save_provider(output: Path, provider_id: str, models: list[dict]) -> None:
     if len({model_id.casefold() for model_id in ids}) != len(ids):
         raise ValueError("duplicate model id")
     previous = _load_payload(target)
+    now = _now()
+    previous_models = previous.get("data")
+    previous_by_id: dict[str, dict] = {}
+    if isinstance(previous_models, list):
+        for previous_model in previous_models:
+            if not isinstance(previous_model, dict):
+                continue
+            key = previous_model.get("name" if provider_id == "googleai" else "id")
+            if isinstance(key, str):
+                previous_by_id[key.casefold()] = previous_model
+    previous_seen = previous.get("updatedAt") or now
+    cutoff = datetime.datetime.fromisoformat(now) - datetime.timedelta(
+        days=REMOVED_RETENTION_DAYS
+    )
+    enriched: list[dict] = []
+    seen_ids: set[str] = set()
+    for model in models:
+        model_id = model["name"] if provider_id == "googleai" else model["id"]
+        key = model_id.casefold()
+        seen_ids.add(key)
+        previous_model = previous_by_id.get(key)
+        if previous_model is None:
+            first_seen = now
+        else:
+            first_seen = previous_model.get("firstSeen") or previous_seen
+        enriched.append(
+            {
+                **model,
+                "presence": "active",
+                "firstSeen": first_seen,
+                "lastSeen": now,
+                "removedDate": None,
+                "status": None,
+            }
+        )
+    for key, previous_model in previous_by_id.items():
+        if key in seen_ids:
+            continue
+        kept = dict(previous_model)
+        kept["status"] = None
+        if kept.get("presence") != "removed":
+            kept["presence"] = "removed"
+            kept["removedDate"] = now
+        elif _removed_is_older(kept.get("removedDate"), cutoff):
+            continue
+        kept.setdefault("firstSeen", previous_seen)
+        kept.setdefault("lastSeen", previous_seen)
+        enriched.append(kept)
     _write_wrapper(
         target,
         _wrapper(
             "success",
-            models,
-            _now(),
+            enriched,
+            now,
             previous.get("lastFailedAt"),
             previous.get("lastFailedMessage"),
         ),
@@ -224,13 +302,13 @@ def record_failure(output: Path, provider_id: str, message: str) -> None:
 def _credential_values(providers: list) -> set[str]:
     """Return the environment values the catalogue declares as credentials.
 
-    A provider names its key through "ENV_VAR", and the server holding that key
+    A provider names its key through "keyEnvVar", and the server holding that key
     writes part of every failure message this script logs and publishes, so the
     values are collected to be stripped from those messages.
     """
     values = set()
     for provider in providers:
-        name = provider.get("ENV_VAR") if isinstance(provider, dict) else None
+        name = provider.get("keyEnvVar") if isinstance(provider, dict) else None
         value = os.environ.get(name) if isinstance(name, str) else None
         if value:
             values.add(value)
@@ -250,7 +328,9 @@ def redact(text: str, credentials: set[str]) -> str:
     return text
 
 
-def run(providers_path: Path, output: Path) -> int:
+def run(
+    providers_path: Path, output: Path, provider_ids: list[str] | None = None
+) -> int:
     """Fetch and save free models for every provider in ``providers_path``.
 
     A provider whose fetch raises is reported on stderr and recorded in its own
@@ -261,6 +341,8 @@ def run(providers_path: Path, output: Path) -> int:
     Args:
         providers_path: JSON array of provider entries to fetch.
         output: Directory the provider files are written into.
+        provider_ids: Optional list of provider IDs to fetch. When provided,
+            only these providers are fetched; others are skipped.
 
     Returns:
         ``0`` when every provider's outcome reached its file, even if every
@@ -283,6 +365,21 @@ def run(providers_path: Path, output: Path) -> int:
         print(f"{providers_path.name}: lists no providers", file=sys.stderr)
         return 1
     credentials = _credential_values(providers)
+    if provider_ids is not None:
+        requested = set(provider_ids)
+        providers = [
+            provider
+            for provider in providers
+            if isinstance(provider, dict) and provider.get("id") in requested
+        ]
+        found = {provider["id"] for provider in providers if isinstance(provider, dict)}
+        missing = requested - found
+        if missing:
+            print(
+                f"requested provider(s) not found in catalogue: {', '.join(sorted(missing))}",
+                file=sys.stderr,
+            )
+            return 1
     unreported = False
     fetched_ids: set[str] = set()
     for index, provider in enumerate(providers):
@@ -346,17 +443,24 @@ def main() -> int:
     parser.add_argument(
         "--providers",
         type=Path,
-        default=ROOT / "providers.json",
+        default=REPO_ROOT / "providers.json",
         help="provider catalogue to read (default: %(default)s)",
     )
     parser.add_argument(
         "--output",
         type=Path,
-        default=ROOT / "data",
+        default=REPO_ROOT / "data",
         help="directory for the generated JSON files (default: %(default)s)",
     )
+    parser.add_argument(
+        "--provider",
+        action="append",
+        dest="provider_filter",
+        metavar="ID",
+        help="fetch only this provider (can be specified multiple times)",
+    )
     args = parser.parse_args()
-    return run(args.providers, args.output)
+    return run(args.providers, args.output, args.provider_filter)
 
 
 if __name__ == "__main__":
