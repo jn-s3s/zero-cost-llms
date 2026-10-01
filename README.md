@@ -1,4 +1,4 @@
-# Fetch Models
+# Zero Cost LLMs
 
 Collects the free model catalogues of several LLM providers into one JSON file per
 provider, and publishes them from a daily GitHub Actions run to the `models-data` branch.
