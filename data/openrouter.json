@@ -1,10 +1,72 @@
 {
   "status": "success",
-  "count": 17,
-  "updatedAt": "2026-10-01T13:00:40.984218+00:00",
+  "count": 18,
+  "updatedAt": "2026-10-02T03:35:28.486416+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "apodex/apodex-1.1-mini:free",
+      "canonical_slug": "apodex/apodex-1.1-mini-20261001",
+      "hugging_face_id": null,
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "created": 1790875335,
+      "description": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produce verifiable results,...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 235929,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/apodex/apodex-1.1-mini-20261001/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-02T03:35:28.486416+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "stealth/space-bunny-alpha",
       "canonical_slug": "stealth/space-bunny-alpha",
@@ -67,7 +129,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -130,7 +192,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -211,7 +273,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -259,7 +321,7 @@
       "default_parameters": {},
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-12-31",
       "links": {
         "details": "/api/v1/models/dots-studio/dots-3-note-preview-20260813/endpoints"
       },
@@ -268,7 +330,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -338,7 +400,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -401,7 +463,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -486,7 +548,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -540,7 +602,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -628,9 +690,9 @@
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1178,
+            "elo": 1177,
             "win_rate": 38.6,
-            "rank": 63
+            "rank": 65
           },
           {
             "arena": "models",
@@ -642,16 +704,16 @@
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1110,
-            "win_rate": 33.9,
+            "elo": 1112,
+            "win_rate": 34,
             "rank": 56
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1208,
-            "win_rate": 41.3,
-            "rank": 51
+            "elo": 1206,
+            "win_rate": 41.4,
+            "rank": 52
           },
           {
             "arena": "models",
@@ -682,7 +744,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -736,7 +798,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -810,7 +872,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -872,7 +934,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -942,9 +1004,9 @@
           {
             "arena": "models",
             "category": "asciiart",
-            "elo": 1108,
-            "win_rate": 38.6,
-            "rank": 57
+            "elo": 1104,
+            "win_rate": 37.9,
+            "rank": 58
           },
           {
             "arena": "models",
@@ -956,7 +1018,7 @@
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1151,
+            "elo": 1150,
             "win_rate": 37.7,
             "rank": 76
           },
@@ -971,15 +1033,15 @@
             "arena": "models",
             "category": "svg",
             "elo": 1070,
-            "win_rate": 32.9,
+            "win_rate": 33,
             "rank": 68
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1147,
+            "elo": 1146,
             "win_rate": 36.6,
-            "rank": 75
+            "rank": 74
           },
           {
             "arena": "models",
@@ -1007,7 +1069,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1082,7 +1144,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1153,7 +1215,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1227,7 +1289,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1307,7 +1369,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-01T13:00:40.984218+00:00",
+      "lastSeen": "2026-10-02T03:35:28.486416+00:00",
       "removedDate": null,
       "status": null
     }

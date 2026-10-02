@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 16,
-  "updatedAt": "2026-10-01T13:00:46.375116+00:00",
+  "updatedAt": "2026-10-02T03:35:34.439108+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -56,7 +56,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -117,7 +117,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -187,20 +187,19 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
     {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "name": "Dots Studio: Dots3-Note Preview (free)",
-      "created": 1786680361,
-      "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
+      "id": "apodex/apodex-1.1-mini:free",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "created": 1790875335,
+      "description": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produce verifiable results,...",
       "architecture": {
-        "modality": "text+image->text",
+        "modality": "text->text",
         "input_modalities": [
-          "text",
-          "image"
+          "text"
         ],
         "output_modalities": [
           "text"
@@ -209,29 +208,34 @@
       },
       "top_provider": {
         "is_moderated": false,
-        "context_length": 512000,
-        "max_completion_tokens": 460800
+        "context_length": 262144,
+        "max_completion_tokens": 235929
       },
       "pricing": {
         "prompt": "0",
         "completion": "0",
         "discount": 0
       },
-      "context_length": 512000,
+      "context_length": 262144,
       "per_request_limits": null,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
+        "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
+        "seed",
+        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "expiration_date": null,
-      "preferredIndex": 5,
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -251,8 +255,8 @@
         }
       },
       "presence": "active",
-      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "firstSeen": "2026-10-02T03:35:34.439108+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -321,7 +325,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -401,7 +405,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -468,7 +472,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -530,7 +534,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -621,7 +625,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -681,7 +685,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -747,7 +751,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -808,7 +812,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -873,7 +877,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -948,7 +952,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1007,7 +1011,7 @@
       "opencode": {},
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1080,8 +1084,73 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "lastSeen": "2026-10-02T03:35:34.439108+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "created": 1786680361,
+      "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "top_provider": {
+        "is_moderated": false,
+        "context_length": 512000,
+        "max_completion_tokens": 460800
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "discount": 0
+      },
+      "context_length": 512000,
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "expiration_date": null,
+      "preferredIndex": 5,
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {
+        "variants": {
+          "instant": {
+            "reasoning": {
+              "enabled": false,
+              "effort": "none"
+            }
+          },
+          "thinking": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          }
+        }
+      },
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
+      "lastSeen": "2026-10-01T13:00:46.375116+00:00",
+      "removedDate": "2026-10-02T03:35:34.439108+00:00",
       "status": null
     }
   ]

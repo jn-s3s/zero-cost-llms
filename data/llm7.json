@@ -1,14 +1,14 @@
 {
   "status": "success",
   "count": 6,
-  "updatedAt": "2026-10-01T13:00:50.365379+00:00",
+  "updatedAt": "2026-10-02T03:35:36.193621+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "DeepSeek-V4-Flash-0731",
       "object": "model",
-      "created": 1790852209,
+      "created": 1790904560,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -51,22 +51,22 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 98.84,
+      "availability_last_hour_percent": 26.14,
       "availability": {
-        "old": 98.84,
-        "mid": 99.15,
-        "recent": 98.18
+        "old": 62.26,
+        "mid": 16.67,
+        "recent": 3.51
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-01T13:00:50.365379+00:00",
+      "lastSeen": "2026-10-02T03:35:36.193621+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "GLM-5.3-Flash",
       "object": "model",
-      "created": 1790852209,
+      "created": 1790904560,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -109,22 +109,22 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 97.84,
+      "availability_last_hour_percent": 100.0,
       "availability": {
         "old": 100.0,
-        "mid": 97.06,
-        "recent": 96.67
+        "mid": 100.0,
+        "recent": 100.0
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-01T13:00:50.365379+00:00",
+      "lastSeen": "2026-10-02T03:35:36.193621+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "codestral-latest",
       "object": "model",
-      "created": 1790850231,
+      "created": 1790904622,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -167,22 +167,22 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 99.87,
+      "availability_last_hour_percent": 100.0,
       "availability": {
         "old": 100.0,
-        "mid": 99.52,
+        "mid": 100.0,
         "recent": 100.0
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-01T13:00:50.365379+00:00",
+      "lastSeen": "2026-10-02T03:35:36.193621+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "gpt-oss:20b",
       "object": "model",
-      "created": 1790851682,
+      "created": 1790904560,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -233,14 +233,14 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-01T13:00:50.365379+00:00",
+      "lastSeen": "2026-10-02T03:35:36.193621+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "minimax-m2.7",
       "object": "model",
-      "created": 1790852209,
+      "created": 1790904560,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -283,22 +283,22 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 91.3,
+      "availability_last_hour_percent": 0.6,
       "availability": {
-        "old": 91.38,
-        "mid": 91.78,
-        "recent": 90.57
+        "old": 0.0,
+        "mid": 1.59,
+        "recent": 0.0
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-01T13:00:50.365379+00:00",
+      "lastSeen": "2026-10-02T03:35:36.193621+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-Nemo-Instruct-2407",
       "object": "model",
-      "created": 1790851840,
+      "created": 1790904491,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -341,15 +341,15 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 99.44,
+      "availability_last_hour_percent": 99.51,
       "availability": {
-        "old": 100.0,
-        "mid": 98.36,
+        "old": 98.31,
+        "mid": 100.0,
         "recent": 100.0
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-01T13:00:50.365379+00:00",
+      "lastSeen": "2026-10-02T03:35:36.193621+00:00",
       "removedDate": null,
       "status": null
     }
