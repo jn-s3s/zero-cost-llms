@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 6,
-  "updatedAt": "2026-10-02T03:35:31.797497+00:00",
+  "updatedAt": "2026-10-02T05:20:39.526184+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -12,51 +12,7 @@
       "owned_by": "ollama",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-02T03:35:31.797497+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "nemotron-3-ultra",
-      "object": "model",
-      "created": 1780531200,
-      "owned_by": "ollama",
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-02T03:35:31.797497+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "gemma4:31b",
-      "object": "model",
-      "created": 1775149200,
-      "owned_by": "ollama",
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-02T03:35:31.797497+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "gpt-oss:20b",
-      "object": "model",
-      "created": 1754352000,
-      "owned_by": "ollama",
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-02T03:35:31.797497+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "nemotron-3-super",
-      "object": "model",
-      "created": 1773187200,
-      "owned_by": "ollama",
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-02T03:35:31.797497+00:00",
+      "lastSeen": "2026-10-02T05:20:39.526184+00:00",
       "removedDate": null,
       "status": null
     },
@@ -67,7 +23,51 @@
       "owned_by": "ollama",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-02T03:35:31.797497+00:00",
+      "lastSeen": "2026-10-02T05:20:39.526184+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gpt-oss:20b",
+      "object": "model",
+      "created": 1754352000,
+      "owned_by": "ollama",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
+      "lastSeen": "2026-10-02T05:20:39.526184+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gemma4:31b",
+      "object": "model",
+      "created": 1775149200,
+      "owned_by": "ollama",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
+      "lastSeen": "2026-10-02T05:20:39.526184+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nemotron-3-super",
+      "object": "model",
+      "created": 1773187200,
+      "owned_by": "ollama",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
+      "lastSeen": "2026-10-02T05:20:39.526184+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nemotron-3-ultra",
+      "object": "model",
+      "created": 1780531200,
+      "owned_by": "ollama",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
+      "lastSeen": "2026-10-02T05:20:39.526184+00:00",
       "removedDate": null,
       "status": null
     }
