@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 1,
-  "updatedAt": "2026-10-02T05:20:42.441332+00:00",
+  "count": 2,
+  "updatedAt": "2026-10-03T05:03:33.505436+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -41,13 +41,13 @@
       "context_length": 262000,
       "per_user_rpm": 45,
       "health": {
-        "status": "degraded",
-        "success_rate": 92,
+        "status": "healthy",
+        "success_rate": 98,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-02T05:20:42.441332+00:00",
+      "lastSeen": "2026-10-03T05:03:33.505436+00:00",
       "removedDate": null,
       "status": null
     },
@@ -89,13 +89,13 @@
       "per_user_rpm": 10,
       "health": {
         "status": "degraded",
-        "success_rate": 92,
+        "success_rate": 94,
         "requests": 50
       },
-      "presence": "removed",
+      "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-10-02T03:35:34.586995+00:00",
-      "removedDate": "2026-10-02T05:20:42.441332+00:00",
+      "lastSeen": "2026-10-03T05:03:33.505436+00:00",
+      "removedDate": null,
       "status": null
     },
     {

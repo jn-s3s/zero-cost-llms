@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 16,
-  "updatedAt": "2026-10-02T05:20:42.142892+00:00",
+  "count": 15,
+  "updatedAt": "2026-10-03T05:03:33.075431+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -49,22 +49,24 @@
       "autoRouting": {
         "models": [
           "dots-studio/dots-3-note-preview:free",
+          "inclusionai/ling-3.1-flash",
           "nvidia/nemotron-3-ultra-550b-a55b:free",
           "poolside/laguna-s-2.1:free",
-          "stealth/space-bunny-alpha"
+          "stealth/space-bunny-alpha",
+          "stepfun/step-3.7-flash:free"
         ]
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
     {
-      "id": "poolside/laguna-s-2.1:free",
-      "name": "Poolside: Laguna S 2.1 (free)",
-      "created": 1784652683,
-      "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
+      "id": "inclusionai/ling-3.1-flash",
+      "name": "inclusionAI: Ling 3.1 Flash (new)",
+      "created": 1790950024,
+      "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -88,12 +90,21 @@
       "context_length": 262144,
       "per_request_limits": null,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
+        "logprobs",
         "max_tokens",
+        "presence_penalty",
         "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
         "temperature",
         "tool_choice",
-        "tools"
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
       ],
       "expiration_date": null,
       "preferredIndex": 3,
@@ -116,8 +127,82 @@
         }
       },
       "presence": "active",
+      "firstSeen": "2026-10-03T05:03:33.075431+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "stepfun/step-3.7-flash:free",
+      "canonical_slug": "stepfun/step-3.7-flash:free",
+      "hugging_face_id": "",
+      "name": "StepFun: Step 3.7 Flash (free)",
+      "created": 1756238927,
+      "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, activating roughly 11B parameters per token. The model supports a 256K context window and exposes selectable reasoning levels (high/medium/low), letting callers trade off speed, cost, and depth of reasoning.\n\nDesigned for coding, agentic workflows, structured outputs, and long-context productivity tasks.",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000000000000",
+        "completion": "0.000000000000",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0",
+        "input_cache_read": "0.000000000000"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 262144,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "tools",
+        "reasoning",
+        "include_reasoning"
+      ],
+      "default_parameters": {},
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "preferredIndex": 4,
+      "opencode": {
+        "variants": {
+          "low": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "low"
+            }
+          },
+          "medium": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "medium"
+            }
+          },
+          "high": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          }
+        }
+      },
+      "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -160,7 +245,7 @@
         "top_p"
       ],
       "expiration_date": null,
-      "preferredIndex": 4,
+      "preferredIndex": 5,
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -187,7 +272,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -256,7 +341,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:34.439108+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -325,7 +410,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -405,7 +490,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -472,7 +557,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -534,7 +619,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -625,67 +710,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "poolside/laguna-xs-2.1:free",
-      "name": "Poolside: Laguna XS 2.1 (free)",
-      "created": 1783002429,
-      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "top_provider": {
-        "is_moderated": false,
-        "context_length": 262144,
-        "max_completion_tokens": 32768
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0",
-        "discount": 0
-      },
-      "context_length": 262144,
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools"
-      ],
-      "expiration_date": null,
-      "isFree": true,
-      "mayTrainOnYourPrompts": true,
-      "opencode": {
-        "variants": {
-          "instant": {
-            "reasoning": {
-              "enabled": false,
-              "effort": "none"
-            }
-          },
-          "thinking": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "high"
-            }
-          }
-        }
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -751,7 +776,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -812,7 +837,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -877,7 +902,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -952,7 +977,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1011,70 +1036,58 @@
       "opencode": {},
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "lastSeen": "2026-10-03T05:03:33.075431+00:00",
       "removedDate": null,
       "status": null
     },
     {
-      "id": "stepfun/step-3.7-flash:free",
-      "canonical_slug": "stepfun/step-3.7-flash:free",
-      "hugging_face_id": "",
-      "name": "StepFun: Step 3.7 Flash (free)",
-      "created": 1756238927,
-      "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, activating roughly 11B parameters per token. The model supports a 256K context window and exposes selectable reasoning levels (high/medium/low), letting callers trade off speed, cost, and depth of reasoning.\n\nDesigned for coding, agentic workflows, structured outputs, and long-context productivity tasks.",
-      "context_length": 262144,
+      "id": "poolside/laguna-s-2.1:free",
+      "name": "Poolside: Laguna S 2.1 (free)",
+      "created": 1784652683,
+      "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
       "architecture": {
-        "modality": "text+image->text",
+        "modality": "text->text",
         "input_modalities": [
-          "text",
-          "image"
+          "text"
         ],
         "output_modalities": [
           "text"
         ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.000000000000",
-        "completion": "0.000000000000",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0",
-        "input_cache_read": "0.000000000000"
+        "tokenizer": "Other"
       },
       "top_provider": {
+        "is_moderated": false,
         "context_length": 262144,
-        "max_completion_tokens": 262144,
-        "is_moderated": false
+        "max_completion_tokens": 32768
       },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "discount": 0
+      },
+      "context_length": 262144,
       "per_request_limits": null,
       "supported_parameters": [
+        "include_reasoning",
         "max_tokens",
-        "temperature",
-        "tools",
         "reasoning",
-        "include_reasoning"
+        "temperature",
+        "tool_choice",
+        "tools"
       ],
-      "default_parameters": {},
+      "expiration_date": null,
+      "preferredIndex": 3,
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
         "variants": {
-          "low": {
+          "instant": {
             "reasoning": {
-              "enabled": true,
-              "effort": "low"
+              "enabled": false,
+              "effort": "none"
             }
           },
-          "medium": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "medium"
-            }
-          },
-          "high": {
+          "thinking": {
             "reasoning": {
               "enabled": true,
               "effort": "high"
@@ -1082,10 +1095,70 @@
           }
         }
       },
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
       "lastSeen": "2026-10-02T05:20:42.142892+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-03T05:03:33.075431+00:00",
+      "status": null
+    },
+    {
+      "id": "poolside/laguna-xs-2.1:free",
+      "name": "Poolside: Laguna XS 2.1 (free)",
+      "created": 1783002429,
+      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "top_provider": {
+        "is_moderated": false,
+        "context_length": 262144,
+        "max_completion_tokens": 32768
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "discount": 0
+      },
+      "context_length": 262144,
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "expiration_date": null,
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {
+        "variants": {
+          "instant": {
+            "reasoning": {
+              "enabled": false,
+              "effort": "none"
+            }
+          },
+          "thinking": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          }
+        }
+      },
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
+      "lastSeen": "2026-10-02T05:20:42.142892+00:00",
+      "removedDate": "2026-10-03T05:03:33.075431+00:00",
       "status": null
     },
     {
