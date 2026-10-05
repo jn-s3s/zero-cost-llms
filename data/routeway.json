@@ -1,9 +1,9 @@
 {
-  "status": "success",
+  "status": "failed",
   "count": 9,
   "updatedAt": "2026-10-04T05:36:17.609295+00:00",
-  "lastFailedAt": null,
-  "lastFailedMessage": null,
+  "lastFailedAt": "2026-10-05T05:19:58.351994+00:00",
+  "lastFailedMessage": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
   "data": [
     {
       "id": "gemma-4-26b-a4b-it-chimerax:free",

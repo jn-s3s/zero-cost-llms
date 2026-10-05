@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 3,
-  "updatedAt": "2026-10-04T05:36:22.912877+00:00",
+  "updatedAt": "2026-10-05T05:20:03.683430+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -15,6 +15,14 @@
       ],
       "category": "text",
       "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
       "title": "Laguna S 2.1",
       "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
       "input_modalities": [
@@ -42,12 +50,12 @@
       "per_user_rpm": 45,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 98,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-04T05:36:22.912877+00:00",
+      "lastSeen": "2026-10-05T05:20:03.683430+00:00",
       "removedDate": null,
       "status": null
     },
@@ -61,6 +69,14 @@
       ],
       "category": "text",
       "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
       "title": "Muse Glimmer 30B",
       "description": "Multimodal reasoning model  by Meta",
       "input_modalities": [
@@ -89,12 +105,12 @@
       "per_user_rpm": 10,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 96,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-10-04T05:36:22.912877+00:00",
+      "lastSeen": "2026-10-05T05:20:03.683430+00:00",
       "removedDate": null,
       "status": null
     },
@@ -108,6 +124,14 @@
       ],
       "category": "text",
       "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
       "title": "Muse Glimmer (Free)",
       "input_modalities": [
         "text",
@@ -129,12 +153,12 @@
       "per_user_rpm": 5,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 98,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-10-04T05:36:22.912877+00:00",
+      "lastSeen": "2026-10-05T05:20:03.683430+00:00",
       "removedDate": null,
       "status": null
     },
