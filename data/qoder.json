@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 1,
-  "updatedAt": "2026-10-05T05:20:08.265095+00:00",
+  "updatedAt": "2026-10-06T06:03:32.801298+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -14,9 +14,9 @@
       "support_disable_reasoning": false,
       "price_factor": 0,
       "efforts": [
-        "xhigh",
         "low",
-        "medium"
+        "medium",
+        "xhigh"
       ],
       "default_effort": "medium",
       "max_input_tokens": 180000,
@@ -28,7 +28,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:14.926915+00:00",
-      "lastSeen": "2026-10-05T05:20:08.265095+00:00",
+      "lastSeen": "2026-10-06T06:03:32.801298+00:00",
       "removedDate": null,
       "status": null
     }
