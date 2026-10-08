@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 13,
-  "updatedAt": "2026-10-07T05:38:48.096011+00:00",
+  "updatedAt": "2026-10-08T05:47:05.173956+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -51,13 +51,12 @@
           "dots-studio/dots-3-note-preview:free",
           "inclusionai/ling-3.1-flash",
           "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "poolside/laguna-s-2.1:free",
-          "stepfun/step-3.7-flash:free"
+          "poolside/laguna-s-2.1:free"
         ]
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },
@@ -127,81 +126,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-03T05:03:33.075431+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "stepfun/step-3.7-flash:free",
-      "canonical_slug": "stepfun/step-3.7-flash:free",
-      "hugging_face_id": "",
-      "name": "StepFun: Step 3.7 Flash (free)",
-      "created": 1756238927,
-      "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, activating roughly 11B parameters per token. The model supports a 256K context window and exposes selectable reasoning levels (high/medium/low), letting callers trade off speed, cost, and depth of reasoning.\n\nDesigned for coding, agentic workflows, structured outputs, and long-context productivity tasks.",
-      "context_length": 262144,
-      "architecture": {
-        "modality": "text+image->text",
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.000000000000",
-        "completion": "0.000000000000",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0",
-        "input_cache_read": "0.000000000000"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 262144,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "max_tokens",
-        "temperature",
-        "tools",
-        "reasoning",
-        "include_reasoning"
-      ],
-      "default_parameters": {},
-      "isFree": true,
-      "mayTrainOnYourPrompts": true,
-      "preferredIndex": 3,
-      "opencode": {
-        "variants": {
-          "low": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "low"
-            }
-          },
-          "medium": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "medium"
-            }
-          },
-          "high": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "high"
-            }
-          }
-        }
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },
@@ -244,7 +169,7 @@
         "top_p"
       ],
       "expiration_date": null,
-      "preferredIndex": 4,
+      "preferredIndex": 3,
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -271,7 +196,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },
@@ -340,7 +265,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },
@@ -407,7 +332,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },
@@ -469,7 +394,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },
@@ -560,7 +485,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },
@@ -626,7 +551,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },
@@ -687,7 +612,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },
@@ -752,7 +677,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },
@@ -827,7 +752,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },
@@ -886,7 +811,80 @@
       "opencode": {},
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-07T05:38:48.096011+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "stepfun/step-3.7-flash:free",
+      "canonical_slug": "stepfun/step-3.7-flash:free",
+      "hugging_face_id": "",
+      "name": "StepFun: Step 3.7 Flash (free)",
+      "created": 1756238927,
+      "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, activating roughly 11B parameters per token. The model supports a 256K context window and exposes selectable reasoning levels (high/medium/low), letting callers trade off speed, cost, and depth of reasoning.\n\nDesigned for coding, agentic workflows, structured outputs, and long-context productivity tasks.",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000000000000",
+        "completion": "0.000000000000",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0",
+        "input_cache_read": "0.000000000000"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 262144,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "tools",
+        "reasoning",
+        "include_reasoning"
+      ],
+      "default_parameters": {},
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {
+        "variants": {
+          "low": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "low"
+            }
+          },
+          "medium": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "medium"
+            }
+          },
+          "high": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          }
+        }
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
       "removedDate": null,
       "status": null
     },

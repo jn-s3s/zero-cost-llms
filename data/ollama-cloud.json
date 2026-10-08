@@ -1,40 +1,18 @@
 {
   "status": "success",
   "count": 6,
-  "updatedAt": "2026-10-07T05:38:45.366647+00:00",
+  "updatedAt": "2026-10-08T05:47:02.343451+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
-      "id": "gpt-oss:20b",
+      "id": "nemotron-3-super",
       "object": "model",
-      "created": 1754352000,
+      "created": 1773187200,
       "owned_by": "ollama",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-07T05:38:45.366647+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "gemma4:31b",
-      "object": "model",
-      "created": 1775149200,
-      "owned_by": "ollama",
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-07T05:38:45.366647+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "gpt-oss:120b",
-      "object": "model",
-      "created": 1754352000,
-      "owned_by": "ollama",
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-07T05:38:45.366647+00:00",
+      "lastSeen": "2026-10-08T05:47:02.343451+00:00",
       "removedDate": null,
       "status": null
     },
@@ -45,18 +23,18 @@
       "owned_by": "ollama",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-07T05:38:45.366647+00:00",
+      "lastSeen": "2026-10-08T05:47:02.343451+00:00",
       "removedDate": null,
       "status": null
     },
     {
-      "id": "nemotron-3-super",
+      "id": "gpt-oss:20b",
       "object": "model",
-      "created": 1773187200,
+      "created": 1754352000,
       "owned_by": "ollama",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-07T05:38:45.366647+00:00",
+      "lastSeen": "2026-10-08T05:47:02.343451+00:00",
       "removedDate": null,
       "status": null
     },
@@ -67,7 +45,29 @@
       "owned_by": "ollama",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-07T05:38:45.366647+00:00",
+      "lastSeen": "2026-10-08T05:47:02.343451+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gpt-oss:120b",
+      "object": "model",
+      "created": 1754352000,
+      "owned_by": "ollama",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
+      "lastSeen": "2026-10-08T05:47:02.343451+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gemma4:31b",
+      "object": "model",
+      "created": 1775149200,
+      "owned_by": "ollama",
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
+      "lastSeen": "2026-10-08T05:47:02.343451+00:00",
       "removedDate": null,
       "status": null
     }
