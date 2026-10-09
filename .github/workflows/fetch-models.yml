@@ -22,6 +22,8 @@ jobs:
             - uses: actions/setup-python@v5
               with:
                   python-version: "3.11"
+            - name: Set up uv
+              uses: astral-sh/setup-uv@v6
             - name: Seed the output with the published data
               id: seed
               run: |
@@ -46,6 +48,7 @@ jobs:
                     | tar -x --strip-components=1 -C "$RUNNER_TEMP/models-data-seed"
                   cp -a "$RUNNER_TEMP/models-data-seed/." "$RUNNER_TEMP/model-output/"
             - name: Fetch models
+              id: fetch
               env:
                   AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
                   CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
@@ -56,10 +59,83 @@ jobs:
                   GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
                   MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
                   QODER_ACCESS_TOKEN: ${{ secrets.QODER_ACCESS_TOKEN }}
-              run: python fetch_models.py --output "$RUNNER_TEMP/model-output"
+              run: uv run python fetch_models.py --output "$RUNNER_TEMP/model-output"
+            - name: Generate provisional coding tiers and evidence views
+              id: rankings
+              continue-on-error: true
+              run: uv run python generate_benchmark_rankings.py --input "$RUNNER_TEMP/model-output" --output "$RUNNER_TEMP/model-output"
+            - name: Report benchmark status and issues
+              env:
+                  RANKING_OUTCOME: ${{ steps.rankings.outcome }}
+              run: |
+                  if [[ "$RANKING_OUTCOME" == "failure" ]]; then
+                    echo '::warning::Coding benchmark generation command failed; any retained artifact may be stale. Provider publication will continue.'
+                  fi
+                  uv run python - "$RUNNER_TEMP/model-output/benchmarks" <<'PY'
+                  import json
+                  import pathlib
+                  import sys
+
+                  # Never interpolate source text into a workflow command.
+                  root = pathlib.Path(sys.argv[1])
+                  documents = []
+                  for filename in ("coding.json", "coding-audit.json"):
+                      try:
+                          value = json.loads((root / filename).read_text(encoding="utf-8"))
+                          if (
+                              not isinstance(value, dict)
+                              or type(value.get("schemaVersion")) is not int
+                              or value["schemaVersion"] not in (2, 3)
+                          ):
+                              raise ValueError("Invalid evidence wrapper")
+                      except (OSError, ValueError, TypeError):
+                          value = {}
+                      documents.append(value)
+                  main, audit = documents
+                  if not main or not audit:
+                      print("::warning::Coding evidence main/audit artifact unreadable")
+                  if any(document.get("status") != "success" for document in documents):
+                      print(
+                          "::warning::Coding evidence generation failed or unreadable; "
+                          "inspect benchmarks/coding.json and coding-audit.json"
+                      )
+                  if any(
+                      document.get("status") == "success"
+                      and document.get("schemaVersion") != 3
+                      for document in documents
+                  ):
+                      print(
+                          "::warning::Coding artifact success uses an outdated schema; "
+                          "new successful main/audit artifacts must use schema 3"
+                      )
+                  generation_id = main.get("generationId")
+                  if (
+                      not isinstance(generation_id, str)
+                      or not generation_id
+                      or generation_id != audit.get("generationId")
+                      or main.get("schemaVersion") != audit.get("schemaVersion")
+                  ):
+                      print("::warning::Coding evidence main/audit generation mismatch")
+                  states = main.get("sourceStates")
+                  if isinstance(states, dict):
+                      states = list(states.values())
+                  if not isinstance(states, list) or not states or any(
+                      not isinstance(state, dict) or state.get("status") != "success"
+                      for state in states
+                  ):
+                      print(
+                          "::warning::Coding evidence source failed or unavailable; "
+                          "inspect sourceStates even when generation succeeded"
+                      )
+                  if audit.get("issues"):
+                      print(
+                          "::warning::Coding evidence audit has issues; "
+                          "inspect benchmarks/coding-audit.json"
+                      )
+                  PY
             - name: Report providers that failed
               run: |
-                  python - "$RUNNER_TEMP/model-output" <<'PY'
+                  uv run python - "$RUNNER_TEMP/model-output" <<'PY'
                   import json
                   import pathlib
                   import sys
@@ -79,7 +155,7 @@ jobs:
                           print(f"::warning::{path.stem} fetch failed ({status})")
                   PY
             - name: Publish model data on isolated branch
-              if: steps.seed.outcome == 'success'
+              if: success() && steps.seed.outcome == 'success' && steps.fetch.outcome == 'success'
               run: |
                   data_worktree="$RUNNER_TEMP/models-data-worktree"
                   mkdir -p "$RUNNER_TEMP/model-output"
@@ -105,7 +181,7 @@ jobs:
                   # script's job, and this covers a run that died before it could
                   # record the failure at all.
                   rsync -a "$RUNNER_TEMP/model-output/" data/
-                  python - "$GITHUB_WORKSPACE/config/providers.json" data <<'PY'
+                  uv run --project "$GITHUB_WORKSPACE" python - "$GITHUB_WORKSPACE/config/providers.json" data <<'PY'
                   import json
                   import pathlib
                   import re
@@ -135,6 +211,7 @@ jobs:
                       print("config/providers.json lists no providers, keeping all data files")
                       raise SystemExit(0)
                   configured = {entry["id"] for entry in entries}
+                  # Nested benchmark artifacts are not provider files and stay intact.
                   for stale in pathlib.Path(sys.argv[2]).glob("*.json"):
                       if stale.stem not in configured:
                           stale.unlink()

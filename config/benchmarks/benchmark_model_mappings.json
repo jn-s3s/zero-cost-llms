@@ -1,0 +1,1693 @@
+{
+    "schemaVersion": 2,
+    "automaticRules": [
+        {
+            "providerId": "openrouter",
+            "idSuffix": ":free",
+            "evidence": "config/providers.json documents :free on data[].id at https://openrouter.ai/api/v1/models; https://openrouter.ai/docs/guides/routing/model-variants/free documents appending :free to a model ID. Remove only this terminal catalogue-tier suffix for checkpoint identity and preserve the complete author/checkpoint slug. Match only a trusted exact checkpoint; do not strip other variants or infer aliases. Free entries have independent pricing, context limits and endpoints; this rule transfers neither their metadata nor verified endpoint performance."
+        },
+        {
+            "providerId": "cline",
+            "idSuffix": ":free",
+            "evidence": "config/providers.json documents :free on data[].id at https://api.cline.bot/api/v1/models; the captured catalogue preserves full author/model IDs such as google/gemma-4-31b-it:free and poolside/laguna-s-2.1:free. https://docs.cline.bot/llms-full.txt documents provider/model-name IDs using OpenRouter's naming convention. Remove only terminal :free and require an exact trusted checkpoint slug; no stealth, family, date, precision or alias transformation, and no endpoint-performance claim."
+        },
+        {
+            "providerId": "kilo",
+            "idSuffix": ":free",
+            "evidence": "config/providers.json identifies https://api.kilo.ai/api/gateway/models as the catalogue and isFree as its free-tier selector. The captured catalogue explicitly lists author/model:free IDs, including stepfun/step-3.7-flash:free and nvidia/nemotron-3-ultra-550b-a55b:free. Remove only terminal :free from those IDs and preserve the entire namespace/checkpoint; require an exact trusted checkpoint slug. This does not infer identity from isFree, canonical_slug, display names or non-suffixed routes, and does not verify endpoint performance."
+        },
+        {
+            "providerId": "nvidia",
+            "evidence": "config/providers.json identifies https://integrate.api.nvidia.com/v1/models as NVIDIA's catalogue; captured literal IDs include google/gemma-4-31b-it and openai/gpt-oss-20b. Preserve the complete published author/checkpoint ID unchanged and require an exact trusted canonical/Hugging Face checkpoint slug. NVIDIA namespaces are not universally Hugging Face namespaces: do not translate meta to meta-llama, add precision, resolve aliases or strip dates. Endpoint serving configuration/performance remains unverified."
+        },
+        {
+            "providerId": "groq",
+            "evidence": "config/providers.json identifies https://api.groq.com/openai/v1/models as Groq's catalogue; captured openai/gpt-oss-20b and openai/gpt-oss-120b IDs exactly equal their hugging_face_id fields. https://console.groq.com/docs/models publishes these full namespaced IDs. Preserve each full ID unchanged and require an exact trusted canonical/Hugging Face checkpoint slug; do not expand short IDs such as allam-2-7b, rewrite publisher namespaces, or infer family/precision/alias equivalence. This is checkpoint identity only, not endpoint-performance parity."
+        }
+    ],
+    "identities": [
+        {
+            "canonicalId": "catalogue:apodex/apodex-1.1-mini-20261001",
+            "displayName": "Apodex 1.1 Mini",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "apodex/apodex-1.1-mini:free",
+                    "expectedMetadata": { "canonical_slug": "apodex/apodex-1.1-mini-20261001" },
+                    "evidence": "https://openrouter.ai/api/v1/models declares canonical_slug=apodex/apodex-1.1-mini-20261001."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:inclusionai/ling-3.0-flash-sante-20260904",
+            "displayName": "Ling 3.0 Flash Sante",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "inclusionai/ling-3.0-flash-sante:free",
+                    "expectedMetadata": {
+                        "canonical_slug": "inclusionai/ling-3.0-flash-sante-20260904"
+                    },
+                    "evidence": "https://openrouter.ai/api/v1/models declares canonical_slug=inclusionai/ling-3.0-flash-sante-20260904."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:dots-studio/dots-3-note-preview-20260813",
+            "displayName": "Dots3 Note Preview",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "dots-studio/dots-3-note-preview:free",
+                    "expectedMetadata": {
+                        "canonical_slug": "dots-studio/dots-3-note-preview-20260813"
+                    },
+                    "evidence": "https://openrouter.ai/api/v1/models declares canonical_slug=dots-studio/dots-3-note-preview-20260813."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "hf:LiquidAI/LFM2.5-2.6B",
+            "displayName": "LFM2.5-2.6B",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "liquid/lfm-2.5-2.6b:free",
+                    "expectedMetadata": { "hugging_face_id": "LiquidAI/LFM2.5-2.6B" },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=LiquidAI/LFM2.5-2.6B; https://huggingface.co/LiquidAI/LFM2.5-2.6B."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "hf:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+            "displayName": "Nemotron 3.5 Lightning BF16",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "nvidia/nemotron-3.5-lightning:free",
+                    "expectedMetadata": {
+                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+                    },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16. This explicit precision variant is not merged with unqualified native models."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "hf:thinkingmachines/Inkling-Small",
+            "displayName": "Inkling Small",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "thinkingmachines/inkling-small:free",
+                    "expectedMetadata": { "hugging_face_id": "thinkingmachines/Inkling-Small" },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=thinkingmachines/Inkling-Small; https://huggingface.co/thinkingmachines/Inkling-Small."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "hf:poolside/Laguna-S-2.1",
+            "displayName": "Laguna S 2.1",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "poolside/laguna-s-2.1:free",
+                    "expectedMetadata": { "hugging_face_id": "poolside/Laguna-S-2.1" },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=poolside/Laguna-S-2.1; https://huggingface.co/poolside/Laguna-S-2.1."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "hf:thinkingmachines/Inkling",
+            "displayName": "Inkling",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "thinkingmachines/inkling:free",
+                    "expectedMetadata": { "hugging_face_id": "thinkingmachines/Inkling" },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=thinkingmachines/Inkling; https://huggingface.co/thinkingmachines/Inkling."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "hf:poolside/Laguna-XS-2.1",
+            "displayName": "Laguna XS 2.1",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "poolside/laguna-xs-2.1:free",
+                    "expectedMetadata": { "hugging_face_id": "poolside/Laguna-XS-2.1" },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=poolside/Laguna-XS-2.1; https://huggingface.co/poolside/Laguna-XS-2.1."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "hf:CohereLabs/North-Mini-Code-1.0",
+            "displayName": "North Mini Code 1.0",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "cohere/north-mini-code:free",
+                    "expectedMetadata": { "hugging_face_id": "CohereLabs/North-Mini-Code-1.0" },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=CohereLabs/North-Mini-Code-1.0; https://huggingface.co/CohereLabs/North-Mini-Code-1.0."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "hf:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+            "displayName": "Nemotron 3 Ultra BF16",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free",
+                    "expectedMetadata": {
+                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+                    },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16. No unqualified model evaluation is transferred to this explicit precision variant."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "hf:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+            "displayName": "Nemotron 3 Nano Omni Reasoning BF16",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+                    "expectedMetadata": {
+                        "hugging_face_id": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16"
+                    },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16. Preserve the reasoning and precision variant."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "hf:google/gemma-4-26B-A4B-it",
+            "displayName": "Gemma 4 26B A4B Instruct",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "google/gemma-4-26b-a4b-it:free",
+                    "expectedMetadata": { "hugging_face_id": "google/gemma-4-26B-A4B-it" },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=google/gemma-4-26B-A4B-it; https://huggingface.co/google/gemma-4-26B-A4B-it."
+                },
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "328adb49-4a7d-43e3-a2d5-802ae8100fe7",
+                    "expectedName": "@cf/google/gemma-4-26b-a4b-it",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search names this UUID @cf/google/gemma-4-26b-a4b-it. It is 26B A4B, not 31B."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:google/gemma-4-31B-it",
+            "reviewedCheckpointUrls": ["https://huggingface.co/google/gemma-4-31B-it"],
+            "displayName": "Gemma 4 31B Instruct",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "google/gemma-4-31b-it:free",
+                    "expectedMetadata": { "hugging_face_id": "google/gemma-4-31B-it" },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=google/gemma-4-31B-it; https://huggingface.co/google/gemma-4-31B-it."
+                },
+                {
+                    "providerId": "nvidia",
+                    "modelId": "google/gemma-4-31b-it",
+                    "evidence": "https://integrate.api.nvidia.com/v1/models declares literal publisher/checkpoint ID google/gemma-4-31b-it. No explicit quantization is declared; Requesty fp4 is kept separate."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "livebench",
+                    "modelId": "gemma-4-31b-it",
+                    "expectedModelUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+                    "evidence": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/public/table_2026_01_08.csv uses this raw ID; modelLinks.js at that revision links https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/. Published checkpoint evidence, not verified endpoint performance."
+                }
+            ]
+        },
+        {
+            "canonicalId": "checkpoint:nvidia/nemotron-3-super-120b-a12b-FP8",
+            "reviewedCheckpointUrls": [
+                "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
+            ],
+            "displayName": "Nemotron 3 Super FP8",
+            "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "nvidia/nemotron-3-super-120b-a12b:free",
+                    "expectedMetadata": {
+                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
+                    },
+                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8. LiveBench's link to this moving OpenRouter alias does not establish the precision evaluated, so no unqualified evaluation is assigned."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:nvidia/nemotron-3.5-lightning-30b-a3b",
+            "displayName": "Nemotron 3.5 Lightning 30B A3B",
+            "offerings": [
+                {
+                    "providerId": "requesty",
+                    "modelId": "nvidia/nemotron-3.5-lightning-30b-a3b",
+                    "expectedMetadata": {
+                        "model_lab": "nvidia",
+                        "model_canonical_name": "nemotron-3.5-lightning-30b-a3b"
+                    },
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia and model_canonical_name=nemotron-3.5-lightning-30b-a3b. This unqualified native model is separate from BF16-suffixed HF checkpoints."
+                },
+                {
+                    "providerId": "nvidia",
+                    "modelId": "nvidia/nemotron-3.5-lightning-30b-a3b",
+                    "evidence": "https://integrate.api.nvidia.com/v1/models declares literal native ID nvidia/nemotron-3.5-lightning-30b-a3b."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:nvidia/nemotron-3-nano-30b-a3b",
+            "displayName": "Nemotron 3 Nano 30B A3B",
+            "offerings": [
+                {
+                    "providerId": "requesty",
+                    "modelId": "nvidia/nemotron-3-nano-30b-a3b",
+                    "expectedMetadata": {
+                        "model_lab": "nvidia",
+                        "model_canonical_name": "nemotron-3-nano-30b-a3b"
+                    },
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia and model_canonical_name=nemotron-3-nano-30b-a3b."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+            "displayName": "Nemotron 3 Nano Omni Reasoning",
+            "offerings": [
+                {
+                    "providerId": "requesty",
+                    "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+                    "expectedMetadata": {
+                        "model_lab": "nvidia",
+                        "model_canonical_name": "nemotron-3-nano-omni-30b-a3b-reasoning"
+                    },
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia and model_canonical_name=nemotron-3-nano-omni-30b-a3b-reasoning; explicit BF16 variants remain separate."
+                },
+                {
+                    "providerId": "nvidia",
+                    "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+                    "evidence": "https://integrate.api.nvidia.com/v1/models declares literal native ID nvidia/nemotron-3-nano-omni-30b-a3b-reasoning."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:meta/muse-glimmer-30b",
+            "displayName": "Muse Glimmer 30B",
+            "offerings": [
+                {
+                    "providerId": "requesty",
+                    "modelId": "nvidia/muse-glimmer-30b",
+                    "expectedMetadata": {
+                        "model_lab": "meta",
+                        "model_canonical_name": "muse-glimmer-30b"
+                    },
+                    "evidence": "https://router.requesty.ai/v1/models explicitly declares model_lab=meta and model_canonical_name=muse-glimmer-30b despite the nvidia hosting namespace."
+                },
+                {
+                    "providerId": "nvidia",
+                    "modelId": "meta/muse-glimmer-30b",
+                    "evidence": "https://integrate.api.nvidia.com/v1/models declares publisher/checkpoint ID meta/muse-glimmer-30b."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:nvidia/nemotron-3-super-120b-a12b",
+            "displayName": "Nemotron 3 Super Native",
+            "offerings": [
+                {
+                    "providerId": "requesty",
+                    "modelId": "nvidia/nemotron-3-super-120b-a12b",
+                    "expectedMetadata": {
+                        "model_lab": "nvidia",
+                        "model_canonical_name": "nemotron-3-super-120b-a12b"
+                    },
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia and model_canonical_name=nemotron-3-super-120b-a12b. No FP8/BF16 inference is made."
+                },
+                {
+                    "providerId": "nvidia",
+                    "modelId": "nvidia/nemotron-3-super-120b-a12b",
+                    "evidence": "https://integrate.api.nvidia.com/v1/models declares literal native ID nvidia/nemotron-3-super-120b-a12b. Explicit precision variants remain separate."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:nvidia/nemotron-3-ultra-550b-a55b",
+            "displayName": "Nemotron 3 Ultra Native",
+            "offerings": [
+                {
+                    "providerId": "requesty",
+                    "modelId": "nvidia/nemotron-3-ultra-550b-a55b",
+                    "expectedMetadata": {
+                        "model_lab": "nvidia",
+                        "model_canonical_name": "nemotron-3-ultra-550b-a55b"
+                    },
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia and model_canonical_name=nemotron-3-ultra-550b-a55b. Explicit BF16 HF variants remain separate."
+                },
+                {
+                    "providerId": "nvidia",
+                    "modelId": "nvidia/nemotron-3-ultra-550b-a55b",
+                    "evidence": "https://integrate.api.nvidia.com/v1/models declares literal native ID nvidia/nemotron-3-ultra-550b-a55b."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "livebench",
+                    "modelId": "nemotron-3-ultra-550b-a55b",
+                    "expectedModelUrl": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b",
+                    "evidence": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/public/table_2026_01_08.csv uses this raw ID; modelLinks.js at that revision links https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b. Native checkpoint evidence only; no BF16/FP8 or endpoint-parity claim."
+                }
+            ]
+        },
+        {
+            "canonicalId": "catalogue:google/gemma-4-31b-it:fp4",
+            "displayName": "Gemma 4 31B Instruct FP4",
+            "offerings": [
+                {
+                    "providerId": "requesty",
+                    "modelId": "google/gemma-4-31b-it",
+                    "expectedMetadata": {
+                        "model_lab": "google",
+                        "model_canonical_name": "gemma-4-31b-it",
+                        "quantization": "fp4"
+                    },
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=google, model_canonical_name=gemma-4-31b-it and quantization=fp4. This is not the plain checkpoint."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:inclusionai/ling-3.0-tiny",
+            "displayName": "Ling 3.0 Tiny",
+            "offerings": [
+                {
+                    "providerId": "requesty",
+                    "modelId": "novita/inclusionai/ling-3.0-tiny",
+                    "expectedMetadata": {
+                        "model_lab": "inclusionai",
+                        "model_canonical_name": "ling-3.0-tiny"
+                    },
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=inclusionai and model_canonical_name=ling-3.0-tiny."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:inclusionai/ling-3.1-flash",
+            "displayName": "Ling 3.1 Flash",
+            "offerings": [
+                {
+                    "providerId": "requesty",
+                    "modelId": "novita/ling-3.1-flash",
+                    "expectedMetadata": {
+                        "model_lab": "inclusionai",
+                        "model_canonical_name": "ling-3.1-flash"
+                    },
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=inclusionai and model_canonical_name=ling-3.1-flash."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:mistral/leanstral-1-5",
+            "displayName": "Leanstral 1.5",
+            "offerings": [
+                {
+                    "providerId": "requesty",
+                    "modelId": "mistral/leanstral-1-5",
+                    "expectedMetadata": {
+                        "model_lab": "mistral",
+                        "model_canonical_name": "leanstral-1-5"
+                    },
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=mistral and model_canonical_name=leanstral-1-5. No equivalence to another dated Leanstral release is inferred."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:gemma-4-26b-a4b-it-chimerax:free",
+            "displayName": "Gemma 4 Chimerax",
+            "offerings": [
+                {
+                    "providerId": "routeway",
+                    "modelId": "gemma-4-26b-a4b-it-chimerax:free",
+                    "evidence": "https://api.routeway.ai/v1/models names this ID Gemma 4 26b A4b It Chimerax (Free), explicitly a community creative finetune. Not the base checkpoint."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:gemma-4-26b-a4b-it-darksoul:free",
+            "displayName": "Gemma 4 Darksoul",
+            "offerings": [
+                {
+                    "providerId": "routeway",
+                    "modelId": "gemma-4-26b-a4b-it-darksoul:free",
+                    "evidence": "https://api.routeway.ai/v1/models names this ID Gemma 4 26b A4b It Darksoul (Free), explicitly a community creative finetune. Not the base checkpoint."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:gemma-4-26b-a4b-it-luminous:free",
+            "displayName": "Gemma 4 Luminous",
+            "offerings": [
+                {
+                    "providerId": "routeway",
+                    "modelId": "gemma-4-26b-a4b-it-luminous:free",
+                    "evidence": "https://api.routeway.ai/v1/models names this ID Gemma 4 26b A4b It Luminous (Free), explicitly a community creative finetune. Not the base checkpoint."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:gemma-4-26b-a4b-it-moonlight:free",
+            "displayName": "Gemma 4 Moonlight",
+            "offerings": [
+                {
+                    "providerId": "routeway",
+                    "modelId": "gemma-4-26b-a4b-it-moonlight:free",
+                    "evidence": "https://api.routeway.ai/v1/models names this ID Gemma 4 26b A4b It Moonlight (Free), explicitly a community creative finetune. Not the base checkpoint."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:gemma-4-26b-a4b-it-musica:free",
+            "displayName": "Gemma 4 Musica",
+            "offerings": [
+                {
+                    "providerId": "routeway",
+                    "modelId": "gemma-4-26b-a4b-it-musica:free",
+                    "evidence": "https://api.routeway.ai/v1/models names this ID Gemma 4 26b A4b It Musica (Free), explicitly a community creative finetune. Not the base checkpoint."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:deepseek-v4-flash",
+            "displayName": "DeepSeek V4 Flash",
+            "offerings": [
+                {
+                    "providerId": "routeway",
+                    "modelId": "deepseek-v4-flash:free",
+                    "evidence": "https://api.routeway.ai/v1/models names this ID DeepSeek: DeepSeek V4 Flash (Free), owned_by=deepseek-ai. The :free tier suffix is not a checkpoint revision."
+                },
+                {
+                    "providerId": "orcarouter",
+                    "modelId": "deepseek/deepseek-v4-flash-free",
+                    "evidence": "https://api.orcarouter.ai/v1/models names this ID DeepSeek: DeepSeek V4 Flash (Free), owned_by=DeepSeek; the host namespace and free suffix do not change the explicitly named checkpoint."
+                },
+                {
+                    "providerId": "opencode-zen",
+                    "modelId": "deepseek-v4-flash-free",
+                    "evidence": "https://opencode.ai/zen/v1/models declares this literal ID. https://opencode.ai/docs/zen/ names deepseek-v4-flash as DeepSeek V4 Flash separately from V4.1 Flash and Flash Vision Exp; config/providers.json documents the -free tier suffix."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "livebench",
+                    "modelId": "deepseek-v4-flash",
+                    "expectedModelUrl": "https://api-docs.deepseek.com/news/news260424",
+                    "evidence": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/public/table_2026_06_25.csv uses this raw ID; modelLinks.js at that revision links https://api-docs.deepseek.com/news/news260424. This is not V4.1 or the dated 0731 checkpoint; no endpoint-performance claim."
+                }
+            ]
+        },
+        {
+            "canonicalId": "checkpoint:minimax-m2.7",
+            "displayName": "MiniMax M2.7",
+            "offerings": [
+                {
+                    "providerId": "routeway",
+                    "modelId": "minimax-m2.7:free",
+                    "evidence": "https://api.routeway.ai/v1/models names this ID MiniMax: MiniMax M2.7 (Free); the tier suffix is not a release change."
+                },
+                {
+                    "providerId": "llm7",
+                    "modelId": "minimax-m2.7",
+                    "evidence": "https://api.llm7.io/v1/models explicitly declares chat model minimax-m2.7, separate from minimax-m3."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "livebench",
+                    "modelId": "minimax-m2.7",
+                    "expectedModelUrl": "https://www.minimax.io/news/minimax-m27-en",
+                    "evidence": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/public/table_2026_01_08.csv uses this raw ID; modelLinks.js at revision 19e766a5de4de07d672ed5bf9f0a69ceed1d39bf identifies the same MiniMax release. Published checkpoint evidence, not endpoint parity."
+                }
+            ]
+        },
+        {
+            "canonicalId": "catalogue:muse-glimmer-30b:free",
+            "displayName": "Routeway Muse Glimmer 30B",
+            "offerings": [
+                {
+                    "providerId": "routeway",
+                    "modelId": "muse-glimmer-30b:free",
+                    "evidence": "https://api.routeway.ai/v1/models names this ID Meta: Glimmer 30B (Free). This catalogue identity is retained separately pending a linked checkpoint declaration."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:gemma-4-26b-a4b-it-meromero:free",
+            "displayName": "Gemma 4 MeroMero",
+            "offerings": [
+                {
+                    "providerId": "routeway",
+                    "modelId": "gemma-4-26b-a4b-it-meromero:free",
+                    "evidence": "https://api.routeway.ai/v1/models names this ID Gemma 4 26B A4B IT MeroMero (Free), a separate community finetune. No base checkpoint score is transferred."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:models/gemini-2.5-flash",
+            "displayName": "Gemini 2.5 Flash",
+            "offerings": [
+                {
+                    "providerId": "googleai",
+                    "modelId": "models/gemini-2.5-flash",
+                    "expectedMetadata": { "version": "001" },
+                    "evidence": "https://generativelanguage.googleapis.com/v1beta/models declares native name=models/gemini-2.5-flash, version=001 and stable June 2025 release. Dated preview evaluations are not assigned."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:models/gemini-2.5-pro",
+            "displayName": "Gemini 2.5 Pro",
+            "offerings": [
+                {
+                    "providerId": "googleai",
+                    "modelId": "models/gemini-2.5-pro",
+                    "expectedMetadata": { "version": "2.5" },
+                    "evidence": "https://generativelanguage.googleapis.com/v1beta/models declares native name=models/gemini-2.5-pro, version=2.5 and stable June 17 2025 release. June 05 preview is not equated."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:models/gemini-2.5-flash-lite",
+            "displayName": "Gemini 2.5 Flash-Lite",
+            "offerings": [
+                {
+                    "providerId": "googleai",
+                    "modelId": "models/gemini-2.5-flash-lite",
+                    "expectedMetadata": { "version": "001" },
+                    "evidence": "https://generativelanguage.googleapis.com/v1beta/models declares native name=models/gemini-2.5-flash-lite, version=001 and stable July 2025 release."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:google/gemini-3-flash-preview",
+            "displayName": "Gemini 3 Flash Preview",
+            "offerings": [
+                {
+                    "providerId": "googleai",
+                    "modelId": "models/gemini-3-flash-preview",
+                    "expectedMetadata": { "version": "3-flash-preview-12-2025" },
+                    "evidence": "https://generativelanguage.googleapis.com/v1beta/models declares version=3-flash-preview-12-2025. LiveBench modelLinks.js at 19e766a5de4de07d672ed5bf9f0a69ceed1d39bf explicitly groups the high/minimal rawNames under gemini-3-flash-preview, version 2025-12-17."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "livebench",
+                    "modelId": "gemini-3-flash-preview-high",
+                    "evidence": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/public/table_2026_01_08.csv uses this raw ID. modelLinks.js at that revision lists it as a high configuration of gemini-3-flash-preview; high is not an endpoint/default claim."
+                },
+                {
+                    "sourceId": "livebench",
+                    "modelId": "gemini-3-flash-preview-minimal",
+                    "evidence": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/public/table_2026_01_08.csv uses this raw ID. modelLinks.js at that revision lists it as a minimal configuration of gemini-3-flash-preview; preserve the evaluated configuration separately."
+                }
+            ]
+        },
+        {
+            "canonicalId": "catalogue:models/gemini-3.1-flash-lite",
+            "displayName": "Gemini 3.1 Flash Lite",
+            "offerings": [
+                {
+                    "providerId": "googleai",
+                    "modelId": "models/gemini-3.1-flash-lite",
+                    "expectedMetadata": { "version": "3.1-flash-lite-05-2026" },
+                    "evidence": "https://generativelanguage.googleapis.com/v1beta/models declares version=3.1-flash-lite-05-2026. Preview evaluations are not silently assigned to this release."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:google/gemini-3.5-flash",
+            "displayName": "Gemini 3.5 Flash",
+            "offerings": [
+                {
+                    "providerId": "googleai",
+                    "modelId": "models/gemini-3.5-flash",
+                    "expectedMetadata": { "version": "3.5-flash-05-2026" },
+                    "evidence": "https://generativelanguage.googleapis.com/v1beta/models declares version=3.5-flash-05-2026. LiveBench modelLinks.js at 19e766a5de4de07d672ed5bf9f0a69ceed1d39bf explicitly groups rawName gemini-3.5-flash-high under gemini-3.5-flash, version 2026-05-19."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "livebench",
+                    "modelId": "gemini-3.5-flash-high",
+                    "evidence": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/public/table_2026_06_25.csv uses this authoritative raw ID. High is the published evaluated configuration, not a verified endpoint/default setting."
+                }
+            ]
+        },
+        {
+            "canonicalId": "catalogue:models/gemini-3.5-flash-lite",
+            "displayName": "Gemini 3.5 Flash Lite",
+            "offerings": [
+                {
+                    "providerId": "googleai",
+                    "modelId": "models/gemini-3.5-flash-lite",
+                    "expectedMetadata": { "version": "3.5-flash-lite-07-2026" },
+                    "evidence": "https://generativelanguage.googleapis.com/v1beta/models declares version=3.5-flash-lite-07-2026. No score from another release is transferred."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:models/gemini-3.6-flash",
+            "displayName": "Gemini 3.6 Flash",
+            "offerings": [
+                {
+                    "providerId": "googleai",
+                    "modelId": "models/gemini-3.6-flash",
+                    "expectedMetadata": { "version": "3.6-flash-07-2026" },
+                    "evidence": "https://generativelanguage.googleapis.com/v1beta/models declares native name=models/gemini-3.6-flash, version=3.6-flash-07-2026."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:models/gemini-3.7-flash",
+            "displayName": "Gemini 3.7 Flash",
+            "offerings": [
+                {
+                    "providerId": "googleai",
+                    "modelId": "models/gemini-3.7-flash",
+                    "expectedMetadata": { "version": "3.7-flash-08-2026" },
+                    "evidence": "https://generativelanguage.googleapis.com/v1beta/models declares native name=models/gemini-3.7-flash, version=3.7-flash-08-2026."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:models/gemini-3.8-flash",
+            "displayName": "Gemini 3.8 Flash",
+            "offerings": [
+                {
+                    "providerId": "googleai",
+                    "modelId": "models/gemini-3.8-flash",
+                    "expectedMetadata": { "version": "3.0" },
+                    "evidence": "https://generativelanguage.googleapis.com/v1beta/models declares native name=models/gemini-3.8-flash and version=3.0. No identity equivalence with earlier model releases is inferred from this version field."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:models/gemini-robotics-er-2-preview",
+            "displayName": "Gemini Robotics-ER 2 Preview",
+            "offerings": [
+                {
+                    "providerId": "googleai",
+                    "modelId": "models/gemini-robotics-er-2-preview",
+                    "expectedMetadata": { "version": "2-preview" },
+                    "evidence": "https://generativelanguage.googleapis.com/v1beta/models declares native name=models/gemini-robotics-er-2-preview, version=2-preview and generateContent capability. Not excluded merely for a specialized model name."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:openai/gpt-oss-20b",
+            "reviewedCheckpointUrls": ["https://huggingface.co/openai/gpt-oss-20b"],
+            "displayName": "GPT OSS 20B",
+            "offerings": [
+                {
+                    "providerId": "nvidia",
+                    "modelId": "openai/gpt-oss-20b",
+                    "evidence": "https://integrate.api.nvidia.com/v1/models declares publisher/checkpoint ID openai/gpt-oss-20b."
+                },
+                {
+                    "providerId": "groq",
+                    "modelId": "openai/gpt-oss-20b",
+                    "expectedMetadata": { "hugging_face_id": "openai/gpt-oss-20b" },
+                    "evidence": "https://api.groq.com/openai/v1/models declares hugging_face_id=openai/gpt-oss-20b; https://huggingface.co/openai/gpt-oss-20b."
+                },
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "188a4e1e-253e-46d0-9616-0bf8c149763f",
+                    "expectedName": "@cf/openai/gpt-oss-20b",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/openai/gpt-oss-20b. Not the 120B or Safeguard checkpoint."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:openai/gpt-oss-120b",
+            "reviewedCheckpointUrls": ["https://huggingface.co/openai/gpt-oss-120b"],
+            "displayName": "GPT OSS 120B",
+            "offerings": [
+                {
+                    "providerId": "groq",
+                    "modelId": "openai/gpt-oss-120b",
+                    "expectedMetadata": { "hugging_face_id": "openai/gpt-oss-120b" },
+                    "evidence": "https://api.groq.com/openai/v1/models declares hugging_face_id=openai/gpt-oss-120b; https://huggingface.co/openai/gpt-oss-120b."
+                },
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "f9f2250b-1048-4a52-9910-d0bf976616a1",
+                    "expectedName": "@cf/openai/gpt-oss-120b",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search names this UUID @cf/openai/gpt-oss-120b."
+                },
+                {
+                    "providerId": "cerebras",
+                    "modelId": "gpt-oss-120b",
+                    "evidence": "https://api.cerebras.ai/v1/models declares literal model gpt-oss-120b, distinct from its qwen-3.8-27b model."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "livebench",
+                    "modelId": "gpt-oss-120b",
+                    "expectedModelUrl": "https://openai.com/index/introducing-gpt-oss/",
+                    "evidence": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/public/table_2026_01_08.csv uses this raw ID; modelLinks.js at that revision links https://openai.com/index/introducing-gpt-oss/ with version 2025-08-05."
+                },
+                {
+                    "sourceId": "aider_polyglot",
+                    "modelId": "gpt-oss-120b (high)",
+                    "evidence": "https://raw.githubusercontent.com/Aider-AI/aider/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml uses this raw model label. High effort, diff format and harness version are evaluated settings, not endpoint defaults; retain first/second pass separately."
+                }
+            ]
+        },
+        {
+            "canonicalId": "hf:ALLaM-AI/ALLaM-2.0-7B-Instruct",
+            "displayName": "ALLaM 2.0 7B Instruct",
+            "offerings": [
+                {
+                    "providerId": "groq",
+                    "modelId": "allam-2-7b",
+                    "expectedMetadata": { "hugging_face_id": "ALLaM-AI/ALLaM-2.0-7B-Instruct" },
+                    "evidence": "https://api.groq.com/openai/v1/models declares hugging_face_id=ALLaM-AI/ALLaM-2.0-7B-Instruct; https://huggingface.co/ALLaM-AI/ALLaM-2.0-7B-Instruct."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:qwen/qwen3.8-27b",
+            "displayName": "Groq Qwen3.8 27B",
+            "offerings": [
+                {
+                    "providerId": "groq",
+                    "modelId": "qwen/qwen3.8-27b",
+                    "evidence": "https://api.groq.com/openai/v1/models names this ID Qwen/Qwen3.8-27B. No linked precision/checkpoint declaration establishes cross-host equivalence, so this catalogue identity stays separate."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/google/gemma-2b-it-lora",
+            "displayName": "Gemma 2B Instruct LoRA",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "e8e8abe4-a372-4c13-815f-4688ba655c8e",
+                    "expectedName": "@cf/google/gemma-2b-it-lora",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/google/gemma-2b-it-lora. The explicitly LoRA-named variant is not the plain checkpoint."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:meta-llama/Llama-3.2-3B-Instruct",
+            "reviewedCheckpointUrls": ["https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"],
+            "displayName": "Llama 3.2 3B Instruct",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "d9dc8363-66f4-4bb0-8641-464ee7bfc131",
+                    "expectedName": "@cf/meta/llama-3.2-3b-instruct",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/meta/llama-3.2-3b-instruct; https://developers.cloudflare.com/workers-ai/models/llama-3.2-3b-instruct/ corroborates the checkpoint. Optional LoRA support is not an applied adapter."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "bigcodebench",
+                    "modelId": "Llama-3.2-3B-Instruct",
+                    "expectedModelUrl": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
+                    "evidence": "https://datasets-server.huggingface.co/rows?dataset=bigcode%2Fbigcodebench-results&config=default&split=train captured 2026-10-07 uses this raw label and links https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct. Complete/instruct and prefill stay separate; no endpoint parity."
+                }
+            ]
+        },
+        {
+            "canonicalId": "catalogue:@cf/mistral/mistral-7b-instruct-v0.2-lora",
+            "displayName": "Mistral 7B Instruct v0.2 LoRA",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "c58c317b-0c15-4bda-abb6-93e275f282d9",
+                    "expectedName": "@cf/mistral/mistral-7b-instruct-v0.2-lora",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/mistral/mistral-7b-instruct-v0.2-lora. No plain checkpoint evaluation is transferred to this explicit variant."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/utter-project/eurollm-9b-it",
+            "displayName": "EuroLLM 9B Instruct",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "bf419b23-844f-4a2c-8111-89dbd63152eb",
+                    "expectedName": "@cf/utter-project/eurollm-9b-it",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search names this UUID @cf/utter-project/eurollm-9b-it."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+            "reviewedCheckpointUrls": [
+                "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"
+            ],
+            "displayName": "DeepSeek R1 Distill Qwen 32B",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "ad01ab83-baf8-4e7b-8fed-a0a219d4eb45",
+                    "expectedName": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/deepseek-ai/deepseek-r1-distill-qwen-32b; https://developers.cloudflare.com/workers-ai/models/deepseek-r1-distill-qwen-32b/ corroborates the exact distillation, not its Qwen base."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "bigcodebench",
+                    "modelId": "DeepSeek-R1-Distill-Qwen-32B",
+                    "expectedModelUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+                    "evidence": "https://datasets-server.huggingface.co/rows?dataset=bigcode%2Fbigcodebench-results&config=default&split=train captured 2026-10-07 uses this raw label and links https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B. Complete/instruct and prefill stay separate."
+                }
+            ]
+        },
+        {
+            "canonicalId": "catalogue:@cf/meta/llama-3.1-8b-instruct-fp8",
+            "displayName": "Llama 3.1 8B Instruct FP8",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "9b9c87c6-d4b7-494c-b177-87feab5904db",
+                    "expectedName": "@cf/meta/llama-3.1-8b-instruct-fp8",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/meta/llama-3.1-8b-instruct-fp8. Plain EvalPlus and repair evaluations are not assigned to the explicit FP8 variant."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:meta-llama/Llama-3.2-1B-Instruct",
+            "reviewedCheckpointUrls": ["https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"],
+            "displayName": "Llama 3.2 1B Instruct",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "906a57fd-b018-4d6c-a43e-a296d4cc5839",
+                    "expectedName": "@cf/meta/llama-3.2-1b-instruct",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/meta/llama-3.2-1b-instruct; https://developers.cloudflare.com/workers-ai/models/llama-3.2-1b-instruct/ corroborates the exact size/release."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "bigcodebench",
+                    "modelId": "Llama-3.2-1B-Instruct",
+                    "expectedModelUrl": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
+                    "evidence": "https://datasets-server.huggingface.co/rows?dataset=bigcode%2Fbigcodebench-results&config=default&split=train captured 2026-10-07 uses this raw label and links https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct. Complete/instruct and prefill stay separate."
+                }
+            ]
+        },
+        {
+            "canonicalId": "catalogue:@cf/zai-org/glm-4.7-flash",
+            "displayName": "GLM 4.7 Flash",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "86b3e51a-4b05-43fa-a403-0f27821919d2",
+                    "expectedName": "@cf/zai-org/glm-4.7-flash",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/zai-org/glm-4.7-flash. GLM 4.7 non-Flash and newer releases are not equivalent."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/meta-llama/llama-2-7b-chat-hf-lora",
+            "displayName": "Llama 2 7B Chat LoRA",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "7ed8d8e8-6040-4680-843a-aef402d6b013",
+                    "expectedName": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/meta-llama/llama-2-7b-chat-hf-lora. Keep the explicitly LoRA-named product separate from the base checkpoint."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+            "displayName": "Llama 3.3 70B Instruct FP8 Fast",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "7a143886-c9bb-4a1c-be95-377b1973bc3b",
+                    "expectedName": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/meta/llama-3.3-70b-instruct-fp8-fast. The FP8/Fast variant is separate from plain checkpoint evaluations."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/ibm-granite/granite-4.0-h-micro",
+            "displayName": "Granite 4.0 H Micro",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "7952d0cc-cb00-4e10-be02-667565c2ee0f",
+                    "expectedName": "@cf/ibm-granite/granite-4.0-h-micro",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search names this UUID @cf/ibm-granite/granite-4.0-h-micro."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/swiss-ai/apertus-v1.5-8b",
+            "displayName": "Apertus v1.5 8B",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "56482a5b-020e-488d-9c56-11a3ed40719c",
+                    "expectedName": "@cf/swiss-ai/apertus-v1.5-8b",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search names this UUID @cf/swiss-ai/apertus-v1.5-8b."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:Qwen/Qwen2.5-Coder-32B-Instruct",
+            "reviewedCheckpointUrls": ["https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct"],
+            "displayName": "Qwen2.5 Coder 32B Instruct",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "51b71d5b-8bc0-4489-a107-95e542b69914",
+                    "expectedName": "@cf/qwen/qwen2.5-coder-32b-instruct",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/qwen/qwen2.5-coder-32b-instruct; https://developers.cloudflare.com/workers-ai/models/qwen2.5-coder-32b-instruct/ corroborates the plain checkpoint. Optional LoRA support is not an applied adapter; no endpoint-performance claim."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "evalplus",
+                    "modelId": "Qwen2.5-Coder-32B-Instruct",
+                    "expectedModelUrl": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+                    "evidence": "https://raw.githubusercontent.com/evalplus/evalplus.github.io/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json links this raw ID to https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct and explicitly declares prompted=true.",
+                    "configuration": { "prompted": true }
+                },
+                {
+                    "sourceId": "bigcodebench",
+                    "modelId": "Qwen2.5-Coder-32B-Instruct",
+                    "expectedModelUrl": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+                    "evidence": "https://datasets-server.huggingface.co/rows?dataset=bigcode%2Fbigcodebench-results&config=default&split=train captured 2026-10-07 uses this raw label and links https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct. Complete/instruct and prefill stay separate."
+                },
+                {
+                    "sourceId": "aider_python",
+                    "modelId": "Qwen2.5-Coder-32B-Instruct",
+                    "evidence": "https://raw.githubusercontent.com/Aider-AI/aider/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml uses this raw model label. Preserve the 133-task cohort, diff edit format, harness version and first/second pass; not endpoint defaults."
+                },
+                {
+                    "sourceId": "aider_polyglot",
+                    "modelId": "Qwen2.5-Coder-32B-Instruct",
+                    "evidence": "https://raw.githubusercontent.com/Aider-AI/aider/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml uses this raw model label in distinct whole/diff rows. Preserve both evaluated configurations and first/second pass; do not select the best result or infer endpoint defaults."
+                }
+            ]
+        },
+        {
+            "canonicalId": "catalogue:@cf/nvidia/nemotron-3-120b-a12b",
+            "displayName": "Cloudflare Nemotron 3 120B A12B",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "43dbadb4-2b0a-47e9-8479-34a49b971f1e",
+                    "expectedName": "@cf/nvidia/nemotron-3-120b-a12b",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/nvidia/nemotron-3-120b-a12b. The catalogue lacks an authoritative link/precision declaration proving equivalence to Nemotron Super, so no such evaluation is transferred."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+            "displayName": "Gemma Sea Lion v4 27B Instruct",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "41ca173f-72d5-4420-8915-49e835d2676e",
+                    "expectedName": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/aisingapore/gemma-sea-lion-v4-27b-it. This named finetune is not the base Gemma checkpoint."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/qwen/qwen3-30b-a3b-fp8",
+            "displayName": "Qwen3 30B A3B FP8",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "4090e54c-eee4-4221-b410-10c1c0f92f17",
+                    "expectedName": "@cf/qwen/qwen3-30b-a3b-fp8",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/qwen/qwen3-30b-a3b-fp8. Explicit FP8 and thinking/dates are not stripped to acquire another model's score."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/google/gemma-7b-it-lora",
+            "displayName": "Gemma 7B Instruct LoRA",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "337170b7-bd2f-4631-9a57-688b579cf6d3",
+                    "expectedName": "@cf/google/gemma-7b-it-lora",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/google/gemma-7b-it-lora. Keep this explicitly LoRA-named variant separate."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/mistralai/mistral-small-3.1-24b-instruct",
+            "displayName": "Mistral Small 3.1 24B Instruct",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "31690291-ebdc-4f98-bcfc-a44844e215b7",
+                    "expectedName": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/mistralai/mistral-small-3.1-24b-instruct. Older Small 24B or newer Small releases are not merged."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/meta/llama-3.2-11b-vision-instruct",
+            "displayName": "Llama 3.2 11B Vision Instruct",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "2cbc033b-ded8-4e02-bbb2-47cf05d5cfe5",
+                    "expectedName": "@cf/meta/llama-3.2-11b-vision-instruct",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/meta/llama-3.2-11b-vision-instruct. Text Generation task remains eligible despite multimodal input; different sizes are separate."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:@cf/qwen/qwen3.8-27b",
+            "displayName": "Cloudflare Qwen3.8 27B",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "22338608-b54d-4f04-884e-ab06f3dbbf3e",
+                    "expectedName": "@cf/qwen/qwen3.8-27b",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/qwen/qwen3.8-27b. Preserve the catalogue identity until linked variant metadata establishes cross-host equivalence."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "reviewedCheckpointUrls": [
+                "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+            ],
+            "displayName": "Llama 4 Scout 17B 16E Instruct",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "06455e78-19f7-487b-93cd-c05a3dd07813",
+                    "expectedName": "@cf/meta/llama-4-scout-17b-16e-instruct",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/meta/llama-4-scout-17b-16e-instruct; https://developers.cloudflare.com/workers-ai/models/llama-4-scout-17b-16e-instruct/ corroborates Scout with 17B active parameters and 16 experts."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "bigcodebench",
+                    "modelId": "Llama-4-Scout",
+                    "expectedModelUrl": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+                    "evidence": "https://datasets-server.huggingface.co/rows?dataset=bigcode%2Fbigcodebench-results&config=default&split=train captured 2026-10-07 uses this raw label and links https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct. Only complete has a score; instruct remains null. No endpoint parity."
+                }
+            ]
+        },
+        {
+            "canonicalId": "checkpoint:Qwen/QwQ-32B",
+            "reviewedCheckpointUrls": ["https://huggingface.co/Qwen/QwQ-32B"],
+            "displayName": "QwQ 32B",
+            "offerings": [
+                {
+                    "providerId": "cloudflare",
+                    "modelId": "02c16efa-29f5-4304-8e6c-3d188889f875",
+                    "expectedName": "@cf/qwen/qwq-32b",
+                    "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/qwen/qwq-32b; https://developers.cloudflare.com/workers-ai/models/qwq-32b/ and https://huggingface.co/Qwen/QwQ-32B identify QwQ 32B, not QwQ Preview or the Qwen base model."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "aider_polyglot",
+                    "modelId": "QwQ-32B",
+                    "evidence": "https://raw.githubusercontent.com/Aider-AI/aider/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml uses this raw model label with diff edit format. Preserve evaluated harness/configuration and retries; no equivalence to the separate QwQ plus Qwen model-pair system."
+                }
+            ]
+        },
+        {
+            "canonicalId": "catalogue:tencent/hy3-free",
+            "displayName": "Tencent Hy3",
+            "offerings": [
+                {
+                    "providerId": "orcarouter",
+                    "modelId": "tencent/hy3-free",
+                    "evidence": "https://api.orcarouter.ai/v1/models names this ID Tencent: Hy3 (Free) and describes the production release separately from Hy3-preview. No preview score is transferred."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:tencent/hy4-preview-free",
+            "displayName": "Tencent Hy4 Preview",
+            "offerings": [
+                {
+                    "providerId": "orcarouter",
+                    "modelId": "tencent/hy4-preview-free",
+                    "evidence": "https://api.orcarouter.ai/v1/models names this ID Tencent: Hy4 preview (Free); retain the preview identity."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:z-ai/glm-5.3-flash-free",
+            "displayName": "GLM 5.3 Flash",
+            "offerings": [
+                {
+                    "providerId": "orcarouter",
+                    "modelId": "z-ai/glm-5.3-flash-free",
+                    "evidence": "https://api.orcarouter.ai/v1/models names this ID Z.ai: GLM 5.3 Flash (Free). Not GLM 5.2, full 5.3, or an older Flash release."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:stepfun/step-3.7-flash:free",
+            "displayName": "Step 3.7 Flash",
+            "offerings": [
+                {
+                    "providerId": "kilo",
+                    "modelId": "stepfun/step-3.7-flash:free",
+                    "expectedMetadata": { "canonical_slug": "stepfun/step-3.7-flash:free" },
+                    "evidence": "https://api.kilo.ai/api/gateway/models declares canonical_slug=stepfun/step-3.7-flash:free and text/image input with text output. No earlier Step checkpoint score is transferred."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:CohereForAI/c4ai-command-r-08-2024",
+            "reviewedCheckpointUrls": ["https://huggingface.co/CohereForAI/c4ai-command-r-08-2024"],
+            "displayName": "Command R August 2024",
+            "offerings": [
+                {
+                    "providerId": "cohere",
+                    "modelId": "command-r-08-2024",
+                    "evidence": "https://api.cohere.ai/compatibility/v1/models declares native dated ID command-r-08-2024. https://huggingface.co/CohereForAI/c4ai-command-r-08-2024 redirects to CohereLabs with text-generation metadata; the dated checkpoint is retained."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "bigcodebench",
+                    "modelId": "C4AI-Command-R-08-2024",
+                    "expectedModelUrl": "https://huggingface.co/CohereForAI/c4ai-command-r-08-2024",
+                    "evidence": "https://datasets-server.huggingface.co/rows?dataset=bigcode%2Fbigcodebench-results&config=default&split=train captured 2026-10-07 uses this raw label and links https://huggingface.co/CohereForAI/c4ai-command-r-08-2024. Complete/instruct and prefill stay separate; not undated Command-R+."
+                }
+            ]
+        },
+        {
+            "canonicalId": "checkpoint:CohereForAI/c4ai-command-r-plus-08-2024",
+            "reviewedCheckpointUrls": [
+                "https://huggingface.co/CohereForAI/c4ai-command-r-plus-08-2024"
+            ],
+            "displayName": "Command R Plus August 2024",
+            "offerings": [
+                {
+                    "providerId": "cohere",
+                    "modelId": "command-r-plus-08-2024",
+                    "evidence": "https://api.cohere.ai/compatibility/v1/models declares native dated ID command-r-plus-08-2024. https://huggingface.co/CohereForAI/c4ai-command-r-plus-08-2024 confirms this dated checkpoint; BigCodeBench scores are null, not numeric coverage."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:DeepSeek-V4-Flash-0731",
+            "displayName": "DeepSeek V4 Flash 0731",
+            "offerings": [
+                {
+                    "providerId": "llm7",
+                    "modelId": "DeepSeek-V4-Flash-0731",
+                    "evidence": "https://api.llm7.io/v1/models declares this literal dated model ID. The 0731 variant is not the unqualified LiveBench DeepSeek V4 Flash evaluation."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "catalogue:GLM-5.3-Flash",
+            "displayName": "llm7 GLM 5.3 Flash",
+            "offerings": [
+                {
+                    "providerId": "llm7",
+                    "modelId": "GLM-5.3-Flash",
+                    "evidence": "https://api.llm7.io/v1/models declares literal chat model GLM-5.3-Flash. No linked variant metadata establishes a cross-host checkpoint mapping or equivalence to GLM 5.2."
+                }
+            ],
+            "evaluations": []
+        },
+        {
+            "canonicalId": "checkpoint:deepseek-v4-pro",
+            "displayName": "DeepSeek V4 Pro",
+            "offerings": [
+                {
+                    "providerId": "llm7",
+                    "modelId": "deepseek-v4-pro",
+                    "evidence": "https://api.llm7.io/v1/models explicitly declares chat model deepseek-v4-pro, separate from its dated Flash variant."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "livebench",
+                    "modelId": "deepseek-v4-pro",
+                    "expectedModelUrl": "https://api-docs.deepseek.com/news/news260424",
+                    "evidence": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/public/table_2026_06_25.csv uses this raw ID; modelLinks.js at that revision links https://api-docs.deepseek.com/news/news260424. Not Flash or another release; no endpoint parity."
+                }
+            ]
+        },
+        {
+            "canonicalId": "checkpoint:glm-5.2",
+            "displayName": "GLM 5.2",
+            "offerings": [
+                {
+                    "providerId": "llm7",
+                    "modelId": "glm-5.2",
+                    "evidence": "https://api.llm7.io/v1/models explicitly declares chat model glm-5.2, separate from GLM-5.3-Flash."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "livebench",
+                    "modelId": "glm-5.2",
+                    "expectedModelUrl": "https://z.ai/blog/glm-5.2",
+                    "evidence": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/public/table_2026_06_25.csv uses this raw ID; modelLinks.js at that revision links https://z.ai/blog/glm-5.2. Published checkpoint evidence, not endpoint parity."
+                }
+            ]
+        },
+        {
+            "canonicalId": "checkpoint:minimax-m3",
+            "displayName": "MiniMax M3",
+            "offerings": [
+                {
+                    "providerId": "llm7",
+                    "modelId": "minimax-m3",
+                    "evidence": "https://api.llm7.io/v1/models explicitly declares chat model minimax-m3, separate from minimax-m2.7."
+                }
+            ],
+            "evaluations": [
+                {
+                    "sourceId": "livebench",
+                    "modelId": "minimax-m3",
+                    "expectedModelUrl": "https://www.minimax.io/blog/minimax-m3",
+                    "evidence": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/public/table_2026_06_25.csv uses this raw ID; modelLinks.js at that revision links https://www.minimax.io/blog/minimax-m3. Published checkpoint evidence, not endpoint parity."
+                }
+            ]
+        },
+        {
+            "canonicalId": "catalogue:mistral-Nemo-Instruct-2407",
+            "displayName": "Mistral Nemo Instruct 2407",
+            "offerings": [
+                {
+                    "providerId": "llm7",
+                    "modelId": "mistral-Nemo-Instruct-2407",
+                    "evidence": "https://api.llm7.io/v1/models declares this literal dated chat model ID. Aider's q4_K_M evaluation is a different quantized variant and is not assigned."
+                }
+            ],
+            "evaluations": []
+        }
+    ],
+    "exclusions": [
+        {
+            "providerId": "openrouter",
+            "modelId": "nvidia/nemotron-3.5-content-safety:free",
+            "reason": "Specialist moderation/classification model, not general text generation.",
+            "evidence": "https://openrouter.ai/api/v1/models description explicitly calls this a multimodal guardrail model that moderates LLM/VLM inputs and responses; text output alone does not establish general generation."
+        },
+        {
+            "providerId": "requesty",
+            "modelId": "nvidia/nemotron-3.5-content-safety",
+            "reason": "Specialist moderation/classification model, not general text generation.",
+            "evidence": "https://router.requesty.ai/v1/models description explicitly declares safe/unsafe classification, safety category labels and optional reasoning traces. Generic chat API format does not change the task."
+        },
+        {
+            "providerId": "googleai",
+            "modelId": "models/gemini-2.5-flash-preview-tts",
+            "reason": "Speech generation, not general text output.",
+            "evidence": "https://generativelanguage.googleapis.com/v1beta/models description is Gemini 2.5 Flash Preview TTS. generateContent method alone does not establish general text generation."
+        },
+        {
+            "providerId": "googleai",
+            "modelId": "models/gemini-3.5-transcribe",
+            "reason": "Transcription specialist, not general text generation.",
+            "evidence": "https://generativelanguage.googleapis.com/v1beta/models description is Gemini 3.5 Transcribe. The exclusion follows the declared task, not coding-name keywords."
+        },
+        {
+            "providerId": "googleai",
+            "modelId": "models/gemini-3.1-flash-tts-preview",
+            "reason": "Speech generation, not general text output.",
+            "evidence": "https://generativelanguage.googleapis.com/v1beta/models description is Gemini 3.1 Flash TTS Preview; generateContent alone is insufficient."
+        },
+        {
+            "providerId": "googleai",
+            "modelId": "models/gemini-3.8-flash-tts",
+            "reason": "Speech generation, not general text output.",
+            "evidence": "https://generativelanguage.googleapis.com/v1beta/models description is Gemini 3.8 Flash TTS; generateContent alone is insufficient."
+        },
+        {
+            "providerId": "googleai",
+            "modelId": "models/gemini-3.8-flash-lite-tts",
+            "reason": "Speech generation, not general text output.",
+            "evidence": "https://generativelanguage.googleapis.com/v1beta/models description is Gemini 3.8 Flash Lite TTS; generateContent alone is insufficient."
+        },
+        {
+            "providerId": "googleai",
+            "modelId": "models/gemini-3.5-transcribe-live",
+            "reason": "Live transcription specialist, not general text generation.",
+            "evidence": "https://generativelanguage.googleapis.com/v1beta/models description is Gemini 3.5 Transcribe Live. Other bidiGenerateContent models remain uncertain rather than automatically excluded."
+        },
+        {
+            "providerId": "groq",
+            "modelId": "whisper-large-v3",
+            "reason": "Audio transcription, not general text input/output.",
+            "evidence": "https://api.groq.com/openai/v1/models declares input_modalities=[audio] and output_modalities=[transcription]."
+        },
+        {
+            "providerId": "groq",
+            "modelId": "meta-llama/llama-prompt-guard-2-86m",
+            "reason": "Prompt classifier, not general text generation.",
+            "evidence": "https://huggingface.co/api/models/meta-llama/Llama-Prompt-Guard-2-86M captured 2026-10-07 declares pipeline_tag=text-classification, revision a8ded8e697ce7c355e395a0df51f94adb4a2fd27. This overrides generic text modalities."
+        },
+        {
+            "providerId": "groq",
+            "modelId": "meta-llama/llama-prompt-guard-2-22m",
+            "reason": "Prompt classifier, not general text generation.",
+            "evidence": "https://huggingface.co/api/models/meta-llama/Llama-Prompt-Guard-2-22M captured 2026-10-07 declares pipeline_tag=text-classification, revision 11614a155199674a0a95e6602d6ab0417b790ed0. This overrides generic text modalities."
+        },
+        {
+            "providerId": "groq",
+            "modelId": "whisper-large-v3-turbo",
+            "reason": "Audio transcription, not general text input/output.",
+            "evidence": "https://api.groq.com/openai/v1/models declares input_modalities=[audio] and output_modalities=[transcription]."
+        },
+        {
+            "providerId": "groq",
+            "modelId": "canopylabs/orpheus-v1-english",
+            "reason": "Speech output, not general text generation.",
+            "evidence": "https://api.groq.com/openai/v1/models declares input_modalities=[text] and output_modalities=[speech]."
+        },
+        {
+            "providerId": "groq",
+            "modelId": "canopylabs/orpheus-arabic-saudi",
+            "reason": "Speech output, not general text generation.",
+            "evidence": "https://api.groq.com/openai/v1/models declares input_modalities=[text] and output_modalities=[speech]."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "eed32bc1-8775-4985-89ce-dd1405508ad8",
+            "reason": "Text embeddings, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text Embeddings for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "eaf31752-a074-441f-8b70-d593255d2811",
+            "reason": "Text classification, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text Classification for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "e580c765-810c-4da3-936c-a2808892f14c",
+            "reason": "Image generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Image for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "cc80437b-9a8d-4f1a-9c77-9aaf0d226922",
+            "reason": "Content safety classifier, despite generic Text Generation task metadata.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 names this UUID @cf/meta/llama-guard-3-8b; description explicitly says fine-tuned for content safety classification, with prompt/response safety labels, and tags include moderation, safety and guardrails."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "cb254e3b-372b-4d4e-8526-ada79940427a",
+            "reason": "Text embeddings, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text Embeddings for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "c837b2ac-4d9b-4d37-8811-34de60f0c44f",
+            "reason": "Speech generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Speech for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "c5255b94-2161-4779-bd25-54f061829a2a",
+            "reason": "Speech generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Speech for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "c1c12ce4-c36a-4aa6-8da4-f63ba4b8984d",
+            "reason": "Audio transcription, not general text input/output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Automatic Speech Recognition for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "bc2b61f6-7eb3-4cdf-94f5-ffc128bd6aa4",
+            "reason": "Text embeddings, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text Embeddings for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "a9abaef0-3031-47ad-8790-d311d8684c6c",
+            "reason": "Image generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Image for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "a2a2afba-b609-4325-8c41-5791ce962239",
+            "reason": "Audio transcription, not general text input/output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Automatic Speech Recognition for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "a226909f-eef8-4265-a3a0-90db0422762e",
+            "reason": "Audio transcription, not general text input/output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Automatic Speech Recognition for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "9e087485-23dc-47fa-997d-f5bfafc0c7cc",
+            "reason": "Image generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Image for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "7f9a76e1-d120-48dd-a565-101d328bbb02",
+            "reason": "Image classification, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Image Classification for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "7f797b20-3eb0-44fd-b571-6cbbaa3c423b",
+            "reason": "Image generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Image for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "7912c0ab-542e-44b9-b9ee-3113d226a8b5",
+            "reason": "Image generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Image for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "724608fa-983e-495d-b95c-340d6b7e78be",
+            "reason": "Image generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Image for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "6d52253a-b731-4a03-b203-cde2d4fae871",
+            "reason": "Image generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Image for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "617e7ec3-bf8d-4088-a863-4f89582d91b5",
+            "reason": "Translation specialist, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Translation for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "60920ed4-cf72-449a-a0f3-a38456b78262",
+            "reason": "Translation specialist, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Translation for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "5cdffa8e-1b1e-48e8-85f1-ab9b943cdd32",
+            "reason": "Image generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Image for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "57fbd08a-a4c4-411c-910d-b9459ff36c20",
+            "reason": "Text embeddings, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text Embeddings for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "429b9e8b-d99e-44de-91ad-706cf8183658",
+            "reason": "Text embeddings, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text Embeddings for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "3ae8936e-593e-4fb2-85ee-95dd8a057588",
+            "reason": "Image generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Image for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "2169496d-9c0e-4e49-8399-c44ee66bff7d",
+            "reason": "Audio transcription, not general text input/output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Automatic Speech Recognition for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "200f0812-148c-48c1-915d-fb3277a94a08",
+            "reason": "Audio transcription, not general text input/output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Automatic Speech Recognition for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "1f55679f-009e-4456-aa4f-049a62b4b6a0",
+            "reason": "Speech generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Speech for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "15631501-2742-4346-a469-22fe202188a2",
+            "reason": "Text embeddings, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text Embeddings for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "145337e7-cec3-4ebb-8e78-16ddfc75e580",
+            "reason": "Text classification, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text Classification for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "0e372c11-8720-46c9-a02d-666188a22dae",
+            "reason": "Image generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Image for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "01bc2fb0-4bca-4598-b985-d2584a3f46c0",
+            "reason": "Text embeddings, not general text generation.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text Embeddings for this UUID."
+        },
+        {
+            "providerId": "cloudflare",
+            "modelId": "01564c52-8717-47dc-8efd-907a2ca18301",
+            "reason": "Speech generation, not general text output.",
+            "evidence": "data/cloudflare.json captured 2026-10-07 from https://api.cloudflare.com/client/v4/accounts/<accountEnvVar>/ai/models/search declares task.name=Text-to-Speech for this UUID."
+        },
+        {
+            "providerId": "orcarouter",
+            "modelId": "orca/orcaverify-text1.0-free",
+            "reason": "AI-generated-text detection classifier, not general text generation.",
+            "evidence": "https://api.orcarouter.ai/v1/models description declares four calibrated verdicts AI_GENERATED, AI_ASSISTED, HUMAN and ABSTAIN with probability and paragraph localization. Chat Completions wire format does not make it general generation."
+        },
+        {
+            "providerId": "kilo",
+            "modelId": "nvidia/nemotron-3.5-content-safety:free",
+            "reason": "Specialist moderation/classification model, not general text generation.",
+            "evidence": "https://api.kilo.ai/api/gateway/models description explicitly calls this a multimodal guardrail model that moderates LLM/VLM inputs and responses."
+        },
+        {
+            "providerId": "mistral",
+            "modelId": "codestral-embed",
+            "reason": "No chat or FIM completion capability.",
+            "evidence": "https://api.mistral.ai/v1/models declares capabilities.completion_chat=false and capabilities.completion_fim=false. No name-keyword inference is required."
+        },
+        {
+            "providerId": "mistral",
+            "modelId": "mistral-embed-2312",
+            "reason": "No chat or FIM completion capability.",
+            "evidence": "https://api.mistral.ai/v1/models declares capabilities.completion_chat=false and capabilities.completion_fim=false. No name-keyword inference is required."
+        },
+        {
+            "providerId": "mistral",
+            "modelId": "mistral-moderation-2603",
+            "reason": "Explicit classification/moderation task.",
+            "evidence": "https://api.mistral.ai/v1/models declares capabilities.classification=true, capabilities.moderation=true, completion_chat=false and completion_fim=false."
+        },
+        {
+            "providerId": "mistral",
+            "modelId": "voxtral-mini-2602",
+            "reason": "Audio transcription without general chat completion.",
+            "evidence": "https://api.mistral.ai/v1/models declares capabilities.audio_transcription=true, completion_chat=false and completion_fim=false. Audio-understanding models with chat capability are not excluded by this rule."
+        },
+        {
+            "providerId": "mistral",
+            "modelId": "voxtral-mini-transcribe-realtime-2602",
+            "reason": "Realtime audio transcription without general chat completion.",
+            "evidence": "https://api.mistral.ai/v1/models declares capabilities.audio_transcription_realtime=true, completion_chat=false and completion_fim=false."
+        },
+        {
+            "providerId": "mistral",
+            "modelId": "voxtral-mini-tts-2603",
+            "reason": "Speech generation without general chat completion.",
+            "evidence": "https://api.mistral.ai/v1/models declares capabilities.audio_speech=true, completion_chat=false and completion_fim=false. Function-calling support alone does not make the output general text."
+        }
+    ]
+}

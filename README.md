@@ -134,7 +134,8 @@ The raw SWE-bench bands in `lib/benchmark_scores.py` are **percentage-score** lo
 | 20                 | B    |
 | 0                  | C    |
 
-These labels come from the raw percentage score alone and are not a capability rating.
+These labels are not interchangeable with the normalized-index tiers in
+`data/benchmarks/coding.json`: the same label does not imply the same score or capability.
 
 Read `presence` to separate the live catalogue from the retired leftovers, since `count` is the
 live total while the array itself holds both.
@@ -166,6 +167,134 @@ file, so a stale capture silently shrinks or grows their lists. The captures go 
 refresh one by opening its `auth: true` `other_source` url while signed in, saving the rendered
 page over that path and committing it. Google's is <https://aistudio.google.com/rate-limit>, and
 the script prints the free models a capture does not cover.
+
+## Provisional coding tiers
+
+After fetching catalogues, generate **one overall tier per model**, backed by public coding
+evidence. Tiers are a provisional product policy, not a scientific capability classification
+or a claim about overall accuracy. Separate **generation/debugging** and **repository editing**
+views remain available as diagnostics:
+
+```powershell
+uv run python generate_benchmark_rankings.py
+uv run python generate_benchmark_rankings.py --input ./data --output ./data --offline
+```
+
+Input and output default to `data/`. Automatic source refresh is enabled by default;
+`--offline` skips source network access and uses cached snapshots or committed normalized seeds.
+`--sources` defaults to `benchmark_sources`, and `--mappings` defaults to
+`config/benchmarks/benchmark_model_mappings.json`, which uses schema 2, as do source wrappers.
+`--providers` defaults to `config/providers.json`, and `--policy` defaults to
+`config/benchmarks/benchmark_tier_policy.json`. All default paths are
+anchored to the repository root. Runtime source caches live under `data/benchmarks/sources/`.
+A daily refresh retrieves published evidence; it never calls model endpoints to run evaluations.
+Source freshness is not a task score's calendar date; an evaluation date can remain unknown.
+Provider files are unchanged, and these artifacts are not providers in `config/providers.json`.
+
+| Artifact                            | Read it for                                                                                                                                            |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `data/benchmarks/coding.json`       | Schema-3 `status`, timestamps, `generationId`, `policyVersion`, `tierInterpretation`, `summary`, `sourceStates` and model rows in `data`.              |
+| `data/benchmarks/coding-audit.json` | Schema-3 audit with matching `generationId`, identity evidence, selected/excluded records, normalization, weights, policy/source revisions and issues. |
+
+The summary counts `activeOfferings`, `eligibleOfferings`, `excludedOfferings`,
+`uncertainOfferings`, `models`, `modelsWithGenerationEvidence` and `modelsWithEditingEvidence`,
+plus `ratedModels`, `unratedModels` and `tierCounts`. Each model row adds `tier`, `index`,
+`basis`, `confidence` and `provisional` alongside `modelId`, `name`, `eligibility`,
+`identityStatus`, provider alternatives
+(`providers` with `providerId`/`modelId`), and separate `generationDebugging` and
+`repositoryEditing` result lists. Read scores only within their benchmark and cohort, alongside
+the published configuration. Multiple hosts are alternatives, not ranked duplicates. Unknown
+evidence is not zero or proof of weak performance. A minimal consumer reads
+`modelId`, `name`, `tier`, `index`, `confidence`, `basis` and `providers`.
+Coverage is useful, not comprehensive;
+consult the current summary rather than assuming every free offering has evidence.
+
+### How the policy assigns a tier
+
+The index is a **0-100 relative public-reference-panel index**, not a success probability.
+For each accepted policy profile, a frozen public panel normalizes its score with midrank:
+`100 * (number of panel scores below it + 0.5 * number equal to it) / panel size`.
+These panels contain public reference models, not just today's free-catalogue members, so
+catalogue churn does not recalibrate tiers. Bands are lower bounds:
+
+| Index at least | Tier |
+| -------------- | ---- |
+| 90             | S+   |
+| 80             | S    |
+| 70             | A+   |
+| 60             | A    |
+| 50             | A-   |
+| 40             | B+   |
+| 25             | B    |
+| 0              | C    |
+
+These are versioned product-policy thresholds, not scientifically validated cutoffs.
+They use `lib/benchmark_tiers.py`'s `THRESHOLDS` on the normalized index, not the raw
+percentage bands used by provider entries' `swe_bench_tier` above. Matching labels across
+these outputs do not establish equivalent performance.
+Missing accepted evidence yields **Unrated**, never C, even if raw diagnostic scores exist.
+Every rated tier is provisional. Confidence describes evidence coverage and freshness
+separately; it does not penalize the strength index.
+
+Source families use deterministic first-available accepted profiles instead of averaging raw
+scores across incompatible benchmarks. Profile priority governs fallback; repeated eligible
+records are selected by the latest genuine evaluation date, then literal IDs, never by the
+highest score. When both workloads have accepted evidence, the overall index weights
+generation/debugging and repository editing 50/50. With only one, it renormalizes to 100%
+of the available workload, discloses a single-workload basis and gives limited confidence.
+
+The policy fixes accepted evaluation releases/cohorts and immutable reference panels.
+A new, unapproved benchmark release may appear in diagnostics but is not automatically
+tier-calibrated. The broader Aider 225-task single-model reference family admits different
+versions, edit formats and reasoning settings under disclosed heuristic assumptions; this
+does not claim calibrated cohort comparability. The audit records selections, exclusions,
+normalization, weights and revisions, plus leave-one-source-out sensitivity. That sensitivity
+is a policy robustness diagnostic, not a statistical confidence interval.
+
+`config/benchmarks/benchmark_tier_policy.json` requires deliberate, documented policy revisions when accepted
+profiles, panels or bands change. Frozen references keep the scale stable within a policy
+version; new model evidence can still change an individual tier. Public-source fetching stays
+automatic, not a manual snapshot-update requirement. Inspect `policyVersion` and the audit
+when comparing generations across policy versions.
+
+### Evidence and operational status
+
+Supported sources are **LiveBench Coding and Agentic** (distinct historical/latest cohorts),
+**BigCodeBench full Complete/Instruct** (not unverified Hard results), **EvalPlus** (tasks and
+prompted configurations), and **Aider Polyglot**. LiveBench Agentic is surrogate editing evidence,
+not equivalent to a direct repository-editing evaluation. Aider Python editing is optional only
+when its adapter is available. LiveCodeBench, Arena and SWE-bench remain deferred/import-blocked,
+not supported coverage. Diagnostic scores retain their original benchmark/cohort context;
+only accepted policy profiles contribute to the overall tier.
+
+Evidence applies to the evaluated checkpoint and published configuration, not measured
+performance of a provider's current endpoint. Missing configuration stays unknown, not verified
+equal. Identity mapping requires exact evidence or documented transformations: Google's
+`googleai` identity is its full `name`, Cloudflare's is `id`, and other providers use `id`.
+Never infer family, version, quantization, fine-tune or serving-configuration matches from
+similar names. Catalogue additions/removals are synchronized on regeneration. Update mappings
+and normalized seeds with explicit identity evidence and immutable source provenance, then
+inspect both artifacts before relying on them.
+
+Source refresh replaces caches atomically; a failed source retains its last good snapshot,
+reports failed source status and keeps the old success timestamp. Overall generation can
+succeed with source issues, so always inspect `sourceStates` and audit issues, and verify the
+main/audit `generationId` pair. New successful main/audit artifacts use schema 3. A fatal
+generation error retains a coherent prior schema-2 or schema-3 payload and provenance with
+its original schema and success timestamp while recording failed status and the failure timestamp. Recording a
+failed outcome exits `0`; inability to write it exits `1`. The workflow warns on the actual
+command failure even if an older artifact says success, without blocking provider publication.
+Seed or provider-fetch infrastructure failures still block publication. Also inspect provider
+failures: their retained catalogues keep `updatedAt` unchanged and record `lastFailedAt`, and
+must not be treated as newly fetched evidence.
+
+The audit preserves provider model metadata and loaded source snapshots; BigCodeBench
+snapshots also archive raw page bodies and hashes as capture evidence. These support
+inspection of the inputs behind a ranking, rather than just its final scores. Successful
+refreshes replace current cache files, but publication retains changed artifacts in
+`models-data` Git history. There is no automatic pruning of benchmark artifacts, caches
+or that history, so storage can grow over time; monitor it before changing retention or
+removing audit evidence.
 
 ## Adding a provider
 
@@ -205,7 +334,14 @@ models of its last success with `"status": "failed"` and the reason, letting dow
 show the list and the failure at the same time. Each failed provider is also raised as a
 warning annotation on the run, since a provider failure alone no longer turns the job red, and
 a seed step that cannot reach the branch stops the run rather than publishing a half-read
-tree. The branch holds nothing but `data/`.
+tree. After provider fetching, the workflow generates provisional coding tiers and refreshes
+evidence, warning separately about command failures, source failures, audit issues, outdated
+success schemas and mismatched artifact generations. Retained failed schema-2 wrappers remain
+readable; new successful wrappers must use schema 3. Seeding
+retains both evidence wrappers and source caches, so failures can preserve last-good evidence.
+The nested `data/benchmarks/` tree is copied recursively with the provider files; provider pruning
+only checks root-level `data/*.json` and never removes these artifacts or caches. The branch holds
+nothing but `data/`.
 
 ## Contributing and governance
 

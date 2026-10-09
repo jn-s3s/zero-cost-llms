@@ -37,6 +37,7 @@ All conditions MUST pass before a change is considered finished. There is no tes
 | `fetch_models.py`                    | CLI entry point: provider dispatch, atomic JSON writing, per-provider failure isolation.           |
 | `config/providers.json`              | Provider catalogue and quotas. Every `id` here needs a module registered in the registry.          |
 | `config/skip_providers.json`         | Providers considered but not fetched, each with the reason it was skipped; not read by the script. |
+| `config/benchmarks/`                 | Benchmark model identities, tier policy and curated SWE-bench/LiveCodeBench mappings.              |
 | `providers/__init__.py`              | `REGISTRY` mapping provider ids to fetching modules.                                               |
 | `providers/base.py`                  | `Provider` protocol plus the shared `models_url` config helper.                                    |
 | `lib/__init__.py`                    | Shared utilities package.                                                                          |
