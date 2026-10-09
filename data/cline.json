@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 16,
-  "updatedAt": "2026-10-08T05:47:07.061817+00:00",
+  "count": 15,
+  "updatedAt": "2026-10-09T05:51:33.577958+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -12,18 +12,7 @@
       "owned_by": "apodex",
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:37.114501+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "object": "model",
-      "created": 1788545946,
-      "owned_by": "inclusionai",
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -34,7 +23,7 @@
       "owned_by": "dots-studio",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -45,7 +34,7 @@
       "owned_by": "liquid",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -56,7 +45,7 @@
       "owned_by": "nvidia",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -67,7 +56,7 @@
       "owned_by": "thinkingmachines",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -78,7 +67,7 @@
       "owned_by": "poolside",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -89,7 +78,7 @@
       "owned_by": "thinkingmachines",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -100,7 +89,7 @@
       "owned_by": "poolside",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -111,7 +100,7 @@
       "owned_by": "cohere",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -122,7 +111,7 @@
       "owned_by": "nvidia",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -133,7 +122,7 @@
       "owned_by": "nvidia",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -144,7 +133,7 @@
       "owned_by": "nvidia",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -155,7 +144,7 @@
       "owned_by": "google",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -166,7 +155,7 @@
       "owned_by": "google",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
       "status": null
     },
@@ -177,8 +166,19 @@
       "owned_by": "nvidia",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "lastSeen": "2026-10-09T05:51:33.577958+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-sante:free",
+      "object": "model",
+      "created": 1788545946,
+      "owned_by": "inclusionai",
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-10-08T05:47:07.061817+00:00",
+      "removedDate": "2026-10-09T05:51:33.577958+00:00",
       "status": null
     },
     {

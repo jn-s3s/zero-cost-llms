@@ -1,14 +1,14 @@
 {
   "status": "success",
-  "count": 11,
-  "updatedAt": "2026-10-08T05:47:06.305600+00:00",
+  "count": 10,
+  "updatedAt": "2026-10-09T05:51:32.553650+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "DeepSeek-V4-Flash-0731",
       "object": "model",
-      "created": 1791430931,
+      "created": 1791517678,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -51,22 +51,22 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 100.0,
+      "availability_last_hour_percent": 98.58,
       "availability": {
         "old": 100.0,
-        "mid": 100.0,
-        "recent": 100.0
+        "mid": 98.63,
+        "recent": 95.89
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-08T05:47:06.305600+00:00",
+      "lastSeen": "2026-10-09T05:51:32.553650+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "GLM-5.3-Flash",
       "object": "model",
-      "created": 1791430931,
+      "created": 1791517678,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -109,22 +109,22 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 100.0,
+      "availability_last_hour_percent": 92.98,
       "availability": {
-        "old": 100.0,
-        "mid": 100.0,
-        "recent": 100.0
+        "old": 96.67,
+        "mid": 84.38,
+        "recent": 96.15
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-08T05:47:06.305600+00:00",
+      "lastSeen": "2026-10-09T05:51:32.553650+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "codestral-latest",
       "object": "model",
-      "created": 1791431053,
+      "created": 1791514276,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -167,15 +167,423 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 98.99,
+      "availability_last_hour_percent": 100.0,
       "availability": {
-        "old": 99.32,
-        "mid": 98.5,
-        "recent": 99.15
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 100.0
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-08T05:47:06.305600+00:00",
+      "lastSeen": "2026-10-09T05:51:32.553650+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gemma4:31b",
+      "object": "model",
+      "created": 1791517609,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.07,
+        "output": 0.23,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 262000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": true,
+      "reasoning": false,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": false,
+        "json_mode": true,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 100.0,
+      "availability": {
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 100.0
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-07T05:38:49.856182+00:00",
+      "lastSeen": "2026-10-09T05:51:32.553650+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "glm-5.2",
+      "object": "model",
+      "created": 1791517609,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.35,
+        "output": 1.1,
+        "cached_input": 0.26,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 976000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": true,
+      "reasoning": true,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": true,
+        "json_mode": true,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 96.97,
+      "availability": {
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 92.31
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-07T05:38:49.856182+00:00",
+      "lastSeen": "2026-10-09T05:51:32.553650+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gpt-oss:20b",
+      "object": "model",
+      "created": 1791517609,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.03,
+        "output": 0.05,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 128000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": true,
+      "reasoning": false,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": false,
+        "json_mode": true,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 100.0,
+      "availability": {
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 100.0
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
+      "lastSeen": "2026-10-09T05:51:32.553650+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "minimax-m2.7",
+      "object": "model",
+      "created": 1791517678,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.03,
+        "output": 0.05,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 180000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": false,
+      "json_mode": true,
+      "reasoning": true,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": true,
+        "json_mode": true,
+        "stream": false,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 87.59,
+      "availability": {
+        "old": 89.47,
+        "mid": 87.5,
+        "recent": 85.54
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
+      "lastSeen": "2026-10-09T05:51:32.553650+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "minimax-m3",
+      "object": "model",
+      "created": 1791517609,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "cached_input": 0.06,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 512000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": true,
+      "reasoning": true,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": true,
+        "tools": true,
+        "reasoning": true,
+        "json_mode": true,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 100.0,
+      "availability": {
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 100.0
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-07T05:38:49.856182+00:00",
+      "lastSeen": "2026-10-09T05:51:32.553650+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "mistral-Nemo-Instruct-2407",
+      "object": "model",
+      "created": 1791517187,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.03,
+        "output": 0.03,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 128000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": true,
+      "reasoning": false,
+      "tools_calling": false,
+      "capabilities": {
+        "vision": false,
+        "tools": false,
+        "reasoning": false,
+        "json_mode": true,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 100.0,
+      "availability": {
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 100.0
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
+      "lastSeen": "2026-10-09T05:51:32.553650+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nemotron-3-nano:30b",
+      "object": "model",
+      "created": 1791517609,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.03,
+        "output": 0.08,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 1000000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": false,
+      "reasoning": true,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": true,
+        "json_mode": false,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 100.0,
+      "availability": {
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 100.0
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-03T05:03:34.945863+00:00",
+      "lastSeen": "2026-10-09T05:51:32.553650+00:00",
       "removedDate": null,
       "status": null
     },
@@ -232,418 +640,10 @@
         "mid": 100.0,
         "recent": 100.0
       },
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-07T05:38:49.856182+00:00",
       "lastSeen": "2026-10-08T05:47:06.305600+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "gemma4:31b",
-      "object": "model",
-      "created": 1791430919,
-      "owned_by": "",
-      "model_type": "chat",
-      "schema_endpoints": [
-        "openai"
-      ],
-      "tier": "turbo",
-      "pricing_mode": "token",
-      "pricing": {
-        "input": 0.07,
-        "output": 0.23,
-        "currency": "USD",
-        "unit": "1M tokens"
-      },
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "context_window": {
-        "tokens": 262000,
-        "chars": null
-      },
-      "usage_based_only": false,
-      "stream": true,
-      "json_mode": true,
-      "reasoning": false,
-      "tools_calling": true,
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": false,
-        "json_mode": true,
-        "stream": true,
-        "supported_seconds": [],
-        "supported_sizes": [],
-        "supported_image_mime_types": [],
-        "requires_reference_image": false,
-        "atlascloud_routes": []
-      },
-      "availability_last_hour_percent": 100.0,
-      "availability": {
-        "old": 100.0,
-        "mid": 100.0,
-        "recent": 100.0
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-07T05:38:49.856182+00:00",
-      "lastSeen": "2026-10-08T05:47:06.305600+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "glm-5.2",
-      "object": "model",
-      "created": 1791430919,
-      "owned_by": "",
-      "model_type": "chat",
-      "schema_endpoints": [
-        "openai"
-      ],
-      "tier": "turbo",
-      "pricing_mode": "token",
-      "pricing": {
-        "input": 0.35,
-        "output": 1.1,
-        "cached_input": 0.26,
-        "currency": "USD",
-        "unit": "1M tokens"
-      },
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "context_window": {
-        "tokens": 976000,
-        "chars": null
-      },
-      "usage_based_only": false,
-      "stream": true,
-      "json_mode": true,
-      "reasoning": true,
-      "tools_calling": true,
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": true,
-        "json_mode": true,
-        "stream": true,
-        "supported_seconds": [],
-        "supported_sizes": [],
-        "supported_image_mime_types": [],
-        "requires_reference_image": false,
-        "atlascloud_routes": []
-      },
-      "availability_last_hour_percent": 97.83,
-      "availability": {
-        "old": 100.0,
-        "mid": 95.83,
-        "recent": 100.0
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-07T05:38:49.856182+00:00",
-      "lastSeen": "2026-10-08T05:47:06.305600+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "gpt-oss:20b",
-      "object": "model",
-      "created": 1791430919,
-      "owned_by": "",
-      "model_type": "chat",
-      "schema_endpoints": [
-        "openai"
-      ],
-      "tier": "turbo",
-      "pricing_mode": "token",
-      "pricing": {
-        "input": 0.03,
-        "output": 0.05,
-        "currency": "USD",
-        "unit": "1M tokens"
-      },
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "context_window": {
-        "tokens": 128000,
-        "chars": null
-      },
-      "usage_based_only": false,
-      "stream": true,
-      "json_mode": true,
-      "reasoning": false,
-      "tools_calling": true,
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": false,
-        "json_mode": true,
-        "stream": true,
-        "supported_seconds": [],
-        "supported_sizes": [],
-        "supported_image_mime_types": [],
-        "requires_reference_image": false,
-        "atlascloud_routes": []
-      },
-      "availability_last_hour_percent": 98.11,
-      "availability": {
-        "old": 92.31,
-        "mid": 100.0,
-        "recent": 100.0
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-08T05:47:06.305600+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "minimax-m2.7",
-      "object": "model",
-      "created": 1791430931,
-      "owned_by": "",
-      "model_type": "chat",
-      "schema_endpoints": [
-        "openai"
-      ],
-      "tier": "turbo",
-      "pricing_mode": "token",
-      "pricing": {
-        "input": 0.03,
-        "output": 0.05,
-        "currency": "USD",
-        "unit": "1M tokens"
-      },
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "context_window": {
-        "tokens": 180000,
-        "chars": null
-      },
-      "usage_based_only": false,
-      "stream": false,
-      "json_mode": true,
-      "reasoning": true,
-      "tools_calling": true,
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": true,
-        "json_mode": true,
-        "stream": false,
-        "supported_seconds": [],
-        "supported_sizes": [],
-        "supported_image_mime_types": [],
-        "requires_reference_image": false,
-        "atlascloud_routes": []
-      },
-      "availability_last_hour_percent": 97.38,
-      "availability": {
-        "old": 97.52,
-        "mid": 97.94,
-        "recent": 96.55
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-08T05:47:06.305600+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "minimax-m3",
-      "object": "model",
-      "created": 1791430919,
-      "owned_by": "",
-      "model_type": "chat",
-      "schema_endpoints": [
-        "openai"
-      ],
-      "tier": "turbo",
-      "pricing_mode": "token",
-      "pricing": {
-        "input": 0.15,
-        "output": 0.6,
-        "cached_input": 0.06,
-        "currency": "USD",
-        "unit": "1M tokens"
-      },
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "context_window": {
-        "tokens": 512000,
-        "chars": null
-      },
-      "usage_based_only": false,
-      "stream": true,
-      "json_mode": true,
-      "reasoning": true,
-      "tools_calling": true,
-      "capabilities": {
-        "vision": true,
-        "tools": true,
-        "reasoning": true,
-        "json_mode": true,
-        "stream": true,
-        "supported_seconds": [],
-        "supported_sizes": [],
-        "supported_image_mime_types": [],
-        "requires_reference_image": false,
-        "atlascloud_routes": []
-      },
-      "availability_last_hour_percent": 90.24,
-      "availability": {
-        "old": 100.0,
-        "mid": 95.65,
-        "recent": 50.0
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-07T05:38:49.856182+00:00",
-      "lastSeen": "2026-10-08T05:47:06.305600+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "mistral-Nemo-Instruct-2407",
-      "object": "model",
-      "created": 1791430746,
-      "owned_by": "",
-      "model_type": "chat",
-      "schema_endpoints": [
-        "openai"
-      ],
-      "tier": "turbo",
-      "pricing_mode": "token",
-      "pricing": {
-        "input": 0.03,
-        "output": 0.03,
-        "currency": "USD",
-        "unit": "1M tokens"
-      },
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "context_window": {
-        "tokens": 128000,
-        "chars": null
-      },
-      "usage_based_only": false,
-      "stream": true,
-      "json_mode": true,
-      "reasoning": false,
-      "tools_calling": false,
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "reasoning": false,
-        "json_mode": true,
-        "stream": true,
-        "supported_seconds": [],
-        "supported_sizes": [],
-        "supported_image_mime_types": [],
-        "requires_reference_image": false,
-        "atlascloud_routes": []
-      },
-      "availability_last_hour_percent": 100.0,
-      "availability": {
-        "old": 100.0,
-        "mid": 100.0,
-        "recent": 100.0
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-08T05:47:06.305600+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "nemotron-3-nano:30b",
-      "object": "model",
-      "created": 1791430919,
-      "owned_by": "",
-      "model_type": "chat",
-      "schema_endpoints": [
-        "openai"
-      ],
-      "tier": "turbo",
-      "pricing_mode": "token",
-      "pricing": {
-        "input": 0.03,
-        "output": 0.08,
-        "currency": "USD",
-        "unit": "1M tokens"
-      },
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "context_window": {
-        "tokens": 1000000,
-        "chars": null
-      },
-      "usage_based_only": false,
-      "stream": true,
-      "json_mode": false,
-      "reasoning": true,
-      "tools_calling": true,
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": true,
-        "json_mode": false,
-        "stream": true,
-        "supported_seconds": [],
-        "supported_sizes": [],
-        "supported_image_mime_types": [],
-        "requires_reference_image": false,
-        "atlascloud_routes": []
-      },
-      "availability_last_hour_percent": 96.15,
-      "availability": {
-        "old": 0.0,
-        "mid": 100.0,
-        "recent": 100.0
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-03T05:03:34.945863+00:00",
-      "lastSeen": "2026-10-08T05:47:06.305600+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-09T05:51:32.553650+00:00",
       "status": null
     }
   ]

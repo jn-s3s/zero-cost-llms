@@ -1,10 +1,84 @@
 {
   "status": "success",
   "count": 13,
-  "updatedAt": "2026-10-08T05:47:05.173956+00:00",
+  "updatedAt": "2026-10-09T05:51:30.555631+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "stepfun/step-5-preview-free",
+      "canonical_slug": "stepfun/step-5-preview-free",
+      "hugging_face_id": "",
+      "name": "StepFun: Step 5 Preview (free)",
+      "created": 1756238927,
+      "description": "Step 5 Preview is StepFun's flagship model for agentic work, with strong capabilities in software engineering, professional knowledge work, and finance. It natively supports text, image, and video input with a 1M-token context window and up to 64K output tokens. The model supports tool calling, structured outputs, and selectable reasoning levels (low/medium/high) for long-context research, coding, and multi-step workflows.",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000000000000",
+        "completion": "0.000000000000",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0",
+        "input_cache_read": "0.000000000000"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 64000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "tools",
+        "reasoning",
+        "include_reasoning"
+      ],
+      "default_parameters": {},
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "preferredIndex": 1,
+      "opencode": {
+        "variants": {
+          "low": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "low"
+            }
+          },
+          "medium": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "medium"
+            }
+          },
+          "high": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          }
+        }
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "kilo-auto/free",
       "name": "Auto Free",
@@ -43,7 +117,7 @@
         "include_reasoning"
       ],
       "opencode": {},
-      "preferredIndex": 1,
+      "preferredIndex": 2,
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "autoRouting": {
@@ -51,82 +125,13 @@
           "dots-studio/dots-3-note-preview:free",
           "inclusionai/ling-3.1-flash",
           "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "poolside/laguna-s-2.1:free"
+          "poolside/laguna-s-2.1:free",
+          "stealth/glyph-cluster"
         ]
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "inclusionai/ling-3.1-flash",
-      "name": "inclusionAI: Ling 3.1 Flash (new)",
-      "created": 1790950024,
-      "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "top_provider": {
-        "is_moderated": false,
-        "context_length": 262144,
-        "max_completion_tokens": 32768
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0",
-        "discount": 0
-      },
-      "context_length": 262144,
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "expiration_date": null,
-      "preferredIndex": 2,
-      "isFree": true,
-      "mayTrainOnYourPrompts": true,
-      "opencode": {
-        "variants": {
-          "instant": {
-            "reasoning": {
-              "enabled": false,
-              "effort": "none"
-            }
-          },
-          "thinking": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "high"
-            }
-          }
-        }
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-03T05:03:33.075431+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
       "removedDate": null,
       "status": null
     },
@@ -196,15 +201,15 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
       "removedDate": null,
       "status": null
     },
     {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
-      "created": 1788545946,
-      "description": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for...",
+      "id": "inclusionai/ling-3.1-flash",
+      "name": "inclusionAI: Ling 3.1 Flash (new)",
+      "created": 1790950024,
+      "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -245,6 +250,7 @@
         "top_p"
       ],
       "expiration_date": null,
+      "preferredIndex": 5,
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -264,8 +270,87 @@
         }
       },
       "presence": "active",
-      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "firstSeen": "2026-10-03T05:03:33.075431+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "stealth/glyph-cluster",
+      "canonical_slug": "stealth/glyph-cluster",
+      "hugging_face_id": "",
+      "name": "Stealth: Glyph Cluster (free)",
+      "created": 1756238927,
+      "description": "Your prompts and completions may be retained and used to train or improve the provider's services. Glyph Cluster is a reasoning model for coding and long-context analysis, served through Vercel AI Gateway during its stealth period at no cost. It supports function calling and streaming, takes text input only, and does not support structured outputs. Zero Data Retention is not available for this model.",
+      "context_length": 256000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000000000000",
+        "completion": "0.000000000000",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0",
+        "input_cache_read": "0.000000000000"
+      },
+      "top_provider": {
+        "context_length": 256000,
+        "max_completion_tokens": 256000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "tools",
+        "reasoning",
+        "include_reasoning"
+      ],
+      "default_parameters": {},
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "preferredIndex": 7,
+      "opencode": {
+        "variants": {
+          "low": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "low"
+            }
+          },
+          "medium": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "medium"
+            }
+          },
+          "high": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          },
+          "xhigh": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "xhigh"
+            }
+          }
+        }
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
       "removedDate": null,
       "status": null
     },
@@ -332,7 +417,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
       "removedDate": null,
       "status": null
     },
@@ -394,7 +479,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
       "removedDate": null,
       "status": null
     },
@@ -485,7 +570,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
       "removedDate": null,
       "status": null
     },
@@ -551,7 +636,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
       "removedDate": null,
       "status": null
     },
@@ -612,7 +697,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
       "removedDate": null,
       "status": null
     },
@@ -677,7 +762,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
       "removedDate": null,
       "status": null
     },
@@ -752,7 +837,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
       "removedDate": null,
       "status": null
     },
@@ -811,8 +896,77 @@
       "opencode": {},
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-sante:free",
+      "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+      "created": 1788545946,
+      "description": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for...",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "top_provider": {
+        "is_moderated": false,
+        "context_length": 262144,
+        "max_completion_tokens": 32768
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "discount": 0
+      },
+      "context_length": 262144,
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "expiration_date": null,
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {
+        "variants": {
+          "instant": {
+            "reasoning": {
+              "enabled": false,
+              "effort": "none"
+            }
+          },
+          "thinking": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          }
+        }
+      },
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
+      "lastSeen": "2026-10-08T05:47:05.173956+00:00",
+      "removedDate": "2026-10-09T05:51:30.555631+00:00",
       "status": null
     },
     {
@@ -882,10 +1036,10 @@
           }
         }
       },
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
       "lastSeen": "2026-10-08T05:47:05.173956+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-09T05:51:30.555631+00:00",
       "status": null
     },
     {

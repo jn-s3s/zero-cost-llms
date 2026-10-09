@@ -1,10 +1,121 @@
 {
   "status": "success",
   "count": 2,
-  "updatedAt": "2026-10-08T05:47:05.283557+00:00",
+  "updatedAt": "2026-10-09T05:51:31.338524+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "community/YoannDev90/poolside-laguna-s-2.1:free",
+      "object": "model",
+      "created": 1788189088,
+      "owned_by": "Free AI API",
+      "aliases": [
+        "YoannDev90/poolside-laguna-s-2.1:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Laguna S 2.1",
+      "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 262000,
+      "per_user_rpm": 45,
+      "health": {
+        "status": "healthy",
+        "success_rate": 96,
+        "requests": 50
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:11.674565+00:00",
+      "lastSeen": "2026-10-09T05:51:31.338524+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/YoannDev90/muse-glimmer-30b:free",
+      "object": "model",
+      "created": 1786463585,
+      "owned_by": "Free AI API",
+      "aliases": [
+        "YoannDev90/muse-glimmer-30b:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Muse Glimmer 30B",
+      "description": "Multimodal reasoning model  by Meta",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 131000,
+      "per_user_rpm": 10,
+      "health": {
+        "status": "degraded",
+        "success_rate": 90,
+        "requests": 50
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T13:00:48.913788+00:00",
+      "lastSeen": "2026-10-09T05:51:31.338524+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "community/vendouple/laguna-s-2.1:free",
       "object": "model",
@@ -53,119 +164,10 @@
         "success_rate": 100,
         "requests": 50
       },
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-08T05:47:05.283557+00:00",
       "lastSeen": "2026-10-08T05:47:05.283557+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/YoannDev90/poolside-laguna-s-2.1:free",
-      "object": "model",
-      "created": 1788189088,
-      "owned_by": "Free AI API",
-      "aliases": [
-        "YoannDev90/poolside-laguna-s-2.1:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Laguna S 2.1",
-      "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/messages"
-      ],
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "context_length": 262000,
-      "per_user_rpm": 45,
-      "health": {
-        "status": "healthy",
-        "success_rate": 100,
-        "requests": 50
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-08T05:47:05.283557+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/YoannDev90/muse-glimmer-30b:free",
-      "object": "model",
-      "created": 1786463585,
-      "owned_by": "Free AI API",
-      "aliases": [
-        "YoannDev90/muse-glimmer-30b:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Muse Glimmer 30B",
-      "description": "Multimodal reasoning model  by Meta",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/messages"
-      ],
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "context_length": 131000,
-      "per_user_rpm": 10,
-      "health": {
-        "status": "degraded",
-        "success_rate": 86,
-        "requests": 50
-      },
-      "presence": "removed",
-      "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-10-07T05:38:48.222746+00:00",
-      "removedDate": "2026-10-08T05:47:05.283557+00:00",
+      "removedDate": "2026-10-09T05:51:31.338524+00:00",
       "status": null
     },
     {
