@@ -12,6 +12,8 @@ import tempfile
 import traceback
 from pathlib import Path
 
+from lib.benchmark_scores import get_swebench_score, swebench_source, swebench_tier
+from lib.benchmark_scores_extra import get_livecodebench_score
 from lib.http_client import one_line, safe_text
 from lib.repo_root import REPO_ROOT
 from providers import get_provider
@@ -172,6 +174,66 @@ def _write_wrapper(target: Path, wrapper: dict) -> None:
             staging.unlink(missing_ok=True)
 
 
+def _benchmark_fields(model: dict, model_id: str) -> dict:
+    model_name = (
+        model.get("name") or model.get("display_name") or model.get("model") or model_id
+    )
+    swe_score = get_swebench_score(model_id, model_name)
+    lcb_score = get_livecodebench_score(model_id, model_name)
+    # Curated scores are ours, so they go under a key of our own shape.
+    # Provider benchmarks stay untouched: merging our objects into Routeway's
+    # flat bag would replace its numbers and publish incompatible shapes.
+    curated: dict[str, dict] = {}
+    if swe_score is not None:
+        curated["swe_bench_verified"] = {
+            "score": round(float(swe_score), 2),
+            "tier": swebench_tier(swe_score),
+            "source": swebench_source(),
+        }
+    if lcb_score is not None:
+        curated["livecodebench"] = {
+            "score": round(float(lcb_score), 2),
+            "source": "LiveCodeBench",
+        }
+    existing_bench = model.get("benchmarks")
+    swe_score_out = swe_score
+    if swe_score_out is None and isinstance(existing_bench, dict):
+        # Explicit keys keep unrelated SWE-bench-like estimates out of scores.
+        swe_keys = ("swe_bench_verified", "swe_bench", "swebench", "swe-bench")
+        for benchmark_key in swe_keys:
+            benchmark = existing_bench.get(benchmark_key)
+            if isinstance(benchmark, dict):
+                score = benchmark.get("score")
+                try:
+                    swe_score_out = float(score) if score is not None else None
+                except (ValueError, TypeError):
+                    swe_score_out = None
+                break
+        if swe_score_out is None:
+            for benchmark_key, benchmark in existing_bench.items():
+                if benchmark_key not in swe_keys:
+                    continue
+                if isinstance(benchmark, (int, float)):
+                    swe_score_out = float(benchmark)
+                    break
+                if isinstance(benchmark, dict) and benchmark.get("score") is not None:
+                    try:
+                        swe_score_out = float(benchmark["score"])
+                    except (ValueError, TypeError):
+                        swe_score_out = None
+                    break
+    return {
+        "benchmarks": existing_bench,
+        "curated_benchmarks": curated or None,
+        "swe_bench_score": round(float(swe_score_out), 2)
+        if swe_score_out is not None
+        else None,
+        "swe_bench_tier": swebench_tier(swe_score_out)
+        if swe_score_out is not None
+        else None,
+    }
+
+
 def save_provider(output: Path, provider_id: str, models: list[dict]) -> None:
     """Write a successful fetch as the provider's latest result.
 
@@ -233,6 +295,7 @@ def save_provider(output: Path, provider_id: str, models: list[dict]) -> None:
         enriched.append(
             {
                 **model,
+                **_benchmark_fields(model, model_id),
                 "presence": "active",
                 "firstSeen": first_seen,
                 "lastSeen": now,

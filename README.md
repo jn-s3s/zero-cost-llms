@@ -89,16 +89,52 @@ read the list from `data` and treat a top-level array as the older shape. That c
 transitional case: a file adopted from the old shape can show a non-empty `data` next to
 `updatedAt: null` until that provider's next success.
 
-Every entry in `data` also carries five fields the writer adds, which is how a model that
-disappears upstream stays in the file instead of vanishing:
+Each freshly fetched entry in `data` carries nine fields the writer sets. Retired entries
+retain their last enrichment; older retained entries may lack benchmark fields until fetched again:
 
-| Field         | Meaning                                                                                                            |
-| ------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `presence`    | `"active"` when the latest success listed the model, `"removed"` when it dropped out and is kept only for history. |
-| `firstSeen`   | ISO 8601 UTC timestamp of the first fetch that listed the model.                                                   |
-| `lastSeen`    | ISO 8601 UTC timestamp of the latest success that listed the model, frozen at the last listing once removed.       |
-| `removedDate` | ISO 8601 UTC timestamp of the success that first found the model missing, `null` while it is active.               |
-| `status`      | Always `null`: the writer replaces whatever the provider returned under that key.                                  |
+| Field                | Type           | Meaning                                                                                                                                                                                   |
+| -------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `presence`           | string         | `"active"` when the latest success listed the model, `"removed"` when it dropped out and is kept only for history.                                                                        |
+| `firstSeen`          | string         | ISO 8601 UTC timestamp of the first fetch that listed the model.                                                                                                                          |
+| `lastSeen`           | string         | ISO 8601 UTC timestamp of the latest success that listed the model, frozen at the last listing once removed.                                                                              |
+| `removedDate`        | string or null | ISO 8601 UTC timestamp of the success that first found the model missing, `null` while it is active.                                                                                      |
+| `status`             | null           | Always `null`: the writer replaces whatever the provider returned under that key.                                                                                                         |
+| `benchmarks`         | any JSON value | Original provider value, unchanged, including empty objects/arrays; `null` when absent or explicitly null upstream. No shared schema or guaranteed provenance.                            |
+| `curated_benchmarks` | object or null | Repository-mapped benchmark entries with numeric `score`, string `source` and, where supplied, string `tier`; `null` when no curated score is known. Separate from provider `benchmarks`. |
+| `swe_bench_score`    | number or null | SWE-bench convenience score, rounded to two decimal places; curated mapping takes precedence over provider benchmark fallback. `null` when neither supplies a usable score.               |
+| `swe_bench_tier`     | string or null | Raw-score band derived from the unrounded SWE-bench convenience score; `null` when no score is known. Not the overall coding-policy tier.                                                 |
+
+Curated `swe_bench_verified` entries come from `config/benchmarks/swebench_mapping.json`; their `source` uses
+its metadata (source name and capture/measurement details when present), falling back to
+`"SWE-bench Verified leaderboard"`. These are saved public results, not fresh endpoint
+evaluations or uniformly comparable agent configurations; consult the mapping's notes.
+The SWE-bench mapping currently records no capture date or `measured` attribution;
+the LiveCodeBench mapping at `config/benchmarks/livecodebench_mapping.json` has no source metadata. Do not infer evaluation or capture
+dates from model names or file timestamps.
+
+For `swe_bench_score`, a curated match wins. Otherwise, only an object-valued provider
+`benchmarks` is inspected: the first object under `swe_bench_verified`, `swe_bench`, `swebench`
+or `swe-bench` (in that order) supplies its `score` if convertible to a number. If that yields
+no score, the writer checks only those same aliases in provider order, stopping at the
+first numeric value or object with a non-null `score` (even if conversion fails).
+Unrecognized keys such as `swe_bench_like_estimate` are ignored for convenience fields
+but remain untouched in `benchmarks`. This fallback does not establish
+that the provider measured SWE-bench Verified or the same evaluation configuration.
+
+The raw SWE-bench bands in `lib/benchmark_scores.py` are **percentage-score** lower bounds:
+
+| Score at least (%) | Tier |
+| ------------------ | ---- |
+| 70                 | S+   |
+| 60                 | S    |
+| 50                 | A+   |
+| 40                 | A    |
+| 35                 | A-   |
+| 30                 | B+   |
+| 20                 | B    |
+| 0                  | C    |
+
+These labels come from the raw percentage score alone and are not a capability rating.
 
 Read `presence` to separate the live catalogue from the retired leftovers, since `count` is the
 live total while the array itself holds both.
