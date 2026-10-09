@@ -21,7 +21,7 @@ conventions pointer rather than assuming a familiar project layout or style.
 ## Adding or updating a provider
 
 Follow the five steps in [Adding a provider](README.md#adding-a-provider). In brief, add or
-update the catalogue entry in `providers.json`, implement a `providers/<id>.py` module exposing
+update the catalogue entry in `config/providers.json`, implement a `providers/<id>.py` module exposing
 `fetch(provider_config: dict) -> list[dict]`, register the module in
 `providers/__init__.py`, describe any source pages in `other_source`, and wire up credentials
 if the fetch needs them. A provider id must match `[a-z0-9][a-z0-9_-]*`. Model ids must be
@@ -29,7 +29,7 @@ unique after case folding; `googleai` is matched on `name` instead of `id`.
 
 A new keyed provider needs all of these coordinated pieces:
 
-1. Add `keyEnvVar` to its `providers.json` entry and read the environment variable named by
+1. Add `keyEnvVar` to its `config/providers.json` entry and read the environment variable named by
    `provider_config["keyEnvVar"]` in its module, never by a hardcoded name.
 2. Add `<NAME>: ${{ secrets.<NAME> }}` to the Fetch models step's `env:` block in
    `.github/workflows/fetch-models.yml`.
@@ -42,7 +42,7 @@ Without the workflow entry or repository secret, scheduled runs publish
 ## Refreshing snapshots
 
 `data_templates/*.html` are hand-saved captures and go stale without a code change. Find the
-snapshot's `auth: true` `other_source` URL in `providers.json`, open it while signed in, save
+snapshot's `auth: true` `other_source` URL in `config/providers.json`, open it while signed in, save
 the rendered page over the corresponding path in `data_templates/`, and commit the capture.
 For `googleai`, the page is <https://aistudio.google.com/rate-limit>. The script prints the
 free models a capture does not cover. `mistral` and `ollama-cloud` decide which models count

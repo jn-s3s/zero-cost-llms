@@ -25,7 +25,7 @@ def fetch_provider(provider: dict) -> list[dict]:
     """Fetch the free models for one provider.
 
     Args:
-        provider: A provider entry from providers.json.
+        provider: A provider entry from config/providers.json.
 
     Returns:
         The provider's free models as a list of dictionaries.
@@ -443,7 +443,7 @@ def main() -> int:
     parser.add_argument(
         "--providers",
         type=Path,
-        default=REPO_ROOT / "providers.json",
+        default=REPO_ROOT / "config" / "providers.json",
         help="provider catalogue to read (default: %(default)s)",
     )
     parser.add_argument(

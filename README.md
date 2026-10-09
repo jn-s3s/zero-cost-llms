@@ -31,7 +31,7 @@ The script needs Python 3.11 and nothing else: it runs on the standard library o
 | `cerebras`     | Every model its keyed `/models` endpoint lists, with no price filter applied                               |
 
 The `nvidia` free list comes from one unpaginated catalogue request (`pageSize=100` in
-`providers.json`), so it can only cover the first 100 free endpoints. Card links and API ids
+`config/providers.json`), so it can only cover the first 100 free endpoints. Card links and API ids
 differ in how they write a dot (`glm-5.3` versus `glm-5-3`), so the two are matched on a key
 that folds dots, underscores and hyphens together.
 
@@ -45,13 +45,13 @@ Eight providers read an authenticated endpoint, so they need their key in the en
 `googleai`, `groq`, `agnes`, `cerebras`, `cloudflare`, `cohere`, `mistral` and `qoder`.
 `cloudflare` also needs `CLOUDFLARE_ACCOUNT_ID` beside its token. The other twelve providers are
 read without a key, and `zai` is one of them: it scrapes the public pricing page and a committed
-snapshot, so its `keyEnvVar` in `providers.json` describes the provider's own API rather than a
-key the fetch needs. The variable each keyed provider uses is its `keyEnvVar` in `providers.json`.
+snapshot, so its `keyEnvVar` in `config/providers.json` describes the provider's own API rather than a
+key the fetch needs. The variable each keyed provider uses is its `keyEnvVar` in `config/providers.json`.
 In VS Code the keys are picked up from `.env` through `.vscode/launch.json`.
 
 | Flag          | Default                      | Purpose                                                                                             |
 | ------------- | ---------------------------- | --------------------------------------------------------------------------------------------------- |
-| `--providers` | `./providers.json`           | Provider catalogue to fetch.                                                                        |
+| `--providers` | `./config/providers.json`    | Provider catalogue to fetch.                                                                        |
 | `--output`    | `./data`                     | Directory the JSON files are written into.                                                          |
 | `--provider`  | every entry in the catalogue | Fetch only this id, repeatable. An id the catalogue does not list is refused and the run exits `1`. |
 
@@ -133,14 +133,14 @@ the script prints the free models a capture does not cover.
 
 ## Adding a provider
 
-1. Add an entry to `providers.json` with `api.baseUrl` and `api.models.endpoint`, and an `id`
+1. Add an entry to `config/providers.json` with `api.baseUrl` and `api.models.endpoint`, and an `id`
    matching `[a-z0-9][a-z0-9_-]*`: it is also the file name `data/<id>.json`, so an `id` with
    a dot, a space or a capital letter is refused as an unusable catalogue entry.
 2. Add `providers/<id>.py` exposing `fetch(provider_config: dict) -> list[dict]`. Every model
    it returns must carry an `id` that no other model shares once case is folded, because the
    writer rejects a duplicate; `googleai` is the one exception, matched on `name`.
 3. Add the module to the `from . import ...` line in `providers/__init__.py` and register it
-   in `REGISTRY` there. An id listed in `providers.json` without a registered module is
+   in `REGISTRY` there. An id listed in `config/providers.json` without a registered module is
    published as a failed fetch for that provider.
 4. If the fetch needs a key, give the catalogue entry a `keyEnvVar` naming the environment
    variable, and read it through `provider_config["keyEnvVar"]` in the module rather than a

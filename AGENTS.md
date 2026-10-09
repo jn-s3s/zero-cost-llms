@@ -35,8 +35,8 @@ All conditions MUST pass before a change is considered finished. There is no tes
 | Path                                 | Description                                                                                        |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------- |
 | `fetch_models.py`                    | CLI entry point: provider dispatch, atomic JSON writing, per-provider failure isolation.           |
-| `providers.json`                     | Provider catalogue and quotas. Every `id` here needs a module registered in the registry.          |
-| `skip_providers.json`                | Providers considered but not fetched, each with the reason it was skipped; not read by the script. |
+| `config/providers.json`              | Provider catalogue and quotas. Every `id` here needs a module registered in the registry.          |
+| `config/skip_providers.json`         | Providers considered but not fetched, each with the reason it was skipped; not read by the script. |
 | `providers/__init__.py`              | `REGISTRY` mapping provider ids to fetching modules.                                               |
 | `providers/base.py`                  | `Provider` protocol plus the shared `models_url` config helper.                                    |
 | `lib/__init__.py`                    | Shared utilities package.                                                                          |
@@ -44,7 +44,7 @@ All conditions MUST pass before a change is considered finished. There is no tes
 | `lib/html_tree.py`                   | Shared HTML element tree used by the providers that scrape a rendered page.                        |
 | `lib/rate_limits.py`                 | Shared plumbing the quota-carrying providers use to scrape and attach per-model rate limits.       |
 | `lib/limit_value.py`                 | Parses a scraped rate-limit cell that may carry a `K` or `M` suffix.                               |
-| `lib/repo_root.py`                   | Absolute repository root, used to locate `providers.json`, `data/` and `data_templates/`.          |
+| `lib/repo_root.py`                   | Absolute repository root, used to locate `config/providers.json`, `data/` and `data_templates/`.   |
 | `providers/<id>.py`                  | One module per provider exposing `fetch(provider_config)`.                                         |
 | `data/`                              | Generated JSON files, all gitignored.                                                              |
 | `data_templates/`                    | Hand-saved pages the providers that cannot fetch them read as snapshots.                           |

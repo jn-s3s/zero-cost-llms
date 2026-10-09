@@ -177,7 +177,7 @@ for model in payload["data"]:
 - The data is best-effort and moves at most once a day. There is no uptime or freshness
   guarantee, and a provider can change how it prices a model between runs.
 - "Free" is decided per provider by that provider's own public signal, recorded in
-  `providers.json` and listed in the repository README. It is not a contractual promise that
+  `config/providers.json` and listed in the repository README. It is not a contractual promise that
   a model stays free.
 - Reading the published files needs no key and no rate-limit etiquette beyond ordinary
   politeness. Politeness matters here: 20 files fetched per consumer per day adds up.

@@ -15,7 +15,7 @@ def fetch(provider_config: dict) -> list[dict]:
     with ``stealth``.
 
     Args:
-        provider_config: A provider entry from providers.json.
+        provider_config: A provider entry from config/providers.json.
 
     Returns:
         The provider's free models as a list of dictionaries.

@@ -105,7 +105,7 @@ jobs:
                   # script's job, and this covers a run that died before it could
                   # record the failure at all.
                   rsync -a "$RUNNER_TEMP/model-output/" data/
-                  python - "$GITHUB_WORKSPACE/providers.json" data <<'PY'
+                  python - "$GITHUB_WORKSPACE/config/providers.json" data <<'PY'
                   import json
                   import pathlib
                   import re
@@ -118,7 +118,7 @@ jobs:
                       raw = pathlib.Path(sys.argv[1]).read_text(encoding="utf-8")
                       entries = json.loads(raw)
                   except Exception as error:
-                      print(f"providers.json is unusable, keeping all data files: {error}")
+                      print(f"config/providers.json is unusable, keeping all data files: {error}")
                       raise SystemExit(0)
                   # An entry the fetch script would have refused cannot be used as
                   # proof that its provider was removed on purpose.
@@ -129,10 +129,10 @@ jobs:
                       for entry in entries
                   )
                   if not isinstance(entries, list) or not all(usable):
-                      print("providers.json has an unusable entry, keeping all data files")
+                      print("config/providers.json has an unusable entry, keeping all data files")
                       raise SystemExit(0)
                   if not entries:
-                      print("providers.json lists no providers, keeping all data files")
+                      print("config/providers.json lists no providers, keeping all data files")
                       raise SystemExit(0)
                   configured = {entry["id"] for entry in entries}
                   for stale in pathlib.Path(sys.argv[2]).glob("*.json"):

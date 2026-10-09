@@ -14,7 +14,7 @@ body:
       id: provider-id
       attributes:
           label: Suggested provider id
-          description: Must match `[a-z0-9][a-z0-9_-]*` and be unused in `providers.json`.
+          description: Must match `[a-z0-9][a-z0-9_-]*` and be unused in `config/providers.json`.
       validations:
           required: true
     - type: input
