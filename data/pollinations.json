@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 2,
-  "updatedAt": "2026-10-09T05:51:31.338524+00:00",
+  "count": 1,
+  "updatedAt": "2026-10-10T05:34:21.031433+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -51,12 +51,12 @@
       "per_user_rpm": 45,
       "health": {
         "status": "healthy",
-        "success_rate": 96,
+        "success_rate": 98,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-09T05:51:31.338524+00:00",
+      "lastSeen": "2026-10-10T05:34:21.031433+00:00",
       "removedDate": null,
       "status": null
     },
@@ -110,10 +110,10 @@
         "success_rate": 90,
         "requests": 50
       },
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
       "lastSeen": "2026-10-09T05:51:31.338524+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-10T05:34:21.031433+00:00",
       "status": null
     },
     {

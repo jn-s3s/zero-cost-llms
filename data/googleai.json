@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 22,
-  "updatedAt": "2026-10-09T05:51:27.048277+00:00",
+  "count": 20,
+  "updatedAt": "2026-10-10T05:34:15.587570+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -30,7 +30,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -59,7 +59,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -80,7 +80,7 @@
       "maxTemperature": 2,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -109,7 +109,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -138,7 +138,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -167,36 +167,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "name": "models/gemini-3.5-flash",
-      "version": "3.5-flash-05-2026",
-      "displayName": "Gemini 3.5 Flash",
-      "description": "Gemini 3.5 Flash",
-      "inputTokenLimit": 1048576,
-      "outputTokenLimit": 65536,
-      "supportedGenerationMethods": [
-        "generateContent",
-        "countTokens",
-        "createCachedContent",
-        "batchGenerateContent"
-      ],
-      "temperature": 1,
-      "topP": 0.95,
-      "topK": 64,
-      "maxTemperature": 2,
-      "thinking": true,
-      "rate_limits": {
-        "rpm": 5,
-        "tpm": 250000,
-        "rpd": 20
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -225,7 +196,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -251,7 +222,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -280,36 +251,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "name": "models/gemini-3.7-flash",
-      "version": "3.7-flash-08-2026",
-      "displayName": "Gemini 3.7 Flash",
-      "description": "Gemini 3.7 Flash",
-      "inputTokenLimit": 1048576,
-      "outputTokenLimit": 65536,
-      "supportedGenerationMethods": [
-        "generateContent",
-        "countTokens",
-        "createCachedContent",
-        "batchGenerateContent"
-      ],
-      "temperature": 1,
-      "topP": 0.95,
-      "topK": 64,
-      "maxTemperature": 2,
-      "thinking": true,
-      "rate_limits": {
-        "rpm": 5,
-        "tpm": 250000,
-        "rpd": 20
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -338,7 +280,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -365,7 +307,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -392,7 +334,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -419,7 +361,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -448,7 +390,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -473,7 +415,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -493,7 +435,7 @@
       "maxTemperature": 2,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -518,7 +460,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -544,7 +486,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -564,7 +506,7 @@
       "maxTemperature": 2,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
       "status": null
     },
@@ -589,8 +531,66 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "lastSeen": "2026-10-10T05:34:15.587570+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "name": "models/gemini-3.5-flash",
+      "version": "3.5-flash-05-2026",
+      "displayName": "Gemini 3.5 Flash",
+      "description": "Gemini 3.5 Flash",
+      "inputTokenLimit": 1048576,
+      "outputTokenLimit": 65536,
+      "supportedGenerationMethods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ],
+      "temperature": 1,
+      "topP": 0.95,
+      "topK": 64,
+      "maxTemperature": 2,
+      "thinking": true,
+      "rate_limits": {
+        "rpm": 5,
+        "tpm": 250000,
+        "rpd": 20
+      },
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:08.371477+00:00",
+      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "removedDate": "2026-10-10T05:34:15.587570+00:00",
+      "status": null
+    },
+    {
+      "name": "models/gemini-3.7-flash",
+      "version": "3.7-flash-08-2026",
+      "displayName": "Gemini 3.7 Flash",
+      "description": "Gemini 3.7 Flash",
+      "inputTokenLimit": 1048576,
+      "outputTokenLimit": 65536,
+      "supportedGenerationMethods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ],
+      "temperature": 1,
+      "topP": 0.95,
+      "topK": 64,
+      "maxTemperature": 2,
+      "thinking": true,
+      "rate_limits": {
+        "rpm": 5,
+        "tpm": 250000,
+        "rpd": 20
+      },
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:08.371477+00:00",
+      "lastSeen": "2026-10-09T05:51:27.048277+00:00",
+      "removedDate": "2026-10-10T05:34:15.587570+00:00",
       "status": null
     }
   ]

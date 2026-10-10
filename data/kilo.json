@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 13,
-  "updatedAt": "2026-10-09T05:51:30.555631+00:00",
+  "updatedAt": "2026-10-10T05:34:20.769504+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -75,7 +75,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
@@ -131,7 +131,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
@@ -201,13 +201,13 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "inclusionai/ling-3.1-flash",
-      "name": "inclusionAI: Ling 3.1 Flash (new)",
+      "name": "inclusionAI: Ling 3.1 Flash",
       "created": 1790950024,
       "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
       "architecture": {
@@ -271,7 +271,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-03T05:03:33.075431+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
@@ -350,7 +350,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
@@ -417,7 +417,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
@@ -479,7 +479,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
@@ -570,7 +570,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
@@ -636,7 +636,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
@@ -697,7 +697,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
@@ -762,7 +762,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
@@ -837,7 +837,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
@@ -896,7 +896,7 @@
       "opencode": {},
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-09T05:51:30.555631+00:00",
+      "lastSeen": "2026-10-10T05:34:20.769504+00:00",
       "removedDate": null,
       "status": null
     },
