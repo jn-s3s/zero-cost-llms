@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 1,
-  "updatedAt": "2026-10-10T05:34:21.031433+00:00",
+  "updatedAt": "2026-10-11T05:30:18.297793+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -38,6 +38,7 @@
         "/v1/responses",
         "/v1/messages"
       ],
+      "paid_only": false,
       "pricing": {
         "currency": "pollen"
       },
@@ -51,12 +52,12 @@
       "per_user_rpm": 45,
       "health": {
         "status": "healthy",
-        "success_rate": 98,
+        "success_rate": 100,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-10T05:34:21.031433+00:00",
+      "lastSeen": "2026-10-11T05:30:18.297793+00:00",
       "removedDate": null,
       "status": null
     },
