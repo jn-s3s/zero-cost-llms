@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 11,
-  "updatedAt": "2026-10-14T04:37:58.208565+00:00",
+  "updatedAt": "2026-10-15T04:20:27.076097+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -47,7 +47,7 @@
       "model_canonical_name": "ling-3.1-flash",
       "presence": "active",
       "firstSeen": "2026-10-06T06:03:26.785887+00:00",
-      "lastSeen": "2026-10-14T04:37:58.208565+00:00",
+      "lastSeen": "2026-10-15T04:20:27.076097+00:00",
       "removedDate": null,
       "status": null
     },
@@ -94,7 +94,7 @@
       "model_canonical_name": "nemotron-3.5-lightning-30b-a3b",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-14T04:37:58.208565+00:00",
+      "lastSeen": "2026-10-15T04:20:27.076097+00:00",
       "removedDate": null,
       "status": null
     },
@@ -141,7 +141,7 @@
       "model_canonical_name": "muse-glimmer-30b",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-14T04:37:58.208565+00:00",
+      "lastSeen": "2026-10-15T04:20:27.076097+00:00",
       "removedDate": null,
       "status": null
     },
@@ -187,7 +187,7 @@
       "model_canonical_name": "ling-3.0-tiny",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-14T04:37:58.208565+00:00",
+      "lastSeen": "2026-10-15T04:20:27.076097+00:00",
       "removedDate": null,
       "status": null
     },
@@ -234,7 +234,7 @@
       "model_canonical_name": "nemotron-3.5-content-safety",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-14T04:37:58.208565+00:00",
+      "lastSeen": "2026-10-15T04:20:27.076097+00:00",
       "removedDate": null,
       "status": null
     },
@@ -281,7 +281,7 @@
       "model_canonical_name": "nemotron-3-nano-omni-30b-a3b-reasoning",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-14T04:37:58.208565+00:00",
+      "lastSeen": "2026-10-15T04:20:27.076097+00:00",
       "removedDate": null,
       "status": null
     },
@@ -328,7 +328,7 @@
       "model_canonical_name": "nemotron-3-ultra-550b-a55b",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-14T04:37:58.208565+00:00",
+      "lastSeen": "2026-10-15T04:20:27.076097+00:00",
       "removedDate": null,
       "status": null
     },
@@ -374,7 +374,7 @@
       "model_canonical_name": "leanstral-1-5",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-14T04:37:58.208565+00:00",
+      "lastSeen": "2026-10-15T04:20:27.076097+00:00",
       "removedDate": null,
       "status": null
     },
@@ -422,7 +422,7 @@
       "model_canonical_name": "gemma-4-31b-it",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-14T04:37:58.208565+00:00",
+      "lastSeen": "2026-10-15T04:20:27.076097+00:00",
       "removedDate": null,
       "status": null
     },
@@ -469,7 +469,7 @@
       "model_canonical_name": "nemotron-3-super-120b-a12b",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-14T04:37:58.208565+00:00",
+      "lastSeen": "2026-10-15T04:20:27.076097+00:00",
       "removedDate": null,
       "status": null
     },
@@ -516,7 +516,7 @@
       "model_canonical_name": "nemotron-3-nano-30b-a3b",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-14T04:37:58.208565+00:00",
+      "lastSeen": "2026-10-15T04:20:27.076097+00:00",
       "removedDate": null,
       "status": null
     }
