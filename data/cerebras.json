@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 2,
-  "updatedAt": "2026-10-15T04:20:36.463931+00:00",
+  "updatedAt": "2026-10-16T04:15:54.432869+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -19,7 +19,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-      "lastSeen": "2026-10-15T04:20:36.463931+00:00",
+      "lastSeen": "2026-10-16T04:15:54.432869+00:00",
       "removedDate": null,
       "status": null
     },
@@ -37,7 +37,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-      "lastSeen": "2026-10-15T04:20:36.463931+00:00",
+      "lastSeen": "2026-10-16T04:15:54.432869+00:00",
       "removedDate": null,
       "status": null
     }

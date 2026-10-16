@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 12,
-  "updatedAt": "2026-10-15T04:20:32.417665+00:00",
+  "updatedAt": "2026-10-16T04:15:49.424757+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -43,33 +43,34 @@
         "include_reasoning"
       ],
       "opencode": {},
+      "inference_provider_ids": [],
       "preferredIndex": 1,
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "autoRouting": {
         "models": [
           "dots-studio/dots-3-note-preview:free",
-          "nvidia/nemotron-3-super-120b-a12b:free",
-          "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "poolside/laguna-s-2.1:free",
+          "nvidia/nemotron-3.5-super-vl:free",
           "stealth/glyph-cluster"
         ]
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-15T04:20:32.417665+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
       "removedDate": null,
       "status": null
     },
     {
-      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "name": "NVIDIA: Nemotron 3 Ultra (free)",
-      "created": 1780551208,
-      "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...\n\n**Terms of service** For NVIDIA free endpoints (Super/Ultra/etc): Trial use only - do not submit personal or confidential data. Your use is logged for security purposes and to improve NVIDIA products and services. The logged session data for improvement purposes is not linked to your identity or any persistent identifier. For more information about our data processing practices, see our [Privacy Policy](https://www.nvidia.com/en-us/about-nvidia/privacy-policy/). By interacting with this endpoint, you consent to our collection, recording, and use of such information and the [NVIDIA API Trial Terms of Service](https://assets.ngc.nvidia.com/products/api-catalog/legal/NVIDIA%20API%20Trial%20Terms%20of%20Service.pdf).",
+      "id": "nvidia/nemotron-3.5-super-vl:free",
+      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "created": 1792076662,
+      "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video...\n\n**Terms of service** For NVIDIA free endpoints (Super/Ultra/etc): Trial use only - do not submit personal or confidential data. Your use is logged for security purposes and to improve NVIDIA products and services. The logged session data for improvement purposes is not linked to your identity or any persistent identifier. For more information about our data processing practices, see our [Privacy Policy](https://www.nvidia.com/en-us/about-nvidia/privacy-policy/). By interacting with this endpoint, you consent to our collection, recording, and use of such information and the [NVIDIA API Trial Terms of Service](https://assets.ngc.nvidia.com/products/api-catalog/legal/NVIDIA%20API%20Trial%20Terms%20of%20Service.pdf).",
       "architecture": {
-        "modality": "text->text",
+        "modality": "text+image+video->text",
         "input_modalities": [
-          "text"
+          "text",
+          "image",
+          "video"
         ],
         "output_modalities": [
           "text"
@@ -79,7 +80,7 @@
       "top_provider": {
         "is_moderated": false,
         "context_length": 1000000,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 131072
       },
       "pricing": {
         "prompt": "0",
@@ -92,42 +93,45 @@
         "include_reasoning",
         "max_tokens",
         "reasoning",
-        "reasoning_effort",
+        "response_format",
         "seed",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
         "top_p"
       ],
       "expiration_date": null,
+      "inference_provider_ids": [
+        "nvidia"
+      ],
       "preferredIndex": 2,
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
         "variants": {
-          "none": {
+          "instant": {
             "reasoning": {
               "enabled": false,
               "effort": "none"
             }
           },
-          "medium": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "medium"
-            }
-          },
-          "high": {
+          "thinking": {
             "reasoning": {
               "enabled": true,
               "effort": "high"
             }
           }
-        }
+        },
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ]
       },
       "presence": "active",
-      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-15T04:20:32.417665+00:00",
+      "firstSeen": "2026-10-16T04:15:49.424757+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
       "removedDate": null,
       "status": null
     },
@@ -175,6 +179,9 @@
       "default_parameters": {},
       "isFree": true,
       "mayTrainOnYourPrompts": true,
+      "inference_provider_ids": [
+        "stealth"
+      ],
       "preferredIndex": 3,
       "opencode": {
         "variants": {
@@ -202,11 +209,22 @@
               "effort": "xhigh"
             }
           }
-        }
+        },
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          }
+        ]
       },
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-10-15T04:20:32.417665+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
       "removedDate": null,
       "status": null
     },
@@ -258,6 +276,9 @@
         "top_logprobs"
       ],
       "expiration_date": null,
+      "inference_provider_ids": [
+        "liquid"
+      ],
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -268,11 +289,12 @@
               "effort": "high"
             }
           }
-        }
+        },
+        "reasoning_options": []
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-15T04:20:32.417665+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
       "removedDate": null,
       "status": null
     },
@@ -314,6 +336,9 @@
         "top_p"
       ],
       "expiration_date": null,
+      "inference_provider_ids": [
+        "nvidia"
+      ],
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -330,11 +355,16 @@
               "effort": "high"
             }
           }
-        }
+        },
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ]
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-15T04:20:32.417665+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
       "removedDate": null,
       "status": null
     },
@@ -381,6 +411,9 @@
         "top_p"
       ],
       "expiration_date": null,
+      "inference_provider_ids": [
+        "thinkingmachines"
+      ],
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -421,11 +454,24 @@
               "effort": "max"
             }
           }
-        }
+        },
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "max"
+            ]
+          }
+        ]
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-15T04:20:32.417665+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
       "removedDate": null,
       "status": null
     },
@@ -471,6 +517,9 @@
         "top_p"
       ],
       "expiration_date": null,
+      "inference_provider_ids": [
+        "cohere"
+      ],
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -487,11 +536,16 @@
               "effort": "high"
             }
           }
-        }
+        },
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ]
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-15T04:20:32.417665+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
       "removedDate": null,
       "status": null
     },
@@ -532,6 +586,9 @@
         "top_p"
       ],
       "expiration_date": null,
+      "inference_provider_ids": [
+        "nvidia"
+      ],
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -548,11 +605,98 @@
               "effort": "high"
             }
           }
-        }
+        },
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ]
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-15T04:20:32.417665+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "name": "NVIDIA: Nemotron 3 Ultra (free)",
+      "created": 1780551208,
+      "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...\n\n**Terms of service** For NVIDIA free endpoints (Super/Ultra/etc): Trial use only - do not submit personal or confidential data. Your use is logged for security purposes and to improve NVIDIA products and services. The logged session data for improvement purposes is not linked to your identity or any persistent identifier. For more information about our data processing practices, see our [Privacy Policy](https://www.nvidia.com/en-us/about-nvidia/privacy-policy/). By interacting with this endpoint, you consent to our collection, recording, and use of such information and the [NVIDIA API Trial Terms of Service](https://assets.ngc.nvidia.com/products/api-catalog/legal/NVIDIA%20API%20Trial%20Terms%20of%20Service.pdf).",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "top_provider": {
+        "is_moderated": false,
+        "context_length": 1000000,
+        "max_completion_tokens": 65536
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "discount": 0
+      },
+      "context_length": 1000000,
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "expiration_date": null,
+      "inference_provider_ids": [
+        "nvidia"
+      ],
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {
+        "variants": {
+          "none": {
+            "reasoning": {
+              "enabled": false,
+              "effort": "none"
+            }
+          },
+          "medium": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "medium"
+            }
+          },
+          "high": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          }
+        },
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "medium",
+              "high"
+            ]
+          }
+        ]
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
       "removedDate": null,
       "status": null
     },
@@ -597,6 +741,9 @@
         "top_p"
       ],
       "expiration_date": null,
+      "inference_provider_ids": [
+        "nvidia"
+      ],
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -613,11 +760,16 @@
               "effort": "high"
             }
           }
-        }
+        },
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ]
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-15T04:20:32.417665+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
       "removedDate": null,
       "status": null
     },
@@ -666,6 +818,9 @@
         "overallScore": 0.15505618,
         "avgAttemptCostUsd": 0
       },
+      "inference_provider_ids": [
+        "nvidia"
+      ],
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -688,11 +843,21 @@
               "effort": "medium"
             }
           }
-        }
+        },
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "none",
+              "low",
+              "medium"
+            ]
+          }
+        ]
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-15T04:20:32.417665+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
       "removedDate": null,
       "status": null
     },
@@ -746,12 +911,15 @@
         "top_p"
       ],
       "expiration_date": null,
+      "inference_provider_ids": [
+        "virtual"
+      ],
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {},
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-15T04:20:32.417665+00:00",
+      "lastSeen": "2026-10-16T04:15:49.424757+00:00",
       "removedDate": null,
       "status": null
     },
@@ -822,10 +990,10 @@
           }
         }
       },
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
       "lastSeen": "2026-10-15T04:20:32.417665+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-16T04:15:49.424757+00:00",
       "status": null
     },
     {
