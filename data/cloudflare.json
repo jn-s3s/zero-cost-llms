@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 64,
-  "updatedAt": "2026-10-16T04:15:46.868795+00:00",
+  "updatedAt": "2026-10-17T04:06:13.509572+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -39,7 +39,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -103,7 +103,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -137,7 +137,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -171,7 +171,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -203,7 +203,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -231,7 +231,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -278,7 +278,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -326,7 +326,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -360,7 +360,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -390,7 +390,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -418,7 +418,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -464,7 +464,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -488,7 +488,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -520,7 +520,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -550,7 +550,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -574,7 +574,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -621,7 +621,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -663,7 +663,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -705,7 +705,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -756,7 +756,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -780,7 +780,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -823,7 +823,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -866,7 +866,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -912,7 +912,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:33.068300+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -966,7 +966,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1000,7 +1000,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1038,7 +1038,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1070,7 +1070,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1121,7 +1121,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1164,7 +1164,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1188,7 +1188,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1231,7 +1231,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1273,7 +1273,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1324,7 +1324,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1359,7 +1359,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1387,7 +1387,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1433,7 +1433,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1465,7 +1465,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1503,7 +1503,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-10T05:34:18.663795+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1546,7 +1546,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1597,7 +1597,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1647,7 +1647,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1686,7 +1686,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1737,7 +1737,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1765,7 +1765,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1797,7 +1797,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1868,7 +1868,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1915,7 +1915,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1966,7 +1966,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1994,7 +1994,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:46.868795+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2071,7 +2071,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2095,7 +2095,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2129,7 +2129,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2175,7 +2175,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2239,7 +2239,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2263,7 +2263,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2293,7 +2293,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2336,7 +2336,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2379,7 +2379,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2434,7 +2434,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2480,7 +2480,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:33.068300+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2527,7 +2527,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2573,7 +2573,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2619,7 +2619,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-16T04:15:46.868795+00:00",
+      "lastSeen": "2026-10-17T04:06:13.509572+00:00",
       "removedDate": null,
       "status": null
     }

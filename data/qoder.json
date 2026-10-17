@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 1,
-  "updatedAt": "2026-10-16T04:15:54.033565+00:00",
+  "updatedAt": "2026-10-17T04:06:20.374599+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -28,7 +28,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:14.926915+00:00",
-      "lastSeen": "2026-10-16T04:15:54.033565+00:00",
+      "lastSeen": "2026-10-17T04:06:20.374599+00:00",
       "removedDate": null,
       "status": null
     }
