@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 6,
-  "updatedAt": "2026-10-17T04:06:15.361346+00:00",
+  "count": 7,
+  "updatedAt": "2026-10-18T04:13:46.849072+00:00",
   "lastFailedAt": "2026-10-12T05:41:45.812325+00:00",
   "lastFailedMessage": "URLError: <urlopen error timed out>",
   "data": [
@@ -18,7 +18,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-17T04:06:15.361346+00:00",
+      "lastSeen": "2026-10-18T04:13:46.849072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -35,7 +35,27 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-17T04:06:15.361346+00:00",
+      "lastSeen": "2026-10-18T04:13:46.849072+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash-free",
+      "object": "model",
+      "created": 1626777600,
+      "owned_by": "DeepSeek",
+      "supported_endpoint_types": null,
+      "name": "DeepSeek: DeepSeek V4.1 Flash (Free)",
+      "description": "DeepSeek-V4.1-Flash is the smallest model in DeepSeek's new architecture family, released September 10, 2026, with native multimodal visual understanding — the production successor to both V4 Flash and the V4 Flash Vision experiment. The new architecture\r\n  targets a higher capability ceiling, faster inference and higher throughput, and DeepSeek reports V4.1 Flash comprehensively surpasses V4 Pro on performance, cost, speed and total task time. It accepts text and images with text output, serves a 1M-token context window with up\r\n  to 384K output tokens, and supports thinking (default, with selectable effort low / high / max) and non-thinking modes across the Chat Completions, Responses and Anthropic-compatible APIs, along with JSON output, tool calls and chat prefix completion; FIM works in non-thinking\r\n  mode only. Model weights are open on Hugging Face (deepseek-ai/DeepSeek-V4.1-Flash).\r\n\r\n  Official benchmarks at release: 90.6 on Terminal-Bench 2.1, 74.2 on DeepSWE v1.1, 65.4 on NL2Repo-Bench, 90.9 on GPQA Diamond, 63.9 on HLE with tools, and strong native-vision agent results (89.6 BabyVision, 78.9 Chartography with tools). Pricing was cut alongside the release:\r\n  $0.15/M input (cache miss), $0.60/M output and $0.003/M on cache hits at off-peak rates, doubling during weekday peak hours (01:00-04:00 and 06:00-10:00 UTC); all other hours including weekends are off-peak.",
+      "pricing": {
+        "prompt": "0.0000000000",
+        "completion": "0.0000000000",
+        "prompt_per_million": "0.000000",
+        "completion_per_million": "0.000000"
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-18T04:13:46.849072+00:00",
+      "lastSeen": "2026-10-18T04:13:46.849072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -55,7 +75,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-17T04:06:15.361346+00:00",
+      "lastSeen": "2026-10-18T04:13:46.849072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -72,7 +92,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-17T04:06:15.361346+00:00",
+      "lastSeen": "2026-10-18T04:13:46.849072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -89,7 +109,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-17T04:06:15.361346+00:00",
+      "lastSeen": "2026-10-18T04:13:46.849072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -106,7 +126,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-17T04:06:15.361346+00:00",
+      "lastSeen": "2026-10-18T04:13:46.849072+00:00",
       "removedDate": null,
       "status": null
     }
