@@ -1,10 +1,66 @@
 {
   "status": "success",
-  "count": 1,
-  "updatedAt": "2026-10-18T04:13:47.327046+00:00",
+  "count": 4,
+  "updatedAt": "2026-10-19T04:22:44.822215+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "community/vendouple/laguna-s-2.1:free",
+      "object": "model",
+      "created": 1790699044,
+      "owned_by": "OrchidLLM Proxy",
+      "aliases": [
+        "vendouple/laguna-s-2.1:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Laguna S2.1 Free",
+      "description": "its back again",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "per_user_rpm": null,
+      "health": {
+        "status": "degraded",
+        "success_rate": 82,
+        "requests": 50
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-08T05:47:05.283557+00:00",
+      "lastSeen": "2026-10-19T04:22:44.822215+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "community/YoannDev90/poolside-laguna-s-2.1:free",
       "object": "model",
@@ -51,13 +107,13 @@
       "context_length": 262000,
       "per_user_rpm": 45,
       "health": {
-        "status": "degraded",
-        "success_rate": 94,
+        "status": "healthy",
+        "success_rate": 100,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-18T04:13:47.327046+00:00",
+      "lastSeen": "2026-10-19T04:22:44.822215+00:00",
       "removedDate": null,
       "status": null
     },
@@ -108,14 +164,14 @@
       "context_length": 131000,
       "per_user_rpm": 10,
       "health": {
-        "status": "degraded",
-        "success_rate": 82,
+        "status": "healthy",
+        "success_rate": 98,
         "requests": 50
       },
-      "presence": "removed",
+      "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-10-17T04:06:16.379103+00:00",
-      "removedDate": "2026-10-18T04:13:47.327046+00:00",
+      "lastSeen": "2026-10-19T04:22:44.822215+00:00",
+      "removedDate": null,
       "status": null
     },
     {
@@ -159,69 +215,13 @@
       "per_user_rpm": 5,
       "health": {
         "status": "degraded",
-        "success_rate": 88,
+        "success_rate": 84,
         "requests": 50
       },
-      "presence": "removed",
+      "presence": "active",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-10-16T04:15:49.685178+00:00",
-      "removedDate": "2026-10-17T04:06:16.379103+00:00",
-      "status": null
-    },
-    {
-      "id": "community/vendouple/laguna-s-2.1:free",
-      "object": "model",
-      "created": 1790699044,
-      "owned_by": "OrchidLLM Proxy",
-      "aliases": [
-        "vendouple/laguna-s-2.1:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Laguna S2.1 Free",
-      "description": "its back again",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "per_user_rpm": null,
-      "health": {
-        "status": "degraded",
-        "success_rate": 94,
-        "requests": 50
-      },
-      "presence": "removed",
-      "firstSeen": "2026-10-08T05:47:05.283557+00:00",
-      "lastSeen": "2026-10-12T05:41:48.119094+00:00",
-      "removedDate": "2026-10-13T06:36:29.989683+00:00",
+      "lastSeen": "2026-10-19T04:22:44.822215+00:00",
+      "removedDate": null,
       "status": null
     },
     {
