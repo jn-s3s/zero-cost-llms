@@ -1,14 +1,14 @@
 {
   "status": "success",
   "count": 14,
-  "updatedAt": "2026-10-19T04:22:45.274717+00:00",
+  "updatedAt": "2026-10-20T04:33:30.745184+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "codestral-2508",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -39,20 +39,22 @@
       "default_model_temperature": 0.3,
       "billing_model_name": "codestral-2508",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 625000,
         "rps": 2.08
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "labs-leanstral-1-5-1",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -81,20 +83,22 @@
       "default_model_temperature": 1.0,
       "billing_model_name": "labs-leanstral-1-5",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 5000000,
         "rps": 0.63
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "ministral-14b-2512",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -123,20 +127,22 @@
       "default_model_temperature": 0.3,
       "billing_model_name": "ministral-14b-2512",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 937500,
         "rps": 0.5
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "ministral-3b-2512",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -165,20 +171,22 @@
       "default_model_temperature": 0.3,
       "billing_model_name": "ministral-3b-2512",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 1300000,
         "rps": 12.5
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "ministral-8b-2512",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -207,20 +215,22 @@
       "default_model_temperature": 0.3,
       "billing_model_name": "ministral-8b-2512",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 625000,
         "rps": 3.13
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-medium-latest",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -256,20 +266,22 @@
       "default_model_temperature": 1.0,
       "billing_model_name": "mistral-medium-3-5",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 20000,
         "rps": 1
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-small-2603",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -300,20 +312,22 @@
       "default_model_temperature": 0.3,
       "billing_model_name": "mistral-small-2603",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 20000,
         "rps": 1
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "voxtral-small-2507",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -342,20 +356,22 @@
       "default_model_temperature": 0.2,
       "billing_model_name": "voxtral-small-2507",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 50000,
         "rps": 1
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "codestral-embed",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -384,20 +400,22 @@
       "default_model_temperature": null,
       "billing_model_name": "codestral-embed-2505",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 50000,
         "rps": 1
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-embed-2312",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -426,20 +444,22 @@
       "default_model_temperature": null,
       "billing_model_name": "mistral-embed",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 20000000,
         "rps": 1
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-moderation-2603",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -466,20 +486,22 @@
       "default_model_temperature": null,
       "billing_model_name": "mistral-moderation-2603",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 50000,
         "rps": 1.67
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "voxtral-mini-2602",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -508,20 +530,50 @@
       "default_model_temperature": 0.0,
       "billing_model_name": "voxtral-mini-2602",
       "type": "base",
+      "audio_transcription_capabilities": {
+        "modes": [
+          "offline"
+        ],
+        "diarization": true,
+        "speaker_references": false,
+        "context_bias": true,
+        "turn_detection": false,
+        "timestamp_granularities": [
+          "segment",
+          "word"
+        ],
+        "languages": [
+          "ar",
+          "en",
+          "de",
+          "es",
+          "fr",
+          "hi",
+          "it",
+          "nl",
+          "pt",
+          "zh",
+          "ru",
+          "ko",
+          "ja"
+        ],
+        "streaming_delays_ms": []
+      },
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 50000,
         "rps": 1
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "voxtral-mini-transcribe-realtime-2602",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -551,20 +603,42 @@
       "default_model_temperature": 0.0,
       "billing_model_name": "voxtral-mini-realtime-2602",
       "type": "base",
+      "audio_transcription_capabilities": {
+        "modes": [
+          "realtime"
+        ],
+        "diarization": false,
+        "speaker_references": false,
+        "context_bias": false,
+        "turn_detection": false,
+        "timestamp_granularities": [],
+        "languages": [],
+        "streaming_delays_ms": [
+          {
+            "min": 80,
+            "max": 1200
+          },
+          {
+            "min": 2400,
+            "max": 2400
+          }
+        ]
+      },
+      "audio_speech_capabilities": null,
       "rate_limits": {
         "tpm": 50000,
         "rps": 1
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "voxtral-mini-tts-2603",
       "object": "model",
-      "created": 1792383765,
+      "created": 1792470810,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -582,7 +656,7 @@
         "audio_speech": true,
         "unified_resources": false
       },
-      "name": "voxtral-mini-tts-2603",
+      "name": "Voxtral Mini TTS",
       "description": "TTS v1 final checkpoint",
       "max_context_length": 4096,
       "aliases": [
@@ -593,13 +667,28 @@
       "default_model_temperature": 0.3,
       "billing_model_name": "voxtral-mini-tts-2603",
       "type": "base",
+      "audio_transcription_capabilities": null,
+      "audio_speech_capabilities": {
+        "modes": [
+          "offline"
+        ],
+        "instruction": false,
+        "conversation_history": false,
+        "response_formats": [
+          "pcm",
+          "wav",
+          "mp3",
+          "flac",
+          "opus"
+        ]
+      },
       "rate_limits": {
         "tpm": 50000,
         "rps": 1
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-10-19T04:22:45.274717+00:00",
+      "lastSeen": "2026-10-20T04:33:30.745184+00:00",
       "removedDate": null,
       "status": null
     }

@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 14,
-  "updatedAt": "2026-10-19T04:22:44.120075+00:00",
+  "count": 15,
+  "updatedAt": "2026-10-20T04:33:30.044190+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -50,6 +50,7 @@
       "autoRouting": {
         "models": [
           "dots-studio/dots-3-note-preview:free",
+          "minimax/minimax-m3.1-flash:free",
           "nvidia/nemotron-3.5-super-vl:free",
           "reflection/beam-free",
           "stealth/glyph-cluster"
@@ -57,7 +58,106 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "minimax/minimax-m3.1-flash:free",
+      "name": "MiniMax: MiniMax M3.1 Flash (free)",
+      "created": 1792379569,
+      "description": "MiniMax-M3.1-Flash is a multimodal model from MiniMax. Compared with M3, it delivers significant improvements across multiple benchmarks, particularly in complex agentic tasks, coding, and cybersecurity. It is built for complex,...",
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "top_provider": {
+        "is_moderated": false,
+        "context_length": 1000000,
+        "max_completion_tokens": 524288
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "discount": 0
+      },
+      "context_length": 1000000,
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "expiration_date": null,
+      "inference_provider_ids": [
+        "minimax"
+      ],
+      "preferredIndex": 2,
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {
+        "variants": {
+          "low": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "low"
+            }
+          },
+          "medium": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "medium"
+            }
+          },
+          "high": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          },
+          "xhigh": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "xhigh"
+            }
+          },
+          "max": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "max"
+            }
+          }
+        },
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ]
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-20T04:33:30.044190+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -106,7 +206,7 @@
       "inference_provider_ids": [
         "nvidia"
       ],
-      "preferredIndex": 2,
+      "preferredIndex": 3,
       "isFree": true,
       "mayTrainOnYourPrompts": true,
       "opencode": {
@@ -132,7 +232,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.424757+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -183,7 +283,7 @@
       "inference_provider_ids": [
         "reflection"
       ],
-      "preferredIndex": 3,
+      "preferredIndex": 4,
       "opencode": {
         "variants": {
           "low": {
@@ -232,7 +332,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -283,7 +383,7 @@
       "inference_provider_ids": [
         "stealth"
       ],
-      "preferredIndex": 4,
+      "preferredIndex": 5,
       "opencode": {
         "variants": {
           "low": {
@@ -325,7 +425,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -403,7 +503,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -473,7 +573,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -543,7 +643,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -650,7 +750,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -724,7 +824,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -793,7 +893,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -875,7 +975,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -948,7 +1048,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1036,7 +1136,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1098,7 +1198,7 @@
       "opencode": {},
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-19T04:22:44.120075+00:00",
+      "lastSeen": "2026-10-20T04:33:30.044190+00:00",
       "removedDate": null,
       "status": null
     },

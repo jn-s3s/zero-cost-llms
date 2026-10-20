@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 1,
-  "updatedAt": "2026-10-19T04:22:47.719468+00:00",
+  "count": 2,
+  "updatedAt": "2026-10-20T04:33:33.719188+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -28,7 +28,34 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:14.926915+00:00",
-      "lastSeen": "2026-10-19T04:22:47.719468+00:00",
+      "lastSeen": "2026-10-20T04:33:33.719188+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "dfmodel",
+      "display_name": "DeepSeek-Flash",
+      "is_enabled": true,
+      "is_new": true,
+      "is_vl": true,
+      "support_disable_reasoning": true,
+      "price_factor": 0,
+      "efforts": [
+        "high",
+        "max",
+        "low"
+      ],
+      "default_effort": "max",
+      "max_input_tokens": 1000000,
+      "default_context_window": 200000,
+      "available_context_windows": [
+        200000,
+        400000,
+        1000000
+      ],
+      "presence": "active",
+      "firstSeen": "2026-10-20T04:33:33.719188+00:00",
+      "lastSeen": "2026-10-20T04:33:33.719188+00:00",
       "removedDate": null,
       "status": null
     }
