@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 17,
-  "updatedAt": "2026-10-20T04:33:23.581040+00:00",
+  "updatedAt": "2026-10-21T04:25:37.019968+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -75,7 +75,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-20T04:33:23.581040+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -143,7 +143,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:09.924694+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -202,37 +202,37 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1129,
-            "win_rate": 28.6,
-            "rank": 77
+            "elo": 1132,
+            "win_rate": 28.8,
+            "rank": 76
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1153,
-            "win_rate": 32.4,
-            "rank": 84
+            "elo": 1155,
+            "win_rate": 32.7,
+            "rank": 81
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1110,
-            "win_rate": 29.2,
-            "rank": 92
+            "elo": 1108,
+            "win_rate": 28.9,
+            "rank": 93
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1129,
-            "win_rate": 29.7,
-            "rank": 86
+            "elo": 1143,
+            "win_rate": 31.6,
+            "rank": 81
           },
           {
             "arena": "models",
             "category": "website",
-            "elo": 1169,
-            "win_rate": 34.3,
-            "rank": 80
+            "elo": 1171,
+            "win_rate": 34.7,
+            "rank": 82
           }
         ],
         "artificial_analysis": {
@@ -246,7 +246,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -303,7 +303,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -380,7 +380,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -443,7 +443,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -528,7 +528,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -582,7 +582,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -651,21 +651,21 @@
             "category": "webapps",
             "elo": 1196,
             "win_rate": 48.6,
-            "rank": 23
+            "rank": 25
           },
           {
             "arena": "models",
             "category": "3d",
             "elo": 1161,
             "win_rate": 40,
-            "rank": 63
+            "rank": 64
           },
           {
             "arena": "models",
             "category": "asciiart",
             "elo": 1089,
             "win_rate": 33.6,
-            "rank": 63
+            "rank": 64
           },
           {
             "arena": "models",
@@ -679,20 +679,20 @@
             "category": "dataviz",
             "elo": 1161,
             "win_rate": 37.8,
-            "rank": 75
+            "rank": 76
           },
           {
             "arena": "models",
             "category": "gamedev",
             "elo": 1166,
             "win_rate": 38,
-            "rank": 70
+            "rank": 71
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1111,
-            "win_rate": 34.8,
+            "elo": 1109,
+            "win_rate": 34.6,
             "rank": 57
           },
           {
@@ -700,14 +700,14 @@
             "category": "uicomponent",
             "elo": 1200,
             "win_rate": 40.4,
-            "rank": 58
+            "rank": 59
           },
           {
             "arena": "models",
             "category": "website",
             "elo": 1224,
             "win_rate": 44.5,
-            "rank": 55
+            "rank": 57
           }
         ],
         "artificial_analysis": {
@@ -731,7 +731,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -785,7 +785,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -859,7 +859,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -921,7 +921,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -986,13 +986,13 @@
             "category": "3d",
             "elo": 1132,
             "win_rate": 38.9,
-            "rank": 75
+            "rank": 77
           },
           {
             "arena": "models",
             "category": "asciiart",
-            "elo": 1096,
-            "win_rate": 37.4,
+            "elo": 1101,
+            "win_rate": 37.9,
             "rank": 60
           },
           {
@@ -1007,35 +1007,35 @@
             "category": "dataviz",
             "elo": 1142,
             "win_rate": 37.5,
-            "rank": 83
+            "rank": 84
           },
           {
             "arena": "models",
             "category": "gamedev",
             "elo": 1138,
-            "win_rate": 36.3,
-            "rank": 80
+            "win_rate": 36.2,
+            "rank": 81
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1069,
+            "elo": 1068,
             "win_rate": 32.3,
             "rank": 69
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1141,
-            "win_rate": 36.1,
-            "rank": 81
+            "elo": 1140,
+            "win_rate": 36,
+            "rank": 82
           },
           {
             "arena": "models",
             "category": "website",
             "elo": 1145,
             "win_rate": 35.2,
-            "rank": 94
+            "rank": 96
           }
         ],
         "artificial_analysis": {
@@ -1057,7 +1057,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1132,7 +1132,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1203,7 +1203,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1277,7 +1277,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1358,7 +1358,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
       "removedDate": null,
       "status": null
     },

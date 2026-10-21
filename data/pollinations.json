@@ -1,10 +1,179 @@
 {
   "status": "success",
-  "count": 4,
-  "updatedAt": "2026-10-20T04:33:30.233079+00:00",
+  "count": 7,
+  "updatedAt": "2026-10-21T04:25:43.047041+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
+      "object": "model",
+      "created": 1792503218,
+      "owned_by": "Free AI API",
+      "aliases": [
+        "YoannDev90/vercel-nemotron-3.5-lightning:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Nemotron 3.5 Lightning",
+      "description": "Open-weight reasoning and chat model for long-running agents, sub-agent work, chatbots, and RAG systems.",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 1000000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "healthy",
+        "success_rate": 100,
+        "requests": 50
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/YoannDev90/vercel-minimax-m3.1-flash:free",
+      "object": "model",
+      "created": 1792503101,
+      "owned_by": "Free AI API",
+      "aliases": [
+        "YoannDev90/vercel-minimax-m3.1-flash:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Minimax M3.1 Flash",
+      "description": "MiniMax's M-series language model for agent reasoning, tool use, coding, and long-context tasks, with a 1,000,000-token context window.",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 1000000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "healthy",
+        "success_rate": 100,
+        "requests": 50
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/YoannDev90/vercel-beam:free",
+      "object": "model",
+      "created": 1792502855,
+      "owned_by": "Free AI API",
+      "aliases": [
+        "YoannDev90/vercel-beam:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Beam",
+      "description": "Reflection’s reasoning model for coding and agentic workflows, combining strong coding capabilities with fast, low-latency inference.",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 1000000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "healthy",
+        "success_rate": 98,
+        "requests": 50
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "community/vendouple/laguna-s-2.1:free",
       "object": "model",
@@ -51,13 +220,13 @@
       "reasoning": true,
       "per_user_rpm": null,
       "health": {
-        "status": "healthy",
-        "success_rate": 100,
+        "status": "degraded",
+        "success_rate": 92,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-08T05:47:05.283557+00:00",
-      "lastSeen": "2026-10-20T04:33:30.233079+00:00",
+      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
       "removedDate": null,
       "status": null
     },
@@ -108,12 +277,12 @@
       "per_user_rpm": 45,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 98,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-20T04:33:30.233079+00:00",
+      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
       "removedDate": null,
       "status": null
     },
@@ -170,7 +339,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-10-20T04:33:30.233079+00:00",
+      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
       "removedDate": null,
       "status": null
     },
@@ -215,12 +384,12 @@
       "per_user_rpm": 5,
       "health": {
         "status": "healthy",
-        "success_rate": 98,
+        "success_rate": 100,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-10-20T04:33:30.233079+00:00",
+      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
       "removedDate": null,
       "status": null
     },
