@@ -109,11 +109,12 @@ The first release is supported without a previous tag. The existing `v1.0.0` is 
 the next release requires a newer version rather than retagging 1.0.0.
 
 After a release merge, `Tag release` validates the triggering commit and creates its tag
-using `RELEASE_PAT`. Configure this repository-scoped secret with Contents read/write for
-`jn-s3s/zero-cost-llms`, owned by a repository Admin covered by the release-tag bypass.
-Do not substitute `GITHUB_TOKEN`: its tag push would not trigger `Release`. Secret presence
-alone cannot prove the token owner's identity, access or expiry; verify those in GitHub's
-token settings without printing the value. Checkout credentials are not persisted.
+with the built-in `GITHUB_TOKEN`. A tag push with that token would not trigger another
+workflow, so the workflow writes the ref through the REST API and calls `Release` directly
+as a reusable workflow in the same run, passing the tag and commit explicitly. No
+repository secret is needed. Tag creation stays unrestricted in the release-tag ruleset so
+the automation token can write the ref, while updates, deletions and force pushes still
+require the Admin bypass. Checkout credentials are not persisted.
 
 `Release` validates the tagged version, runs shared checks, builds and verifies a ZIP of
 tracked source and saved snapshots, then creates an empty-body draft and attaches the ZIP.
@@ -138,13 +139,13 @@ Reviewable desired API payloads are in `.github/rulesets/`. The setup snapshot o
 | Protect release tags       | 24775546 | `v*` tags                     | None                               | Admin, `always`              |
 
 At that snapshot, main and dev had no registered required checks because these workflows
-had not run yet. `RELEASE_PAT` was also absent, so its owner and tag permissions could not
-be verified. Full setup remains incomplete until the bootstrap steps below are finished.
+had not run yet. Full setup remains incomplete until the bootstrap steps below are finished.
 
 Both branches require PRs with zero approvals, block deletions and force pushes, and do not
 require linear history. Main permits merge commits only. Dev permits the existing merge
-methods, but use merge commits for synchronization. Tag creation, updates, deletions and
-force pushes require bypass. Maintain/Admin bypass is an exception, not the normal dev
+methods, but use merge commits for synchronization. Tag updates, deletions and force pushes
+require bypass; tag creation stays unrestricted because the automation token must be able
+to write the ref. Maintain/Admin bypass is an exception, not the normal dev
 merge path. Keep merge commits enabled in repository settings and never delete `dev`.
 
 Up-to-date checks are required once check registration is complete. Checks are bound to the
@@ -155,12 +156,13 @@ New check contexts are not required during bootstrap until their workflows can r
 
 1. Install these files through a feature PR into `dev`. Observe `Quality checks` before
    merging, then apply `.github/rulesets/dev.json` to the integration ruleset with a PUT.
-2. Configure `RELEASE_PAT`, merge a newer changelog/version preparation into `dev` and open
-   the first release PR into `main`. Observe both quality and changelog jobs, then apply
+2. Merge a newer changelog/version preparation into `dev` and open the first release PR
+   into `main`. Observe both quality and changelog jobs, then apply
    `.github/rulesets/main.json` to the existing main ruleset with a PUT before merging.
-3. Verify effective branch rules and nonempty required-check lists in GitHub. Tag protection
-   is active immediately, but release authentication remains pending until the Admin-owned
-   token's permissions are verified. Do not create a real release tag as a setup test.
+3. Verify effective branch rules and nonempty required-check lists in GitHub. The
+   release-tag ruleset must show no creation rule, so the built-in token can tag, while
+   its update, deletion and non-fast-forward rules remain. Do not create a real release
+   tag as a setup test.
 
 For an authorized ruleset update, substitute the actual ruleset ID and re-read current
 settings first so unrelated changes are preserved:
