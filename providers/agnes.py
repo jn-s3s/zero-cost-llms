@@ -110,7 +110,7 @@ def fetch(provider_config: dict) -> list[dict]:
     to determine which models are currently free (current price = $0).
 
     Args:
-        provider_config: Provider configuration from providers.json
+        provider_config: Provider configuration from config/providers.json
 
     Returns:
         List of free model dictionaries

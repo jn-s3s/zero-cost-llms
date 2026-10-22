@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import json
+import math
 import os
 import re
 import sys
@@ -12,6 +13,8 @@ import tempfile
 import traceback
 from pathlib import Path
 
+from lib.benchmark_scores import get_swebench_score, swebench_source, swebench_tier
+from lib.benchmark_scores_extra import get_livecodebench_score
 from lib.http_client import one_line, safe_text
 from lib.repo_root import REPO_ROOT
 from providers import get_provider
@@ -19,13 +22,21 @@ from providers import get_provider
 SAFE_PROVIDER_ID = re.compile(r"[a-z0-9][a-z0-9_-]*")
 MAX_FAILED_MESSAGE_CHARS = 300
 REMOVED_RETENTION_DAYS = 90
+# Explicit keys keep unrelated SWE-bench-like estimates out of a score.
+SWE_BENCH_KEYS = ("swe_bench_verified", "swe_bench", "swebench", "swe-bench")
+# A checkpoint-qualified id must not borrow a score from its unqualified name.
+CHECKPOINT_RELEASE_QUALIFIER = re.compile(
+    r"[-_@.]*(?:v?\d{8}|\d{4}-\d{2}-\d{2}|\d{4}-\d{2}|\d{2}-\d{4}"
+    r"|\d{2}-\d{2}|v?\d{4}|previews?)(?:[:/-]free)?$",
+    re.IGNORECASE,
+)
 
 
 def fetch_provider(provider: dict) -> list[dict]:
     """Fetch the free models for one provider.
 
     Args:
-        provider: A provider entry from providers.json.
+        provider: A provider entry from config/providers.json.
 
     Returns:
         The provider's free models as a list of dictionaries.
@@ -172,6 +183,94 @@ def _write_wrapper(target: Path, wrapper: dict) -> None:
             staging.unlink(missing_ok=True)
 
 
+def _publishable_score(value: object) -> float | None:
+    """Return ``value`` as a 0-100 score, or None when it is not one.
+
+    Scores reach this module as JSON, where provider data may spell one as a
+    string, so strings are converted here. ``float`` also accepts ``"NaN"`` and
+    ``"Infinity"``, which must not be published: the writer would emit a bare
+    ``NaN`` token that strict JSON readers reject for the provider's entire
+    file, and ``NaN`` fails every tier comparison, so it would be filed as C.
+    A value outside 0-100 is not a percentage either, and ``True`` is a boolean
+    that happens to convert to 1, so all three are dropped rather than guessed
+    at.
+    """
+    if isinstance(value, bool):
+        return None
+    try:
+        score = float(value)
+    except (TypeError, ValueError):
+        return None
+    if not math.isfinite(score) or not 0 <= score <= 100:
+        return None
+    return score
+
+
+def _provider_swe_score(benchmarks: object) -> float | None:
+    """Return the SWE-bench score a provider publishes in its benchmark bag.
+
+    Only explicit SWE-bench keys are read, so an unrelated estimate stored
+    beside them does not become a SWE-bench score. A value written in an
+    unusable shape falls through to the next key rather than ending the search,
+    because a provider that misspells one entry may still have a usable one.
+    """
+    if not isinstance(benchmarks, dict):
+        return None
+    for key in SWE_BENCH_KEYS:
+        if key not in benchmarks:
+            continue
+        benchmark = benchmarks[key]
+        score = _publishable_score(
+            benchmark.get("score") if isinstance(benchmark, dict) else benchmark
+        )
+        if score is not None:
+            return score
+    return None
+
+
+def _benchmark_fields(model: dict, model_id: str) -> dict:
+    model_name = (
+        model.get("name") or model.get("display_name") or model.get("model") or model_id
+    )
+    has_release_qualifier = bool(CHECKPOINT_RELEASE_QUALIFIER.search(model_id))
+    swe_score = _publishable_score(get_swebench_score(model_id))
+    lcb_score = _publishable_score(get_livecodebench_score(model_id))
+    if not has_release_qualifier:
+        if swe_score is None:
+            swe_score = _publishable_score(get_swebench_score(None, model_name))
+        if lcb_score is None:
+            lcb_score = _publishable_score(get_livecodebench_score(None, model_name))
+    # Curated scores are ours, so they go under a key of our own shape.
+    # Provider benchmarks stay untouched: merging our objects into Routeway's
+    # flat bag would replace its numbers and publish incompatible shapes.
+    curated: dict[str, dict] = {}
+    if swe_score is not None:
+        curated["swe_bench_verified"] = {
+            "score": round(swe_score, 2),
+            "tier": swebench_tier(swe_score),
+            "source": swebench_source(),
+        }
+    if lcb_score is not None:
+        curated["livecodebench"] = {
+            "score": round(lcb_score, 2),
+            "source": "LiveCodeBench",
+        }
+    existing_bench = model.get("benchmarks")
+    swe_score_out = (
+        swe_score if swe_score is not None else _provider_swe_score(existing_bench)
+    )
+    return {
+        "benchmarks": existing_bench,
+        "curated_benchmarks": curated or None,
+        "swe_bench_score": round(swe_score_out, 2)
+        if swe_score_out is not None
+        else None,
+        "swe_bench_tier": swebench_tier(swe_score_out)
+        if swe_score_out is not None
+        else None,
+    }
+
+
 def save_provider(output: Path, provider_id: str, models: list[dict]) -> None:
     """Write a successful fetch as the provider's latest result.
 
@@ -233,6 +332,7 @@ def save_provider(output: Path, provider_id: str, models: list[dict]) -> None:
         enriched.append(
             {
                 **model,
+                **_benchmark_fields(model, model_id),
                 "presence": "active",
                 "firstSeen": first_seen,
                 "lastSeen": now,
@@ -443,7 +543,7 @@ def main() -> int:
     parser.add_argument(
         "--providers",
         type=Path,
-        default=REPO_ROOT / "providers.json",
+        default=REPO_ROOT / "config" / "providers.json",
         help="provider catalogue to read (default: %(default)s)",
     )
     parser.add_argument(

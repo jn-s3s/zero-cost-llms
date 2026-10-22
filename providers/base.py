@@ -16,10 +16,10 @@ class Provider(Protocol):
 
 
 def models_url(provider_config: dict) -> str:
-    """Return the absolute models endpoint for one ``providers.json`` entry.
+    """Return the absolute models endpoint for one ``config/providers.json`` entry.
 
     Args:
-        provider_config: A provider entry from providers.json.
+        provider_config: A provider entry from config/providers.json.
 
     Returns:
         The base URL joined to the models endpoint with a single separator.

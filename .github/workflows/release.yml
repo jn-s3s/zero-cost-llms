@@ -60,7 +60,7 @@ jobs:
                   with zipfile.ZipFile(sys.argv[1]) as archive:
                       prefix = sys.argv[2]
                       names = archive.namelist()
-                      required = ["fetch_models.py", "providers.json", "CHANGELOG.md", "LICENSE", "package.json"]
+                      required = ["fetch_models.py", "config/providers.json", "CHANGELOG.md", "LICENSE", "package.json"]
                       if archive.testzip() is not None or not all(prefix + name in names for name in required):
                           raise SystemExit("Corrupt or incomplete source archive.")
                       for name in names:

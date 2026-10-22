@@ -26,7 +26,7 @@ def attach_rate_limits(
     Args:
         models: The provider's model list, mutated by adding ``rate_limits``.
         limits: Mapping of model id to the limits object to attach.
-        provider_id: Prefix for the warning line, the ``providers.json`` id.
+        provider_id: Prefix for the warning line, the ``config/providers.json`` id.
         model_id_of: How to read a model's id when it is not the ``id`` field.
         saved: Whether the limits came from a hand-kept snapshot rather than a
             live page, which changes the wording of the warning.
