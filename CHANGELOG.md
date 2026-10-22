@@ -3,6 +3,23 @@
 This changelog follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+## [1.1.0] - 2026-10-23
+
+### Added
+
+- Publish provisional coding tiers for resolved models in `data/benchmarks/coding.json`,
+  with confidence, evidence basis and provider alternatives; publish a companion audit file
+  with identity evidence, source revisions and selection issues.
+- Enrich provider model entries with curated benchmark results and SWE-bench score and tier
+  fields while preserving provider-supplied benchmark values.
+
+### Changed
+
+- Move the provider and skipped-provider catalogues into `config/`; the fetcher's default
+  provider catalogue path is now `config/providers.json`.
+
 ## [1.0.0] - 2026-10-01
 
 First release. Nothing shipped under a version before this one, so everything

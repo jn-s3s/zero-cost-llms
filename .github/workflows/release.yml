@@ -1,0 +1,94 @@
+name: Release
+
+on:
+    push:
+        tags: ["v*"]
+    workflow_call:
+        inputs:
+            tag:
+                description: Release tag that the caller created or verified.
+                required: true
+                type: string
+            sha:
+                description: Commit the tag must identify; empty checks out the caller's ref.
+                required: false
+                type: string
+
+permissions:
+    contents: write
+
+concurrency:
+    group: release-${{ inputs.tag || github.ref_name }}
+    cancel-in-progress: false
+
+defaults:
+    run:
+        shell: pwsh
+
+jobs:
+    release:
+        name: Build and draft release
+        runs-on: ubuntu-latest
+        timeout-minutes: 15
+        env:
+            RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+        steps:
+            - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+              with:
+                  fetch-depth: 0
+                  persist-credentials: false
+                  ref: ${{ inputs.sha || github.ref }}
+            - uses: ./.github/actions/project-checks
+            - name: Validate tagged source
+              run: |
+                  git fetch --tags --force
+                  if ($LASTEXITCODE -ne 0) { throw 'Refreshing release tags failed.' }
+                  uv run python scripts/release_metadata.py --mode build --tag $env:RELEASE_TAG --version-file package.json --version-key version
+                  if ($LASTEXITCODE -ne 0) { throw 'Tag, changelog, version and checkout must agree.' }
+            - name: Build source archive
+              run: |
+                  New-Item -ItemType Directory -Path dist -Force | Out-Null
+                  $prefix = "zero-cost-llms-$env:RELEASE_TAG/"
+                  $archive = "dist/zero-cost-llms-$env:RELEASE_TAG.zip"
+                  git archive --format=zip "--prefix=$prefix" "--output=$archive" HEAD
+                  if ($LASTEXITCODE -ne 0) { throw 'Source archive creation failed.' }
+                  @'
+                  import sys
+                  import zipfile
+                  from pathlib import PurePosixPath
+
+                  with zipfile.ZipFile(sys.argv[1]) as archive:
+                      prefix = sys.argv[2]
+                      names = archive.namelist()
+                      required = ["fetch_models.py", "config/providers.json", "CHANGELOG.md", "LICENSE", "package.json"]
+                      if archive.testzip() is not None or not all(prefix + name in names for name in required):
+                          raise SystemExit("Corrupt or incomplete source archive.")
+                      for name in names:
+                          path = PurePosixPath(name.removeprefix(prefix))
+                          if path.parts and path.parts[0] == "data":
+                              raise SystemExit("Generated model data must not enter the source archive.")
+                          if any(part == ".env" or (part.startswith(".env.") and part != ".env.example") for part in path.parts):
+                              raise SystemExit("Credentials must not enter the source archive.")
+                  '@ | uv run python - $archive $prefix
+                  if ($LASTEXITCODE -ne 0) { throw 'Source archive validation failed.' }
+            - name: Create or reuse draft and attach archive
+              env:
+                  GH_TOKEN: ${{ github.token }}
+              run: |
+                  $assets = @(Get-ChildItem -Path "dist/zero-cost-llms-$env:RELEASE_TAG.zip" -File)
+                  if ($assets.Count -ne 1 -or $assets[0].Length -eq 0) { throw 'Expected one nonempty source archive.' }
+                  $pagesJson = gh api "repos/$env:GITHUB_REPOSITORY/releases?per_page=100" --paginate --slurp
+                  if ($LASTEXITCODE -ne 0) { throw 'Could not inspect existing releases.' }
+                  $releases = $pagesJson | ConvertFrom-Json | ForEach-Object { $_ }
+                  $existing = @($releases | Where-Object { $_.tag_name -eq $env:RELEASE_TAG })
+                  if ($existing.Count -gt 0 -and -not $existing[0].draft) {
+                      throw 'This release is already public; preserve its status and artifacts and inspect the retry manually.'
+                  }
+                  if ($existing.Count -eq 0) {
+                      $notesFile = Join-Path $env:RUNNER_TEMP 'empty-release-notes.md'
+                      Set-Content -LiteralPath $notesFile -Value '' -NoNewline
+                      gh release create $env:RELEASE_TAG --repo $env:GITHUB_REPOSITORY --verify-tag --draft --title $env:RELEASE_TAG --notes-file $notesFile
+                      if ($LASTEXITCODE -ne 0) { throw 'Draft creation failed.' }
+                  }
+                  gh release upload $env:RELEASE_TAG $assets[0].FullName --repo $env:GITHUB_REPOSITORY --clobber
+                  if ($LASTEXITCODE -ne 0) { throw 'Archive upload failed; the draft and its notes were preserved.' }

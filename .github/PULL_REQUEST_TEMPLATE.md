@@ -4,7 +4,7 @@ Describe what changes in the published free-model list, rate limits or provider 
 
 ## Provider ids
 
-List the affected ids from `providers.json`, or state that none were changed.
+List the affected ids from `config/providers.json`, or state that none were changed.
 
 ## Verification
 

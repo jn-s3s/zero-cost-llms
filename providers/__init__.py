@@ -52,7 +52,7 @@ def get_provider(provider_id: str) -> Provider:
     """Return the fetching module registered for ``provider_id``.
 
     Args:
-        provider_id: A provider id from providers.json.
+        provider_id: A provider id from config/providers.json.
 
     Returns:
         The module exposing a ``fetch(provider_config)`` function.

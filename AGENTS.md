@@ -17,12 +17,20 @@ Core stack:
 
 ## Commands
 
-| Purpose            | Command                         |
-| ------------------ | ------------------------------- |
-| Lint (Python)      | `uvx ruff check --fix <file>`   |
-| Format (Python)    | `uvx ruff format <file>`        |
-| Format (JSON, etc) | `npx prettier --write <file>`   |
-| Run script         | `uv run python fetch_models.py` |
+| Purpose            | Command                               |
+| ------------------ | ------------------------------------- |
+| Lint (Python)      | `uvx ruff@0.16.10 check --fix <file>` |
+| Format (Python)    | `uvx ruff@0.16.10 format <file>`      |
+| Format (JSON, etc) | `npx prettier --write <file>`         |
+| Run script         | `uv run python fetch_models.py`       |
+| Full quality gate  | `npm run check`                       |
+
+Install formatting tools with `npm ci --ignore-scripts` first. `npm run check` is the
+shared local, CI and release gate: pinned Ruff lint/format checks and locked Prettier.
+The canonical project version is `package.json`; keep it and `package-lock.json` in sync
+with dated release entries in `CHANGELOG.md`. Feature/fix PRs target `dev`; release PRs
+go from `dev` into `main` with merge commits. See `CONTRIBUTING.md` for release and ruleset
+bootstrap details. Do not create tags or publish releases just to verify workflow setup.
 
 `uv run python fetch_models.py` exits `0` when every provider's outcome reached its file. That is not the same as every provider succeeding: read each `data/<id>.json` `status`, because a provider failure is stored in the data rather than in the exit code.
 
@@ -35,8 +43,9 @@ All conditions MUST pass before a change is considered finished. There is no tes
 | Path                                 | Description                                                                                        |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------- |
 | `fetch_models.py`                    | CLI entry point: provider dispatch, atomic JSON writing, per-provider failure isolation.           |
-| `providers.json`                     | Provider catalogue and quotas. Every `id` here needs a module registered in the registry.          |
-| `skip_providers.json`                | Providers considered but not fetched, each with the reason it was skipped; not read by the script. |
+| `config/providers.json`              | Provider catalogue and quotas. Every `id` here needs a module registered in the registry.          |
+| `config/skip_providers.json`         | Providers considered but not fetched, each with the reason it was skipped; not read by the script. |
+| `config/benchmarks/`                 | Benchmark model identities, tier policy and curated SWE-bench/LiveCodeBench mappings.              |
 | `providers/__init__.py`              | `REGISTRY` mapping provider ids to fetching modules.                                               |
 | `providers/base.py`                  | `Provider` protocol plus the shared `models_url` config helper.                                    |
 | `lib/__init__.py`                    | Shared utilities package.                                                                          |
@@ -44,7 +53,7 @@ All conditions MUST pass before a change is considered finished. There is no tes
 | `lib/html_tree.py`                   | Shared HTML element tree used by the providers that scrape a rendered page.                        |
 | `lib/rate_limits.py`                 | Shared plumbing the quota-carrying providers use to scrape and attach per-model rate limits.       |
 | `lib/limit_value.py`                 | Parses a scraped rate-limit cell that may carry a `K` or `M` suffix.                               |
-| `lib/repo_root.py`                   | Absolute repository root, used to locate `providers.json`, `data/` and `data_templates/`.          |
+| `lib/repo_root.py`                   | Absolute repository root, used to locate `config/providers.json`, `data/` and `data_templates/`.   |
 | `providers/<id>.py`                  | One module per provider exposing `fetch(provider_config)`.                                         |
 | `data/`                              | Generated JSON files, all gitignored.                                                              |
 | `data_templates/`                    | Hand-saved pages the providers that cannot fetch them read as snapshots.                           |

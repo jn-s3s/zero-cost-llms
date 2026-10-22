@@ -91,7 +91,7 @@ def fetch(provider_config: dict) -> list[dict]:
     the pricing page to find models marked as free.
 
     Args:
-        provider_config: Provider configuration from providers.json
+        provider_config: Provider configuration from config/providers.json
 
     Returns:
         List of free model dictionaries
