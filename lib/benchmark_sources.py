@@ -32,6 +32,9 @@ _BENCHMARKS = {
     "aider_python": "Aider",
     "bigcodebench": "BigCodeBench",
 }
+# Historical releases kept regardless of policy. The caller also passes every
+# release named by an admitted policy cohort, so retention cannot drift from the
+# policy when a new table is published. The newest release is always retained.
 _HISTORY = ("2026_01_08", "2025_05_30", "2024_11_25", "2024_06_24")
 _SHA = re.compile(r"[0-9a-f]{40}")
 _HASH = re.compile(r"[0-9a-f]{64}")
@@ -41,7 +44,7 @@ _MAX_RECORDS = 10000
 
 
 def _now() -> str:
-    return datetime.datetime.now(datetime.timezone.utc).isoformat()
+    return datetime.datetime.now(datetime.UTC).isoformat()
 
 
 def _object(value: object, label: str) -> dict:
@@ -58,7 +61,7 @@ def _text(value: object, label: str) -> str:
 
 def _date(value: object, label: str) -> None:
     if value is not None:
-        datetime.datetime.fromisoformat(_text(value, label).replace("Z", "+00:00"))
+        datetime.datetime.fromisoformat(_text(value, label))
 
 
 def _score(value: object) -> int | float:
@@ -261,7 +264,7 @@ def _links(text: str) -> dict[str, str]:
     return dict(pattern.findall(text))
 
 
-def _livebench() -> dict:
+def _livebench(required: tuple[str, ...] = ()) -> dict:
     repository = "LiveBench/livebench.github.io"
     revision = _github_revision(repository)
     tree = _json_bytes(
@@ -273,23 +276,16 @@ def _livebench() -> dict:
     if tree.get("truncated") is not False or not isinstance(tree.get("tree"), list):
         raise ValueError("LiveBench: incomplete repository tree")
     paths = {_text(item.get("path"), "tree path") for item in tree["tree"]}
-    dates = sorted(match[1] for path in paths if (match := _TABLE.fullmatch(path)))
-    if not dates:
+    available = sorted(match[1] for path in paths if (match := _TABLE.fullmatch(path)))
+    if not available:
         raise ValueError("LiveBench: no table releases found")
-    if f"public/categories_{dates[-1]}.json" not in paths:
+    if f"public/categories_{available[-1]}.json" not in paths:
         raise ValueError("LiveBench: latest table has no category metadata")
-    dates = list(
-        dict.fromkeys(
-            [
-                dates[-1],
-                *(
-                    date
-                    for date in _HISTORY
-                    if date in dates and f"public/categories_{date}.json" in paths
-                ),
-            ]
-        )
-    )
+    dates = [
+        date
+        for date in dict.fromkeys([available[-1], *required, *_HISTORY])
+        if date in available and f"public/categories_{date}.json" in paths
+    ]
     artifacts: list[dict] = []
     bodies: list[bytes] = []
     links = _links(
@@ -370,7 +366,11 @@ def _livebench() -> dict:
                     continue
                 scores = [_score(float(value)) for value in values]
                 record = _record(
-                    model, model, sum(scores) / len(scores), {}, links.get(model)
+                    model,
+                    model,
+                    sum(scores) / len(scores),
+                    {"category": category, "taskColumns": list(columns)},
+                    links.get(model),
                 )
                 record["taskScores"] = dict(zip(columns, scores, strict=True))
                 record["sourceColumns"] = row
@@ -384,7 +384,9 @@ def _livebench() -> dict:
         "Pinned per-release category artifacts; release denotes task version, not evaluation date"
     )
     snapshot["unavailableHistoricalReleases"] = [
-        date.replace("_", "-") for date in _HISTORY if date not in dates
+        date.replace("_", "-")
+        for date in dict.fromkeys([*_HISTORY, *required])
+        if date not in dates
     ]
     return snapshot
 
@@ -777,7 +779,12 @@ def _atomic_write(path: Path, payload: dict) -> None:
             staging.unlink(missing_ok=True)
 
 
-def _refresh_one(source_id: str, cache_path: Path, seed_sources: Path) -> dict:
+def _refresh_one(
+    source_id: str,
+    cache_path: Path,
+    seed_sources: Path,
+    required_livebench: tuple[str, ...] = (),
+) -> dict:
     target = cache_path / f"{source_id}.json"
     previous = None
     initialization_issues = []
@@ -811,7 +818,7 @@ def _refresh_one(source_id: str, cache_path: Path, seed_sources: Path) -> dict:
     previous = previous or {}
     try:
         snapshot = {
-            "livebench": _livebench,
+            "livebench": lambda: _livebench(required_livebench),
             "evalplus": _evalplus,
             "aider_polyglot": _aider_polyglot,
             "aider_python": _aider_python,
@@ -881,7 +888,11 @@ def _refresh_one(source_id: str, cache_path: Path, seed_sources: Path) -> dict:
     }
 
 
-def refresh_sources(cache_path: Path, seed_sources: Path) -> list[dict]:
+def refresh_sources(
+    cache_path: Path,
+    seed_sources: Path,
+    required_livebench: tuple[str, ...] = (),
+) -> list[dict]:
     """Refresh each source independently and return bounded status summaries.
 
     cache_path contains sourceId.json files directly. seed_sources is the v2
@@ -891,10 +902,14 @@ def refresh_sources(cache_path: Path, seed_sources: Path) -> list[dict]:
     persisted=False identifies an outcome that could not reach disk. No source
     failure prevents another source from refreshing. Deferred importers are not
     scheduled; their coverage limitations remain in the catalogue audit.
+    required_livebench lists YYYY_MM_DD releases an admitted policy cohort needs,
+    so a new upstream table cannot silently evict them.
     """
     with ThreadPoolExecutor(max_workers=4) as executor:
         futures = [
-            executor.submit(_refresh_one, source_id, cache_path, seed_sources)
+            executor.submit(
+                _refresh_one, source_id, cache_path, seed_sources, required_livebench
+            )
             for source_id in SOURCE_IDS
         ]
         return [future.result() for future in futures]

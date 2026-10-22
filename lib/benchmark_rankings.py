@@ -25,7 +25,7 @@ from lib.benchmark_identity import (
     resolve_offering,
     trusted_slugs,
 )
-from lib.benchmark_tiers import load_policy, score_models
+from lib.benchmark_tiers import livebench_releases, load_policy, score_models
 from lib.repo_root import REPO_ROOT
 
 _FAILURES = (OSError, ValueError, TypeError, OverflowError, ImportError)
@@ -361,13 +361,16 @@ def build_rankings(
     cache_path: Path | None = None,
     *,
     policy_path: Path | None = None,
+    policy_pair: tuple[dict, str] | None = None,
 ) -> dict:
     """Build provisional tiers, two evidence views and a full provenance audit.
 
     Raw incompatible scores are never averaged. Frozen public panels supply
     workload-relative indices; missing data stays visible as a limitation.
+    policy_pair carries an already validated policy and its hash so the caller
+    can derive source retention from the same policy instance.
     """
-    policy, policy_hash = load_policy(
+    policy, policy_hash = policy_pair or load_policy(
         policy_path or REPO_ROOT / "config/benchmarks/benchmark_tier_policy.json"
     )
     configured = provider_ids(providers_path)
@@ -688,13 +691,18 @@ def generate_rankings(
     audit_path = output / "benchmarks" / "coding-audit.json"
     cache_path = output / "benchmarks" / "sources"
     previous_main, previous_audit = _previous_pair(main_path, audit_path)
-    now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    now = datetime.datetime.now(datetime.UTC).isoformat()
     generation_id = uuid.uuid4().hex
     try:
+        policy_pair = load_policy(
+            policy_path or REPO_ROOT / "config/benchmarks/benchmark_tier_policy.json"
+        )
         refresh_states = []
         if not offline:
             source_module = importlib.import_module("lib.benchmark_sources")
-            refreshed = source_module.refresh_sources(cache_path, sources)
+            refreshed = source_module.refresh_sources(
+                cache_path, sources, livebench_releases(policy_pair[0])
+            )
             refresh_states = [item for item in refreshed if isinstance(item, dict)]
         built = build_rankings(
             input_path,
@@ -702,7 +710,7 @@ def generate_rankings(
             mappings_path,
             providers_path,
             cache_path,
-            policy_path=policy_path,
+            policy_pair=policy_pair,
         )
         built["audit"]["sourceRefresh"] = refresh_states
         for state in refresh_states:

@@ -5060,7 +5060,7 @@
                 "Tier C denotes the lower relative region of the selected reference panel, not absence of coding advantage or evidence of inability. Different source panels are not calibrated to a common capability scale.",
                 "Agentic Coding is a task surrogate, not a verified full-repository editing evaluation. It is admitted only after direct Aider editing-family fallbacks.",
                 "Category_mean is the arithmetic mean of javascript, typescript and python task columns requiring all three. Release identifies the task version, not evaluation time; evaluatedAt and taskCount are unknown.",
-                "Only this dated cohort is admitted; historical task releases are separate reference panels, never pooled. The empty configuration object does not verify equivalent agent, reasoning or endpoint defaults.",
+                "Only this dated cohort is admitted; historical task releases are separate reference panels, never pooled. Records document the category and task columns, but do not verify equivalent agent, reasoning or endpoint defaults.",
                 "Frozen seed benchmark_sources/livebench.json SHA-256=1c7f7da8aea59e548f3ebe007c628b6194a2403ab2dce035cd5d95524357ee78.",
                 "ReferenceRecords SHA-256=9e2677b2bd2175316dce0727edcdc455d7ffd5051ed3c580f0ddae7d06583635; digest uses UTF-8 JSON with sort_keys=true, ensure_ascii=false and separators comma/colon, without trailing newline."
             ]
@@ -5876,7 +5876,7 @@
                 "Tier C denotes the lower relative region of the selected reference panel, not absence of coding advantage or evidence of inability. Different source panels are not calibrated to a common capability scale.",
                 "Agentic Coding is a task surrogate, not a verified full-repository editing evaluation. It is admitted only after direct Aider editing-family fallbacks.",
                 "Category_mean is the arithmetic mean of javascript, typescript and python task columns requiring all three. Release identifies the task version, not evaluation time; evaluatedAt and taskCount are unknown.",
-                "Only this dated cohort is admitted; historical task releases are separate reference panels, never pooled. The empty configuration object does not verify equivalent agent, reasoning or endpoint defaults.",
+                "Only this dated cohort is admitted; historical task releases are separate reference panels, never pooled. Records document the category and task columns, but do not verify equivalent agent, reasoning or endpoint defaults.",
                 "Frozen seed benchmark_sources/livebench.json SHA-256=1c7f7da8aea59e548f3ebe007c628b6194a2403ab2dce035cd5d95524357ee78.",
                 "ReferenceRecords SHA-256=13e72a3b9ae6c496f6b68cb050a9ca9031dbc25dd9191d5af42634512c2771d8; digest uses UTF-8 JSON with sort_keys=true, ensure_ascii=false and separators comma/colon, without trailing newline."
             ]

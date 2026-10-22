@@ -7,6 +7,7 @@ import datetime
 import hashlib
 import json
 import math
+import re
 from pathlib import Path
 
 from lib.benchmark_identity import (
@@ -140,6 +141,28 @@ def load_policy(path: Path) -> tuple[dict, str]:
     return policy, hashlib.sha256(contents).hexdigest()
 
 
+_LIVEBENCH_COHORT = re.compile(r"^livebench:(\d{4})-(\d{2})-(\d{2}):")
+
+
+def livebench_releases(policy: dict) -> tuple[str, ...]:
+    """Return the LiveBench releases admitted cohorts depend on, as YYYY_MM_DD.
+
+    Source retention keeps the newest table plus a fixed history list. Without
+    this, a newly published table evicts a release the policy still admits and
+    the workload silently falls back to an older panel.
+    """
+    return tuple(
+        sorted(
+            {
+                f"{match[1]}_{match[2]}_{match[3]}"
+                for profile in policy["profiles"]
+                for cohort in profile["cohortIds"]
+                if (match := _LIVEBENCH_COHORT.match(cohort))
+            }
+        )
+    )
+
+
 def normalize_score(score: float, reference: list[float]) -> float:
     """Compute a frozen-panel midrank index, never a percent of tasks solved."""
     _number(score, "score", 0, 100)
@@ -154,9 +177,9 @@ def _evaluation_time(value: object) -> float | None:
     if not isinstance(value, str):
         return None
     try:
-        parsed = datetime.datetime.fromisoformat(value.replace("Z", "+00:00"))
+        parsed = datetime.datetime.fromisoformat(value)
         if parsed.tzinfo is None:
-            parsed = parsed.replace(tzinfo=datetime.timezone.utc)
+            parsed = parsed.replace(tzinfo=datetime.UTC)
         return parsed.timestamp()
     except (ValueError, OverflowError, OSError):
         return None

@@ -129,15 +129,19 @@ latest attempt succeeded.
 Files published before this wrapper existed hold a bare array. Treat a top-level array as the
 older shape and read the list from `data`.
 
-Every entry in `data` also carries five fields the writer adds:
+Every entry in `data` also carries nine fields the writer adds:
 
-| Field         | Meaning                                                                                                |
-| ------------- | ------------------------------------------------------------------------------------------------------ |
-| `presence`    | `"active"` when the latest success listed it, `"removed"` when it dropped out and is kept for history. |
-| `firstSeen`   | ISO 8601 UTC timestamp of the first fetch that listed it.                                              |
-| `lastSeen`    | ISO 8601 UTC timestamp of the last success that listed it, frozen once removed.                        |
-| `removedDate` | ISO 8601 UTC timestamp of the success that first found it missing, `null` while active.                |
-| `status`      | Always `null`: the writer replaces whatever the provider returned.                                     |
+| Field                | Meaning                                                                                                |
+| -------------------- | ------------------------------------------------------------------------------------------------------ |
+| `presence`           | `"active"` when the latest success listed it, `"removed"` when it dropped out and is kept for history. |
+| `firstSeen`          | ISO 8601 UTC timestamp of the first fetch that listed it.                                              |
+| `lastSeen`           | ISO 8601 UTC timestamp of the last success that listed it, frozen once removed.                        |
+| `removedDate`        | ISO 8601 UTC timestamp of the success that first found it missing, `null` while active.                |
+| `status`             | Always `null`: the writer replaces whatever the provider returned.                                     |
+| `benchmarks`         | Original provider value, unchanged, including empty objects and arrays; `null` when absent.            |
+| `curated_benchmarks` | Repository-mapped scores with a numeric `score` and string `source`; `null` when none is known.        |
+| `swe_bench_score`    | SWE-bench convenience score rounded to two decimal places; `null` when no usable score exists.         |
+| `swe_bench_tier`     | Raw-percentage band for `swe_bench_score`; not the overall coding tier described below.                |
 
 Filter on `presence` to get the live catalogue, because `count` is the live total while the
 array holds active and retired entries together. Retired entries are dropped once they are
@@ -152,6 +156,34 @@ The remaining fields come from the provider, so their shape differs per provider
   `tpd` and `tpm`; `cerebras` uses `rpm`, `tpd`, `tph`, `total_tpm` and `uncached_tpm`;
   `mistral` uses `rps` and `tpm`; `zai` uses `concurrency`. A `null` inside one means
   unlimited or not shown, and a missing `rate_limits` means unknown, not unrestricted.
+
+## Coding tiers
+
+The same branch also publishes two benchmark files built from public coding evidence:
+
+```
+https://raw.githubusercontent.com/jn-s3s/zero-cost-llms/models-data/data/benchmarks/coding.json
+https://raw.githubusercontent.com/jn-s3s/zero-cost-llms/models-data/data/benchmarks/coding-audit.json
+```
+
+`coding.json` carries schema, status, timestamps, `generationId`, `policyVersion`, a `summary`
+and model rows in `data`. Each row adds `tier`, `index`, `basis`, `confidence` and
+`provisional` beside `modelId`, `name`, `eligibility`, `identityStatus`, `providers`,
+`generationDebugging` and `repositoryEditing`. A minimal consumer reads `modelId`, `name`,
+`tier`, `index`, `confidence`, `basis` and `providers`.
+
+`index` is a 0-100 position within a frozen public reference panel, not a success probability.
+Tiers are lower bounds on that index: S+ at 90, S at 80, A+ at 70, A at 60, A- at 50, B+ at 40,
+B at 25 and C at 0. Missing accepted evidence leaves `index` `null` and `tier` `"Unrated"`,
+never C. `confidence`
+describes evidence coverage and freshness separately from the index, and is often `limited`.
+Read a score only within its benchmark and cohort, and treat a matching letter in
+`swe_bench_tier` as a different scale.
+
+`coding-audit.json` shares the `generationId` and records identity evidence, selected and
+rejected records, normalization inputs, source revisions and any issues. Coverage is partial:
+it reflects the free offerings that resolve to a model with public evidence, not every entry
+in a provider file.
 
 ## Example
 
