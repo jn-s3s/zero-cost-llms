@@ -3,6 +3,8 @@
 This changelog follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
 ## [1.0.0] - 2026-10-01
 
 First release. Nothing shipped under a version before this one, so everything

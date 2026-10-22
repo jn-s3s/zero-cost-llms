@@ -17,6 +17,9 @@ __pycache__/
 # Prettier and its dependencies
 /node_modules/
 
+# Tagged source archives built by the release workflow
+/dist/
+
 # Qoder agent sessions and workflow transcripts
 /.qoder/
 

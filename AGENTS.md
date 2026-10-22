@@ -23,6 +23,14 @@ Core stack:
 | Format (Python)    | `uvx ruff format <file>`        |
 | Format (JSON, etc) | `npx prettier --write <file>`   |
 | Run script         | `uv run python fetch_models.py` |
+| Full quality gate  | `npm run check`                 |
+
+Install formatting tools with `npm ci --ignore-scripts` first. `npm run check` is the
+shared local, CI and release gate: pinned Ruff lint/format checks and locked Prettier.
+The canonical project version is `package.json`; keep it and `package-lock.json` in sync
+with dated release entries in `CHANGELOG.md`. Feature/fix PRs target `dev`; release PRs
+go from `dev` into `main` with merge commits. See `CONTRIBUTING.md` for release and ruleset
+bootstrap details. Do not create tags or publish releases just to verify workflow setup.
 
 `uv run python fetch_models.py` exits `0` when every provider's outcome reached its file. That is not the same as every provider succeeding: read each `data/<id>.json` `status`, because a provider failure is stored in the data rather than in the exit code.
 

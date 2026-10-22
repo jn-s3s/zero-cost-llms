@@ -1,0 +1,65 @@
+name: Tag release
+
+on:
+    push:
+        branches: [main]
+
+permissions:
+    contents: read
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.sha }}
+    cancel-in-progress: false
+
+defaults:
+    run:
+        shell: pwsh
+
+jobs:
+    tag:
+        name: Tag version from changelog
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+        steps:
+            - name: Check release authentication
+              env:
+                  GH_TOKEN: ${{ secrets.RELEASE_PAT }}
+              run: |
+                  if (-not $env:GH_TOKEN) { throw 'Configure RELEASE_PAT with the release-tag permissions.' }
+            - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+              with:
+                  fetch-depth: 0
+                  persist-credentials: false
+                  token: ${{ secrets.RELEASE_PAT }}
+            - uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
+              with:
+                  version: "0.11.1"
+                  python-version: "3.11"
+                  enable-cache: false
+            - name: Validate and create the release tag
+              env:
+                  GH_TOKEN: ${{ secrets.RELEASE_PAT }}
+              run: |
+                  $metadataJson = uv run python scripts/release_metadata.py --mode inspect --version-file package.json --version-key version
+                  if ($LASTEXITCODE -ne 0) { throw 'Release metadata validation failed.' }
+                  $tag = ($metadataJson | ConvertFrom-Json).data.tag
+                  $refsJson = gh api "repos/$env:GITHUB_REPOSITORY/git/matching-refs/tags/$tag"
+                  if ($LASTEXITCODE -ne 0) { throw 'Could not inspect the remote release tag.' }
+                  $existing = @($refsJson | ConvertFrom-Json | Where-Object { $_.ref -eq "refs/tags/$tag" })
+                  if ($existing.Count -gt 0) {
+                      $tagObject = $existing[0].object
+                      while ($tagObject.type -eq 'tag') {
+                          $objectJson = gh api "repos/$env:GITHUB_REPOSITORY/git/tags/$($tagObject.sha)"
+                          if ($LASTEXITCODE -ne 0) { throw "Could not resolve annotated tag $tag." }
+                          $tagObject = ($objectJson | ConvertFrom-Json).object
+                      }
+                      if ($tagObject.type -ne 'commit' -or $tagObject.sha -ne $env:GITHUB_SHA) {
+                          throw "Existing tag $tag points to another commit; prepare a new version instead of moving it."
+                      }
+                      Write-Host "Tag $tag already identifies this commit."
+                      exit 0
+                  }
+                  uv run python scripts/release_metadata.py --mode ready --version-file package.json --version-key version
+                  if ($LASTEXITCODE -ne 0) { throw 'This commit is not ready for a release tag.' }
+                  gh api --method POST "repos/$env:GITHUB_REPOSITORY/git/refs" --field "ref=refs/tags/$tag" --field "sha=$env:GITHUB_SHA"
+                  if ($LASTEXITCODE -ne 0) { throw 'Tag creation failed; check token access and the tag ruleset.' }

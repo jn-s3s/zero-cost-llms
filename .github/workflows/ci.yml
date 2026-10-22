@@ -1,0 +1,55 @@
+name: CI
+
+on:
+    push:
+        branches: [main, dev]
+    pull_request:
+        branches: [main, dev]
+        types: [opened, synchronize, reopened, ready_for_review]
+    workflow_dispatch:
+
+permissions:
+    contents: read
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+jobs:
+    verify:
+        name: Quality checks
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+        steps:
+            - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+              with:
+                  persist-credentials: false
+            - uses: ./.github/actions/project-checks
+
+    release-gate:
+        name: Changelog gate
+        if: github.event_name == 'pull_request' && github.base_ref == 'main'
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+        steps:
+            - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+              with:
+                  fetch-depth: 0
+                  persist-credentials: false
+            - uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
+              with:
+                  version: "0.11.1"
+                  python-version: "3.11"
+                  enable-cache: false
+            - name: Validate release source and metadata
+              shell: pwsh
+              env:
+                  HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+                  EXPECTED_REPO: ${{ github.repository }}
+                  SOURCE_BRANCH: ${{ github.head_ref }}
+              run: |
+                  if ($env:HEAD_REPO -ne $env:EXPECTED_REPO -or $env:SOURCE_BRANCH -ne 'dev') {
+                      throw 'Release PRs must come from dev in this repository.'
+                  }
+                  uv run python scripts/release_metadata.py --mode ready --version-file package.json --version-key version
+                  if ($LASTEXITCODE -ne 0) { throw 'Release metadata validation failed.' }

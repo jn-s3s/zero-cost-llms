@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from lib.http_client import get_url
 from providers.base import models_url
@@ -22,7 +22,7 @@ def fetch(provider_config: dict) -> list[dict]:
     response = get_url(url)
     data = json.loads(response)
 
-    now = datetime.now(timezone.utc)
+    now = datetime.now(UTC)
     free_models = []
 
     for model in data.get("data", []):
@@ -34,7 +34,7 @@ def fetch(provider_config: dict) -> list[dict]:
         expiration_date = model.get("expiration_date")
         if expiration_date:
             try:
-                expires = datetime.fromisoformat(expiration_date.replace("Z", "+00:00"))
+                expires = datetime.fromisoformat(expiration_date)
                 if expires < now:
                     continue
             except (ValueError, TypeError):
