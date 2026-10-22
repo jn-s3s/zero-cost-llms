@@ -19,9 +19,11 @@ jobs:
         steps:
             - name: Check out repository
               uses: actions/checkout@v4
-            - uses: actions/setup-python@v5
+            - uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
               with:
+                  version: "0.11.1"
                   python-version: "3.11"
+                  enable-cache: false
             - name: Seed the output with the published data
               id: seed
               run: |
@@ -56,10 +58,10 @@ jobs:
                   GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
                   MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
                   QODER_ACCESS_TOKEN: ${{ secrets.QODER_ACCESS_TOKEN }}
-              run: python fetch_models.py --output "$RUNNER_TEMP/model-output"
+              run: uv run python fetch_models.py --output "$RUNNER_TEMP/model-output"
             - name: Report providers that failed
               run: |
-                  python - "$RUNNER_TEMP/model-output" <<'PY'
+                  uv run python - "$RUNNER_TEMP/model-output" <<'PY'
                   import json
                   import pathlib
                   import sys
@@ -105,7 +107,7 @@ jobs:
                   # script's job, and this covers a run that died before it could
                   # record the failure at all.
                   rsync -a "$RUNNER_TEMP/model-output/" data/
-                  python - "$GITHUB_WORKSPACE/providers.json" data <<'PY'
+                  uv run --no-project python - "$GITHUB_WORKSPACE/providers.json" data <<'PY'
                   import json
                   import pathlib
                   import re
