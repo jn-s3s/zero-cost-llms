@@ -17,13 +17,13 @@ Core stack:
 
 ## Commands
 
-| Purpose            | Command                         |
-| ------------------ | ------------------------------- |
-| Lint (Python)      | `uvx ruff check --fix <file>`   |
-| Format (Python)    | `uvx ruff format <file>`        |
-| Format (JSON, etc) | `npx prettier --write <file>`   |
-| Run script         | `uv run python fetch_models.py` |
-| Full quality gate  | `npm run check`                 |
+| Purpose            | Command                               |
+| ------------------ | ------------------------------------- |
+| Lint (Python)      | `uvx ruff@0.16.10 check --fix <file>` |
+| Format (Python)    | `uvx ruff@0.16.10 format <file>`      |
+| Format (JSON, etc) | `npx prettier --write <file>`         |
+| Run script         | `uv run python fetch_models.py`       |
+| Full quality gate  | `npm run check`                       |
 
 Install formatting tools with `npm ci --ignore-scripts` first. `npm run check` is the
 shared local, CI and release gate: pinned Ruff lint/format checks and locked Prettier.

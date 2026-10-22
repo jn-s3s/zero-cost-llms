@@ -61,8 +61,8 @@ uv run python fetch_models.py --provider <id>
 Then read the top-level `status` in `data/<id>.json`. An exit code of `0` means the outcome
 was written, not that the provider succeeded. Inspect `count`, `data` and any
 `lastFailedMessage` to explain the observable result. Before submitting, lint and format
-every changed Python file with `uvx ruff check --fix <file>` and
-`uvx ruff format <file>`, and format every changed JSON, YAML and Markdown file with
+every changed Python file with `uvx ruff@0.16.10 check --fix <file>` and
+`uvx ruff@0.16.10 format <file>`, and format every changed JSON, YAML and Markdown file with
 `npx prettier --write <file>`. A completed change has a successful provider status when a
 fetch is applicable, an output list consistent with the documented free-model rule, and
 formatted changed files. Run the complete mandatory quality gate before submitting:
