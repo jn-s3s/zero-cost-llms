@@ -164,15 +164,20 @@ New check contexts are not required during bootstrap until their workflows can r
    its update, deletion and non-fast-forward rules remain. Do not create a real release
    tag as a setup test.
 
-For an authorized ruleset update, substitute the actual ruleset ID and re-read current
-settings first so unrelated changes are preserved:
+For an authorized ruleset update, first re-read the selected ruleset and preserve any
+unrelated settings. Always pair its ID with its matching payload and verify that same ID;
+never substitute only the ID in a command copied from a different ruleset:
 
 ```powershell
-gh api --method PUT repos/jn-s3s/zero-cost-llms/rulesets/<id> --input .github/rulesets/dev.json
+gh api repos/jn-s3s/zero-cost-llms/rulesets/24775543
+gh api --method PUT repos/jn-s3s/zero-cost-llms/rulesets/24775543 --input .github/rulesets/dev.json
 if ($LASTEXITCODE -ne 0) { throw "Ruleset update failed." }
-gh api repos/jn-s3s/zero-cost-llms/rules/branches/dev
+gh api repos/jn-s3s/zero-cost-llms/rulesets/24775543
 if ($LASTEXITCODE -ne 0) { throw "Ruleset verification failed." }
 ```
+
+Use `24309551` with `.github/rulesets/main.json` for main, or `24775546` with
+`.github/rulesets/release-tags.json` for release tags; verify each using its own ruleset ID.
 
 ## Out of scope
 
