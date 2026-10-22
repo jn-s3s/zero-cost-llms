@@ -294,6 +294,7 @@ def _livebench(required: tuple[str, ...] = ()) -> dict:
         ).decode("utf-8")
     )
     cohorts = []
+    excluded_rows = []
     for date in dates:
         categories = _json_bytes(
             _capture(
@@ -315,10 +316,38 @@ def _livebench(required: tuple[str, ...] = ()) -> dict:
             or len(rows) > _MAX_RECORDS
             or "model" not in (reader.fieldnames or [])
             or len(set(reader.fieldnames or [])) != len(reader.fieldnames or [])
-            or any(None in row for row in rows)
         ):
             raise ValueError("LiveBench: invalid table")
         release = date.replace("_", "-")
+        valid_rows = []
+        for record_number, row in enumerate(rows, 1):
+            if None in row or None in row.values():
+                # Missing or extra cells make column alignment ambiguous. Exclude
+                # the entire record, not the other valid records in the source.
+                excluded_rows.append(
+                    {
+                        "release": release,
+                        "recordNumber": record_number,
+                        "modelId": row.get("model"),
+                        "reason": "column_count_mismatch",
+                        "missingColumns": [
+                            key for key, value in row.items() if value is None
+                        ],
+                        "extraCellCount": len(row.get(None, [])),
+                    }
+                )
+                continue
+            valid_rows.append(row)
+        excluded_count = len(rows) - len(valid_rows)
+        if excluded_count:
+            print(
+                f"livebench: {release}: excluded {excluded_count} malformed CSV "
+                "record(s); see snapshot.excludedRows in the source audit",
+                file=sys.stderr,
+            )
+        if not valid_rows:
+            raise ValueError(f"LiveBench: no valid rows in {release}")
+        rows = valid_rows
         for category, suffix, workload in (
             ("Coding", "coding", "generation_debugging"),
             ("Agentic Coding", "agentic_coding", "repository_editing"),
@@ -379,6 +408,7 @@ def _livebench(required: tuple[str, ...] = ()) -> dict:
                 cohorts.append(cohort)
     snapshot = _snapshot(revision, artifacts, bodies)
     snapshot["cohorts"] = cohorts
+    snapshot["excludedRows"] = excluded_rows
     snapshot["latestRelease"] = dates[0].replace("_", "-")
     snapshot["categories"] = (
         "Pinned per-release category artifacts; release denotes task version, not evaluation date"

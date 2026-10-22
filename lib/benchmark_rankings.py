@@ -159,6 +159,16 @@ def _load_sources(
                     }
                 )
             else:
+                if candidate_origin == "cache" and candidate.get("snapshot") is None:
+                    issues.append(
+                        {
+                            "scope": "source",
+                            "sourceId": source_id,
+                            "code": "cached_source_without_snapshot",
+                            "origin": candidate_origin,
+                        }
+                    )
+                    continue
                 source = candidate
                 origin = candidate_origin
                 input_hashes[source_id] = {"origin": origin, "sha256": source_hash}
@@ -173,6 +183,16 @@ def _load_sources(
             continue
         loaded.append(source)
         snapshot = source.get("snapshot")
+        excluded_rows = (snapshot or {}).get("excludedRows")
+        if isinstance(excluded_rows, list) and excluded_rows:
+            issues.append(
+                {
+                    "scope": "source",
+                    "sourceId": source_id,
+                    "code": "source_rows_excluded",
+                    "count": len(excluded_rows),
+                }
+            )
         states.append(
             {
                 "sourceId": source_id,

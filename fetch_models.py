@@ -24,6 +24,12 @@ MAX_FAILED_MESSAGE_CHARS = 300
 REMOVED_RETENTION_DAYS = 90
 # Explicit keys keep unrelated SWE-bench-like estimates out of a score.
 SWE_BENCH_KEYS = ("swe_bench_verified", "swe_bench", "swebench", "swe-bench")
+# A checkpoint-qualified id must not borrow a score from its unqualified name.
+CHECKPOINT_RELEASE_QUALIFIER = re.compile(
+    r"[-_@.]*(?:v?\d{8}|\d{4}-\d{2}-\d{2}|\d{4}-\d{2}|\d{2}-\d{4}"
+    r"|\d{2}-\d{2}|v?\d{4}|previews?)(?:[:/-]free)?$",
+    re.IGNORECASE,
+)
 
 
 def fetch_provider(provider: dict) -> list[dict]:
@@ -226,8 +232,14 @@ def _benchmark_fields(model: dict, model_id: str) -> dict:
     model_name = (
         model.get("name") or model.get("display_name") or model.get("model") or model_id
     )
-    swe_score = _publishable_score(get_swebench_score(model_id, model_name))
-    lcb_score = _publishable_score(get_livecodebench_score(model_id, model_name))
+    has_release_qualifier = bool(CHECKPOINT_RELEASE_QUALIFIER.search(model_id))
+    swe_score = _publishable_score(get_swebench_score(model_id))
+    lcb_score = _publishable_score(get_livecodebench_score(model_id))
+    if not has_release_qualifier:
+        if swe_score is None:
+            swe_score = _publishable_score(get_swebench_score(None, model_name))
+        if lcb_score is None:
+            lcb_score = _publishable_score(get_livecodebench_score(None, model_name))
     # Curated scores are ours, so they go under a key of our own shape.
     # Provider benchmarks stay untouched: merging our objects into Routeway's
     # flat bag would replace its numbers and publish incompatible shapes.

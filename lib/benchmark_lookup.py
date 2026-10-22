@@ -6,8 +6,8 @@ deliberately unsupported here: a bare family key such as ``deepseek`` then
 matches every model in that family, which published a V3.2 score for unrelated
 releases, and the winner depended on key order in the JSON. Both sides are
 normalized the same way and matched exactly instead, so a published score comes
-from one explicit key, or from the key of the base model when only a trailing
-release qualifier such as a date or ``preview`` differs.
+from one explicit key. Checkpoint release qualifiers are never removed, so an
+unmapped revision cannot inherit a different revision's score.
 
 A mapping file that cannot be read, or that lists the same model twice with two
 different scores, is reported on stderr rather than resolved silently, because
@@ -17,22 +17,11 @@ the alternative is publishing a score chosen by file order.
 from __future__ import annotations
 
 import json
-import re
 import sys
 from functools import cache
 
 from lib.http_client import one_line
 from lib.repo_root import REPO_ROOT
-
-# A trailing release qualifier such as -2025-01-31, -2508 or -preview. Dropping
-# one lets a dated or preview release fall back to the score of the base model.
-# The spelling as given is always tried first, so an explicit dated or preview
-# key in the mapping wins.
-_RELEASE_QUALIFIER = re.compile(
-    r"[-_@.]*(?:v?\d{8}|\d{4}-\d{2}-\d{2}|\d{4}-\d{2}|\d{2}-\d{4}"
-    r"|\d{2}-\d{2}|v?\d{4}|previews?)$",
-    re.IGNORECASE,
-)
 
 
 def normalize(spelling: str) -> str:
@@ -71,25 +60,8 @@ def _spelling_forms(spelling: str) -> list[str]:
 
 
 def _forms(spelling: str) -> list[str]:
-    """Return every normalized form of a spelling, most specific first.
-
-    Each spelling contributes all of its forms before the next one is tried, and
-    a trailing release qualifier is only dropped once every form of the spelling
-    carrying it has missed. So ``openai/o3-mini-2025-01-31`` resolves against
-    ``o3 mini`` rather than a shorter key for a different model, while
-    ``gemini-3-pro-preview`` still resolves against an explicit preview key.
-
-    Each dropped qualifier shortens the spelling, so the walk always ends.
-    """
-    forms = []
-    variant = spelling
-    while variant:
-        forms += _spelling_forms(variant)
-        stripped = _RELEASE_QUALIFIER.sub("", variant)
-        if stripped == variant:
-            break
-        variant = stripped
-    return list(dict.fromkeys(forms))
+    """Return exact normalized forms of a spelling, most specific first."""
+    return _spelling_forms(spelling)
 
 
 @cache
