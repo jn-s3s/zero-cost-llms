@@ -1,4 +1,13 @@
 {
+    "name": "zero-cost-llms",
+    "version": "1.0.0",
+    "private": true,
+    "engines": {
+        "node": ">=24"
+    },
+    "scripts": {
+        "check": "uvx ruff@0.16.10 check . && uvx ruff@0.16.10 format --check . && prettier --check ."
+    },
     "devDependencies": {
         "prettier": "^3.9.9"
     }

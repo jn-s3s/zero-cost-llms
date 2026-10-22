@@ -71,7 +71,7 @@ def _load_payload(target: Path) -> dict:
 
 def _now() -> str:
     """Return the current UTC time as an ISO 8601 string."""
-    return datetime.datetime.now(datetime.timezone.utc).isoformat()
+    return datetime.datetime.now(datetime.UTC).isoformat()
 
 
 def _removed_is_older(removed_at: object, cutoff: datetime.datetime) -> bool:
@@ -93,7 +93,7 @@ def _removed_is_older(removed_at: object, cutoff: datetime.datetime) -> bool:
     except ValueError:
         return True
     if parsed.tzinfo is None:
-        parsed = parsed.replace(tzinfo=datetime.timezone.utc)
+        parsed = parsed.replace(tzinfo=datetime.UTC)
     return parsed < cutoff
 
 
