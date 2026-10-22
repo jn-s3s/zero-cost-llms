@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import json
+import math
 import os
 import re
 import sys
@@ -21,6 +22,8 @@ from providers import get_provider
 SAFE_PROVIDER_ID = re.compile(r"[a-z0-9][a-z0-9_-]*")
 MAX_FAILED_MESSAGE_CHARS = 300
 REMOVED_RETENTION_DAYS = 90
+# Explicit keys keep unrelated SWE-bench-like estimates out of a score.
+SWE_BENCH_KEYS = ("swe_bench_verified", "swe_bench", "swebench", "swe-bench")
 
 
 def fetch_provider(provider: dict) -> list[dict]:
@@ -174,58 +177,80 @@ def _write_wrapper(target: Path, wrapper: dict) -> None:
             staging.unlink(missing_ok=True)
 
 
+def _publishable_score(value: object) -> float | None:
+    """Return ``value`` as a 0-100 score, or None when it is not one.
+
+    Scores reach this module as JSON, where provider data may spell one as a
+    string, so strings are converted here. ``float`` also accepts ``"NaN"`` and
+    ``"Infinity"``, which must not be published: the writer would emit a bare
+    ``NaN`` token that strict JSON readers reject for the provider's entire
+    file, and ``NaN`` fails every tier comparison, so it would be filed as C.
+    A value outside 0-100 is not a percentage either, and ``True`` is a boolean
+    that happens to convert to 1, so all three are dropped rather than guessed
+    at.
+    """
+    if isinstance(value, bool):
+        return None
+    try:
+        score = float(value)
+    except (TypeError, ValueError):
+        return None
+    if not math.isfinite(score) or not 0 <= score <= 100:
+        return None
+    return score
+
+
+def _provider_swe_score(benchmarks: object) -> float | None:
+    """Return the SWE-bench score a provider publishes in its benchmark bag.
+
+    Only explicit SWE-bench keys are read, so an unrelated estimate stored
+    beside them does not become a SWE-bench score. A value written in an
+    unusable shape falls through to the next key rather than ending the search,
+    because a provider that misspells one entry may still have a usable one.
+    """
+    if not isinstance(benchmarks, dict):
+        return None
+    for key in SWE_BENCH_KEYS:
+        if key not in benchmarks:
+            continue
+        benchmark = benchmarks[key]
+        score = _publishable_score(
+            benchmark.get("score") if isinstance(benchmark, dict) else benchmark
+        )
+        if score is not None:
+            return score
+    return None
+
+
 def _benchmark_fields(model: dict, model_id: str) -> dict:
     model_name = (
         model.get("name") or model.get("display_name") or model.get("model") or model_id
     )
-    swe_score = get_swebench_score(model_id, model_name)
-    lcb_score = get_livecodebench_score(model_id, model_name)
+    swe_score = _publishable_score(get_swebench_score(model_id, model_name))
+    lcb_score = _publishable_score(get_livecodebench_score(model_id, model_name))
     # Curated scores are ours, so they go under a key of our own shape.
     # Provider benchmarks stay untouched: merging our objects into Routeway's
     # flat bag would replace its numbers and publish incompatible shapes.
     curated: dict[str, dict] = {}
     if swe_score is not None:
         curated["swe_bench_verified"] = {
-            "score": round(float(swe_score), 2),
+            "score": round(swe_score, 2),
             "tier": swebench_tier(swe_score),
             "source": swebench_source(),
         }
     if lcb_score is not None:
         curated["livecodebench"] = {
-            "score": round(float(lcb_score), 2),
+            "score": round(lcb_score, 2),
             "source": "LiveCodeBench",
         }
     existing_bench = model.get("benchmarks")
-    swe_score_out = swe_score
-    if swe_score_out is None and isinstance(existing_bench, dict):
-        # Explicit keys keep unrelated SWE-bench-like estimates out of scores.
-        swe_keys = ("swe_bench_verified", "swe_bench", "swebench", "swe-bench")
-        for benchmark_key in swe_keys:
-            benchmark = existing_bench.get(benchmark_key)
-            if isinstance(benchmark, dict):
-                score = benchmark.get("score")
-                try:
-                    swe_score_out = float(score) if score is not None else None
-                except (ValueError, TypeError):
-                    swe_score_out = None
-                break
-        if swe_score_out is None:
-            for benchmark_key, benchmark in existing_bench.items():
-                if benchmark_key not in swe_keys:
-                    continue
-                if isinstance(benchmark, (int, float)):
-                    swe_score_out = float(benchmark)
-                    break
-                if isinstance(benchmark, dict) and benchmark.get("score") is not None:
-                    try:
-                        swe_score_out = float(benchmark["score"])
-                    except (ValueError, TypeError):
-                        swe_score_out = None
-                    break
+    swe_score_out = (
+        swe_score if swe_score is not None else _provider_swe_score(existing_bench)
+    )
     return {
         "benchmarks": existing_bench,
         "curated_benchmarks": curated or None,
-        "swe_bench_score": round(float(swe_score_out), 2)
+        "swe_bench_score": round(swe_score_out, 2)
         if swe_score_out is not None
         else None,
         "swe_bench_tier": swebench_tier(swe_score_out)
