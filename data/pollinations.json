@@ -1,10 +1,65 @@
 {
   "status": "success",
-  "count": 7,
-  "updatedAt": "2026-10-21T04:25:43.047041+00:00",
+  "count": 8,
+  "updatedAt": "2026-10-22T04:24:39.640942+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "community/CloudCompile/MiniMax-m3.1-flash:free",
+      "object": "model",
+      "created": 1792614549,
+      "owned_by": "My Github",
+      "aliases": [
+        "CloudCompile/MiniMax-m3.1-flash:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "MiniMax M3.1 Flash Free",
+      "input_modalities": [
+        "text",
+        "audio"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "per_user_rpm": null,
+      "health": {
+        "status": "healthy",
+        "success_rate": 96,
+        "requests": 50
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-22T04:24:39.640942+00:00",
+      "lastSeen": "2026-10-22T04:24:39.640942+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
       "object": "model",
@@ -57,7 +112,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-22T04:24:39.640942+00:00",
       "removedDate": null,
       "status": null
     },
@@ -114,7 +169,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-22T04:24:39.640942+00:00",
       "removedDate": null,
       "status": null
     },
@@ -165,12 +220,12 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 98,
+        "success_rate": 100,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-22T04:24:39.640942+00:00",
       "removedDate": null,
       "status": null
     },
@@ -226,7 +281,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-08T05:47:05.283557+00:00",
-      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-22T04:24:39.640942+00:00",
       "removedDate": null,
       "status": null
     },
@@ -276,13 +331,13 @@
       "context_length": 262000,
       "per_user_rpm": 45,
       "health": {
-        "status": "healthy",
-        "success_rate": 98,
+        "status": "degraded",
+        "success_rate": 92,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-22T04:24:39.640942+00:00",
       "removedDate": null,
       "status": null
     },
@@ -333,13 +388,13 @@
       "context_length": 131000,
       "per_user_rpm": 10,
       "health": {
-        "status": "healthy",
-        "success_rate": 100,
+        "status": "degraded",
+        "success_rate": 94,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-22T04:24:39.640942+00:00",
       "removedDate": null,
       "status": null
     },
@@ -384,12 +439,12 @@
       "per_user_rpm": 5,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 96,
         "requests": 50
       },
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-22T04:24:39.640942+00:00",
       "removedDate": null,
       "status": null
     },

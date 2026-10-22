@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 2,
-  "updatedAt": "2026-10-21T04:25:46.254956+00:00",
+  "updatedAt": "2026-10-22T04:24:42.981849+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -28,7 +28,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:14.926915+00:00",
-      "lastSeen": "2026-10-21T04:25:46.254956+00:00",
+      "lastSeen": "2026-10-22T04:24:42.981849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -41,9 +41,9 @@
       "support_disable_reasoning": true,
       "price_factor": 0,
       "efforts": [
-        "low",
         "high",
-        "max"
+        "max",
+        "low"
       ],
       "default_effort": "max",
       "max_input_tokens": 1000000,
@@ -55,7 +55,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-20T04:33:33.719188+00:00",
-      "lastSeen": "2026-10-21T04:25:46.254956+00:00",
+      "lastSeen": "2026-10-22T04:24:42.981849+00:00",
       "removedDate": null,
       "status": null
     }

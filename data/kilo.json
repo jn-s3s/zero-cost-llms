@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 14,
-  "updatedAt": "2026-10-21T04:25:42.863809+00:00",
+  "count": 15,
+  "updatedAt": "2026-10-22T04:24:39.458389+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -58,7 +58,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -157,7 +157,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-20T04:33:30.044190+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -232,7 +232,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.424757+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -332,7 +332,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -425,7 +425,70 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "recursive/flint-v1.0:free",
+      "name": "Recursive: Flint (free)",
+      "created": 1792622765,
+      "description": "Flint is an open-weight mixture-of-experts model from Recursive, with about 2.5B active parameters out of 40B total, built by Recursive's autoresearch system Eureka Machine for coding agents. It is suited...",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "top_provider": {
+        "is_moderated": false,
+        "context_length": 262144,
+        "max_completion_tokens": 235929
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "discount": 0
+      },
+      "context_length": 262144,
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "temperature",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "expiration_date": null,
+      "inference_provider_ids": [
+        "recursive"
+      ],
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {
+        "variants": {
+          "thinking": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          }
+        },
+        "reasoning_options": []
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-22T04:24:39.458389+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -503,7 +566,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -573,7 +636,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -643,7 +706,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -717,7 +780,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -786,7 +849,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -868,7 +931,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -941,7 +1004,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1029,7 +1092,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1091,7 +1154,7 @@
       "opencode": {},
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-21T04:25:42.863809+00:00",
+      "lastSeen": "2026-10-22T04:24:39.458389+00:00",
       "removedDate": null,
       "status": null
     },

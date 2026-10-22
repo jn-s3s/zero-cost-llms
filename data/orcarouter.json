@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 7,
-  "updatedAt": "2026-10-21T04:25:42.328885+00:00",
+  "updatedAt": "2026-10-22T04:24:39.176823+00:00",
   "lastFailedAt": "2026-10-12T05:41:45.812325+00:00",
   "lastFailedMessage": "URLError: <urlopen error timed out>",
   "data": [
@@ -18,7 +18,7 @@
       ],
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-21T04:25:42.328885+00:00",
+      "lastSeen": "2026-10-22T04:24:39.176823+00:00",
       "removedDate": null,
       "status": null
     },
@@ -27,7 +27,12 @@
       "object": "model",
       "created": 1626777600,
       "owned_by": "DeepSeek",
-      "supported_endpoint_types": null,
+      "supported_endpoint_types": [
+        "openai"
+      ],
+      "endpoint_capabilities": [
+        "chat_completions"
+      ],
       "name": "DeepSeek: DeepSeek V4 Flash (Free)",
       "description": "DeepSeek V4 Flash efficient MoE — 284B total / 13B active params, 1M context, optimized for fast everyday workloads.",
       "pricing": {
@@ -35,7 +40,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-21T04:25:42.328885+00:00",
+      "lastSeen": "2026-10-22T04:24:39.176823+00:00",
       "removedDate": null,
       "status": null
     },
@@ -44,7 +49,12 @@
       "object": "model",
       "created": 1626777600,
       "owned_by": "DeepSeek",
-      "supported_endpoint_types": null,
+      "supported_endpoint_types": [
+        "openai"
+      ],
+      "endpoint_capabilities": [
+        "chat_completions"
+      ],
       "name": "DeepSeek: DeepSeek V4.1 Flash (Free)",
       "description": "DeepSeek-V4.1-Flash is the smallest model in DeepSeek's new architecture family, released September 10, 2026, with native multimodal visual understanding — the production successor to both V4 Flash and the V4 Flash Vision experiment. The new architecture\r\n  targets a higher capability ceiling, faster inference and higher throughput, and DeepSeek reports V4.1 Flash comprehensively surpasses V4 Pro on performance, cost, speed and total task time. It accepts text and images with text output, serves a 1M-token context window with up\r\n  to 384K output tokens, and supports thinking (default, with selectable effort low / high / max) and non-thinking modes across the Chat Completions, Responses and Anthropic-compatible APIs, along with JSON output, tool calls and chat prefix completion; FIM works in non-thinking\r\n  mode only. Model weights are open on Hugging Face (deepseek-ai/DeepSeek-V4.1-Flash).\r\n\r\n  Official benchmarks at release: 90.6 on Terminal-Bench 2.1, 74.2 on DeepSWE v1.1, 65.4 on NL2Repo-Bench, 90.9 on GPQA Diamond, 63.9 on HLE with tools, and strong native-vision agent results (89.6 BabyVision, 78.9 Chartography with tools). Pricing was cut alongside the release:\r\n  $0.15/M input (cache miss), $0.60/M output and $0.003/M on cache hits at off-peak rates, doubling during weekday peak hours (01:00-04:00 and 06:00-10:00 UTC); all other hours including weekends are off-peak.",
       "pricing": {
@@ -55,7 +65,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-18T04:13:46.849072+00:00",
-      "lastSeen": "2026-10-21T04:25:42.328885+00:00",
+      "lastSeen": "2026-10-22T04:24:39.176823+00:00",
       "removedDate": null,
       "status": null
     },
@@ -64,7 +74,7 @@
       "object": "model",
       "created": 1626777600,
       "owned_by": "Orca",
-      "supported_endpoint_types": null,
+      "supported_endpoint_types": [],
       "name": "Orca: OrcaVerify Text 1.0 (Free)",
       "description": "AI-generated-text detection over the OpenAI Chat Completions format: four calibrated verdicts (AI_GENERATED / AI_ASSISTED / HUMAN / ABSTAIN) with a calibrated probability and paragraph-level localization. English, Chinese, Japanese and Korean.",
       "pricing": {
@@ -75,7 +85,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-21T04:25:42.328885+00:00",
+      "lastSeen": "2026-10-22T04:24:39.176823+00:00",
       "removedDate": null,
       "status": null
     },
@@ -84,7 +94,7 @@
       "object": "model",
       "created": 1626777600,
       "owned_by": "Tencent",
-      "supported_endpoint_types": null,
+      "supported_endpoint_types": [],
       "name": "Tencent: Hy3 (Free)",
       "description": "Hy3 is Tencent Hunyuan's production-grade Mixture-of-Experts model — 295B total parameters with only 21B active per pass (192 experts, top-8 routing), the upgraded release built on the Hy3-preview line. It expands RL-training scale and post-training data quality for further gains in reasoning, long-context, and agentic tasks, reaching results comparable to flagship models several times its parameter size. It serves a 256K-token context window (text in, text out) with configurable reasoning effort, and is built for real-world coding, tool use, and multi-step agent workflows at a strong quality-to-cost ratio.",
       "pricing": {
@@ -92,7 +102,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-21T04:25:42.328885+00:00",
+      "lastSeen": "2026-10-22T04:24:39.176823+00:00",
       "removedDate": null,
       "status": null
     },
@@ -101,7 +111,7 @@
       "object": "model",
       "created": 1626777600,
       "owned_by": "Tencent",
-      "supported_endpoint_types": null,
+      "supported_endpoint_types": [],
       "name": "Tencent: Hy4 preview (Free)",
       "description": "Hy4 preview is Tencent latest Mixture-of-Experts flagship: 770B total parameters with 49B activated per token, 78 layers, 256 routed experts plus 1 shared expert, and a 1M-token context window. It is a text-only model built for coding agents, complex tool-use workflows, and productivity work, with a native MTP layer for speculative decoding.\n\nReasoning is configurable at three levels (high, low, none) and defaults to high, so it can run as a deep chain-of-thought model for math, coding and analysis, or answer directly when latency matters. It supports native tool calling, structured outputs, and the full sampling parameter set; Tencent recommends temperature 0.9 with top_p 1.0.\n\nTencent positions it for software engineering, office and data analysis, game prototyping, and scientific research, and reports an internal blind evaluation (163 experts, 203 engineering tasks) in which Hy4 preview averaged 2.99 against GLM 5.3 at 2.92 and Kimi K3 at 2.94. As a preview release Tencent notes known rough edges, including spending longer than necessary on reasoning and over-verifying its own work.",
       "pricing": {
@@ -109,7 +119,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-21T04:25:42.328885+00:00",
+      "lastSeen": "2026-10-22T04:24:39.176823+00:00",
       "removedDate": null,
       "status": null
     },
@@ -118,7 +128,14 @@
       "object": "model",
       "created": 1626777600,
       "owned_by": "z-ai",
-      "supported_endpoint_types": null,
+      "supported_endpoint_types": [
+        "openai",
+        "anthropic"
+      ],
+      "endpoint_capabilities": [
+        "chat_completions",
+        "anthropic_messages"
+      ],
       "name": "Z.ai: GLM 5.3 Flash (Free)",
       "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while sharply reducing serving cost. 320B total / 18B active\r\n  parameters, 1M-token context, text + image + video in, text out.",
       "pricing": {
@@ -126,7 +143,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-      "lastSeen": "2026-10-21T04:25:42.328885+00:00",
+      "lastSeen": "2026-10-22T04:24:39.176823+00:00",
       "removedDate": null,
       "status": null
     }

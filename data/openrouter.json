@@ -1,10 +1,68 @@
 {
   "status": "success",
-  "count": 17,
-  "updatedAt": "2026-10-21T04:25:37.019968+00:00",
+  "count": 18,
+  "updatedAt": "2026-10-22T04:24:33.015928+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "recursive/flint-v1.0:free",
+      "canonical_slug": "recursive/flint-v1.0-20261021",
+      "hugging_face_id": "RecursiveSI/flint",
+      "name": "Recursive: Flint (free)",
+      "created": 1792622765,
+      "description": "Flint is an open-weight mixture-of-experts model from Recursive, with about 2.5B active parameters out of 40B total, built by Recursive's autoresearch system Eureka Machine for coding agents. It is suited...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 235929,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "temperature",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/recursive/flint-v1.0-20261021/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true
+      },
+      "presence": "active",
+      "firstSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "minimax/minimax-m3.1-flash:free",
       "canonical_slug": "minimax/minimax-m3.1-flash-20261019",
@@ -75,7 +133,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-20T04:33:23.581040+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -143,7 +201,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:09.924694+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -202,37 +260,37 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1132,
-            "win_rate": 28.8,
-            "rank": 76
+            "elo": 1129,
+            "win_rate": 28.5,
+            "rank": 78
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1155,
-            "win_rate": 32.7,
-            "rank": 81
+            "elo": 1156,
+            "win_rate": 32.8,
+            "rank": 82
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1108,
-            "win_rate": 28.9,
+            "elo": 1111,
+            "win_rate": 29.2,
             "rank": 93
           },
           {
             "arena": "models",
             "category": "uicomponent",
             "elo": 1143,
-            "win_rate": 31.6,
+            "win_rate": 32,
             "rank": 81
           },
           {
             "arena": "models",
             "category": "website",
-            "elo": 1171,
-            "win_rate": 34.7,
-            "rank": 82
+            "elo": 1173,
+            "win_rate": 34.9,
+            "rank": 81
           }
         ],
         "artificial_analysis": {
@@ -246,7 +304,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -303,7 +361,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -380,7 +438,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -443,7 +501,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -528,7 +586,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -582,7 +640,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -651,7 +709,7 @@
             "category": "webapps",
             "elo": 1196,
             "win_rate": 48.6,
-            "rank": 25
+            "rank": 26
           },
           {
             "arena": "models",
@@ -677,9 +735,9 @@
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1161,
-            "win_rate": 37.8,
-            "rank": 76
+            "elo": 1159,
+            "win_rate": 37.5,
+            "rank": 78
           },
           {
             "arena": "models",
@@ -691,22 +749,22 @@
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1109,
+            "elo": 1110,
             "win_rate": 34.6,
             "rank": 57
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1200,
-            "win_rate": 40.4,
-            "rank": 59
+            "elo": 1201,
+            "win_rate": 40.5,
+            "rank": 58
           },
           {
             "arena": "models",
             "category": "website",
             "elo": 1224,
-            "win_rate": 44.5,
+            "win_rate": 44.6,
             "rank": 57
           }
         ],
@@ -731,7 +789,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -785,7 +843,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -859,7 +917,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -921,7 +979,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -986,13 +1044,13 @@
             "category": "3d",
             "elo": 1132,
             "win_rate": 38.9,
-            "rank": 77
+            "rank": 76
           },
           {
             "arena": "models",
             "category": "asciiart",
-            "elo": 1101,
-            "win_rate": 37.9,
+            "elo": 1100,
+            "win_rate": 37.6,
             "rank": 60
           },
           {
@@ -1000,35 +1058,35 @@
             "category": "codecategories",
             "elo": 1147,
             "win_rate": 36.1,
-            "rank": 86
+            "rank": 87
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1142,
+            "elo": 1141,
             "win_rate": 37.5,
-            "rank": 84
+            "rank": 85
           },
           {
             "arena": "models",
             "category": "gamedev",
             "elo": 1138,
             "win_rate": 36.2,
-            "rank": 81
+            "rank": 82
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1068,
-            "win_rate": 32.3,
+            "elo": 1070,
+            "win_rate": 32.4,
             "rank": 69
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1140,
-            "win_rate": 36,
-            "rank": 82
+            "elo": 1139,
+            "win_rate": 35.8,
+            "rank": 83
           },
           {
             "arena": "models",
@@ -1057,7 +1115,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1132,7 +1190,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1203,7 +1261,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1277,7 +1335,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1358,7 +1416,7 @@
       },
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-21T04:25:37.019968+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
       "removedDate": null,
       "status": null
     },
