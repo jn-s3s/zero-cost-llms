@@ -1,14 +1,14 @@
 {
   "status": "success",
   "count": 5,
-  "updatedAt": "2026-10-22T04:24:41.776444+00:00",
+  "updatedAt": "2026-10-22T23:34:22.668571+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "codestral-latest",
       "object": "model",
-      "created": 1792633154,
+      "created": 1792701599,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -51,22 +51,26 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 99.42,
+      "availability_last_hour_percent": 99.43,
       "availability": {
-        "old": 99.6,
+        "old": 100.0,
         "mid": 100.0,
-        "recent": 98.59
+        "recent": 98.1
       },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-22T04:24:41.776444+00:00",
+      "lastSeen": "2026-10-22T23:34:22.668571+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "gpt-oss:20b",
       "object": "model",
-      "created": 1792635429,
+      "created": 1792704098,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -109,22 +113,26 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 99.2,
+      "availability_last_hour_percent": 94.82,
       "availability": {
-        "old": 100.0,
-        "mid": 98.04,
-        "recent": 100.0
+        "old": 95.83,
+        "mid": 95.24,
+        "recent": 92.96
       },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-22T04:24:41.776444+00:00",
+      "lastSeen": "2026-10-22T23:34:22.668571+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "minimax-m2.7",
       "object": "model",
-      "created": 1792635751,
+      "created": 1792711950,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -167,22 +175,26 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 96.83,
+      "availability_last_hour_percent": 99.7,
       "availability": {
-        "old": 97.01,
-        "mid": 96.49,
-        "recent": 96.88
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 99.04
       },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-22T04:24:41.776444+00:00",
+      "lastSeen": "2026-10-22T23:34:22.668571+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-Nemo-Instruct-2407",
       "object": "model",
-      "created": 1792635752,
+      "created": 1792704647,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -225,22 +237,26 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 98.1,
+      "availability_last_hour_percent": 99.84,
       "availability": {
-        "old": 99.27,
-        "mid": 95.61,
-        "recent": 99.15
+        "old": 99.7,
+        "mid": 100.0,
+        "recent": 99.83
       },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-22T04:24:41.776444+00:00",
+      "lastSeen": "2026-10-22T23:34:22.668571+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "nemotron-3-nano:30b",
       "object": "model",
-      "created": 1792635429,
+      "created": 1792704098,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -283,15 +299,19 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 98.25,
+      "availability_last_hour_percent": 91.86,
       "availability": {
-        "old": 100.0,
-        "mid": 95.45,
-        "recent": 100.0
+        "old": 84.62,
+        "mid": 100.0,
+        "recent": 95.83
       },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-03T05:03:34.945863+00:00",
-      "lastSeen": "2026-10-22T04:24:41.776444+00:00",
+      "lastSeen": "2026-10-22T23:34:22.668571+00:00",
       "removedDate": null,
       "status": null
     },

@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 65,
-  "updatedAt": "2026-10-22T04:24:37.469043+00:00",
+  "updatedAt": "2026-10-22T23:34:17.330127+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -37,9 +37,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -101,9 +105,19 @@
           }
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": {
+        "swe_bench_verified": {
+          "score": 26.0,
+          "tier": "B",
+          "source": "SWE-bench Verified leaderboard"
+        }
+      },
+      "swe_bench_score": 26.0,
+      "swe_bench_tier": "B",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -135,9 +149,13 @@
           ]
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -169,9 +187,13 @@
           "value": "https://huggingface.co/Intel/distilbert-base-uncased-finetuned-sst-2-english-int8-static"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -201,9 +223,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -229,9 +255,13 @@
           "value": "https://bfl.ai/legal/terms-of-service"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -276,9 +306,13 @@
           "value": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -324,9 +358,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -358,9 +396,13 @@
           ]
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -388,9 +430,13 @@
           ]
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -416,9 +462,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -462,9 +512,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -486,9 +540,13 @@
           "value": "https://openai.com/research/whisper"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -518,9 +576,13 @@
           "value": "Bulgarian,Croatian,Czech,Danish,Dutch,English,Estonian,Finnish,French,German,Greek,Hungarian,Irish,Italian,Latvian,Lithuanian,Maltese,Polish,Portuguese,Romanian,Slovak,Slovenian,Spanish,Swedish,Arabic,Catalan,Chinese,Galician,Hindi,Japanese,Korean,Norwegian,Russian,Turkish,Ukrainian"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -548,9 +610,13 @@
           ]
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -572,9 +638,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -619,9 +689,13 @@
           "value": "https://github.com/deepseek-ai/DeepSeek-R1/blob/main/LICENSE"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -661,9 +735,13 @@
           "value": "https://github.com/runwayml/stable-diffusion/blob/main/LICENSE"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -703,9 +781,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -754,9 +836,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -778,9 +864,13 @@
           "value": "https://bfl.ai/legal/terms-of-service"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -821,9 +911,13 @@
           "value": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -864,9 +958,13 @@
           "value": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -910,9 +1008,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:33.068300+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -964,9 +1066,13 @@
           }
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -998,9 +1104,13 @@
           "value": "https://www.microsoft.com/en-us/research/blog/microsoft-vision-model-resnet-50-combines-web-scale-data-and-multi-task-learning-to-achieve-state-of-the-art/"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1036,9 +1146,13 @@
           "value": "https://huggingface.co/ByteDance/SDXL-Lightning"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1068,9 +1182,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1119,9 +1237,13 @@
           "value": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1162,9 +1284,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1186,9 +1312,13 @@
           "value": "https://huggingface.co/Lykon/DreamShaper"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1229,9 +1359,13 @@
           "value": "https://leonardo.ai/terms-of-service/"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1271,9 +1405,13 @@
           "value": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/LICENSE.md"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1309,9 +1447,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-20T04:33:28.532117+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1360,9 +1502,13 @@
           "value": "https://github.com/facebookresearch/fairseq/blob/main/LICENSE"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1395,9 +1541,13 @@
           ]
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1423,9 +1573,13 @@
           "value": "https://bfl.ai/legal/terms-of-service"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1469,9 +1623,13 @@
           "value": "384"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1501,9 +1659,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1539,9 +1701,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-10T05:34:18.663795+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1582,9 +1748,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1633,9 +1803,13 @@
           "value": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1683,9 +1857,13 @@
           "value": "768"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1722,9 +1900,13 @@
           ]
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1773,9 +1955,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1801,9 +1987,13 @@
           "value": "https://bfl.ai/legal/terms-of-service"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1833,9 +2023,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1904,9 +2098,13 @@
           ]
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1951,9 +2149,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2002,9 +2204,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2030,9 +2236,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:46.868795+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2107,9 +2317,13 @@
           ]
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2131,9 +2345,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2165,9 +2383,13 @@
           ]
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2211,9 +2433,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2275,9 +2501,13 @@
           }
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2299,9 +2529,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2329,9 +2563,13 @@
           ]
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2372,9 +2610,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2415,9 +2657,13 @@
           "value": "https://leonardo.ai/terms-of-service/"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2470,9 +2716,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2516,9 +2766,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:33.068300+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2563,9 +2817,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2609,9 +2867,13 @@
           "value": "1024"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2655,9 +2917,13 @@
           "value": "true"
         }
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-22T04:24:37.469043+00:00",
+      "lastSeen": "2026-10-22T23:34:17.330127+00:00",
       "removedDate": null,
       "status": null
     }

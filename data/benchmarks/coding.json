@@ -1,0 +1,4337 @@
+{
+  "schemaVersion": 3,
+  "status": "success",
+  "updatedAt": "2026-10-22T23:34:25.084389+00:00",
+  "lastFailedAt": null,
+  "lastFailedMessage": null,
+  "generationId": "949ec07820354496afb653f1c12e2160",
+  "policyVersion": "coding-recommendation-v1",
+  "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
+  "summary": {
+    "activeOfferings": 254,
+    "eligibleOfferings": 78,
+    "excludedOfferings": 54,
+    "uncertainOfferings": 122,
+    "models": 181,
+    "modelsWithGenerationEvidence": 12,
+    "modelsWithEditingEvidence": 8,
+    "ratedModels": 12,
+    "unratedModels": 169,
+    "tierCounts": {
+      "S+": 0,
+      "S": 0,
+      "A+": 1,
+      "A": 0,
+      "A-": 1,
+      "B+": 3,
+      "B": 1,
+      "C": 6,
+      "Unrated": 169
+    }
+  },
+  "sourceStates": [
+    {
+      "sourceId": "livebench",
+      "benchmark": "LiveBench",
+      "status": "success",
+      "updatedAt": "2026-10-22T23:34:27.418117+00:00",
+      "lastFailedAt": null,
+      "hasSnapshot": true,
+      "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
+      "origin": "cache",
+      "refreshStatus": "success",
+      "refreshPersisted": true
+    },
+    {
+      "sourceId": "evalplus",
+      "benchmark": "EvalPlus",
+      "status": "success",
+      "updatedAt": "2026-10-22T23:34:25.573756+00:00",
+      "lastFailedAt": null,
+      "hasSnapshot": true,
+      "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
+      "origin": "cache",
+      "refreshStatus": "success",
+      "refreshPersisted": true
+    },
+    {
+      "sourceId": "aider_polyglot",
+      "benchmark": "Aider",
+      "status": "success",
+      "updatedAt": "2026-10-22T23:34:25.565457+00:00",
+      "lastFailedAt": null,
+      "hasSnapshot": true,
+      "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+      "origin": "cache",
+      "refreshStatus": "success",
+      "refreshPersisted": true
+    },
+    {
+      "sourceId": "bigcodebench",
+      "benchmark": "BigCodeBench",
+      "status": "success",
+      "updatedAt": "2026-10-22T23:34:26.402506+00:00",
+      "lastFailedAt": null,
+      "hasSnapshot": true,
+      "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
+      "origin": "cache",
+      "refreshStatus": "success",
+      "refreshPersisted": true
+    },
+    {
+      "sourceId": "aider_python",
+      "benchmark": "Aider",
+      "status": "success",
+      "updatedAt": "2026-10-22T23:34:25.881256+00:00",
+      "lastFailedAt": null,
+      "hasSnapshot": true,
+      "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+      "origin": "cache",
+      "refreshStatus": "success",
+      "refreshPersisted": true
+    }
+  ],
+  "data": [
+    {
+      "modelId": "checkpoint:deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "name": "DeepSeek R1 Distill Qwen 32B",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "ad01ab83-baf8-4e7b-8fed-a0a219d4eb45"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "BigCodeBench",
+          "evaluatedModelId": "DeepSeek-R1-Distill-Qwen-32B",
+          "cohort": "bigcodebench:complete:e370fee30f22550a",
+          "metric": "calibrated pass@1",
+          "score": 54.9,
+          "unit": "percent",
+          "configuration": {
+            "type": "🔶",
+            "prefill": true,
+            "benchmarkVersion": null
+          },
+          "evidenceId": "evidence:31a6e55aa39f7c28aa8d2a4e",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "BigCodeBench",
+          "evaluatedModelId": "DeepSeek-R1-Distill-Qwen-32B",
+          "cohort": "bigcodebench:instruct:e370fee30f22550a",
+          "metric": "calibrated pass@1",
+          "score": 43.9,
+          "unit": "percent",
+          "configuration": {
+            "type": "🔶",
+            "prefill": true,
+            "benchmarkVersion": null
+          },
+          "evidenceId": "evidence:b9c4b01d2252f37870c43852",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [],
+      "tier": "A+",
+      "index": 79.9,
+      "basis": "generation_only",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:Qwen/Qwen2.5-Coder-32B-Instruct",
+      "name": "Qwen2.5 Coder 32B Instruct",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "51b71d5b-8bc0-4489-a107-95e542b69914"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "BigCodeBench",
+          "evaluatedModelId": "Qwen2.5-Coder-32B-Instruct",
+          "cohort": "bigcodebench:complete:e370fee30f22550a",
+          "metric": "calibrated pass@1",
+          "score": 58.0,
+          "unit": "percent",
+          "configuration": {
+            "type": "🔶",
+            "prefill": true,
+            "benchmarkVersion": null
+          },
+          "evidenceId": "evidence:4ddb2653175d3d7ec824a292",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "BigCodeBench",
+          "evaluatedModelId": "Qwen2.5-Coder-32B-Instruct",
+          "cohort": "bigcodebench:instruct:e370fee30f22550a",
+          "metric": "calibrated pass@1",
+          "score": 49.0,
+          "unit": "percent",
+          "configuration": {
+            "type": "🔶",
+            "prefill": true,
+            "benchmarkVersion": null
+          },
+          "evidenceId": "evidence:65335d7cc80801eb8d5015b0",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "EvalPlus",
+          "evaluatedModelId": "Qwen2.5-Coder-32B-Instruct",
+          "cohort": "evalplus:humaneval+:prompted-true",
+          "metric": "humaneval+ pass@1",
+          "score": 87.2,
+          "unit": "percent",
+          "configuration": {
+            "prompted": true
+          },
+          "evidenceId": "evidence:0d533f05f2f9b4557510713e",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "EvalPlus",
+          "evaluatedModelId": "Qwen2.5-Coder-32B-Instruct",
+          "cohort": "evalplus:humaneval:prompted-true",
+          "metric": "humaneval pass@1",
+          "score": 92.1,
+          "unit": "percent",
+          "configuration": {
+            "prompted": true
+          },
+          "evidenceId": "evidence:43eec283fbee433061c51f6f",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "EvalPlus",
+          "evaluatedModelId": "Qwen2.5-Coder-32B-Instruct",
+          "cohort": "evalplus:mbpp+:prompted-true",
+          "metric": "mbpp+ pass@1",
+          "score": 77.0,
+          "unit": "percent",
+          "configuration": {
+            "prompted": true
+          },
+          "evidenceId": "evidence:29ac1d9c109b00f24e7ae8fd",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "EvalPlus",
+          "evaluatedModelId": "Qwen2.5-Coder-32B-Instruct",
+          "cohort": "evalplus:mbpp:prompted-true",
+          "metric": "mbpp pass@1",
+          "score": 90.5,
+          "unit": "percent",
+          "configuration": {
+            "prompted": true
+          },
+          "evidenceId": "evidence:9d004c704f38548d61356caa",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [
+        {
+          "benchmark": "Aider",
+          "evaluatedModelId": "Qwen2.5-Coder-32B-Instruct",
+          "cohort": "aider_polyglot:polyglot:19bc316b4d969e25",
+          "metric": "pass_rate_2",
+          "score": 16.4,
+          "unit": "percent",
+          "configuration": {
+            "test_cases": 225,
+            "total_tests": 225,
+            "versions": "0.69.2.dev",
+            "commit_hash": "b51768b0",
+            "edit_format": "whole",
+            "editor_edit_format": null,
+            "editor_model": null,
+            "reasoning_effort": null,
+            "thinking_tokens": null,
+            "commandOptions": [
+              "aider"
+            ],
+            "command": "aider --model openai/Qwen2.5-Coder-32B-Instruct"
+          },
+          "evidenceId": "evidence:77ece1fc9dc8adc701487e49",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "Aider",
+          "evaluatedModelId": "Qwen2.5-Coder-32B-Instruct",
+          "cohort": "aider_polyglot:polyglot:b75d5f47e4597d1d",
+          "metric": "pass_rate_2",
+          "score": 8.0,
+          "unit": "percent",
+          "configuration": {
+            "test_cases": 225,
+            "total_tests": 225,
+            "versions": "0.69.2.dev",
+            "commit_hash": "6d7e8be-dirty",
+            "edit_format": "diff",
+            "editor_edit_format": null,
+            "editor_model": null,
+            "reasoning_effort": null,
+            "thinking_tokens": null,
+            "commandOptions": [
+              "aider",
+              "#",
+              "via",
+              "hyperbolic"
+            ],
+            "command": "aider --model openai/Qwen/Qwen2.5-Coder-32B-Instruct # via hyperbolic"
+          },
+          "evidenceId": "evidence:022ee3aa53f2c28518469834",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "Aider",
+          "evaluatedModelId": "Qwen2.5-Coder-32B-Instruct",
+          "cohort": "aider_python:python:64634c43532439a9",
+          "metric": "pass_rate_2",
+          "score": 71.4,
+          "unit": "percent",
+          "configuration": {
+            "test_cases": 133,
+            "total_tests": null,
+            "versions": "0.59.2.dev",
+            "commit_hash": "ec9982a",
+            "edit_format": "diff",
+            "editor_edit_format": null,
+            "editor_model": null,
+            "reasoning_effort": null,
+            "thinking_tokens": null,
+            "commandOptions": [
+              "aider",
+              "--openai-api-base",
+              "https://glhf.chat/api/openai/v1"
+            ],
+            "command": "aider --model openai/hf:Qwen/Qwen2.5-Coder-32B-Instruct --openai-api-base https://glhf.chat/api/openai/v1"
+          },
+          "evidenceId": "evidence:3986a6a0ce7223e87106c4a5",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "tier": "A-",
+      "index": 56.4,
+      "basis": "both_workloads",
+      "confidence": "moderate",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:CohereForAI/c4ai-command-r-08-2024",
+      "name": "Command R August 2024",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cohere",
+          "modelId": "command-r-08-2024"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "BigCodeBench",
+          "evaluatedModelId": "C4AI-Command-R-08-2024",
+          "cohort": "bigcodebench:complete:e370fee30f22550a",
+          "metric": "calibrated pass@1",
+          "score": 45.2,
+          "unit": "percent",
+          "configuration": {
+            "type": "🔶",
+            "prefill": true,
+            "benchmarkVersion": null
+          },
+          "evidenceId": "evidence:059a2763b5391f8e0dc80a19",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "BigCodeBench",
+          "evaluatedModelId": "C4AI-Command-R-08-2024",
+          "cohort": "bigcodebench:instruct:e370fee30f22550a",
+          "metric": "calibrated pass@1",
+          "score": 37.1,
+          "unit": "percent",
+          "configuration": {
+            "type": "🔶",
+            "prefill": true,
+            "benchmarkVersion": null
+          },
+          "evidenceId": "evidence:defe7be3e852c022ea61086e",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [],
+      "tier": "B+",
+      "index": 48.2,
+      "basis": "generation_only",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:google/gemini-3-flash-preview",
+      "name": "Gemini 3 Flash Preview",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-3-flash-preview"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "gemini-3-flash-preview-high",
+          "cohort": "livebench:2026-01-08:coding",
+          "metric": "category_mean",
+          "score": 73.89750000000001,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Coding",
+            "taskColumns": [
+              "code_generation",
+              "code_completion"
+            ]
+          },
+          "evidenceId": "evidence:976f66624ffc9ab5397e7bb1",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "gemini-3-flash-preview-minimal",
+          "cohort": "livebench:2026-01-08:coding",
+          "metric": "category_mean",
+          "score": 78.56700000000001,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Coding",
+            "taskColumns": [
+              "code_generation",
+              "code_completion"
+            ]
+          },
+          "evidenceId": "evidence:cd262c85fa80ddc3a224a8bb",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "gemini-3-flash-preview-high",
+          "cohort": "livebench:2026-01-08:agentic_coding",
+          "metric": "category_mean",
+          "score": 40.0,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Agentic Coding",
+            "taskColumns": [
+              "javascript",
+              "typescript",
+              "python"
+            ]
+          },
+          "evidenceId": "evidence:0db58e926fd2d4120ea17993",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "gemini-3-flash-preview-minimal",
+          "cohort": "livebench:2026-01-08:agentic_coding",
+          "metric": "category_mean",
+          "score": 43.333333333333336,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Agentic Coding",
+            "taskColumns": [
+              "javascript",
+              "typescript",
+              "python"
+            ]
+          },
+          "evidenceId": "evidence:bc0d6826d666acd40fe3d1ec",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "tier": "B+",
+      "index": 46.2,
+      "basis": "both_workloads",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:nvidia/nemotron-3-ultra-550b-a55b",
+      "name": "Nemotron 3 Ultra Native",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/nemotron-3-ultra-550b-a55b"
+        },
+        {
+          "providerId": "requesty",
+          "modelId": "nvidia/nemotron-3-ultra-550b-a55b"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "nemotron-3-ultra-550b-a55b",
+          "cohort": "livebench:2026-01-08:coding",
+          "metric": "category_mean",
+          "score": 71.34100000000001,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Coding",
+            "taskColumns": [
+              "code_generation",
+              "code_completion"
+            ]
+          },
+          "evidenceId": "evidence:ae9e0eed615fd05a45afca1d",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "nemotron-3-ultra-550b-a55b",
+          "cohort": "livebench:2026-01-08:agentic_coding",
+          "metric": "category_mean",
+          "score": 46.666666666666664,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Agentic Coding",
+            "taskColumns": [
+              "javascript",
+              "typescript",
+              "python"
+            ]
+          },
+          "evidenceId": "evidence:f22f47371833b4233d393cb8",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "tier": "B+",
+      "index": 44.3,
+      "basis": "both_workloads",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:minimax-m2.7",
+      "name": "MiniMax M2.7",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "minimax-m2.7"
+        },
+        {
+          "providerId": "routeway",
+          "modelId": "minimax-m2.7:free"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "minimax-m2.7",
+          "cohort": "livebench:2026-01-08:coding",
+          "metric": "category_mean",
+          "score": 54.899,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Coding",
+            "taskColumns": [
+              "code_generation",
+              "code_completion"
+            ]
+          },
+          "evidenceId": "evidence:377d7163a68b4e93ad541834",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "minimax-m2.7",
+          "cohort": "livebench:2026-01-08:agentic_coding",
+          "metric": "category_mean",
+          "score": 50.0,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Agentic Coding",
+            "taskColumns": [
+              "javascript",
+              "typescript",
+              "python"
+            ]
+          },
+          "evidenceId": "evidence:4ba8e5a89c81e316d195d819",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "tier": "B",
+      "index": 31.3,
+      "basis": "both_workloads",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:google/gemma-4-31B-it",
+      "name": "Gemma 4 31B Instruct",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "google/gemma-4-31b-it:free"
+        },
+        {
+          "providerId": "nvidia",
+          "modelId": "google/gemma-4-31b-it"
+        },
+        {
+          "providerId": "openrouter",
+          "modelId": "google/gemma-4-31b-it:free"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "gemma-4-31b-it",
+          "cohort": "livebench:2026-01-08:coding",
+          "metric": "category_mean",
+          "score": 60.334,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Coding",
+            "taskColumns": [
+              "code_generation",
+              "code_completion"
+            ]
+          },
+          "evidenceId": "evidence:d85d01b97dab915edaa02279",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "gemma-4-31b-it",
+          "cohort": "livebench:2026-01-08:agentic_coding",
+          "metric": "category_mean",
+          "score": 40.0,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Agentic Coding",
+            "taskColumns": [
+              "javascript",
+              "typescript",
+              "python"
+            ]
+          },
+          "evidenceId": "evidence:0a2ca764721666d89df1dac2",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "tier": "C",
+      "index": 23.4,
+      "basis": "both_workloads",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:openai/gpt-oss-120b",
+      "name": "GPT OSS 120B",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cerebras",
+          "modelId": "gpt-oss-120b"
+        },
+        {
+          "providerId": "cloudflare",
+          "modelId": "f9f2250b-1048-4a52-9910-d0bf976616a1"
+        },
+        {
+          "providerId": "groq",
+          "modelId": "openai/gpt-oss-120b"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "gpt-oss-120b",
+          "cohort": "livebench:2025-05-30:coding",
+          "metric": "category_mean",
+          "score": 60.2115,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Coding",
+            "taskColumns": [
+              "code_generation",
+              "code_completion"
+            ]
+          },
+          "evidenceId": "evidence:489300257987c894362bbeb3",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "gpt-oss-120b",
+          "cohort": "livebench:2026-01-08:coding",
+          "metric": "category_mean",
+          "score": 60.2115,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Coding",
+            "taskColumns": [
+              "code_generation",
+              "code_completion"
+            ]
+          },
+          "evidenceId": "evidence:8383bcd02cc2490119739cd8",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [
+        {
+          "benchmark": "Aider",
+          "evaluatedModelId": "gpt-oss-120b (high)",
+          "cohort": "aider_polyglot:polyglot:3fe8ca87bc4479e5",
+          "metric": "pass_rate_2",
+          "score": 41.8,
+          "unit": "percent",
+          "configuration": {
+            "test_cases": 225,
+            "total_tests": 225,
+            "versions": "0.85.3.dev",
+            "commit_hash": "1af0e59",
+            "edit_format": "diff",
+            "editor_edit_format": null,
+            "editor_model": null,
+            "reasoning_effort": null,
+            "thinking_tokens": null,
+            "commandOptions": [
+              "aider",
+              "--reasoning-effort",
+              "high"
+            ],
+            "command": "aider --model openrouter/openai/gpt-oss-120b --reasoning-effort high"
+          },
+          "evidenceId": "evidence:e4419ea78526b917bef2e87a",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "gpt-oss-120b",
+          "cohort": "livebench:2025-05-30:agentic_coding",
+          "metric": "category_mean",
+          "score": 15.0,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Agentic Coding",
+            "taskColumns": [
+              "javascript",
+              "typescript",
+              "python"
+            ]
+          },
+          "evidenceId": "evidence:839b9643e2fb80aeb0f34c2d",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "gpt-oss-120b",
+          "cohort": "livebench:2026-01-08:agentic_coding",
+          "metric": "category_mean",
+          "score": 16.666666666666668,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Agentic Coding",
+            "taskColumns": [
+              "javascript",
+              "typescript",
+              "python"
+            ]
+          },
+          "evidenceId": "evidence:aee6d36b3e1ee3193c872841",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "tier": "C",
+      "index": 22.5,
+      "basis": "both_workloads",
+      "confidence": "moderate",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:Qwen/QwQ-32B",
+      "name": "QwQ 32B",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "02c16efa-29f5-4304-8e6c-3d188889f875"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [
+        {
+          "benchmark": "Aider",
+          "evaluatedModelId": "QwQ-32B",
+          "cohort": "aider_polyglot:polyglot:2927e26a36501ddb",
+          "metric": "pass_rate_2",
+          "score": 20.9,
+          "unit": "percent",
+          "configuration": {
+            "test_cases": 225,
+            "total_tests": 225,
+            "versions": "0.75.3.dev",
+            "commit_hash": "51d118f-dirty",
+            "edit_format": "diff",
+            "editor_edit_format": null,
+            "editor_model": null,
+            "reasoning_effort": null,
+            "thinking_tokens": null,
+            "commandOptions": [
+              "aider"
+            ],
+            "command": "aider --model fireworks_ai/accounts/fireworks/models/qwq-32b"
+          },
+          "evidenceId": "evidence:b1296d2d4a6651ca6d7c3ec1",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "tier": "C",
+      "index": 20.8,
+      "basis": "editing_only",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:meta-llama/Llama-3.2-3B-Instruct",
+      "name": "Llama 3.2 3B Instruct",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "d9dc8363-66f4-4bb0-8641-464ee7bfc131"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "BigCodeBench",
+          "evaluatedModelId": "Llama-3.2-3B-Instruct",
+          "cohort": "bigcodebench:complete:e370fee30f22550a",
+          "metric": "calibrated pass@1",
+          "score": 28.3,
+          "unit": "percent",
+          "configuration": {
+            "type": "🔶",
+            "prefill": true,
+            "benchmarkVersion": null
+          },
+          "evidenceId": "evidence:39dafb1ede07d37b24d5147e",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "BigCodeBench",
+          "evaluatedModelId": "Llama-3.2-3B-Instruct",
+          "cohort": "bigcodebench:instruct:e370fee30f22550a",
+          "metric": "calibrated pass@1",
+          "score": 23.4,
+          "unit": "percent",
+          "configuration": {
+            "type": "🔶",
+            "prefill": true,
+            "benchmarkVersion": null
+          },
+          "evidenceId": "evidence:36eb7651779ced3366e448b1",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [],
+      "tier": "C",
+      "index": 9.4,
+      "basis": "generation_only",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:deepseek-v4-flash",
+      "name": "DeepSeek V4 Flash",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "orcarouter",
+          "modelId": "deepseek/deepseek-v4-flash-free"
+        },
+        {
+          "providerId": "routeway",
+          "modelId": "deepseek-v4-flash:free"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "deepseek-v4-flash",
+          "cohort": "livebench:2026-01-08:coding",
+          "metric": "category_mean",
+          "score": 69.22800000000001,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Coding",
+            "taskColumns": [
+              "code_generation",
+              "code_completion"
+            ]
+          },
+          "evidenceId": "evidence:90c36881c4eb35a5c3999deb",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "deepseek-v4-flash",
+          "cohort": "livebench:2026-06-25:coding",
+          "metric": "category_mean",
+          "score": 69.22800000000001,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Coding",
+            "taskColumns": [
+              "code_generation",
+              "code_completion"
+            ]
+          },
+          "evidenceId": "evidence:061dbae95e897186c5065d15",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "deepseek-v4-flash",
+          "cohort": "livebench:2026-01-08:agentic_coding",
+          "metric": "category_mean",
+          "score": 50.0,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Agentic Coding",
+            "taskColumns": [
+              "javascript",
+              "typescript",
+              "python"
+            ]
+          },
+          "evidenceId": "evidence:74ec00a92d87581bd8f5bc11",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "deepseek-v4-flash",
+          "cohort": "livebench:2026-06-25:agentic_coding",
+          "metric": "category_mean",
+          "score": 37.626,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Agentic Coding",
+            "taskColumns": [
+              "javascript",
+              "typescript",
+              "python"
+            ]
+          },
+          "evidenceId": "evidence:20852bd1168c02d6c7293040",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "tier": "C",
+      "index": 7.1,
+      "basis": "both_workloads",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:meta-llama/Llama-3.2-1B-Instruct",
+      "name": "Llama 3.2 1B Instruct",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "906a57fd-b018-4d6c-a43e-a296d4cc5839"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "BigCodeBench",
+          "evaluatedModelId": "Llama-3.2-1B-Instruct",
+          "cohort": "bigcodebench:complete:e370fee30f22550a",
+          "metric": "calibrated pass@1",
+          "score": 11.3,
+          "unit": "percent",
+          "configuration": {
+            "type": "🔶",
+            "prefill": true,
+            "benchmarkVersion": null
+          },
+          "evidenceId": "evidence:7719fd2d03cac3616aea8dc7",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        },
+        {
+          "benchmark": "BigCodeBench",
+          "evaluatedModelId": "Llama-3.2-1B-Instruct",
+          "cohort": "bigcodebench:instruct:e370fee30f22550a",
+          "metric": "calibrated pass@1",
+          "score": 8.2,
+          "unit": "percent",
+          "configuration": {
+            "type": "🔶",
+            "prefill": true,
+            "benchmarkVersion": null
+          },
+          "evidenceId": "evidence:844cd9c0669d6533dadba1eb",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [],
+      "tier": "C",
+      "index": 1.3,
+      "basis": "generation_only",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "catalogue:@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+      "name": "Gemma Sea Lion v4 27B Instruct",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "41ca173f-72d5-4420-8915-49e835d2676e"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/google/gemma-2b-it-lora",
+      "name": "Gemma 2B Instruct LoRA",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "e8e8abe4-a372-4c13-815f-4688ba655c8e"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/google/gemma-7b-it-lora",
+      "name": "Gemma 7B Instruct LoRA",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "337170b7-bd2f-4631-9a57-688b579cf6d3"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/ibm-granite/granite-4.0-h-micro",
+      "name": "Granite 4.0 H Micro",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "7952d0cc-cb00-4e10-be02-667565c2ee0f"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/meta-llama/llama-2-7b-chat-hf-lora",
+      "name": "Llama 2 7B Chat LoRA",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "7ed8d8e8-6040-4680-843a-aef402d6b013"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/meta/llama-3.1-8b-instruct-fp8",
+      "name": "Llama 3.1 8B Instruct FP8",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "9b9c87c6-d4b7-494c-b177-87feab5904db"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/meta/llama-3.2-11b-vision-instruct",
+      "name": "Llama 3.2 11B Vision Instruct",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "2cbc033b-ded8-4e02-bbb2-47cf05d5cfe5"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "name": "Llama 3.3 70B Instruct FP8 Fast",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "7a143886-c9bb-4a1c-be95-377b1973bc3b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/mistral/mistral-7b-instruct-v0.2-lora",
+      "name": "Mistral 7B Instruct v0.2 LoRA",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "c58c317b-0c15-4bda-abb6-93e275f282d9"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/mistralai/mistral-small-3.1-24b-instruct",
+      "name": "Mistral Small 3.1 24B Instruct",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "31690291-ebdc-4f98-bcfc-a44844e215b7"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/nvidia/nemotron-3-120b-a12b",
+      "name": "Cloudflare Nemotron 3 120B A12B",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "43dbadb4-2b0a-47e9-8479-34a49b971f1e"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/qwen/qwen3-30b-a3b-fp8",
+      "name": "Qwen3 30B A3B FP8",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "4090e54c-eee4-4221-b410-10c1c0f92f17"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/qwen/qwen3.8-27b",
+      "name": "Cloudflare Qwen3.8 27B",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "22338608-b54d-4f04-884e-ab06f3dbbf3e"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/swiss-ai/apertus-v1.5-8b",
+      "name": "Apertus v1.5 8B",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "56482a5b-020e-488d-9c56-11a3ed40719c"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/utter-project/eurollm-9b-it",
+      "name": "EuroLLM 9B Instruct",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "bf419b23-844f-4a2c-8111-89dbd63152eb"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:@cf/zai-org/glm-4.7-flash",
+      "name": "GLM 4.7 Flash",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "86b3e51a-4b05-43fa-a403-0f27821919d2"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:dots-studio/dots-3-note-preview-20260813",
+      "name": "Dots3 Note Preview",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "dots-studio/dots-3-note-preview:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:gemma-4-26b-a4b-it-chimerax:free",
+      "name": "Gemma 4 Chimerax",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "routeway",
+          "modelId": "gemma-4-26b-a4b-it-chimerax:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:gemma-4-26b-a4b-it-darksoul:free",
+      "name": "Gemma 4 Darksoul",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "routeway",
+          "modelId": "gemma-4-26b-a4b-it-darksoul:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:gemma-4-26b-a4b-it-luminous:free",
+      "name": "Gemma 4 Luminous",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "routeway",
+          "modelId": "gemma-4-26b-a4b-it-luminous:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:gemma-4-26b-a4b-it-meromero:free",
+      "name": "Gemma 4 MeroMero",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "routeway",
+          "modelId": "gemma-4-26b-a4b-it-meromero:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:gemma-4-26b-a4b-it-moonlight:free",
+      "name": "Gemma 4 Moonlight",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "routeway",
+          "modelId": "gemma-4-26b-a4b-it-moonlight:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:gemma-4-26b-a4b-it-musica:free",
+      "name": "Gemma 4 Musica",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "routeway",
+          "modelId": "gemma-4-26b-a4b-it-musica:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:google/gemma-4-31b-it:fp4",
+      "name": "Gemma 4 31B Instruct FP4",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "requesty",
+          "modelId": "google/gemma-4-31b-it"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:inclusionai/ling-3.0-tiny",
+      "name": "Ling 3.0 Tiny",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "requesty",
+          "modelId": "novita/inclusionai/ling-3.0-tiny"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:inclusionai/ling-3.1-flash",
+      "name": "Ling 3.1 Flash",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "requesty",
+          "modelId": "novita/ling-3.1-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:meta/muse-glimmer-30b",
+      "name": "Muse Glimmer 30B",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "meta/muse-glimmer-30b"
+        },
+        {
+          "providerId": "requesty",
+          "modelId": "nvidia/muse-glimmer-30b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:mistral-Nemo-Instruct-2407",
+      "name": "Mistral Nemo Instruct 2407",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "mistral-Nemo-Instruct-2407"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:mistral/leanstral-1-5",
+      "name": "Leanstral 1.5",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "requesty",
+          "modelId": "mistral/leanstral-1-5"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:models/gemini-2.5-flash",
+      "name": "Gemini 2.5 Flash",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-2.5-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:models/gemini-2.5-flash-lite",
+      "name": "Gemini 2.5 Flash-Lite",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-2.5-flash-lite"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:models/gemini-2.5-pro",
+      "name": "Gemini 2.5 Pro",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-2.5-pro"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:models/gemini-3.1-flash-lite",
+      "name": "Gemini 3.1 Flash Lite",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-3.1-flash-lite"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:models/gemini-3.5-flash-lite",
+      "name": "Gemini 3.5 Flash Lite",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-3.5-flash-lite"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:models/gemini-3.6-flash",
+      "name": "Gemini 3.6 Flash",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-3.6-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:models/gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-3.8-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:models/gemini-robotics-er-2-preview",
+      "name": "Gemini Robotics-ER 2 Preview",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-robotics-er-2-preview"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:muse-glimmer-30b:free",
+      "name": "Routeway Muse Glimmer 30B",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "routeway",
+          "modelId": "muse-glimmer-30b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:nvidia/nemotron-3-nano-30b-a3b",
+      "name": "Nemotron 3 Nano 30B A3B",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "requesty",
+          "modelId": "nvidia/nemotron-3-nano-30b-a3b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "name": "Nemotron 3 Nano Omni Reasoning",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"
+        },
+        {
+          "providerId": "requesty",
+          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:nvidia/nemotron-3-super-120b-a12b",
+      "name": "Nemotron 3 Super Native",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "requesty",
+          "modelId": "nvidia/nemotron-3-super-120b-a12b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:nvidia/nemotron-3.5-lightning-30b-a3b",
+      "name": "Nemotron 3.5 Lightning 30B A3B",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/nemotron-3.5-lightning-30b-a3b"
+        },
+        {
+          "providerId": "requesty",
+          "modelId": "nvidia/nemotron-3.5-lightning-30b-a3b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:qwen/qwen3.8-27b",
+      "name": "Groq Qwen3.8 27B",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "groq",
+          "modelId": "qwen/qwen3.8-27b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:tencent/hy3-free",
+      "name": "Tencent Hy3",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "orcarouter",
+          "modelId": "tencent/hy3-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:tencent/hy4-preview-free",
+      "name": "Tencent Hy4 Preview",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "orcarouter",
+          "modelId": "tencent/hy4-preview-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:z-ai/glm-5.3-flash-free",
+      "name": "GLM 5.3 Flash",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "orcarouter",
+          "modelId": "z-ai/glm-5.3-flash-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "checkpoint:CohereForAI/c4ai-command-r-plus-08-2024",
+      "name": "Command R Plus August 2024",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cohere",
+          "modelId": "command-r-plus-08-2024"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "checkpoint:meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "name": "Llama 4 Scout 17B 16E Instruct",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "06455e78-19f7-487b-93cd-c05a3dd07813"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "BigCodeBench",
+          "evaluatedModelId": "Llama-4-Scout",
+          "cohort": "bigcodebench:complete:b93a437f2a362be4",
+          "metric": "calibrated pass@1",
+          "score": 43.1,
+          "unit": "percent",
+          "configuration": {
+            "type": "🔶",
+            "prefill": false,
+            "benchmarkVersion": null
+          },
+          "evidenceId": "evidence:12a1e1848cc8ddd91cdf6d99",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "checkpoint:nvidia/nemotron-3-super-120b-a12b-FP8",
+      "name": "Nemotron 3 Super FP8",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "checkpoint:openai/gpt-oss-20b",
+      "name": "GPT OSS 20B",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "188a4e1e-253e-46d0-9616-0bf8c149763f"
+        },
+        {
+          "providerId": "groq",
+          "modelId": "openai/gpt-oss-20b"
+        },
+        {
+          "providerId": "nvidia",
+          "modelId": "openai/gpt-oss-20b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "hf:ALLaM-AI/ALLaM-2.0-7B-Instruct",
+      "name": "ALLaM 2.0 7B Instruct",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "groq",
+          "modelId": "allam-2-7b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "hf:CohereLabs/North-Mini-Code-1.0",
+      "name": "North Mini Code 1.0",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "cohere/north-mini-code:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "hf:LiquidAI/LFM2.5-2.6B",
+      "name": "LFM2.5-2.6B",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "liquid/lfm-2.5-2.6b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "hf:google/gemma-4-26B-A4B-it",
+      "name": "Gemma 4 26B A4B Instruct",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "google/gemma-4-26b-a4b-it:free"
+        },
+        {
+          "providerId": "cloudflare",
+          "modelId": "328adb49-4a7d-43e3-a2d5-802ae8100fe7"
+        },
+        {
+          "providerId": "openrouter",
+          "modelId": "google/gemma-4-26b-a4b-it:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "hf:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+      "name": "Nemotron 3 Ultra BF16",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "hf:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "name": "Nemotron 3.5 Lightning BF16",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "nvidia/nemotron-3.5-lightning:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "hf:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "name": "Nemotron 3 Nano Omni Reasoning BF16",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "hf:poolside/Laguna-S-2.1",
+      "name": "Laguna S 2.1",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "poolside/laguna-s-2.1:free"
+        },
+        {
+          "providerId": "openrouter",
+          "modelId": "poolside/laguna-s-2.1:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "hf:poolside/Laguna-XS-2.1",
+      "name": "Laguna XS 2.1",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "poolside/laguna-xs-2.1:free"
+        },
+        {
+          "providerId": "nvidia",
+          "modelId": "poolside/laguna-xs-2.1"
+        },
+        {
+          "providerId": "openrouter",
+          "modelId": "poolside/laguna-xs-2.1:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "hf:thinkingmachines/Inkling",
+      "name": "Inkling",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "thinkingmachines/inkling:free"
+        },
+        {
+          "providerId": "openrouter",
+          "modelId": "thinkingmachines/inkling:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "hf:thinkingmachines/Inkling-Small",
+      "name": "Inkling Small",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "thinkingmachines/inkling-small:free"
+        },
+        {
+          "providerId": "openrouter",
+          "modelId": "thinkingmachines/inkling-small:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:agnes:agnes-2.5-flash",
+      "name": "agnes-2.5-flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "agnes",
+          "modelId": "agnes-2.5-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:agnes:agnes-3.0-flash",
+      "name": "agnes-3.0-flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "agnes",
+          "modelId": "agnes-3.0-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:agnes:agnes-image-2.0-flash",
+      "name": "agnes-image-2.0-flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "agnes",
+          "modelId": "agnes-image-2.0-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:agnes:agnes-image-2.1-flash",
+      "name": "agnes-image-2.1-flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "agnes",
+          "modelId": "agnes-image-2.1-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:agnes:agnes-image-2.5-flash",
+      "name": "agnes-image-2.5-flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "agnes",
+          "modelId": "agnes-image-2.5-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:agnes:agnes-video-2.5-flash",
+      "name": "agnes-video-2.5-flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "agnes",
+          "modelId": "agnes-video-2.5-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cerebras:qwen-3.8-27b",
+      "name": "qwen-3.8-27b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cerebras",
+          "modelId": "qwen-3.8-27b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:cohere/north-mini-code:free",
+      "name": "cohere/north-mini-code:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "cohere/north-mini-code:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:dots-studio/dots-3-note-preview:free",
+      "name": "dots-studio/dots-3-note-preview:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "dots-studio/dots-3-note-preview:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:liquid/lfm-2.5-2.6b:free",
+      "name": "liquid/lfm-2.5-2.6b:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "liquid/lfm-2.5-2.6b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:nvidia/nemotron-3-super-120b-a12b:free",
+      "name": "nvidia/nemotron-3-super-120b-a12b:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:nvidia/nemotron-3-ultra-550b-a55b:free",
+      "name": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:nvidia/nemotron-3.5-content-safety:free",
+      "name": "nvidia/nemotron-3.5-content-safety:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "nvidia/nemotron-3.5-content-safety:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:nvidia/nemotron-3.5-lightning:free",
+      "name": "nvidia/nemotron-3.5-lightning:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "nvidia/nemotron-3.5-lightning:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:nvidia/nemotron-3.5-super-vl:free",
+      "name": "nvidia/nemotron-3.5-super-vl:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "nvidia/nemotron-3.5-super-vl:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:recursive/flint-v1.0:free",
+      "name": "recursive/flint-v1.0:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "recursive/flint-v1.0:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:xingchen-agi/xing4.0-29b-a4b:free",
+      "name": "xingchen-agi/xing4.0-29b-a4b:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "xingchen-agi/xing4.0-29b-a4b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cloudflare:059de3ad-d350-4cb6-8b31-e4f34847d10a",
+      "name": "@cf/cloudflare/clef-flash",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "059de3ad-d350-4cb6-8b31-e4f34847d10a"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cloudflare:1161560b-87f9-4795-afb3-a905cf21bcf8",
+      "name": "@cf/moondream/moondream3.1-9B-A2B",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "1161560b-87f9-4795-afb3-a905cf21bcf8"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cloudflare:2b2b6dfb-2cd0-433f-802c-533d40508d9b",
+      "name": "@cf/daily-co/phonellm-mini-alpha-2",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "2b2b6dfb-2cd0-433f-802c-533d40508d9b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cloudflare:543fea3d-dcff-4c3b-af79-b83f601aa1cb",
+      "name": "@cf/cloudflare/clef-omni",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "543fea3d-dcff-4c3b-af79-b83f601aa1cb"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cloudflare:6b0b79c1-25e6-4498-bb62-5161df39f0ef",
+      "name": "@cf/cloudflare/clairic",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "6b0b79c1-25e6-4498-bb62-5161df39f0ef"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cloudflare:87f39d62-116c-4b26-b2cd-562a9ba01f2f",
+      "name": "@cf/cloudflare/clef",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "87f39d62-116c-4b26-b2cd-562a9ba01f2f"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cloudflare:af274959-cb47-4ba8-9d8e-5a0a58b6b402",
+      "name": "@cf/llava-hf/llava-1.5-7b-hf",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "af274959-cb47-4ba8-9d8e-5a0a58b6b402"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cloudflare:fe8904cf-e20e-4884-b829-ed7cec0a01cb",
+      "name": "@cf/pipecat-ai/smart-turn-v2",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "fe8904cf-e20e-4884-b829-ed7cec0a01cb"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cohere:command-a-03-2025",
+      "name": "command-a-03-2025",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cohere",
+          "modelId": "command-a-03-2025"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cohere:command-a-plus-05-2026",
+      "name": "command-a-plus-05-2026",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cohere",
+          "modelId": "command-a-plus-05-2026"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cohere:command-a-reasoning-08-2025",
+      "name": "command-a-reasoning-08-2025",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cohere",
+          "modelId": "command-a-reasoning-08-2025"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cohere:command-a-translate-08-2025",
+      "name": "command-a-translate-08-2025",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cohere",
+          "modelId": "command-a-translate-08-2025"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cohere:command-a-vision-07-2025",
+      "name": "command-a-vision-07-2025",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cohere",
+          "modelId": "command-a-vision-07-2025"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cohere:command-r7b-12-2024",
+      "name": "command-r7b-12-2024",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cohere",
+          "modelId": "command-r7b-12-2024"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cohere:north-mini-code-1-0",
+      "name": "north-mini-code-1-0",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cohere",
+          "modelId": "north-mini-code-1-0"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:googleai:models/gemini-3.1-flash-live-preview",
+      "name": "Gemini 3.1 Flash Live Preview",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-3.1-flash-live-preview"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:googleai:models/gemini-3.5-live-translate-preview",
+      "name": "Gemini 3.5 Live Translate Preview",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-3.5-live-translate-preview"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:googleai:models/gemini-3.8-live",
+      "name": "Gemini 3.8 Live",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-3.8-live"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:googleai:models/gemini-3.8-live-extended-thinking",
+      "name": "Gemini 3.8 Live Extended Thinking",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-3.8-live-extended-thinking"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:googleai:models/gemini-robotics-er-2-streaming-preview",
+      "name": "Gemini Robotics-ER 2 Streaming Preview",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-robotics-er-2-streaming-preview"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:groq:openai/gpt-oss-safeguard-20b",
+      "name": "Safety GPT OSS 20B",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "groq",
+          "modelId": "openai/gpt-oss-safeguard-20b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:cohere/north-mini-code:free",
+      "name": "Cohere: North Mini Code (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "cohere/north-mini-code:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:kilo-auto/free",
+      "name": "Auto Free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "kilo-auto/free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:liquid/lfm-2.5-2.6b:free",
+      "name": "LiquidAI: LFM2.5-2.6B (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "liquid/lfm-2.5-2.6b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:nvidia/nemotron-3-super-120b-a12b:free",
+      "name": "NVIDIA: Nemotron 3 Super (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:nvidia/nemotron-3-ultra-550b-a55b:free",
+      "name": "NVIDIA: Nemotron 3 Ultra (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:nvidia/nemotron-3.5-lightning:free",
+      "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "nvidia/nemotron-3.5-lightning:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:nvidia/nemotron-3.5-super-vl:free",
+      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "nvidia/nemotron-3.5-super-vl:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:openrouter/free",
+      "name": "OpenRouter Free Models Router",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "openrouter/free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:recursive/flint-v1.0:free",
+      "name": "Recursive: Flint (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "recursive/flint-v1.0:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:reflection/beam-free",
+      "name": "Reflection: Beam 1.0 (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "reflection/beam-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:stealth/glyph-cluster",
+      "name": "Stealth: Glyph Cluster (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "stealth/glyph-cluster"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:xingchen-agi/xing4.0-29b-a4b:free",
+      "name": "XingChen: Xing4.0 29B A4B (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "xingchen-agi/xing4.0-29b-a4b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:llm7:codestral-latest",
+      "name": "codestral-latest",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "codestral-latest"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:llm7:gpt-oss:20b",
+      "name": "gpt-oss:20b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "gpt-oss:20b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:llm7:nemotron-3-nano:30b",
+      "name": "nemotron-3-nano:30b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "nemotron-3-nano:30b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:mistral:codestral-2508",
+      "name": "codestral-2508",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "mistral",
+          "modelId": "codestral-2508"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:mistral:labs-leanstral-1-5-1",
+      "name": "labs-leanstral-1-5-1",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "mistral",
+          "modelId": "labs-leanstral-1-5-1"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:mistral:ministral-14b-2512",
+      "name": "ministral-14b-2512",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "mistral",
+          "modelId": "ministral-14b-2512"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:mistral:ministral-3b-2512",
+      "name": "ministral-3b-2512",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "mistral",
+          "modelId": "ministral-3b-2512"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:mistral:ministral-8b-2512",
+      "name": "ministral-8b-2512",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "mistral",
+          "modelId": "ministral-8b-2512"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:mistral:mistral-medium-latest",
+      "name": "mistral-medium-latest",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "mistral",
+          "modelId": "mistral-medium-latest"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:mistral:mistral-small-2603",
+      "name": "mistral-small-2603",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "mistral",
+          "modelId": "mistral-small-2603"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:mistral:voxtral-small-2507",
+      "name": "Voxtral Small Transcribe",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "mistral",
+          "modelId": "voxtral-small-2507"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:deepseek-ai/deepseek-v4.1-flash",
+      "name": "deepseek-ai/deepseek-v4.1-flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "deepseek-ai/deepseek-v4.1-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:google/diffusiongemma-26b-a4b-it",
+      "name": "google/diffusiongemma-26b-a4b-it",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "google/diffusiongemma-26b-a4b-it"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:meta/llama-3.2-11b-vision-instruct",
+      "name": "meta/llama-3.2-11b-vision-instruct",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "meta/llama-3.2-11b-vision-instruct"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:meta/llama-3.2-90b-vision-instruct",
+      "name": "meta/llama-3.2-90b-vision-instruct",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "meta/llama-3.2-90b-vision-instruct"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:meta/llama-guard-4-12b",
+      "name": "meta/llama-guard-4-12b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "meta/llama-guard-4-12b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:nvidia/ising-calibration-1.5-31b",
+      "name": "nvidia/ising-calibration-1.5-31b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/ising-calibration-1.5-31b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+      "name": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:nvidia/nemotron-3-embed-1b",
+      "name": "nvidia/nemotron-3-embed-1b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/nemotron-3-embed-1b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:nvidia/nemotron-3.5-content-safety",
+      "name": "nvidia/nemotron-3.5-content-safety",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/nemotron-3.5-content-safety"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:nvidia/nemotron-3.5-embed-1b",
+      "name": "nvidia/nemotron-3.5-embed-1b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/nemotron-3.5-embed-1b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:nvidia/nemotron-3.5-embed-8b",
+      "name": "nvidia/nemotron-3.5-embed-8b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/nemotron-3.5-embed-8b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/nemotron-3.5-super-vl-120b-a12b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:nvidia/riva-translate-4b-instruct-v2",
+      "name": "nvidia/riva-translate-4b-instruct-v2",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/riva-translate-4b-instruct-v2"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:stepfun-ai/step-5-preview",
+      "name": "stepfun-ai/step-5-preview",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "stepfun-ai/step-5-preview"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:z-ai/glm-5.3",
+      "name": "z-ai/glm-5.3",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "z-ai/glm-5.3"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:z-ai/glm-5.3-flash",
+      "name": "z-ai/glm-5.3-flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "z-ai/glm-5.3-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:ollama-cloud:gemma4:31b",
+      "name": "gemma4:31b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "ollama-cloud",
+          "modelId": "gemma4:31b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:ollama-cloud:gpt-oss:120b",
+      "name": "gpt-oss:120b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "ollama-cloud",
+          "modelId": "gpt-oss:120b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:ollama-cloud:gpt-oss:20b",
+      "name": "gpt-oss:20b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "ollama-cloud",
+          "modelId": "gpt-oss:20b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:ollama-cloud:nemotron-3-nano:30b",
+      "name": "nemotron-3-nano:30b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "ollama-cloud",
+          "modelId": "nemotron-3-nano:30b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:ollama-cloud:nemotron-3-super",
+      "name": "nemotron-3-super",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "ollama-cloud",
+          "modelId": "nemotron-3-super"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:ollama-cloud:nemotron-3-ultra",
+      "name": "nemotron-3-ultra",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "ollama-cloud",
+          "modelId": "nemotron-3-ultra"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:opencode-zen:beam-free",
+      "name": "beam-free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "beam-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:opencode-zen:deepseek-v4.1-flash-free",
+      "name": "deepseek-v4.1-flash-free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "deepseek-v4.1-flash-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:opencode-zen:flint-40b-free",
+      "name": "flint-40b-free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "flint-40b-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:opencode-zen:glm-5.3-flash-free",
+      "name": "glm-5.3-flash-free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "glm-5.3-flash-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:opencode-zen:jev-1.13-free",
+      "name": "jev-1.13-free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "jev-1.13-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:opencode-zen:mimo-v2.6-flash-free",
+      "name": "mimo-v2.6-flash-free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "mimo-v2.6-flash-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:opencode-zen:nemotron-3.5-lightning-free",
+      "name": "nemotron-3.5-lightning-free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "nemotron-3.5-lightning-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:opencode-zen:nemotron-3.5-super-vl-free",
+      "name": "nemotron-3.5-super-vl-free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "nemotron-3.5-super-vl-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "nvidia/nemotron-3.5-super-vl:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:openrouter:recursive/flint-v1.0:free",
+      "name": "Recursive: Flint (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "recursive/flint-v1.0:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:openrouter:xingchen-agi/xing4.0-29b-a4b:free",
+      "name": "XingChen: Xing4.0 29B A4B (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "xingchen-agi/xing4.0-29b-a4b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:orcarouter:deepseek/deepseek-v4.1-flash-free",
+      "name": "DeepSeek: DeepSeek V4.1 Flash (Free)",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "orcarouter",
+          "modelId": "deepseek/deepseek-v4.1-flash-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:orcarouter:orcarouter/free",
+      "name": "orcarouter/free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "orcarouter",
+          "modelId": "orcarouter/free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
+      "name": "community/YoannDev90/muse-glimmer-30b:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/muse-glimmer-30b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/YoannDev90/poolside-laguna-s-2.1:free",
+      "name": "community/YoannDev90/poolside-laguna-s-2.1:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/poolside-laguna-s-2.1:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/YoannDev90/vercel-beam:free",
+      "name": "community/YoannDev90/vercel-beam:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/vercel-beam:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/YoannDev90/vercel-nemotron-3.5-lightning:free",
+      "name": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/vercel-nemotron-3.5-lightning:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/vendouple/muse-glimmer-30b:free",
+      "name": "community/vendouple/muse-glimmer-30b:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/vendouple/muse-glimmer-30b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:qoder:dfmodel",
+      "name": "DeepSeek-Flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "qoder",
+          "modelId": "dfmodel"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:qoder:qfmodel",
+      "name": "Qwen3.8-Flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "qoder",
+          "modelId": "qfmodel"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:zai:GLM-4.5-Flash",
+      "name": "GLM-4.5-Flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "zai",
+          "modelId": "GLM-4.5-Flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:zai:GLM-4.6V-Flash",
+      "name": "GLM-4.6V-Flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "zai",
+          "modelId": "GLM-4.6V-Flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:zai:GLM-4.7-Flash",
+      "name": "GLM-4.7-Flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "zai",
+          "modelId": "GLM-4.7-Flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    }
+  ],
+  "auditRef": {
+    "path": "coding-audit.json",
+    "generationId": "949ec07820354496afb653f1c12e2160"
+  }
+}

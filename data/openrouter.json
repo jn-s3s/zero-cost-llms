@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 18,
-  "updatedAt": "2026-10-22T04:24:33.015928+00:00",
+  "count": 17,
+  "updatedAt": "2026-10-22T23:34:12.743795+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -57,83 +57,13 @@
       "reasoning": {
         "mandatory": true
       },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "minimax/minimax-m3.1-flash:free",
-      "canonical_slug": "minimax/minimax-m3.1-flash-20261019",
-      "hugging_face_id": null,
-      "name": "MiniMax: MiniMax M3.1 Flash (free)",
-      "created": 1792379569,
-      "description": "MiniMax-M3.1-Flash is a multimodal model from MiniMax. Compared with M3, it delivers significant improvements across multiple benchmarks, particularly in complex agentic tasks, coding, and cybersecurity. It is built for complex,...",
-      "context_length": 1000000,
-      "architecture": {
-        "modality": "text+image+video->text",
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 1000000,
-        "max_completion_tokens": 524288,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/minimax/minimax-m3.1-flash-20261019/endpoints"
-      },
-      "benchmarks": {
-        "design_arena": [],
-        "artificial_analysis": {
-          "intelligence_index": 42.7,
-          "coding_index": null,
-          "agentic_index": null
-        }
-      },
-      "reasoning": {
-        "mandatory": true,
-        "supported_efforts": [
-          "max",
-          "xhigh",
-          "high",
-          "medium",
-          "low"
-        ],
-        "default_effort": "max"
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-20T04:33:23.581040+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -199,9 +129,13 @@
         "mandatory": false,
         "default_enabled": true
       },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:09.924694+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -260,30 +194,30 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1129,
-            "win_rate": 28.5,
-            "rank": 78
+            "elo": 1127,
+            "win_rate": 28.3,
+            "rank": 81
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1156,
-            "win_rate": 32.8,
+            "elo": 1155,
+            "win_rate": 32.7,
             "rank": 82
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1111,
-            "win_rate": 29.2,
+            "elo": 1110,
+            "win_rate": 29.1,
             "rank": 93
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1143,
-            "win_rate": 32,
-            "rank": 81
+            "elo": 1152,
+            "win_rate": 32.3,
+            "rank": 76
           },
           {
             "arena": "models",
@@ -302,9 +236,12 @@
       "reasoning": {
         "mandatory": false
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -359,9 +296,13 @@
       "reasoning": {
         "mandatory": false
       },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -436,9 +377,12 @@
       "reasoning": {
         "mandatory": true
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -499,9 +443,12 @@
       "reasoning": {
         "mandatory": false
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -584,9 +531,12 @@
         ],
         "default_effort": "high"
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -638,9 +588,13 @@
         "mandatory": false,
         "default_enabled": true
       },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -728,35 +682,35 @@
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1206,
+            "elo": 1205,
             "win_rate": 42.2,
-            "rank": 58
+            "rank": 59
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1159,
-            "win_rate": 37.5,
-            "rank": 78
+            "elo": 1157,
+            "win_rate": 37.4,
+            "rank": 80
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1166,
-            "win_rate": 38,
+            "elo": 1165,
+            "win_rate": 37.9,
             "rank": 71
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1110,
-            "win_rate": 34.6,
-            "rank": 57
+            "elo": 1108,
+            "win_rate": 34.4,
+            "rank": 58
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1201,
+            "elo": 1198,
             "win_rate": 40.5,
             "rank": 58
           },
@@ -787,9 +741,12 @@
         ],
         "default_effort": "high"
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -841,9 +798,13 @@
         "mandatory": false,
         "default_enabled": true
       },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -915,9 +876,12 @@
       "reasoning": {
         "mandatory": false
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -977,9 +941,13 @@
         "mandatory": false,
         "default_enabled": true
       },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1042,7 +1010,7 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1132,
+            "elo": 1131,
             "win_rate": 38.9,
             "rank": 76
           },
@@ -1056,14 +1024,14 @@
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1147,
+            "elo": 1146,
             "win_rate": 36.1,
             "rank": 87
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1141,
+            "elo": 1142,
             "win_rate": 37.5,
             "rank": 85
           },
@@ -1077,14 +1045,14 @@
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1070,
+            "elo": 1069,
             "win_rate": 32.4,
             "rank": 69
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1139,
+            "elo": 1136,
             "win_rate": 35.8,
             "rank": 83
           },
@@ -1113,9 +1081,12 @@
         ],
         "default_effort": "high"
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1188,9 +1159,12 @@
         "default_enabled": true,
         "supports_max_tokens": true
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1259,9 +1233,12 @@
         "mandatory": false,
         "default_enabled": false
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1333,9 +1310,12 @@
         "mandatory": false,
         "default_enabled": false
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1414,10 +1394,87 @@
         ],
         "default_effort": "medium"
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "lastSeen": "2026-10-22T23:34:12.743795+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "minimax/minimax-m3.1-flash:free",
+      "canonical_slug": "minimax/minimax-m3.1-flash-20261019",
+      "hugging_face_id": null,
+      "name": "MiniMax: MiniMax M3.1 Flash (free)",
+      "created": 1792379569,
+      "description": "MiniMax-M3.1-Flash is a multimodal model from MiniMax. Compared with M3, it delivers significant improvements across multiple benchmarks, particularly in complex agentic tasks, coding, and cybersecurity. It is built for complex,...",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 524288,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/minimax/minimax-m3.1-flash-20261019/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 42.7,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
+      "reasoning": {
+        "mandatory": true,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "max"
+      },
+      "presence": "removed",
+      "firstSeen": "2026-10-20T04:33:23.581040+00:00",
+      "lastSeen": "2026-10-22T04:24:33.015928+00:00",
+      "removedDate": "2026-10-22T23:34:12.743795+00:00",
       "status": null
     },
     {

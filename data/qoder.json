@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 2,
-  "updatedAt": "2026-10-22T04:24:42.981849+00:00",
+  "updatedAt": "2026-10-22T23:34:24.327717+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -26,9 +26,13 @@
         400000,
         1000000
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:14.926915+00:00",
-      "lastSeen": "2026-10-22T04:24:42.981849+00:00",
+      "lastSeen": "2026-10-22T23:34:24.327717+00:00",
       "removedDate": null,
       "status": null
     },
@@ -41,11 +45,12 @@
       "support_disable_reasoning": true,
       "price_factor": 0,
       "efforts": [
-        "high",
         "max",
-        "low"
+        "low",
+        "high"
       ],
       "default_effort": "max",
+      "template_default_effort": "high",
       "max_input_tokens": 1000000,
       "default_context_window": 200000,
       "available_context_windows": [
@@ -53,9 +58,13 @@
         400000,
         1000000
       ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-20T04:33:33.719188+00:00",
-      "lastSeen": "2026-10-22T04:24:42.981849+00:00",
+      "lastSeen": "2026-10-22T23:34:24.327717+00:00",
       "removedDate": null,
       "status": null
     }

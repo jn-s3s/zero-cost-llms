@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 9,
-  "updatedAt": "2026-10-22T04:24:33.992737+00:00",
+  "updatedAt": "2026-10-22T23:34:13.843395+00:00",
   "lastFailedAt": "2026-10-05T05:19:58.351994+00:00",
   "lastFailedMessage": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
   "data": [
@@ -54,9 +54,12 @@
         "reasoning": true
       },
       "benchmarks": {},
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-22T04:24:33.992737+00:00",
+      "lastSeen": "2026-10-22T23:34:13.843395+00:00",
       "removedDate": null,
       "status": null
     },
@@ -109,9 +112,12 @@
         "reasoning": true
       },
       "benchmarks": {},
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-22T04:24:33.992737+00:00",
+      "lastSeen": "2026-10-22T23:34:13.843395+00:00",
       "removedDate": null,
       "status": null
     },
@@ -164,9 +170,12 @@
         "reasoning": true
       },
       "benchmarks": {},
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-22T04:24:33.992737+00:00",
+      "lastSeen": "2026-10-22T23:34:13.843395+00:00",
       "removedDate": null,
       "status": null
     },
@@ -219,9 +228,12 @@
         "reasoning": true
       },
       "benchmarks": {},
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-22T04:24:33.992737+00:00",
+      "lastSeen": "2026-10-22T23:34:13.843395+00:00",
       "removedDate": null,
       "status": null
     },
@@ -274,9 +286,12 @@
         "reasoning": true
       },
       "benchmarks": {},
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-22T04:24:33.992737+00:00",
+      "lastSeen": "2026-10-22T23:34:13.843395+00:00",
       "removedDate": null,
       "status": null
     },
@@ -334,9 +349,12 @@
         "math",
         "daily_use"
       ],
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-22T04:24:33.992737+00:00",
+      "lastSeen": "2026-10-22T23:34:13.843395+00:00",
       "removedDate": null,
       "status": null
     },
@@ -395,9 +413,12 @@
         "math",
         "daily_use"
       ],
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-22T04:24:33.992737+00:00",
+      "lastSeen": "2026-10-22T23:34:13.843395+00:00",
       "removedDate": null,
       "status": null
     },
@@ -465,9 +486,12 @@
         "terminalbench_hard": null,
         "tau2": null
       },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-22T04:24:33.992737+00:00",
+      "lastSeen": "2026-10-22T23:34:13.843395+00:00",
       "removedDate": null,
       "status": null
     },
@@ -520,9 +544,12 @@
         "reasoning": true
       },
       "benchmarks": {},
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-22T04:24:33.992737+00:00",
+      "lastSeen": "2026-10-22T23:34:13.843395+00:00",
       "removedDate": null,
       "status": null
     }

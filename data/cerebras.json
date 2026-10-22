@@ -1,28 +1,10 @@
 {
   "status": "success",
   "count": 2,
-  "updatedAt": "2026-10-22T04:24:43.463788+00:00",
+  "updatedAt": "2026-10-22T23:34:24.896419+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
-    {
-      "id": "qwen-3.8-27b",
-      "object": "model",
-      "created": 0,
-      "owned_by": "Cerebras",
-      "rate_limits": {
-        "rpm": 5,
-        "uncached_tpm": 30000,
-        "total_tpm": 90000,
-        "tph": 1000000,
-        "tpd": 1000000
-      },
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-      "lastSeen": "2026-10-22T04:24:43.463788+00:00",
-      "removedDate": null,
-      "status": null
-    },
     {
       "id": "gpt-oss-120b",
       "object": "model",
@@ -35,9 +17,41 @@
         "tph": 1000000,
         "tpd": 1000000
       },
+      "benchmarks": null,
+      "curated_benchmarks": {
+        "swe_bench_verified": {
+          "score": 26.0,
+          "tier": "B",
+          "source": "SWE-bench Verified leaderboard"
+        }
+      },
+      "swe_bench_score": 26.0,
+      "swe_bench_tier": "B",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-      "lastSeen": "2026-10-22T04:24:43.463788+00:00",
+      "lastSeen": "2026-10-22T23:34:24.896419+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "qwen-3.8-27b",
+      "object": "model",
+      "created": 0,
+      "owned_by": "Cerebras",
+      "rate_limits": {
+        "rpm": 5,
+        "uncached_tpm": 30000,
+        "total_tpm": 90000,
+        "tph": 1000000,
+        "tpd": 1000000
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:15.136455+00:00",
+      "lastSeen": "2026-10-22T23:34:24.896419+00:00",
       "removedDate": null,
       "status": null
     }
