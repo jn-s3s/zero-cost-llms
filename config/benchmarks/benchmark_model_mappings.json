@@ -3,6 +3,41 @@
     "automaticRules": [
         {
             "providerId": "openrouter",
+            "checkpointField": "hugging_face_id",
+            "evidence": "https://openrouter.ai/api/v1/models publishes hugging_face_id as checkpoint identity. Match only an exact reviewed HF checkpoint, independently of routing IDs and canonical_slug. Metadata takes precedence over name aliases; no endpoint-performance claim."
+        },
+        {
+            "providerId": "kilo",
+            "checkpointField": "hugging_face_id",
+            "evidence": "https://api.kilo.ai/api/gateway/models publishes hugging_face_id. Use only an exact reviewed HF checkpoint; do not infer identity from canonical_slug or isFree."
+        },
+        {
+            "providerId": "requesty",
+            "checkpointField": "hugging_face_id",
+            "evidence": "https://router.requesty.ai/v1/models publishes hugging_face_id, including nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16. Exact reviewed HF identity avoids guessing from host-prefixed routing IDs. Explicit guarded offering mappings remain authoritative."
+        },
+        {
+            "providerId": "groq",
+            "checkpointField": "hugging_face_id",
+            "evidence": "https://api.groq.com/openai/v1/models declares hugging_face_id. Match only an exact reviewed HF checkpoint, retaining revision and precision qualifiers."
+        },
+        {
+            "providerId": "opencode-zen",
+            "idSuffix": "-free",
+            "evidence": "config/providers.json documents the -free pricing suffix at https://opencode.ai/zen/v1/models. Remove only terminal -free and match an exact reviewed offering alias. Do not expand shortened model names or infer checkpoint versions."
+        },
+        {
+            "providerId": "routeway",
+            "idSuffix": ":free",
+            "evidence": "config/providers.json and https://api.routeway.ai/v1/models identify terminal :free as a pricing suffix. Require an exact reviewed checkpoint or offering alias; preserve community fine-tune names and all version qualifiers."
+        },
+        {
+            "providerId": "orcarouter",
+            "idSuffix": "-free",
+            "evidence": "https://api.orcarouter.ai/v1/models publishes routing IDs such as deepseek/deepseek-v4-flash-free, explicitly reviewed below as free-tier aliases. Remove only terminal -free, preserving the full namespace; require an exact reviewed alias."
+        },
+        {
+            "providerId": "openrouter",
             "idSuffix": ":free",
             "evidence": "config/providers.json documents :free on data[].id at https://openrouter.ai/api/v1/models; https://openrouter.ai/docs/guides/routing/model-variants/free documents appending :free to a model ID. Remove only this terminal catalogue-tier suffix for checkpoint identity and preserve the complete author/checkpoint slug. Match only a trusted exact checkpoint; do not strip other variants or infer aliases. Free entries have independent pricing, context limits and endpoints; this rule transfers neither their metadata nor verified endpoint performance."
         },
@@ -83,21 +118,6 @@
             "evaluations": []
         },
         {
-            "canonicalId": "hf:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
-            "displayName": "Nemotron 3.5 Lightning BF16",
-            "offerings": [
-                {
-                    "providerId": "openrouter",
-                    "modelId": "nvidia/nemotron-3.5-lightning:free",
-                    "expectedMetadata": {
-                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
-                    },
-                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16. This explicit precision variant is not merged with unqualified native models."
-                }
-            ],
-            "evaluations": []
-        },
-        {
             "canonicalId": "hf:thinkingmachines/Inkling-Small",
             "displayName": "Inkling Small",
             "offerings": [
@@ -163,36 +183,6 @@
             "evaluations": []
         },
         {
-            "canonicalId": "hf:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
-            "displayName": "Nemotron 3 Ultra BF16",
-            "offerings": [
-                {
-                    "providerId": "openrouter",
-                    "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free",
-                    "expectedMetadata": {
-                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
-                    },
-                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16. No unqualified model evaluation is transferred to this explicit precision variant."
-                }
-            ],
-            "evaluations": []
-        },
-        {
-            "canonicalId": "hf:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
-            "displayName": "Nemotron 3 Nano Omni Reasoning BF16",
-            "offerings": [
-                {
-                    "providerId": "openrouter",
-                    "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-                    "expectedMetadata": {
-                        "hugging_face_id": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16"
-                    },
-                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16. Preserve the reasoning and precision variant."
-                }
-            ],
-            "evaluations": []
-        },
-        {
             "canonicalId": "hf:google/gemma-4-26B-A4B-it",
             "displayName": "Gemma 4 26B A4B Instruct",
             "offerings": [
@@ -238,35 +228,29 @@
             ]
         },
         {
-            "canonicalId": "checkpoint:nvidia/nemotron-3-super-120b-a12b-FP8",
+            "canonicalId": "catalogue:nvidia/nemotron-3.5-lightning-30b-a3b",
+            "displayName": "Nemotron 3.5 Lightning 30B A3B",
             "reviewedCheckpointUrls": [
-                "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
+                "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
             ],
-            "displayName": "Nemotron 3 Super FP8",
             "offerings": [
                 {
                     "providerId": "openrouter",
-                    "modelId": "nvidia/nemotron-3-super-120b-a12b:free",
+                    "modelId": "nvidia/nemotron-3.5-lightning:free",
                     "expectedMetadata": {
-                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
+                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
                     },
-                    "evidence": "https://openrouter.ai/api/v1/models declares hugging_face_id=nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8. LiveBench's link to this moving OpenRouter alias does not establish the precision evaluated, so no unqualified evaluation is assigned."
-                }
-            ],
-            "evaluations": []
-        },
-        {
-            "canonicalId": "catalogue:nvidia/nemotron-3.5-lightning-30b-a3b",
-            "displayName": "Nemotron 3.5 Lightning 30B A3B",
-            "offerings": [
+                    "evidence": "Captured OpenRouter and Requesty catalogues declare the same hugging_face_id=nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 despite different routing names. Checkpoint identity only; serving precision is unverified."
+                },
                 {
                     "providerId": "requesty",
                     "modelId": "nvidia/nemotron-3.5-lightning-30b-a3b",
                     "expectedMetadata": {
                         "model_lab": "nvidia",
-                        "model_canonical_name": "nemotron-3.5-lightning-30b-a3b"
+                        "model_canonical_name": "nemotron-3.5-lightning-30b-a3b",
+                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
                     },
-                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia and model_canonical_name=nemotron-3.5-lightning-30b-a3b. This unqualified native model is separate from BF16-suffixed HF checkpoints."
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia, model_canonical_name=nemotron-3.5-lightning-30b-a3b and the same BF16 hugging_face_id as OpenRouter. No endpoint-performance parity is inferred."
                 },
                 {
                     "providerId": "nvidia",
@@ -295,15 +279,27 @@
         {
             "canonicalId": "catalogue:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
             "displayName": "Nemotron 3 Nano Omni Reasoning",
+            "reviewedCheckpointUrls": [
+                "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16"
+            ],
             "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+                    "expectedMetadata": {
+                        "hugging_face_id": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16"
+                    },
+                    "evidence": "Captured OpenRouter and Requesty catalogues declare the same hugging_face_id=nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16. Retain the reasoning checkpoint; endpoint precision/performance is unverified."
+                },
                 {
                     "providerId": "requesty",
                     "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
                     "expectedMetadata": {
                         "model_lab": "nvidia",
-                        "model_canonical_name": "nemotron-3-nano-omni-30b-a3b-reasoning"
+                        "model_canonical_name": "nemotron-3-nano-omni-30b-a3b-reasoning",
+                        "hugging_face_id": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16"
                     },
-                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia and model_canonical_name=nemotron-3-nano-omni-30b-a3b-reasoning; explicit BF16 variants remain separate."
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia, model_canonical_name=nemotron-3-nano-omni-30b-a3b-reasoning and the same BF16 hugging_face_id as OpenRouter. This documents checkpoint identity, not serving-precision parity."
                 },
                 {
                     "providerId": "nvidia",
@@ -336,37 +332,61 @@
         },
         {
             "canonicalId": "catalogue:nvidia/nemotron-3-super-120b-a12b",
-            "displayName": "Nemotron 3 Super Native",
+            "displayName": "Nemotron 3 Super",
+            "reviewedCheckpointUrls": [
+                "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
+            ],
             "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "nvidia/nemotron-3-super-120b-a12b:free",
+                    "expectedMetadata": {
+                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
+                    },
+                    "evidence": "Captured OpenRouter and Requesty catalogues declare the same hugging_face_id=nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8. The moving LiveBench OpenRouter URL still does not establish the evaluated checkpoint/configuration, so no evaluation is newly assigned."
+                },
                 {
                     "providerId": "requesty",
                     "modelId": "nvidia/nemotron-3-super-120b-a12b",
                     "expectedMetadata": {
                         "model_lab": "nvidia",
-                        "model_canonical_name": "nemotron-3-super-120b-a12b"
+                        "model_canonical_name": "nemotron-3-super-120b-a12b",
+                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
                     },
-                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia and model_canonical_name=nemotron-3-super-120b-a12b. No FP8/BF16 inference is made."
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia, model_canonical_name=nemotron-3-super-120b-a12b and the same FP8 hugging_face_id as OpenRouter. This links checkpoint identity without claiming measured endpoint precision."
                 },
                 {
                     "providerId": "nvidia",
                     "modelId": "nvidia/nemotron-3-super-120b-a12b",
-                    "evidence": "https://integrate.api.nvidia.com/v1/models declares literal native ID nvidia/nemotron-3-super-120b-a12b. Explicit precision variants remain separate."
+                    "evidence": "https://integrate.api.nvidia.com/v1/models declares literal native ID nvidia/nemotron-3-super-120b-a12b, also reviewed in Requesty. Serving precision remains unverified."
                 }
             ],
             "evaluations": []
         },
         {
             "canonicalId": "checkpoint:nvidia/nemotron-3-ultra-550b-a55b",
-            "displayName": "Nemotron 3 Ultra Native",
+            "displayName": "Nemotron 3 Ultra",
+            "reviewedCheckpointUrls": [
+                "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+            ],
             "offerings": [
+                {
+                    "providerId": "openrouter",
+                    "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free",
+                    "expectedMetadata": {
+                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+                    },
+                    "evidence": "Captured https://openrouter.ai/api/v1/models and https://router.requesty.ai/v1/models both declare hugging_face_id=nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 for this full checkpoint ID. This links the free route to the reviewed Requesty/native identity, not to a different model. Endpoint precision and performance remain unverified."
+                },
                 {
                     "providerId": "requesty",
                     "modelId": "nvidia/nemotron-3-ultra-550b-a55b",
                     "expectedMetadata": {
                         "model_lab": "nvidia",
-                        "model_canonical_name": "nemotron-3-ultra-550b-a55b"
+                        "model_canonical_name": "nemotron-3-ultra-550b-a55b",
+                        "hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
                     },
-                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia and model_canonical_name=nemotron-3-ultra-550b-a55b. Explicit BF16 HF variants remain separate."
+                    "evidence": "https://router.requesty.ai/v1/models declares model_lab=nvidia, model_canonical_name=nemotron-3-ultra-550b-a55b and hugging_face_id=nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16, also declared by OpenRouter. This is checkpoint identity evidence, not measured serving-precision or endpoint parity."
                 },
                 {
                     "providerId": "nvidia",
