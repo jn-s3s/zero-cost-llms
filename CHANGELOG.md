@@ -5,6 +5,17 @@ and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-10-23
+
+### Added
+
+- Share verified coding tiers across providers by resolving equivalent offerings to
+  one canonical model. The resolver uses exact reviewed Hugging Face checkpoint
+  metadata and reviewed provider aliases; provider-specific rules remove only
+  documented pricing suffixes such as `:free` or `-free`, and declared checkpoint
+  metadata takes precedence over name matching. Provider limits and availability
+  remain separate, and missing benchmark evidence stays Unrated.
+
 ## [1.1.0] - 2026-10-23
 
 ### Added
