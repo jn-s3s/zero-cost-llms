@@ -159,6 +159,8 @@ def load_identities(path: Path, providers: list[str]) -> dict:
         for key in ("idPrefix", "idSuffix", "checkpointNamespace"):
             if key in rule:
                 require_text(rule[key], f"automatic rule.{key}")
+        if "checkpointField" in rule:
+            require_text(rule["checkpointField"], "automatic rule.checkpointField")
         rules.append(rule)
     return {
         "identities": identities,
@@ -235,10 +237,27 @@ def evaluation_identity_matches(mapping: dict, record: dict) -> bool:
     return expected == actual
 
 
+def _transformed_id(model_id: str, rule: dict) -> str | None:
+    transformed = model_id
+    prefix, suffix = rule.get("idPrefix"), rule.get("idSuffix")
+    if prefix is not None:
+        if not transformed.startswith(prefix):
+            return None
+        transformed = transformed[len(prefix) :]
+    if suffix is not None:
+        if not transformed.endswith(suffix):
+            return None
+        transformed = transformed[: -len(suffix)]
+    namespace = rule.get("checkpointNamespace")
+    if namespace and namespace not in {"hf", "huggingface", "huggingface.co"}:
+        transformed = f"{namespace}/{transformed}"
+    return transformed or None
+
+
 def trusted_slugs(
     config: dict, sources: list[dict], issues: list[dict] | None = None
 ) -> dict[str, set[str]]:
-    """Index only reviewed HF identities, never labels' refreshed model URLs."""
+    """Index reviewed checkpoints and offering aliases, never refreshed URLs."""
     slugs: dict[str, set[str]] = {}
     for canonical_id, identity in config["identities"].items():
         if canonical_id.startswith("hf:"):
@@ -247,6 +266,19 @@ def trusted_slugs(
             slug = _hf_slug(url)
             if slug is not None:
                 slugs.setdefault(f"hf:{slug}", set()).add(canonical_id)
+    # Reviewed provider IDs are aliases, not necessarily HF repository names.
+    # Apply only that provider's documented transformations to unguarded
+    # anchors. Guarded offerings are valid only for their exact provider pair;
+    # their metadata/name constraints cannot be transferred to another route.
+    for (provider_id, model_id), offering in config["offerings"].items():
+        if "expectedMetadata" in offering or "expectedName" in offering:
+            continue
+        for rule in config["rules"]:
+            if rule["providerId"] != provider_id or "checkpointField" in rule:
+                continue
+            alias = _transformed_id(model_id, rule)
+            if alias is not None:
+                slugs.setdefault(f"alias:{alias}", set()).add(offering["canonicalId"])
     # Optional current URLs can produce diagnostics, but cannot establish an
     # automatic alias or mutate any reviewed checkpoint's slug index.
     for source in sources:
@@ -293,27 +325,31 @@ def resolve_offering(
             return None, explicit, "expected_metadata_mismatch"
         return explicit["canonicalId"], explicit, None
     candidates: dict[str, dict] = {}
+    checkpoint_candidates: dict[str, dict] = {}
+    has_checkpoint = False
     for rule in config["rules"]:
         if rule["providerId"] != provider_id:
             continue
-        transformed = model_id
-        prefix, suffix = rule.get("idPrefix"), rule.get("idSuffix")
-        if prefix is not None:
-            if not transformed.startswith(prefix):
-                continue
-            transformed = transformed[len(prefix) :]
-        if suffix is not None:
-            if not transformed.endswith(suffix):
-                continue
-            transformed = transformed[: -len(suffix)]
-        namespace = rule.get("checkpointNamespace")
-        if namespace and namespace not in {"hf", "huggingface", "huggingface.co"}:
-            transformed = f"{namespace}/{transformed}"
-        matches = set(slugs.get(transformed, set()))
+        field = rule.get("checkpointField")
+        if field is not None:
+            checkpoint = model.get(field)
+            if isinstance(checkpoint, str) and checkpoint.strip():
+                has_checkpoint = True
+                for canonical_id in slugs.get(f"hf:{checkpoint.casefold()}", set()):
+                    checkpoint_candidates[canonical_id] = rule
+            continue
+        transformed = _transformed_id(model_id, rule)
+        if transformed is None:
+            continue
+        matches = set(slugs.get(f"alias:{transformed}", set()))
         if "/" in transformed:
             matches.update(slugs.get(f"hf:{transformed.casefold()}", set()))
         for canonical_id in matches:
             candidates[canonical_id] = rule
+    # Declared checkpoint metadata takes precedence over a routing label. An
+    # unknown precision/revision must not inherit a similar label's rating.
+    if has_checkpoint:
+        candidates = checkpoint_candidates
     if len(candidates) == 1:
         canonical_id = next(iter(candidates))
         return (
@@ -321,7 +357,12 @@ def resolve_offering(
             {"canonicalId": canonical_id, "automaticRule": candidates[canonical_id]},
             None,
         )
-    return None, None, "ambiguous_automatic_identity" if candidates else None
+    issue = None
+    if candidates:
+        issue = "ambiguous_automatic_identity"
+    elif has_checkpoint:
+        issue = "unreviewed_checkpoint"
+    return None, None, issue
 
 
 def eligibility(model: dict) -> tuple[str, str]:

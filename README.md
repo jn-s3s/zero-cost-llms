@@ -276,6 +276,16 @@ similar names. Catalogue additions/removals are synchronized on regeneration. Up
 and normalized seeds with explicit identity evidence and immutable source provenance, then
 inspect both artifacts before relying on them.
 
+Verified equivalent offerings share one canonical model and coding tier, regardless of
+provider. The resolver uses exact reviewed Hugging Face checkpoint metadata and reviewed
+provider aliases. Provider-specific rules remove pricing suffixes such as `:free` or `-free`;
+they do not strip arbitrary suffixes or guess shortened names. Different provider names can
+be linked by an explicit, evidence-backed offering mapping. Declared checkpoint metadata
+takes precedence over automatic name matching, and ambiguous aliases stay unresolved.
+Explicit mappings retain their metadata/name guards, including known quantization variants.
+Provider limits and availability remain separate; a shared tier does not verify endpoint
+performance. Missing benchmark evidence remains Unrated, not a lower coding tier.
+
 Source refresh replaces caches atomically; a failed source retains its last good snapshot,
 reports failed source status and keeps the old success timestamp. Overall generation can
 succeed with source issues, so always inspect `sourceStates` and audit issues, and verify the
