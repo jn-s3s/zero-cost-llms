@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 5,
-  "updatedAt": "2026-10-22T23:34:20.178112+00:00",
+  "updatedAt": "2026-10-23T04:29:30.426521+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -52,7 +52,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 98,
         "requests": 50
       },
       "benchmarks": null,
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-22T23:34:20.178112+00:00",
+      "lastSeen": "2026-10-23T04:29:30.426521+00:00",
       "removedDate": null,
       "status": null
     },
@@ -112,7 +112,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 98,
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -121,7 +121,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-22T23:34:20.178112+00:00",
+      "lastSeen": "2026-10-23T04:29:30.426521+00:00",
       "removedDate": null,
       "status": null
     },
@@ -172,7 +172,7 @@
       "per_user_rpm": 45,
       "health": {
         "status": "degraded",
-        "success_rate": 92,
+        "success_rate": 90,
         "requests": 50
       },
       "benchmarks": null,
@@ -181,7 +181,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-22T23:34:20.178112+00:00",
+      "lastSeen": "2026-10-23T04:29:30.426521+00:00",
       "removedDate": null,
       "status": null
     },
@@ -232,8 +232,8 @@
       "context_length": 131000,
       "per_user_rpm": 10,
       "health": {
-        "status": "healthy",
-        "success_rate": 100,
+        "status": "degraded",
+        "success_rate": 90,
         "requests": 50
       },
       "benchmarks": null,
@@ -242,7 +242,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-10-22T23:34:20.178112+00:00",
+      "lastSeen": "2026-10-23T04:29:30.426521+00:00",
       "removedDate": null,
       "status": null
     },
@@ -287,7 +287,7 @@
       "per_user_rpm": 5,
       "health": {
         "status": "healthy",
-        "success_rate": 98,
+        "success_rate": 96,
         "requests": 50
       },
       "benchmarks": null,
@@ -296,7 +296,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-10-22T23:34:20.178112+00:00",
+      "lastSeen": "2026-10-23T04:29:30.426521+00:00",
       "removedDate": null,
       "status": null
     },
