@@ -5,6 +5,12 @@ and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-10-24
+
+### Added
+
+- Add `beam` to the free model list for `ollama-cloud` via its saved `ollama_cloud_free_models.html` snapshot.
+
 ## [1.2.0] - 2026-10-23
 
 ### Added
