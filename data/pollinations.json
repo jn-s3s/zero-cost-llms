@@ -1,10 +1,191 @@
 {
   "status": "success",
-  "count": 5,
-  "updatedAt": "2026-10-23T04:29:30.426521+00:00",
+  "count": 8,
+  "updatedAt": "2026-10-24T04:19:50.855366+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "community/CloudCompile/poolside-laguna-s-2.1:free",
+      "object": "model",
+      "created": 1792709975,
+      "owned_by": "My Github",
+      "aliases": [
+        "CloudCompile/poolside-laguna-s-2.1:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Poolside: Laguna S 2.1 (free)",
+      "description": "Poolside Laguna S 2.1: 118B-total / 8B-active sparse MoE built for agentic coding and long-horizon work. 1M-token context with native interleaved reasoning; 70.2% on Terminal-Bench 2.1, 40.4% on DeepSWE. Trained in-house on 30T tokens. Released under the permissive OpenMDW-1.1 license.",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 262144,
+      "per_user_rpm": null,
+      "health": {
+        "status": "degraded",
+        "success_rate": 94,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/CloudCompile/dots-studio-dots-3-note-preview:free",
+      "object": "model",
+      "created": 1792709971,
+      "owned_by": "My Github",
+      "aliases": [
+        "CloudCompile/dots-studio-dots-3-note-preview:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Dots Studio: Dots3-Note Preview (free)",
+      "description": "dots3-note Preview (Xiaohongshu / Dots Studio): first open-weight model in the dots3 family. Multimodal MoE (280B total, 16B active) accepting text/image/video/audio with text output; up to 512K context. Optimized for reasoning, agent workflows, code, and long-context. Preview release: reinforcement learning incomplete; hallucination/stability limits noted. Apache 2.0.",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 512000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "degraded",
+        "success_rate": 84,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/CloudCompile/recursive-flint-v1.0:free",
+      "object": "model",
+      "created": 1792709968,
+      "owned_by": "My Github",
+      "aliases": [
+        "CloudCompile/recursive-flint-v1.0:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Recursive: Flint (free)",
+      "description": "Recursive Flint: open-weight mixture-of-experts model (40B total, 2.5B active) built by Recursive's autoresearch system (Eureka Machine) for coding agents - codebase investigation, bug fixes, feature implementation, and test writing. 262K context; supports tool calling. Apache 2.0 weights; runs locally (llama.cpp, Ollama, vLLM, SGLang, etc.).",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 262144,
+      "per_user_rpm": null,
+      "health": {
+        "status": "degraded",
+        "success_rate": 82,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
       "object": "model",
@@ -52,7 +233,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 98,
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -61,7 +242,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-23T04:29:30.426521+00:00",
+      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
       "removedDate": null,
       "status": null
     },
@@ -121,7 +302,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-23T04:29:30.426521+00:00",
+      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
       "removedDate": null,
       "status": null
     },
@@ -171,8 +352,8 @@
       "context_length": 262000,
       "per_user_rpm": 45,
       "health": {
-        "status": "degraded",
-        "success_rate": 90,
+        "status": "healthy",
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -181,7 +362,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-23T04:29:30.426521+00:00",
+      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
       "removedDate": null,
       "status": null
     },
@@ -233,7 +414,7 @@
       "per_user_rpm": 10,
       "health": {
         "status": "degraded",
-        "success_rate": 90,
+        "success_rate": 82,
         "requests": 50
       },
       "benchmarks": null,
@@ -242,7 +423,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-10-23T04:29:30.426521+00:00",
+      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
       "removedDate": null,
       "status": null
     },
@@ -296,7 +477,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-10-23T04:29:30.426521+00:00",
+      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
       "removedDate": null,
       "status": null
     },

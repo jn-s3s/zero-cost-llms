@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-10-23T04:29:34.668618+00:00",
+  "updatedAt": "2026-10-24T04:19:54.052185+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "c26dfd9b1f3b4d77ba798489fcafc0bd",
+  "generationId": "c07bc4fe52744314b7f4eb294bffc67e",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 255,
-    "eligibleOfferings": 78,
+    "activeOfferings": 259,
+    "eligibleOfferings": 81,
     "excludedOfferings": 54,
-    "uncertainOfferings": 123,
-    "models": 182,
+    "uncertainOfferings": 124,
+    "models": 175,
     "modelsWithGenerationEvidence": 12,
     "modelsWithEditingEvidence": 8,
     "ratedModels": 12,
-    "unratedModels": 170,
+    "unratedModels": 163,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 1,
       "C": 6,
-      "Unrated": 170
+      "Unrated": 163
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-10-23T04:29:37.420445+00:00",
+      "updatedAt": "2026-10-24T04:19:55.465058+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-10-23T04:29:35.331861+00:00",
+      "updatedAt": "2026-10-24T04:19:54.482466+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-10-23T04:29:35.188165+00:00",
+      "updatedAt": "2026-10-24T04:19:54.351082+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-10-23T04:29:35.826342+00:00",
+      "updatedAt": "2026-10-24T04:19:55.633780+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-10-23T04:29:35.492638+00:00",
+      "updatedAt": "2026-10-24T04:19:54.453359+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -485,13 +485,25 @@
     },
     {
       "modelId": "checkpoint:nvidia/nemotron-3-ultra-550b-a55b",
-      "name": "Nemotron 3 Ultra Native",
-      "eligibility": "uncertain",
+      "name": "Nemotron 3 Ultra",
+      "eligibility": "eligible",
       "identityStatus": "established",
       "providers": [
         {
+          "providerId": "cline",
+          "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free"
+        },
+        {
+          "providerId": "kilo",
+          "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free"
+        },
+        {
           "providerId": "nvidia",
           "modelId": "nvidia/nemotron-3-ultra-550b-a55b"
+        },
+        {
+          "providerId": "openrouter",
+          "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free"
         },
         {
           "providerId": "requesty",
@@ -1801,12 +1813,24 @@
     {
       "modelId": "catalogue:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
       "name": "Nemotron 3 Nano Omni Reasoning",
-      "eligibility": "uncertain",
+      "eligibility": "eligible",
       "identityStatus": "established",
       "providers": [
         {
+          "providerId": "cline",
+          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+        },
+        {
+          "providerId": "kilo",
+          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+        },
+        {
           "providerId": "nvidia",
           "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"
+        },
+        {
+          "providerId": "openrouter",
+          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
         },
         {
           "providerId": "requesty",
@@ -1823,10 +1847,22 @@
     },
     {
       "modelId": "catalogue:nvidia/nemotron-3-super-120b-a12b",
-      "name": "Nemotron 3 Super Native",
-      "eligibility": "uncertain",
+      "name": "Nemotron 3 Super",
+      "eligibility": "eligible",
       "identityStatus": "established",
       "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
+        },
+        {
+          "providerId": "kilo",
+          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
+        },
+        {
+          "providerId": "openrouter",
+          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
+        },
         {
           "providerId": "requesty",
           "modelId": "nvidia/nemotron-3-super-120b-a12b"
@@ -1843,12 +1879,16 @@
     {
       "modelId": "catalogue:nvidia/nemotron-3.5-lightning-30b-a3b",
       "name": "Nemotron 3.5 Lightning 30B A3B",
-      "eligibility": "uncertain",
+      "eligibility": "eligible",
       "identityStatus": "established",
       "providers": [
         {
           "providerId": "nvidia",
           "modelId": "nvidia/nemotron-3.5-lightning-30b-a3b"
+        },
+        {
+          "providerId": "openrouter",
+          "modelId": "nvidia/nemotron-3.5-lightning:free"
         },
         {
           "providerId": "requesty",
@@ -1927,6 +1967,10 @@
       "identityStatus": "established",
       "providers": [
         {
+          "providerId": "nvidia",
+          "modelId": "z-ai/glm-5.3-flash"
+        },
+        {
           "providerId": "orcarouter",
           "modelId": "z-ai/glm-5.3-flash-free"
         }
@@ -1987,25 +2031,6 @@
           "configurationStatus": "published"
         }
       ],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "checkpoint:nvidia/nemotron-3-super-120b-a12b-FP8",
-      "name": "Nemotron 3 Super FP8",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "openrouter",
-          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
-        }
-      ],
-      "generationDebugging": [],
       "repositoryEditing": [],
       "tier": "Unrated",
       "index": null,
@@ -2114,63 +2139,6 @@
         {
           "providerId": "openrouter",
           "modelId": "google/gemma-4-26b-a4b-it:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "hf:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
-      "name": "Nemotron 3 Ultra BF16",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "openrouter",
-          "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "hf:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
-      "name": "Nemotron 3.5 Lightning BF16",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "openrouter",
-          "modelId": "nvidia/nemotron-3.5-lightning:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "hf:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
-      "name": "Nemotron 3 Nano Omni Reasoning BF16",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "openrouter",
-          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
         }
       ],
       "generationDebugging": [],
@@ -2457,63 +2425,6 @@
         {
           "providerId": "cline",
           "modelId": "liquid/lfm-2.5-2.6b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:cline:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "cline",
-          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:cline:nvidia/nemotron-3-super-120b-a12b:free",
-      "name": "nvidia/nemotron-3-super-120b-a12b:free",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "cline",
-          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:cline:nvidia/nemotron-3-ultra-550b-a55b:free",
-      "name": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "cline",
-          "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free"
         }
       ],
       "generationDebugging": [],
@@ -3076,63 +2987,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "kilo",
-          "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:kilo:nvidia/nemotron-3-super-120b-a12b:free",
-      "name": "NVIDIA: Nemotron 3 Super (free)",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "kilo",
-          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:kilo:nvidia/nemotron-3-ultra-550b-a55b:free",
-      "name": "NVIDIA: Nemotron 3 Ultra (free)",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "kilo",
-          "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:kilo:nvidia/nemotron-3.5-lightning:free",
       "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
       "eligibility": "eligible",
@@ -3646,6 +3500,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:nvidia:nvidia/nemotron-3.5-bolt-e4b",
+      "name": "nvidia/nemotron-3.5-bolt-e4b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "nvidia/nemotron-3.5-bolt-e4b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:nvidia:nvidia/nemotron-3.5-content-safety",
       "name": "nvidia/nemotron-3.5-content-safety",
       "eligibility": "uncertain",
@@ -3768,25 +3641,6 @@
         {
           "providerId": "nvidia",
           "modelId": "z-ai/glm-5.3"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:nvidia:z-ai/glm-5.3-flash",
-      "name": "z-ai/glm-5.3-flash",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "nvidia",
-          "modelId": "z-ai/glm-5.3-flash"
         }
       ],
       "generationDebugging": [],
@@ -4159,6 +4013,63 @@
       "provisional": false
     },
     {
+      "modelId": "offering:pollinations:community/CloudCompile/dots-studio-dots-3-note-preview:free",
+      "name": "community/CloudCompile/dots-studio-dots-3-note-preview:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/CloudCompile/dots-studio-dots-3-note-preview:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/CloudCompile/poolside-laguna-s-2.1:free",
+      "name": "community/CloudCompile/poolside-laguna-s-2.1:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/CloudCompile/poolside-laguna-s-2.1:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/CloudCompile/recursive-flint-v1.0:free",
+      "name": "community/CloudCompile/recursive-flint-v1.0:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/CloudCompile/recursive-flint-v1.0:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
       "name": "community/YoannDev90/muse-glimmer-30b:free",
       "eligibility": "eligible",
@@ -4351,6 +4262,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "c26dfd9b1f3b4d77ba798489fcafc0bd"
+    "generationId": "c07bc4fe52744314b7f4eb294bffc67e"
   }
 }

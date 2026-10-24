@@ -3,13 +3,13 @@
     "sourceId": "evalplus",
     "benchmark": "EvalPlus",
     "status": "success",
-    "updatedAt": "2026-10-23T04:29:35.331861+00:00",
+    "updatedAt": "2026-10-24T04:19:54.482466+00:00",
     "lastFailedAt": null,
     "lastFailedMessage": null,
     "snapshot": {
         "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
         "sourceUrl": "https://raw.githubusercontent.com/evalplus/evalplus.github.io/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json",
-        "capturedAt": "2026-10-23T04:29:35.331819+00:00",
+        "capturedAt": "2026-10-24T04:19:54.482417+00:00",
         "contentHash": "e6837dc3b94f32cb1da0ced012e52edc4a722007b684df5b63da029bbd3b46d2",
         "contentHashDefinition": "SHA-256 of raw artifact bodies concatenated in artifacts order",
         "artifacts": [
