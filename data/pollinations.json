@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 8,
-  "updatedAt": "2026-10-24T04:19:50.855366+00:00",
+  "count": 7,
+  "updatedAt": "2026-10-25T04:23:41.298964+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -51,8 +51,8 @@
       "context_length": 262144,
       "per_user_rpm": null,
       "health": {
-        "status": "degraded",
-        "success_rate": 94,
+        "status": "healthy",
+        "success_rate": 96,
         "requests": 50
       },
       "benchmarks": null,
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-24T04:19:50.855366+00:00",
-      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
       "removedDate": null,
       "status": null
     },
@@ -113,7 +113,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "degraded",
-        "success_rate": 84,
+        "success_rate": 82,
         "requests": 50
       },
       "benchmarks": null,
@@ -122,7 +122,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-24T04:19:50.855366+00:00",
-      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
       "removedDate": null,
       "status": null
     },
@@ -172,8 +172,8 @@
       "context_length": 262144,
       "per_user_rpm": null,
       "health": {
-        "status": "degraded",
-        "success_rate": 82,
+        "status": "healthy",
+        "success_rate": 98,
         "requests": 50
       },
       "benchmarks": null,
@@ -182,7 +182,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-24T04:19:50.855366+00:00",
-      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
       "removedDate": null,
       "status": null
     },
@@ -233,7 +233,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 98,
         "requests": 50
       },
       "benchmarks": null,
@@ -242,7 +242,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
       "removedDate": null,
       "status": null
     },
@@ -293,7 +293,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 96,
         "requests": 50
       },
       "benchmarks": null,
@@ -302,7 +302,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
       "removedDate": null,
       "status": null
     },
@@ -362,7 +362,61 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/vendouple/muse-glimmer-30b:free",
+      "object": "model",
+      "created": 1784372748,
+      "owned_by": "OrchidLLM Proxy",
+      "aliases": [
+        "vendouple/muse-glimmer-30b:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Muse Glimmer (Free)",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [],
+      "per_user_rpm": 5,
+      "health": {
+        "status": "degraded",
+        "success_rate": 94,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-02T03:35:34.586995+00:00",
+      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
       "removedDate": null,
       "status": null
     },
@@ -421,64 +475,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
       "lastSeen": "2026-10-24T04:19:50.855366+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/vendouple/muse-glimmer-30b:free",
-      "object": "model",
-      "created": 1784372748,
-      "owned_by": "OrchidLLM Proxy",
-      "aliases": [
-        "vendouple/muse-glimmer-30b:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Muse Glimmer (Free)",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [],
-      "per_user_rpm": 5,
-      "health": {
-        "status": "healthy",
-        "success_rate": 96,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-25T04:23:41.298964+00:00",
       "status": null
     },
     {

@@ -3,13 +3,13 @@
     "sourceId": "aider_python",
     "benchmark": "Aider",
     "status": "success",
-    "updatedAt": "2026-10-24T04:19:54.453359+00:00",
+    "updatedAt": "2026-10-25T04:23:45.934026+00:00",
     "lastFailedAt": null,
     "lastFailedMessage": null,
     "snapshot": {
         "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
         "sourceUrl": "https://raw.githubusercontent.com/Aider-AI/aider/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml",
-        "capturedAt": "2026-10-24T04:19:54.449141+00:00",
+        "capturedAt": "2026-10-25T04:23:45.931056+00:00",
         "contentHash": "4c437c9e22c7fff8b0d61cb8fd4bf9bdf44370783ac9b00a840a80c81319d36e",
         "contentHashDefinition": "SHA-256 of raw artifact bodies concatenated in artifacts order",
         "artifacts": [

@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 65,
-  "updatedAt": "2026-10-24T04:19:49.114474+00:00",
+  "updatedAt": "2026-10-25T04:23:39.732288+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -43,7 +43,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -117,7 +117,7 @@
       "swe_bench_tier": "B",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -155,7 +155,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -193,7 +193,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -229,7 +229,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -261,7 +261,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -312,7 +312,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -364,7 +364,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -402,7 +402,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -436,7 +436,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -468,7 +468,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -518,7 +518,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -546,7 +546,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -582,7 +582,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -616,7 +616,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -644,7 +644,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -695,7 +695,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -741,7 +741,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -787,7 +787,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -842,7 +842,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -870,7 +870,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -917,7 +917,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -964,7 +964,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1014,7 +1014,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:33.068300+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1072,7 +1072,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1110,7 +1110,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1152,7 +1152,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1188,7 +1188,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1243,7 +1243,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1290,7 +1290,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1318,7 +1318,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1365,7 +1365,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1411,7 +1411,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1453,7 +1453,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-20T04:33:28.532117+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1508,7 +1508,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1547,7 +1547,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1579,7 +1579,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1629,7 +1629,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1665,7 +1665,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1707,7 +1707,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-10T05:34:18.663795+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1754,7 +1754,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1809,7 +1809,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1863,7 +1863,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1906,7 +1906,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1961,7 +1961,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1993,7 +1993,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2029,7 +2029,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2104,7 +2104,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2155,7 +2155,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2210,7 +2210,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2242,7 +2242,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:46.868795+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2323,7 +2323,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2351,7 +2351,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2389,7 +2389,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2439,7 +2439,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2507,7 +2507,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2535,7 +2535,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2569,7 +2569,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2616,7 +2616,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2663,7 +2663,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2722,7 +2722,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2772,7 +2772,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:33.068300+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2823,7 +2823,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2873,7 +2873,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     },
@@ -2923,7 +2923,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-      "lastSeen": "2026-10-24T04:19:49.114474+00:00",
+      "lastSeen": "2026-10-25T04:23:39.732288+00:00",
       "removedDate": null,
       "status": null
     }
