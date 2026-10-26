@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-10-25T04:23:45.407272+00:00",
+  "updatedAt": "2026-10-26T04:26:43.108396+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "43c67c124ade461298279472bfe74796",
+  "generationId": "ce52ccc4887743218d493eb489486cd0",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-10-25T04:23:47.231209+00:00",
+      "updatedAt": "2026-10-26T04:26:44.509343+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-10-25T04:23:45.942793+00:00",
+      "updatedAt": "2026-10-26T04:26:43.553488+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-10-25T04:23:45.773073+00:00",
+      "updatedAt": "2026-10-26T04:26:43.391731+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-10-25T04:23:46.441840+00:00",
+      "updatedAt": "2026-10-26T04:26:44.276553+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-10-25T04:23:45.934026+00:00",
+      "updatedAt": "2026-10-26T04:26:43.526246+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -4032,14 +4032,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/CloudCompile/dots-studio-dots-3-note-preview:free",
-      "name": "community/CloudCompile/dots-studio-dots-3-note-preview:free",
+      "modelId": "offering:pollinations:community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
+      "name": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "pollinations",
-          "modelId": "community/CloudCompile/dots-studio-dots-3-note-preview:free"
+          "modelId": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free"
         }
       ],
       "generationDebugging": [],
@@ -4070,14 +4070,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/CloudCompile/recursive-flint-v1.0:free",
-      "name": "community/CloudCompile/recursive-flint-v1.0:free",
+      "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
+      "name": "community/YoannDev90/muse-glimmer-30b:free",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "pollinations",
-          "modelId": "community/CloudCompile/recursive-flint-v1.0:free"
+          "modelId": "community/YoannDev90/muse-glimmer-30b:free"
         }
       ],
       "generationDebugging": [],
@@ -4262,6 +4262,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "43c67c124ade461298279472bfe74796"
+    "generationId": "ce52ccc4887743218d493eb489486cd0"
   }
 }

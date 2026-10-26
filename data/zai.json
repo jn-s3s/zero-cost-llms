@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 3,
-  "updatedAt": "2026-10-25T04:23:40.123317+00:00",
+  "updatedAt": "2026-10-26T04:26:38.024566+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -18,7 +18,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.310670+00:00",
-      "lastSeen": "2026-10-25T04:23:40.123317+00:00",
+      "lastSeen": "2026-10-26T04:26:38.024566+00:00",
       "removedDate": null,
       "status": null
     },
@@ -35,7 +35,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.310670+00:00",
-      "lastSeen": "2026-10-25T04:23:40.123317+00:00",
+      "lastSeen": "2026-10-26T04:26:38.024566+00:00",
       "removedDate": null,
       "status": null
     },
@@ -52,7 +52,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:10.310670+00:00",
-      "lastSeen": "2026-10-25T04:23:40.123317+00:00",
+      "lastSeen": "2026-10-26T04:26:38.024566+00:00",
       "removedDate": null,
       "status": null
     }

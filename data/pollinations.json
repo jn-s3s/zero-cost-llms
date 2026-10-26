@@ -1,10 +1,70 @@
 {
   "status": "success",
   "count": 7,
-  "updatedAt": "2026-10-25T04:23:41.298964+00:00",
+  "updatedAt": "2026-10-26T04:26:39.847212+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
+      "object": "model",
+      "created": 1792709981,
+      "owned_by": "My Github",
+      "aliases": [
+        "CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "NVIDIA: Nemotron 3 Ultra (free)",
+      "description": "NVIDIA Nemotron 3 Ultra: 550B-total / 55B-active hybrid Mamba-Transformer MoE for frontier reasoning and long-running agent orchestration. 1M-token context; up to ~5x throughput vs comparable open models; LatentMoE, MTP, NVFP4, Multi-Teacher On-Policy Distillation. Open weights under the Nemotron open license.",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 1000000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "healthy",
+        "success_rate": 100,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-26T04:26:39.847212+00:00",
+      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "community/CloudCompile/poolside-laguna-s-2.1:free",
       "object": "model",
@@ -52,7 +112,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 96,
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -61,128 +121,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-24T04:19:50.855366+00:00",
-      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/CloudCompile/dots-studio-dots-3-note-preview:free",
-      "object": "model",
-      "created": 1792709971,
-      "owned_by": "My Github",
-      "aliases": [
-        "CloudCompile/dots-studio-dots-3-note-preview:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Dots Studio: Dots3-Note Preview (free)",
-      "description": "dots3-note Preview (Xiaohongshu / Dots Studio): first open-weight model in the dots3 family. Multimodal MoE (280B total, 16B active) accepting text/image/video/audio with text output; up to 512K context. Optimized for reasoning, agent workflows, code, and long-context. Preview release: reinforcement learning incomplete; hallucination/stability limits noted. Apache 2.0.",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "context_length": 512000,
-      "per_user_rpm": null,
-      "health": {
-        "status": "degraded",
-        "success_rate": 82,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-24T04:19:50.855366+00:00",
-      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/CloudCompile/recursive-flint-v1.0:free",
-      "object": "model",
-      "created": 1792709968,
-      "owned_by": "My Github",
-      "aliases": [
-        "CloudCompile/recursive-flint-v1.0:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Recursive: Flint (free)",
-      "description": "Recursive Flint: open-weight mixture-of-experts model (40B total, 2.5B active) built by Recursive's autoresearch system (Eureka Machine) for coding agents - codebase investigation, bug fixes, feature implementation, and test writing. 262K context; supports tool calling. Apache 2.0 weights; runs locally (llama.cpp, Ollama, vLLM, SGLang, etc.).",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "context_length": 262144,
-      "per_user_rpm": null,
-      "health": {
-        "status": "healthy",
-        "success_rate": 98,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-24T04:19:50.855366+00:00",
-      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
+      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
       "removedDate": null,
       "status": null
     },
@@ -233,7 +172,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 98,
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -242,7 +181,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
+      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
       "removedDate": null,
       "status": null
     },
@@ -293,7 +232,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 96,
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -302,7 +241,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
+      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
       "removedDate": null,
       "status": null
     },
@@ -362,61 +301,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/vendouple/muse-glimmer-30b:free",
-      "object": "model",
-      "created": 1784372748,
-      "owned_by": "OrchidLLM Proxy",
-      "aliases": [
-        "vendouple/muse-glimmer-30b:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Muse Glimmer (Free)",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [],
-      "per_user_rpm": 5,
-      "health": {
-        "status": "degraded",
-        "success_rate": 94,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
+      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
       "removedDate": null,
       "status": null
     },
@@ -468,6 +353,121 @@
       "per_user_rpm": 10,
       "health": {
         "status": "degraded",
+        "success_rate": 92,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T13:00:48.913788+00:00",
+      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/vendouple/muse-glimmer-30b:free",
+      "object": "model",
+      "created": 1784372748,
+      "owned_by": "OrchidLLM Proxy",
+      "aliases": [
+        "vendouple/muse-glimmer-30b:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Muse Glimmer (Free)",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [],
+      "per_user_rpm": 5,
+      "health": {
+        "status": "healthy",
+        "success_rate": 98,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-02T03:35:34.586995+00:00",
+      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/CloudCompile/dots-studio-dots-3-note-preview:free",
+      "object": "model",
+      "created": 1792709971,
+      "owned_by": "My Github",
+      "aliases": [
+        "CloudCompile/dots-studio-dots-3-note-preview:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Dots Studio: Dots3-Note Preview (free)",
+      "description": "dots3-note Preview (Xiaohongshu / Dots Studio): first open-weight model in the dots3 family. Multimodal MoE (280B total, 16B active) accepting text/image/video/audio with text output; up to 512K context. Optimized for reasoning, agent workflows, code, and long-context. Preview release: reinforcement learning incomplete; hallucination/stability limits noted. Apache 2.0.",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 512000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "degraded",
         "success_rate": 82,
         "requests": 50
       },
@@ -476,9 +476,69 @@
       "swe_bench_score": null,
       "swe_bench_tier": null,
       "presence": "removed",
-      "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-10-24T04:19:50.855366+00:00",
-      "removedDate": "2026-10-25T04:23:41.298964+00:00",
+      "firstSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
+      "removedDate": "2026-10-26T04:26:39.847212+00:00",
+      "status": null
+    },
+    {
+      "id": "community/CloudCompile/recursive-flint-v1.0:free",
+      "object": "model",
+      "created": 1792709968,
+      "owned_by": "My Github",
+      "aliases": [
+        "CloudCompile/recursive-flint-v1.0:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Recursive: Flint (free)",
+      "description": "Recursive Flint: open-weight mixture-of-experts model (40B total, 2.5B active) built by Recursive's autoresearch system (Eureka Machine) for coding agents - codebase investigation, bug fixes, feature implementation, and test writing. 262K context; supports tool calling. Apache 2.0 weights; runs locally (llama.cpp, Ollama, vLLM, SGLang, etc.).",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 262144,
+      "per_user_rpm": null,
+      "health": {
+        "status": "healthy",
+        "success_rate": 98,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
+      "removedDate": "2026-10-26T04:26:39.847212+00:00",
       "status": null
     },
     {

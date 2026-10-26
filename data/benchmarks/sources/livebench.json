@@ -3,13 +3,13 @@
     "sourceId": "livebench",
     "benchmark": "LiveBench",
     "status": "success",
-    "updatedAt": "2026-10-25T04:23:47.231209+00:00",
+    "updatedAt": "2026-10-26T04:26:44.509343+00:00",
     "lastFailedAt": null,
     "lastFailedMessage": null,
     "snapshot": {
         "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
         "sourceUrl": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/src/Table/modelLinks.js",
-        "capturedAt": "2026-10-25T04:23:47.231089+00:00",
+        "capturedAt": "2026-10-26T04:26:44.509212+00:00",
         "contentHash": "be71eb3d9f0fd5dd5fa0d16db313ce9674431b80b6401fa25d5fcefd20b43e88",
         "contentHashDefinition": "SHA-256 of raw artifact bodies concatenated in artifacts order",
         "artifacts": [
