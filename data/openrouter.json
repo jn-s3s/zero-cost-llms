@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 17,
-  "updatedAt": "2026-10-26T04:26:34.287833+00:00",
+  "updatedAt": "2026-10-27T04:46:01.087233+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -63,7 +63,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -135,7 +135,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:09.924694+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -194,37 +194,37 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1117,
-            "win_rate": 28,
-            "rank": 83
+            "elo": 1116,
+            "win_rate": 28.1,
+            "rank": 85
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1152,
-            "win_rate": 32.8,
+            "elo": 1151,
+            "win_rate": 32.7,
             "rank": 86
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1111,
-            "win_rate": 29.5,
+            "elo": 1110,
+            "win_rate": 29.4,
             "rank": 95
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1145,
-            "win_rate": 31.1,
-            "rank": 78
+            "elo": 1143,
+            "win_rate": 30.8,
+            "rank": 81
           },
           {
             "arena": "models",
             "category": "website",
-            "elo": 1169,
-            "win_rate": 34.9,
-            "rank": 82
+            "elo": 1168,
+            "win_rate": 34.8,
+            "rank": 83
           }
         ],
         "artificial_analysis": {
@@ -241,7 +241,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -302,7 +302,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -382,7 +382,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -448,7 +448,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -536,7 +536,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -594,7 +594,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -670,7 +670,7 @@
             "category": "3d",
             "elo": 1156,
             "win_rate": 39.9,
-            "rank": 65
+            "rank": 66
           },
           {
             "arena": "models",
@@ -689,30 +689,30 @@
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1157,
-            "win_rate": 37.5,
+            "elo": 1156,
+            "win_rate": 37.4,
             "rank": 81
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1166,
-            "win_rate": 37.9,
+            "elo": 1164,
+            "win_rate": 37.8,
             "rank": 72
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1106,
+            "elo": 1105,
             "win_rate": 34.3,
-            "rank": 60
+            "rank": 62
           },
           {
             "arena": "models",
             "category": "uicomponent",
             "elo": 1196,
             "win_rate": 40.5,
-            "rank": 59
+            "rank": 60
           },
           {
             "arena": "models",
@@ -746,7 +746,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -804,7 +804,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -881,7 +881,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -947,7 +947,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1010,15 +1010,15 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1126,
+            "elo": 1127,
             "win_rate": 38.1,
-            "rank": 78
+            "rank": 79
           },
           {
             "arena": "models",
             "category": "asciiart",
             "elo": 1098,
-            "win_rate": 37.5,
+            "win_rate": 37.3,
             "rank": 60
           },
           {
@@ -1031,29 +1031,29 @@
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1140,
-            "win_rate": 37.4,
-            "rank": 87
+            "elo": 1142,
+            "win_rate": 37.5,
+            "rank": 86
           },
           {
             "arena": "models",
             "category": "gamedev",
             "elo": 1140,
-            "win_rate": 36,
+            "win_rate": 36.1,
             "rank": 79
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1068,
+            "elo": 1066,
             "win_rate": 32.3,
-            "rank": 71
+            "rank": 73
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1133,
-            "win_rate": 35.7,
+            "elo": 1136,
+            "win_rate": 35.9,
             "rank": 84
           },
           {
@@ -1086,7 +1086,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1164,7 +1164,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1238,7 +1238,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1315,7 +1315,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1399,7 +1399,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-26T04:26:34.287833+00:00",
+      "lastSeen": "2026-10-27T04:46:01.087233+00:00",
       "removedDate": null,
       "status": null
     },

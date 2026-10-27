@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 7,
-  "updatedAt": "2026-10-26T04:26:39.847212+00:00",
+  "updatedAt": "2026-10-27T04:46:07.615172+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -61,17 +61,17 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-26T04:26:39.847212+00:00",
-      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
+      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
       "removedDate": null,
       "status": null
     },
     {
-      "id": "community/CloudCompile/poolside-laguna-s-2.1:free",
+      "id": "community/CloudCompile/dots-studio-dots-3-note-preview:free",
       "object": "model",
-      "created": 1792709975,
+      "created": 1792709971,
       "owned_by": "My Github",
       "aliases": [
-        "CloudCompile/poolside-laguna-s-2.1:free"
+        "CloudCompile/dots-studio-dots-3-note-preview:free"
       ],
       "category": "text",
       "community": true,
@@ -83,10 +83,11 @@
           "name": "community"
         }
       ],
-      "title": "Poolside: Laguna S 2.1 (free)",
-      "description": "Poolside Laguna S 2.1: 118B-total / 8B-active sparse MoE built for agentic coding and long-horizon work. 1M-token context with native interleaved reasoning; 70.2% on Terminal-Bench 2.1, 40.4% on DeepSWE. Trained in-house on 30T tokens. Released under the permissive OpenMDW-1.1 license.",
+      "title": "Dots Studio: Dots3-Note Preview (free)",
+      "description": "dots3-note Preview (Xiaohongshu / Dots Studio): first open-weight model in the dots3 family. Multimodal MoE (280B total, 16B active) accepting text/image/video/audio with text output; up to 512K context. Optimized for reasoning, agent workflows, code, and long-context. Preview release: reinforcement learning incomplete; hallucination/stability limits noted. Apache 2.0.",
       "input_modalities": [
-        "text"
+        "text",
+        "image"
       ],
       "output_modalities": [
         "text"
@@ -108,11 +109,11 @@
       ],
       "tools": true,
       "reasoning": true,
-      "context_length": 262144,
+      "context_length": 512000,
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 98,
         "requests": 50
       },
       "benchmarks": null,
@@ -121,7 +122,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-24T04:19:50.855366+00:00",
-      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
+      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
       "removedDate": null,
       "status": null
     },
@@ -172,7 +173,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 98,
         "requests": 50
       },
       "benchmarks": null,
@@ -181,7 +182,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
+      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
       "removedDate": null,
       "status": null
     },
@@ -241,7 +242,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
+      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
       "removedDate": null,
       "status": null
     },
@@ -291,8 +292,8 @@
       "context_length": 262000,
       "per_user_rpm": 45,
       "health": {
-        "status": "healthy",
-        "success_rate": 100,
+        "status": "degraded",
+        "success_rate": 92,
         "requests": 50
       },
       "benchmarks": null,
@@ -301,7 +302,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
+      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
       "removedDate": null,
       "status": null
     },
@@ -353,7 +354,7 @@
       "per_user_rpm": 10,
       "health": {
         "status": "degraded",
-        "success_rate": 92,
+        "success_rate": 94,
         "requests": 50
       },
       "benchmarks": null,
@@ -362,7 +363,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
+      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
       "removedDate": null,
       "status": null
     },
@@ -406,8 +407,8 @@
       "capabilities": [],
       "per_user_rpm": 5,
       "health": {
-        "status": "healthy",
-        "success_rate": 98,
+        "status": "degraded",
+        "success_rate": 94,
         "requests": 50
       },
       "benchmarks": null,
@@ -416,17 +417,17 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
+      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
       "removedDate": null,
       "status": null
     },
     {
-      "id": "community/CloudCompile/dots-studio-dots-3-note-preview:free",
+      "id": "community/CloudCompile/poolside-laguna-s-2.1:free",
       "object": "model",
-      "created": 1792709971,
+      "created": 1792709975,
       "owned_by": "My Github",
       "aliases": [
-        "CloudCompile/dots-studio-dots-3-note-preview:free"
+        "CloudCompile/poolside-laguna-s-2.1:free"
       ],
       "category": "text",
       "community": true,
@@ -438,11 +439,10 @@
           "name": "community"
         }
       ],
-      "title": "Dots Studio: Dots3-Note Preview (free)",
-      "description": "dots3-note Preview (Xiaohongshu / Dots Studio): first open-weight model in the dots3 family. Multimodal MoE (280B total, 16B active) accepting text/image/video/audio with text output; up to 512K context. Optimized for reasoning, agent workflows, code, and long-context. Preview release: reinforcement learning incomplete; hallucination/stability limits noted. Apache 2.0.",
+      "title": "Poolside: Laguna S 2.1 (free)",
+      "description": "Poolside Laguna S 2.1: 118B-total / 8B-active sparse MoE built for agentic coding and long-horizon work. 1M-token context with native interleaved reasoning; 70.2% on Terminal-Bench 2.1, 40.4% on DeepSWE. Trained in-house on 30T tokens. Released under the permissive OpenMDW-1.1 license.",
       "input_modalities": [
-        "text",
-        "image"
+        "text"
       ],
       "output_modalities": [
         "text"
@@ -464,11 +464,11 @@
       ],
       "tools": true,
       "reasoning": true,
-      "context_length": 512000,
+      "context_length": 262144,
       "per_user_rpm": null,
       "health": {
-        "status": "degraded",
-        "success_rate": 82,
+        "status": "healthy",
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -477,8 +477,8 @@
       "swe_bench_tier": null,
       "presence": "removed",
       "firstSeen": "2026-10-24T04:19:50.855366+00:00",
-      "lastSeen": "2026-10-25T04:23:41.298964+00:00",
-      "removedDate": "2026-10-26T04:26:39.847212+00:00",
+      "lastSeen": "2026-10-26T04:26:39.847212+00:00",
+      "removedDate": "2026-10-27T04:46:07.615172+00:00",
       "status": null
     },
     {

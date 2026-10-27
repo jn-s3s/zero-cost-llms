@@ -1,14 +1,14 @@
 {
   "status": "success",
   "count": 5,
-  "updatedAt": "2026-10-26T04:26:41.060331+00:00",
+  "updatedAt": "2026-10-27T04:46:09.280912+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "codestral-latest",
       "object": "model",
-      "created": 1792982531,
+      "created": 1793072556,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -51,11 +51,11 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 99.79,
+      "availability_last_hour_percent": 99.86,
       "availability": {
         "old": 100.0,
-        "mid": 99.71,
-        "recent": 99.71
+        "mid": 99.61,
+        "recent": 100.0
       },
       "benchmarks": null,
       "curated_benchmarks": null,
@@ -63,14 +63,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-26T04:26:41.060331+00:00",
+      "lastSeen": "2026-10-27T04:46:09.280912+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "gpt-oss:20b",
       "object": "model",
-      "created": 1792984308,
+      "created": 1793072189,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -113,11 +113,11 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 98.88,
+      "availability_last_hour_percent": 100.0,
       "availability": {
-        "old": 99.32,
-        "mid": 98.75,
-        "recent": 97.5
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 100.0
       },
       "benchmarks": null,
       "curated_benchmarks": null,
@@ -125,14 +125,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-26T04:26:41.060331+00:00",
+      "lastSeen": "2026-10-27T04:46:09.280912+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "minimax-m2.7",
       "object": "model",
-      "created": 1792984992,
+      "created": 1793076231,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -175,11 +175,11 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 97.25,
+      "availability_last_hour_percent": 99.1,
       "availability": {
-        "old": 96.71,
-        "mid": 94.77,
-        "recent": 100.0
+        "old": 98.33,
+        "mid": 100.0,
+        "recent": 99.11
       },
       "benchmarks": null,
       "curated_benchmarks": null,
@@ -187,14 +187,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-26T04:26:41.060331+00:00",
+      "lastSeen": "2026-10-27T04:46:09.280912+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-Nemo-Instruct-2407",
       "object": "model",
-      "created": 1792985069,
+      "created": 1793072423,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -249,14 +249,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-26T04:26:41.060331+00:00",
+      "lastSeen": "2026-10-27T04:46:09.280912+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "nemotron-3-nano:30b",
       "object": "model",
-      "created": 1792984308,
+      "created": 1793072189,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -299,9 +299,9 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 100.0,
+      "availability_last_hour_percent": 99.63,
       "availability": {
-        "old": 100.0,
+        "old": 98.88,
         "mid": 100.0,
         "recent": 100.0
       },
@@ -311,7 +311,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-03T05:03:34.945863+00:00",
-      "lastSeen": "2026-10-26T04:26:41.060331+00:00",
+      "lastSeen": "2026-10-27T04:46:09.280912+00:00",
       "removedDate": null,
       "status": null
     },
