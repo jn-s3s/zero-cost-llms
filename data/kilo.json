@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 14,
-  "updatedAt": "2026-10-27T04:46:07.348026+00:00",
+  "count": 13,
+  "updatedAt": "2026-10-28T05:20:15.935535+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -140,7 +140,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.424757+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -244,7 +244,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -341,7 +341,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -408,7 +408,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:39.458389+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -490,7 +490,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -564,7 +564,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -638,7 +638,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -716,7 +716,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -789,7 +789,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -875,7 +875,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -952,7 +952,73 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "openrouter/free",
+      "name": "OpenRouter Free Models Router",
+      "created": 1769917427,
+      "description": "The simplest way to get free inference. openrouter/free is a router that selects free models at random from the models available on OpenRouter. The router smartly filters for models that...",
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Router"
+      },
+      "top_provider": {
+        "is_moderated": false,
+        "context_length": null,
+        "max_completion_tokens": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "context_length": 200000,
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "expiration_date": null,
+      "inference_provider_ids": [
+        "virtual"
+      ],
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {},
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
+      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1042,76 +1108,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
       "lastSeen": "2026-10-27T04:46:07.348026+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "openrouter/free",
-      "name": "OpenRouter Free Models Router",
-      "created": 1769917427,
-      "description": "The simplest way to get free inference. openrouter/free is a router that selects free models at random from the models available on OpenRouter. The router smartly filters for models that...",
-      "architecture": {
-        "modality": "text+image->text",
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Router"
-      },
-      "top_provider": {
-        "is_moderated": false,
-        "context_length": null,
-        "max_completion_tokens": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "context_length": 200000,
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_completion_tokens",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "expiration_date": null,
-      "inference_provider_ids": [
-        "virtual"
-      ],
-      "isFree": true,
-      "mayTrainOnYourPrompts": true,
-      "opencode": {},
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-27T04:46:07.348026+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-28T05:20:15.935535+00:00",
       "status": null
     },
     {

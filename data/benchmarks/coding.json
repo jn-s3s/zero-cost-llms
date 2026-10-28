@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-10-27T04:46:12.069014+00:00",
+  "updatedAt": "2026-10-28T05:20:20.812972+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "89b1d137182a441ebc6bbfcc9189d816",
+  "generationId": "be1e2f5e9d6241d29bea64e54d58f1f7",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 259,
-    "eligibleOfferings": 80,
+    "activeOfferings": 253,
+    "eligibleOfferings": 75,
     "excludedOfferings": 54,
-    "uncertainOfferings": 125,
-    "models": 175,
+    "uncertainOfferings": 124,
+    "models": 172,
     "modelsWithGenerationEvidence": 12,
     "modelsWithEditingEvidence": 8,
     "ratedModels": 12,
-    "unratedModels": 163,
+    "unratedModels": 160,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 1,
       "C": 6,
-      "Unrated": 163
+      "Unrated": 160
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-10-27T04:46:14.545965+00:00",
+      "updatedAt": "2026-10-28T05:20:23.270997+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-10-27T04:46:12.676039+00:00",
+      "updatedAt": "2026-10-28T05:20:21.434000+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-10-27T04:46:12.559211+00:00",
+      "updatedAt": "2026-10-28T05:20:21.281244+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-10-27T04:46:13.694739+00:00",
+      "updatedAt": "2026-10-28T05:20:22.309639+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-10-27T04:46:13.091839+00:00",
+      "updatedAt": "2026-10-28T05:20:21.469244+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -1848,21 +1848,9 @@
     {
       "modelId": "catalogue:nvidia/nemotron-3-super-120b-a12b",
       "name": "Nemotron 3 Super",
-      "eligibility": "eligible",
+      "eligibility": "uncertain",
       "identityStatus": "established",
       "providers": [
-        {
-          "providerId": "cline",
-          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
-        },
-        {
-          "providerId": "kilo",
-          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
-        },
-        {
-          "providerId": "openrouter",
-          "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
-        },
         {
           "providerId": "requesty",
           "modelId": "nvidia/nemotron-3-super-120b-a12b"
@@ -2797,14 +2785,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:cohere:north-mini-code-1-0",
-      "name": "north-mini-code-1-0",
+      "modelId": "offering:cohere:north-mini-code-1.0",
+      "name": "north-mini-code-1.0",
       "eligibility": "uncertain",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "cohere",
-          "modelId": "north-mini-code-1-0"
+          "modelId": "north-mini-code-1.0"
         }
       ],
       "generationDebugging": [],
@@ -4032,25 +4020,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/CloudCompile/dots-studio-dots-3-note-preview:free",
-      "name": "community/CloudCompile/dots-studio-dots-3-note-preview:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/CloudCompile/dots-studio-dots-3-note-preview:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:pollinations:community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
       "name": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
       "eligibility": "eligible",
@@ -4059,25 +4028,6 @@
         {
           "providerId": "pollinations",
           "modelId": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
-      "name": "community/YoannDev90/muse-glimmer-30b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/YoannDev90/muse-glimmer-30b:free"
         }
       ],
       "generationDebugging": [],
@@ -4127,33 +4077,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/YoannDev90/vercel-nemotron-3.5-lightning:free",
-      "name": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
+      "modelId": "offering:pollinations:community/gggff123/qwen3.8-27b:free",
+      "name": "community/gggff123/qwen3.8-27b:free",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "pollinations",
-          "modelId": "community/YoannDev90/vercel-nemotron-3.5-lightning:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:pollinations:community/vendouple/muse-glimmer-30b:free",
-      "name": "community/vendouple/muse-glimmer-30b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/vendouple/muse-glimmer-30b:free"
+          "modelId": "community/gggff123/qwen3.8-27b:free"
         }
       ],
       "generationDebugging": [],
@@ -4262,6 +4193,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "89b1d137182a441ebc6bbfcc9189d816"
+    "generationId": "be1e2f5e9d6241d29bea64e54d58f1f7"
   }
 }

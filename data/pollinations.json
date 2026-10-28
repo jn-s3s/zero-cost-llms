@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 7,
-  "updatedAt": "2026-10-27T04:46:07.615172+00:00",
+  "count": 4,
+  "updatedAt": "2026-10-28T05:20:16.036245+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -61,128 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-26T04:26:39.847212+00:00",
-      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/CloudCompile/dots-studio-dots-3-note-preview:free",
-      "object": "model",
-      "created": 1792709971,
-      "owned_by": "My Github",
-      "aliases": [
-        "CloudCompile/dots-studio-dots-3-note-preview:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Dots Studio: Dots3-Note Preview (free)",
-      "description": "dots3-note Preview (Xiaohongshu / Dots Studio): first open-weight model in the dots3 family. Multimodal MoE (280B total, 16B active) accepting text/image/video/audio with text output; up to 512K context. Optimized for reasoning, agent workflows, code, and long-context. Preview release: reinforcement learning incomplete; hallucination/stability limits noted. Apache 2.0.",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "context_length": 512000,
-      "per_user_rpm": null,
-      "health": {
-        "status": "healthy",
-        "success_rate": 98,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-24T04:19:50.855366+00:00",
-      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
-      "object": "model",
-      "created": 1792503218,
-      "owned_by": "Free AI API",
-      "aliases": [
-        "YoannDev90/vercel-nemotron-3.5-lightning:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Nemotron 3.5 Lightning",
-      "description": "Open-weight reasoning and chat model for long-running agents, sub-agent work, chatbots, and RAG systems.",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "context_length": 1000000,
-      "per_user_rpm": null,
-      "health": {
-        "status": "healthy",
-        "success_rate": 98,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
+      "lastSeen": "2026-10-28T05:20:16.036245+00:00",
       "removedDate": null,
       "status": null
     },
@@ -242,7 +121,61 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
+      "lastSeen": "2026-10-28T05:20:16.036245+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/gggff123/qwen3.8-27b:free",
+      "object": "model",
+      "created": 1789920268,
+      "owned_by": "Community",
+      "aliases": [
+        "gggff123/qwen3.8-27b:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "qwen3.8-27b:free",
+      "description": "qwen3.8-27b:free",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [],
+      "per_user_rpm": 1,
+      "health": {
+        "status": "degraded",
+        "success_rate": 82,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-28T05:20:16.036245+00:00",
+      "lastSeen": "2026-10-28T05:20:16.036245+00:00",
       "removedDate": null,
       "status": null
     },
@@ -292,8 +225,8 @@
       "context_length": 262000,
       "per_user_rpm": 45,
       "health": {
-        "status": "degraded",
-        "success_rate": 92,
+        "status": "healthy",
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -302,8 +235,129 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
+      "lastSeen": "2026-10-28T05:20:16.036245+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/CloudCompile/dots-studio-dots-3-note-preview:free",
+      "object": "model",
+      "created": 1792709971,
+      "owned_by": "My Github",
+      "aliases": [
+        "CloudCompile/dots-studio-dots-3-note-preview:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Dots Studio: Dots3-Note Preview (free)",
+      "description": "dots3-note Preview (Xiaohongshu / Dots Studio): first open-weight model in the dots3 family. Multimodal MoE (280B total, 16B active) accepting text/image/video/audio with text output; up to 512K context. Optimized for reasoning, agent workflows, code, and long-context. Preview release: reinforcement learning incomplete; hallucination/stability limits noted. Apache 2.0.",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 512000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "healthy",
+        "success_rate": 98,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-24T04:19:50.855366+00:00",
+      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
+      "removedDate": "2026-10-28T05:20:16.036245+00:00",
+      "status": null
+    },
+    {
+      "id": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
+      "object": "model",
+      "created": 1792503218,
+      "owned_by": "Free AI API",
+      "aliases": [
+        "YoannDev90/vercel-nemotron-3.5-lightning:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Nemotron 3.5 Lightning",
+      "description": "Open-weight reasoning and chat model for long-running agents, sub-agent work, chatbots, and RAG systems.",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 1000000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "healthy",
+        "success_rate": 98,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
+      "removedDate": "2026-10-28T05:20:16.036245+00:00",
       "status": null
     },
     {
@@ -361,10 +415,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
       "lastSeen": "2026-10-27T04:46:07.615172+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-28T05:20:16.036245+00:00",
       "status": null
     },
     {
@@ -415,10 +469,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
       "lastSeen": "2026-10-27T04:46:07.615172+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-28T05:20:16.036245+00:00",
       "status": null
     },
     {

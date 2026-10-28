@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 9,
-  "updatedAt": "2026-10-27T04:46:08.751335+00:00",
+  "updatedAt": "2026-10-28T05:20:17.363575+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -15,7 +15,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-      "lastSeen": "2026-10-27T04:46:08.751335+00:00",
+      "lastSeen": "2026-10-28T05:20:17.363575+00:00",
       "removedDate": null,
       "status": null
     },
@@ -29,7 +29,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-      "lastSeen": "2026-10-27T04:46:08.751335+00:00",
+      "lastSeen": "2026-10-28T05:20:17.363575+00:00",
       "removedDate": null,
       "status": null
     },
@@ -43,7 +43,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-      "lastSeen": "2026-10-27T04:46:08.751335+00:00",
+      "lastSeen": "2026-10-28T05:20:17.363575+00:00",
       "removedDate": null,
       "status": null
     },
@@ -57,7 +57,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-      "lastSeen": "2026-10-27T04:46:08.751335+00:00",
+      "lastSeen": "2026-10-28T05:20:17.363575+00:00",
       "removedDate": null,
       "status": null
     },
@@ -71,7 +71,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-      "lastSeen": "2026-10-27T04:46:08.751335+00:00",
+      "lastSeen": "2026-10-28T05:20:17.363575+00:00",
       "removedDate": null,
       "status": null
     },
@@ -85,7 +85,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-      "lastSeen": "2026-10-27T04:46:08.751335+00:00",
+      "lastSeen": "2026-10-28T05:20:17.363575+00:00",
       "removedDate": null,
       "status": null
     },
@@ -99,7 +99,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-      "lastSeen": "2026-10-27T04:46:08.751335+00:00",
+      "lastSeen": "2026-10-28T05:20:17.363575+00:00",
       "removedDate": null,
       "status": null
     },
@@ -113,7 +113,21 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-      "lastSeen": "2026-10-27T04:46:08.751335+00:00",
+      "lastSeen": "2026-10-28T05:20:17.363575+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "north-mini-code-1.0",
+      "object": "model",
+      "owned_by": "cohere",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-28T05:20:17.363575+00:00",
+      "lastSeen": "2026-10-28T05:20:17.363575+00:00",
       "removedDate": null,
       "status": null
     },
@@ -125,10 +139,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-01T12:22:12.301549+00:00",
       "lastSeen": "2026-10-27T04:46:08.751335+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-28T05:20:17.363575+00:00",
       "status": null
     }
   ]
