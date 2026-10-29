@@ -1,32 +1,10 @@
 {
   "status": "success",
   "count": 2,
-  "updatedAt": "2026-10-28T05:20:20.589732+00:00",
+  "updatedAt": "2026-10-29T05:30:21.351001+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
-    {
-      "id": "qwen-3.8-27b",
-      "object": "model",
-      "created": 0,
-      "owned_by": "Cerebras",
-      "rate_limits": {
-        "rpm": 5,
-        "uncached_tpm": 30000,
-        "total_tpm": 90000,
-        "tph": 1000000,
-        "tpd": 1000000
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-      "lastSeen": "2026-10-28T05:20:20.589732+00:00",
-      "removedDate": null,
-      "status": null
-    },
     {
       "id": "gpt-oss-120b",
       "object": "model",
@@ -51,7 +29,29 @@
       "swe_bench_tier": "B",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-      "lastSeen": "2026-10-28T05:20:20.589732+00:00",
+      "lastSeen": "2026-10-29T05:30:21.351001+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "qwen-3.8-27b",
+      "object": "model",
+      "created": 0,
+      "owned_by": "Cerebras",
+      "rate_limits": {
+        "rpm": 5,
+        "uncached_tpm": 30000,
+        "total_tpm": 90000,
+        "tph": 1000000,
+        "tpd": 1000000
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:15.136455+00:00",
+      "lastSeen": "2026-10-29T05:30:21.351001+00:00",
       "removedDate": null,
       "status": null
     }

@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 13,
-  "updatedAt": "2026-10-28T05:20:15.935535+00:00",
+  "updatedAt": "2026-10-29T05:30:15.451528+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -140,7 +140,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.424757+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -149,6 +149,7 @@
       "canonical_slug": "reflection/beam-free",
       "hugging_face_id": "",
       "name": "Reflection: Beam 1.0 (free)",
+      "isCustomLlm": true,
       "created": 1756238927,
       "description": "Your prompts and completions may be retained and used to train or improve the provider's services. Beam is Reflection's reasoning model for coding and agentic workflows, combining strong coding capabilities with fast, low-latency inference, served through Vercel AI Gateway at no cost. It supports function calling, structured outputs, and streaming, and takes text input only. Zero Data Retention is not available for this model.",
       "context_length": 1048576,
@@ -164,13 +165,14 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000000000",
-        "completion": "0.000000000000",
+        "prompt": "0",
+        "completion": "0",
         "request": "0",
         "image": "0",
         "web_search": "0",
         "internal_reasoning": "0",
-        "input_cache_read": "0.000000000000"
+        "input_cache_read": "0",
+        "input_cache_write": "0"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -188,11 +190,19 @@
       "default_parameters": {},
       "isFree": true,
       "mayTrainOnYourPrompts": true,
-      "inference_provider_ids": [
-        "reflection"
-      ],
-      "preferredIndex": 3,
       "opencode": {
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
         "variants": {
           "low": {
             "reasoning": {
@@ -224,27 +234,19 @@
               "effort": "max"
             }
           }
-        },
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high",
-              "xhigh",
-              "max"
-            ]
-          }
-        ]
+        }
       },
+      "inference_provider_ids": [
+        "reflection"
+      ],
+      "preferredIndex": 3,
       "benchmarks": null,
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -253,6 +255,7 @@
       "canonical_slug": "stealth/glyph-cluster",
       "hugging_face_id": "",
       "name": "Stealth: Glyph Cluster (free)",
+      "isCustomLlm": true,
       "created": 1756238927,
       "description": "Your prompts and completions may be retained and used to train or improve the provider's services. Glyph Cluster is a reasoning model for coding and long-context analysis, served through Vercel AI Gateway during its stealth period at no cost. It supports function calling and streaming, takes text input only, and does not support structured outputs. Zero Data Retention is not available for this model.",
       "context_length": 256000,
@@ -268,13 +271,14 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000000000",
-        "completion": "0.000000000000",
+        "prompt": "0",
+        "completion": "0",
         "request": "0",
         "image": "0",
         "web_search": "0",
         "internal_reasoning": "0",
-        "input_cache_read": "0.000000000000"
+        "input_cache_read": "0",
+        "input_cache_write": "0"
       },
       "top_provider": {
         "context_length": 256000,
@@ -292,11 +296,18 @@
       "default_parameters": {},
       "isFree": true,
       "mayTrainOnYourPrompts": true,
-      "inference_provider_ids": [
-        "stealth"
-      ],
-      "preferredIndex": 4,
       "opencode": {
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          }
+        ],
         "variants": {
           "low": {
             "reasoning": {
@@ -322,26 +333,19 @@
               "effort": "xhigh"
             }
           }
-        },
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high",
-              "xhigh"
-            ]
-          }
-        ]
+        }
       },
+      "inference_provider_ids": [
+        "stealth"
+      ],
+      "preferredIndex": 4,
       "benchmarks": null,
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -408,7 +412,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:39.458389+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -490,7 +494,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -564,7 +568,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -638,7 +642,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -716,7 +720,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -789,7 +793,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -875,7 +879,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -952,7 +956,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1018,7 +1022,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-28T05:20:15.935535+00:00",
+      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
       "removedDate": null,
       "status": null
     },

@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 4,
-  "updatedAt": "2026-10-28T05:20:16.036245+00:00",
+  "updatedAt": "2026-10-29T05:30:16.526448+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -51,8 +51,8 @@
       "context_length": 1000000,
       "per_user_rpm": null,
       "health": {
-        "status": "healthy",
-        "success_rate": 100,
+        "status": "degraded",
+        "success_rate": 86,
         "requests": 50
       },
       "benchmarks": null,
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-26T04:26:39.847212+00:00",
-      "lastSeen": "2026-10-28T05:20:16.036245+00:00",
+      "lastSeen": "2026-10-29T05:30:16.526448+00:00",
       "removedDate": null,
       "status": null
     },
@@ -111,6 +111,66 @@
       "context_length": 1000000,
       "per_user_rpm": null,
       "health": {
+        "status": "degraded",
+        "success_rate": 92,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-10-29T05:30:16.526448+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/vendouple/laguna-s-2.1:free",
+      "object": "model",
+      "created": 1790699044,
+      "owned_by": "OrchidLLM Proxy",
+      "aliases": [
+        "vendouple/laguna-s-2.1:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Laguna S2.1 Free",
+      "description": "its back again",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "per_user_rpm": 3,
+      "health": {
         "status": "healthy",
         "success_rate": 100,
         "requests": 50
@@ -120,8 +180,68 @@
       "swe_bench_score": null,
       "swe_bench_tier": null,
       "presence": "active",
-      "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-28T05:20:16.036245+00:00",
+      "firstSeen": "2026-10-08T05:47:05.283557+00:00",
+      "lastSeen": "2026-10-29T05:30:16.526448+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/YoannDev90/poolside-laguna-s-2.1:free",
+      "object": "model",
+      "created": 1788189088,
+      "owned_by": "Free AI API",
+      "aliases": [
+        "YoannDev90/poolside-laguna-s-2.1:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Laguna S 2.1",
+      "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 262000,
+      "per_user_rpm": 45,
+      "health": {
+        "status": "degraded",
+        "success_rate": 86,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:11.674565+00:00",
+      "lastSeen": "2026-10-29T05:30:16.526448+00:00",
       "removedDate": null,
       "status": null
     },
@@ -173,70 +293,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-28T05:20:16.036245+00:00",
       "lastSeen": "2026-10-28T05:20:16.036245+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/YoannDev90/poolside-laguna-s-2.1:free",
-      "object": "model",
-      "created": 1788189088,
-      "owned_by": "Free AI API",
-      "aliases": [
-        "YoannDev90/poolside-laguna-s-2.1:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Laguna S 2.1",
-      "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "context_length": 262000,
-      "per_user_rpm": 45,
-      "health": {
-        "status": "healthy",
-        "success_rate": 100,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-28T05:20:16.036245+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-29T05:30:16.526448+00:00",
       "status": null
     },
     {
@@ -703,62 +763,6 @@
       },
       "presence": "removed",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-22T04:24:39.640942+00:00",
-      "removedDate": "2026-10-22T23:34:20.178112+00:00",
-      "status": null
-    },
-    {
-      "id": "community/vendouple/laguna-s-2.1:free",
-      "object": "model",
-      "created": 1790699044,
-      "owned_by": "OrchidLLM Proxy",
-      "aliases": [
-        "vendouple/laguna-s-2.1:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Laguna S2.1 Free",
-      "description": "its back again",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "per_user_rpm": null,
-      "health": {
-        "status": "degraded",
-        "success_rate": 92,
-        "requests": 50
-      },
-      "presence": "removed",
-      "firstSeen": "2026-10-08T05:47:05.283557+00:00",
       "lastSeen": "2026-10-22T04:24:39.640942+00:00",
       "removedDate": "2026-10-22T23:34:20.178112+00:00",
       "status": null
