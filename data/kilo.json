@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 13,
-  "updatedAt": "2026-10-29T05:30:15.451528+00:00",
+  "updatedAt": "2026-10-30T05:30:06.700914+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -140,7 +140,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.424757+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -246,7 +246,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -345,7 +345,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -412,7 +412,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:39.458389+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -494,7 +494,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -568,7 +568,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -642,7 +642,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -720,7 +720,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -793,7 +793,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -879,7 +879,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -956,7 +956,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1022,7 +1022,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-29T05:30:15.451528+00:00",
+      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
       "removedDate": null,
       "status": null
     },

@@ -3,13 +3,13 @@
     "sourceId": "bigcodebench",
     "benchmark": "BigCodeBench",
     "status": "success",
-    "updatedAt": "2026-10-29T05:30:22.847911+00:00",
+    "updatedAt": "2026-10-30T05:30:12.117081+00:00",
     "lastFailedAt": null,
     "lastFailedMessage": null,
     "snapshot": {
         "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
         "sourceUrl": "https://datasets-server.huggingface.co/rows?dataset=bigcode%2Fbigcodebench-results&config=default&split=train&offset=0&length=100",
-        "capturedAt": "2026-10-29T05:30:22.847845+00:00",
+        "capturedAt": "2026-10-30T05:30:12.116992+00:00",
         "contentHash": "cf51298e6ed940e8d382e050c662116913731ef7a741bc28acecaf30cffdb99c",
         "contentHashDefinition": "SHA-256 of raw artifact bodies concatenated in artifacts order",
         "artifacts": [

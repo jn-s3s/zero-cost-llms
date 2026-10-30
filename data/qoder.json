@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 2,
-  "updatedAt": "2026-10-29T05:30:20.816462+00:00",
+  "updatedAt": "2026-10-30T05:30:10.598086+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -32,7 +32,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:14.926915+00:00",
-      "lastSeen": "2026-10-29T05:30:20.816462+00:00",
+      "lastSeen": "2026-10-30T05:30:10.598086+00:00",
       "removedDate": null,
       "status": null
     },
@@ -45,9 +45,9 @@
       "support_disable_reasoning": false,
       "price_factor": 0,
       "efforts": [
-        "max",
         "low",
-        "high"
+        "high",
+        "max"
       ],
       "default_effort": "high",
       "template_default_effort": "high",
@@ -64,7 +64,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-20T04:33:33.719188+00:00",
-      "lastSeen": "2026-10-29T05:30:20.816462+00:00",
+      "lastSeen": "2026-10-30T05:30:10.598086+00:00",
       "removedDate": null,
       "status": null
     }

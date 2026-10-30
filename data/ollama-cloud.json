@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 7,
-  "updatedAt": "2026-10-29T05:30:12.239453+00:00",
+  "updatedAt": "2026-10-30T05:30:03.457539+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -16,22 +16,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-25T04:23:38.921977+00:00",
-      "lastSeen": "2026-10-29T05:30:12.239453+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "nemotron-3-ultra",
-      "object": "model",
-      "created": 1780531200,
-      "owned_by": "ollama",
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-29T05:30:12.239453+00:00",
+      "lastSeen": "2026-10-30T05:30:03.457539+00:00",
       "removedDate": null,
       "status": null
     },
@@ -46,14 +31,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-29T05:30:12.239453+00:00",
+      "lastSeen": "2026-10-30T05:30:03.457539+00:00",
       "removedDate": null,
       "status": null
     },
     {
-      "id": "gemma4:31b",
+      "id": "nemotron-3-ultra",
       "object": "model",
-      "created": 1775149200,
+      "created": 1780531200,
       "owned_by": "ollama",
       "benchmarks": null,
       "curated_benchmarks": null,
@@ -61,7 +46,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-29T05:30:12.239453+00:00",
+      "lastSeen": "2026-10-30T05:30:03.457539+00:00",
       "removedDate": null,
       "status": null
     },
@@ -76,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-29T05:30:12.239453+00:00",
+      "lastSeen": "2026-10-30T05:30:03.457539+00:00",
       "removedDate": null,
       "status": null
     },
@@ -91,7 +76,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-29T05:30:12.239453+00:00",
+      "lastSeen": "2026-10-30T05:30:03.457539+00:00",
       "removedDate": null,
       "status": null
     },
@@ -106,7 +91,22 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-      "lastSeen": "2026-10-29T05:30:12.239453+00:00",
+      "lastSeen": "2026-10-30T05:30:03.457539+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gemma4:31b",
+      "object": "model",
+      "created": 1775149200,
+      "owned_by": "ollama",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:09.101984+00:00",
+      "lastSeen": "2026-10-30T05:30:03.457539+00:00",
       "removedDate": null,
       "status": null
     }
