@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 13,
-  "updatedAt": "2026-10-30T05:30:06.700914+00:00",
+  "count": 14,
+  "updatedAt": "2026-10-31T05:16:56.668902+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -140,7 +140,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.424757+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -246,7 +246,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -345,7 +345,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -412,7 +412,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:39.458389+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -494,7 +494,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -568,7 +568,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -642,7 +642,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -720,7 +720,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -793,7 +793,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -879,7 +879,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -956,7 +956,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1022,7 +1022,88 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-10-30T05:30:06.700914+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "inclusionai/ling-3.1-flash-1019-free",
+      "canonical_slug": "inclusionai/ling-3.1-flash-1019-free",
+      "hugging_face_id": "",
+      "name": "inclusionAI: Ling 3.1 Flash 1019 (free)",
+      "isCustomLlm": true,
+      "created": 1756238927,
+      "description": "An updated checkpoint of inclusionAI's Ling 3.1 Flash, provided free of charge by Novita AI until November 3, 2026. Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model with 25B active parameters out of 560B total and a 1M-token context window.",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0",
+        "input_cache_read": "0",
+        "input_cache_write": "0"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 262144,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "tools",
+        "reasoning",
+        "include_reasoning"
+      ],
+      "default_parameters": {},
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {
+        "ai_sdk_provider": "openrouter",
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ],
+        "variants": {
+          "instant": {
+            "reasoning": {
+              "enabled": false,
+              "effort": "none"
+            }
+          },
+          "thinking": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          }
+        }
+      },
+      "inference_provider_ids": [
+        "novita"
+      ],
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-31T05:16:56.668902+00:00",
+      "lastSeen": "2026-10-31T05:16:56.668902+00:00",
       "removedDate": null,
       "status": null
     },

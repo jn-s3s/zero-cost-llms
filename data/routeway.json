@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 9,
-  "updatedAt": "2026-10-30T05:30:01.274791+00:00",
+  "updatedAt": "2026-10-31T05:16:51.896330+00:00",
   "lastFailedAt": "2026-10-05T05:19:58.351994+00:00",
   "lastFailedMessage": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
   "data": [
@@ -59,7 +59,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-30T05:30:01.274791+00:00",
+      "lastSeen": "2026-10-31T05:16:51.896330+00:00",
       "removedDate": null,
       "status": null
     },
@@ -117,7 +117,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-30T05:30:01.274791+00:00",
+      "lastSeen": "2026-10-31T05:16:51.896330+00:00",
       "removedDate": null,
       "status": null
     },
@@ -175,7 +175,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-30T05:30:01.274791+00:00",
+      "lastSeen": "2026-10-31T05:16:51.896330+00:00",
       "removedDate": null,
       "status": null
     },
@@ -233,7 +233,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-30T05:30:01.274791+00:00",
+      "lastSeen": "2026-10-31T05:16:51.896330+00:00",
       "removedDate": null,
       "status": null
     },
@@ -291,7 +291,304 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-30T05:30:01.274791+00:00",
+      "lastSeen": "2026-10-31T05:16:51.896330+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "deepseek-v4.1-flash:free",
+      "name": "DeepSeek: DeepSeek V4.1 Flash (Free)",
+      "short_name": "DeepSeek V4.1 Flash (Free)",
+      "description": "DeepSeek V4.1 Flash improves text and agent performance and adds native multimodal visual understanding, with a 1M-token context window for reasoning and tool-driven workflows.",
+      "context_length": 42000,
+      "created": 1788825600,
+      "owned_by": "deepseek-ai",
+      "available": true,
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": false,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {
+        "artificial_analysis_intelligence_index": null,
+        "artificial_analysis_coding_index": null,
+        "artificial_analysis_math_index": null,
+        "mmlu_pro": null,
+        "gpqa": null,
+        "hle": 0.392,
+        "livecodebench": null,
+        "scicode": 0.519,
+        "math_500": null,
+        "aime": null,
+        "aime_25": null,
+        "ifbench": null,
+        "lcr": 0.84,
+        "terminalbench_hard": null,
+        "terminalbench_v2_1": null,
+        "terminalbench_v4_0": 0.267676767676768,
+        "tau2": null,
+        "tau_banking": null
+      },
+      "use_case": [
+        "coding",
+        "math",
+        "daily_use"
+      ],
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-31T05:16:51.896330+00:00",
+      "lastSeen": "2026-10-31T05:16:51.896330+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "minimax-m3.1-flash:free",
+      "name": "MiniMax: MiniMax M3.1 Flash (Free)",
+      "short_name": "MiniMax M3.1 Flash (Free)",
+      "description": "MiniMax M3.1 Flash is a fast M3-generation model for coding, agent workflows, and multimodal understanding of text, image, and video inputs, with adjustable reasoning effort and a 1M-token context window.",
+      "context_length": 42000,
+      "created": 1792368000,
+      "owned_by": "minimax",
+      "available": true,
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": false,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {
+        "artificial_analysis_intelligence_index": 28.9,
+        "artificial_analysis_coding_index": null,
+        "artificial_analysis_math_index": null,
+        "mmlu_pro": null,
+        "gpqa": null,
+        "hle": 0.48,
+        "livecodebench": null,
+        "scicode": 0.534,
+        "math_500": null,
+        "aime": null,
+        "aime_25": null,
+        "ifbench": null,
+        "lcr": 0.796666666666667,
+        "terminalbench_hard": null,
+        "terminalbench_v2_1": null,
+        "terminalbench_v4_0": 0.257575757575758,
+        "tau2": null,
+        "tau_banking": null
+      },
+      "sub": true,
+      "use_case": [
+        "coding",
+        "math",
+        "daily_use"
+      ],
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-31T05:16:51.896330+00:00",
+      "lastSeen": "2026-10-31T05:16:51.896330+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "muse-glimmer-30b:free",
+      "name": "Meta: Glimmer 30B (Free)",
+      "short_name": "Glimmer 30B (Free)",
+      "description": "Muse Glimmer 30B is a dense, open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark and optimized for autonomous agents on consumer hardware",
+      "context_length": 131072,
+      "created": 1786406400,
+      "owned_by": "meta",
+      "available": true,
+      "hallucination_rate": 0.0,
+      "endpoints": [
+        "/v1/chat/completions"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": true,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {
+        "artificial_analysis_intelligence_index": 6.3,
+        "artificial_analysis_coding_index": null,
+        "artificial_analysis_math_index": null,
+        "mmlu_pro": null,
+        "gpqa": 0.835,
+        "hle": 0.22,
+        "livecodebench": null,
+        "scicode": 0.449,
+        "math_500": null,
+        "aime": null,
+        "aime_25": null,
+        "ifbench": null,
+        "lcr": 0.833333333333333,
+        "terminalbench_hard": null,
+        "terminalbench_v2_1": 0.51685393258427,
+        "terminalbench_v4_0": 0.00505050505050505,
+        "tau2": null,
+        "tau_banking": 0.235051546391753
+      },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
+      "lastSeen": "2026-10-31T05:16:51.896330+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "gemma-4-26b-a4b-it-meromero:free",
+      "name": "Gemma 4 26B A4B IT MeroMero (Free)",
+      "short_name": "Gemma 4 26B MeroMero (Free)",
+      "description": "Gemma 4 26B A4B IT MeroMero is a community creative finetune for general-purpose text generation, instruction following, reasoning, and multimodal chat. Use of this model remains subject to Routeway's Acceptable Use Policy and Terms of Service.",
+      "context_length": 62000,
+      "created": 0,
+      "owned_by": "google",
+      "available": true,
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0.0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0.0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": true,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {},
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
+      "lastSeen": "2026-10-31T05:16:51.896330+00:00",
       "removedDate": null,
       "status": null
     },
@@ -352,10 +649,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
       "lastSeen": "2026-10-30T05:30:01.274791+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-31T05:16:51.896330+00:00",
       "status": null
     },
     {
@@ -416,141 +713,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
       "lastSeen": "2026-10-30T05:30:01.274791+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "muse-glimmer-30b:free",
-      "name": "Meta: Glimmer 30B (Free)",
-      "short_name": "Glimmer 30B (Free)",
-      "description": "Muse Glimmer 30B is a dense, open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark and optimized for autonomous agents on consumer hardware",
-      "context_length": 131072,
-      "created": 1786406400,
-      "owned_by": "meta",
-      "available": true,
-      "hallucination_rate": 0.0,
-      "endpoints": [
-        "/v1/chat/completions"
-      ],
-      "pricing": {
-        "input": {
-          "unit": "1M tokens",
-          "price_per_million_t": 0.0
-        },
-        "output": {
-          "unit": "1M tokens",
-          "price_per_million_t": 0.0
-        },
-        "caching": {
-          "read": {
-            "unit": "1M tokens",
-            "price_per_million_t": 0.0
-          }
-        }
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_completion_tokens",
-        "presence_penalty",
-        "reasoning_effort",
-        "response_format",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "capabilities": {
-        "vision": true,
-        "function_call": true,
-        "reasoning": true
-      },
-      "benchmarks": {
-        "artificial_analysis_intelligence_index": null,
-        "artificial_analysis_coding_index": null,
-        "artificial_analysis_math_index": null,
-        "mmlu_pro": null,
-        "gpqa": null,
-        "hle": null,
-        "livecodebench": null,
-        "scicode": null,
-        "math_500": null,
-        "aime": null,
-        "aime_25": null,
-        "ifbench": null,
-        "lcr": null,
-        "terminalbench_hard": null,
-        "tau2": null
-      },
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-30T05:30:01.274791+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "gemma-4-26b-a4b-it-meromero:free",
-      "name": "Gemma 4 26B A4B IT MeroMero (Free)",
-      "short_name": "Gemma 4 26B MeroMero (Free)",
-      "description": "Gemma 4 26B A4B IT MeroMero is a community creative finetune for general-purpose text generation, instruction following, reasoning, and multimodal chat. Use of this model remains subject to Routeway's Acceptable Use Policy and Terms of Service.",
-      "context_length": 62000,
-      "created": 0,
-      "owned_by": "google",
-      "available": true,
-      "hallucination_rate": 0,
-      "endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "pricing": {
-        "input": {
-          "unit": "1M tokens",
-          "price_per_million_t": 0.0
-        },
-        "output": {
-          "unit": "1M tokens",
-          "price_per_million_t": 0.0
-        },
-        "caching": {
-          "read": {
-            "unit": "1M tokens",
-            "price_per_million_t": 0.0
-          }
-        }
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_completion_tokens",
-        "presence_penalty",
-        "response_format",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "capabilities": {
-        "vision": true,
-        "function_call": true,
-        "reasoning": true
-      },
-      "benchmarks": {},
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-10-30T05:30:01.274791+00:00",
-      "removedDate": null,
+      "removedDate": "2026-10-31T05:16:51.896330+00:00",
       "status": null
     }
   ]

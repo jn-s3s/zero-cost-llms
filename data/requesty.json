@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 11,
-  "updatedAt": "2026-10-30T05:30:01.196736+00:00",
+  "updatedAt": "2026-10-31T05:16:51.534739+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -10,7 +10,7 @@
       "id": "novita/ling-3.1-flash",
       "object": "model",
       "created": 1790553600,
-      "updated": 1791193805,
+      "updated": 1793358042,
       "owned_by": "system",
       "input_price": 0,
       "cached_price": 0,
@@ -42,6 +42,7 @@
       "data_used_for_training": false,
       "privacy_comments": "N/A",
       "geolocation": "global",
+      "hugging_face_id": "inclusionAI/Ling-3.1-flash",
       "open_weights": true,
       "model_lab": "inclusionai",
       "model_canonical_name": "ling-3.1-flash",
@@ -51,7 +52,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-06T06:03:26.785887+00:00",
-      "lastSeen": "2026-10-30T05:30:01.196736+00:00",
+      "lastSeen": "2026-10-31T05:16:51.534739+00:00",
       "removedDate": null,
       "status": null
     },
@@ -102,7 +103,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-30T05:30:01.196736+00:00",
+      "lastSeen": "2026-10-31T05:16:51.534739+00:00",
       "removedDate": null,
       "status": null
     },
@@ -153,7 +154,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-30T05:30:01.196736+00:00",
+      "lastSeen": "2026-10-31T05:16:51.534739+00:00",
       "removedDate": null,
       "status": null
     },
@@ -162,7 +163,7 @@
       "id": "novita/inclusionai/ling-3.0-tiny",
       "object": "model",
       "created": 1785941340,
-      "updated": 1787843415,
+      "updated": 1793358042,
       "owned_by": "system",
       "input_price": 0,
       "cached_price": 0,
@@ -194,7 +195,8 @@
       "data_used_for_training": false,
       "privacy_comments": "N/A",
       "geolocation": "global",
-      "open_weights": false,
+      "hugging_face_id": "inclusionAI/Ling-3.0-tiny",
+      "open_weights": true,
       "model_lab": "inclusionai",
       "model_canonical_name": "ling-3.0-tiny",
       "benchmarks": null,
@@ -203,7 +205,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-30T05:30:01.196736+00:00",
+      "lastSeen": "2026-10-31T05:16:51.534739+00:00",
       "removedDate": null,
       "status": null
     },
@@ -254,7 +256,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-30T05:30:01.196736+00:00",
+      "lastSeen": "2026-10-31T05:16:51.534739+00:00",
       "removedDate": null,
       "status": null
     },
@@ -305,7 +307,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-30T05:30:01.196736+00:00",
+      "lastSeen": "2026-10-31T05:16:51.534739+00:00",
       "removedDate": null,
       "status": null
     },
@@ -356,7 +358,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-30T05:30:01.196736+00:00",
+      "lastSeen": "2026-10-31T05:16:51.534739+00:00",
       "removedDate": null,
       "status": null
     },
@@ -365,7 +367,7 @@
       "id": "mistral/leanstral-1-5",
       "object": "model",
       "created": 1779840000,
-      "updated": 1787843415,
+      "updated": 1793358042,
       "owned_by": "system",
       "input_price": 0,
       "cached_price": 0,
@@ -397,7 +399,8 @@
       "data_used_for_training": false,
       "privacy_comments": "N/A",
       "geolocation": "eu",
-      "open_weights": false,
+      "hugging_face_id": "mistralai/Leanstral-1.5-119B-A6B",
+      "open_weights": true,
       "model_lab": "mistral",
       "model_canonical_name": "leanstral-1-5",
       "benchmarks": null,
@@ -406,7 +409,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-30T05:30:01.196736+00:00",
+      "lastSeen": "2026-10-31T05:16:51.534739+00:00",
       "removedDate": null,
       "status": null
     },
@@ -458,7 +461,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-30T05:30:01.196736+00:00",
+      "lastSeen": "2026-10-31T05:16:51.534739+00:00",
       "removedDate": null,
       "status": null
     },
@@ -509,7 +512,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-30T05:30:01.196736+00:00",
+      "lastSeen": "2026-10-31T05:16:51.534739+00:00",
       "removedDate": null,
       "status": null
     },
@@ -560,7 +563,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-10-30T05:30:01.196736+00:00",
+      "lastSeen": "2026-10-31T05:16:51.534739+00:00",
       "removedDate": null,
       "status": null
     }

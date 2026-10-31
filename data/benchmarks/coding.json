@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-10-30T05:30:11.045193+00:00",
+  "updatedAt": "2026-10-31T05:17:00.322157+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "bc151b6a1ea74ab1a897587483ab8932",
+  "generationId": "a5122d7daf6f474caf8517bdf9c10745",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 253,
-    "eligibleOfferings": 83,
+    "activeOfferings": 255,
+    "eligibleOfferings": 86,
     "excludedOfferings": 54,
-    "uncertainOfferings": 116,
-    "models": 172,
-    "modelsWithGenerationEvidence": 12,
-    "modelsWithEditingEvidence": 8,
-    "ratedModels": 12,
-    "unratedModels": 160,
+    "uncertainOfferings": 115,
+    "models": 176,
+    "modelsWithGenerationEvidence": 11,
+    "modelsWithEditingEvidence": 7,
+    "ratedModels": 11,
+    "unratedModels": 165,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -24,9 +24,9 @@
       "A": 0,
       "A-": 1,
       "B+": 3,
-      "B": 1,
+      "B": 0,
       "C": 6,
-      "Unrated": 160
+      "Unrated": 165
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-10-30T05:30:12.495173+00:00",
+      "updatedAt": "2026-10-31T05:17:01.461743+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-10-30T05:30:11.567062+00:00",
+      "updatedAt": "2026-10-31T05:17:00.889205+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-10-30T05:30:11.371389+00:00",
+      "updatedAt": "2026-10-31T05:17:00.598877+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-10-30T05:30:12.117081+00:00",
+      "updatedAt": "2026-10-31T05:17:01.357588+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-10-30T05:30:11.475588+00:00",
+      "updatedAt": "2026-10-31T05:17:00.700189+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -558,68 +558,6 @@
       "provisional": true
     },
     {
-      "modelId": "checkpoint:minimax-m2.7",
-      "name": "MiniMax M2.7",
-      "eligibility": "uncertain",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "minimax-m2.7"
-        },
-        {
-          "providerId": "routeway",
-          "modelId": "minimax-m2.7:free"
-        }
-      ],
-      "generationDebugging": [
-        {
-          "benchmark": "LiveBench",
-          "evaluatedModelId": "minimax-m2.7",
-          "cohort": "livebench:2026-01-08:coding",
-          "metric": "category_mean",
-          "score": 54.899,
-          "unit": "score_0_100",
-          "configuration": {
-            "category": "Coding",
-            "taskColumns": [
-              "code_generation",
-              "code_completion"
-            ]
-          },
-          "evidenceId": "evidence:377d7163a68b4e93ad541834",
-          "applicability": "checkpoint_evidence_endpoint_unverified",
-          "configurationStatus": "published"
-        }
-      ],
-      "repositoryEditing": [
-        {
-          "benchmark": "LiveBench",
-          "evaluatedModelId": "minimax-m2.7",
-          "cohort": "livebench:2026-01-08:agentic_coding",
-          "metric": "category_mean",
-          "score": 50.0,
-          "unit": "score_0_100",
-          "configuration": {
-            "category": "Agentic Coding",
-            "taskColumns": [
-              "javascript",
-              "typescript",
-              "python"
-            ]
-          },
-          "evidenceId": "evidence:4ba8e5a89c81e316d195d819",
-          "applicability": "checkpoint_evidence_endpoint_unverified",
-          "configurationStatus": "published"
-        }
-      ],
-      "tier": "B",
-      "index": 31.3,
-      "basis": "both_workloads",
-      "confidence": "limited",
-      "provisional": true
-    },
-    {
       "modelId": "checkpoint:google/gemma-4-31B-it",
       "name": "Gemma 4 31B Instruct",
       "eligibility": "eligible",
@@ -923,10 +861,6 @@
         {
           "providerId": "orcarouter",
           "modelId": "deepseek/deepseek-v4-flash-free"
-        },
-        {
-          "providerId": "routeway",
-          "modelId": "deepseek-v4-flash:free"
         }
       ],
       "generationDebugging": [
@@ -2937,6 +2871,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:kilo:inclusionai/ling-3.1-flash-1019-free",
+      "name": "inclusionAI: Ling 3.1 Flash 1019 (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "inclusionai/ling-3.1-flash-1019-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:kilo:kilo-auto/free",
       "name": "Auto Free",
       "eligibility": "eligible",
@@ -4020,6 +3973,44 @@
       "provisional": false
     },
     {
+      "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
+      "name": "community/YoannDev90/muse-glimmer-30b:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/muse-glimmer-30b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/YoannDev90/poolside-laguna-s-2.1:free",
+      "name": "community/YoannDev90/poolside-laguna-s-2.1:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/poolside-laguna-s-2.1:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:pollinations:community/YoannDev90/vercel-beam:free",
       "name": "community/YoannDev90/vercel-beam:free",
       "eligibility": "eligible",
@@ -4134,6 +4125,44 @@
       "provisional": false
     },
     {
+      "modelId": "offering:routeway:deepseek-v4.1-flash:free",
+      "name": "DeepSeek: DeepSeek V4.1 Flash (Free)",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "routeway",
+          "modelId": "deepseek-v4.1-flash:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:routeway:minimax-m3.1-flash:free",
+      "name": "MiniMax: MiniMax M3.1 Flash (Free)",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "routeway",
+          "modelId": "minimax-m3.1-flash:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:zai:GLM-4.5-Flash",
       "name": "GLM-4.5-Flash",
       "eligibility": "uncertain",
@@ -4193,6 +4222,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "bc151b6a1ea74ab1a897587483ab8932"
+    "generationId": "a5122d7daf6f474caf8517bdf9c10745"
   }
 }

@@ -1,9 +1,9 @@
 {
-  "status": "success",
+  "status": "failed",
   "count": 6,
   "updatedAt": "2026-10-30T05:30:09.668167+00:00",
-  "lastFailedAt": null,
-  "lastFailedMessage": null,
+  "lastFailedAt": "2026-10-31T05:16:58.892728+00:00",
+  "lastFailedMessage": "ValueError: Agnes pricing page contained no free models; keeping existing data",
   "data": [
     {
       "id": "agnes-video-2.5-flash",

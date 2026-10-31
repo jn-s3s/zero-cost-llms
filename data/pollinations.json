@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 5,
-  "updatedAt": "2026-10-30T05:30:07.408690+00:00",
+  "count": 7,
+  "updatedAt": "2026-10-31T05:16:56.846503+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -52,7 +52,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 96,
         "requests": 50
       },
       "benchmarks": null,
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-26T04:26:39.847212+00:00",
-      "lastSeen": "2026-10-30T05:30:07.408690+00:00",
+      "lastSeen": "2026-10-31T05:16:56.846503+00:00",
       "removedDate": null,
       "status": null
     },
@@ -111,8 +111,8 @@
       "context_length": 1000000,
       "per_user_rpm": null,
       "health": {
-        "status": "degraded",
-        "success_rate": 86,
+        "status": "healthy",
+        "success_rate": 96,
         "requests": 50
       },
       "benchmarks": null,
@@ -121,7 +121,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-30T05:30:07.408690+00:00",
+      "lastSeen": "2026-10-31T05:16:56.846503+00:00",
       "removedDate": null,
       "status": null
     },
@@ -172,7 +172,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 96,
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -181,7 +181,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-10-30T05:30:07.408690+00:00",
+      "lastSeen": "2026-10-31T05:16:56.846503+00:00",
       "removedDate": null,
       "status": null
     },
@@ -232,7 +232,7 @@
       "per_user_rpm": 3,
       "health": {
         "status": "healthy",
-        "success_rate": 96,
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -241,61 +241,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-08T05:47:05.283557+00:00",
-      "lastSeen": "2026-10-30T05:30:07.408690+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/vendouple/muse-glimmer-30b:free",
-      "object": "model",
-      "created": 1784372748,
-      "owned_by": "OrchidLLM Proxy",
-      "aliases": [
-        "vendouple/muse-glimmer-30b:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Muse Glimmer (Free)",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [],
-      "per_user_rpm": 5,
-      "health": {
-        "status": "degraded",
-        "success_rate": 94,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-10-30T05:30:07.408690+00:00",
+      "lastSeen": "2026-10-31T05:16:56.846503+00:00",
       "removedDate": null,
       "status": null
     },
@@ -346,6 +292,67 @@
       "per_user_rpm": 45,
       "health": {
         "status": "degraded",
+        "success_rate": 94,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:11.674565+00:00",
+      "lastSeen": "2026-10-31T05:16:56.846503+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/YoannDev90/muse-glimmer-30b:free",
+      "object": "model",
+      "created": 1786463585,
+      "owned_by": "Free AI API",
+      "aliases": [
+        "YoannDev90/muse-glimmer-30b:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Muse Glimmer 30B",
+      "description": "Multimodal reasoning model  by Meta",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 131000,
+      "per_user_rpm": 10,
+      "health": {
+        "status": "degraded",
         "success_rate": 86,
         "requests": 50
       },
@@ -353,10 +360,64 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "removed",
-      "firstSeen": "2026-10-01T12:22:11.674565+00:00",
-      "lastSeen": "2026-10-29T05:30:16.526448+00:00",
-      "removedDate": "2026-10-30T05:30:07.408690+00:00",
+      "presence": "active",
+      "firstSeen": "2026-10-01T13:00:48.913788+00:00",
+      "lastSeen": "2026-10-31T05:16:56.846503+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/vendouple/muse-glimmer-30b:free",
+      "object": "model",
+      "created": 1784372748,
+      "owned_by": "OrchidLLM Proxy",
+      "aliases": [
+        "vendouple/muse-glimmer-30b:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Muse Glimmer (Free)",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [],
+      "per_user_rpm": 5,
+      "health": {
+        "status": "degraded",
+        "success_rate": 88,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-02T03:35:34.586995+00:00",
+      "lastSeen": "2026-10-31T05:16:56.846503+00:00",
+      "removedDate": null,
       "status": null
     },
     {
@@ -470,67 +531,6 @@
       "swe_bench_tier": null,
       "presence": "removed",
       "firstSeen": "2026-10-24T04:19:50.855366+00:00",
-      "lastSeen": "2026-10-27T04:46:07.615172+00:00",
-      "removedDate": "2026-10-28T05:20:16.036245+00:00",
-      "status": null
-    },
-    {
-      "id": "community/YoannDev90/muse-glimmer-30b:free",
-      "object": "model",
-      "created": 1786463585,
-      "owned_by": "Free AI API",
-      "aliases": [
-        "YoannDev90/muse-glimmer-30b:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Muse Glimmer 30B",
-      "description": "Multimodal reasoning model  by Meta",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "context_length": 131000,
-      "per_user_rpm": 10,
-      "health": {
-        "status": "degraded",
-        "success_rate": 94,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "removed",
-      "firstSeen": "2026-10-01T13:00:48.913788+00:00",
       "lastSeen": "2026-10-27T04:46:07.615172+00:00",
       "removedDate": "2026-10-28T05:20:16.036245+00:00",
       "status": null

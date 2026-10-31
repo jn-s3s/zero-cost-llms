@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 16,
-  "updatedAt": "2026-10-30T05:30:00.937429+00:00",
+  "updatedAt": "2026-10-31T05:16:51.433050+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -54,6 +54,12 @@
       "links": {
         "details": "/api/v1/models/recursive/flint-v1.0-20261021/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "reasoning": {
         "mandatory": true
       },
@@ -63,7 +69,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -125,6 +131,12 @@
       "links": {
         "details": "/api/v1/models/xingchen-agi/xing4.0-29b-a4b-20261015/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "reasoning": {
         "mandatory": false,
         "default_enabled": true
@@ -135,7 +147,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:09.924694+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -189,26 +201,32 @@
       "links": {
         "details": "/api/v1/models/nvidia/nemotron-3.5-super-vl-20261015/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "benchmarks": {
         "design_arena": [
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1115,
-            "win_rate": 28.5,
-            "rank": 86
+            "elo": 1119,
+            "win_rate": 28.9,
+            "rank": 84
           },
           {
             "arena": "models",
             "category": "codecategories",
             "elo": 1151,
-            "win_rate": 33.1,
+            "win_rate": 33.2,
             "rank": 86
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1107,
+            "elo": 1106,
             "win_rate": 29.4,
             "rank": 95
           },
@@ -222,9 +240,9 @@
           {
             "arena": "models",
             "category": "website",
-            "elo": 1169,
+            "elo": 1168,
             "win_rate": 35.3,
-            "rank": 82
+            "rank": 83
           }
         ],
         "artificial_analysis": {
@@ -241,7 +259,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -293,6 +311,12 @@
       "links": {
         "details": "/api/v1/models/dots-studio/dots-3-note-preview-20260813/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "reasoning": {
         "mandatory": false
       },
@@ -302,7 +326,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -366,6 +390,12 @@
       "links": {
         "details": "/api/v1/models/liquid/lfm-2.5-2.6b-20260811/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
@@ -382,7 +412,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -432,6 +462,12 @@
       "links": {
         "details": "/api/v1/models/nvidia/nemotron-3.5-lightning-20260807/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
@@ -448,7 +484,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -510,6 +546,12 @@
       "links": {
         "details": "/api/v1/models/thinkingmachines/inkling-small-20260730/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
@@ -536,7 +578,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -584,6 +626,12 @@
       "links": {
         "details": "/api/v1/models/poolside/laguna-s-2.1-20260720/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "reasoning": {
         "mandatory": false,
         "default_enabled": true
@@ -594,7 +642,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -656,12 +704,18 @@
       "links": {
         "details": "/api/v1/models/thinkingmachines/inkling-20260715/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "benchmarks": {
         "design_arena": [
           {
             "arena": "agents",
             "category": "webapps",
-            "elo": 1186,
+            "elo": 1184,
             "win_rate": 48.6,
             "rank": 26
           },
@@ -682,16 +736,16 @@
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1205,
-            "win_rate": 42.3,
-            "rank": 61
+            "elo": 1204,
+            "win_rate": 42.2,
+            "rank": 63
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1158,
-            "win_rate": 37.7,
-            "rank": 80
+            "elo": 1157,
+            "win_rate": 37.5,
+            "rank": 81
           },
           {
             "arena": "models",
@@ -704,7 +758,7 @@
             "arena": "models",
             "category": "svg",
             "elo": 1107,
-            "win_rate": 34.3,
+            "win_rate": 34.4,
             "rank": 63
           },
           {
@@ -717,7 +771,7 @@
           {
             "arena": "models",
             "category": "website",
-            "elo": 1224,
+            "elo": 1223,
             "win_rate": 44.7,
             "rank": 58
           }
@@ -746,7 +800,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -794,6 +848,12 @@
       "links": {
         "details": "/api/v1/models/poolside/laguna-xs-2.1-20260625/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "reasoning": {
         "mandatory": false,
         "default_enabled": true
@@ -804,7 +864,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -865,6 +925,12 @@
       "links": {
         "details": "/api/v1/models/cohere/north-mini-code-20260617/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
@@ -881,7 +947,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -937,6 +1003,12 @@
       "links": {
         "details": "/api/v1/models/nvidia/nemotron-3.5-content-safety-20260604/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "reasoning": {
         "mandatory": false,
         "default_enabled": true
@@ -947,7 +1019,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1005,6 +1077,12 @@
       "links": {
         "details": "/api/v1/models/nvidia/nemotron-3-ultra-550b-a55b-20260604/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "benchmarks": {
         "design_arena": [
           {
@@ -1024,7 +1102,7 @@
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1146,
+            "elo": 1145,
             "win_rate": 36,
             "rank": 90
           },
@@ -1038,15 +1116,15 @@
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1140,
-            "win_rate": 36.1,
-            "rank": 79
+            "elo": 1139,
+            "win_rate": 36,
+            "rank": 80
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1067,
-            "win_rate": 32.2,
+            "elo": 1068,
+            "win_rate": 32.3,
             "rank": 75
           },
           {
@@ -1086,7 +1164,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1146,6 +1224,12 @@
       "links": {
         "details": "/api/v1/models/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
@@ -1164,7 +1248,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1221,6 +1305,12 @@
       "links": {
         "details": "/api/v1/models/google/gemma-4-26b-a4b-it-20260403/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
@@ -1238,7 +1328,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1298,6 +1388,12 @@
       "links": {
         "details": "/api/v1/models/google/gemma-4-31b-it-20260402/endpoints"
       },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
       "benchmarks": {
         "design_arena": [],
         "artificial_analysis": {
@@ -1315,7 +1411,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-30T05:30:00.937429+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
       "removedDate": null,
       "status": null
     },
