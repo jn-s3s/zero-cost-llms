@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 16,
-  "updatedAt": "2026-10-31T05:16:51.433050+00:00",
+  "count": 14,
+  "updatedAt": "2026-11-01T05:44:52.918188+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -69,7 +69,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -147,7 +147,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:09.924694+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -212,23 +212,23 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1119,
-            "win_rate": 28.9,
-            "rank": 84
+            "elo": 1123,
+            "win_rate": 30.1,
+            "rank": 82
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1151,
-            "win_rate": 33.2,
-            "rank": 86
+            "elo": 1150,
+            "win_rate": 33.1,
+            "rank": 88
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1106,
-            "win_rate": 29.4,
-            "rank": 95
+            "elo": 1108,
+            "win_rate": 29.6,
+            "rank": 94
           },
           {
             "arena": "models",
@@ -240,9 +240,9 @@
           {
             "arena": "models",
             "category": "website",
-            "elo": 1168,
-            "win_rate": 35.3,
-            "rank": 83
+            "elo": 1165,
+            "win_rate": 35,
+            "rank": 84
           }
         ],
         "artificial_analysis": {
@@ -259,7 +259,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -326,7 +326,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -412,7 +412,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -484,7 +484,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -578,71 +578,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "poolside/laguna-s-2.1:free",
-      "canonical_slug": "poolside/laguna-s-2.1-20260720",
-      "hugging_face_id": "poolside/Laguna-S-2.1",
-      "name": "Poolside: Laguna S 2.1 (free)",
-      "created": 1784652683,
-      "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
-      "context_length": 262144,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": "2026-10-31",
-      "links": {
-        "details": "/api/v1/models/poolside/laguna-s-2.1-20260720/endpoints"
-      },
-      "endpoints": [
-        "/api/v1/chat/completions",
-        "/api/v1/completions",
-        "/api/v1/messages",
-        "/api/v1/responses"
-      ],
-      "reasoning": {
-        "mandatory": false,
-        "default_enabled": true
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -715,7 +651,7 @@
           {
             "arena": "agents",
             "category": "webapps",
-            "elo": 1184,
+            "elo": 1182,
             "win_rate": 48.6,
             "rank": 26
           },
@@ -731,7 +667,7 @@
             "category": "asciiart",
             "elo": 1086,
             "win_rate": 33.3,
-            "rank": 65
+            "rank": 66
           },
           {
             "arena": "models",
@@ -751,14 +687,14 @@
             "arena": "models",
             "category": "gamedev",
             "elo": 1165,
-            "win_rate": 37.9,
+            "win_rate": 37.8,
             "rank": 72
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1107,
-            "win_rate": 34.4,
+            "elo": 1106,
+            "win_rate": 34.3,
             "rank": 63
           },
           {
@@ -772,7 +708,7 @@
             "arena": "models",
             "category": "website",
             "elo": 1223,
-            "win_rate": 44.7,
+            "win_rate": 44.6,
             "rank": 58
           }
         ],
@@ -800,71 +736,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "poolside/laguna-xs-2.1:free",
-      "canonical_slug": "poolside/laguna-xs-2.1-20260625",
-      "hugging_face_id": "poolside/Laguna-XS-2.1",
-      "name": "Poolside: Laguna XS 2.1 (free)",
-      "created": 1783002429,
-      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
-      "context_length": 262144,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": "2026-10-31",
-      "links": {
-        "details": "/api/v1/models/poolside/laguna-xs-2.1-20260625/endpoints"
-      },
-      "endpoints": [
-        "/api/v1/chat/completions",
-        "/api/v1/completions",
-        "/api/v1/messages",
-        "/api/v1/responses"
-      ],
-      "reasoning": {
-        "mandatory": false,
-        "default_enabled": true
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -947,7 +819,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1019,7 +891,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1095,9 +967,9 @@
           {
             "arena": "models",
             "category": "asciiart",
-            "elo": 1098,
-            "win_rate": 37.3,
-            "rank": 61
+            "elo": 1096,
+            "win_rate": 37.1,
+            "rank": 62
           },
           {
             "arena": "models",
@@ -1123,8 +995,8 @@
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1068,
-            "win_rate": 32.3,
+            "elo": 1067,
+            "win_rate": 32.2,
             "rank": 75
           },
           {
@@ -1137,9 +1009,9 @@
           {
             "arena": "models",
             "category": "website",
-            "elo": 1145,
+            "elo": 1144,
             "win_rate": 35.3,
-            "rank": 97
+            "rank": 98
           }
         ],
         "artificial_analysis": {
@@ -1164,7 +1036,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1248,7 +1120,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1328,7 +1200,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1411,8 +1283,136 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "poolside/laguna-s-2.1:free",
+      "canonical_slug": "poolside/laguna-s-2.1-20260720",
+      "hugging_face_id": "poolside/Laguna-S-2.1",
+      "name": "Poolside: Laguna S 2.1 (free)",
+      "created": 1784652683,
+      "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": "2026-10-31",
+      "links": {
+        "details": "/api/v1/models/poolside/laguna-s-2.1-20260720/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:07.404025+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "removedDate": "2026-11-01T05:44:52.918188+00:00",
+      "status": null
+    },
+    {
+      "id": "poolside/laguna-xs-2.1:free",
+      "canonical_slug": "poolside/laguna-xs-2.1-20260625",
+      "hugging_face_id": "poolside/Laguna-XS-2.1",
+      "name": "Poolside: Laguna XS 2.1 (free)",
+      "created": 1783002429,
+      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": "2026-10-31",
+      "links": {
+        "details": "/api/v1/models/poolside/laguna-xs-2.1-20260625/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:07.404025+00:00",
+      "lastSeen": "2026-10-31T05:16:51.433050+00:00",
+      "removedDate": "2026-11-01T05:44:52.918188+00:00",
       "status": null
     },
     {
