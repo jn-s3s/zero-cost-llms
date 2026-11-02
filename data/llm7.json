@@ -1,14 +1,138 @@
 {
   "status": "success",
-  "count": 4,
-  "updatedAt": "2026-11-01T05:44:59.676974+00:00",
+  "count": 7,
+  "updatedAt": "2026-11-02T05:43:30.166598+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
+      "id": "DeepSeek-V4-Flash-0731",
+      "object": "model",
+      "created": 1793598020,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.02,
+        "output": 0.04,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 400000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": true,
+      "reasoning": true,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": true,
+        "json_mode": true,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 96.13,
+      "availability": {
+        "old": 100.0,
+        "mid": 93.75,
+        "recent": 94.74
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
+      "lastSeen": "2026-11-02T05:43:30.166598+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "GLM-5.3-Flash",
+      "object": "model",
+      "created": 1793598020,
+      "owned_by": "",
+      "model_type": "chat",
+      "schema_endpoints": [
+        "openai"
+      ],
+      "tier": "turbo",
+      "pricing_mode": "token",
+      "pricing": {
+        "input": 0.02,
+        "output": 0.04,
+        "currency": "USD",
+        "unit": "1M tokens"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "context_window": {
+        "tokens": 400000,
+        "chars": null
+      },
+      "usage_based_only": false,
+      "stream": true,
+      "json_mode": false,
+      "reasoning": true,
+      "tools_calling": true,
+      "capabilities": {
+        "vision": false,
+        "tools": true,
+        "reasoning": true,
+        "json_mode": false,
+        "stream": true,
+        "supported_seconds": [],
+        "supported_sizes": [],
+        "supported_image_mime_types": [],
+        "requires_reference_image": false,
+        "atlascloud_routes": []
+      },
+      "availability_last_hour_percent": 100.0,
+      "availability": {
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 100.0
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
+      "lastSeen": "2026-11-02T05:43:30.166598+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
       "id": "codestral-latest",
       "object": "model",
-      "created": 1793504739,
+      "created": 1793591164,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -51,10 +175,10 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 99.79,
+      "availability_last_hour_percent": 99.62,
       "availability": {
-        "old": 100.0,
-        "mid": 99.39,
+        "old": 99.68,
+        "mid": 99.26,
         "recent": 100.0
       },
       "benchmarks": null,
@@ -63,14 +187,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-01T05:44:59.676974+00:00",
+      "lastSeen": "2026-11-02T05:43:30.166598+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "gpt-oss:20b",
       "object": "model",
-      "created": 1793507837,
+      "created": 1793593901,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -113,11 +237,11 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 99.34,
+      "availability_last_hour_percent": 99.11,
       "availability": {
-        "old": 98.94,
-        "mid": 100.0,
-        "recent": 98.99
+        "old": 100.0,
+        "mid": 98.77,
+        "recent": 98.65
       },
       "benchmarks": null,
       "curated_benchmarks": null,
@@ -125,138 +249,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-01T05:44:59.676974+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "mistral-Nemo-Instruct-2407",
-      "object": "model",
-      "created": 1793508012,
-      "owned_by": "",
-      "model_type": "chat",
-      "schema_endpoints": [
-        "openai"
-      ],
-      "tier": "turbo",
-      "pricing_mode": "token",
-      "pricing": {
-        "input": 0.03,
-        "output": 0.03,
-        "currency": "USD",
-        "unit": "1M tokens"
-      },
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "context_window": {
-        "tokens": 128000,
-        "chars": null
-      },
-      "usage_based_only": false,
-      "stream": true,
-      "json_mode": true,
-      "reasoning": false,
-      "tools_calling": false,
-      "capabilities": {
-        "vision": false,
-        "tools": false,
-        "reasoning": false,
-        "json_mode": true,
-        "stream": true,
-        "supported_seconds": [],
-        "supported_sizes": [],
-        "supported_image_mime_types": [],
-        "requires_reference_image": false,
-        "atlascloud_routes": []
-      },
-      "availability_last_hour_percent": 99.86,
-      "availability": {
-        "old": 99.8,
-        "mid": 100.0,
-        "recent": 99.8
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-01T05:44:59.676974+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "nemotron-3-nano:30b",
-      "object": "model",
-      "created": 1793507837,
-      "owned_by": "",
-      "model_type": "chat",
-      "schema_endpoints": [
-        "openai"
-      ],
-      "tier": "turbo",
-      "pricing_mode": "token",
-      "pricing": {
-        "input": 0.03,
-        "output": 0.08,
-        "currency": "USD",
-        "unit": "1M tokens"
-      },
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "context_window": {
-        "tokens": 1000000,
-        "chars": null
-      },
-      "usage_based_only": false,
-      "stream": true,
-      "json_mode": false,
-      "reasoning": true,
-      "tools_calling": true,
-      "capabilities": {
-        "vision": false,
-        "tools": true,
-        "reasoning": true,
-        "json_mode": false,
-        "stream": true,
-        "supported_seconds": [],
-        "supported_sizes": [],
-        "supported_image_mime_types": [],
-        "requires_reference_image": false,
-        "atlascloud_routes": []
-      },
-      "availability_last_hour_percent": 99.78,
-      "availability": {
-        "old": 99.12,
-        "mid": 100.0,
-        "recent": 100.0
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-03T05:03:34.945863+00:00",
-      "lastSeen": "2026-11-01T05:44:59.676974+00:00",
+      "lastSeen": "2026-11-02T05:43:30.166598+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "minimax-m2.7",
       "object": "model",
-      "created": 1793334486,
+      "created": 1793598020,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -299,26 +299,26 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 98.21,
+      "availability_last_hour_percent": 92.21,
       "availability": {
-        "old": 96.9,
-        "mid": 98.82,
-        "recent": 98.65
+        "old": 83.21,
+        "mid": 98.44,
+        "recent": 95.24
       },
       "benchmarks": null,
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "removed",
+      "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-30T05:30:09.177094+00:00",
-      "removedDate": "2026-10-31T05:16:58.623045+00:00",
+      "lastSeen": "2026-11-02T05:43:30.166598+00:00",
+      "removedDate": null,
       "status": null
     },
     {
-      "id": "DeepSeek-V4-Flash-0731",
+      "id": "mistral-Nemo-Instruct-2407",
       "object": "model",
-      "created": 1792549266,
+      "created": 1793594151,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -327,8 +327,8 @@
       "tier": "turbo",
       "pricing_mode": "token",
       "pricing": {
-        "input": 0.02,
-        "output": 0.04,
+        "input": 0.03,
+        "output": 0.03,
         "currency": "USD",
         "unit": "1M tokens"
       },
@@ -341,18 +341,18 @@
         ]
       },
       "context_window": {
-        "tokens": 400000,
+        "tokens": 128000,
         "chars": null
       },
       "usage_based_only": false,
       "stream": true,
       "json_mode": true,
-      "reasoning": true,
-      "tools_calling": true,
+      "reasoning": false,
+      "tools_calling": false,
       "capabilities": {
         "vision": false,
-        "tools": true,
-        "reasoning": true,
+        "tools": false,
+        "reasoning": false,
         "json_mode": true,
         "stream": true,
         "supported_seconds": [],
@@ -361,22 +361,26 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 95.68,
+      "availability_last_hour_percent": 99.91,
       "availability": {
-        "old": 96.11,
-        "mid": 92.86,
-        "recent": 97.9
+        "old": 99.74,
+        "mid": 100.0,
+        "recent": 100.0
       },
-      "presence": "removed",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-21T04:25:44.478536+00:00",
-      "removedDate": "2026-10-22T04:24:41.776444+00:00",
+      "lastSeen": "2026-11-02T05:43:30.166598+00:00",
+      "removedDate": null,
       "status": null
     },
     {
-      "id": "GLM-5.3-Flash",
+      "id": "nemotron-3-nano:30b",
       "object": "model",
-      "created": 1792549266,
+      "created": 1793593901,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -385,8 +389,8 @@
       "tier": "turbo",
       "pricing_mode": "token",
       "pricing": {
-        "input": 0.02,
-        "output": 0.04,
+        "input": 0.03,
+        "output": 0.08,
         "currency": "USD",
         "unit": "1M tokens"
       },
@@ -399,7 +403,7 @@
         ]
       },
       "context_window": {
-        "tokens": 400000,
+        "tokens": 1000000,
         "chars": null
       },
       "usage_based_only": false,
@@ -419,16 +423,20 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 97.96,
+      "availability_last_hour_percent": 100.0,
       "availability": {
-        "old": 96.92,
-        "mid": 99.07,
-        "recent": 98.11
+        "old": 100.0,
+        "mid": 100.0,
+        "recent": 100.0
       },
-      "presence": "removed",
-      "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-10-21T04:25:44.478536+00:00",
-      "removedDate": "2026-10-22T04:24:41.776444+00:00",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-03T05:03:34.945863+00:00",
+      "lastSeen": "2026-11-02T05:43:30.166598+00:00",
+      "removedDate": null,
       "status": null
     },
     {

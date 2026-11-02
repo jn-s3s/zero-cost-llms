@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 1,
-  "updatedAt": "2026-11-01T05:45:01.177041+00:00",
+  "updatedAt": "2026-11-02T05:43:31.448624+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -14,9 +14,9 @@
       "support_disable_reasoning": false,
       "price_factor": 0,
       "efforts": [
+        "xhigh",
         "low",
-        "medium",
-        "xhigh"
+        "medium"
       ],
       "default_effort": "medium",
       "max_input_tokens": 180000,
@@ -32,7 +32,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:14.926915+00:00",
-      "lastSeen": "2026-11-01T05:45:01.177041+00:00",
+      "lastSeen": "2026-11-02T05:43:31.448624+00:00",
       "removedDate": null,
       "status": null
     },

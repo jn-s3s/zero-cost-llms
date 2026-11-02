@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-01T05:45:01.935538+00:00",
+  "updatedAt": "2026-11-02T05:43:32.102921+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "aaca93820e284d6ab8eae0cb30b02782",
+  "generationId": "c68a032b498e4c409ad4fe677bc3dcfb",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 248,
-    "eligibleOfferings": 82,
+    "activeOfferings": 250,
+    "eligibleOfferings": 81,
     "excludedOfferings": 54,
-    "uncertainOfferings": 112,
-    "models": 172,
-    "modelsWithGenerationEvidence": 11,
-    "modelsWithEditingEvidence": 7,
-    "ratedModels": 11,
-    "unratedModels": 161,
+    "uncertainOfferings": 115,
+    "models": 174,
+    "modelsWithGenerationEvidence": 12,
+    "modelsWithEditingEvidence": 8,
+    "ratedModels": 12,
+    "unratedModels": 162,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -24,9 +24,9 @@
       "A": 0,
       "A-": 1,
       "B+": 3,
-      "B": 0,
+      "B": 1,
       "C": 6,
-      "Unrated": 161
+      "Unrated": 162
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-01T05:45:03.019116+00:00",
+      "updatedAt": "2026-11-02T05:43:33.471955+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-01T05:45:02.432026+00:00",
+      "updatedAt": "2026-11-02T05:43:32.615480+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-01T05:45:02.231622+00:00",
+      "updatedAt": "2026-11-02T05:43:32.458168+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-01T05:45:02.695483+00:00",
+      "updatedAt": "2026-11-02T05:43:32.799823+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-01T05:45:02.349696+00:00",
+      "updatedAt": "2026-11-02T05:43:32.570002+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -553,6 +553,64 @@
       ],
       "tier": "B+",
       "index": 44.3,
+      "basis": "both_workloads",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:minimax-m2.7",
+      "name": "MiniMax M2.7",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "minimax-m2.7"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "minimax-m2.7",
+          "cohort": "livebench:2026-01-08:coding",
+          "metric": "category_mean",
+          "score": 54.899,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Coding",
+            "taskColumns": [
+              "code_generation",
+              "code_completion"
+            ]
+          },
+          "evidenceId": "evidence:377d7163a68b4e93ad541834",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "minimax-m2.7",
+          "cohort": "livebench:2026-01-08:agentic_coding",
+          "metric": "category_mean",
+          "score": 50.0,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Agentic Coding",
+            "taskColumns": [
+              "javascript",
+              "typescript",
+              "python"
+            ]
+          },
+          "evidenceId": "evidence:4ba8e5a89c81e316d195d819",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "tier": "B",
+      "index": 31.3,
       "basis": "both_workloads",
       "confidence": "limited",
       "provisional": true
@@ -1293,6 +1351,44 @@
         {
           "providerId": "cloudflare",
           "modelId": "86b3e51a-4b05-43fa-a403-0f27821919d2"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:DeepSeek-V4-Flash-0731",
+      "name": "DeepSeek V4 Flash 0731",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "DeepSeek-V4-Flash-0731"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:GLM-5.3-Flash",
+      "name": "llm7 GLM 5.3 Flash",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "GLM-5.3-Flash"
         }
       ],
       "generationDebugging": [],
@@ -3923,25 +4019,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
-      "name": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
       "name": "community/YoannDev90/muse-glimmer-30b:free",
       "eligibility": "eligible",
@@ -4134,6 +4211,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "aaca93820e284d6ab8eae0cb30b02782"
+    "generationId": "c68a032b498e4c409ad4fe677bc3dcfb"
   }
 }

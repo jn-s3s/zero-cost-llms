@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 14,
-  "updatedAt": "2026-11-01T05:44:52.918188+00:00",
+  "updatedAt": "2026-11-02T05:43:23.924754+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -69,7 +69,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -147,7 +147,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:09.924694+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -212,8 +212,8 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1123,
-            "win_rate": 30.1,
+            "elo": 1124,
+            "win_rate": 30.3,
             "rank": 82
           },
           {
@@ -259,7 +259,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -326,7 +326,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -412,7 +412,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -484,7 +484,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -578,7 +578,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -653,7 +653,7 @@
             "category": "webapps",
             "elo": 1182,
             "win_rate": 48.6,
-            "rank": 26
+            "rank": 25
           },
           {
             "arena": "models",
@@ -667,7 +667,7 @@
             "category": "asciiart",
             "elo": 1086,
             "win_rate": 33.3,
-            "rank": 66
+            "rank": 67
           },
           {
             "arena": "models",
@@ -693,8 +693,8 @@
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1106,
-            "win_rate": 34.3,
+            "elo": 1107,
+            "win_rate": 34.4,
             "rank": 63
           },
           {
@@ -736,7 +736,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -819,7 +819,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -891,7 +891,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -967,9 +967,9 @@
           {
             "arena": "models",
             "category": "asciiart",
-            "elo": 1096,
-            "win_rate": 37.1,
-            "rank": 62
+            "elo": 1099,
+            "win_rate": 37.4,
+            "rank": 63
           },
           {
             "arena": "models",
@@ -1002,7 +1002,7 @@
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1135,
+            "elo": 1136,
             "win_rate": 35.9,
             "rank": 84
           },
@@ -1036,7 +1036,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1120,7 +1120,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1200,7 +1200,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1283,7 +1283,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-01T05:44:52.918188+00:00",
+      "lastSeen": "2026-11-02T05:43:23.924754+00:00",
       "removedDate": null,
       "status": null
     },
