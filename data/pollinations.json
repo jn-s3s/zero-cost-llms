@@ -1,10 +1,70 @@
 {
   "status": "success",
   "count": 4,
-  "updatedAt": "2026-11-02T05:43:28.751082+00:00",
+  "updatedAt": "2026-11-03T06:24:59.703060+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
+      "object": "model",
+      "created": 1792709981,
+      "owned_by": "My Github",
+      "aliases": [
+        "CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "NVIDIA: Nemotron 3 Ultra (free)",
+      "description": "NVIDIA Nemotron 3 Ultra: 550B-total / 55B-active hybrid Mamba-Transformer MoE for frontier reasoning and long-running agent orchestration. 1M-token context; up to ~5x throughput vs comparable open models; LatentMoE, MTP, NVFP4, Multi-Teacher On-Policy Distillation. Open weights under the Nemotron open license.",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 1000000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "degraded",
+        "success_rate": 90,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-26T04:26:39.847212+00:00",
+      "lastSeen": "2026-11-03T06:24:59.703060+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
       "object": "model",
@@ -51,8 +111,8 @@
       "context_length": 1000000,
       "per_user_rpm": null,
       "health": {
-        "status": "healthy",
-        "success_rate": 100,
+        "status": "degraded",
+        "success_rate": 92,
         "requests": 50
       },
       "benchmarks": null,
@@ -61,7 +121,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-02T05:43:28.751082+00:00",
+      "lastSeen": "2026-11-03T06:24:59.703060+00:00",
       "removedDate": null,
       "status": null
     },
@@ -111,8 +171,8 @@
       "context_length": 1000000,
       "per_user_rpm": null,
       "health": {
-        "status": "healthy",
-        "success_rate": 98,
+        "status": "degraded",
+        "success_rate": 94,
         "requests": 50
       },
       "benchmarks": null,
@@ -121,7 +181,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-02T05:43:28.751082+00:00",
+      "lastSeen": "2026-11-03T06:24:59.703060+00:00",
       "removedDate": null,
       "status": null
     },
@@ -172,8 +232,8 @@
       "context_length": 131000,
       "per_user_rpm": 10,
       "health": {
-        "status": "healthy",
-        "success_rate": 100,
+        "status": "degraded",
+        "success_rate": 88,
         "requests": 50
       },
       "benchmarks": null,
@@ -182,7 +242,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-11-02T05:43:28.751082+00:00",
+      "lastSeen": "2026-11-03T06:24:59.703060+00:00",
       "removedDate": null,
       "status": null
     },
@@ -234,70 +294,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
       "lastSeen": "2026-11-02T05:43:28.751082+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
-      "object": "model",
-      "created": 1792709981,
-      "owned_by": "My Github",
-      "aliases": [
-        "CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "NVIDIA: Nemotron 3 Ultra (free)",
-      "description": "NVIDIA Nemotron 3 Ultra: 550B-total / 55B-active hybrid Mamba-Transformer MoE for frontier reasoning and long-running agent orchestration. 1M-token context; up to ~5x throughput vs comparable open models; LatentMoE, MTP, NVFP4, Multi-Teacher On-Policy Distillation. Open weights under the Nemotron open license.",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "context_length": 1000000,
-      "per_user_rpm": null,
-      "health": {
-        "status": "healthy",
-        "success_rate": 96,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "removed",
-      "firstSeen": "2026-10-26T04:26:39.847212+00:00",
-      "lastSeen": "2026-11-01T05:44:58.442439+00:00",
-      "removedDate": "2026-11-02T05:43:28.751082+00:00",
+      "removedDate": "2026-11-03T06:24:59.703060+00:00",
       "status": null
     },
     {

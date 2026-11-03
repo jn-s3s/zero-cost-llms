@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 2,
-  "updatedAt": "2026-11-02T05:43:31.888261+00:00",
+  "updatedAt": "2026-11-03T06:25:04.230278+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -23,7 +23,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-      "lastSeen": "2026-11-02T05:43:31.888261+00:00",
+      "lastSeen": "2026-11-03T06:25:04.230278+00:00",
       "removedDate": null,
       "status": null
     },
@@ -51,7 +51,7 @@
       "swe_bench_tier": "B",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-      "lastSeen": "2026-11-02T05:43:31.888261+00:00",
+      "lastSeen": "2026-11-03T06:25:04.230278+00:00",
       "removedDate": null,
       "status": null
     }

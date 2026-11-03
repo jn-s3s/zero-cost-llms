@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 14,
-  "updatedAt": "2026-11-02T05:43:28.691763+00:00",
+  "count": 15,
+  "updatedAt": "2026-11-03T06:24:59.575791+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -140,7 +140,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.424757+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -246,7 +246,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -345,7 +345,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -412,7 +412,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:39.458389+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -494,7 +494,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -568,7 +568,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -642,7 +642,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -720,7 +720,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -793,7 +793,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -879,7 +879,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -956,7 +956,84 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "google/gemma-4-31b-it:free",
+      "name": "Google: Gemma 4 31B (free)",
+      "created": 1775148486,
+      "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "image",
+          "text",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemma"
+      },
+      "top_provider": {
+        "is_moderated": false,
+        "context_length": 262144,
+        "max_completion_tokens": 32768
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "discount": 0
+      },
+      "context_length": 262144,
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "expiration_date": null,
+      "inference_provider_ids": [
+        "google-ai-studio"
+      ],
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {
+        "variants": {
+          "instant": {
+            "reasoning": {
+              "enabled": false,
+              "effort": "none"
+            }
+          },
+          "thinking": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          }
+        },
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ]
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-03T06:24:59.575791+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1022,7 +1099,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1103,7 +1180,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-31T05:16:56.668902+00:00",
-      "lastSeen": "2026-11-02T05:43:28.691763+00:00",
+      "lastSeen": "2026-11-03T06:24:59.575791+00:00",
       "removedDate": null,
       "status": null
     },
