@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-03T06:25:04.457964+00:00",
+  "updatedAt": "2026-11-04T05:57:38.657917+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "4bfc9b1f4a2e416780c4ae3af332086c",
+  "generationId": "1990df98d06441d1b88289abe2db85c9",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 252,
-    "eligibleOfferings": 83,
-    "excludedOfferings": 54,
-    "uncertainOfferings": 115,
-    "models": 175,
+    "activeOfferings": 251,
+    "eligibleOfferings": 82,
+    "excludedOfferings": 53,
+    "uncertainOfferings": 116,
+    "models": 176,
     "modelsWithGenerationEvidence": 12,
     "modelsWithEditingEvidence": 8,
     "ratedModels": 12,
-    "unratedModels": 163,
+    "unratedModels": 164,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 1,
       "C": 6,
-      "Unrated": 163
+      "Unrated": 164
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-03T06:25:07.308913+00:00",
+      "updatedAt": "2026-11-04T05:57:40.645900+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-03T06:25:05.208749+00:00",
+      "updatedAt": "2026-11-04T05:57:39.032063+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-03T06:25:05.007912+00:00",
+      "updatedAt": "2026-11-04T05:57:39.056586+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-03T06:25:05.717832+00:00",
+      "updatedAt": "2026-11-04T05:57:39.957550+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-03T06:25:05.363208+00:00",
+      "updatedAt": "2026-11-04T05:57:39.233006+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -623,10 +623,6 @@
       "providers": [
         {
           "providerId": "cline",
-          "modelId": "google/gemma-4-31b-it:free"
-        },
-        {
-          "providerId": "kilo",
           "modelId": "google/gemma-4-31b-it:free"
         },
         {
@@ -2503,6 +2499,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:cline:stealth/crouton-alpha",
+      "name": "stealth/crouton-alpha",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "stealth/crouton-alpha"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:cline:xingchen-agi/xing4.0-29b-a4b:free",
       "name": "xingchen-agi/xing4.0-29b-a4b:free",
       "eligibility": "uncertain",
@@ -2940,25 +2955,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:inclusionai/ling-3.1-flash-1019-free",
-      "name": "inclusionAI: Ling 3.1 Flash 1019 (free)",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "kilo",
-          "modelId": "inclusionai/ling-3.1-flash-1019-free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:kilo:kilo-auto/free",
       "name": "Auto Free",
       "eligibility": "eligible",
@@ -2967,25 +2963,6 @@
         {
           "providerId": "kilo",
           "modelId": "kilo-auto/free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:kilo:liquid/lfm-2.5-2.6b:free",
-      "name": "LiquidAI: LFM2.5-2.6B (free)",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "kilo",
-          "modelId": "liquid/lfm-2.5-2.6b:free"
         }
       ],
       "generationDebugging": [],
@@ -3054,25 +3031,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:recursive/flint-v1.0:free",
-      "name": "Recursive: Flint (free)",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "kilo",
-          "modelId": "recursive/flint-v1.0:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:kilo:reflection/beam-free",
       "name": "Reflection: Beam 1.0 (free)",
       "eligibility": "eligible",
@@ -3092,14 +3050,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:stealth/glyph-cluster",
-      "name": "Stealth: Glyph Cluster (free)",
+      "modelId": "offering:kilo:stealth/crouton-alpha",
+      "name": "Crouton Alpha",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "kilo",
-          "modelId": "stealth/glyph-cluster"
+          "modelId": "stealth/crouton-alpha"
         }
       ],
       "generationDebugging": [],
@@ -3111,14 +3069,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:xingchen-agi/xing4.0-29b-a4b:free",
-      "name": "XingChen: Xing4.0 29B A4B (free)",
+      "modelId": "offering:kilo:stealth/glyph-cluster",
+      "name": "Stealth: Glyph Cluster (free)",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "kilo",
-          "modelId": "xingchen-agi/xing4.0-29b-a4b:free"
+          "modelId": "stealth/glyph-cluster"
         }
       ],
       "generationDebugging": [],
@@ -3814,6 +3772,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:opencode-zen:crouton-alpha-free",
+      "name": "Crouton Alpha Free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "crouton-alpha-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:opencode-zen:deepseek-v4.1-flash-free",
       "name": "DeepSeek V4.1 Flash Free",
       "eligibility": "eligible",
@@ -3985,6 +3962,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:openrouter:stealth/crouton-alpha",
+      "name": "Crouton Alpha",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "stealth/crouton-alpha"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:openrouter:xingchen-agi/xing4.0-29b-a4b:free",
       "name": "XingChen: Xing4.0 29B A4B (free)",
       "eligibility": "eligible",
@@ -4118,6 +4114,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:pollinations:community/vendouple/muse-glimmer-30b:free",
+      "name": "community/vendouple/muse-glimmer-30b:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/vendouple/muse-glimmer-30b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:qoder:qfmodel",
       "name": "Qwen3.8-Flash",
       "eligibility": "uncertain",
@@ -4234,6 +4249,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "4bfc9b1f4a2e416780c4ae3af332086c"
+    "generationId": "1990df98d06441d1b88289abe2db85c9"
   }
 }

@@ -1,10 +1,90 @@
 {
   "status": "success",
-  "count": 14,
-  "updatedAt": "2026-11-03T06:24:55.324838+00:00",
+  "count": 15,
+  "updatedAt": "2026-11-04T05:57:29.173641+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "stealth/crouton-alpha",
+      "canonical_slug": "stealth/crouton-alpha",
+      "hugging_face_id": null,
+      "name": "Crouton Alpha",
+      "created": 1793669930,
+      "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in high-volume, repeated work. Developers...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text+image+file+audio+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 943718,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/stealth/crouton-alpha/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
+      "reasoning": {
+        "mandatory": true,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low",
+          "minimal"
+        ],
+        "default_effort": "max"
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-04T05:57:29.173641+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "recursive/flint-v1.0:free",
       "canonical_slug": "recursive/flint-v1.0-20261021",
@@ -69,7 +149,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -147,7 +227,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:09.924694+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -212,8 +292,8 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1123,
-            "win_rate": 30.1,
+            "elo": 1125,
+            "win_rate": 30.4,
             "rank": 82
           },
           {
@@ -221,13 +301,13 @@
             "category": "codecategories",
             "elo": 1150,
             "win_rate": 33.1,
-            "rank": 88
+            "rank": 89
           },
           {
             "arena": "models",
             "category": "gamedev",
             "elo": 1108,
-            "win_rate": 29.6,
+            "win_rate": 29.5,
             "rank": 94
           },
           {
@@ -242,7 +322,7 @@
             "category": "website",
             "elo": 1165,
             "win_rate": 35,
-            "rank": 84
+            "rank": 85
           }
         ],
         "artificial_analysis": {
@@ -259,7 +339,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -326,7 +406,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -377,7 +457,8 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs"
+        "top_logprobs",
+        "top_p"
       ],
       "default_parameters": {
         "temperature": 0.1,
@@ -412,7 +493,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -484,7 +565,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -578,7 +659,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -651,14 +732,14 @@
           {
             "arena": "agents",
             "category": "webapps",
-            "elo": 1180,
+            "elo": 1182,
             "win_rate": 48.6,
-            "rank": 27
+            "rank": 26
           },
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1157,
+            "elo": 1156,
             "win_rate": 39.8,
             "rank": 66
           },
@@ -680,14 +761,14 @@
             "arena": "models",
             "category": "dataviz",
             "elo": 1157,
-            "win_rate": 37.5,
+            "win_rate": 37.6,
             "rank": 81
           },
           {
             "arena": "models",
             "category": "gamedev",
             "elo": 1165,
-            "win_rate": 37.8,
+            "win_rate": 37.9,
             "rank": 72
           },
           {
@@ -708,7 +789,7 @@
             "arena": "models",
             "category": "website",
             "elo": 1223,
-            "win_rate": 44.6,
+            "win_rate": 44.7,
             "rank": 58
           }
         ],
@@ -736,7 +817,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -819,7 +900,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -891,7 +972,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -996,7 +1077,7 @@
             "arena": "models",
             "category": "svg",
             "elo": 1067,
-            "win_rate": 32.3,
+            "win_rate": 32.2,
             "rank": 75
           },
           {
@@ -1009,9 +1090,9 @@
           {
             "arena": "models",
             "category": "website",
-            "elo": 1144,
+            "elo": 1145,
             "win_rate": 35.3,
-            "rank": 98
+            "rank": 97
           }
         ],
         "artificial_analysis": {
@@ -1036,7 +1117,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1120,7 +1201,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1200,7 +1281,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1283,7 +1364,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-03T06:24:55.324838+00:00",
+      "lastSeen": "2026-11-04T05:57:29.173641+00:00",
       "removedDate": null,
       "status": null
     },

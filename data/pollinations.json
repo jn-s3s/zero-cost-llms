@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 4,
-  "updatedAt": "2026-11-03T06:24:59.703060+00:00",
+  "count": 5,
+  "updatedAt": "2026-11-04T05:57:34.045002+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -52,7 +52,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "degraded",
-        "success_rate": 90,
+        "success_rate": 88,
         "requests": 50
       },
       "benchmarks": null,
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-26T04:26:39.847212+00:00",
-      "lastSeen": "2026-11-03T06:24:59.703060+00:00",
+      "lastSeen": "2026-11-04T05:57:34.045002+00:00",
       "removedDate": null,
       "status": null
     },
@@ -111,8 +111,8 @@
       "context_length": 1000000,
       "per_user_rpm": null,
       "health": {
-        "status": "degraded",
-        "success_rate": 92,
+        "status": "healthy",
+        "success_rate": 96,
         "requests": 50
       },
       "benchmarks": null,
@@ -121,7 +121,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-03T06:24:59.703060+00:00",
+      "lastSeen": "2026-11-04T05:57:34.045002+00:00",
       "removedDate": null,
       "status": null
     },
@@ -171,8 +171,8 @@
       "context_length": 1000000,
       "per_user_rpm": null,
       "health": {
-        "status": "degraded",
-        "success_rate": 94,
+        "status": "healthy",
+        "success_rate": 98,
         "requests": 50
       },
       "benchmarks": null,
@@ -181,7 +181,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-03T06:24:59.703060+00:00",
+      "lastSeen": "2026-11-04T05:57:34.045002+00:00",
       "removedDate": null,
       "status": null
     },
@@ -233,7 +233,7 @@
       "per_user_rpm": 10,
       "health": {
         "status": "degraded",
-        "success_rate": 88,
+        "success_rate": 92,
         "requests": 50
       },
       "benchmarks": null,
@@ -242,7 +242,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-11-03T06:24:59.703060+00:00",
+      "lastSeen": "2026-11-04T05:57:34.045002+00:00",
       "removedDate": null,
       "status": null
     },
@@ -286,18 +286,18 @@
       "capabilities": [],
       "per_user_rpm": 5,
       "health": {
-        "status": "degraded",
-        "success_rate": 90,
+        "status": "healthy",
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "removed",
+      "presence": "active",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-11-02T05:43:28.751082+00:00",
-      "removedDate": "2026-11-03T06:24:59.703060+00:00",
+      "lastSeen": "2026-11-04T05:57:34.045002+00:00",
+      "removedDate": null,
       "status": null
     },
     {
