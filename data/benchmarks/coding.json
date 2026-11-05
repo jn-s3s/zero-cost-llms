@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-04T05:57:38.657917+00:00",
+  "updatedAt": "2026-11-05T06:22:17.893708+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "1990df98d06441d1b88289abe2db85c9",
+  "generationId": "c512b38a6cd145d1b9d85261ac7d9150",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 251,
-    "eligibleOfferings": 82,
+    "activeOfferings": 247,
+    "eligibleOfferings": 80,
     "excludedOfferings": 53,
-    "uncertainOfferings": 116,
-    "models": 176,
+    "uncertainOfferings": 114,
+    "models": 174,
     "modelsWithGenerationEvidence": 12,
     "modelsWithEditingEvidence": 8,
     "ratedModels": 12,
-    "unratedModels": 164,
+    "unratedModels": 162,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 1,
       "C": 6,
-      "Unrated": 164
+      "Unrated": 162
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-04T05:57:40.645900+00:00",
+      "updatedAt": "2026-11-05T06:22:19.994302+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-04T05:57:39.032063+00:00",
+      "updatedAt": "2026-11-05T06:22:18.646923+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-04T05:57:39.056586+00:00",
+      "updatedAt": "2026-11-05T06:22:18.433053+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-04T05:57:39.957550+00:00",
+      "updatedAt": "2026-11-05T06:22:19.224886+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-04T05:57:39.233006+00:00",
+      "updatedAt": "2026-11-05T06:22:18.756603+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -2187,52 +2187,6 @@
       "provisional": false
     },
     {
-      "modelId": "hf:thinkingmachines/Inkling",
-      "name": "Inkling",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cline",
-          "modelId": "thinkingmachines/inkling:free"
-        },
-        {
-          "providerId": "openrouter",
-          "modelId": "thinkingmachines/inkling:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "hf:thinkingmachines/Inkling-Small",
-      "name": "Inkling Small",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cline",
-          "modelId": "thinkingmachines/inkling-small:free"
-        },
-        {
-          "providerId": "openrouter",
-          "modelId": "thinkingmachines/inkling-small:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:agnes:agnes-2.5-flash",
       "name": "agnes-2.5-flash",
       "eligibility": "uncertain",
@@ -4249,6 +4203,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "1990df98d06441d1b88289abe2db85c9"
+    "generationId": "c512b38a6cd145d1b9d85261ac7d9150"
   }
 }

@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 5,
-  "updatedAt": "2026-11-04T05:57:34.045002+00:00",
+  "updatedAt": "2026-11-05T06:22:13.963603+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -42,6 +42,9 @@
       "pricing": {
         "currency": "pollen"
       },
+      "top_provider": {
+        "max_completion_tokens": null
+      },
       "capabilities": [
         "tool_calling",
         "reasoning"
@@ -51,8 +54,8 @@
       "context_length": 1000000,
       "per_user_rpm": null,
       "health": {
-        "status": "degraded",
-        "success_rate": 88,
+        "status": "healthy",
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -61,7 +64,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-26T04:26:39.847212+00:00",
-      "lastSeen": "2026-11-04T05:57:34.045002+00:00",
+      "lastSeen": "2026-11-05T06:22:13.963603+00:00",
       "removedDate": null,
       "status": null
     },
@@ -102,6 +105,9 @@
       "pricing": {
         "currency": "pollen"
       },
+      "top_provider": {
+        "max_completion_tokens": null
+      },
       "capabilities": [
         "tool_calling",
         "reasoning"
@@ -112,7 +118,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 96,
+        "success_rate": 98,
         "requests": 50
       },
       "benchmarks": null,
@@ -121,7 +127,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-04T05:57:34.045002+00:00",
+      "lastSeen": "2026-11-05T06:22:13.963603+00:00",
       "removedDate": null,
       "status": null
     },
@@ -162,6 +168,9 @@
       "pricing": {
         "currency": "pollen"
       },
+      "top_provider": {
+        "max_completion_tokens": null
+      },
       "capabilities": [
         "tool_calling",
         "reasoning"
@@ -172,7 +181,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 98,
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -181,7 +190,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-04T05:57:34.045002+00:00",
+      "lastSeen": "2026-11-05T06:22:13.963603+00:00",
       "removedDate": null,
       "status": null
     },
@@ -223,6 +232,9 @@
       "pricing": {
         "currency": "pollen"
       },
+      "top_provider": {
+        "max_completion_tokens": null
+      },
       "capabilities": [
         "tool_calling",
         "reasoning"
@@ -233,7 +245,7 @@
       "per_user_rpm": 10,
       "health": {
         "status": "degraded",
-        "success_rate": 92,
+        "success_rate": 86,
         "requests": 50
       },
       "benchmarks": null,
@@ -242,7 +254,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-11-04T05:57:34.045002+00:00",
+      "lastSeen": "2026-11-05T06:22:13.963603+00:00",
       "removedDate": null,
       "status": null
     },
@@ -283,11 +295,14 @@
       "pricing": {
         "currency": "pollen"
       },
+      "top_provider": {
+        "max_completion_tokens": null
+      },
       "capabilities": [],
       "per_user_rpm": 5,
       "health": {
-        "status": "healthy",
-        "success_rate": 100,
+        "status": "degraded",
+        "success_rate": 92,
         "requests": 50
       },
       "benchmarks": null,
@@ -296,7 +311,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-11-04T05:57:34.045002+00:00",
+      "lastSeen": "2026-11-05T06:22:13.963603+00:00",
       "removedDate": null,
       "status": null
     },

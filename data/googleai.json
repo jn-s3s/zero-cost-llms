@@ -2,7 +2,7 @@
   "status": "failed",
   "count": 20,
   "updatedAt": "2026-11-02T05:43:24.928071+00:00",
-  "lastFailedAt": "2026-11-04T05:57:30.864813+00:00",
+  "lastFailedAt": "2026-11-05T06:22:10.744673+00:00",
   "lastFailedMessage": "HTTPError: HTTP Error 301: cross-host redirect: https://aistudio.google.com/docs/pricing",
   "data": [
     {

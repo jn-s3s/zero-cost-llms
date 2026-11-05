@@ -1,14 +1,14 @@
 {
   "status": "success",
   "count": 7,
-  "updatedAt": "2026-11-04T05:57:36.595489+00:00",
+  "updatedAt": "2026-11-05T06:22:15.617232+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "DeepSeek-V4-Flash-0731",
       "object": "model",
-      "created": 1793768020,
+      "created": 1793855945,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -51,11 +51,11 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 100.0,
+      "availability_last_hour_percent": 95.6,
       "availability": {
-        "old": 100.0,
-        "mid": 100.0,
-        "recent": 100.0
+        "old": 95.77,
+        "mid": 93.55,
+        "recent": 97.96
       },
       "benchmarks": null,
       "curated_benchmarks": null,
@@ -63,14 +63,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-04T05:57:36.595489+00:00",
+      "lastSeen": "2026-11-05T06:22:15.617232+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "GLM-5.3-Flash",
       "object": "model",
-      "created": 1793768020,
+      "created": 1793855945,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -125,14 +125,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-04T05:57:36.595489+00:00",
+      "lastSeen": "2026-11-05T06:22:15.617232+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "codestral-latest",
       "object": "model",
-      "created": 1793767614,
+      "created": 1793854054,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -187,14 +187,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-04T05:57:36.595489+00:00",
+      "lastSeen": "2026-11-05T06:22:15.617232+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "gpt-oss:20b",
       "object": "model",
-      "created": 1793767862,
+      "created": 1793855952,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -237,9 +237,9 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 100.0,
+      "availability_last_hour_percent": 99.55,
       "availability": {
-        "old": 100.0,
+        "old": 98.39,
         "mid": 100.0,
         "recent": 100.0
       },
@@ -249,14 +249,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-04T05:57:36.595489+00:00",
+      "lastSeen": "2026-11-05T06:22:15.617232+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "minimax-m2.7",
       "object": "model",
-      "created": 1793768020,
+      "created": 1793855945,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -299,10 +299,10 @@
         "requires_reference_image": false,
         "atlascloud_routes": []
       },
-      "availability_last_hour_percent": 100.0,
+      "availability_last_hour_percent": 98.39,
       "availability": {
-        "old": 100.0,
-        "mid": 100.0,
+        "old": 97.27,
+        "mid": 98.21,
         "recent": 100.0
       },
       "benchmarks": null,
@@ -311,14 +311,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-04T05:57:36.595489+00:00",
+      "lastSeen": "2026-11-05T06:22:15.617232+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-Nemo-Instruct-2407",
       "object": "model",
-      "created": 1793767661,
+      "created": 1793855693,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -373,14 +373,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-04T05:57:36.595489+00:00",
+      "lastSeen": "2026-11-05T06:22:15.617232+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "nemotron-3-nano:30b",
       "object": "model",
-      "created": 1793767862,
+      "created": 1793855952,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -435,7 +435,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-03T05:03:34.945863+00:00",
-      "lastSeen": "2026-11-04T05:57:36.595489+00:00",
+      "lastSeen": "2026-11-05T06:22:15.617232+00:00",
       "removedDate": null,
       "status": null
     },
