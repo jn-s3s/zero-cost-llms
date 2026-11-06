@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-05T06:22:17.893708+00:00",
+  "updatedAt": "2026-11-06T06:16:32.205404+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "c512b38a6cd145d1b9d85261ac7d9150",
+  "generationId": "9748ce76461f4709abdf0f40422f640d",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 247,
-    "eligibleOfferings": 80,
+    "activeOfferings": 243,
+    "eligibleOfferings": 77,
     "excludedOfferings": 53,
-    "uncertainOfferings": 114,
-    "models": 174,
+    "uncertainOfferings": 113,
+    "models": 170,
     "modelsWithGenerationEvidence": 12,
     "modelsWithEditingEvidence": 8,
     "ratedModels": 12,
-    "unratedModels": 162,
+    "unratedModels": 158,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 1,
       "C": 6,
-      "Unrated": 162
+      "Unrated": 158
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-05T06:22:19.994302+00:00",
+      "updatedAt": "2026-11-06T06:16:34.487546+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-05T06:22:18.646923+00:00",
+      "updatedAt": "2026-11-06T06:16:32.830878+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-05T06:22:18.433053+00:00",
+      "updatedAt": "2026-11-06T06:16:32.605371+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-05T06:22:19.224886+00:00",
+      "updatedAt": "2026-11-06T06:16:40.827793+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-05T06:22:18.756603+00:00",
+      "updatedAt": "2026-11-06T06:16:32.859572+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -3289,25 +3289,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:nvidia:meta/llama-3.2-11b-vision-instruct",
-      "name": "meta/llama-3.2-11b-vision-instruct",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "nvidia",
-          "modelId": "meta/llama-3.2-11b-vision-instruct"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:nvidia:meta/llama-3.2-90b-vision-instruct",
       "name": "meta/llama-3.2-90b-vision-instruct",
       "eligibility": "uncertain",
@@ -4011,63 +3992,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
-      "name": "community/YoannDev90/muse-glimmer-30b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/YoannDev90/muse-glimmer-30b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:pollinations:community/YoannDev90/vercel-beam:free",
-      "name": "community/YoannDev90/vercel-beam:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/YoannDev90/vercel-beam:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:pollinations:community/YoannDev90/vercel-nemotron-3.5-lightning:free",
-      "name": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/YoannDev90/vercel-nemotron-3.5-lightning:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:pollinations:community/vendouple/muse-glimmer-30b:free",
       "name": "community/vendouple/muse-glimmer-30b:free",
       "eligibility": "eligible",
@@ -4203,6 +4127,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "c512b38a6cd145d1b9d85261ac7d9150"
+    "generationId": "9748ce76461f4709abdf0f40422f640d"
   }
 }
