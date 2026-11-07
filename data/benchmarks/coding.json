@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-06T06:16:32.205404+00:00",
+  "updatedAt": "2026-11-07T05:42:47.730105+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "9748ce76461f4709abdf0f40422f640d",
+  "generationId": "f2703e290a6e4fc4a5bce0b421e82f48",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 243,
-    "eligibleOfferings": 77,
-    "excludedOfferings": 53,
+    "activeOfferings": 246,
+    "eligibleOfferings": 81,
+    "excludedOfferings": 52,
     "uncertainOfferings": 113,
-    "models": 170,
+    "models": 174,
     "modelsWithGenerationEvidence": 12,
     "modelsWithEditingEvidence": 8,
     "ratedModels": 12,
-    "unratedModels": 158,
+    "unratedModels": 162,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 1,
       "C": 6,
-      "Unrated": 158
+      "Unrated": 162
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-06T06:16:34.487546+00:00",
+      "updatedAt": "2026-11-07T05:42:49.587865+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-06T06:16:32.830878+00:00",
+      "updatedAt": "2026-11-07T05:42:48.225186+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-06T06:16:32.605371+00:00",
+      "updatedAt": "2026-11-07T05:42:48.088579+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-06T06:16:40.827793+00:00",
+      "updatedAt": "2026-11-07T05:42:49.708550+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-06T06:16:32.859572+00:00",
+      "updatedAt": "2026-11-07T05:42:48.259324+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -2377,14 +2377,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:cline:nvidia/nemotron-3.5-content-safety:free",
-      "name": "nvidia/nemotron-3.5-content-safety:free",
+      "modelId": "offering:cline:liquid/lfm-3-1.7b:free",
+      "name": "liquid/lfm-3-1.7b:free",
       "eligibility": "uncertain",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "cline",
-          "modelId": "nvidia/nemotron-3.5-content-safety:free"
+          "modelId": "liquid/lfm-3-1.7b:free"
         }
       ],
       "generationDebugging": [],
@@ -2917,6 +2917,25 @@
         {
           "providerId": "kilo",
           "modelId": "kilo-auto/free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:liquid/lfm-3-1.7b:free",
+      "name": "LiquidAI: LFM3-1.7B (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "liquid/lfm-3-1.7b:free"
         }
       ],
       "generationDebugging": [],
@@ -3783,6 +3802,44 @@
       "provisional": false
     },
     {
+      "modelId": "offering:opencode-zen:iceman-free",
+      "name": "Iceman Free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "iceman-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:opencode-zen:inkling-2-small-free",
+      "name": "Inkling 2 Small Free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "inkling-2-small-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:opencode-zen:mimo-v2.6-flash-free",
       "name": "MiMo-V2.6-Flash Free",
       "eligibility": "eligible",
@@ -3840,14 +3897,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:opencode-zen:pulse-alpha-free",
-      "name": "Pulse Alpha Free",
+      "modelId": "offering:openrouter:liquid/lfm-3-1.7b:free",
+      "name": "LiquidAI: LFM3-1.7B (free)",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
-          "providerId": "opencode-zen",
-          "modelId": "pulse-alpha-free"
+          "providerId": "openrouter",
+          "modelId": "liquid/lfm-3-1.7b:free"
         }
       ],
       "generationDebugging": [],
@@ -3992,14 +4049,33 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/vendouple/muse-glimmer-30b:free",
-      "name": "community/vendouple/muse-glimmer-30b:free",
+      "modelId": "offering:pollinations:community/YoannDev90/vercel-beam:free",
+      "name": "community/YoannDev90/vercel-beam:free",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "pollinations",
-          "modelId": "community/vendouple/muse-glimmer-30b:free"
+          "modelId": "community/YoannDev90/vercel-beam:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/YoannDev90/vercel-nemotron-3.5-lightning:free",
+      "name": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/vercel-nemotron-3.5-lightning:free"
         }
       ],
       "generationDebugging": [],
@@ -4127,6 +4203,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "9748ce76461f4709abdf0f40422f640d"
+    "generationId": "f2703e290a6e4fc4a5bce0b421e82f48"
   }
 }

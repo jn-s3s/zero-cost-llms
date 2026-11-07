@@ -1,9 +1,9 @@
 {
-  "status": "success",
+  "status": "failed",
   "count": 1,
   "updatedAt": "2026-11-06T06:16:31.646642+00:00",
-  "lastFailedAt": null,
-  "lastFailedMessage": null,
+  "lastFailedAt": "2026-11-07T05:42:47.163421+00:00",
+  "lastFailedMessage": "ValueError: fetched no free models",
   "data": [
     {
       "id": "qfmodel",
