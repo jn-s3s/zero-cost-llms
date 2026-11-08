@@ -1,21 +1,21 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-07T05:42:47.730105+00:00",
+  "updatedAt": "2026-11-08T05:46:11.194465+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "f2703e290a6e4fc4a5bce0b421e82f48",
+  "generationId": "afd01b293979496c8d8603558c504a7a",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 246,
-    "eligibleOfferings": 81,
+    "activeOfferings": 245,
+    "eligibleOfferings": 83,
     "excludedOfferings": 52,
-    "uncertainOfferings": 113,
-    "models": 174,
-    "modelsWithGenerationEvidence": 12,
-    "modelsWithEditingEvidence": 8,
-    "ratedModels": 12,
+    "uncertainOfferings": 110,
+    "models": 173,
+    "modelsWithGenerationEvidence": 11,
+    "modelsWithEditingEvidence": 7,
+    "ratedModels": 11,
     "unratedModels": 162,
     "tierCounts": {
       "S+": 0,
@@ -24,7 +24,7 @@
       "A": 0,
       "A-": 1,
       "B+": 3,
-      "B": 1,
+      "B": 0,
       "C": 6,
       "Unrated": 162
     }
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-07T05:42:49.587865+00:00",
+      "updatedAt": "2026-11-08T05:46:13.065527+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-07T05:42:48.225186+00:00",
+      "updatedAt": "2026-11-08T05:46:11.874048+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-07T05:42:48.088579+00:00",
+      "updatedAt": "2026-11-08T05:46:11.685510+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -69,20 +69,20 @@
     {
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
-      "status": "success",
+      "status": "failed",
       "updatedAt": "2026-11-07T05:42:49.708550+00:00",
-      "lastFailedAt": null,
+      "lastFailedAt": "2026-11-08T05:46:17.657397+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
       "origin": "cache",
-      "refreshStatus": "success",
+      "refreshStatus": "failed",
       "refreshPersisted": true
     },
     {
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-07T05:42:48.259324+00:00",
+      "updatedAt": "2026-11-08T05:46:11.898502+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -333,7 +333,7 @@
       "tier": "A-",
       "index": 56.4,
       "basis": "both_workloads",
-      "confidence": "moderate",
+      "confidence": "limited",
       "provisional": true
     },
     {
@@ -553,64 +553,6 @@
       ],
       "tier": "B+",
       "index": 44.3,
-      "basis": "both_workloads",
-      "confidence": "limited",
-      "provisional": true
-    },
-    {
-      "modelId": "checkpoint:minimax-m2.7",
-      "name": "MiniMax M2.7",
-      "eligibility": "uncertain",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "minimax-m2.7"
-        }
-      ],
-      "generationDebugging": [
-        {
-          "benchmark": "LiveBench",
-          "evaluatedModelId": "minimax-m2.7",
-          "cohort": "livebench:2026-01-08:coding",
-          "metric": "category_mean",
-          "score": 54.899,
-          "unit": "score_0_100",
-          "configuration": {
-            "category": "Coding",
-            "taskColumns": [
-              "code_generation",
-              "code_completion"
-            ]
-          },
-          "evidenceId": "evidence:377d7163a68b4e93ad541834",
-          "applicability": "checkpoint_evidence_endpoint_unverified",
-          "configurationStatus": "published"
-        }
-      ],
-      "repositoryEditing": [
-        {
-          "benchmark": "LiveBench",
-          "evaluatedModelId": "minimax-m2.7",
-          "cohort": "livebench:2026-01-08:agentic_coding",
-          "metric": "category_mean",
-          "score": 50.0,
-          "unit": "score_0_100",
-          "configuration": {
-            "category": "Agentic Coding",
-            "taskColumns": [
-              "javascript",
-              "typescript",
-              "python"
-            ]
-          },
-          "evidenceId": "evidence:4ba8e5a89c81e316d195d819",
-          "applicability": "checkpoint_evidence_endpoint_unverified",
-          "configurationStatus": "published"
-        }
-      ],
-      "tier": "B",
-      "index": 31.3,
       "basis": "both_workloads",
       "confidence": "limited",
       "provisional": true
@@ -1351,44 +1293,6 @@
         {
           "providerId": "cloudflare",
           "modelId": "86b3e51a-4b05-43fa-a403-0f27821919d2"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "catalogue:DeepSeek-V4-Flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
-      "eligibility": "uncertain",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "DeepSeek-V4-Flash-0731"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "catalogue:GLM-5.3-Flash",
-      "name": "llm7 GLM 5.3 Flash",
-      "eligibility": "uncertain",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "GLM-5.3-Flash"
         }
       ],
       "generationDebugging": [],
@@ -4049,6 +3953,44 @@
       "provisional": false
     },
     {
+      "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
+      "name": "community/YoannDev90/muse-glimmer-30b:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/muse-glimmer-30b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "name": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:pollinations:community/YoannDev90/vercel-beam:free",
       "name": "community/YoannDev90/vercel-beam:free",
       "eligibility": "eligible",
@@ -4203,6 +4145,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "f2703e290a6e4fc4a5bce0b421e82f48"
+    "generationId": "afd01b293979496c8d8603558c504a7a"
   }
 }
