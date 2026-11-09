@@ -5,6 +5,14 @@ and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-11-09
+
+### Fixed
+
+- Read the Google AI Studio Markdown pricing page so `googleai` finds the current free models after the old HTML page started redirecting to another host.
+- Accept the `Trial price` column and `rowspan` continuation rows on the Agnes pricing page. A model counts as free only when every price row for it is zero.
+- Report an empty provider fetch in one line without a traceback. The provider still records a failed status, keeps its last good models, and publishes `EmptyFetchError` as the failure type.
+
 ## [1.3.0] - 2026-10-24
 
 ### Added
