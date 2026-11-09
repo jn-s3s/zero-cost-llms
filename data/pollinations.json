@@ -1,17 +1,17 @@
 {
   "status": "success",
   "count": 6,
-  "updatedAt": "2026-11-09T02:25:25.406512+00:00",
+  "updatedAt": "2026-11-09T05:56:06.506182+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
-      "id": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "id": "community/Catniti/sensenova-6.8-flash-lite:free",
       "object": "model",
-      "created": 1793646818,
-      "owned_by": "Free AI API",
+      "created": 1793615205,
+      "owned_by": "Catniti",
       "aliases": [
-        "YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
+        "Catniti/sensenova-6.8-flash-lite:free"
       ],
       "category": "text",
       "community": true,
@@ -23,8 +23,7 @@
           "name": "community"
         }
       ],
-      "title": "Mistral Large 4",
-      "description": "Mistral AI 1T-total / 52B-active granular MoE for text and image input with reasoning, function calling and structured outputs, served in NVFP4 with DSpark speculative decoding.",
+      "title": "SenseNova 6.8 Flash-Lite",
       "input_modalities": [
         "text",
         "image"
@@ -41,7 +40,9 @@
       ],
       "paid_only": false,
       "pricing": {
-        "currency": "pollen"
+        "currency": "pollen",
+        "promptTextTokens": "0.000001",
+        "completionTextTokens": "0.000002"
       },
       "top_provider": {
         "max_completion_tokens": null
@@ -55,8 +56,8 @@
       "context_length": 262000,
       "per_user_rpm": null,
       "health": {
-        "status": "degraded",
-        "success_rate": 82,
+        "status": "healthy",
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -64,8 +65,8 @@
       "swe_bench_score": null,
       "swe_bench_tier": null,
       "presence": "active",
-      "firstSeen": "2026-11-08T05:46:07.554146+00:00",
-      "lastSeen": "2026-11-09T02:25:25.406512+00:00",
+      "firstSeen": "2026-11-09T05:56:06.506182+00:00",
+      "lastSeen": "2026-11-09T05:56:06.506182+00:00",
       "removedDate": null,
       "status": null
     },
@@ -119,7 +120,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 98,
         "requests": 50
       },
       "benchmarks": null,
@@ -128,7 +129,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-26T04:26:39.847212+00:00",
-      "lastSeen": "2026-11-09T02:25:25.406512+00:00",
+      "lastSeen": "2026-11-09T05:56:06.506182+00:00",
       "removedDate": null,
       "status": null
     },
@@ -181,8 +182,8 @@
       "context_length": 1000000,
       "per_user_rpm": null,
       "health": {
-        "status": "degraded",
-        "success_rate": 94,
+        "status": "healthy",
+        "success_rate": 98,
         "requests": 50
       },
       "benchmarks": null,
@@ -191,7 +192,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-09T02:25:25.406512+00:00",
+      "lastSeen": "2026-11-09T05:56:06.506182+00:00",
       "removedDate": null,
       "status": null
     },
@@ -245,7 +246,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 98,
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -254,7 +255,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-09T02:25:25.406512+00:00",
+      "lastSeen": "2026-11-09T05:56:06.506182+00:00",
       "removedDate": null,
       "status": null
     },
@@ -318,7 +319,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
-      "lastSeen": "2026-11-09T02:25:25.406512+00:00",
+      "lastSeen": "2026-11-09T05:56:06.506182+00:00",
       "removedDate": null,
       "status": null
     },
@@ -375,8 +376,72 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
-      "lastSeen": "2026-11-09T02:25:25.406512+00:00",
+      "lastSeen": "2026-11-09T05:56:06.506182+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "object": "model",
+      "created": 1793646818,
+      "owned_by": "Free AI API",
+      "aliases": [
+        "YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Mistral Large 4",
+      "description": "Mistral AI 1T-total / 52B-active granular MoE for text and image input with reasoning, function calling and structured outputs, served in NVFP4 with DSpark speculative decoding.",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "top_provider": {
+        "max_completion_tokens": null
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "context_length": 262000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "degraded",
+        "success_rate": 82,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-11-08T05:46:07.554146+00:00",
+      "lastSeen": "2026-11-09T02:25:25.406512+00:00",
+      "removedDate": "2026-11-09T05:56:06.506182+00:00",
       "status": null
     },
     {

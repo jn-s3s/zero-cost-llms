@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-09T02:25:28.884486+00:00",
+  "updatedAt": "2026-11-09T05:56:10.525286+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "1e9b058b81594c6f973face3cf6893cc",
+  "generationId": "a3b006cac25c493ab17948d43466dece",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-09T02:25:31.597714+00:00",
+      "updatedAt": "2026-11-09T05:56:12.679623+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-09T02:25:29.736924+00:00",
+      "updatedAt": "2026-11-09T05:56:11.227450+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-09T02:25:29.561856+00:00",
+      "updatedAt": "2026-11-09T05:56:10.959351+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -69,20 +69,20 @@
     {
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
-      "status": "failed",
-      "updatedAt": "2026-11-07T05:42:49.708550+00:00",
+      "status": "success",
+      "updatedAt": "2026-11-09T05:56:11.328009+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
       "origin": "cache",
-      "refreshStatus": "failed",
+      "refreshStatus": "success",
       "refreshPersisted": true
     },
     {
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-09T02:25:29.944562+00:00",
+      "updatedAt": "2026-11-09T05:56:11.276689+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -333,7 +333,7 @@
       "tier": "A-",
       "index": 56.4,
       "basis": "both_workloads",
-      "confidence": "limited",
+      "confidence": "moderate",
       "provisional": true
     },
     {
@@ -3934,6 +3934,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:pollinations:community/Catniti/sensenova-6.8-flash-lite:free",
+      "name": "community/Catniti/sensenova-6.8-flash-lite:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/Catniti/sensenova-6.8-flash-lite:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:pollinations:community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
       "name": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
       "eligibility": "eligible",
@@ -3961,25 +3980,6 @@
         {
           "providerId": "pollinations",
           "modelId": "community/YoannDev90/muse-glimmer-30b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:pollinations:community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
-      "name": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
         }
       ],
       "generationDebugging": [],
@@ -4164,6 +4164,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "1e9b058b81594c6f973face3cf6893cc"
+    "generationId": "a3b006cac25c493ab17948d43466dece"
   }
 }
