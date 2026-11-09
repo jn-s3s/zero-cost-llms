@@ -17,63 +17,53 @@ from providers.base import models_url
 
 MAX_PAGES = 20
 
-
-def heading_model_ids(heading_group: Node) -> set[str]:
-    """Extract every model ID from a ``.heading-group`` element.
-
-    Model IDs live in ``<em><a><code>`` elements; any ``models/`` prefix is
-    stripped from the returned values.
-    """
-    model_ids: set[str] = set()
-    for anchor in heading_group.walk():
-        if anchor.tag != "a":
-            continue
-        for code in anchor.walk():
-            if code.tag != "code":
-                continue
-            value = code.text().strip()
-            value = value.removeprefix("models/")
-            if value:
-                model_ids.add(value)
-    return model_ids
+_MODEL_LINK = re.compile(r"\[`([^`]+)`\]\(/docs/models/[^)]*\)")
+_SECTION = re.compile(r"(?m)^## ")
+_STANDARD_TAB = re.compile(r'\{% tab title="Standard" %\}(.*?)\{% /tab %\}', re.DOTALL)
+_TABLE = re.compile(r"\{% table %\}(.*?)\{% /table %\}", re.DOTALL)
+_ROW_SEPARATOR = re.compile(r"(?m)^\s*---\s*$")
+_ROW_CELL = re.compile(r"(?m)^\s*\*\s?(.*)$")
+_FREE_TIER_HEADER = "free tier"
+_FREE_PRICES = frozenset({"free", "free of charge"})
 
 
-def _free_tier_column(rows: list[list[str]]) -> int | None:
+def _cell_text(value: str) -> str:
+    """Return a Markdown table cell without emphasis markers or padding."""
+    return re.sub(r"[*_`]", "", value).strip()
+
+
+def _free_tier_index(header: list[str]) -> int | None:
     """Return the column index whose header mentions the free tier."""
     return next(
-        (i for row in rows for i, value in enumerate(row) if "free tier" in value),
+        (i for i, value in enumerate(header) if _FREE_TIER_HEADER in value),
         None,
     )
 
 
 def _is_free_price(value: str) -> bool:
-    """Return whether a price cell value indicates free pricing."""
-    return value in {"free of charge", "free"}
+    """Return whether a Free Tier cell marks standard pricing as free."""
+    return _cell_text(value).lower() in _FREE_PRICES
 
 
-def is_free_standard_table(table: Node) -> bool:
-    """Return whether a pricing table lists free input and output prices.
+def _is_free_standard_table(table: str) -> bool:
+    """Return whether a Markdown Standard table lists free input and output prices.
 
     The table must contain a free-tier column whose input and output price
     cells all read "free of charge".
     """
     rows = []
-    for row in table.walk():
-        if row.tag == "tr":
-            cells = [
-                cell
-                for cell in row.children
-                if isinstance(cell, Node) and cell.tag in {"th", "td"}
-            ]
-            rows.append([" ".join(cell.text().split()).lower() for cell in cells])
-    free_index = _free_tier_column(rows)
+    for block in _ROW_SEPARATOR.split(table):
+        cells = [_cell_text(value) for value in _ROW_CELL.findall(block)]
+        if cells:
+            rows.append(cells)
+    if not rows:
+        return False
+    free_index = _free_tier_index([value.lower() for value in rows[0]])
     if free_index is None:
         return False
     prices: dict[str, list[bool]] = {}
-    for row in rows:
-        if not row:
-            continue
-        label = row[0]
+    for row in rows[1:]:
+        label = row[0].lower()
         for kind in ("input", "output"):
             if re.match(rf"^{kind}\b", label):
                 prices.setdefault(kind, []).append(
@@ -82,50 +72,37 @@ def is_free_standard_table(table: Node) -> bool:
     return all(prices.get(kind) and all(prices[kind]) for kind in ("input", "output"))
 
 
-def _inside_models_section(node: Node) -> bool:
-    """Return whether a node is nested inside a ``.models-section`` element."""
-    parent = node.parent
-    while parent is not None:
-        if parent.has_class("models-section"):
-            return True
-        parent = parent.parent
-    return False
-
-
-def google_free_ids(html: str | bytes) -> set[str]:
+def google_free_ids(markdown: str | bytes) -> set[str]:
     """Return model IDs whose Standard pricing is free of charge.
 
-    Each model is described in a ``.models-section`` followed by ``<section>``
-    elements holding its pricing tables; a model counts as free when its
-    Standard table lists free input and output prices.
+    Each model is introduced by a level-two heading with one or more model
+    links, and its Standard pricing table sits either in a ``Standard`` tab or
+    directly under the heading when the section has no tabs at all. A model
+    counts as free when both its input and output price cells in the Free Tier
+    column read ``Free of charge``.
+
+    Args:
+        markdown: The pricing page Markdown.
+
+    Returns:
+        The set of model IDs whose Standard input and output prices are free.
     """
-    root = parse_html(html)
+    if isinstance(markdown, bytes):
+        markdown = markdown.decode("utf-8")
     found: set[str] = set()
-    pending: set[str] = set()
-    for node in root.walk():
-        if node.has_class("models-section"):
-            pending = heading_model_ids(node)
+    for section in _SECTION.split(markdown)[1:]:
+        model_ids = set(_MODEL_LINK.findall(section))
+        if not model_ids:
             continue
-        if node.tag != "section" or _inside_models_section(node):
-            continue
-        standard = any(
-            child.tag == "h3"
-            and re.match(
-                r"^standard(?:\s+pricing)?$",
-                " ".join(child.text().split()).lower(),
-            )
-            for child in node.walk()
-        )
-        table = next(
-            (
-                child
-                for child in node.walk()
-                if child.tag == "table" and child.has_class("pricing-table")
-            ),
-            None,
-        )
-        if standard and table is not None and is_free_standard_table(table):
-            found.update(pending)
+        standard = _STANDARD_TAB.search(section)
+        if standard is not None:
+            source = standard.group(1)
+        elif "{% tabs %}" in section:
+            continue  # other tiers only, so no Standard price to read
+        else:
+            source = section
+        if any(_is_free_standard_table(table) for table in _TABLE.findall(source)):
+            found.update(model_ids)
     return found
 
 
@@ -216,7 +193,7 @@ def fetch(provider_config: dict) -> list[dict]:
     """Fetch the free Google AI models.
 
     The models list requires the API key named by the entry's "keyEnvVar";
-    free status is decided by scraping the pricing page referenced in
+    free status is decided by reading the Markdown pricing page referenced in
     "other_source" for Standard tables whose input and output prices are free
     of charge.
 

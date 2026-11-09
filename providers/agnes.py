@@ -25,11 +25,25 @@ def _is_free_price(text: str) -> bool:
     return match is not None and float(match.group(1)) == 0
 
 
+def _price_column(headers: list[str]) -> int | None:
+    """Return the index of the column showing the price currently charged."""
+    return next(
+        (
+            index
+            for index, header in enumerate(headers)
+            if "current price" in header or "trial price" in header
+        ),
+        None,
+    )
+
+
 def parse_pricing(html: str | bytes) -> set[str]:
     """Parse the Agnes pricing page to find free models.
 
-    The page contains tables with columns: Model | Billing item | List price | Current price.
-    Models are considered free if their current price is $0.
+    The page contains tables with columns: Model | Billing item | List price |
+    Trial price. Models are considered free only when every price row for
+    them is zero. The model cell spans the rows of one model, so later rows
+    inherit the model name from the row above.
 
     Args:
         html: The pricing page markup.
@@ -38,14 +52,12 @@ def parse_pricing(html: str | bytes) -> set[str]:
         A set of model IDs that are currently free.
     """
     root = parse_html(html)
-    free_models: set[str] = set()
+    prices: dict[str, list[bool]] = {}
 
-    # Find all tables
     for table in root.walk():
         if table.tag != "table":
             continue
 
-        # Check if this is a pricing table by looking at headers
         headers = []
         for row in table.walk():
             if row.tag != "tr":
@@ -56,17 +68,17 @@ def parse_pricing(html: str | bytes) -> set[str]:
                 if isinstance(cell, Node) and cell.tag in {"th", "td"}
             ]
             if cells and cells[0].tag == "th":
-                headers = [cell.text().strip().lower() for cell in cells]
+                headers = [" ".join(cell.text().split()).lower() for cell in cells]
                 break
 
-        # Look for tables with pricing columns
-        if "model" not in headers or "current price" not in headers:
+        if "model" not in headers:
             continue
-
+        price_col = _price_column(headers)
+        if price_col is None:
+            continue
         model_col = headers.index("model")
-        current_price_col = headers.index("current price")
 
-        # Parse data rows
+        model_name = None
         for row in table.walk():
             if row.tag != "tr":
                 continue
@@ -76,38 +88,43 @@ def parse_pricing(html: str | bytes) -> set[str]:
                 for cell in row.children
                 if isinstance(cell, Node) and cell.tag == "td"
             ]
-
-            if len(cells) <= max(model_col, current_price_col):
+            if not cells:
                 continue
 
-            # Extract model name from the first column
-            model_cell = cells[model_col]
-            # Model names are in <code> tags
-            model_name = None
-            for code in model_cell.walk():
-                if code.tag == "code":
-                    model_name = code.text().strip()
-                    break
-
-            if not model_name:
+            # The model cell uses rowspan, so a continuation row has one cell
+            # fewer and shifts the price column left by one.
+            skipped = len(headers) - len(cells)
+            if skipped == 0:
+                model_name = next(
+                    (
+                        code.text().strip()
+                        for code in cells[model_col].walk()
+                        if code.tag == "code"
+                    ),
+                    model_name,
+                )
+                price_index = price_col
+            elif skipped == 1 and model_col == 0:
+                price_index = price_col - 1
+            else:
                 continue
 
-            # Extract current price
-            price_cell = cells[current_price_col]
-            price_text = price_cell.text().strip()
+            if model_name is None or price_index < 0:
+                continue
+            prices.setdefault(model_name, []).append(
+                _is_free_price(cells[price_index].text().strip())
+            )
 
-            # Check if the price is free
-            if _is_free_price(price_text):
-                free_models.add(model_name)
-
-    return free_models
+    return {
+        model_name for model_name, values in prices.items() if values and all(values)
+    }
 
 
 def fetch(provider_config: dict) -> list[dict]:
     """Fetch free models from Agnes AI.
 
     Agnes AI's /models endpoint lists all models. We fetch the pricing page
-    to determine which models are currently free (current price = $0).
+    to determine which models are currently free (trial price = $0).
 
     Args:
         provider_config: Provider configuration from config/providers.json

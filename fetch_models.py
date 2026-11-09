@@ -32,6 +32,10 @@ CHECKPOINT_RELEASE_QUALIFIER = re.compile(
 )
 
 
+class EmptyFetchError(ValueError):
+    """Raised when a provider's fetch returns no free models."""
+
+
 def fetch_provider(provider: dict) -> list[dict]:
     """Fetch the free models for one provider.
 
@@ -289,14 +293,14 @@ def save_provider(output: Path, provider_id: str, models: list[dict]) -> None:
         models: Free model entries collected for the provider.
 
     Raises:
-        ValueError: If the provider id is unsafe, the model list is empty or two
-            models share an id.
+        EmptyFetchError: If the model list is empty.
+        ValueError: If the provider id is unsafe or two models share an id.
         KeyError: If a model carries neither the ``id`` nor, for ``googleai``,
             the ``name`` the duplicate check reads.
     """
     target = _target(output, provider_id)
     if not models:
-        raise ValueError("fetched no free models")
+        raise EmptyFetchError("fetched no free models")
     models = list(models)
     ids = [
         model["name"] if provider_id == "googleai" else model["id"] for model in models
@@ -507,18 +511,20 @@ def run(
             models = fetch_provider(provider)
             save_provider(output, provider_id, models)
         except Exception as error:  # noqa: BLE001
-            # Top-level fault boundary: one provider's unexpected response
-            # shape must not stop the providers after it, so anything raised
-            # here is reported with its traceback instead of escaping. The
-            # failure is also recorded in the provider's file so consumers see
-            # the status flip with the models from the last success kept.
+            # Top-level fault boundary: one provider's failure must not stop
+            # the providers after it. An empty catalogue is an expected
+            # outcome, so it is reported in one line; every other fault also
+            # prints its traceback. Either way the failure is recorded in the
+            # provider's file, keeping the models from the last success.
             print(
                 f"{provider_id}: {redact(one_line(error), credentials)}",
                 file=sys.stderr,
             )
-            print(
-                redact(safe_text(traceback.format_exc()), credentials), file=sys.stderr
-            )
+            if not isinstance(error, EmptyFetchError):
+                print(
+                    redact(safe_text(traceback.format_exc()), credentials),
+                    file=sys.stderr,
+                )
             try:
                 record_failure(
                     output,
