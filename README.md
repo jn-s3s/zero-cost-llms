@@ -25,7 +25,7 @@ The script needs Python 3.11 and nothing else: it runs on the standard library o
 | `mistral`      | Its id appears in the saved rate-limits snapshot that lists the free tier                                  |
 | `cohere`       | Its id starts with a name taken from the Cohere rate-limits page, lowercased and hyphenated                |
 | `llm7`         | `tier` is `"turbo"`                                                                                        |
-| `agnes`        | Its id appears on the Agnes pricing page at a current price of $0                                          |
+| `agnes`        | Every trial price row for its id on the Agnes pricing page is $0                                           |
 | `cline`        | `id` ends with `:free` or starts with `stealth`                                                            |
 | `qoder`        | `price_factor` is `0`                                                                                      |
 | `cerebras`     | Every model its keyed `/models` endpoint lists, with no price filter applied                               |
