@@ -3,13 +3,13 @@
     "sourceId": "aider_polyglot",
     "benchmark": "Aider",
     "status": "success",
-    "updatedAt": "2026-11-08T05:46:11.685510+00:00",
+    "updatedAt": "2026-11-09T02:25:29.561856+00:00",
     "lastFailedAt": null,
     "lastFailedMessage": null,
     "snapshot": {
         "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
         "sourceUrl": "https://raw.githubusercontent.com/Aider-AI/aider/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml",
-        "capturedAt": "2026-11-08T05:46:11.682416+00:00",
+        "capturedAt": "2026-11-09T02:25:29.559765+00:00",
         "contentHash": "85a50b25953512d18ba4bb0c23c0b8e626fcf9a5b52d287644b8a0b44b9535de",
         "contentHashDefinition": "SHA-256 of raw artifact bodies concatenated in artifacts order",
         "artifacts": [

@@ -4,8 +4,8 @@
     "benchmark": "BigCodeBench",
     "status": "failed",
     "updatedAt": "2026-11-07T05:42:49.708550+00:00",
-    "lastFailedAt": "2026-11-08T05:46:17.657397+00:00",
-    "lastFailedMessage": "HTTPError: HTTP Error 503: Service Temporarily Unavailable",
+    "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
+    "lastFailedMessage": "HTTPError: HTTP Error 502: Bad Gateway",
     "snapshot": {
         "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
         "sourceUrl": "https://datasets-server.huggingface.co/rows?dataset=bigcode%2Fbigcodebench-results&config=default&split=train&offset=0&length=100",

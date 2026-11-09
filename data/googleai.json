@@ -1,7 +1,7 @@
 {
-  "status": "failed",
-  "count": 20,
-  "updatedAt": "2026-11-02T05:43:24.928071+00:00",
+  "status": "success",
+  "count": 21,
+  "updatedAt": "2026-11-09T02:25:18.525849+00:00",
   "lastFailedAt": "2026-11-08T05:46:04.538337+00:00",
   "lastFailedMessage": "HTTPError: HTTP Error 301: cross-host redirect: https://aistudio.google.com/docs/pricing",
   "data": [
@@ -40,7 +40,7 @@
       "swe_bench_tier": "B",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -79,7 +79,7 @@
       "swe_bench_tier": "A+",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -104,7 +104,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -137,7 +137,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -170,7 +170,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -203,7 +203,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -236,7 +236,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -266,7 +266,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -299,7 +299,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -332,7 +332,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -363,7 +363,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -394,7 +394,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -425,7 +425,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -458,7 +458,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -487,7 +487,33 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "name": "models/gemini-2.5-flash-native-audio-preview-12-2025",
+      "version": "12-2025",
+      "displayName": "Gemini 2.5 Flash Native Audio Preview 12-2025",
+      "description": "Gemini 2.5 Flash Native Audio Preview 12-2025",
+      "inputTokenLimit": 131072,
+      "outputTokenLimit": 8192,
+      "supportedGenerationMethods": [
+        "countTokens",
+        "bidiGenerateContent"
+      ],
+      "temperature": 1,
+      "topP": 0.95,
+      "topK": 64,
+      "maxTemperature": 2,
+      "thinking": true,
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-09T02:25:18.525849+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -511,7 +537,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -540,7 +566,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -570,7 +596,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -594,7 +620,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },
@@ -623,7 +649,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.371477+00:00",
-      "lastSeen": "2026-11-02T05:43:24.928071+00:00",
+      "lastSeen": "2026-11-09T02:25:18.525849+00:00",
       "removedDate": null,
       "status": null
     },

@@ -1,14 +1,14 @@
 {
   "status": "success",
   "count": 4,
-  "updatedAt": "2026-11-08T05:46:09.401951+00:00",
+  "updatedAt": "2026-11-09T02:25:27.137144+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "codestral-latest",
       "object": "model",
-      "created": 1794109793,
+      "created": 1794185416,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -63,14 +63,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-08T05:46:09.401951+00:00",
+      "lastSeen": "2026-11-09T02:25:27.137144+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "gpt-oss:20b",
       "object": "model",
-      "created": 1794112862,
+      "created": 1794187045,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -125,14 +125,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-08T05:46:09.401951+00:00",
+      "lastSeen": "2026-11-09T02:25:27.137144+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-Nemo-Instruct-2407",
       "object": "model",
-      "created": 1794112826,
+      "created": 1794187263,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -187,14 +187,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-08T05:46:09.401951+00:00",
+      "lastSeen": "2026-11-09T02:25:27.137144+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "nemotron-3-nano:30b",
       "object": "model",
-      "created": 1794112862,
+      "created": 1794187045,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -249,7 +249,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-03T05:03:34.945863+00:00",
-      "lastSeen": "2026-11-08T05:46:09.401951+00:00",
+      "lastSeen": "2026-11-09T02:25:27.137144+00:00",
       "removedDate": null,
       "status": null
     },

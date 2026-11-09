@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 11,
-  "updatedAt": "2026-11-08T05:46:07.480367+00:00",
+  "count": 10,
+  "updatedAt": "2026-11-09T02:25:25.214268+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -50,8 +50,8 @@
       "autoRouting": {
         "models": [
           "dots-studio/dots-3-note-preview:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
           "nvidia/nemotron-3.5-super-vl:free",
-          "reflection/beam-free",
           "stealth/glyph-cluster"
         ]
       },
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
+      "lastSeen": "2026-11-09T02:25:25.214268+00:00",
       "removedDate": null,
       "status": null
     },
@@ -140,113 +140,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.424757+00:00",
-      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "reflection/beam-free",
-      "canonical_slug": "reflection/beam-free",
-      "hugging_face_id": "",
-      "name": "Reflection: Beam 1.0 (free)",
-      "isCustomLlm": true,
-      "created": 1756238927,
-      "description": "Your prompts and completions may be retained and used to train or improve the provider's services. Beam is Reflection's reasoning model for coding and agentic workflows, combining strong coding capabilities with fast, low-latency inference, served through Vercel AI Gateway at no cost. It supports function calling, structured outputs, and streaming, and takes text input only. Zero Data Retention is not available for this model.",
-      "context_length": 1048576,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0",
-        "input_cache_read": "0",
-        "input_cache_write": "0"
-      },
-      "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 131072,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "max_tokens",
-        "temperature",
-        "tools",
-        "reasoning",
-        "include_reasoning"
-      ],
-      "default_parameters": {},
-      "isFree": true,
-      "mayTrainOnYourPrompts": true,
-      "opencode": {
-        "reasoning_options": [
-          {
-            "type": "effort",
-            "values": [
-              "low",
-              "medium",
-              "high",
-              "xhigh",
-              "max"
-            ]
-          }
-        ],
-        "variants": {
-          "low": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "low"
-            }
-          },
-          "medium": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "medium"
-            }
-          },
-          "high": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "high"
-            }
-          },
-          "xhigh": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "xhigh"
-            }
-          },
-          "max": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "max"
-            }
-          }
-        }
-      },
-      "inference_provider_ids": [
-        "reflection"
-      ],
-      "preferredIndex": 3,
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
+      "lastSeen": "2026-11-09T02:25:25.214268+00:00",
       "removedDate": null,
       "status": null
     },
@@ -345,7 +239,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
+      "lastSeen": "2026-11-09T02:25:25.214268+00:00",
       "removedDate": null,
       "status": null
     },
@@ -420,7 +314,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:44.218449+00:00",
-      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
+      "lastSeen": "2026-11-09T02:25:25.214268+00:00",
       "removedDate": null,
       "status": null
     },
@@ -532,7 +426,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-04T05:57:33.805982+00:00",
-      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
+      "lastSeen": "2026-11-09T02:25:25.214268+00:00",
       "removedDate": null,
       "status": null
     },
@@ -606,7 +500,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
+      "lastSeen": "2026-11-09T02:25:25.214268+00:00",
       "removedDate": null,
       "status": null
     },
@@ -684,7 +578,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
+      "lastSeen": "2026-11-09T02:25:25.214268+00:00",
       "removedDate": null,
       "status": null
     },
@@ -770,7 +664,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
+      "lastSeen": "2026-11-09T02:25:25.214268+00:00",
       "removedDate": null,
       "status": null
     },
@@ -847,7 +741,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
+      "lastSeen": "2026-11-09T02:25:25.214268+00:00",
       "removedDate": null,
       "status": null
     },
@@ -913,8 +807,114 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
+      "lastSeen": "2026-11-09T02:25:25.214268+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "reflection/beam-free",
+      "canonical_slug": "reflection/beam-free",
+      "hugging_face_id": "",
+      "name": "Reflection: Beam 1.0 (free)",
+      "isCustomLlm": true,
+      "created": 1756238927,
+      "description": "Your prompts and completions may be retained and used to train or improve the provider's services. Beam is Reflection's reasoning model for coding and agentic workflows, combining strong coding capabilities with fast, low-latency inference, served through Vercel AI Gateway at no cost. It supports function calling, structured outputs, and streaming, and takes text input only. Zero Data Retention is not available for this model.",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0",
+        "input_cache_read": "0",
+        "input_cache_write": "0"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "tools",
+        "reasoning",
+        "include_reasoning"
+      ],
+      "default_parameters": {},
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {
+        "reasoning_options": [
+          {
+            "type": "effort",
+            "values": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ],
+        "variants": {
+          "low": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "low"
+            }
+          },
+          "medium": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "medium"
+            }
+          },
+          "high": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          },
+          "xhigh": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "xhigh"
+            }
+          },
+          "max": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "max"
+            }
+          }
+        }
+      },
+      "inference_provider_ids": [
+        "reflection"
+      ],
+      "preferredIndex": 3,
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-17T04:06:15.680348+00:00",
+      "lastSeen": "2026-11-08T05:46:07.480367+00:00",
+      "removedDate": "2026-11-09T02:25:25.214268+00:00",
       "status": null
     },
     {
