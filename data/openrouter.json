@@ -1,10 +1,100 @@
 {
   "status": "success",
   "count": 13,
-  "updatedAt": "2026-11-09T05:56:01.674910+00:00",
+  "updatedAt": "2026-11-10T06:59:40.548006+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "thinkingmachines/inkling-2-small:free",
+      "canonical_slug": "thinkingmachines/inkling-2-small-20261107",
+      "hugging_face_id": null,
+      "name": "Thinking Machines: Inkling 2 Small (free)",
+      "created": 1794261847,
+      "description": "Inkling 2 Small is a multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 594B total. It is the first model in the second Inkling...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "stop",
+        "temperature",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/thinkingmachines/inkling-2-small-20261107/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 30.6,
+          "coding_index": null,
+          "agentic_index": null
+        }
+      },
+      "reasoning": {
+        "mandatory": true,
+        "default_enabled": true,
+        "supported_efforts": [
+          "max",
+          "high",
+          "medium",
+          "low",
+          "minimal"
+        ],
+        "default_effort": "high"
+      },
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-10T06:59:40.548006+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "liquid/lfm-3-1.7b:free",
       "canonical_slug": "liquid/lfm-3-1.7b-20261106",
@@ -81,87 +171,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:39.442982+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "stealth/crouton-alpha",
-      "canonical_slug": "stealth/crouton-alpha",
-      "hugging_face_id": null,
-      "name": "Crouton Alpha",
-      "created": 1793669930,
-      "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in high-volume, repeated work. Developers...",
-      "context_length": 1048576,
-      "architecture": {
-        "modality": "text+image+file+audio+video->text",
-        "input_modalities": [
-          "text",
-          "image",
-          "video",
-          "file",
-          "audio"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 943718,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/stealth/crouton-alpha/endpoints"
-      },
-      "endpoints": [
-        "/api/v1/chat/completions",
-        "/api/v1/completions",
-        "/api/v1/messages",
-        "/api/v1/responses"
-      ],
-      "reasoning": {
-        "mandatory": true,
-        "supported_efforts": [
-          "max",
-          "xhigh",
-          "high",
-          "medium",
-          "low",
-          "minimal"
-        ],
-        "default_effort": "max"
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-11-04T05:57:29.173641+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
       "status": null
     },
@@ -229,7 +239,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
       "status": null
     },
@@ -307,7 +317,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:09.924694+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
       "status": null
     },
@@ -372,23 +382,23 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1127,
-            "win_rate": 31.3,
-            "rank": 82
+            "elo": 1122,
+            "win_rate": 30.8,
+            "rank": 83
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1150,
+            "elo": 1151,
             "win_rate": 33.4,
-            "rank": 88
+            "rank": 87
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1091,
-            "win_rate": 26.5,
-            "rank": 105
+            "elo": 1099,
+            "win_rate": 27.4,
+            "rank": 101
           },
           {
             "arena": "models",
@@ -400,9 +410,9 @@
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1140,
-            "win_rate": 31.4,
-            "rank": 85
+            "elo": 1143,
+            "win_rate": 31.7,
+            "rank": 84
           },
           {
             "arena": "models",
@@ -426,7 +436,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
       "status": null
     },
@@ -493,7 +503,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
       "status": null
     },
@@ -580,7 +590,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
       "status": null
     },
@@ -652,7 +662,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
       "status": null
     },
@@ -735,7 +745,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
       "status": null
     },
@@ -832,21 +842,21 @@
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1135,
+            "elo": 1136,
             "win_rate": 35.8,
-            "rank": 82
+            "rank": 81
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1067,
-            "win_rate": 32.1,
+            "elo": 1066,
+            "win_rate": 32,
             "rank": 76
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1137,
+            "elo": 1136,
             "win_rate": 36,
             "rank": 87
           },
@@ -880,7 +890,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
       "status": null
     },
@@ -964,7 +974,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1044,7 +1054,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1127,8 +1137,88 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "lastSeen": "2026-11-10T06:59:40.548006+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "stealth/crouton-alpha",
+      "canonical_slug": "stealth/crouton-alpha",
+      "hugging_face_id": null,
+      "name": "Crouton Alpha",
+      "created": 1793669930,
+      "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in high-volume, repeated work. Developers...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text+image+file+audio+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 943718,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/stealth/crouton-alpha/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
+      "reasoning": {
+        "mandatory": true,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low",
+          "minimal"
+        ],
+        "default_effort": "max"
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-11-04T05:57:29.173641+00:00",
+      "lastSeen": "2026-11-09T05:56:01.674910+00:00",
+      "removedDate": "2026-11-10T06:59:40.548006+00:00",
       "status": null
     },
     {

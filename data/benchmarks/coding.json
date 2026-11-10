@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-09T05:56:10.525286+00:00",
+  "updatedAt": "2026-11-10T06:59:48.313198+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "a3b006cac25c493ab17948d43466dece",
+  "generationId": "4e97a69ecc1a49779f6d55dcb5286e51",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 246,
+    "activeOfferings": 244,
     "eligibleOfferings": 83,
     "excludedOfferings": 52,
-    "uncertainOfferings": 111,
-    "models": 174,
+    "uncertainOfferings": 109,
+    "models": 172,
     "modelsWithGenerationEvidence": 11,
     "modelsWithEditingEvidence": 7,
     "ratedModels": 11,
-    "unratedModels": 163,
+    "unratedModels": 161,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 0,
       "C": 6,
-      "Unrated": 163
+      "Unrated": 161
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-09T05:56:12.679623+00:00",
+      "updatedAt": "2026-11-10T06:59:49.595244+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-09T05:56:11.227450+00:00",
+      "updatedAt": "2026-11-10T06:59:48.946732+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-09T05:56:10.959351+00:00",
+      "updatedAt": "2026-11-10T06:59:48.698959+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-09T05:56:11.328009+00:00",
+      "updatedAt": "2026-11-10T06:59:49.288039+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-09T05:56:11.276689+00:00",
+      "updatedAt": "2026-11-10T06:59:48.814649+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -2357,14 +2357,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:cline:stealth/crouton-alpha",
-      "name": "stealth/crouton-alpha",
+      "modelId": "offering:cline:thinkingmachines/inkling-2-small:free",
+      "name": "thinkingmachines/inkling-2-small:free",
       "eligibility": "uncertain",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "cline",
-          "modelId": "stealth/crouton-alpha"
+          "modelId": "thinkingmachines/inkling-2-small:free"
         }
       ],
       "generationDebugging": [],
@@ -2927,14 +2927,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:stealth/crouton-alpha",
-      "name": "Crouton Alpha",
+      "modelId": "offering:kilo:stealth/glyph-cluster",
+      "name": "Stealth: Glyph Cluster (free)",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "kilo",
-          "modelId": "stealth/crouton-alpha"
+          "modelId": "stealth/glyph-cluster"
         }
       ],
       "generationDebugging": [],
@@ -2946,14 +2946,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:stealth/glyph-cluster",
-      "name": "Stealth: Glyph Cluster (free)",
+      "modelId": "offering:kilo:thinkingmachines/inkling-2-small:free",
+      "name": "Thinking Machines: Inkling 2 Small (free)",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "kilo",
-          "modelId": "stealth/glyph-cluster"
+          "modelId": "thinkingmachines/inkling-2-small:free"
         }
       ],
       "generationDebugging": [],
@@ -2992,25 +2992,6 @@
         {
           "providerId": "llm7",
           "modelId": "gpt-oss:20b"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:llm7:nemotron-3-nano:30b",
-      "name": "nemotron-3-nano:30b",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "nemotron-3-nano:30b"
         }
       ],
       "generationDebugging": [],
@@ -3554,25 +3535,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:ollama-cloud:nemotron-3-nano:30b",
-      "name": "nemotron-3-nano:30b",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "ollama-cloud",
-          "modelId": "nemotron-3-nano:30b"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:ollama-cloud:nemotron-3-super",
       "name": "nemotron-3-super",
       "eligibility": "uncertain",
@@ -3619,25 +3581,6 @@
         {
           "providerId": "opencode-zen",
           "modelId": "beam-free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:opencode-zen:crouton-alpha-free",
-      "name": "Crouton Alpha Free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "opencode-zen",
-          "modelId": "crouton-alpha-free"
         }
       ],
       "generationDebugging": [],
@@ -3744,6 +3687,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:opencode-zen:longcat-2.5-free",
+      "name": "LongCat 2.5 Free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "longcat-2.5-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:opencode-zen:mimo-v2.6-flash-free",
       "name": "MiMo-V2.6-Flash Free",
       "eligibility": "eligible",
@@ -3752,6 +3714,25 @@
         {
           "providerId": "opencode-zen",
           "modelId": "mimo-v2.6-flash-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:opencode-zen:minimax-m3.1-flash-free",
+      "name": "MiniMax M3.1 Flash Free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "minimax-m3.1-flash-free"
         }
       ],
       "generationDebugging": [],
@@ -3858,14 +3839,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:openrouter:stealth/crouton-alpha",
-      "name": "Crouton Alpha",
+      "modelId": "offering:openrouter:thinkingmachines/inkling-2-small:free",
+      "name": "Thinking Machines: Inkling 2 Small (free)",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "openrouter",
-          "modelId": "stealth/crouton-alpha"
+          "modelId": "thinkingmachines/inkling-2-small:free"
         }
       ],
       "generationDebugging": [],
@@ -3934,25 +3915,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/Catniti/sensenova-6.8-flash-lite:free",
-      "name": "community/Catniti/sensenova-6.8-flash-lite:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/Catniti/sensenova-6.8-flash-lite:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:pollinations:community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
       "name": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
       "eligibility": "eligible",
@@ -3991,14 +3953,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/YoannDev90/vercel-beam:free",
-      "name": "community/YoannDev90/vercel-beam:free",
+      "modelId": "offering:pollinations:community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "name": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "pollinations",
-          "modelId": "community/YoannDev90/vercel-beam:free"
+          "modelId": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
         }
       ],
       "generationDebugging": [],
@@ -4164,6 +4126,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "a3b006cac25c493ab17948d43466dece"
+    "generationId": "4e97a69ecc1a49779f6d55dcb5286e51"
   }
 }

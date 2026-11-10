@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 9,
-  "updatedAt": "2026-11-09T05:56:02.375328+00:00",
+  "updatedAt": "2026-11-10T06:59:40.877053+00:00",
   "lastFailedAt": "2026-10-05T05:19:58.351994+00:00",
   "lastFailedMessage": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
   "data": [
@@ -59,7 +59,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-09T05:56:02.375328+00:00",
+      "lastSeen": "2026-11-10T06:59:40.877053+00:00",
       "removedDate": null,
       "status": null
     },
@@ -117,7 +117,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-09T05:56:02.375328+00:00",
+      "lastSeen": "2026-11-10T06:59:40.877053+00:00",
       "removedDate": null,
       "status": null
     },
@@ -175,7 +175,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-09T05:56:02.375328+00:00",
+      "lastSeen": "2026-11-10T06:59:40.877053+00:00",
       "removedDate": null,
       "status": null
     },
@@ -233,7 +233,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-09T05:56:02.375328+00:00",
+      "lastSeen": "2026-11-10T06:59:40.877053+00:00",
       "removedDate": null,
       "status": null
     },
@@ -291,7 +291,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-09T05:56:02.375328+00:00",
+      "lastSeen": "2026-11-10T06:59:40.877053+00:00",
       "removedDate": null,
       "status": null
     },
@@ -313,16 +313,16 @@
       "pricing": {
         "input": {
           "unit": "1M tokens",
-          "price_per_million_t": 0.0
+          "price_per_million_t": 0
         },
         "output": {
           "unit": "1M tokens",
-          "price_per_million_t": 0.0
+          "price_per_million_t": 0
         },
         "caching": {
           "read": {
             "unit": "1M tokens",
-            "price_per_million_t": 0.0
+            "price_per_million_t": 0
           }
         }
       },
@@ -372,7 +372,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-31T05:16:51.896330+00:00",
-      "lastSeen": "2026-11-09T05:56:02.375328+00:00",
+      "lastSeen": "2026-11-10T06:59:40.877053+00:00",
       "removedDate": null,
       "status": null
     },
@@ -454,7 +454,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-31T05:16:51.896330+00:00",
-      "lastSeen": "2026-11-09T05:56:02.375328+00:00",
+      "lastSeen": "2026-11-10T06:59:40.877053+00:00",
       "removedDate": null,
       "status": null
     },
@@ -530,7 +530,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-09T05:56:02.375328+00:00",
+      "lastSeen": "2026-11-10T06:59:40.877053+00:00",
       "removedDate": null,
       "status": null
     },
@@ -588,7 +588,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-09T05:56:02.375328+00:00",
+      "lastSeen": "2026-11-10T06:59:40.877053+00:00",
       "removedDate": null,
       "status": null
     },
