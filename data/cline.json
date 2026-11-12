@@ -1,10 +1,25 @@
 {
   "status": "success",
-  "count": 12,
-  "updatedAt": "2026-11-11T05:52:12.056708+00:00",
+  "count": 13,
+  "updatedAt": "2026-11-12T06:56:27.135657+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "baidu/ernie-5.5-flash-preview:free",
+      "object": "model",
+      "created": 1794333533,
+      "owned_by": "baidu",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-12T06:56:27.135657+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "thinkingmachines/inkling-2-small:free",
       "object": "model",
@@ -16,7 +31,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-10T06:59:47.004527+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },
@@ -31,7 +46,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:46.519565+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },
@@ -46,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:42.333707+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },
@@ -61,7 +76,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:53.351467+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },
@@ -76,7 +91,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },
@@ -91,7 +106,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },
@@ -106,7 +121,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },
@@ -121,7 +136,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },
@@ -136,7 +151,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },
@@ -151,7 +166,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },
@@ -166,7 +181,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },
@@ -181,7 +196,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-11T05:52:12.056708+00:00",
+      "lastSeen": "2026-11-12T06:56:27.135657+00:00",
       "removedDate": null,
       "status": null
     },

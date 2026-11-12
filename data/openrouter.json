@@ -1,10 +1,82 @@
 {
   "status": "success",
-  "count": 12,
-  "updatedAt": "2026-11-11T05:52:06.478265+00:00",
+  "count": 13,
+  "updatedAt": "2026-11-12T06:56:20.614072+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "baidu/ernie-5.5-flash-preview:free",
+      "canonical_slug": "baidu/ernie-5.5-flash-preview-20261110",
+      "hugging_face_id": "baidu/ERNIE-5.5-Flash-Preview",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "created": 1794333533,
+      "description": "ERNIE 5.5 Flash Preview is the latest foundation model in the ERNIE family, with comprehensive improvements in coding, agentic capabilities, knowledge work, and deep research. It has 280 billion total...",
+      "context_length": 1024000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 1024000,
+        "max_completion_tokens": 921600,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/baidu/ernie-5.5-flash-preview-20261110/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
+      "reasoning": {
+        "mandatory": true,
+        "default_enabled": true,
+        "supported_efforts": [
+          "high"
+        ],
+        "default_effort": "high"
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-12T06:56:20.614072+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "thinkingmachines/inkling-2-small:free",
       "canonical_slug": "thinkingmachines/inkling-2-small-20261107",
@@ -91,7 +163,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-10T06:59:40.548006+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -171,7 +243,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:39.442982+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -239,14 +311,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "nvidia/nemotron-3.5-super-vl:free",
       "canonical_slug": "nvidia/nemotron-3.5-super-vl-20261015",
-      "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+      "hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
       "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
       "created": 1792076662,
       "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video...",
@@ -304,15 +376,15 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1116,
+            "elo": 1117,
             "win_rate": 30.4,
-            "rank": 83
+            "rank": 85
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1150,
-            "win_rate": 33.4,
+            "elo": 1151,
+            "win_rate": 33.5,
             "rank": 88
           },
           {
@@ -325,23 +397,23 @@
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1103,
+            "elo": 1104,
             "win_rate": 29.5,
-            "rank": 96
+            "rank": 98
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1152,
-            "win_rate": 32.9,
-            "rank": 81
+            "elo": 1147,
+            "win_rate": 32.4,
+            "rank": 83
           },
           {
             "arena": "models",
             "category": "website",
-            "elo": 1166,
-            "win_rate": 35.3,
-            "rank": 85
+            "elo": 1167,
+            "win_rate": 35.6,
+            "rank": 86
           }
         ],
         "artificial_analysis": {
@@ -358,14 +430,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
       "canonical_slug": "dots-studio/dots-3-note-preview-20260813",
-      "hugging_face_id": null,
+      "hugging_face_id": "dots-studio/dots3-note-prev",
       "name": "Dots Studio: Dots3-Note Preview (free)",
       "created": 1786680361,
       "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
@@ -425,7 +497,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -512,7 +584,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -584,7 +656,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -667,7 +739,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -736,23 +808,23 @@
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1116,
+            "elo": 1115,
             "win_rate": 38,
-            "rank": 84
+            "rank": 86
           },
           {
             "arena": "models",
             "category": "asciiart",
-            "elo": 1097,
-            "win_rate": 37,
+            "elo": 1095,
+            "win_rate": 36.8,
             "rank": 63
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1142,
+            "elo": 1141,
             "win_rate": 35.9,
-            "rank": 92
+            "rank": 93
           },
           {
             "arena": "models",
@@ -764,30 +836,30 @@
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1134,
-            "win_rate": 35.8,
-            "rank": 80
+            "elo": 1133,
+            "win_rate": 35.7,
+            "rank": 84
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1064,
+            "elo": 1062,
             "win_rate": 32,
             "rank": 78
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1137,
-            "win_rate": 36.1,
-            "rank": 87
+            "elo": 1135,
+            "win_rate": 36,
+            "rank": 89
           },
           {
             "arena": "models",
             "category": "website",
-            "elo": 1142,
+            "elo": 1141,
             "win_rate": 35.2,
-            "rank": 99
+            "rank": 101
           }
         ],
         "artificial_analysis": {
@@ -812,7 +884,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -896,7 +968,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -976,7 +1048,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1059,7 +1131,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-11T05:52:06.478265+00:00",
+      "lastSeen": "2026-11-12T06:56:20.614072+00:00",
       "removedDate": null,
       "status": null
     },

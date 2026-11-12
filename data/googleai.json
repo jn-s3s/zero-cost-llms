@@ -1,9 +1,9 @@
 {
-  "status": "success",
+  "status": "failed",
   "count": 21,
   "updatedAt": "2026-11-11T05:52:07.185898+00:00",
-  "lastFailedAt": "2026-11-08T05:46:04.538337+00:00",
-  "lastFailedMessage": "HTTPError: HTTP Error 301: cross-host redirect: https://aistudio.google.com/docs/pricing",
+  "lastFailedAt": "2026-11-12T06:56:21.605024+00:00",
+  "lastFailedMessage": "HTTPError: HTTP Error 401: Unauthorized",
   "data": [
     {
       "name": "models/gemini-2.5-flash",

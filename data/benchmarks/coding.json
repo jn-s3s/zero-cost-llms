@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-11T05:52:13.494403+00:00",
+  "updatedAt": "2026-11-12T06:56:28.292915+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "a43ede8a1fba40448f003716da9f0370",
+  "generationId": "58cd4089672448c49231768735e74ec6",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 237,
-    "eligibleOfferings": 80,
+    "activeOfferings": 239,
+    "eligibleOfferings": 82,
     "excludedOfferings": 51,
     "uncertainOfferings": 106,
-    "models": 166,
+    "models": 168,
     "modelsWithGenerationEvidence": 11,
     "modelsWithEditingEvidence": 7,
     "ratedModels": 11,
-    "unratedModels": 155,
+    "unratedModels": 157,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 0,
       "C": 6,
-      "Unrated": 155
+      "Unrated": 157
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-11T05:52:14.654098+00:00",
+      "updatedAt": "2026-11-12T06:56:30.269553+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-11T05:52:13.900766+00:00",
+      "updatedAt": "2026-11-12T06:56:28.885778+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-11T05:52:13.777540+00:00",
+      "updatedAt": "2026-11-12T06:56:28.729750+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-11T05:52:14.097248+00:00",
+      "updatedAt": "2026-11-12T06:56:29.778398+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-11T05:52:13.889542+00:00",
+      "updatedAt": "2026-11-12T06:56:28.932258+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -2186,6 +2186,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:cline:baidu/ernie-5.5-flash-preview:free",
+      "name": "baidu/ernie-5.5-flash-preview:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "baidu/ernie-5.5-flash-preview:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:cline:cohere/north-mini-code:free",
       "name": "cohere/north-mini-code:free",
       "eligibility": "uncertain",
@@ -2756,6 +2775,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:kilo:baidu/ernie-5.5-flash-preview:free",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "baidu/ernie-5.5-flash-preview:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:kilo:cohere/north-mini-code:free",
       "name": "Cohere: North Mini Code (free)",
       "eligibility": "eligible",
@@ -2916,25 +2954,6 @@
         {
           "providerId": "llm7",
           "modelId": "codestral-latest"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:llm7:gpt-oss:20b",
-      "name": "gpt-oss:20b",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "gpt-oss:20b"
         }
       ],
       "generationDebugging": [],
@@ -3725,6 +3744,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:openrouter:baidu/ernie-5.5-flash-preview:free",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "baidu/ernie-5.5-flash-preview:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:openrouter:liquid/lfm-3-1.7b:free",
       "name": "LiquidAI: LFM3-1.7B (free)",
       "eligibility": "eligible",
@@ -3858,14 +3896,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
-      "name": "community/YoannDev90/muse-glimmer-30b:free",
+      "modelId": "offering:pollinations:community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "name": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "pollinations",
-          "modelId": "community/YoannDev90/muse-glimmer-30b:free"
+          "modelId": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
         }
       ],
       "generationDebugging": [],
@@ -4012,6 +4050,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "a43ede8a1fba40448f003716da9f0370"
+    "generationId": "58cd4089672448c49231768735e74ec6"
   }
 }
