@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-12T06:56:28.292915+00:00",
+  "updatedAt": "2026-11-13T06:19:55.380004+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "58cd4089672448c49231768735e74ec6",
+  "generationId": "2034dfbf5b7c40ecaa9963e424685b15",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 239,
-    "eligibleOfferings": 82,
-    "excludedOfferings": 51,
-    "uncertainOfferings": 106,
-    "models": 168,
+    "activeOfferings": 244,
+    "eligibleOfferings": 86,
+    "excludedOfferings": 50,
+    "uncertainOfferings": 108,
+    "models": 174,
     "modelsWithGenerationEvidence": 11,
     "modelsWithEditingEvidence": 7,
     "ratedModels": 11,
-    "unratedModels": 157,
+    "unratedModels": 163,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 0,
       "C": 6,
-      "Unrated": 157
+      "Unrated": 163
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-12T06:56:30.269553+00:00",
+      "updatedAt": "2026-11-13T06:19:58.213862+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-12T06:56:28.885778+00:00",
+      "updatedAt": "2026-11-13T06:19:55.885934+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-12T06:56:28.729750+00:00",
+      "updatedAt": "2026-11-13T06:19:56.116799+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-12T06:56:29.778398+00:00",
+      "updatedAt": "2026-11-13T06:19:56.557785+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-12T06:56:28.932258+00:00",
+      "updatedAt": "2026-11-13T06:19:56.219973+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -1304,6 +1304,25 @@
       "provisional": false
     },
     {
+      "modelId": "catalogue:apodex/apodex-1.1-mini-20261001",
+      "name": "Apodex 1.1 Mini",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "apodex/apodex-1.1-mini:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "catalogue:dots-studio/dots-3-note-preview-20260813",
       "name": "Dots3 Note Preview",
       "eligibility": "eligible",
@@ -2186,6 +2205,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:cline:apodex/apodex-1.1-mini:free",
+      "name": "apodex/apodex-1.1-mini:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "apodex/apodex-1.1-mini:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:cline:baidu/ernie-5.5-flash-preview:free",
       "name": "baidu/ernie-5.5-flash-preview:free",
       "eligibility": "uncertain",
@@ -2319,6 +2357,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:cline:particle-ai/particle-1:free",
+      "name": "particle-ai/particle-1:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "particle-ai/particle-1:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:cline:recursive/flint-v1.0:free",
       "name": "recursive/flint-v1.0:free",
       "eligibility": "uncertain",
@@ -2346,6 +2403,25 @@
         {
           "providerId": "cline",
           "modelId": "thinkingmachines/inkling-2-small:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cloudflare:0446c408-a932-495f-9ab6-9744760dbbe8",
+      "name": "@cf/google/embeddinggemma-2",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cloudflare",
+          "modelId": "0446c408-a932-495f-9ab6-9744760dbbe8"
         }
       ],
       "generationDebugging": [],
@@ -2737,6 +2813,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:googleai:models/gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "googleai",
+          "modelId": "models/gemini-4-hydrogen"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:googleai:models/gemini-robotics-er-2-streaming-preview",
       "name": "Gemini Robotics-ER 2 Streaming Preview",
       "eligibility": "uncertain",
@@ -2764,6 +2859,25 @@
         {
           "providerId": "groq",
           "modelId": "openai/gpt-oss-safeguard-20b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:apodex/apodex-1.1-mini:free",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "apodex/apodex-1.1-mini:free"
         }
       ],
       "generationDebugging": [],
@@ -2908,14 +3022,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:stealth/glyph-cluster",
-      "name": "Stealth: Glyph Cluster (free)",
+      "modelId": "offering:kilo:particle-ai/particle-1:free",
+      "name": "Particle AI: Particle-1 (free)",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "kilo",
-          "modelId": "stealth/glyph-cluster"
+          "modelId": "particle-ai/particle-1:free"
         }
       ],
       "generationDebugging": [],
@@ -2927,14 +3041,33 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:thinkingmachines/inkling-2-small:free",
-      "name": "Thinking Machines: Inkling 2 Small (free)",
+      "modelId": "offering:kilo:reflection/beam-free",
+      "name": "Reflection: Beam 1.0 (Free)",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "kilo",
-          "modelId": "thinkingmachines/inkling-2-small:free"
+          "modelId": "reflection/beam-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:stealth/glyph-cluster",
+      "name": "Glyph Cluster",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "stealth/glyph-cluster"
         }
       ],
       "generationDebugging": [],
@@ -3125,25 +3258,6 @@
         {
           "providerId": "nvidia",
           "modelId": "deepseek-ai/deepseek-v4.1-flash"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:nvidia:google/diffusiongemma-26b-a4b-it",
-      "name": "google/diffusiongemma-26b-a4b-it",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "nvidia",
-          "modelId": "google/diffusiongemma-26b-a4b-it"
         }
       ],
       "generationDebugging": [],
@@ -3801,6 +3915,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:openrouter:particle-ai/particle-1:free",
+      "name": "Particle AI: Particle-1 (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "particle-ai/particle-1:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:openrouter:recursive/flint-v1.0:free",
       "name": "Recursive: Flint (free)",
       "eligibility": "eligible",
@@ -3866,25 +3999,6 @@
         {
           "providerId": "orcarouter",
           "modelId": "orcarouter/free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:pollinations:community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
-      "name": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free"
         }
       ],
       "generationDebugging": [],
@@ -4050,6 +4164,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "58cd4089672448c49231768735e74ec6"
+    "generationId": "2034dfbf5b7c40ecaa9963e424685b15"
   }
 }

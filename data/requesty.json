@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 8,
-  "updatedAt": "2026-11-12T06:56:21.385678+00:00",
+  "updatedAt": "2026-11-13T06:19:47.519935+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -27,6 +27,8 @@
       "context_window": 262144,
       "supports_caching": true,
       "supports_vision": false,
+      "supports_vision_inline": false,
+      "supports_vision_url": false,
       "supports_computer_use": false,
       "supports_reasoning": true,
       "reasoning": {
@@ -62,7 +64,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-06T06:03:26.785887+00:00",
-      "lastSeen": "2026-11-12T06:56:21.385678+00:00",
+      "lastSeen": "2026-11-13T06:19:47.519935+00:00",
       "removedDate": null,
       "status": null
     },
@@ -88,6 +90,8 @@
       "context_window": 1048576,
       "supports_caching": false,
       "supports_vision": false,
+      "supports_vision_inline": false,
+      "supports_vision_url": false,
       "supports_computer_use": false,
       "supports_reasoning": true,
       "reasoning": {
@@ -123,7 +127,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-12T06:56:21.385678+00:00",
+      "lastSeen": "2026-11-13T06:19:47.519935+00:00",
       "removedDate": null,
       "status": null
     },
@@ -149,6 +153,8 @@
       "context_window": 131072,
       "supports_caching": false,
       "supports_vision": true,
+      "supports_vision_inline": false,
+      "supports_vision_url": false,
       "supports_computer_use": false,
       "supports_reasoning": true,
       "reasoning": {
@@ -184,7 +190,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-12T06:56:21.385678+00:00",
+      "lastSeen": "2026-11-13T06:19:47.519935+00:00",
       "removedDate": null,
       "status": null
     },
@@ -210,6 +216,8 @@
       "context_window": 131072,
       "supports_caching": false,
       "supports_vision": true,
+      "supports_vision_inline": false,
+      "supports_vision_url": false,
       "supports_computer_use": false,
       "supports_reasoning": true,
       "reasoning": {
@@ -245,7 +253,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-12T06:56:21.385678+00:00",
+      "lastSeen": "2026-11-13T06:19:47.519935+00:00",
       "removedDate": null,
       "status": null
     },
@@ -271,6 +279,8 @@
       "context_window": 1048576,
       "supports_caching": false,
       "supports_vision": false,
+      "supports_vision_inline": false,
+      "supports_vision_url": false,
       "supports_computer_use": false,
       "supports_reasoning": true,
       "reasoning": {
@@ -306,7 +316,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-12T06:56:21.385678+00:00",
+      "lastSeen": "2026-11-13T06:19:47.519935+00:00",
       "removedDate": null,
       "status": null
     },
@@ -332,6 +342,8 @@
       "context_window": 262144,
       "supports_caching": false,
       "supports_vision": false,
+      "supports_vision_inline": true,
+      "supports_vision_url": true,
       "supports_computer_use": false,
       "supports_reasoning": true,
       "reasoning": {
@@ -363,7 +375,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-12T06:56:21.385678+00:00",
+      "lastSeen": "2026-11-13T06:19:47.519935+00:00",
       "removedDate": null,
       "status": null
     },
@@ -389,6 +401,8 @@
       "context_window": 262144,
       "supports_caching": false,
       "supports_vision": true,
+      "supports_vision_inline": true,
+      "supports_vision_url": true,
       "supports_computer_use": false,
       "supports_reasoning": true,
       "reasoning": {
@@ -420,7 +434,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-12T06:56:21.385678+00:00",
+      "lastSeen": "2026-11-13T06:19:47.519935+00:00",
       "removedDate": null,
       "status": null
     },
@@ -446,6 +460,8 @@
       "context_window": 262144,
       "supports_caching": false,
       "supports_vision": false,
+      "supports_vision_inline": false,
+      "supports_vision_url": false,
       "supports_computer_use": false,
       "supports_reasoning": true,
       "supports_image_generation": false,
@@ -471,7 +487,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-12T06:56:21.385678+00:00",
+      "lastSeen": "2026-11-13T06:19:47.519935+00:00",
       "removedDate": null,
       "status": null
     },
