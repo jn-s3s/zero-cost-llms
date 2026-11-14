@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-13T06:19:55.380004+00:00",
+  "updatedAt": "2026-11-14T06:00:18.055084+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "2034dfbf5b7c40ecaa9963e424685b15",
+  "generationId": "bb2d4288f26f46df9b37e5dd8529ebc0",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 244,
-    "eligibleOfferings": 86,
+    "activeOfferings": 248,
+    "eligibleOfferings": 87,
     "excludedOfferings": 50,
-    "uncertainOfferings": 108,
-    "models": 174,
-    "modelsWithGenerationEvidence": 11,
-    "modelsWithEditingEvidence": 7,
-    "ratedModels": 11,
-    "unratedModels": 163,
+    "uncertainOfferings": 111,
+    "models": 178,
+    "modelsWithGenerationEvidence": 12,
+    "modelsWithEditingEvidence": 8,
+    "ratedModels": 12,
+    "unratedModels": 166,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -24,9 +24,9 @@
       "A": 0,
       "A-": 1,
       "B+": 3,
-      "B": 0,
+      "B": 1,
       "C": 6,
-      "Unrated": 163
+      "Unrated": 166
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-13T06:19:58.213862+00:00",
+      "updatedAt": "2026-11-14T06:00:20.110211+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-13T06:19:55.885934+00:00",
+      "updatedAt": "2026-11-14T06:00:18.658060+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-13T06:19:56.116799+00:00",
+      "updatedAt": "2026-11-14T06:00:18.504086+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-13T06:19:56.557785+00:00",
+      "updatedAt": "2026-11-14T06:00:18.818794+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-13T06:19:56.219973+00:00",
+      "updatedAt": "2026-11-14T06:00:18.843895+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -553,6 +553,64 @@
       ],
       "tier": "B+",
       "index": 44.3,
+      "basis": "both_workloads",
+      "confidence": "limited",
+      "provisional": true
+    },
+    {
+      "modelId": "checkpoint:minimax-m2.7",
+      "name": "MiniMax M2.7",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "minimax-m2.7"
+        }
+      ],
+      "generationDebugging": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "minimax-m2.7",
+          "cohort": "livebench:2026-01-08:coding",
+          "metric": "category_mean",
+          "score": 54.899,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Coding",
+            "taskColumns": [
+              "code_generation",
+              "code_completion"
+            ]
+          },
+          "evidenceId": "evidence:377d7163a68b4e93ad541834",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "repositoryEditing": [
+        {
+          "benchmark": "LiveBench",
+          "evaluatedModelId": "minimax-m2.7",
+          "cohort": "livebench:2026-01-08:agentic_coding",
+          "metric": "category_mean",
+          "score": 50.0,
+          "unit": "score_0_100",
+          "configuration": {
+            "category": "Agentic Coding",
+            "taskColumns": [
+              "javascript",
+              "typescript",
+              "python"
+            ]
+          },
+          "evidenceId": "evidence:4ba8e5a89c81e316d195d819",
+          "applicability": "checkpoint_evidence_endpoint_unverified",
+          "configurationStatus": "published"
+        }
+      ],
+      "tier": "B",
+      "index": 31.3,
       "basis": "both_workloads",
       "confidence": "limited",
       "provisional": true
@@ -1304,14 +1362,33 @@
       "provisional": false
     },
     {
-      "modelId": "catalogue:apodex/apodex-1.1-mini-20261001",
-      "name": "Apodex 1.1 Mini",
-      "eligibility": "eligible",
+      "modelId": "catalogue:DeepSeek-V4-Flash-0731",
+      "name": "DeepSeek V4 Flash 0731",
+      "eligibility": "uncertain",
       "identityStatus": "established",
       "providers": [
         {
-          "providerId": "openrouter",
-          "modelId": "apodex/apodex-1.1-mini:free"
+          "providerId": "llm7",
+          "modelId": "DeepSeek-V4-Flash-0731"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "catalogue:GLM-5.3-Flash",
+      "name": "llm7 GLM 5.3 Flash",
+      "eligibility": "uncertain",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "GLM-5.3-Flash"
         }
       ],
       "generationDebugging": [],
@@ -2007,25 +2084,6 @@
       "provisional": false
     },
     {
-      "modelId": "hf:LiquidAI/LFM2.5-2.6B",
-      "name": "LFM2.5-2.6B",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "openrouter",
-          "modelId": "liquid/lfm-2.5-2.6b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "hf:google/gemma-4-26B-A4B-it",
       "name": "Gemma 4 26B A4B Instruct",
       "eligibility": "eligible",
@@ -2205,25 +2263,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:cline:apodex/apodex-1.1-mini:free",
-      "name": "apodex/apodex-1.1-mini:free",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "cline",
-          "modelId": "apodex/apodex-1.1-mini:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:cline:baidu/ernie-5.5-flash-preview:free",
       "name": "baidu/ernie-5.5-flash-preview:free",
       "eligibility": "uncertain",
@@ -2281,14 +2320,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:cline:liquid/lfm-2.5-2.6b:free",
-      "name": "liquid/lfm-2.5-2.6b:free",
+      "modelId": "offering:cline:inclusionai/ling-3.2-flash:free",
+      "name": "inclusionai/ling-3.2-flash:free",
       "eligibility": "uncertain",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "cline",
-          "modelId": "liquid/lfm-2.5-2.6b:free"
+          "modelId": "inclusionai/ling-3.2-flash:free"
         }
       ],
       "generationDebugging": [],
@@ -2870,25 +2909,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:apodex/apodex-1.1-mini:free",
-      "name": "Apodex: Apodex 1.1 Mini (free)",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "kilo",
-          "modelId": "apodex/apodex-1.1-mini:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:kilo:baidu/ernie-5.5-flash-preview:free",
       "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
       "eligibility": "eligible",
@@ -2916,6 +2936,25 @@
         {
           "providerId": "kilo",
           "modelId": "cohere/north-mini-code:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:kilo:inclusionai/ling-3.2-flash:free",
+      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "kilo",
+          "modelId": "inclusionai/ling-3.2-flash:free"
         }
       ],
       "generationDebugging": [],
@@ -3087,6 +3126,25 @@
         {
           "providerId": "llm7",
           "modelId": "codestral-latest"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:llm7:gpt-oss:20b",
+      "name": "gpt-oss:20b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "gpt-oss:20b"
         }
       ],
       "generationDebugging": [],
@@ -3877,6 +3935,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:openrouter:inclusionai/ling-3.2-flash:free",
+      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "inclusionai/ling-3.2-flash:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:openrouter:liquid/lfm-3-1.7b:free",
       "name": "LiquidAI: LFM3-1.7B (free)",
       "eligibility": "eligible",
@@ -4010,14 +4087,33 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
-      "name": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "modelId": "offering:pollinations:community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
+      "name": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "pollinations",
-          "modelId": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
+          "modelId": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
+      "name": "community/YoannDev90/muse-glimmer-30b:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/muse-glimmer-30b:free"
         }
       ],
       "generationDebugging": [],
@@ -4037,6 +4133,25 @@
         {
           "providerId": "pollinations",
           "modelId": "community/YoannDev90/vercel-nemotron-3.5-lightning:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/vendouple/muse-glimmer-30b:free",
+      "name": "community/vendouple/muse-glimmer-30b:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/vendouple/muse-glimmer-30b:free"
         }
       ],
       "generationDebugging": [],
@@ -4164,6 +4279,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "2034dfbf5b7c40ecaa9963e424685b15"
+    "generationId": "bb2d4288f26f46df9b37e5dd8529ebc0"
   }
 }

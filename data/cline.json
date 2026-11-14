@@ -1,10 +1,25 @@
 {
   "status": "success",
-  "count": 15,
-  "updatedAt": "2026-11-13T06:19:54.154268+00:00",
+  "count": 14,
+  "updatedAt": "2026-11-14T06:00:16.616111+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "inclusionai/ling-3.2-flash:free",
+      "object": "model",
+      "created": 1794591958,
+      "owned_by": "inclusionai",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-14T06:00:16.616111+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "baidu/ernie-5.5-flash-preview:free",
       "object": "model",
@@ -16,7 +31,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-12T06:56:27.135657+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -31,7 +46,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-10T06:59:47.004527+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -46,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:46.519565+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -61,7 +76,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-13T06:19:54.154268+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -76,7 +91,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:42.333707+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -91,22 +106,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:53.351467+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "apodex/apodex-1.1-mini:free",
-      "object": "model",
-      "created": 1790875335,
-      "owned_by": "apodex",
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-02T03:35:37.114501+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -121,22 +121,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "object": "model",
-      "created": 1786470519,
-      "owned_by": "liquid",
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -151,7 +136,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -166,7 +151,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -181,7 +166,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -196,7 +181,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -211,7 +196,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
       "status": null
     },
@@ -226,8 +211,38 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "lastSeen": "2026-11-14T06:00:16.616111+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "apodex/apodex-1.1-mini:free",
+      "object": "model",
+      "created": 1790875335,
+      "owned_by": "apodex",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-02T03:35:37.114501+00:00",
+      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "removedDate": "2026-11-14T06:00:16.616111+00:00",
+      "status": null
+    },
+    {
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "object": "model",
+      "created": 1786470519,
+      "owned_by": "liquid",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:13.898396+00:00",
+      "lastSeen": "2026-11-13T06:19:54.154268+00:00",
+      "removedDate": "2026-11-14T06:00:16.616111+00:00",
       "status": null
     },
     {

@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 2,
-  "updatedAt": "2026-11-13T06:19:55.155636+00:00",
+  "updatedAt": "2026-11-14T06:00:17.868751+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -29,7 +29,7 @@
       "swe_bench_tier": "B",
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-      "lastSeen": "2026-11-13T06:19:55.155636+00:00",
+      "lastSeen": "2026-11-14T06:00:17.868751+00:00",
       "removedDate": null,
       "status": null
     },
@@ -39,11 +39,11 @@
       "created": 0,
       "owned_by": "Cerebras",
       "rate_limits": {
-        "rpm": 5,
-        "uncached_tpm": 30000,
-        "total_tpm": 90000,
-        "tph": 1000000,
-        "tpd": 1000000
+        "rpm": 300,
+        "uncached_tpm": 150000,
+        "total_tpm": null,
+        "tph": null,
+        "tpd": null
       },
       "benchmarks": null,
       "curated_benchmarks": null,
@@ -51,7 +51,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-      "lastSeen": "2026-11-13T06:19:55.155636+00:00",
+      "lastSeen": "2026-11-14T06:00:17.868751+00:00",
       "removedDate": null,
       "status": null
     }
