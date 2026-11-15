@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-14T06:00:18.055084+00:00",
+  "updatedAt": "2026-11-15T06:05:07.218124+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "bb2d4288f26f46df9b37e5dd8529ebc0",
+  "generationId": "7d1cfdb0364f4fc09c21f76533054626",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-14T06:00:20.110211+00:00",
+      "updatedAt": "2026-11-15T06:05:09.226266+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-14T06:00:18.658060+00:00",
+      "updatedAt": "2026-11-15T06:05:07.811521+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-14T06:00:18.504086+00:00",
+      "updatedAt": "2026-11-15T06:05:07.721431+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-14T06:00:18.818794+00:00",
+      "updatedAt": "2026-11-15T06:05:08.271530+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-14T06:00:18.843895+00:00",
+      "updatedAt": "2026-11-15T06:05:07.976708+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -1370,25 +1370,6 @@
         {
           "providerId": "llm7",
           "modelId": "DeepSeek-V4-Flash-0731"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "catalogue:GLM-5.3-Flash",
-      "name": "llm7 GLM 5.3 Flash",
-      "eligibility": "uncertain",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "GLM-5.3-Flash"
         }
       ],
       "generationDebugging": [],
@@ -3137,6 +3118,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:llm7:glm-5.3-flash",
+      "name": "glm-5.3-flash",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "glm-5.3-flash"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:llm7:gpt-oss:20b",
       "name": "gpt-oss:20b",
       "eligibility": "uncertain",
@@ -4279,6 +4279,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "bb2d4288f26f46df9b37e5dd8529ebc0"
+    "generationId": "7d1cfdb0364f4fc09c21f76533054626"
   }
 }
