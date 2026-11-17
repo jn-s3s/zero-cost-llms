@@ -1,14 +1,14 @@
 {
   "status": "success",
   "count": 11,
-  "updatedAt": "2026-11-16T06:04:20.514659+00:00",
+  "updatedAt": "2026-11-17T07:40:43.805517+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "mimo-v2.6-flash-free",
       "object": "model",
-      "created": 1794809060,
+      "created": 1794901243,
       "owned_by": "opencode",
       "name": "MiMo-V2.6-Flash Free",
       "canonical_id": "xiaomi/mimo-v2.6-flash",
@@ -86,7 +86,7 @@
               "choice": [
                 "auto"
               ],
-              "updates": false
+              "updates": []
             }
           }
         }
@@ -97,14 +97,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.756466+00:00",
-      "lastSeen": "2026-11-16T06:04:20.514659+00:00",
+      "lastSeen": "2026-11-17T07:40:43.805517+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "deepseek-v4.1-flash-free",
       "object": "model",
-      "created": 1794809060,
+      "created": 1794901243,
       "owned_by": "opencode",
       "name": "DeepSeek V4.1 Flash Free",
       "canonical_id": "deepseek/deepseek-v4.1-flash-1017",
@@ -182,7 +182,7 @@
                 "required",
                 "tool"
               ],
-              "updates": false
+              "updates": []
             }
           }
         }
@@ -193,14 +193,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.866960+00:00",
-      "lastSeen": "2026-11-16T06:04:20.514659+00:00",
+      "lastSeen": "2026-11-17T07:40:43.805517+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "glm-5.3-flash-free",
       "object": "model",
-      "created": 1794809060,
+      "created": 1794901243,
       "owned_by": "opencode",
       "name": "GLM-5.3-Flash Free",
       "canonical_id": "zhipuai/glm-5.3-flash",
@@ -274,7 +274,7 @@
               "choice": [
                 "auto"
               ],
-              "updates": false
+              "updates": []
             }
           }
         }
@@ -285,14 +285,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:16.559454+00:00",
-      "lastSeen": "2026-11-16T06:04:20.514659+00:00",
+      "lastSeen": "2026-11-17T07:40:43.805517+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "longcat-2.5-free",
       "object": "model",
-      "created": 1794809060,
+      "created": 1794901243,
       "owned_by": "opencode",
       "name": "LongCat 2.5 Free",
       "canonical_id": "meituan/longcat-2.5",
@@ -354,7 +354,7 @@
           },
           "capabilities": {
             "tools": {
-              "updates": false
+              "updates": []
             }
           }
         }
@@ -365,14 +365,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-10T06:59:45.566492+00:00",
-      "lastSeen": "2026-11-16T06:04:20.514659+00:00",
+      "lastSeen": "2026-11-17T07:40:43.805517+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "iceman-free",
       "object": "model",
-      "created": 1794809060,
+      "created": 1794901243,
       "owned_by": "opencode",
       "name": "Iceman Free",
       "type": "chat",
@@ -424,7 +424,7 @@
           },
           "capabilities": {
             "tools": {
-              "updates": false
+              "updates": []
             }
           }
         }
@@ -435,14 +435,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:44.562202+00:00",
-      "lastSeen": "2026-11-16T06:04:20.514659+00:00",
+      "lastSeen": "2026-11-17T07:40:43.805517+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "inkling-2-small-free",
       "object": "model",
-      "created": 1794809060,
+      "created": 1794901243,
       "owned_by": "opencode",
       "name": "Inkling 2 Small Free",
       "canonical_id": "thinkingmachines/inkling-2-small",
@@ -512,7 +512,7 @@
           },
           "capabilities": {
             "tools": {
-              "updates": false
+              "updates": []
             }
           }
         }
@@ -523,14 +523,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:44.562202+00:00",
-      "lastSeen": "2026-11-16T06:04:20.514659+00:00",
+      "lastSeen": "2026-11-17T07:40:43.805517+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "beam-free",
       "object": "model",
-      "created": 1794809060,
+      "created": 1794901243,
       "owned_by": "opencode",
       "name": "Beam Free",
       "canonical_id": "reflection/beam-1.0-501b-a23b",
@@ -606,7 +606,7 @@
                 "required",
                 "tool"
               ],
-              "updates": false
+              "updates": []
             }
           }
         }
@@ -617,14 +617,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:16.559454+00:00",
-      "lastSeen": "2026-11-16T06:04:20.514659+00:00",
+      "lastSeen": "2026-11-17T07:40:43.805517+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "flint-40b-free",
       "object": "model",
-      "created": 1794809060,
+      "created": 1794901243,
       "owned_by": "opencode",
       "name": "Flint 40B Free",
       "canonical_id": "recursive/flint",
@@ -693,7 +693,7 @@
           },
           "capabilities": {
             "tools": {
-              "updates": false
+              "updates": []
             }
           }
         }
@@ -704,14 +704,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:39.817399+00:00",
-      "lastSeen": "2026-11-16T06:04:20.514659+00:00",
+      "lastSeen": "2026-11-17T07:40:43.805517+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "nemotron-3.5-super-vl-free",
       "object": "model",
-      "created": 1794809060,
+      "created": 1794901243,
       "owned_by": "opencode",
       "name": "Nemotron 3.5 Super VL Free",
       "canonical_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
@@ -782,7 +782,7 @@
           },
           "capabilities": {
             "tools": {
-              "updates": false
+              "updates": []
             }
           }
         }
@@ -793,14 +793,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.866960+00:00",
-      "lastSeen": "2026-11-16T06:04:20.514659+00:00",
+      "lastSeen": "2026-11-17T07:40:43.805517+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "nemotron-3.5-lightning-free",
       "object": "model",
-      "created": 1794809060,
+      "created": 1794901243,
       "owned_by": "opencode",
       "name": "Nemotron 3.5 Lightning Free",
       "canonical_id": "nvidia/nemotron-3.5-lightning",
@@ -862,7 +862,7 @@
           },
           "capabilities": {
             "tools": {
-              "updates": false
+              "updates": []
             }
           }
         }
@@ -873,7 +873,91 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.756466+00:00",
-      "lastSeen": "2026-11-16T06:04:20.514659+00:00",
+      "lastSeen": "2026-11-17T07:40:43.805517+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "hy4-flash-free",
+      "object": "model",
+      "created": 1794901243,
+      "owned_by": "opencode",
+      "name": "Hy4 flash Free",
+      "canonical_id": "tencent/hy4-flash",
+      "type": "chat",
+      "description": "Tencent's lower-cost Hy4 tier for everyday agent and productivity tasks, with image understanding and a 1M-token context window.",
+      "family": "Hy",
+      "open_weights": false,
+      "release_date": "2026-11-16",
+      "last_updated": "2026-11-16",
+      "modalities": {
+        "input": [
+          "text",
+          "image/jpeg",
+          "image/png",
+          "image/webp",
+          "image/gif"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": {
+        "tools": {
+          "supported": true
+        },
+        "reasoning": {
+          "supported": true,
+          "effort": [
+            "none",
+            "high"
+          ]
+        },
+        "temperature": true,
+        "top_p": true,
+        "top_k": true,
+        "system_updates": false,
+        "effort_updates": false
+      },
+      "limit": {
+        "context": 1048576,
+        "input": 983040,
+        "output": 65536
+      },
+      "cost": {
+        "text": {
+          "input": {
+            "price": 0,
+            "cache": {
+              "read": 0
+            }
+          },
+          "output": {
+            "price": 0
+          }
+        }
+      },
+      "api": {
+        "chat-completions": {
+          "base_url": "https://opencode.ai/inference/openai/v1",
+          "sdk": {
+            "aisdk": "@ai-sdk/openai-compatible",
+            "opencodeai": "@opencode/ai/providers/openai-compatible"
+          },
+          "capabilities": {
+            "tools": {
+              "updates": []
+            }
+          }
+        }
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-17T07:40:43.805517+00:00",
+      "lastSeen": "2026-11-17T07:40:43.805517+00:00",
       "removedDate": null,
       "status": null
     },
@@ -967,10 +1051,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-20T04:33:30.366084+00:00",
       "lastSeen": "2026-11-16T06:04:20.514659+00:00",
-      "removedDate": null,
+      "removedDate": "2026-11-17T07:40:43.805517+00:00",
       "status": null
     },
     {

@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-16T06:04:24.257461+00:00",
+  "updatedAt": "2026-11-17T07:40:47.999996+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "0c5c6065a7344223ba14b441f6dee150",
+  "generationId": "66e58333618a49fa8a9b6fb9455e439e",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 248,
-    "eligibleOfferings": 87,
-    "excludedOfferings": 50,
-    "uncertainOfferings": 111,
-    "models": 178,
+    "activeOfferings": 244,
+    "eligibleOfferings": 84,
+    "excludedOfferings": 51,
+    "uncertainOfferings": 109,
+    "models": 173,
     "modelsWithGenerationEvidence": 12,
     "modelsWithEditingEvidence": 8,
     "ratedModels": 12,
-    "unratedModels": 166,
+    "unratedModels": 161,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 1,
       "C": 6,
-      "Unrated": 166
+      "Unrated": 161
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-16T06:04:25.619303+00:00",
+      "updatedAt": "2026-11-17T07:40:49.535319+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-16T06:04:24.723757+00:00",
+      "updatedAt": "2026-11-17T07:40:48.562961+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-16T06:04:24.555659+00:00",
+      "updatedAt": "2026-11-17T07:40:48.457833+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-16T06:04:25.296979+00:00",
+      "updatedAt": "2026-11-17T07:40:48.854801+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-16T06:04:24.687393+00:00",
+      "updatedAt": "2026-11-17T07:40:48.653729+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -2928,25 +2928,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:inclusionai/ling-3.2-flash:free",
-      "name": "inclusionAI: Ling 3.2 Flash (free)",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "kilo",
-          "modelId": "inclusionai/ling-3.2-flash:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:kilo:kilo-auto/free",
       "name": "Auto Free",
       "eligibility": "eligible",
@@ -3137,6 +3118,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:llm7:gpt-oss:120b",
+      "name": "gpt-oss:120b",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "llm7",
+          "modelId": "gpt-oss:120b"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:llm7:gpt-oss:20b",
       "name": "gpt-oss:20b",
       "eligibility": "uncertain",
@@ -3297,63 +3297,6 @@
         {
           "providerId": "mistral",
           "modelId": "voxtral-small-2507"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:nvidia:deepseek-ai/deepseek-v4.1-flash",
-      "name": "deepseek-ai/deepseek-v4.1-flash",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "nvidia",
-          "modelId": "deepseek-ai/deepseek-v4.1-flash"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:nvidia:meta/llama-3.2-90b-vision-instruct",
-      "name": "meta/llama-3.2-90b-vision-instruct",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "nvidia",
-          "modelId": "meta/llama-3.2-90b-vision-instruct"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:nvidia:meta/llama-guard-4-12b",
-      "name": "meta/llama-guard-4-12b",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "nvidia",
-          "modelId": "meta/llama-guard-4-12b"
         }
       ],
       "generationDebugging": [],
@@ -3783,6 +3726,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:opencode-zen:hy4-flash-free",
+      "name": "Hy4 flash Free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "opencode-zen",
+          "modelId": "hy4-flash-free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:opencode-zen:iceman-free",
       "name": "Iceman Free",
       "eligibility": "eligible",
@@ -3848,25 +3810,6 @@
         {
           "providerId": "opencode-zen",
           "modelId": "mimo-v2.6-flash-free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:opencode-zen:minimax-m3.1-flash-free",
-      "name": "MiniMax M3.1 Flash Free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "opencode-zen",
-          "modelId": "minimax-m3.1-flash-free"
         }
       ],
       "generationDebugging": [],
@@ -4106,25 +4049,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
-      "name": "community/YoannDev90/muse-glimmer-30b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/YoannDev90/muse-glimmer-30b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:pollinations:community/YoannDev90/vercel-nemotron-3.5-lightning:free",
       "name": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
       "eligibility": "eligible",
@@ -4133,25 +4057,6 @@
         {
           "providerId": "pollinations",
           "modelId": "community/YoannDev90/vercel-nemotron-3.5-lightning:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:pollinations:community/vendouple/muse-glimmer-30b:free",
-      "name": "community/vendouple/muse-glimmer-30b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/vendouple/muse-glimmer-30b:free"
         }
       ],
       "generationDebugging": [],
@@ -4279,6 +4184,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "0c5c6065a7344223ba14b441f6dee150"
+    "generationId": "66e58333618a49fa8a9b6fb9455e439e"
   }
 }
