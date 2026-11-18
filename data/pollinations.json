@@ -1,10 +1,76 @@
 {
   "status": "success",
-  "count": 3,
-  "updatedAt": "2026-11-17T07:40:43.694199+00:00",
+  "count": 4,
+  "updatedAt": "2026-11-18T07:03:58.229466+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
+    {
+      "id": "community/scriptsnsenses-sys/gpt-6-luna:free",
+      "object": "model",
+      "created": 1794933665,
+      "owned_by": "My discord server",
+      "aliases": [
+        "scriptsnsenses-sys/gpt-6-luna:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "GPT 6 Luna (FREE)",
+      "description": "GPT 6 Luna for free.",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "required_safety": [
+        "privacy",
+        "secrets"
+      ],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "top_provider": {
+        "max_completion_tokens": null
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "per_user_rpm": 6,
+      "health": {
+        "status": "healthy",
+        "success_rate": 100,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-18T07:03:58.229466+00:00",
+      "lastSeen": "2026-11-18T07:03:58.229466+00:00",
+      "removedDate": null,
+      "status": null
+    },
     {
       "id": "community/scriptsnsenses-sys/lucid-origin:free",
       "object": "model",
@@ -62,7 +128,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-17T07:40:43.694199+00:00",
-      "lastSeen": "2026-11-17T07:40:43.694199+00:00",
+      "lastSeen": "2026-11-18T07:03:58.229466+00:00",
       "removedDate": null,
       "status": null
     },
@@ -117,7 +183,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "healthy",
-        "success_rate": 100,
+        "success_rate": 98,
         "requests": 50
       },
       "benchmarks": null,
@@ -126,7 +192,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-26T04:26:39.847212+00:00",
-      "lastSeen": "2026-11-17T07:40:43.694199+00:00",
+      "lastSeen": "2026-11-18T07:03:58.229466+00:00",
       "removedDate": null,
       "status": null
     },
@@ -190,7 +256,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-17T07:40:43.694199+00:00",
+      "lastSeen": "2026-11-18T07:03:58.229466+00:00",
       "removedDate": null,
       "status": null
     },

@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 14,
-  "updatedAt": "2026-11-17T07:40:38.589308+00:00",
+  "updatedAt": "2026-11-18T07:03:53.680384+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -74,7 +74,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-14T06:00:09.057368+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -146,7 +146,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-12T06:56:20.614072+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -201,7 +201,7 @@
       },
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-11-19",
       "links": {
         "details": "/api/v1/models/thinkingmachines/inkling-2-small-20261107/endpoints"
       },
@@ -216,7 +216,17 @@
         "artificial_analysis": {
           "intelligence_index": 30.6,
           "coding_index": null,
-          "agentic_index": null
+          "agentic_index": null,
+          "finance_and_accounting_index": 44.3,
+          "strategy_and_ops_index": 43.5,
+          "legal_index": 41.6,
+          "healthcare_and_medical_index": 40.8,
+          "engineering_index": 38.9,
+          "economics_index": 43.4,
+          "cyber_index": null,
+          "openness_index": 38.9,
+          "multilingual_index": null,
+          "decision_index": null
         }
       },
       "reasoning": {
@@ -236,7 +246,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-10T06:59:40.548006+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -307,16 +317,33 @@
         "/api/v1/messages",
         "/api/v1/responses"
       ],
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 6,
+          "coding_index": null,
+          "agentic_index": null,
+          "finance_and_accounting_index": 16.8,
+          "strategy_and_ops_index": 8.7,
+          "legal_index": 16.1,
+          "healthcare_and_medical_index": null,
+          "engineering_index": 16.3,
+          "economics_index": 16,
+          "cyber_index": null,
+          "openness_index": null,
+          "multilingual_index": null,
+          "decision_index": null
+        }
+      },
       "reasoning": {
         "mandatory": true
       },
-      "benchmarks": null,
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:39.442982+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -404,7 +431,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-13T06:19:46.905996+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -472,7 +499,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -537,57 +564,67 @@
           {
             "arena": "agents",
             "category": "pdf",
-            "elo": 1003,
-            "win_rate": 25,
-            "rank": 34
+            "elo": 959,
+            "win_rate": 22.9,
+            "rank": 38
           },
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1115,
-            "win_rate": 30,
-            "rank": 85
+            "elo": 1117,
+            "win_rate": 30.4,
+            "rank": 86
           },
           {
             "arena": "models",
             "category": "codecategories",
             "elo": 1138,
-            "win_rate": 32.3,
-            "rank": 94
+            "win_rate": 32.4,
+            "rank": 95
           },
           {
             "arena": "models",
             "category": "dataviz",
             "elo": 1087,
-            "win_rate": 26.4,
+            "win_rate": 26.2,
             "rank": 105
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1081,
-            "win_rate": 27.4,
-            "rank": 108
+            "elo": 1082,
+            "win_rate": 27.6,
+            "rank": 107
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1158,
-            "win_rate": 33.3,
+            "elo": 1156,
+            "win_rate": 33.1,
             "rank": 78
           },
           {
             "arena": "models",
             "category": "website",
-            "elo": 1158,
-            "win_rate": 34.7,
-            "rank": 90
+            "elo": 1157,
+            "win_rate": 34.6,
+            "rank": 92
           }
         ],
         "artificial_analysis": {
           "intelligence_index": 13.6,
           "coding_index": null,
-          "agentic_index": null
+          "agentic_index": null,
+          "finance_and_accounting_index": 26.7,
+          "strategy_and_ops_index": 21.8,
+          "legal_index": 25.3,
+          "healthcare_and_medical_index": 21,
+          "engineering_index": 23.5,
+          "economics_index": 26.1,
+          "cyber_index": null,
+          "openness_index": 83.3,
+          "multilingual_index": null,
+          "decision_index": null
         }
       },
       "reasoning": {
@@ -598,7 +635,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -665,7 +702,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -726,7 +763,17 @@
         "artificial_analysis": {
           "intelligence_index": 5.5,
           "coding_index": 26.8,
-          "agentic_index": 3.5
+          "agentic_index": 3.5,
+          "finance_and_accounting_index": 14.9,
+          "strategy_and_ops_index": 7.1,
+          "legal_index": 14.2,
+          "healthcare_and_medical_index": 9,
+          "engineering_index": 15.5,
+          "economics_index": 14.8,
+          "cyber_index": null,
+          "openness_index": 83.3,
+          "multilingual_index": null,
+          "decision_index": null
         }
       },
       "reasoning": {
@@ -737,7 +784,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -809,7 +856,17 @@
         "artificial_analysis": {
           "intelligence_index": 3.4,
           "coding_index": 36.5,
-          "agentic_index": 1.1
+          "agentic_index": 1.1,
+          "finance_and_accounting_index": 9.3,
+          "strategy_and_ops_index": 6.2,
+          "legal_index": 7.9,
+          "healthcare_and_medical_index": 6.3,
+          "engineering_index": 9.9,
+          "economics_index": 9.9,
+          "cyber_index": null,
+          "openness_index": 41.7,
+          "multilingual_index": null,
+          "decision_index": null
         }
       },
       "reasoning": {
@@ -820,7 +877,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -911,14 +968,14 @@
             "arena": "models",
             "category": "dataviz",
             "elo": 1137,
-            "win_rate": 37.2,
+            "win_rate": 37.1,
             "rank": 87
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1126,
-            "win_rate": 35.4,
+            "elo": 1125,
+            "win_rate": 35.3,
             "rank": 89
           },
           {
@@ -931,7 +988,7 @@
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1125,
+            "elo": 1124,
             "win_rate": 35.2,
             "rank": 95
           },
@@ -940,13 +997,23 @@
             "category": "website",
             "elo": 1128,
             "win_rate": 34.3,
-            "rank": 103
+            "rank": 104
           }
         ],
         "artificial_analysis": {
           "intelligence_index": 11.8,
           "coding_index": 49.3,
-          "agentic_index": 20.1
+          "agentic_index": 20.1,
+          "finance_and_accounting_index": 24.2,
+          "strategy_and_ops_index": 15.3,
+          "legal_index": 22.6,
+          "healthcare_and_medical_index": 18,
+          "engineering_index": 22.8,
+          "economics_index": 24.1,
+          "cyber_index": 13.1,
+          "openness_index": 83.3,
+          "multilingual_index": null,
+          "decision_index": null
         }
       },
       "reasoning": {
@@ -965,7 +1032,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1036,7 +1103,17 @@
         "artificial_analysis": {
           "intelligence_index": null,
           "coding_index": 13.8,
-          "agentic_index": null
+          "agentic_index": null,
+          "finance_and_accounting_index": null,
+          "strategy_and_ops_index": null,
+          "legal_index": null,
+          "healthcare_and_medical_index": null,
+          "engineering_index": null,
+          "economics_index": null,
+          "cyber_index": null,
+          "openness_index": 55.6,
+          "multilingual_index": null,
+          "decision_index": null
         }
       },
       "reasoning": {
@@ -1049,7 +1126,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1117,7 +1194,17 @@
         "artificial_analysis": {
           "intelligence_index": null,
           "coding_index": 39.3,
-          "agentic_index": 2.9
+          "agentic_index": 2.9,
+          "finance_and_accounting_index": null,
+          "strategy_and_ops_index": null,
+          "legal_index": null,
+          "healthcare_and_medical_index": null,
+          "engineering_index": null,
+          "economics_index": null,
+          "cyber_index": null,
+          "openness_index": 38.9,
+          "multilingual_index": null,
+          "decision_index": null
         }
       },
       "reasoning": {
@@ -1129,7 +1216,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1200,7 +1287,17 @@
         "artificial_analysis": {
           "intelligence_index": 4.4,
           "coding_index": 43.4,
-          "agentic_index": 4.2
+          "agentic_index": 4.2,
+          "finance_and_accounting_index": 8.2,
+          "strategy_and_ops_index": 6.9,
+          "legal_index": 7.3,
+          "healthcare_and_medical_index": null,
+          "engineering_index": 11.9,
+          "economics_index": 9.5,
+          "cyber_index": null,
+          "openness_index": 38.9,
+          "multilingual_index": null,
+          "decision_index": null
         }
       },
       "reasoning": {
@@ -1212,7 +1309,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-17T07:40:38.589308+00:00",
+      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
       "removedDate": null,
       "status": null
     },
