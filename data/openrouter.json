@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 14,
-  "updatedAt": "2026-11-18T07:03:53.680384+00:00",
+  "updatedAt": "2026-11-19T07:04:05.442279+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -74,7 +74,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-14T06:00:09.057368+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -146,7 +146,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-12T06:56:20.614072+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -246,7 +246,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-10T06:59:40.548006+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -330,7 +330,7 @@
           "engineering_index": 16.3,
           "economics_index": 16,
           "cyber_index": null,
-          "openness_index": null,
+          "openness_index": 38.9,
           "multilingual_index": null,
           "decision_index": null
         }
@@ -343,7 +343,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:39.442982+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -431,7 +431,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-13T06:19:46.905996+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -499,7 +499,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -564,51 +564,51 @@
           {
             "arena": "agents",
             "category": "pdf",
-            "elo": 959,
-            "win_rate": 22.9,
-            "rank": 38
+            "elo": 952,
+            "win_rate": 21.9,
+            "rank": 40
           },
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1117,
-            "win_rate": 30.4,
-            "rank": 86
+            "elo": 1108,
+            "win_rate": 29.7,
+            "rank": 88
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1138,
-            "win_rate": 32.4,
-            "rank": 95
+            "elo": 1134,
+            "win_rate": 32.3,
+            "rank": 96
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1087,
-            "win_rate": 26.2,
-            "rank": 105
+            "elo": 1081,
+            "win_rate": 25.8,
+            "rank": 110
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1082,
-            "win_rate": 27.6,
-            "rank": 107
+            "elo": 1078,
+            "win_rate": 27.7,
+            "rank": 106
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1156,
-            "win_rate": 33.1,
-            "rank": 78
+            "elo": 1154,
+            "win_rate": 32.6,
+            "rank": 81
           },
           {
             "arena": "models",
             "category": "website",
-            "elo": 1157,
-            "win_rate": 34.6,
-            "rank": 92
+            "elo": 1154,
+            "win_rate": 34.5,
+            "rank": 94
           }
         ],
         "artificial_analysis": {
@@ -635,7 +635,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -702,7 +702,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -762,8 +762,8 @@
         "design_arena": [],
         "artificial_analysis": {
           "intelligence_index": 5.5,
-          "coding_index": 26.8,
-          "agentic_index": 3.5,
+          "coding_index": null,
+          "agentic_index": null,
           "finance_and_accounting_index": 14.9,
           "strategy_and_ops_index": 7.1,
           "legal_index": 14.2,
@@ -784,7 +784,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -855,8 +855,8 @@
         "design_arena": [],
         "artificial_analysis": {
           "intelligence_index": 3.4,
-          "coding_index": 36.5,
-          "agentic_index": 1.1,
+          "coding_index": null,
+          "agentic_index": null,
           "finance_and_accounting_index": 9.3,
           "strategy_and_ops_index": 6.2,
           "legal_index": 7.9,
@@ -877,7 +877,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -944,66 +944,73 @@
       "benchmarks": {
         "design_arena": [
           {
+            "arena": "agents",
+            "category": "pdf",
+            "elo": 1149,
+            "win_rate": 40,
+            "rank": 31
+          },
+          {
             "arena": "models",
             "category": "3d",
-            "elo": 1109,
+            "elo": 1102,
             "win_rate": 37.9,
-            "rank": 89
+            "rank": 90
           },
           {
             "arena": "models",
             "category": "asciiart",
-            "elo": 1079,
+            "elo": 1080,
             "win_rate": 36.3,
             "rank": 68
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1130,
+            "elo": 1127,
             "win_rate": 35.3,
             "rank": 99
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1137,
+            "elo": 1136,
             "win_rate": 37.1,
-            "rank": 87
-          },
-          {
-            "arena": "models",
-            "category": "gamedev",
-            "elo": 1125,
-            "win_rate": 35.3,
             "rank": 89
           },
           {
             "arena": "models",
+            "category": "gamedev",
+            "elo": 1119,
+            "win_rate": 35.3,
+            "rank": 90
+          },
+          {
+            "arena": "models",
             "category": "svg",
-            "elo": 1060,
+            "elo": 1056,
             "win_rate": 32,
             "rank": 80
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1124,
+            "elo": 1123,
             "win_rate": 35.2,
-            "rank": 95
+            "rank": 97
           },
           {
             "arena": "models",
             "category": "website",
-            "elo": 1128,
+            "elo": 1126,
             "win_rate": 34.3,
-            "rank": 104
+            "rank": 105
           }
         ],
         "artificial_analysis": {
           "intelligence_index": 11.8,
-          "coding_index": 49.3,
-          "agentic_index": 20.1,
+          "coding_index": null,
+          "agentic_index": null,
           "finance_and_accounting_index": 24.2,
           "strategy_and_ops_index": 15.3,
           "legal_index": 22.6,
@@ -1032,7 +1039,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1102,7 +1109,7 @@
         "design_arena": [],
         "artificial_analysis": {
           "intelligence_index": null,
-          "coding_index": 13.8,
+          "coding_index": null,
           "agentic_index": null,
           "finance_and_accounting_index": null,
           "strategy_and_ops_index": null,
@@ -1126,7 +1133,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1193,8 +1200,8 @@
         "design_arena": [],
         "artificial_analysis": {
           "intelligence_index": null,
-          "coding_index": 39.3,
-          "agentic_index": 2.9,
+          "coding_index": null,
+          "agentic_index": null,
           "finance_and_accounting_index": null,
           "strategy_and_ops_index": null,
           "legal_index": null,
@@ -1216,7 +1223,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1286,8 +1293,8 @@
         "design_arena": [],
         "artificial_analysis": {
           "intelligence_index": 4.4,
-          "coding_index": 43.4,
-          "agentic_index": 4.2,
+          "coding_index": null,
+          "agentic_index": null,
           "finance_and_accounting_index": 8.2,
           "strategy_and_ops_index": 6.9,
           "legal_index": 7.3,
@@ -1309,7 +1316,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-18T07:03:53.680384+00:00",
+      "lastSeen": "2026-11-19T07:04:05.442279+00:00",
       "removedDate": null,
       "status": null
     },

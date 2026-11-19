@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 21,
-  "updatedAt": "2026-11-18T07:03:55.059027+00:00",
+  "count": 20,
+  "updatedAt": "2026-11-19T07:04:07.603668+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -16,7 +16,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -31,7 +31,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -46,7 +46,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-23T04:29:27.303538+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -61,7 +61,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-30T05:30:03.121511+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -81,7 +81,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-18T07:03:55.059027+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -96,7 +96,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -111,7 +111,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -126,7 +126,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -141,7 +141,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -156,7 +156,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -171,7 +171,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-24T04:19:47.314658+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -186,7 +186,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -201,7 +201,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:39.322836+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -216,7 +216,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:39.322836+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -231,7 +231,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -246,7 +246,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:44.511485+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -261,22 +261,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "openai/gpt-oss-20b",
-      "object": "model",
-      "created": 735790403,
-      "owned_by": "openai",
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -291,7 +276,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -306,7 +291,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:44.511485+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
       "status": null
     },
@@ -321,8 +306,23 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "lastSeen": "2026-11-19T07:04:07.603668+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "openai",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-11-18T07:03:55.059027+00:00",
+      "removedDate": "2026-11-19T07:04:07.603668+00:00",
       "status": null
     },
     {

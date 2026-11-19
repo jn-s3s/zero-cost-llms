@@ -1,14 +1,14 @@
 {
   "status": "success",
   "count": 11,
-  "updatedAt": "2026-11-18T07:03:58.267428+00:00",
+  "updatedAt": "2026-11-19T07:04:10.352554+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "mimo-v2.6-flash-free",
       "object": "model",
-      "created": 1794985438,
+      "created": 1795071849,
       "owned_by": "opencode",
       "name": "MiMo-V2.6-Flash Free",
       "canonical_id": "xiaomi/mimo-v2.6-flash",
@@ -91,20 +91,21 @@
           }
         }
       },
+      "recommended_api": "chat-completions",
       "benchmarks": null,
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.756466+00:00",
-      "lastSeen": "2026-11-18T07:03:58.267428+00:00",
+      "lastSeen": "2026-11-19T07:04:10.352554+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "deepseek-v4.1-flash-free",
       "object": "model",
-      "created": 1794985438,
+      "created": 1795071849,
       "owned_by": "opencode",
       "name": "DeepSeek V4.1 Flash Free",
       "canonical_id": "deepseek/deepseek-v4.1-flash-1017",
@@ -187,13 +188,777 @@
           }
         }
       },
+      "recommended_api": "chat-completions",
       "benchmarks": null,
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.866960+00:00",
-      "lastSeen": "2026-11-18T07:03:58.267428+00:00",
+      "lastSeen": "2026-11-19T07:04:10.352554+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "longcat-2.5-free",
+      "object": "model",
+      "created": 1795071849,
+      "owned_by": "opencode",
+      "name": "LongCat 2.5 Free",
+      "canonical_id": "meituan/longcat-2.5",
+      "type": "chat",
+      "description": "Meituan's multimodal reasoning model for long-horizon coding and agent tasks, with visual understanding and a 1M-token context window",
+      "family": "longcat",
+      "open_weights": false,
+      "release_date": "2026-11-02",
+      "last_updated": "2026-11-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": {
+        "tools": {
+          "supported": true
+        },
+        "reasoning": {
+          "supported": true,
+          "toggle": true
+        },
+        "temperature": false,
+        "top_p": true,
+        "top_k": true,
+        "system_updates": false,
+        "effort_updates": false
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 262144
+      },
+      "cost": {
+        "text": {
+          "input": {
+            "price": 0,
+            "cache": {
+              "read": 0
+            }
+          },
+          "output": {
+            "price": 0
+          }
+        }
+      },
+      "api": {
+        "chat-completions": {
+          "base_url": "https://opencode.ai/inference/openai/v1",
+          "sdk": {
+            "aisdk": "@ai-sdk/openai-compatible",
+            "opencodeai": "@opencode/ai/providers/openai-compatible"
+          },
+          "compatibility": {
+            "reasoning_field": "reasoning_content"
+          },
+          "capabilities": {
+            "tools": {
+              "updates": []
+            }
+          }
+        }
+      },
+      "recommended_api": "chat-completions",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-10T06:59:45.566492+00:00",
+      "lastSeen": "2026-11-19T07:04:10.352554+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "iceman-free",
+      "object": "model",
+      "created": 1795071849,
+      "owned_by": "opencode",
+      "name": "Iceman Free",
+      "type": "chat",
+      "description": "Stealth model, free for a limited time",
+      "open_weights": false,
+      "release_date": "2026-11-06",
+      "last_updated": "2026-11-06",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": {
+        "tools": {
+          "supported": true
+        },
+        "reasoning": {
+          "supported": true
+        },
+        "system_updates": false,
+        "effort_updates": false
+      },
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "text": {
+          "input": {
+            "price": 0,
+            "cache": {
+              "read": 0
+            }
+          },
+          "output": {
+            "price": 0
+          }
+        }
+      },
+      "api": {
+        "chat-completions": {
+          "base_url": "https://opencode.ai/inference/openai/v1",
+          "sdk": {
+            "aisdk": "@ai-sdk/openai-compatible",
+            "opencodeai": "@opencode/ai/providers/openai-compatible"
+          },
+          "capabilities": {
+            "tools": {
+              "updates": []
+            }
+          }
+        }
+      },
+      "recommended_api": "chat-completions",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-07T05:42:44.562202+00:00",
+      "lastSeen": "2026-11-19T07:04:10.352554+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "inkling-2-small-free",
+      "object": "model",
+      "created": 1795071849,
+      "owned_by": "opencode",
+      "name": "Inkling 2 Small Free",
+      "canonical_id": "thinkingmachines/inkling-2-small",
+      "type": "chat",
+      "description": "Inkling 2 Small, free for a limited time",
+      "family": "ling",
+      "open_weights": true,
+      "release_date": "2026-11-05",
+      "last_updated": "2026-11-12",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": {
+        "tools": {
+          "supported": true
+        },
+        "reasoning": {
+          "supported": true,
+          "effort": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        "temperature": true,
+        "top_p": true,
+        "top_k": true,
+        "system_updates": false,
+        "effort_updates": false
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "text": {
+          "input": {
+            "price": 0,
+            "cache": {
+              "read": 0,
+              "write": 0
+            }
+          },
+          "output": {
+            "price": 0
+          }
+        }
+      },
+      "api": {
+        "chat-completions": {
+          "base_url": "https://opencode.ai/inference/openai/v1",
+          "sdk": {
+            "aisdk": "@ai-sdk/openai-compatible",
+            "opencodeai": "@opencode/ai/providers/openai-compatible"
+          },
+          "compatibility": {
+            "reasoning_field": "reasoning_content"
+          },
+          "capabilities": {
+            "tools": {
+              "updates": []
+            }
+          }
+        }
+      },
+      "recommended_api": "chat-completions",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-07T05:42:44.562202+00:00",
+      "lastSeen": "2026-11-19T07:04:10.352554+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "beam-free",
+      "object": "model",
+      "created": 1795071849,
+      "owned_by": "opencode",
+      "name": "Beam Free",
+      "canonical_id": "reflection/beam-1.0-501b-a23b",
+      "type": "chat",
+      "description": "Sparse mixture-of-experts reasoning model with 23B active parameters for coding and agentic workflows",
+      "family": "beam",
+      "open_weights": true,
+      "knowledge": "2026-06-30",
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-16",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": {
+        "tools": {
+          "supported": true
+        },
+        "reasoning": {
+          "supported": true,
+          "effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        },
+        "structured_output": true,
+        "temperature": true,
+        "top_p": true,
+        "top_k": true,
+        "system_updates": false,
+        "effort_updates": false
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "text": {
+          "input": {
+            "price": 0,
+            "cache": {
+              "read": 0
+            }
+          },
+          "output": {
+            "price": 0
+          }
+        }
+      },
+      "api": {
+        "chat-completions": {
+          "base_url": "https://opencode.ai/inference/openai/v1",
+          "sdk": {
+            "aisdk": "@ai-sdk/openai-compatible",
+            "opencodeai": "@opencode/ai/providers/openai-compatible"
+          },
+          "compatibility": {
+            "reasoning_field": "reasoning_content"
+          },
+          "capabilities": {
+            "tools": {
+              "strict": true,
+              "choice": [
+                "auto",
+                "none",
+                "required",
+                "tool"
+              ],
+              "updates": []
+            }
+          }
+        }
+      },
+      "recommended_api": "chat-completions",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-17T04:06:16.559454+00:00",
+      "lastSeen": "2026-11-19T07:04:10.352554+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "flint-40b-free",
+      "object": "model",
+      "created": 1795071849,
+      "owned_by": "opencode",
+      "name": "Flint 40B Free",
+      "canonical_id": "recursive/flint",
+      "type": "chat",
+      "description": "Open-weight mixture-of-experts model with about 2.5B active parameters for local coding agents",
+      "family": "flint",
+      "open_weights": true,
+      "knowledge": "2026-06",
+      "release_date": "2026-10-21",
+      "last_updated": "2026-10-21",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": {
+        "tools": {
+          "supported": true
+        },
+        "reasoning": {
+          "supported": true,
+          "effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        },
+        "structured_output": true,
+        "temperature": true,
+        "top_p": true,
+        "top_k": true,
+        "system_updates": false,
+        "effort_updates": false
+      },
+      "limit": {
+        "context": 262144,
+        "output": 65536
+      },
+      "cost": {
+        "text": {
+          "input": {
+            "price": 0,
+            "cache": {
+              "read": 0
+            }
+          },
+          "output": {
+            "price": 0
+          }
+        }
+      },
+      "api": {
+        "chat-completions": {
+          "base_url": "https://opencode.ai/inference/openai/v1",
+          "sdk": {
+            "aisdk": "@ai-sdk/openai-compatible",
+            "opencodeai": "@opencode/ai/providers/openai-compatible"
+          },
+          "compatibility": {
+            "reasoning_field": "reasoning_content"
+          },
+          "capabilities": {
+            "tools": {
+              "updates": []
+            }
+          }
+        }
+      },
+      "recommended_api": "chat-completions",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-22T04:24:39.817399+00:00",
+      "lastSeen": "2026-11-19T07:04:10.352554+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nemotron-3.5-super-vl-free",
+      "object": "model",
+      "created": 1795071849,
+      "owned_by": "opencode",
+      "name": "Nemotron 3.5 Super VL Free",
+      "canonical_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "type": "chat",
+      "description": "NVIDIA vision-language reasoning model for text, image, and video understanding and agentic tool use",
+      "family": "nemotron",
+      "open_weights": true,
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image/jpeg",
+          "image/png"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": {
+        "tools": {
+          "supported": true
+        },
+        "reasoning": {
+          "supported": true,
+          "effort": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "temperature": true,
+        "top_p": true,
+        "top_k": true,
+        "system_updates": false,
+        "effort_updates": false
+      },
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "text": {
+          "input": {
+            "price": 0,
+            "cache": {
+              "read": 0
+            }
+          },
+          "output": {
+            "price": 0
+          }
+        }
+      },
+      "api": {
+        "chat-completions": {
+          "base_url": "https://opencode.ai/inference/openai/v1",
+          "sdk": {
+            "aisdk": "@ai-sdk/openai-compatible",
+            "opencodeai": "@opencode/ai/providers/openai-compatible"
+          },
+          "compatibility": {
+            "reasoning_field": "reasoning_content"
+          },
+          "capabilities": {
+            "tools": {
+              "updates": []
+            }
+          }
+        }
+      },
+      "recommended_api": "chat-completions",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-16T04:15:49.866960+00:00",
+      "lastSeen": "2026-11-19T07:04:10.352554+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "nemotron-3.5-lightning-free",
+      "object": "model",
+      "created": 1795071849,
+      "owned_by": "opencode",
+      "name": "Nemotron 3.5 Lightning Free",
+      "canonical_id": "nvidia/nemotron-3.5-lightning",
+      "type": "chat",
+      "description": "Fast NVIDIA Nemotron MoE for reliable agentic tasks across enterprise workloads",
+      "family": "nemotron",
+      "open_weights": true,
+      "knowledge": "2025-09",
+      "release_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": {
+        "tools": {
+          "supported": true
+        },
+        "reasoning": {
+          "supported": true
+        },
+        "structured_output": true,
+        "temperature": true,
+        "top_p": true,
+        "top_k": true,
+        "system_updates": false,
+        "effort_updates": false
+      },
+      "limit": {
+        "context": 262144,
+        "output": 262144
+      },
+      "cost": {
+        "text": {
+          "input": {
+            "price": 0,
+            "cache": {
+              "read": 0
+            }
+          },
+          "output": {
+            "price": 0
+          }
+        }
+      },
+      "api": {
+        "chat-completions": {
+          "base_url": "https://opencode.ai/inference/openai/v1",
+          "sdk": {
+            "aisdk": "@ai-sdk/openai-compatible",
+            "opencodeai": "@opencode/ai/providers/openai-compatible"
+          },
+          "compatibility": {
+            "reasoning_field": "reasoning_content"
+          },
+          "capabilities": {
+            "tools": {
+              "updates": []
+            }
+          }
+        }
+      },
+      "recommended_api": "chat-completions",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:11.756466+00:00",
+      "lastSeen": "2026-11-19T07:04:10.352554+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "hy4-flash-free",
+      "object": "model",
+      "created": 1795071849,
+      "owned_by": "opencode",
+      "name": "Hy4 flash Free",
+      "canonical_id": "tencent/hy4-flash",
+      "type": "chat",
+      "description": "Tencent's lower-cost Hy4 tier for everyday agent and productivity tasks, with image understanding and a 1M-token context window.",
+      "family": "Hy",
+      "open_weights": false,
+      "release_date": "2026-11-16",
+      "last_updated": "2026-11-16",
+      "modalities": {
+        "input": [
+          "text",
+          "image/jpeg",
+          "image/png",
+          "image/webp",
+          "image/gif"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": {
+        "tools": {
+          "supported": true
+        },
+        "reasoning": {
+          "supported": true,
+          "effort": [
+            "none",
+            "high"
+          ]
+        },
+        "temperature": true,
+        "top_p": true,
+        "top_k": true,
+        "system_updates": false,
+        "effort_updates": false
+      },
+      "limit": {
+        "context": 1048576,
+        "input": 983040,
+        "output": 65536
+      },
+      "cost": {
+        "text": {
+          "input": {
+            "price": 0,
+            "cache": {
+              "read": 0
+            }
+          },
+          "output": {
+            "price": 0
+          }
+        }
+      },
+      "api": {
+        "chat-completions": {
+          "base_url": "https://opencode.ai/inference/openai/v1",
+          "sdk": {
+            "aisdk": "@ai-sdk/openai-compatible",
+            "opencodeai": "@opencode/ai/providers/openai-compatible"
+          },
+          "capabilities": {
+            "tools": {
+              "updates": []
+            }
+          }
+        }
+      },
+      "recommended_api": "chat-completions",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-17T07:40:43.805517+00:00",
+      "lastSeen": "2026-11-19T07:04:10.352554+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "tidepool-alpha-free",
+      "object": "model",
+      "created": 1795071849,
+      "owned_by": "opencode",
+      "name": "Tidepool Alpha Free",
+      "type": "chat",
+      "description": "Stealth reasoning model, free for a limited time",
+      "open_weights": false,
+      "release_date": "2026-11-18",
+      "last_updated": "2026-11-18",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": {
+        "tools": {
+          "supported": true
+        },
+        "reasoning": {
+          "supported": true,
+          "effort": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        },
+        "temperature": true,
+        "system_updates": false,
+        "effort_updates": false
+      },
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "text": {
+          "input": {
+            "price": 0,
+            "cache": {
+              "read": 0
+            }
+          },
+          "output": {
+            "price": 0
+          }
+        }
+      },
+      "api": {
+        "chat-completions": {
+          "base_url": "https://opencode.ai/inference/openai/v1",
+          "sdk": {
+            "aisdk": "@ai-sdk/openai-compatible",
+            "opencodeai": "@opencode/ai/providers/openai-compatible"
+          },
+          "compatibility": {
+            "reasoning_field": "reasoning_content"
+          },
+          "capabilities": {
+            "tools": {
+              "updates": []
+            }
+          }
+        }
+      },
+      "recommended_api": "chat-completions",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-19T07:04:10.352554+00:00",
+      "lastSeen": "2026-11-19T07:04:10.352554+00:00",
       "removedDate": null,
       "status": null
     },
@@ -284,682 +1049,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-17T04:06:16.559454+00:00",
       "lastSeen": "2026-11-18T07:03:58.267428+00:00",
-      "removedDate": null
-    },
-    {
-      "id": "longcat-2.5-free",
-      "object": "model",
-      "created": 1794985438,
-      "owned_by": "opencode",
-      "name": "LongCat 2.5 Free",
-      "canonical_id": "meituan/longcat-2.5",
-      "type": "chat",
-      "description": "Meituan's multimodal reasoning model for long-horizon coding and agent tasks, with visual understanding and a 1M-token context window",
-      "family": "longcat",
-      "open_weights": false,
-      "release_date": "2026-11-02",
-      "last_updated": "2026-11-02",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": {
-        "tools": {
-          "supported": true
-        },
-        "reasoning": {
-          "supported": true,
-          "toggle": true
-        },
-        "temperature": false,
-        "top_p": true,
-        "top_k": true,
-        "system_updates": false,
-        "effort_updates": false
-      },
-      "limit": {
-        "context": 1000000,
-        "output": 262144
-      },
-      "cost": {
-        "text": {
-          "input": {
-            "price": 0,
-            "cache": {
-              "read": 0
-            }
-          },
-          "output": {
-            "price": 0
-          }
-        }
-      },
-      "api": {
-        "chat-completions": {
-          "base_url": "https://opencode.ai/inference/openai/v1",
-          "sdk": {
-            "aisdk": "@ai-sdk/openai-compatible",
-            "opencodeai": "@opencode/ai/providers/openai-compatible"
-          },
-          "compatibility": {
-            "reasoning_field": "reasoning_content"
-          },
-          "capabilities": {
-            "tools": {
-              "updates": []
-            }
-          }
-        }
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-11-10T06:59:45.566492+00:00",
-      "lastSeen": "2026-11-18T07:03:58.267428+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "iceman-free",
-      "object": "model",
-      "created": 1794985438,
-      "owned_by": "opencode",
-      "name": "Iceman Free",
-      "type": "chat",
-      "description": "Stealth model, free for a limited time",
-      "open_weights": false,
-      "release_date": "2026-11-06",
-      "last_updated": "2026-11-06",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": {
-        "tools": {
-          "supported": true
-        },
-        "reasoning": {
-          "supported": true
-        },
-        "system_updates": false,
-        "effort_updates": false
-      },
-      "limit": {
-        "context": 262144,
-        "output": 131072
-      },
-      "cost": {
-        "text": {
-          "input": {
-            "price": 0,
-            "cache": {
-              "read": 0
-            }
-          },
-          "output": {
-            "price": 0
-          }
-        }
-      },
-      "api": {
-        "chat-completions": {
-          "base_url": "https://opencode.ai/inference/openai/v1",
-          "sdk": {
-            "aisdk": "@ai-sdk/openai-compatible",
-            "opencodeai": "@opencode/ai/providers/openai-compatible"
-          },
-          "capabilities": {
-            "tools": {
-              "updates": []
-            }
-          }
-        }
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-11-07T05:42:44.562202+00:00",
-      "lastSeen": "2026-11-18T07:03:58.267428+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "inkling-2-small-free",
-      "object": "model",
-      "created": 1794985438,
-      "owned_by": "opencode",
-      "name": "Inkling 2 Small Free",
-      "canonical_id": "thinkingmachines/inkling-2-small",
-      "type": "chat",
-      "description": "Inkling 2 Small, free for a limited time",
-      "family": "ling",
-      "open_weights": true,
-      "release_date": "2026-11-05",
-      "last_updated": "2026-11-12",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": {
-        "tools": {
-          "supported": true
-        },
-        "reasoning": {
-          "supported": true,
-          "effort": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        },
-        "temperature": true,
-        "top_p": true,
-        "top_k": true,
-        "system_updates": false,
-        "effort_updates": false
-      },
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
-      "cost": {
-        "text": {
-          "input": {
-            "price": 0,
-            "cache": {
-              "read": 0,
-              "write": 0
-            }
-          },
-          "output": {
-            "price": 0
-          }
-        }
-      },
-      "api": {
-        "chat-completions": {
-          "base_url": "https://opencode.ai/inference/openai/v1",
-          "sdk": {
-            "aisdk": "@ai-sdk/openai-compatible",
-            "opencodeai": "@opencode/ai/providers/openai-compatible"
-          },
-          "compatibility": {
-            "reasoning_field": "reasoning_content"
-          },
-          "capabilities": {
-            "tools": {
-              "updates": []
-            }
-          }
-        }
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-11-07T05:42:44.562202+00:00",
-      "lastSeen": "2026-11-18T07:03:58.267428+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "beam-free",
-      "object": "model",
-      "created": 1794985438,
-      "owned_by": "opencode",
-      "name": "Beam Free",
-      "canonical_id": "reflection/beam-1.0-501b-a23b",
-      "type": "chat",
-      "description": "Sparse mixture-of-experts reasoning model with 23B active parameters for coding and agentic workflows",
-      "family": "beam",
-      "open_weights": true,
-      "knowledge": "2026-06-30",
-      "release_date": "2026-10-05",
-      "last_updated": "2026-10-16",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": {
-        "tools": {
-          "supported": true
-        },
-        "reasoning": {
-          "supported": true,
-          "effort": [
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        },
-        "structured_output": true,
-        "temperature": true,
-        "top_p": true,
-        "top_k": true,
-        "system_updates": false,
-        "effort_updates": false
-      },
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
-      "cost": {
-        "text": {
-          "input": {
-            "price": 0,
-            "cache": {
-              "read": 0
-            }
-          },
-          "output": {
-            "price": 0
-          }
-        }
-      },
-      "api": {
-        "chat-completions": {
-          "base_url": "https://opencode.ai/inference/openai/v1",
-          "sdk": {
-            "aisdk": "@ai-sdk/openai-compatible",
-            "opencodeai": "@opencode/ai/providers/openai-compatible"
-          },
-          "compatibility": {
-            "reasoning_field": "reasoning_content"
-          },
-          "capabilities": {
-            "tools": {
-              "strict": true,
-              "choice": [
-                "auto",
-                "none",
-                "required",
-                "tool"
-              ],
-              "updates": []
-            }
-          }
-        }
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-17T04:06:16.559454+00:00",
-      "lastSeen": "2026-11-18T07:03:58.267428+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "flint-40b-free",
-      "object": "model",
-      "created": 1794985438,
-      "owned_by": "opencode",
-      "name": "Flint 40B Free",
-      "canonical_id": "recursive/flint",
-      "type": "chat",
-      "description": "Open-weight mixture-of-experts model with about 2.5B active parameters for local coding agents",
-      "family": "flint",
-      "open_weights": true,
-      "knowledge": "2026-06",
-      "release_date": "2026-10-21",
-      "last_updated": "2026-10-21",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": {
-        "tools": {
-          "supported": true
-        },
-        "reasoning": {
-          "supported": true,
-          "effort": [
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        },
-        "structured_output": true,
-        "temperature": true,
-        "top_p": true,
-        "top_k": true,
-        "system_updates": false,
-        "effort_updates": false
-      },
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "cost": {
-        "text": {
-          "input": {
-            "price": 0,
-            "cache": {
-              "read": 0
-            }
-          },
-          "output": {
-            "price": 0
-          }
-        }
-      },
-      "api": {
-        "chat-completions": {
-          "base_url": "https://opencode.ai/inference/openai/v1",
-          "sdk": {
-            "aisdk": "@ai-sdk/openai-compatible",
-            "opencodeai": "@opencode/ai/providers/openai-compatible"
-          },
-          "compatibility": {
-            "reasoning_field": "reasoning_content"
-          },
-          "capabilities": {
-            "tools": {
-              "updates": []
-            }
-          }
-        }
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-22T04:24:39.817399+00:00",
-      "lastSeen": "2026-11-18T07:03:58.267428+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "nemotron-3.5-super-vl-free",
-      "object": "model",
-      "created": 1794985438,
-      "owned_by": "opencode",
-      "name": "Nemotron 3.5 Super VL Free",
-      "canonical_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
-      "type": "chat",
-      "description": "NVIDIA vision-language reasoning model for text, image, and video understanding and agentic tool use",
-      "family": "nemotron",
-      "open_weights": true,
-      "release_date": "2026-10-15",
-      "last_updated": "2026-10-15",
-      "modalities": {
-        "input": [
-          "text",
-          "image/jpeg",
-          "image/png"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": {
-        "tools": {
-          "supported": true
-        },
-        "reasoning": {
-          "supported": true,
-          "effort": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "xhigh"
-          ]
-        },
-        "temperature": true,
-        "top_p": true,
-        "top_k": true,
-        "system_updates": false,
-        "effort_updates": false
-      },
-      "limit": {
-        "context": 1048576,
-        "input": 1048576,
-        "output": 131072
-      },
-      "cost": {
-        "text": {
-          "input": {
-            "price": 0,
-            "cache": {
-              "read": 0
-            }
-          },
-          "output": {
-            "price": 0
-          }
-        }
-      },
-      "api": {
-        "chat-completions": {
-          "base_url": "https://opencode.ai/inference/openai/v1",
-          "sdk": {
-            "aisdk": "@ai-sdk/openai-compatible",
-            "opencodeai": "@opencode/ai/providers/openai-compatible"
-          },
-          "compatibility": {
-            "reasoning_field": "reasoning_content"
-          },
-          "capabilities": {
-            "tools": {
-              "updates": []
-            }
-          }
-        }
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-16T04:15:49.866960+00:00",
-      "lastSeen": "2026-11-18T07:03:58.267428+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "nemotron-3.5-lightning-free",
-      "object": "model",
-      "created": 1794985438,
-      "owned_by": "opencode",
-      "name": "Nemotron 3.5 Lightning Free",
-      "canonical_id": "nvidia/nemotron-3.5-lightning",
-      "type": "chat",
-      "description": "Fast NVIDIA Nemotron MoE for reliable agentic tasks across enterprise workloads",
-      "family": "nemotron",
-      "open_weights": true,
-      "knowledge": "2025-09",
-      "release_date": "2026-08-11",
-      "last_updated": "2026-08-11",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": {
-        "tools": {
-          "supported": true
-        },
-        "reasoning": {
-          "supported": true
-        },
-        "structured_output": true,
-        "temperature": true,
-        "top_p": true,
-        "top_k": true,
-        "system_updates": false,
-        "effort_updates": false
-      },
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
-      "cost": {
-        "text": {
-          "input": {
-            "price": 0,
-            "cache": {
-              "read": 0
-            }
-          },
-          "output": {
-            "price": 0
-          }
-        }
-      },
-      "api": {
-        "chat-completions": {
-          "base_url": "https://opencode.ai/inference/openai/v1",
-          "sdk": {
-            "aisdk": "@ai-sdk/openai-compatible",
-            "opencodeai": "@opencode/ai/providers/openai-compatible"
-          },
-          "compatibility": {
-            "reasoning_field": "reasoning_content"
-          },
-          "capabilities": {
-            "tools": {
-              "updates": []
-            }
-          }
-        }
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:11.756466+00:00",
-      "lastSeen": "2026-11-18T07:03:58.267428+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "hy4-flash-free",
-      "object": "model",
-      "created": 1794985438,
-      "owned_by": "opencode",
-      "name": "Hy4 flash Free",
-      "canonical_id": "tencent/hy4-flash",
-      "type": "chat",
-      "description": "Tencent's lower-cost Hy4 tier for everyday agent and productivity tasks, with image understanding and a 1M-token context window.",
-      "family": "Hy",
-      "open_weights": false,
-      "release_date": "2026-11-16",
-      "last_updated": "2026-11-16",
-      "modalities": {
-        "input": [
-          "text",
-          "image/jpeg",
-          "image/png",
-          "image/webp",
-          "image/gif"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": {
-        "tools": {
-          "supported": true
-        },
-        "reasoning": {
-          "supported": true,
-          "effort": [
-            "none",
-            "high"
-          ]
-        },
-        "temperature": true,
-        "top_p": true,
-        "top_k": true,
-        "system_updates": false,
-        "effort_updates": false
-      },
-      "limit": {
-        "context": 1048576,
-        "input": 983040,
-        "output": 65536
-      },
-      "cost": {
-        "text": {
-          "input": {
-            "price": 0,
-            "cache": {
-              "read": 0
-            }
-          },
-          "output": {
-            "price": 0
-          }
-        }
-      },
-      "api": {
-        "chat-completions": {
-          "base_url": "https://opencode.ai/inference/openai/v1",
-          "sdk": {
-            "aisdk": "@ai-sdk/openai-compatible",
-            "opencodeai": "@opencode/ai/providers/openai-compatible"
-          },
-          "capabilities": {
-            "tools": {
-              "updates": []
-            }
-          }
-        }
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-11-17T07:40:43.805517+00:00",
-      "lastSeen": "2026-11-18T07:03:58.267428+00:00",
-      "removedDate": null,
-      "status": null
+      "removedDate": "2026-11-19T07:04:10.352554+00:00"
     },
     {
       "id": "minimax-m3.1-flash-free",
