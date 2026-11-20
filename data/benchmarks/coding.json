@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-19T07:04:13.398225+00:00",
+  "updatedAt": "2026-11-20T06:55:52.469601+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "4f05f953526341a0bcf58724ac046dd9",
+  "generationId": "8c1e71eb1c544676953aab0e791f75d4",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 247,
-    "eligibleOfferings": 88,
+    "activeOfferings": 240,
+    "eligibleOfferings": 84,
     "excludedOfferings": 51,
-    "uncertainOfferings": 108,
-    "models": 177,
+    "uncertainOfferings": 105,
+    "models": 170,
     "modelsWithGenerationEvidence": 11,
     "modelsWithEditingEvidence": 7,
     "ratedModels": 11,
-    "unratedModels": 166,
+    "unratedModels": 159,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 0,
       "C": 6,
-      "Unrated": 166
+      "Unrated": 159
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-19T07:04:15.209990+00:00",
+      "updatedAt": "2026-11-20T06:55:53.709791+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-19T07:04:13.931145+00:00",
+      "updatedAt": "2026-11-20T06:55:52.945652+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-19T07:04:13.781432+00:00",
+      "updatedAt": "2026-11-20T06:55:52.790922+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-19T07:04:14.401099+00:00",
+      "updatedAt": "2026-11-20T06:56:01.104094+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-19T07:04:13.980704+00:00",
+      "updatedAt": "2026-11-20T06:55:52.906562+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -1965,25 +1965,6 @@
       "provisional": false
     },
     {
-      "modelId": "hf:CohereLabs/North-Mini-Code-1.0",
-      "name": "North Mini Code 1.0",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "openrouter",
-          "modelId": "cohere/north-mini-code:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "hf:google/gemma-4-26B-A4B-it",
       "name": "Gemma 4 26B A4B Instruct",
       "eligibility": "eligible",
@@ -2182,25 +2163,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:cline:cohere/north-mini-code:free",
-      "name": "cohere/north-mini-code:free",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "cline",
-          "modelId": "cohere/north-mini-code:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:cline:dots-studio/dots-3-note-preview:free",
       "name": "dots-studio/dots-3-note-preview:free",
       "eligibility": "uncertain",
@@ -2323,25 +2285,6 @@
         {
           "providerId": "cline",
           "modelId": "recursive/flint-v1.0:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:cline:thinkingmachines/inkling-2-small:free",
-      "name": "thinkingmachines/inkling-2-small:free",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "cline",
-          "modelId": "thinkingmachines/inkling-2-small:free"
         }
       ],
       "generationDebugging": [],
@@ -2847,25 +2790,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:kilo:cohere/north-mini-code:free",
-      "name": "Cohere: North Mini Code (free)",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "kilo",
-          "modelId": "cohere/north-mini-code:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:kilo:inclusionai/ling-3.2-flash:free",
       "name": "inclusionAI: Ling 3.2 Flash (free)",
       "eligibility": "eligible",
@@ -3094,44 +3018,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:llm7:gemma4:31b",
-      "name": "gemma4:31b",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "gemma4:31b"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:llm7:glm-5.3-flash",
-      "name": "glm-5.3-flash",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "glm-5.3-flash"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:llm7:gpt-oss:20b",
       "name": "gpt-oss:20b",
       "eligibility": "uncertain",
@@ -3140,25 +3026,6 @@
         {
           "providerId": "llm7",
           "modelId": "gpt-oss:20b"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:llm7:mimo-v2.6-flash",
-      "name": "mimo-v2.6-flash",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "mimo-v2.6-flash"
         }
       ],
       "generationDebugging": [],
@@ -3292,6 +3159,25 @@
         {
           "providerId": "mistral",
           "modelId": "voxtral-small-2507"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:nvidia:fastino/gliner2-pii",
+      "name": "fastino/gliner2-pii",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "nvidia",
+          "modelId": "fastino/gliner2-pii"
         }
       ],
       "generationDebugging": [],
@@ -3759,14 +3645,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:opencode-zen:inkling-2-small-free",
-      "name": "Inkling 2 Small Free",
-      "eligibility": "eligible",
+      "modelId": "offering:opencode-zen:jev-1.13-free",
+      "name": "Jev 1.13 Free",
+      "eligibility": "uncertain",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "opencode-zen",
-          "modelId": "inkling-2-small-free"
+          "modelId": "jev-1.13-free"
         }
       ],
       "generationDebugging": [],
@@ -3976,25 +3862,6 @@
         {
           "providerId": "openrouter",
           "modelId": "recursive/flint-v1.0:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:openrouter:thinkingmachines/inkling-2-small:free",
-      "name": "Thinking Machines: Inkling 2 Small (free)",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "openrouter",
-          "modelId": "thinkingmachines/inkling-2-small:free"
         }
       ],
       "generationDebugging": [],
@@ -4217,6 +4084,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "4f05f953526341a0bcf58724ac046dd9"
+    "generationId": "8c1e71eb1c544676953aab0e791f75d4"
   }
 }

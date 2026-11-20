@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 14,
-  "updatedAt": "2026-11-19T07:04:09.524157+00:00",
+  "count": 13,
+  "updatedAt": "2026-11-20T06:55:48.264376+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -62,7 +62,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -143,7 +143,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-14T06:00:13.386616+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -216,7 +216,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-12T06:56:24.108217+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -291,7 +291,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:44.218449+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -416,7 +416,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-13T06:19:51.348283+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -483,7 +483,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:39.458389+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -561,7 +561,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.424757+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -635,85 +635,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "cohere/north-mini-code:free",
-      "name": "Cohere: North Mini Code (free)",
-      "created": 1781723748,
-      "description": "North Mini Code is Cohere's first agentic coding model and the debut of its North family. A sparse mixture-of-experts model with 30B total parameters and 3B active, it is optimized...",
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Cohere"
-      },
-      "top_provider": {
-        "is_moderated": true,
-        "context_length": 256000,
-        "max_completion_tokens": 64000
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0",
-        "discount": 0
-      },
-      "context_length": 256000,
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "expiration_date": null,
-      "inference_provider_ids": [
-        "cohere"
-      ],
-      "isFree": true,
-      "mayTrainOnYourPrompts": true,
-      "opencode": {
-        "variants": {
-          "instant": {
-            "reasoning": {
-              "enabled": false,
-              "effort": "none"
-            }
-          },
-          "thinking": {
-            "reasoning": {
-              "enabled": true,
-              "effort": "high"
-            }
-          }
-        },
-        "reasoning_options": [
-          {
-            "type": "toggle"
-          }
-        ]
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -799,7 +721,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -876,7 +798,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -942,7 +864,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1038,7 +960,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1125,8 +1047,86 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "lastSeen": "2026-11-20T06:55:48.264376+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "cohere/north-mini-code:free",
+      "name": "Cohere: North Mini Code (free)",
+      "created": 1781723748,
+      "description": "North Mini Code is Cohere's first agentic coding model and the debut of its North family. A sparse mixture-of-experts model with 30B total parameters and 3B active, it is optimized...",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Cohere"
+      },
+      "top_provider": {
+        "is_moderated": true,
+        "context_length": 256000,
+        "max_completion_tokens": 64000
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "discount": 0
+      },
+      "context_length": 256000,
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "expiration_date": null,
+      "inference_provider_ids": [
+        "cohere"
+      ],
+      "isFree": true,
+      "mayTrainOnYourPrompts": true,
+      "opencode": {
+        "variants": {
+          "instant": {
+            "reasoning": {
+              "enabled": false,
+              "effort": "none"
+            }
+          },
+          "thinking": {
+            "reasoning": {
+              "enabled": true,
+              "effort": "high"
+            }
+          }
+        },
+        "reasoning_options": [
+          {
+            "type": "toggle"
+          }
+        ]
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:11.544687+00:00",
+      "lastSeen": "2026-11-19T07:04:09.524157+00:00",
+      "removedDate": "2026-11-20T06:55:48.264376+00:00",
       "status": null
     },
     {
