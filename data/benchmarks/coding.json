@@ -1,32 +1,32 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-20T06:55:52.469601+00:00",
+  "updatedAt": "2026-11-21T06:51:22.274731+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "8c1e71eb1c544676953aab0e791f75d4",
+  "generationId": "010423fcc2464809803e5b6825c019e1",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 240,
-    "eligibleOfferings": 84,
-    "excludedOfferings": 51,
-    "uncertainOfferings": 105,
-    "models": 170,
-    "modelsWithGenerationEvidence": 11,
-    "modelsWithEditingEvidence": 7,
-    "ratedModels": 11,
-    "unratedModels": 159,
+    "activeOfferings": 224,
+    "eligibleOfferings": 76,
+    "excludedOfferings": 45,
+    "uncertainOfferings": 103,
+    "models": 160,
+    "modelsWithGenerationEvidence": 8,
+    "modelsWithEditingEvidence": 6,
+    "ratedModels": 7,
+    "unratedModels": 153,
     "tierCounts": {
       "S+": 0,
       "S": 0,
-      "A+": 1,
+      "A+": 0,
       "A": 0,
       "A-": 1,
       "B+": 3,
       "B": 0,
-      "C": 6,
-      "Unrated": 159
+      "C": 3,
+      "Unrated": 153
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-20T06:55:53.709791+00:00",
+      "updatedAt": "2026-11-21T06:51:25.062435+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-20T06:55:52.945652+00:00",
+      "updatedAt": "2026-11-21T06:51:22.994833+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-20T06:55:52.790922+00:00",
+      "updatedAt": "2026-11-21T06:51:22.979977+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-20T06:56:01.104094+00:00",
+      "updatedAt": "2026-11-21T06:51:23.286922+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-20T06:55:52.906562+00:00",
+      "updatedAt": "2026-11-21T06:51:23.358332+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -92,58 +92,6 @@
     }
   ],
   "data": [
-    {
-      "modelId": "checkpoint:deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
-      "name": "DeepSeek R1 Distill Qwen 32B",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cloudflare",
-          "modelId": "ad01ab83-baf8-4e7b-8fed-a0a219d4eb45"
-        }
-      ],
-      "generationDebugging": [
-        {
-          "benchmark": "BigCodeBench",
-          "evaluatedModelId": "DeepSeek-R1-Distill-Qwen-32B",
-          "cohort": "bigcodebench:complete:e370fee30f22550a",
-          "metric": "calibrated pass@1",
-          "score": 54.9,
-          "unit": "percent",
-          "configuration": {
-            "type": "🔶",
-            "prefill": true,
-            "benchmarkVersion": null
-          },
-          "evidenceId": "evidence:31a6e55aa39f7c28aa8d2a4e",
-          "applicability": "checkpoint_evidence_endpoint_unverified",
-          "configurationStatus": "published"
-        },
-        {
-          "benchmark": "BigCodeBench",
-          "evaluatedModelId": "DeepSeek-R1-Distill-Qwen-32B",
-          "cohort": "bigcodebench:instruct:e370fee30f22550a",
-          "metric": "calibrated pass@1",
-          "score": 43.9,
-          "unit": "percent",
-          "configuration": {
-            "type": "🔶",
-            "prefill": true,
-            "benchmarkVersion": null
-          },
-          "evidenceId": "evidence:b9c4b01d2252f37870c43852",
-          "applicability": "checkpoint_evidence_endpoint_unverified",
-          "configurationStatus": "published"
-        }
-      ],
-      "repositoryEditing": [],
-      "tier": "A+",
-      "index": 79.9,
-      "basis": "generation_only",
-      "confidence": "limited",
-      "provisional": true
-    },
     {
       "modelId": "checkpoint:Qwen/Qwen2.5-Coder-32B-Instruct",
       "name": "Qwen2.5 Coder 32B Instruct",
@@ -755,104 +703,6 @@
       "provisional": true
     },
     {
-      "modelId": "checkpoint:Qwen/QwQ-32B",
-      "name": "QwQ 32B",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cloudflare",
-          "modelId": "02c16efa-29f5-4304-8e6c-3d188889f875"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [
-        {
-          "benchmark": "Aider",
-          "evaluatedModelId": "QwQ-32B",
-          "cohort": "aider_polyglot:polyglot:2927e26a36501ddb",
-          "metric": "pass_rate_2",
-          "score": 20.9,
-          "unit": "percent",
-          "configuration": {
-            "test_cases": 225,
-            "total_tests": 225,
-            "versions": "0.75.3.dev",
-            "commit_hash": "51d118f-dirty",
-            "edit_format": "diff",
-            "editor_edit_format": null,
-            "editor_model": null,
-            "reasoning_effort": null,
-            "thinking_tokens": null,
-            "commandOptions": [
-              "aider"
-            ],
-            "command": "aider --model fireworks_ai/accounts/fireworks/models/qwq-32b"
-          },
-          "evidenceId": "evidence:b1296d2d4a6651ca6d7c3ec1",
-          "applicability": "checkpoint_evidence_endpoint_unverified",
-          "configurationStatus": "published"
-        }
-      ],
-      "tier": "C",
-      "index": 20.8,
-      "basis": "editing_only",
-      "confidence": "limited",
-      "provisional": true
-    },
-    {
-      "modelId": "checkpoint:meta-llama/Llama-3.2-3B-Instruct",
-      "name": "Llama 3.2 3B Instruct",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cloudflare",
-          "modelId": "d9dc8363-66f4-4bb0-8641-464ee7bfc131"
-        }
-      ],
-      "generationDebugging": [
-        {
-          "benchmark": "BigCodeBench",
-          "evaluatedModelId": "Llama-3.2-3B-Instruct",
-          "cohort": "bigcodebench:complete:e370fee30f22550a",
-          "metric": "calibrated pass@1",
-          "score": 28.3,
-          "unit": "percent",
-          "configuration": {
-            "type": "🔶",
-            "prefill": true,
-            "benchmarkVersion": null
-          },
-          "evidenceId": "evidence:39dafb1ede07d37b24d5147e",
-          "applicability": "checkpoint_evidence_endpoint_unverified",
-          "configurationStatus": "published"
-        },
-        {
-          "benchmark": "BigCodeBench",
-          "evaluatedModelId": "Llama-3.2-3B-Instruct",
-          "cohort": "bigcodebench:instruct:e370fee30f22550a",
-          "metric": "calibrated pass@1",
-          "score": 23.4,
-          "unit": "percent",
-          "configuration": {
-            "type": "🔶",
-            "prefill": true,
-            "benchmarkVersion": null
-          },
-          "evidenceId": "evidence:36eb7651779ced3366e448b1",
-          "applicability": "checkpoint_evidence_endpoint_unverified",
-          "configurationStatus": "published"
-        }
-      ],
-      "repositoryEditing": [],
-      "tier": "C",
-      "index": 9.4,
-      "basis": "generation_only",
-      "confidence": "limited",
-      "provisional": true
-    },
-    {
       "modelId": "checkpoint:deepseek-v4-flash",
       "name": "DeepSeek V4 Flash",
       "eligibility": "uncertain",
@@ -948,58 +798,6 @@
       "provisional": true
     },
     {
-      "modelId": "checkpoint:meta-llama/Llama-3.2-1B-Instruct",
-      "name": "Llama 3.2 1B Instruct",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cloudflare",
-          "modelId": "906a57fd-b018-4d6c-a43e-a296d4cc5839"
-        }
-      ],
-      "generationDebugging": [
-        {
-          "benchmark": "BigCodeBench",
-          "evaluatedModelId": "Llama-3.2-1B-Instruct",
-          "cohort": "bigcodebench:complete:e370fee30f22550a",
-          "metric": "calibrated pass@1",
-          "score": 11.3,
-          "unit": "percent",
-          "configuration": {
-            "type": "🔶",
-            "prefill": true,
-            "benchmarkVersion": null
-          },
-          "evidenceId": "evidence:7719fd2d03cac3616aea8dc7",
-          "applicability": "checkpoint_evidence_endpoint_unverified",
-          "configurationStatus": "published"
-        },
-        {
-          "benchmark": "BigCodeBench",
-          "evaluatedModelId": "Llama-3.2-1B-Instruct",
-          "cohort": "bigcodebench:instruct:e370fee30f22550a",
-          "metric": "calibrated pass@1",
-          "score": 8.2,
-          "unit": "percent",
-          "configuration": {
-            "type": "🔶",
-            "prefill": true,
-            "benchmarkVersion": null
-          },
-          "evidenceId": "evidence:844cd9c0669d6533dadba1eb",
-          "applicability": "checkpoint_evidence_endpoint_unverified",
-          "configurationStatus": "published"
-        }
-      ],
-      "repositoryEditing": [],
-      "tier": "C",
-      "index": 1.3,
-      "basis": "generation_only",
-      "confidence": "limited",
-      "provisional": true
-    },
-    {
       "modelId": "catalogue:@cf/aisingapore/gemma-sea-lion-v4-27b-it",
       "name": "Gemma Sea Lion v4 27B Instruct",
       "eligibility": "eligible",
@@ -1019,44 +817,6 @@
       "provisional": false
     },
     {
-      "modelId": "catalogue:@cf/google/gemma-2b-it-lora",
-      "name": "Gemma 2B Instruct LoRA",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cloudflare",
-          "modelId": "e8e8abe4-a372-4c13-815f-4688ba655c8e"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "catalogue:@cf/google/gemma-7b-it-lora",
-      "name": "Gemma 7B Instruct LoRA",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cloudflare",
-          "modelId": "337170b7-bd2f-4631-9a57-688b579cf6d3"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "catalogue:@cf/ibm-granite/granite-4.0-h-micro",
       "name": "Granite 4.0 H Micro",
       "eligibility": "eligible",
@@ -1065,44 +825,6 @@
         {
           "providerId": "cloudflare",
           "modelId": "7952d0cc-cb00-4e10-be02-667565c2ee0f"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "catalogue:@cf/meta-llama/llama-2-7b-chat-hf-lora",
-      "name": "Llama 2 7B Chat LoRA",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cloudflare",
-          "modelId": "7ed8d8e8-6040-4680-843a-aef402d6b013"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "catalogue:@cf/meta/llama-3.1-8b-instruct-fp8",
-      "name": "Llama 3.1 8B Instruct FP8",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cloudflare",
-          "modelId": "9b9c87c6-d4b7-494c-b177-87feab5904db"
         }
       ],
       "generationDebugging": [],
@@ -1190,44 +912,6 @@
       "provisional": false
     },
     {
-      "modelId": "catalogue:@cf/nvidia/nemotron-3-120b-a12b",
-      "name": "Cloudflare Nemotron 3 120B A12B",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cloudflare",
-          "modelId": "43dbadb4-2b0a-47e9-8479-34a49b971f1e"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "catalogue:@cf/qwen/qwen3-30b-a3b-fp8",
-      "name": "Qwen3 30B A3B FP8",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "cloudflare",
-          "modelId": "4090e54c-eee4-4221-b410-10c1c0f92f17"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "catalogue:@cf/qwen/qwen3.8-27b",
       "name": "Cloudflare Qwen3.8 27B",
       "eligibility": "eligible",
@@ -1293,25 +977,6 @@
         {
           "providerId": "cloudflare",
           "modelId": "86b3e51a-4b05-43fa-a403-0f27821919d2"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "catalogue:dots-studio/dots-3-note-preview-20260813",
-      "name": "Dots3 Note Preview",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "openrouter",
-          "modelId": "dots-studio/dots-3-note-preview:free"
         }
       ],
       "generationDebugging": [],
@@ -2163,25 +1828,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:cline:dots-studio/dots-3-note-preview:free",
-      "name": "dots-studio/dots-3-note-preview:free",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "cline",
-          "modelId": "dots-studio/dots-3-note-preview:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:cline:inclusionai/ling-3.2-flash:free",
       "name": "inclusionai/ling-3.2-flash:free",
       "eligibility": "uncertain",
@@ -2418,25 +2064,6 @@
         {
           "providerId": "cloudflare",
           "modelId": "87f39d62-116c-4b26-b2cd-562a9ba01f2f"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:cloudflare:af274959-cb47-4ba8-9d8e-5a0a58b6b402",
-      "name": "@cf/llava-hf/llava-1.5-7b-hf",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "cloudflare",
-          "modelId": "af274959-cb47-4ba8-9d8e-5a0a58b6b402"
         }
       ],
       "generationDebugging": [],
@@ -3930,6 +3557,44 @@
       "provisional": false
     },
     {
+      "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
+      "name": "community/YoannDev90/muse-glimmer-30b:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/muse-glimmer-30b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "name": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:pollinations:community/YoannDev90/vercel-nemotron-3.5-lightning:free",
       "name": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
       "eligibility": "eligible",
@@ -3957,6 +3622,25 @@
         {
           "providerId": "pollinations",
           "modelId": "community/scriptsnsenses-sys/gpt-6-luna:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:pollinations:community/vendouple/muse-glimmer-30b:free",
+      "name": "community/vendouple/muse-glimmer-30b:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/vendouple/muse-glimmer-30b:free"
         }
       ],
       "generationDebugging": [],
@@ -4084,6 +3768,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "8c1e71eb1c544676953aab0e791f75d4"
+    "generationId": "010423fcc2464809803e5b6825c019e1"
   }
 }
