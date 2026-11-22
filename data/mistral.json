@@ -1,14 +1,14 @@
 {
   "status": "success",
   "count": 13,
-  "updatedAt": "2026-11-21T06:51:19.110905+00:00",
+  "updatedAt": "2026-11-22T06:24:08.147965+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "codestral-2508",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -51,14 +51,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "ministral-14b-2512",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -99,14 +99,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "ministral-3b-2512",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -147,14 +147,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "ministral-8b-2512",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -195,14 +195,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-medium-latest",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -250,14 +250,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-small-2603",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -300,14 +300,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "voxtral-small-2507",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": true,
@@ -348,14 +348,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "codestral-embed",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -396,14 +396,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-embed-2312",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -444,14 +444,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "mistral-moderation-2603",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -490,14 +490,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "voxtral-mini-2602",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -566,14 +566,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "voxtral-mini-transcribe-realtime-2602",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -635,14 +635,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "voxtral-mini-tts-2603",
       "object": "model",
-      "created": 1795243878,
+      "created": 1795328647,
       "owned_by": "mistralai",
       "capabilities": {
         "completion_chat": false,
@@ -696,7 +696,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-      "lastSeen": "2026-11-21T06:51:19.110905+00:00",
+      "lastSeen": "2026-11-22T06:24:08.147965+00:00",
       "removedDate": null,
       "status": null
     },

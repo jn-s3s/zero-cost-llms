@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 8,
-  "updatedAt": "2026-11-21T06:51:18.601038+00:00",
+  "count": 5,
+  "updatedAt": "2026-11-22T06:24:07.336545+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -55,7 +55,7 @@
       "per_user_rpm": 10,
       "health": {
         "status": "healthy",
-        "success_rate": 96,
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -64,7 +64,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-21T06:51:18.601038+00:00",
-      "lastSeen": "2026-11-21T06:51:18.601038+00:00",
+      "lastSeen": "2026-11-22T06:24:07.336545+00:00",
       "removedDate": null,
       "status": null
     },
@@ -122,7 +122,7 @@
       "per_user_rpm": 6,
       "health": {
         "status": "healthy",
-        "success_rate": 96,
+        "success_rate": 98,
         "requests": 50
       },
       "benchmarks": null,
@@ -131,7 +131,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-18T07:03:58.229466+00:00",
-      "lastSeen": "2026-11-21T06:51:18.601038+00:00",
+      "lastSeen": "2026-11-22T06:24:07.336545+00:00",
       "removedDate": null,
       "status": null
     },
@@ -193,7 +193,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-17T07:40:43.694199+00:00",
-      "lastSeen": "2026-11-21T06:51:18.601038+00:00",
+      "lastSeen": "2026-11-22T06:24:07.336545+00:00",
       "removedDate": null,
       "status": null
     },
@@ -250,7 +250,7 @@
       "per_user_rpm": null,
       "health": {
         "status": "degraded",
-        "success_rate": 82,
+        "success_rate": 90,
         "requests": 50
       },
       "benchmarks": null,
@@ -259,7 +259,72 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-08T05:46:07.554146+00:00",
-      "lastSeen": "2026-11-21T06:51:18.601038+00:00",
+      "lastSeen": "2026-11-22T06:24:07.336545+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
+      "object": "model",
+      "created": 1792503218,
+      "owned_by": "Awesome Free AI API",
+      "aliases": [
+        "YoannDev90/vercel-nemotron-3.5-lightning:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Nemotron 3.5 Lightning",
+      "description": "Open-weight reasoning and chat model for long-running agents, sub-agent work, chatbots, and RAG systems.",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "required_safety": [],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "top_provider": {
+        "max_completion_tokens": null
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "alpha": true,
+      "context_length": 1000000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "degraded",
+        "success_rate": 94,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-21T04:25:43.047041+00:00",
+      "lastSeen": "2026-11-22T06:24:07.336545+00:00",
       "removedDate": null,
       "status": null
     },
@@ -322,75 +387,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-26T04:26:39.847212+00:00",
       "lastSeen": "2026-11-21T06:51:18.601038+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
-      "object": "model",
-      "created": 1792503218,
-      "owned_by": "Awesome Free AI API",
-      "aliases": [
-        "YoannDev90/vercel-nemotron-3.5-lightning:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Nemotron 3.5 Lightning",
-      "description": "Open-weight reasoning and chat model for long-running agents, sub-agent work, chatbots, and RAG systems.",
-      "input_modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "required_safety": [],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "top_provider": {
-        "max_completion_tokens": null
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "alpha": true,
-      "context_length": 1000000,
-      "per_user_rpm": null,
-      "health": {
-        "status": "healthy",
-        "success_rate": 96,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-21T06:51:18.601038+00:00",
-      "removedDate": null,
+      "removedDate": "2026-11-22T06:24:07.336545+00:00",
       "status": null
     },
     {
@@ -453,10 +453,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-01T13:00:48.913788+00:00",
       "lastSeen": "2026-11-21T06:51:18.601038+00:00",
-      "removedDate": null,
+      "removedDate": "2026-11-22T06:24:07.336545+00:00",
       "status": null
     },
     {
@@ -512,10 +512,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-02T03:35:34.586995+00:00",
       "lastSeen": "2026-11-21T06:51:18.601038+00:00",
-      "removedDate": null,
+      "removedDate": "2026-11-22T06:24:07.336545+00:00",
       "status": null
     },
     {

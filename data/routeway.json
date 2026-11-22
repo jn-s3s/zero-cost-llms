@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 9,
-  "updatedAt": "2026-11-21T06:51:15.683057+00:00",
+  "count": 8,
+  "updatedAt": "2026-11-22T06:24:03.614089+00:00",
   "lastFailedAt": "2026-10-05T05:19:58.351994+00:00",
   "lastFailedMessage": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
   "data": [
@@ -59,7 +59,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-21T06:51:15.683057+00:00",
+      "lastSeen": "2026-11-22T06:24:03.614089+00:00",
       "removedDate": null,
       "status": null
     },
@@ -117,7 +117,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-21T06:51:15.683057+00:00",
+      "lastSeen": "2026-11-22T06:24:03.614089+00:00",
       "removedDate": null,
       "status": null
     },
@@ -175,7 +175,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-21T06:51:15.683057+00:00",
+      "lastSeen": "2026-11-22T06:24:03.614089+00:00",
       "removedDate": null,
       "status": null
     },
@@ -233,7 +233,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-21T06:51:15.683057+00:00",
+      "lastSeen": "2026-11-22T06:24:03.614089+00:00",
       "removedDate": null,
       "status": null
     },
@@ -291,88 +291,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-21T06:51:15.683057+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "deepseek-v4.1-flash:free",
-      "name": "DeepSeek: DeepSeek V4.1 Flash (Free)",
-      "short_name": "DeepSeek V4.1 Flash (Free)",
-      "description": "DeepSeek V4.1 Flash improves text and agent performance and adds native multimodal visual understanding, with a 1M-token context window for reasoning and tool-driven workflows.",
-      "context_length": 42000,
-      "created": 1788825600,
-      "owned_by": "deepseek-ai",
-      "available": true,
-      "hallucination_rate": 0,
-      "endpoints": [
-        "/v1/chat/completions",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "pricing": {
-        "input": {
-          "unit": "1M tokens",
-          "price_per_million_t": 0
-        },
-        "output": {
-          "unit": "1M tokens",
-          "price_per_million_t": 0
-        },
-        "caching": {
-          "read": {
-            "unit": "1M tokens",
-            "price_per_million_t": 0
-          }
-        }
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_completion_tokens",
-        "presence_penalty",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "capabilities": {
-        "vision": false,
-        "function_call": true,
-        "reasoning": true
-      },
-      "benchmarks": {
-        "artificial_analysis_intelligence_index": null,
-        "artificial_analysis_coding_index": null,
-        "artificial_analysis_math_index": null,
-        "mmlu_pro": null,
-        "gpqa": null,
-        "hle": 0.392,
-        "livecodebench": null,
-        "scicode": 0.519,
-        "math_500": null,
-        "aime": null,
-        "aime_25": null,
-        "ifbench": null,
-        "lcr": 0.84,
-        "terminalbench_hard": null,
-        "terminalbench_v2_1": null,
-        "terminalbench_v4_0": 0.267676767676768,
-        "tau2": null,
-        "tau_banking": null
-      },
-      "use_case": [
-        "coding",
-        "math",
-        "daily_use"
-      ],
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-31T05:16:51.896330+00:00",
-      "lastSeen": "2026-11-21T06:51:15.683057+00:00",
+      "lastSeen": "2026-11-22T06:24:03.614089+00:00",
       "removedDate": null,
       "status": null
     },
@@ -454,7 +373,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-31T05:16:51.896330+00:00",
-      "lastSeen": "2026-11-21T06:51:15.683057+00:00",
+      "lastSeen": "2026-11-22T06:24:03.614089+00:00",
       "removedDate": null,
       "status": null
     },
@@ -530,7 +449,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-21T06:51:15.683057+00:00",
+      "lastSeen": "2026-11-22T06:24:03.614089+00:00",
       "removedDate": null,
       "status": null
     },
@@ -588,8 +507,89 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-      "lastSeen": "2026-11-21T06:51:15.683057+00:00",
+      "lastSeen": "2026-11-22T06:24:03.614089+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "deepseek-v4.1-flash:free",
+      "name": "DeepSeek: DeepSeek V4.1 Flash (Free)",
+      "short_name": "DeepSeek V4.1 Flash (Free)",
+      "description": "DeepSeek V4.1 Flash improves text and agent performance and adds native multimodal visual understanding, with a 1M-token context window for reasoning and tool-driven workflows.",
+      "context_length": 42000,
+      "created": 1788825600,
+      "owned_by": "deepseek-ai",
+      "available": true,
+      "hallucination_rate": 0,
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "pricing": {
+        "input": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0
+        },
+        "output": {
+          "unit": "1M tokens",
+          "price_per_million_t": 0
+        },
+        "caching": {
+          "read": {
+            "unit": "1M tokens",
+            "price_per_million_t": 0
+          }
+        }
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_completion_tokens",
+        "presence_penalty",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "capabilities": {
+        "vision": false,
+        "function_call": true,
+        "reasoning": true
+      },
+      "benchmarks": {
+        "artificial_analysis_intelligence_index": null,
+        "artificial_analysis_coding_index": null,
+        "artificial_analysis_math_index": null,
+        "mmlu_pro": null,
+        "gpqa": null,
+        "hle": 0.392,
+        "livecodebench": null,
+        "scicode": 0.519,
+        "math_500": null,
+        "aime": null,
+        "aime_25": null,
+        "ifbench": null,
+        "lcr": 0.84,
+        "terminalbench_hard": null,
+        "terminalbench_v2_1": null,
+        "terminalbench_v4_0": 0.267676767676768,
+        "tau2": null,
+        "tau_banking": null
+      },
+      "use_case": [
+        "coding",
+        "math",
+        "daily_use"
+      ],
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-31T05:16:51.896330+00:00",
+      "lastSeen": "2026-11-21T06:51:15.683057+00:00",
+      "removedDate": "2026-11-22T06:24:03.614089+00:00",
       "status": null
     },
     {

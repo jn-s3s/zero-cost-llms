@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-21T06:51:22.274731+00:00",
+  "updatedAt": "2026-11-22T06:24:11.103147+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "010423fcc2464809803e5b6825c019e1",
+  "generationId": "e639df6ae0664858a2886edb23d313ab",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 224,
-    "eligibleOfferings": 76,
+    "activeOfferings": 220,
+    "eligibleOfferings": 73,
     "excludedOfferings": 45,
-    "uncertainOfferings": 103,
-    "models": 160,
+    "uncertainOfferings": 102,
+    "models": 156,
     "modelsWithGenerationEvidence": 8,
     "modelsWithEditingEvidence": 6,
     "ratedModels": 7,
-    "unratedModels": 153,
+    "unratedModels": 149,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 0,
       "C": 3,
-      "Unrated": 153
+      "Unrated": 149
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-21T06:51:25.062435+00:00",
+      "updatedAt": "2026-11-22T06:24:12.366659+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-21T06:51:22.994833+00:00",
+      "updatedAt": "2026-11-22T06:24:11.432141+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-21T06:51:22.979977+00:00",
+      "updatedAt": "2026-11-22T06:24:11.406477+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-21T06:51:23.286922+00:00",
+      "updatedAt": "2026-11-22T06:24:20.562197+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-21T06:51:23.358332+00:00",
+      "updatedAt": "2026-11-22T06:24:11.570570+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -3538,44 +3538,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
-      "name": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:pollinations:community/YoannDev90/muse-glimmer-30b:free",
-      "name": "community/YoannDev90/muse-glimmer-30b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/YoannDev90/muse-glimmer-30b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:pollinations:community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
       "name": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
       "eligibility": "eligible",
@@ -3633,25 +3595,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/vendouple/muse-glimmer-30b:free",
-      "name": "community/vendouple/muse-glimmer-30b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/vendouple/muse-glimmer-30b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:qoder:qfmodel",
       "name": "Qwen3.8-Flash",
       "eligibility": "uncertain",
@@ -3660,25 +3603,6 @@
         {
           "providerId": "qoder",
           "modelId": "qfmodel"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:routeway:deepseek-v4.1-flash:free",
-      "name": "DeepSeek: DeepSeek V4.1 Flash (Free)",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "routeway",
-          "modelId": "deepseek-v4.1-flash:free"
         }
       ],
       "generationDebugging": [],
@@ -3768,6 +3692,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "010423fcc2464809803e5b6825c019e1"
+    "generationId": "e639df6ae0664858a2886edb23d313ab"
   }
 }
