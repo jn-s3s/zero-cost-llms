@@ -1,14 +1,14 @@
 {
   "status": "success",
-  "count": 11,
-  "updatedAt": "2026-11-22T06:24:07.860502+00:00",
+  "count": 10,
+  "updatedAt": "2026-11-23T07:15:26.836869+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "mimo-v2.6-flash-free",
       "object": "model",
-      "created": 1795328647,
+      "created": 1795418126,
       "owned_by": "opencode",
       "name": "MiMo-V2.6-Flash Free",
       "canonical_id": "xiaomi/mimo-v2.6-flash",
@@ -98,14 +98,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.756466+00:00",
-      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
+      "lastSeen": "2026-11-23T07:15:26.836869+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "deepseek-v4.1-flash-free",
       "object": "model",
-      "created": 1795328647,
+      "created": 1795418126,
       "owned_by": "opencode",
       "name": "DeepSeek V4.1 Flash Free",
       "canonical_id": "deepseek/deepseek-v4.1-flash-1017",
@@ -195,95 +195,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.866960+00:00",
-      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "longcat-2.5-free",
-      "object": "model",
-      "created": 1795328647,
-      "owned_by": "opencode",
-      "name": "LongCat 2.5 Free",
-      "canonical_id": "meituan/longcat-2.5",
-      "type": "chat",
-      "description": "Meituan's multimodal reasoning model for long-horizon coding and agent tasks, with visual understanding and a 1M-token context window",
-      "family": "longcat-free",
-      "open_weights": false,
-      "release_date": "2026-11-02",
-      "last_updated": "2026-11-02",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": {
-        "tools": {
-          "supported": true
-        },
-        "reasoning": {
-          "supported": true,
-          "toggle": true
-        },
-        "temperature": false,
-        "top_p": true,
-        "top_k": true,
-        "system_updates": false,
-        "effort_updates": false
-      },
-      "limit": {
-        "context": 1000000,
-        "output": 262144
-      },
-      "cost": {
-        "text": {
-          "input": {
-            "price": 0,
-            "cache": {
-              "read": 0
-            }
-          },
-          "output": {
-            "price": 0
-          }
-        }
-      },
-      "api": {
-        "chat-completions": {
-          "base_url": "https://opencode.ai/inference/openai/v1",
-          "sdk": {
-            "aisdk": "@ai-sdk/openai-compatible",
-            "opencodeai": "@opencode/ai/providers/openai-compatible"
-          },
-          "compatibility": {
-            "reasoning_field": "reasoning_content"
-          },
-          "capabilities": {
-            "tools": {
-              "updates": []
-            }
-          }
-        }
-      },
-      "recommended_api": "chat-completions",
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-11-10T06:59:45.566492+00:00",
-      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
+      "lastSeen": "2026-11-23T07:15:26.836869+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "iceman-free",
       "object": "model",
-      "created": 1795328647,
+      "created": 1795418126,
       "owned_by": "opencode",
       "name": "Iceman Free",
       "type": "chat",
@@ -347,14 +266,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:44.562202+00:00",
-      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
+      "lastSeen": "2026-11-23T07:15:26.836869+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "beam-free",
       "object": "model",
-      "created": 1795328647,
+      "created": 1795418126,
       "owned_by": "opencode",
       "name": "Beam Free",
       "canonical_id": "reflection/beam-1.0-501b-a23b",
@@ -442,14 +361,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-17T04:06:16.559454+00:00",
-      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
+      "lastSeen": "2026-11-23T07:15:26.836869+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "flint-40b-free",
       "object": "model",
-      "created": 1795328647,
+      "created": 1795418126,
       "owned_by": "opencode",
       "name": "Flint 40B Free",
       "canonical_id": "recursive/flint",
@@ -530,14 +449,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:39.817399+00:00",
-      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
+      "lastSeen": "2026-11-23T07:15:26.836869+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "nemotron-3.5-super-vl-free",
       "object": "model",
-      "created": 1795328647,
+      "created": 1795418126,
       "owned_by": "opencode",
       "name": "Nemotron 3.5 Super VL Free",
       "canonical_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
@@ -620,14 +539,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:49.866960+00:00",
-      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
+      "lastSeen": "2026-11-23T07:15:26.836869+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "jev-1.13-free",
       "object": "model",
-      "created": 1795328647,
+      "created": 1795418126,
       "owned_by": "opencode",
       "name": "Jev 1.13 Free",
       "canonical_id": "typesafe/jev-1.13.0",
@@ -690,14 +609,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.756466+00:00",
-      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
+      "lastSeen": "2026-11-23T07:15:26.836869+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "nemotron-3.5-lightning-free",
       "object": "model",
-      "created": 1795328647,
+      "created": 1795418126,
       "owned_by": "opencode",
       "name": "Nemotron 3.5 Lightning Free",
       "canonical_id": "nvidia/nemotron-3.5-lightning",
@@ -771,14 +690,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:11.756466+00:00",
-      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
+      "lastSeen": "2026-11-23T07:15:26.836869+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "hy4-flash-free",
       "object": "model",
-      "created": 1795328647,
+      "created": 1795418126,
       "owned_by": "opencode",
       "name": "Hy4 flash Free",
       "canonical_id": "tencent/hy4-flash",
@@ -856,14 +775,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-17T07:40:43.805517+00:00",
-      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
+      "lastSeen": "2026-11-23T07:15:26.836869+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "tidepool-alpha-free",
       "object": "model",
-      "created": 1795328647,
+      "created": 1795418126,
       "owned_by": "opencode",
       "name": "Tidepool Alpha Free",
       "type": "chat",
@@ -939,8 +858,89 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-19T07:04:10.352554+00:00",
-      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
+      "lastSeen": "2026-11-23T07:15:26.836869+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "longcat-2.5-free",
+      "object": "model",
+      "created": 1795328647,
+      "owned_by": "opencode",
+      "name": "LongCat 2.5 Free",
+      "canonical_id": "meituan/longcat-2.5",
+      "type": "chat",
+      "description": "Meituan's multimodal reasoning model for long-horizon coding and agent tasks, with visual understanding and a 1M-token context window",
+      "family": "longcat-free",
+      "open_weights": false,
+      "release_date": "2026-11-02",
+      "last_updated": "2026-11-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": {
+        "tools": {
+          "supported": true
+        },
+        "reasoning": {
+          "supported": true,
+          "toggle": true
+        },
+        "temperature": false,
+        "top_p": true,
+        "top_k": true,
+        "system_updates": false,
+        "effort_updates": false
+      },
+      "limit": {
+        "context": 1000000,
+        "output": 262144
+      },
+      "cost": {
+        "text": {
+          "input": {
+            "price": 0,
+            "cache": {
+              "read": 0
+            }
+          },
+          "output": {
+            "price": 0
+          }
+        }
+      },
+      "api": {
+        "chat-completions": {
+          "base_url": "https://opencode.ai/inference/openai/v1",
+          "sdk": {
+            "aisdk": "@ai-sdk/openai-compatible",
+            "opencodeai": "@opencode/ai/providers/openai-compatible"
+          },
+          "compatibility": {
+            "reasoning_field": "reasoning_content"
+          },
+          "capabilities": {
+            "tools": {
+              "updates": []
+            }
+          }
+        }
+      },
+      "recommended_api": "chat-completions",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-11-10T06:59:45.566492+00:00",
+      "lastSeen": "2026-11-22T06:24:07.860502+00:00",
+      "removedDate": "2026-11-23T07:15:26.836869+00:00",
       "status": null
     },
     {

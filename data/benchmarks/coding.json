@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-22T06:24:11.103147+00:00",
+  "updatedAt": "2026-11-23T07:15:30.683321+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "e639df6ae0664858a2886edb23d313ab",
+  "generationId": "50cd05cc47374cf7904bd170508bf572",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 220,
+    "activeOfferings": 221,
     "eligibleOfferings": 73,
     "excludedOfferings": 45,
-    "uncertainOfferings": 102,
-    "models": 156,
+    "uncertainOfferings": 103,
+    "models": 157,
     "modelsWithGenerationEvidence": 8,
     "modelsWithEditingEvidence": 6,
     "ratedModels": 7,
-    "unratedModels": 149,
+    "unratedModels": 150,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 0,
       "C": 3,
-      "Unrated": 149
+      "Unrated": 150
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-22T06:24:12.366659+00:00",
+      "updatedAt": "2026-11-23T07:15:32.885343+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-22T06:24:11.432141+00:00",
+      "updatedAt": "2026-11-23T07:15:31.500660+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-22T06:24:11.406477+00:00",
+      "updatedAt": "2026-11-23T07:15:31.157499+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-22T06:24:20.562197+00:00",
+      "updatedAt": "2026-11-23T07:15:31.532054+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-22T06:24:11.570570+00:00",
+      "updatedAt": "2026-11-23T07:15:31.668009+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -988,6 +988,25 @@
       "provisional": false
     },
     {
+      "modelId": "catalogue:dots-studio/dots-3-note-preview-20260813",
+      "name": "Dots3 Note Preview",
+      "eligibility": "eligible",
+      "identityStatus": "established",
+      "providers": [
+        {
+          "providerId": "openrouter",
+          "modelId": "dots-studio/dots-3-note-preview:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "catalogue:gemma-4-26b-a4b-it-chimerax:free",
       "name": "Gemma 4 Chimerax",
       "eligibility": "uncertain",
@@ -1817,6 +1836,25 @@
         {
           "providerId": "cline",
           "modelId": "baidu/ernie-5.5-flash-preview:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:cline:dots-studio/dots-3-note-preview:free",
+      "name": "dots-studio/dots-3-note-preview:free",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "cline",
+          "modelId": "dots-studio/dots-3-note-preview:free"
         }
       ],
       "generationDebugging": [],
@@ -3291,25 +3329,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:opencode-zen:longcat-2.5-free",
-      "name": "LongCat 2.5 Free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "opencode-zen",
-          "modelId": "longcat-2.5-free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:opencode-zen:mimo-v2.6-flash-free",
       "name": "MiMo-V2.6-Flash Free",
       "eligibility": "eligible",
@@ -3538,14 +3557,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
-      "name": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "modelId": "offering:pollinations:community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
+      "name": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "pollinations",
-          "modelId": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
+          "modelId": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free"
         }
       ],
       "generationDebugging": [],
@@ -3692,6 +3711,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "e639df6ae0664858a2886edb23d313ab"
+    "generationId": "50cd05cc47374cf7904bd170508bf572"
   }
 }

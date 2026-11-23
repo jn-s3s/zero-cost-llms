@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 11,
-  "updatedAt": "2026-11-22T06:24:03.054362+00:00",
+  "count": 12,
+  "updatedAt": "2026-11-23T07:15:23.170874+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -74,7 +74,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-14T06:00:09.057368+00:00",
-      "lastSeen": "2026-11-22T06:24:03.054362+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
       "removedDate": null,
       "status": null
     },
@@ -146,7 +146,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-12T06:56:20.614072+00:00",
-      "lastSeen": "2026-11-22T06:24:03.054362+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
       "removedDate": null,
       "status": null
     },
@@ -243,7 +243,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:39.442982+00:00",
-      "lastSeen": "2026-11-22T06:24:03.054362+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
       "removedDate": null,
       "status": null
     },
@@ -331,7 +331,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-13T06:19:46.905996+00:00",
-      "lastSeen": "2026-11-22T06:24:03.054362+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
       "removedDate": null,
       "status": null
     },
@@ -399,7 +399,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-11-22T06:24:03.054362+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
       "removedDate": null,
       "status": null
     },
@@ -464,50 +464,50 @@
           {
             "arena": "agents",
             "category": "pdf",
-            "elo": 1048,
-            "win_rate": 31.4,
-            "rank": 45
+            "elo": 1040,
+            "win_rate": 30.6,
+            "rank": 48
           },
           {
             "arena": "models",
             "category": "3d",
             "elo": 1102,
-            "win_rate": 29.6,
+            "win_rate": 29.4,
             "rank": 89
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1130,
+            "elo": 1131,
             "win_rate": 32,
             "rank": 97
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1088,
+            "elo": 1089,
             "win_rate": 26.9,
-            "rank": 108
+            "rank": 109
           },
           {
             "arena": "models",
             "category": "gamedev",
             "elo": 1066,
-            "win_rate": 27.2,
-            "rank": 110
+            "win_rate": 27.1,
+            "rank": 109
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1146,
-            "win_rate": 32,
+            "elo": 1145,
+            "win_rate": 31.8,
             "rank": 87
           },
           {
             "arena": "models",
             "category": "website",
-            "elo": 1151,
-            "win_rate": 34.3,
+            "elo": 1152,
+            "win_rate": 34.4,
             "rank": 95
           }
         ],
@@ -535,7 +535,74 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-11-22T06:24:03.054362+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "canonical_slug": "dots-studio/dots-3-note-preview-20260813",
+      "hugging_face_id": "dots-studio/dots3-note-prev",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "created": 1786680361,
+      "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
+      "context_length": 512000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 512000,
+        "max_completion_tokens": 460800,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": "2026-12-31",
+      "links": {
+        "details": "/api/v1/models/dots-studio/dots-3-note-preview-20260813/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
+      "reasoning": {
+        "mandatory": false
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-01T12:22:07.404025+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
       "removedDate": null,
       "status": null
     },
@@ -617,7 +684,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-22T06:24:03.054362+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
       "removedDate": null,
       "status": null
     },
@@ -686,16 +753,16 @@
           {
             "arena": "agents",
             "category": "pdf",
-            "elo": 1059,
-            "win_rate": 30.2,
-            "rank": 44
+            "elo": 1071,
+            "win_rate": 31.8,
+            "rank": 46
           },
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1096,
-            "win_rate": 37.8,
-            "rank": 92
+            "elo": 1095,
+            "win_rate": 37.7,
+            "rank": 93
           },
           {
             "arena": "models",
@@ -709,35 +776,35 @@
             "category": "codecategories",
             "elo": 1124,
             "win_rate": 35.3,
-            "rank": 99
+            "rank": 101
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1135,
+            "elo": 1134,
             "win_rate": 37.1,
             "rank": 90
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1109,
+            "elo": 1108,
             "win_rate": 35.3,
             "rank": 91
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1055,
+            "elo": 1056,
             "win_rate": 32,
-            "rank": 81
+            "rank": 80
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1119,
-            "win_rate": 35.1,
-            "rank": 98
+            "elo": 1121,
+            "win_rate": 35.2,
+            "rank": 97
           },
           {
             "arena": "models",
@@ -779,7 +846,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-22T06:24:03.054362+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
       "removedDate": null,
       "status": null
     },
@@ -873,7 +940,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-22T06:24:03.054362+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
       "removedDate": null,
       "status": null
     },
@@ -963,7 +1030,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-22T06:24:03.054362+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1056,75 +1123,8 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-22T06:24:03.054362+00:00",
+      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
       "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "canonical_slug": "dots-studio/dots-3-note-preview-20260813",
-      "hugging_face_id": "dots-studio/dots3-note-prev",
-      "name": "Dots Studio: Dots3-Note Preview (free)",
-      "created": 1786680361,
-      "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
-      "context_length": 512000,
-      "architecture": {
-        "modality": "text+image->text",
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 512000,
-        "max_completion_tokens": 460800,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": "2026-12-31",
-      "links": {
-        "details": "/api/v1/models/dots-studio/dots-3-note-preview-20260813/endpoints"
-      },
-      "endpoints": [
-        "/api/v1/chat/completions",
-        "/api/v1/completions",
-        "/api/v1/messages",
-        "/api/v1/responses"
-      ],
-      "reasoning": {
-        "mandatory": false
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "removed",
-      "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-20T06:55:44.531005+00:00",
-      "removedDate": "2026-11-21T06:51:14.934904+00:00",
       "status": null
     },
     {
