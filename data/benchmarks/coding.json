@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-23T07:15:30.683321+00:00",
+  "updatedAt": "2026-11-24T09:38:18.801600+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "50cd05cc47374cf7904bd170508bf572",
+  "generationId": "63b251a2ca094dffa959437fdb206879",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 221,
-    "eligibleOfferings": 73,
-    "excludedOfferings": 45,
+    "activeOfferings": 218,
+    "eligibleOfferings": 72,
+    "excludedOfferings": 43,
     "uncertainOfferings": 103,
-    "models": 157,
+    "models": 156,
     "modelsWithGenerationEvidence": 8,
     "modelsWithEditingEvidence": 6,
     "ratedModels": 7,
-    "unratedModels": 150,
+    "unratedModels": 149,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 0,
       "C": 3,
-      "Unrated": 150
+      "Unrated": 149
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-23T07:15:32.885343+00:00",
+      "updatedAt": "2026-11-24T09:38:20.307613+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-23T07:15:31.500660+00:00",
+      "updatedAt": "2026-11-24T09:38:19.162191+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-23T07:15:31.157499+00:00",
+      "updatedAt": "2026-11-24T09:38:19.106464+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-23T07:15:31.532054+00:00",
+      "updatedAt": "2026-11-24T09:38:19.607981+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-23T07:15:31.668009+00:00",
+      "updatedAt": "2026-11-24T09:38:19.236660+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -1190,25 +1190,6 @@
         {
           "providerId": "llm7",
           "modelId": "mistral-Nemo-Instruct-2407"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "catalogue:mistral/leanstral-1-5",
-      "name": "Leanstral 1.5",
-      "eligibility": "uncertain",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "requesty",
-          "modelId": "mistral/leanstral-1-5"
         }
       ],
       "generationDebugging": [],
@@ -2664,25 +2645,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:llm7:gemma-3-27b",
-      "name": "gemma-3-27b",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "gemma-3-27b"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:llm7:gpt-oss:20b",
       "name": "gpt-oss:20b",
       "eligibility": "uncertain",
@@ -2710,6 +2672,25 @@
         {
           "providerId": "mistral",
           "modelId": "codestral-2508"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:mistral:glm-5-2",
+      "name": "glm-5-2",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "mistral",
+          "modelId": "glm-5-2"
         }
       ],
       "generationDebugging": [],
@@ -2778,6 +2759,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:mistral:mistral-large-2512",
+      "name": "mistral-large-2512",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "mistral",
+          "modelId": "mistral-large-2512"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:mistral:mistral-medium-latest",
       "name": "mistral-medium-latest",
       "eligibility": "uncertain",
@@ -2824,6 +2824,25 @@
         {
           "providerId": "mistral",
           "modelId": "voxtral-small-2507"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
+      "modelId": "offering:mistral:zai-glm-5-3",
+      "name": "zai-glm-5-3",
+      "eligibility": "uncertain",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "mistral",
+          "modelId": "zai-glm-5-3"
         }
       ],
       "generationDebugging": [],
@@ -2938,25 +2957,6 @@
         {
           "providerId": "nvidia",
           "modelId": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:nvidia:nvidia/nemotron-3-embed-1b",
-      "name": "nvidia/nemotron-3-embed-1b",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "nvidia",
-          "modelId": "nvidia/nemotron-3-embed-1b"
         }
       ],
       "generationDebugging": [],
@@ -3557,25 +3557,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
-      "name": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/CloudCompile/nvidia-nemotron-3-ultra-550b-a55b:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:pollinations:community/YoannDev90/vercel-nemotron-3.5-lightning:free",
       "name": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
       "eligibility": "eligible",
@@ -3711,6 +3692,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "50cd05cc47374cf7904bd170508bf572"
+    "generationId": "63b251a2ca094dffa959437fdb206879"
   }
 }

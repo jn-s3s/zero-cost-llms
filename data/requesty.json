@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 8,
-  "updatedAt": "2026-11-23T07:15:23.789673+00:00",
+  "count": 7,
+  "updatedAt": "2026-11-24T09:38:11.192143+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -64,7 +64,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-06T06:03:26.785887+00:00",
-      "lastSeen": "2026-11-23T07:15:23.789673+00:00",
+      "lastSeen": "2026-11-24T09:38:11.192143+00:00",
       "removedDate": null,
       "status": null
     },
@@ -127,7 +127,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-23T07:15:23.789673+00:00",
+      "lastSeen": "2026-11-24T09:38:11.192143+00:00",
       "removedDate": null,
       "status": null
     },
@@ -190,7 +190,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-23T07:15:23.789673+00:00",
+      "lastSeen": "2026-11-24T09:38:11.192143+00:00",
       "removedDate": null,
       "status": null
     },
@@ -253,66 +253,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-23T07:15:23.789673+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "api": "chat",
-      "id": "mistral/leanstral-1-5",
-      "object": "model",
-      "created": 1779840000,
-      "updated": 1793358042,
-      "owned_by": "system",
-      "input_price": 0,
-      "cached_price": 0,
-      "output_price": 0,
-      "pricing": [
-        {
-          "prompt_tokens_threshold": 0,
-          "input_price": 0,
-          "cached_price": 0,
-          "output_price": 0
-        }
-      ],
-      "max_output_tokens": 32768,
-      "context_window": 262144,
-      "supports_caching": false,
-      "supports_vision": true,
-      "supports_vision_inline": true,
-      "supports_vision_url": true,
-      "supports_computer_use": false,
-      "supports_reasoning": true,
-      "reasoning": {
-        "supported_efforts": [
-          "none",
-          "high"
-        ]
-      },
-      "supports_image_generation": false,
-      "supports_tool_calling": true,
-      "supports_role_developer": false,
-      "supports_web_search": false,
-      "supports_output_json_object": true,
-      "supports_output_json_schema": true,
-      "supports_system_mid_conversation": true,
-      "description": "Leanstral 1.5 is an updated Lean 4 formal proof engineering model from Mistral AI, optimized for automated theorem proving and autoformalization. It has 119B total parameters with 6.5B active and supports a 256K token context window. It supports native function calling and structured output.",
-      "data_retention": false,
-      "data_retention_days": 0,
-      "data_used_for_training": false,
-      "privacy_comments": "N/A",
-      "geolocation": "eu",
-      "hugging_face_id": "mistralai/Leanstral-1.5-119B-A6B",
-      "open_weights": true,
-      "model_lab": "mistral",
-      "model_canonical_name": "leanstral-1-5",
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-23T07:15:23.789673+00:00",
+      "lastSeen": "2026-11-24T09:38:11.192143+00:00",
       "removedDate": null,
       "status": null
     },
@@ -375,7 +316,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-23T07:15:23.789673+00:00",
+      "lastSeen": "2026-11-24T09:38:11.192143+00:00",
       "removedDate": null,
       "status": null
     },
@@ -434,7 +375,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-23T07:15:23.789673+00:00",
+      "lastSeen": "2026-11-24T09:38:11.192143+00:00",
       "removedDate": null,
       "status": null
     },
@@ -487,8 +428,67 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-      "lastSeen": "2026-11-23T07:15:23.789673+00:00",
+      "lastSeen": "2026-11-24T09:38:11.192143+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "api": "chat",
+      "id": "mistral/leanstral-1-5",
+      "object": "model",
+      "created": 1779840000,
+      "updated": 1793358042,
+      "owned_by": "system",
+      "input_price": 0,
+      "cached_price": 0,
+      "output_price": 0,
+      "pricing": [
+        {
+          "prompt_tokens_threshold": 0,
+          "input_price": 0,
+          "cached_price": 0,
+          "output_price": 0
+        }
+      ],
+      "max_output_tokens": 32768,
+      "context_window": 262144,
+      "supports_caching": false,
+      "supports_vision": true,
+      "supports_vision_inline": true,
+      "supports_vision_url": true,
+      "supports_computer_use": false,
+      "supports_reasoning": true,
+      "reasoning": {
+        "supported_efforts": [
+          "none",
+          "high"
+        ]
+      },
+      "supports_image_generation": false,
+      "supports_tool_calling": true,
+      "supports_role_developer": false,
+      "supports_web_search": false,
+      "supports_output_json_object": true,
+      "supports_output_json_schema": true,
+      "supports_system_mid_conversation": true,
+      "description": "Leanstral 1.5 is an updated Lean 4 formal proof engineering model from Mistral AI, optimized for automated theorem proving and autoformalization. It has 119B total parameters with 6.5B active and supports a 256K token context window. It supports native function calling and structured output.",
+      "data_retention": false,
+      "data_retention_days": 0,
+      "data_used_for_training": false,
+      "privacy_comments": "N/A",
+      "geolocation": "eu",
+      "hugging_face_id": "mistralai/Leanstral-1.5-119B-A6B",
+      "open_weights": true,
+      "model_lab": "mistral",
+      "model_canonical_name": "leanstral-1-5",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:07.534784+00:00",
+      "lastSeen": "2026-11-23T07:15:23.789673+00:00",
+      "removedDate": "2026-11-24T09:38:11.192143+00:00",
       "status": null
     },
     {

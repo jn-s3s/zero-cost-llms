@@ -1,7 +1,7 @@
 {
   "status": "success",
   "count": 12,
-  "updatedAt": "2026-11-23T07:15:23.170874+00:00",
+  "updatedAt": "2026-11-24T09:38:10.833930+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -74,7 +74,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-14T06:00:09.057368+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
@@ -146,7 +146,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-12T06:56:20.614072+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
@@ -243,7 +243,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:39.442982+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
@@ -331,7 +331,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-13T06:19:46.905996+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
@@ -399,7 +399,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
@@ -464,51 +464,51 @@
           {
             "arena": "agents",
             "category": "pdf",
-            "elo": 1040,
-            "win_rate": 30.6,
-            "rank": 48
+            "elo": 1055,
+            "win_rate": 32.5,
+            "rank": 47
           },
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1102,
-            "win_rate": 29.4,
-            "rank": 89
+            "elo": 1092,
+            "win_rate": 28.5,
+            "rank": 93
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1131,
-            "win_rate": 32,
-            "rank": 97
+            "elo": 1189,
+            "win_rate": 31.9,
+            "rank": 94
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1089,
+            "elo": 1088,
             "win_rate": 26.9,
             "rank": 109
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1066,
+            "elo": 1067,
             "win_rate": 27.1,
-            "rank": 109
+            "rank": 108
           },
           {
             "arena": "models",
             "category": "uicomponent",
-            "elo": 1145,
-            "win_rate": 31.8,
+            "elo": 1142,
+            "win_rate": 31.9,
             "rank": 87
           },
           {
             "arena": "models",
             "category": "website",
-            "elo": 1152,
-            "win_rate": 34.4,
-            "rank": 95
+            "elo": 1204,
+            "win_rate": 34.3,
+            "rank": 93
           }
         ],
         "artificial_analysis": {
@@ -535,7 +535,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
@@ -602,7 +602,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
@@ -684,7 +684,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
@@ -753,65 +753,65 @@
           {
             "arena": "agents",
             "category": "pdf",
-            "elo": 1071,
-            "win_rate": 31.8,
-            "rank": 46
+            "elo": 1102,
+            "win_rate": 35.3,
+            "rank": 45
           },
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1095,
-            "win_rate": 37.7,
-            "rank": 93
+            "elo": 1093,
+            "win_rate": 37.8,
+            "rank": 91
           },
           {
             "arena": "models",
             "category": "asciiart",
-            "elo": 1082,
-            "win_rate": 36.3,
-            "rank": 69
+            "elo": 1102,
+            "win_rate": 39,
+            "rank": 64
           },
           {
             "arena": "models",
             "category": "codecategories",
-            "elo": 1124,
-            "win_rate": 35.3,
-            "rank": 101
+            "elo": 1185,
+            "win_rate": 35.4,
+            "rank": 96
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1134,
-            "win_rate": 37.1,
-            "rank": 90
+            "elo": 1136,
+            "win_rate": 37.3,
+            "rank": 89
           },
           {
             "arena": "models",
             "category": "gamedev",
             "elo": 1108,
-            "win_rate": 35.3,
+            "win_rate": 35.2,
             "rank": 91
           },
           {
             "arena": "models",
             "category": "svg",
-            "elo": 1056,
-            "win_rate": 32,
-            "rank": 80
+            "elo": 1113,
+            "win_rate": 32.1,
+            "rank": 77
           },
           {
             "arena": "models",
             "category": "uicomponent",
             "elo": 1121,
-            "win_rate": 35.2,
+            "win_rate": 35.3,
             "rank": 97
           },
           {
             "arena": "models",
             "category": "website",
-            "elo": 1125,
-            "win_rate": 34.3,
-            "rank": 106
+            "elo": 1180,
+            "win_rate": 34.5,
+            "rank": 103
           }
         ],
         "artificial_analysis": {
@@ -846,7 +846,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
@@ -940,7 +940,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1030,7 +1030,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1123,7 +1123,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-23T07:15:23.170874+00:00",
+      "lastSeen": "2026-11-24T09:38:10.833930+00:00",
       "removedDate": null,
       "status": null
     },
