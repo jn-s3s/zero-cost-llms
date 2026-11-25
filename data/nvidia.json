@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 20,
-  "updatedAt": "2026-11-24T09:38:11.964747+00:00",
+  "count": 18,
+  "updatedAt": "2026-11-25T08:10:20.068772+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -16,37 +16,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-20T06:55:45.868852+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "google/gemma-4-31b-it",
-      "object": "model",
-      "created": 735790403,
-      "owned_by": "google",
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
-      "removedDate": null,
-      "status": null
-    },
-    {
-      "id": "meta/muse-glimmer-30b",
-      "object": "model",
-      "created": 735790403,
-      "owned_by": "meta",
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -61,7 +31,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-23T04:29:27.303538+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -76,7 +46,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-30T05:30:03.121511+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -96,7 +66,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-18T07:03:55.059027+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -111,7 +81,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -126,7 +96,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -141,7 +111,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -156,7 +126,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -171,7 +141,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-24T04:19:47.314658+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -186,7 +156,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -201,7 +171,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:39.322836+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -216,7 +186,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:39.322836+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -231,7 +201,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -246,7 +216,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:44.511485+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -261,7 +231,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -276,7 +246,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -291,7 +261,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:44.511485+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
       "status": null
     },
@@ -306,8 +276,38 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "lastSeen": "2026-11-25T08:10:20.068772+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "google/gemma-4-31b-it",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "google",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "removedDate": "2026-11-25T08:10:20.068772+00:00",
+      "status": null
+    },
+    {
+      "id": "meta/muse-glimmer-30b",
+      "object": "model",
+      "created": 735790403,
+      "owned_by": "meta",
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-10-01T12:22:08.831453+00:00",
+      "lastSeen": "2026-11-24T09:38:11.964747+00:00",
+      "removedDate": "2026-11-25T08:10:20.068772+00:00",
       "status": null
     },
     {

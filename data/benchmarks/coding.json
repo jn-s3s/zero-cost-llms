@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-24T09:38:18.801600+00:00",
+  "updatedAt": "2026-11-25T08:10:25.104886+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "63b251a2ca094dffa959437fdb206879",
+  "generationId": "bd30238bf8604b5eb478857fb64dd22b",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 218,
+    "activeOfferings": 214,
     "eligibleOfferings": 72,
     "excludedOfferings": 43,
-    "uncertainOfferings": 103,
-    "models": 156,
+    "uncertainOfferings": 99,
+    "models": 154,
     "modelsWithGenerationEvidence": 8,
     "modelsWithEditingEvidence": 6,
     "ratedModels": 7,
-    "unratedModels": 149,
+    "unratedModels": 147,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 0,
       "C": 3,
-      "Unrated": 149
+      "Unrated": 147
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-24T09:38:20.307613+00:00",
+      "updatedAt": "2026-11-25T08:10:26.359782+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-24T09:38:19.162191+00:00",
+      "updatedAt": "2026-11-25T08:10:25.737227+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-24T09:38:19.106464+00:00",
+      "updatedAt": "2026-11-25T08:10:25.358997+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-24T09:38:19.607981+00:00",
+      "updatedAt": "2026-11-25T08:10:25.408260+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-24T09:38:19.236660+00:00",
+      "updatedAt": "2026-11-25T08:10:25.465294+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -514,10 +514,6 @@
         {
           "providerId": "cline",
           "modelId": "google/gemma-4-31b-it:free"
-        },
-        {
-          "providerId": "nvidia",
-          "modelId": "google/gemma-4-31b-it"
         },
         {
           "providerId": "openrouter",
@@ -988,25 +984,6 @@
       "provisional": false
     },
     {
-      "modelId": "catalogue:dots-studio/dots-3-note-preview-20260813",
-      "name": "Dots3 Note Preview",
-      "eligibility": "eligible",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "openrouter",
-          "modelId": "dots-studio/dots-3-note-preview:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "catalogue:gemma-4-26b-a4b-it-chimerax:free",
       "name": "Gemma 4 Chimerax",
       "eligibility": "uncertain",
@@ -1164,10 +1141,6 @@
       "eligibility": "uncertain",
       "identityStatus": "established",
       "providers": [
-        {
-          "providerId": "nvidia",
-          "modelId": "meta/muse-glimmer-30b"
-        },
         {
           "providerId": "requesty",
           "modelId": "nvidia/muse-glimmer-30b"
@@ -1342,25 +1315,6 @@
         {
           "providerId": "googleai",
           "modelId": "models/gemini-robotics-er-2-preview"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "catalogue:muse-glimmer-30b:free",
-      "name": "Routeway Muse Glimmer 30B",
-      "eligibility": "uncertain",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "routeway",
-          "modelId": "muse-glimmer-30b:free"
         }
       ],
       "generationDebugging": [],
@@ -1817,25 +1771,6 @@
         {
           "providerId": "cline",
           "modelId": "baidu/ernie-5.5-flash-preview:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "offering:cline:dots-studio/dots-3-note-preview:free",
-      "name": "dots-studio/dots-3-note-preview:free",
-      "eligibility": "uncertain",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "cline",
-          "modelId": "dots-studio/dots-3-note-preview:free"
         }
       ],
       "generationDebugging": [],
@@ -3595,6 +3530,25 @@
       "provisional": false
     },
     {
+      "modelId": "offering:pollinations:community/vendouple/laguna-s-2.1:free",
+      "name": "community/vendouple/laguna-s-2.1:free",
+      "eligibility": "eligible",
+      "identityStatus": "unresolved",
+      "providers": [
+        {
+          "providerId": "pollinations",
+          "modelId": "community/vendouple/laguna-s-2.1:free"
+        }
+      ],
+      "generationDebugging": [],
+      "repositoryEditing": [],
+      "tier": "Unrated",
+      "index": null,
+      "basis": "no_usable_scoring_evidence",
+      "confidence": "none",
+      "provisional": false
+    },
+    {
       "modelId": "offering:qoder:qfmodel",
       "name": "Qwen3.8-Flash",
       "eligibility": "uncertain",
@@ -3692,6 +3646,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "63b251a2ca094dffa959437fdb206879"
+    "generationId": "bd30238bf8604b5eb478857fb64dd22b"
   }
 }

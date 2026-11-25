@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 2,
-  "updatedAt": "2026-11-24T09:38:15.264373+00:00",
+  "count": 3,
+  "updatedAt": "2026-11-25T08:10:22.629408+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -68,7 +68,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-18T07:03:58.229466+00:00",
-      "lastSeen": "2026-11-24T09:38:15.264373+00:00",
+      "lastSeen": "2026-11-25T08:10:22.629408+00:00",
       "removedDate": null,
       "status": null
     },
@@ -123,8 +123,8 @@
       "context_length": 1000000,
       "per_user_rpm": null,
       "health": {
-        "status": "degraded",
-        "success_rate": 92,
+        "status": "healthy",
+        "success_rate": 100,
         "requests": 50
       },
       "benchmarks": null,
@@ -133,7 +133,72 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-24T09:38:15.264373+00:00",
+      "lastSeen": "2026-11-25T08:10:22.629408+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/vendouple/laguna-s-2.1:free",
+      "object": "model",
+      "created": 1790699044,
+      "owned_by": "OrchidLLM Proxy",
+      "aliases": [
+        "vendouple/laguna-s-2.1:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Laguna S2.1 Free",
+      "description": "its back again",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "required_safety": [],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "top_provider": {
+        "max_completion_tokens": null
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "alpha": true,
+      "per_user_rpm": 3,
+      "health": {
+        "status": "unknown",
+        "success_rate": null,
+        "requests": 0
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-10-08T05:47:05.283557+00:00",
+      "lastSeen": "2026-11-25T08:10:22.629408+00:00",
       "removedDate": null,
       "status": null
     },
@@ -644,66 +709,6 @@
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
       "lastSeen": "2026-11-09T05:56:06.506182+00:00",
       "removedDate": "2026-11-10T06:59:45.534380+00:00",
-      "status": null
-    },
-    {
-      "id": "community/vendouple/laguna-s-2.1:free",
-      "object": "model",
-      "created": 1790699044,
-      "owned_by": "OrchidLLM Proxy",
-      "aliases": [
-        "vendouple/laguna-s-2.1:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Laguna S2.1 Free",
-      "description": "its back again",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "per_user_rpm": 3,
-      "health": {
-        "status": "healthy",
-        "success_rate": 100,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "removed",
-      "firstSeen": "2026-10-08T05:47:05.283557+00:00",
-      "lastSeen": "2026-10-31T05:16:56.846503+00:00",
-      "removedDate": "2026-11-01T05:44:58.442439+00:00",
       "status": null
     },
     {
