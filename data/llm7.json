@@ -1,14 +1,14 @@
 {
   "status": "success",
-  "count": 3,
-  "updatedAt": "2026-11-25T08:10:23.404772+00:00",
+  "count": 2,
+  "updatedAt": "2026-11-26T07:58:04.820145+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
     {
       "id": "codestral-latest",
       "object": "model",
-      "created": 1795590011,
+      "created": 1795672858,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -63,14 +63,14 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-25T08:10:23.404772+00:00",
+      "lastSeen": "2026-11-26T07:58:04.820145+00:00",
       "removedDate": null,
       "status": null
     },
     {
       "id": "gpt-oss:20b",
       "object": "model",
-      "created": 1795589733,
+      "created": 1795675822,
       "owned_by": "",
       "model_type": "chat",
       "schema_endpoints": [
@@ -125,7 +125,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-      "lastSeen": "2026-11-25T08:10:23.404772+00:00",
+      "lastSeen": "2026-11-26T07:58:04.820145+00:00",
       "removedDate": null,
       "status": null
     },
@@ -185,10 +185,10 @@
       "curated_benchmarks": null,
       "swe_bench_score": null,
       "swe_bench_tier": null,
-      "presence": "active",
+      "presence": "removed",
       "firstSeen": "2026-10-01T12:22:12.754811+00:00",
       "lastSeen": "2026-11-25T08:10:23.404772+00:00",
-      "removedDate": null,
+      "removedDate": "2026-11-26T07:58:04.820145+00:00",
       "status": null
     },
     {

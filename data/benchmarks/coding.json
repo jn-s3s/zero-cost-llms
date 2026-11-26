@@ -1,22 +1,22 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-25T08:10:25.104886+00:00",
+  "updatedAt": "2026-11-26T07:58:06.957864+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "bd30238bf8604b5eb478857fb64dd22b",
+  "generationId": "579a8f3229a04afb81f716211ccd4d45",
   "policyVersion": "coding-recommendation-v1",
   "tierInterpretation": "Provisional source-relative recommendation, not calibrated coding ability or task-success percentage",
   "summary": {
-    "activeOfferings": 214,
-    "eligibleOfferings": 72,
+    "activeOfferings": 211,
+    "eligibleOfferings": 71,
     "excludedOfferings": 43,
-    "uncertainOfferings": 99,
-    "models": 154,
+    "uncertainOfferings": 97,
+    "models": 151,
     "modelsWithGenerationEvidence": 8,
     "modelsWithEditingEvidence": 6,
     "ratedModels": 7,
-    "unratedModels": 147,
+    "unratedModels": 144,
     "tierCounts": {
       "S+": 0,
       "S": 0,
@@ -26,7 +26,7 @@
       "B+": 3,
       "B": 0,
       "C": 3,
-      "Unrated": 147
+      "Unrated": 144
     }
   },
   "sourceStates": [
@@ -34,7 +34,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-25T08:10:26.359782+00:00",
+      "updatedAt": "2026-11-26T07:58:09.161501+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
@@ -46,7 +46,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-25T08:10:25.737227+00:00",
+      "updatedAt": "2026-11-26T07:58:07.439017+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
@@ -58,7 +58,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-25T08:10:25.358997+00:00",
+      "updatedAt": "2026-11-26T07:58:07.394305+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -70,7 +70,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-25T08:10:25.408260+00:00",
+      "updatedAt": "2026-11-26T07:58:07.995686+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "hasSnapshot": true,
       "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
@@ -82,7 +82,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-25T08:10:25.465294+00:00",
+      "updatedAt": "2026-11-26T07:58:07.665202+00:00",
       "lastFailedAt": null,
       "hasSnapshot": true,
       "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
@@ -1155,25 +1155,6 @@
       "provisional": false
     },
     {
-      "modelId": "catalogue:mistral-Nemo-Instruct-2407",
-      "name": "Mistral Nemo Instruct 2407",
-      "eligibility": "uncertain",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "llm7",
-          "modelId": "mistral-Nemo-Instruct-2407"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "catalogue:models/gemini-2.5-flash",
       "name": "Gemini 2.5 Flash",
       "eligibility": "eligible",
@@ -1315,25 +1296,6 @@
         {
           "providerId": "googleai",
           "modelId": "models/gemini-robotics-er-2-preview"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
-      "modelId": "catalogue:nvidia/nemotron-3-nano-30b-a3b",
-      "name": "Nemotron 3 Nano 30B A3B",
-      "eligibility": "uncertain",
-      "identityStatus": "established",
-      "providers": [
-        {
-          "providerId": "requesty",
-          "modelId": "nvidia/nemotron-3-nano-30b-a3b"
         }
       ],
       "generationDebugging": [],
@@ -3321,14 +3283,14 @@
       "provisional": false
     },
     {
-      "modelId": "offering:opencode-zen:tidepool-alpha-free",
-      "name": "Tidepool Alpha Free",
+      "modelId": "offering:opencode-zen:seaglass-alpha-free",
+      "name": "Seaglass Alpha Free",
       "eligibility": "eligible",
       "identityStatus": "unresolved",
       "providers": [
         {
           "providerId": "opencode-zen",
-          "modelId": "tidepool-alpha-free"
+          "modelId": "seaglass-alpha-free"
         }
       ],
       "generationDebugging": [],
@@ -3530,25 +3492,6 @@
       "provisional": false
     },
     {
-      "modelId": "offering:pollinations:community/vendouple/laguna-s-2.1:free",
-      "name": "community/vendouple/laguna-s-2.1:free",
-      "eligibility": "eligible",
-      "identityStatus": "unresolved",
-      "providers": [
-        {
-          "providerId": "pollinations",
-          "modelId": "community/vendouple/laguna-s-2.1:free"
-        }
-      ],
-      "generationDebugging": [],
-      "repositoryEditing": [],
-      "tier": "Unrated",
-      "index": null,
-      "basis": "no_usable_scoring_evidence",
-      "confidence": "none",
-      "provisional": false
-    },
-    {
       "modelId": "offering:qoder:qfmodel",
       "name": "Qwen3.8-Flash",
       "eligibility": "uncertain",
@@ -3646,6 +3589,6 @@
   ],
   "auditRef": {
     "path": "coding-audit.json",
-    "generationId": "bd30238bf8604b5eb478857fb64dd22b"
+    "generationId": "579a8f3229a04afb81f716211ccd4d45"
   }
 }
