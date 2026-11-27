@@ -2,7 +2,7 @@
   "status": "failed",
   "count": 1,
   "updatedAt": "2026-11-06T06:16:31.646642+00:00",
-  "lastFailedAt": "2026-11-26T07:58:06.364062+00:00",
+  "lastFailedAt": "2026-11-27T07:59:47.366866+00:00",
   "lastFailedMessage": "EmptyFetchError: fetched no free models",
   "data": [
     {

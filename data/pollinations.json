@@ -1,7 +1,7 @@
 {
   "status": "success",
-  "count": 2,
-  "updatedAt": "2026-11-26T07:58:03.325387+00:00",
+  "count": 3,
+  "updatedAt": "2026-11-27T07:59:44.090984+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
@@ -68,7 +68,73 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-18T07:03:58.229466+00:00",
-      "lastSeen": "2026-11-26T07:58:03.325387+00:00",
+      "lastSeen": "2026-11-27T07:59:44.090984+00:00",
+      "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "object": "model",
+      "created": 1793646818,
+      "owned_by": "Awesome Free AI API",
+      "aliases": [
+        "YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
+      ],
+      "category": "text",
+      "community": true,
+      "tags": [
+        {
+          "name": "text"
+        },
+        {
+          "name": "community"
+        }
+      ],
+      "title": "Mistral Large 4",
+      "description": "Mistral AI 1T-total / 52B-active granular MoE for text and image input with reasoning, function calling and structured outputs, served in NVFP4 with DSpark speculative decoding.",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "required_safety": [],
+      "supported_endpoints": [
+        "/v1/chat/completions",
+        "/text",
+        "/text/{prompt}",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      },
+      "top_provider": {
+        "max_completion_tokens": null
+      },
+      "capabilities": [
+        "tool_calling",
+        "reasoning"
+      ],
+      "tools": true,
+      "reasoning": true,
+      "alpha": true,
+      "context_length": 262000,
+      "per_user_rpm": null,
+      "health": {
+        "status": "healthy",
+        "success_rate": 98,
+        "requests": 50
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "active",
+      "firstSeen": "2026-11-08T05:46:07.554146+00:00",
+      "lastSeen": "2026-11-27T07:59:44.090984+00:00",
       "removedDate": null,
       "status": null
     },
@@ -133,7 +199,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-      "lastSeen": "2026-11-26T07:58:03.325387+00:00",
+      "lastSeen": "2026-11-27T07:59:44.090984+00:00",
       "removedDate": null,
       "status": null
     },
@@ -390,72 +456,6 @@
       "firstSeen": "2026-10-26T04:26:39.847212+00:00",
       "lastSeen": "2026-11-23T07:15:26.626987+00:00",
       "removedDate": "2026-11-24T09:38:15.264373+00:00",
-      "status": null
-    },
-    {
-      "id": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
-      "object": "model",
-      "created": 1793646818,
-      "owned_by": "Awesome Free AI API",
-      "aliases": [
-        "YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
-      ],
-      "category": "text",
-      "community": true,
-      "tags": [
-        {
-          "name": "text"
-        },
-        {
-          "name": "community"
-        }
-      ],
-      "title": "Mistral Large 4",
-      "description": "Mistral AI 1T-total / 52B-active granular MoE for text and image input with reasoning, function calling and structured outputs, served in NVFP4 with DSpark speculative decoding.",
-      "input_modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "required_safety": [],
-      "supported_endpoints": [
-        "/v1/chat/completions",
-        "/text",
-        "/text/{prompt}",
-        "/v1/responses",
-        "/v1/messages"
-      ],
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      },
-      "top_provider": {
-        "max_completion_tokens": null
-      },
-      "capabilities": [
-        "tool_calling",
-        "reasoning"
-      ],
-      "tools": true,
-      "reasoning": true,
-      "alpha": true,
-      "context_length": 262000,
-      "per_user_rpm": null,
-      "health": {
-        "status": "degraded",
-        "success_rate": 90,
-        "requests": 50
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "removed",
-      "firstSeen": "2026-11-08T05:46:07.554146+00:00",
-      "lastSeen": "2026-11-22T06:24:07.336545+00:00",
-      "removedDate": "2026-11-23T07:15:26.626987+00:00",
       "status": null
     },
     {

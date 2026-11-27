@@ -1,10 +1,10 @@
 {
   "schemaVersion": 3,
   "status": "success",
-  "updatedAt": "2026-11-26T07:58:06.957864+00:00",
+  "updatedAt": "2026-11-27T07:59:47.925443+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
-  "generationId": "579a8f3229a04afb81f716211ccd4d45",
+  "generationId": "96bfb2c0558f43e09efd056ec8815f31",
   "policyVersion": "coding-recommendation-v1",
   "tierScoring": {
     "policyVersion": "coding-recommendation-v1",
@@ -7008,23 +7008,6 @@
         "leaveOneSourceFamilyOut": []
       },
       {
-        "modelId": "catalogue:inclusionai/ling-3.1-flash",
-        "tier": "Unrated",
-        "index": null,
-        "basis": "no_usable_scoring_evidence",
-        "weights": {},
-        "confidence": "none",
-        "provisional": false,
-        "selected": {},
-        "rejected": [],
-        "omittedWorkloads": [
-          "generationDebugging",
-          "repositoryEditing"
-        ],
-        "omittedWorkloadCaveat": "Missing workloads are omitted and weights renormalized, not scored zero. Single-workload tiers do not establish broad capability.",
-        "leaveOneSourceFamilyOut": []
-      },
-      {
         "modelId": "catalogue:meta/muse-glimmer-30b",
         "tier": "Unrated",
         "index": null,
@@ -12273,6 +12256,23 @@
         "leaveOneSourceFamilyOut": []
       },
       {
+        "modelId": "offering:pollinations:community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+        "tier": "Unrated",
+        "index": null,
+        "basis": "no_usable_scoring_evidence",
+        "weights": {},
+        "confidence": "none",
+        "provisional": false,
+        "selected": {},
+        "rejected": [],
+        "omittedWorkloads": [
+          "generationDebugging",
+          "repositoryEditing"
+        ],
+        "omittedWorkloadCaveat": "Missing workloads are omitted and weights renormalized, not scored zero. Single-workload tiers do not establish broad capability.",
+        "leaveOneSourceFamilyOut": []
+      },
+      {
         "modelId": "offering:pollinations:community/YoannDev90/vercel-nemotron-3.5-lightning:free",
         "tier": "Unrated",
         "index": null,
@@ -12395,9 +12395,9 @@
   },
   "summary": {
     "activeOfferings": 211,
-    "eligibleOfferings": 71,
+    "eligibleOfferings": 72,
     "excludedOfferings": 43,
-    "uncertainOfferings": 97,
+    "uncertainOfferings": 96,
     "models": 151,
     "modelsWithGenerationEvidence": 8,
     "modelsWithEditingEvidence": 6,
@@ -12421,13 +12421,13 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:09.161501+00:00",
+      "updatedAt": "2026-11-27T07:59:50.207508+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
       "snapshot": {
         "revision": "19e766a5de4de07d672ed5bf9f0a69ceed1d39bf",
         "sourceUrl": "https://raw.githubusercontent.com/LiveBench/livebench.github.io/19e766a5de4de07d672ed5bf9f0a69ceed1d39bf/src/Table/modelLinks.js",
-        "capturedAt": "2026-11-26T07:58:09.161344+00:00",
+        "capturedAt": "2026-11-27T07:59:50.207378+00:00",
         "contentHash": "be71eb3d9f0fd5dd5fa0d16db313ce9674431b80b6401fa25d5fcefd20b43e88",
         "contentHashDefinition": "SHA-256 of raw artifact bodies concatenated in artifacts order",
         "artifacts": [
@@ -38279,13 +38279,13 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:07.439017+00:00",
+      "updatedAt": "2026-11-27T07:59:48.585827+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
       "snapshot": {
         "revision": "87418456d3a8c2bc6265f24ff91d2dd0e7993f4b",
         "sourceUrl": "https://raw.githubusercontent.com/evalplus/evalplus.github.io/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json",
-        "capturedAt": "2026-11-26T07:58:07.438971+00:00",
+        "capturedAt": "2026-11-27T07:59:48.585777+00:00",
         "contentHash": "e6837dc3b94f32cb1da0ced012e52edc4a722007b684df5b63da029bbd3b46d2",
         "contentHashDefinition": "SHA-256 of raw artifact bodies concatenated in artifacts order",
         "artifacts": [
@@ -45248,13 +45248,13 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:07.394305+00:00",
+      "updatedAt": "2026-11-27T07:59:48.410563+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
       "snapshot": {
         "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
         "sourceUrl": "https://raw.githubusercontent.com/Aider-AI/aider/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml",
-        "capturedAt": "2026-11-26T07:58:07.391225+00:00",
+        "capturedAt": "2026-11-27T07:59:48.408372+00:00",
         "contentHash": "85a50b25953512d18ba4bb0c23c0b8e626fcf9a5b52d287644b8a0b44b9535de",
         "contentHashDefinition": "SHA-256 of raw artifact bodies concatenated in artifacts order",
         "artifacts": [
@@ -50582,13 +50582,13 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:07.995686+00:00",
+      "updatedAt": "2026-11-27T07:59:48.736348+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "lastFailedMessage": "HTTPError: HTTP Error 502: Bad Gateway",
       "snapshot": {
         "revision": "08ceb6b15ecd9c0f7c82932e4e248208ffeeb9b4",
         "sourceUrl": "https://datasets-server.huggingface.co/rows?dataset=bigcode%2Fbigcodebench-results&config=default&split=train&offset=0&length=100",
-        "capturedAt": "2026-11-26T07:58:07.995619+00:00",
+        "capturedAt": "2026-11-27T07:59:48.736266+00:00",
         "contentHash": "cf51298e6ed940e8d382e050c662116913731ef7a741bc28acecaf30cffdb99c",
         "contentHashDefinition": "SHA-256 of raw artifact bodies concatenated in artifacts order",
         "artifacts": [
@@ -58287,13 +58287,13 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:07.665202+00:00",
+      "updatedAt": "2026-11-27T07:59:48.755278+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
       "snapshot": {
         "revision": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
         "sourceUrl": "https://raw.githubusercontent.com/Aider-AI/aider/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml",
-        "capturedAt": "2026-11-26T07:58:07.660903+00:00",
+        "capturedAt": "2026-11-27T07:59:48.752324+00:00",
         "contentHash": "4c437c9e22c7fff8b0d61cb8fd4bf9bdf44370783ac9b00a840a80c81319d36e",
         "contentHashDefinition": "SHA-256 of raw artifact bodies concatenated in artifacts order",
         "artifacts": [
@@ -65385,30 +65385,30 @@
       "providerId": "openrouter",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "updatedAt": "2026-11-27T07:59:39.879883+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "6009f60189ac619e8986d206d261b00c2fcff31fe9743f4433d945dc159e343a",
+      "inputHash": "c104061afe749ee5d2d8847a9a425e12d45ba4c1db45544a96fecb36fe1002b8",
       "activeOfferings": 11
     },
     {
       "providerId": "requesty",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:57:59.254009+00:00",
+      "updatedAt": "2026-11-27T07:59:40.490117+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "72d37852c7f6b27eaf88a323b75b409b2a2af21acb2d3ca8675bb0e57991fa72",
-      "activeOfferings": 6
+      "inputHash": "c8d4e63d5da4b89536dbcc0853d1c2eb45db0f7d5a34ccabbcd937954abd5237",
+      "activeOfferings": 5
     },
     {
       "providerId": "routeway",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:57:59.396921+00:00",
+      "updatedAt": "2026-11-27T07:59:40.648218+00:00",
       "lastFailedAt": "2026-10-05T05:19:58.351994+00:00",
       "lastFailedMessage": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
-      "inputHash": "4fbd167fa01eeb65ba86b0c1b644ec3c8df07cf758c627fb5f5faaf682b81ba0",
+      "inputHash": "5b29de6cc2e5fb54bfa8f764c35890aee84f72150900aeb457cec1ef69fac161",
       "activeOfferings": 7
     },
     {
@@ -65416,149 +65416,149 @@
       "available": true,
       "status": "failed",
       "updatedAt": "2026-11-19T07:04:06.708115+00:00",
-      "lastFailedAt": "2026-11-26T07:57:59.477095+00:00",
+      "lastFailedAt": "2026-11-27T07:59:40.737592+00:00",
       "lastFailedMessage": "HTTPError: HTTP Error 401: Unauthorized",
-      "inputHash": "51bb3b734e2cb10fa52545c1893101be1095e04a3147fef4edb537a583a3cd5b",
+      "inputHash": "ee75c5bbba6ed96f1183cce96d4f4bdc076a8ddc40846d5aa813f0e77f04bffa",
       "activeOfferings": 22
     },
     {
       "providerId": "nvidia",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "updatedAt": "2026-11-27T07:59:41.187237+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "f388af23afe259fd07185e3c347f36da0521e0c146cc192bb94dcaa433f724dd",
+      "inputHash": "1e994a6dc8430f204282b4db2d4ce73fcb2ef28bc79dac0b3ca940fa49c93906",
       "activeOfferings": 18
     },
     {
       "providerId": "groq",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:00.644253+00:00",
+      "updatedAt": "2026-11-27T07:59:41.513022+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "7572a10c92214601c52c81780694f56a5c4d1df1e054d9aaea101c03c828f5c8",
+      "inputHash": "226af1a8c37cb30982f43fc7e6f3359c75dc2d8de713db98fca45eaa729c5651",
       "activeOfferings": 11
     },
     {
       "providerId": "ollama-cloud",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:00.765804+00:00",
+      "updatedAt": "2026-11-27T07:59:41.629609+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "0815fa1f043360986de34cf8ef32247f9255a34c412e067b7f69645d69052384",
+      "inputHash": "e6ce99660672b0b7c31976ac2b7aad6f688057e8da6889f510e3e7913a35a5d2",
       "activeOfferings": 6
     },
     {
       "providerId": "cloudflare",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "updatedAt": "2026-11-27T07:59:42.687908+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "ce2c305e08f8462169a4ccb36a5c5989ddcddbf24b29bdc5d0bcaac01ee2695a",
+      "inputHash": "122c4e755f53bc26b401126195825f2fb7733de387d1a43861f977d667d4126b",
       "activeOfferings": 49
     },
     {
       "providerId": "zai",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:02.174422+00:00",
+      "updatedAt": "2026-11-27T07:59:43.244655+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "8699f65806be97ae3e9cf76f1ea37011411d0f02b512334cd4df3001e6f73949",
+      "inputHash": "55f0dcfe5bb6318eda310830ce02dfbefc80e88ae3513c3bf680fbe15ec2624b",
       "activeOfferings": 3
     },
     {
       "providerId": "orcarouter",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:02.533473+00:00",
+      "updatedAt": "2026-11-27T07:59:43.562643+00:00",
       "lastFailedAt": "2026-10-12T05:41:45.812325+00:00",
       "lastFailedMessage": "URLError: <urlopen error timed out>",
-      "inputHash": "947d7ac9a2f3db81765bcb50bdfcdb589544c2b49ca3de5d26acaa0523a8dc4c",
+      "inputHash": "1dd89b4cabe7f4bc65cee7c2c5d58c8932dc11fbb33a3cd2ea2d346f190352b1",
       "activeOfferings": 6
     },
     {
       "providerId": "kilo",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "updatedAt": "2026-11-27T07:59:43.836557+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "3fb8acebf55d38c63352ae32a9ef7644b2f64f6e5cc2344bf253f000d466f249",
+      "inputHash": "76b4ba6f8d5d787b26f6906b432f4368820b7a573a0b19cc8bcd986eb44196cd",
       "activeOfferings": 13
     },
     {
       "providerId": "pollinations",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:03.325387+00:00",
+      "updatedAt": "2026-11-27T07:59:44.090984+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "4b006017a46d522c0c02c7fab13a4f6658b67ebe6459dc13eb8ac6b047c1190c",
-      "activeOfferings": 2
+      "inputHash": "23578b4d8e45b9e03291ea0c07db3c7a7d4fc1fa258202157a87226cccbc9998",
+      "activeOfferings": 3
     },
     {
       "providerId": "opencode-zen",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:03.461695+00:00",
+      "updatedAt": "2026-11-27T07:59:44.260027+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "599f0cf61b8f433de094d47f37503aa725c57c5925c5090f1099077050e1ffd2",
+      "inputHash": "1aa96d5258293fcf914ff9f21f98d990cd8b524bf934c76ad89cbc8b630a2756",
       "activeOfferings": 10
     },
     {
       "providerId": "mistral",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "updatedAt": "2026-11-27T07:59:45.014756+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "092309c21144eddc455b791ababa166160d6ad49ab380669fa2fb618ea1fae6b",
+      "inputHash": "5ca72c9788b7c9e0a5171b001ac856280b1579d735e2232f934d870818d314ce",
       "activeOfferings": 16
     },
     {
       "providerId": "cohere",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:04.254956+00:00",
+      "updatedAt": "2026-11-27T07:59:45.666723+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "8f7c6383b4b659fca356465cb58912d35cd5efea844d9104f4130035732fc8e0",
+      "inputHash": "a08960d5a4d69c1e6c1c4f936c081a0299407596c12b2a19e233da734d866976",
       "activeOfferings": 9
     },
     {
       "providerId": "llm7",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:04.820145+00:00",
+      "updatedAt": "2026-11-27T07:59:46.205849+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "ac263be6fba2d783390a868314de3786866c43d00dd39219743d052115fc184a",
+      "inputHash": "5cdc80735e1c7791bac15183991d792926fc1550e7f6df39cd50dbe8b733adad",
       "activeOfferings": 2
     },
     {
       "providerId": "agnes",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:05.389562+00:00",
+      "updatedAt": "2026-11-27T07:59:46.723579+00:00",
       "lastFailedAt": "2026-11-08T05:46:09.843063+00:00",
       "lastFailedMessage": "ValueError: Agnes pricing page contained no free models; keeping existing data",
-      "inputHash": "4a722ad976a1a7e15568d9df138e5793f69b60dbe76c2cd872e66b878c891f20",
+      "inputHash": "e4b525da6dc7c1a0500f9fe3c1c56243cd5d66e6d094c0856d344757790ca13e",
       "activeOfferings": 6
     },
     {
       "providerId": "cline",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "updatedAt": "2026-11-27T07:59:46.754260+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "b1f650dd2aac3d8e8fa285c9e93ae1f6fe377de0febbba1949d57453178b702d",
+      "inputHash": "fb9a6b3c97a7bd407ccdac19bf4c5b936d26251bcaf6057bad8c89279f6b8544",
       "activeOfferings": 11
     },
     {
@@ -65566,19 +65566,19 @@
       "available": true,
       "status": "failed",
       "updatedAt": "2026-11-06T06:16:31.646642+00:00",
-      "lastFailedAt": "2026-11-26T07:58:06.364062+00:00",
+      "lastFailedAt": "2026-11-27T07:59:47.366866+00:00",
       "lastFailedMessage": "EmptyFetchError: fetched no free models",
-      "inputHash": "1af347f28fb0e1cf93605786a265ab2de7f8fd9988cb5af6dd00d02a1a0d83a4",
+      "inputHash": "8d7477c6389090f3da8099879a7274d13b1d5dca82dca8a86b03458a84104864",
       "activeOfferings": 1
     },
     {
       "providerId": "cerebras",
       "available": true,
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:06.742763+00:00",
+      "updatedAt": "2026-11-27T07:59:47.742700+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
-      "inputHash": "6ec4f9985e13bf59366e74551e97bc081485fd0fbe88d3c544316bd6dfcdd07a",
+      "inputHash": "f876d63fcf276eaa3958e9b3e7ee525f17719ba2bdec57ef99a93cfe5a9dc5b3",
       "activeOfferings": 2
     }
   ],
@@ -65588,23 +65588,23 @@
     "sources": {
       "livebench": {
         "origin": "cache",
-        "sha256": "c90eeeb049c649c11d22523dbd42ac0db2724d82959a249f5257eb59ee8c78da"
+        "sha256": "2ef5830c2b2de034512006841a9aa2315861f6e9b18d0debada7a6a757b526bd"
       },
       "evalplus": {
         "origin": "cache",
-        "sha256": "dbb4fda7b3c95b240c448c34a20a4e227ac9faea11dbc745ffff79b25414a294"
+        "sha256": "228058ccc04a099d704462ccc5dde7dbc3791decdf96c9098165262cd3e42ca0"
       },
       "aider_polyglot": {
         "origin": "cache",
-        "sha256": "5bf4d3669e078ae326d9c014dafbbac930e2d5aaf5277a3dd251e5c6484f08ee"
+        "sha256": "35991ea1f22d11390415ed5181f94144bf9c066e36393954961cca3426e3ae52"
       },
       "bigcodebench": {
         "origin": "cache",
-        "sha256": "03b4791d0842f0d62ebc2350da2fcc84da045614b142319ab477754b773c9105"
+        "sha256": "cfb6516d7b2b40300e2dc4db74a4d660da440a2596abdb43acd020af317986f8"
       },
       "aider_python": {
         "origin": "cache",
-        "sha256": "a490cbf103d2b287270f709b3d3dfbf8bbc3c757cf4919562e997d21aea773d0"
+        "sha256": "43c6474e1622b4840f5e17c543a1ce177900ef14ad30ef83b1ff5267d4e2fbcb"
       }
     },
     "tierPolicy": {
@@ -67009,7 +67009,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:39.879883+00:00",
       "providerMetadata": {
         "id": "inclusionai/ling-3.2-flash:free",
         "canonical_slug": "inclusionai/ling-3.2-flash-20261113",
@@ -67079,7 +67079,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-14T06:00:09.057368+00:00",
-        "lastSeen": "2026-11-26T07:57:58.762287+00:00",
+        "lastSeen": "2026-11-27T07:59:39.879883+00:00",
         "removedDate": null,
         "status": null
       },
@@ -67094,7 +67094,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:39.879883+00:00",
       "providerMetadata": {
         "id": "baidu/ernie-5.5-flash-preview:free",
         "canonical_slug": "baidu/ernie-5.5-flash-preview-20261110",
@@ -67150,10 +67150,13 @@
           "/api/v1/responses"
         ],
         "reasoning": {
-          "mandatory": true,
+          "mandatory": false,
           "default_enabled": true,
           "supported_efforts": [
-            "high"
+            "high",
+            "medium",
+            "low",
+            "none"
           ],
           "default_effort": "high"
         },
@@ -67163,7 +67166,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-12T06:56:20.614072+00:00",
-        "lastSeen": "2026-11-26T07:57:58.762287+00:00",
+        "lastSeen": "2026-11-27T07:59:39.879883+00:00",
         "removedDate": null,
         "status": null
       },
@@ -67178,7 +67181,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:39.879883+00:00",
       "providerMetadata": {
         "id": "liquid/lfm-3-1.7b:free",
         "canonical_slug": "liquid/lfm-3-1.7b-20261106",
@@ -67272,7 +67275,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-07T05:42:39.442982+00:00",
-        "lastSeen": "2026-11-26T07:57:58.762287+00:00",
+        "lastSeen": "2026-11-27T07:59:39.879883+00:00",
         "removedDate": null,
         "status": null
       },
@@ -67287,7 +67290,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:39.879883+00:00",
       "providerMetadata": {
         "id": "particle-ai/particle-1:free",
         "canonical_slug": "particle-ai/particle-1-20261027",
@@ -67314,7 +67317,7 @@
         },
         "top_provider": {
           "context_length": 1048576,
-          "max_completion_tokens": 131072,
+          "max_completion_tokens": 943718,
           "is_moderated": false
         },
         "per_request_limits": null,
@@ -67372,7 +67375,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-13T06:19:46.905996+00:00",
-        "lastSeen": "2026-11-26T07:57:58.762287+00:00",
+        "lastSeen": "2026-11-27T07:59:39.879883+00:00",
         "removedDate": null,
         "status": null
       },
@@ -67387,7 +67390,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:39.879883+00:00",
       "providerMetadata": {
         "id": "recursive/flint-v1.0:free",
         "canonical_slug": "recursive/flint-v1.0-20261021",
@@ -67452,7 +67455,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-        "lastSeen": "2026-11-26T07:57:58.762287+00:00",
+        "lastSeen": "2026-11-27T07:59:39.879883+00:00",
         "removedDate": null,
         "status": null
       },
@@ -67467,7 +67470,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:39.879883+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-super-vl:free",
         "canonical_slug": "nvidia/nemotron-3.5-super-vl-20261015",
@@ -67529,51 +67532,51 @@
             {
               "arena": "agents",
               "category": "pdf",
-              "elo": 1060,
-              "win_rate": 33.3,
-              "rank": 48
+              "elo": 1070,
+              "win_rate": 34.7,
+              "rank": 47
             },
             {
               "arena": "models",
               "category": "3d",
-              "elo": 1093,
-              "win_rate": 29,
-              "rank": 91
+              "elo": 1094,
+              "win_rate": 28.9,
+              "rank": 90
             },
             {
               "arena": "models",
               "category": "codecategories",
               "elo": 1190,
-              "win_rate": 31.9,
+              "win_rate": 32,
               "rank": 94
             },
             {
               "arena": "models",
               "category": "dataviz",
-              "elo": 1079,
-              "win_rate": 25.7,
-              "rank": 115
+              "elo": 1090,
+              "win_rate": 27.1,
+              "rank": 111
             },
             {
               "arena": "models",
               "category": "gamedev",
-              "elo": 1068,
-              "win_rate": 27.1,
-              "rank": 107
+              "elo": 1066,
+              "win_rate": 27,
+              "rank": 108
             },
             {
               "arena": "models",
               "category": "uicomponent",
-              "elo": 1143,
-              "win_rate": 31.9,
+              "elo": 1142,
+              "win_rate": 32.7,
               "rank": 87
             },
             {
               "arena": "models",
               "category": "website",
-              "elo": 1205,
-              "win_rate": 34.5,
-              "rank": 93
+              "elo": 1206,
+              "win_rate": 34.6,
+              "rank": 92
             }
           ],
           "artificial_analysis": {
@@ -67600,7 +67603,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-        "lastSeen": "2026-11-26T07:57:58.762287+00:00",
+        "lastSeen": "2026-11-27T07:59:39.879883+00:00",
         "removedDate": null,
         "status": null
       },
@@ -67615,7 +67618,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:39.879883+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
@@ -67694,7 +67697,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-        "lastSeen": "2026-11-26T07:57:58.762287+00:00",
+        "lastSeen": "2026-11-27T07:59:39.879883+00:00",
         "removedDate": null,
         "status": null
       },
@@ -67717,7 +67720,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:39.879883+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
@@ -67783,16 +67786,16 @@
             {
               "arena": "agents",
               "category": "pdf",
-              "elo": 1103,
-              "win_rate": 35,
-              "rank": 43
+              "elo": 1105,
+              "win_rate": 35.5,
+              "rank": 44
             },
             {
               "arena": "models",
               "category": "3d",
-              "elo": 1093,
+              "elo": 1094,
               "win_rate": 37.8,
-              "rank": 92
+              "rank": 91
             },
             {
               "arena": "models",
@@ -67804,7 +67807,7 @@
             {
               "arena": "models",
               "category": "codecategories",
-              "elo": 1185,
+              "elo": 1184,
               "win_rate": 35.4,
               "rank": 96
             },
@@ -67818,9 +67821,9 @@
             {
               "arena": "models",
               "category": "gamedev",
-              "elo": 1109,
+              "elo": 1108,
               "win_rate": 35.3,
-              "rank": 91
+              "rank": 92
             },
             {
               "arena": "models",
@@ -67832,15 +67835,15 @@
             {
               "arena": "models",
               "category": "uicomponent",
-              "elo": 1122,
-              "win_rate": 35.4,
-              "rank": 96
+              "elo": 1121,
+              "win_rate": 35.3,
+              "rank": 97
             },
             {
               "arena": "models",
               "category": "website",
-              "elo": 1179,
-              "win_rate": 34.5,
+              "elo": 1180,
+              "win_rate": 34.4,
               "rank": 103
             }
           ],
@@ -67876,7 +67879,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-        "lastSeen": "2026-11-26T07:57:58.762287+00:00",
+        "lastSeen": "2026-11-27T07:59:39.879883+00:00",
         "removedDate": null,
         "status": null
       },
@@ -67899,7 +67902,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:39.879883+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
         "canonical_slug": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428",
@@ -67990,7 +67993,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-        "lastSeen": "2026-11-26T07:57:58.762287+00:00",
+        "lastSeen": "2026-11-27T07:59:39.879883+00:00",
         "removedDate": null,
         "status": null
       },
@@ -68013,7 +68016,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:39.879883+00:00",
       "providerMetadata": {
         "id": "google/gemma-4-26b-a4b-it:free",
         "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
@@ -68076,14 +68079,14 @@
         "benchmarks": {
           "design_arena": [],
           "artificial_analysis": {
-            "intelligence_index": null,
+            "intelligence_index": 4,
             "coding_index": null,
             "agentic_index": null,
             "finance_and_accounting_index": 7.1,
             "strategy_and_ops_index": 5.3,
             "legal_index": 6.9,
             "healthcare_and_medical_index": null,
-            "engineering_index": null,
+            "engineering_index": 11.1,
             "economics_index": 8.2,
             "cyber_index": null,
             "openness_index": 38.9,
@@ -68100,7 +68103,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-        "lastSeen": "2026-11-26T07:57:58.762287+00:00",
+        "lastSeen": "2026-11-27T07:59:39.879883+00:00",
         "removedDate": null,
         "status": null
       },
@@ -68123,7 +68126,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:58.762287+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:39.879883+00:00",
       "providerMetadata": {
         "id": "google/gemma-4-31b-it:free",
         "canonical_slug": "google/gemma-4-31b-it-20260402",
@@ -68213,7 +68216,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-        "lastSeen": "2026-11-26T07:57:58.762287+00:00",
+        "lastSeen": "2026-11-27T07:59:39.879883+00:00",
         "removedDate": null,
         "status": null
       },
@@ -68231,96 +68234,12 @@
     },
     {
       "providerId": "requesty",
-      "modelId": "novita/ling-3.1-flash",
-      "name": "novita/ling-3.1-flash",
-      "eligibility": "uncertain",
-      "eligibilityReason": "generation_capability_not_declared",
-      "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.254009+00:00",
-      "providerMetadata": {
-        "api": "chat",
-        "id": "novita/ling-3.1-flash",
-        "object": "model",
-        "created": 1790553600,
-        "updated": 1793358042,
-        "owned_by": "system",
-        "input_price": 0,
-        "cached_price": 0,
-        "output_price": 0,
-        "pricing": [
-          {
-            "prompt_tokens_threshold": 0,
-            "input_price": 0,
-            "cached_price": 0,
-            "output_price": 0
-          }
-        ],
-        "max_output_tokens": 32768,
-        "context_window": 262144,
-        "supports_caching": true,
-        "supports_vision": false,
-        "supports_vision_inline": false,
-        "supports_vision_url": false,
-        "supports_computer_use": false,
-        "supports_reasoning": true,
-        "reasoning": {
-          "supported_efforts": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        },
-        "supports_image_generation": false,
-        "supports_tool_calling": true,
-        "supports_role_developer": false,
-        "supports_web_search": false,
-        "supports_output_json_object": false,
-        "supports_output_json_schema": false,
-        "supports_system_mid_conversation": false,
-        "description": "Ling 3.1 Flash is a hybrid reasoning MoE model from inclusionAI with 560B total and 25B active parameters. Served by Novita with a 256K context window and 32K max output, supporting reasoning and function calling. Free tier.",
-        "data_retention": false,
-        "data_retention_days": 0,
-        "data_used_for_training": false,
-        "privacy_comments": "N/A",
-        "geolocation": "global",
-        "hugging_face_id": "inclusionAI/Ling-3.1-flash",
-        "open_weights": true,
-        "model_lab": "inclusionai",
-        "model_canonical_name": "ling-3.1-flash",
-        "benchmarks": null,
-        "curated_benchmarks": null,
-        "swe_bench_score": null,
-        "swe_bench_tier": null,
-        "presence": "active",
-        "firstSeen": "2026-10-06T06:03:26.785887+00:00",
-        "lastSeen": "2026-11-26T07:57:59.254009+00:00",
-        "removedDate": null,
-        "status": null
-      },
-      "canonicalId": "catalogue:inclusionai/ling-3.1-flash",
-      "identityStatus": "established",
-      "identityEvidence": {
-        "providerId": "requesty",
-        "modelId": "novita/ling-3.1-flash",
-        "expectedMetadata": {
-          "model_lab": "inclusionai",
-          "model_canonical_name": "ling-3.1-flash"
-        },
-        "evidence": "https://router.requesty.ai/v1/models declares model_lab=inclusionai and model_canonical_name=ling-3.1-flash.",
-        "canonicalId": "catalogue:inclusionai/ling-3.1-flash"
-      }
-    },
-    {
-      "providerId": "requesty",
       "modelId": "nvidia/nemotron-3.5-lightning-30b-a3b",
       "name": "nvidia/nemotron-3.5-lightning-30b-a3b",
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.254009+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.490117+00:00",
       "providerMetadata": {
         "api": "chat",
         "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
@@ -68380,7 +68299,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-        "lastSeen": "2026-11-26T07:57:59.254009+00:00",
+        "lastSeen": "2026-11-27T07:59:40.490117+00:00",
         "removedDate": null,
         "status": null
       },
@@ -68405,7 +68324,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.254009+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.490117+00:00",
       "providerMetadata": {
         "api": "chat",
         "id": "nvidia/muse-glimmer-30b",
@@ -68465,7 +68384,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-        "lastSeen": "2026-11-26T07:57:59.254009+00:00",
+        "lastSeen": "2026-11-27T07:59:40.490117+00:00",
         "removedDate": null,
         "status": null
       },
@@ -68489,7 +68408,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.254009+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.490117+00:00",
       "providerMetadata": {
         "api": "chat",
         "id": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -68549,7 +68468,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-        "lastSeen": "2026-11-26T07:57:59.254009+00:00",
+        "lastSeen": "2026-11-27T07:59:40.490117+00:00",
         "removedDate": null,
         "status": null
       },
@@ -68574,7 +68493,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.254009+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.490117+00:00",
       "providerMetadata": {
         "api": "chat",
         "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
@@ -68634,7 +68553,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-        "lastSeen": "2026-11-26T07:57:59.254009+00:00",
+        "lastSeen": "2026-11-27T07:59:40.490117+00:00",
         "removedDate": null,
         "status": null
       },
@@ -68659,7 +68578,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.254009+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.490117+00:00",
       "providerMetadata": {
         "api": "chat",
         "id": "google/gemma-4-31b-it",
@@ -68715,7 +68634,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.534784+00:00",
-        "lastSeen": "2026-11-26T07:57:59.254009+00:00",
+        "lastSeen": "2026-11-27T07:59:40.490117+00:00",
         "removedDate": null,
         "status": null
       },
@@ -68740,7 +68659,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.396921+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.648218+00:00",
       "providerMetadata": {
         "id": "gemma-4-26b-a4b-it-chimerax:free",
         "name": "Gemma 4 26b A4b It Chimerax (Free)",
@@ -68795,7 +68714,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-        "lastSeen": "2026-11-26T07:57:59.396921+00:00",
+        "lastSeen": "2026-11-27T07:59:40.648218+00:00",
         "removedDate": null,
         "status": null
       },
@@ -68815,7 +68734,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.396921+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.648218+00:00",
       "providerMetadata": {
         "id": "gemma-4-26b-a4b-it-darksoul:free",
         "name": "Gemma 4 26b A4b It Darksoul (Free)",
@@ -68870,7 +68789,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-        "lastSeen": "2026-11-26T07:57:59.396921+00:00",
+        "lastSeen": "2026-11-27T07:59:40.648218+00:00",
         "removedDate": null,
         "status": null
       },
@@ -68890,7 +68809,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.396921+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.648218+00:00",
       "providerMetadata": {
         "id": "gemma-4-26b-a4b-it-luminous:free",
         "name": "Gemma 4 26b A4b It Luminous (Free)",
@@ -68945,7 +68864,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-        "lastSeen": "2026-11-26T07:57:59.396921+00:00",
+        "lastSeen": "2026-11-27T07:59:40.648218+00:00",
         "removedDate": null,
         "status": null
       },
@@ -68965,7 +68884,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.396921+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.648218+00:00",
       "providerMetadata": {
         "id": "gemma-4-26b-a4b-it-moonlight:free",
         "name": "Gemma 4 26b A4b It Moonlight (Free)",
@@ -69020,7 +68939,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-        "lastSeen": "2026-11-26T07:57:59.396921+00:00",
+        "lastSeen": "2026-11-27T07:59:40.648218+00:00",
         "removedDate": null,
         "status": null
       },
@@ -69040,7 +68959,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.396921+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.648218+00:00",
       "providerMetadata": {
         "id": "gemma-4-26b-a4b-it-musica:free",
         "name": "Gemma 4 26b A4b It Musica (Free)",
@@ -69095,7 +69014,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-        "lastSeen": "2026-11-26T07:57:59.396921+00:00",
+        "lastSeen": "2026-11-27T07:59:40.648218+00:00",
         "removedDate": null,
         "status": null
       },
@@ -69115,7 +69034,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.396921+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.648218+00:00",
       "providerMetadata": {
         "id": "minimax-m3.1-flash:free",
         "name": "MiniMax: MiniMax M3.1 Flash (Free)",
@@ -69194,7 +69113,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-31T05:16:51.896330+00:00",
-        "lastSeen": "2026-11-26T07:57:59.396921+00:00",
+        "lastSeen": "2026-11-27T07:59:40.648218+00:00",
         "removedDate": null,
         "status": null
       },
@@ -69209,7 +69128,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:57:59.396921+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:40.648218+00:00",
       "providerMetadata": {
         "id": "gemma-4-26b-a4b-it-meromero:free",
         "name": "Gemma 4 26B A4B IT MeroMero (Free)",
@@ -69264,7 +69183,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:07.623238+00:00",
-        "lastSeen": "2026-11-26T07:57:59.396921+00:00",
+        "lastSeen": "2026-11-27T07:59:40.648218+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70046,7 +69965,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "fastino/gliner2-pii",
         "object": "model",
@@ -70058,7 +69977,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-20T06:55:45.868852+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70073,7 +69992,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "minimaxai/minimax-m3.1-flash",
         "object": "model",
@@ -70085,7 +70004,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-23T04:29:27.303538+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70100,7 +70019,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "mistralai/mistral-large-4-1t-a52b",
         "object": "model",
@@ -70112,7 +70031,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-30T05:30:03.121511+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70127,7 +70046,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "moonshotai/kimi-k3.1-pro",
         "object": "model",
@@ -70144,7 +70063,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-18T07:03:55.059027+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70159,7 +70078,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "nvidia/ising-calibration-1.5-31b",
         "object": "model",
@@ -70171,7 +70090,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70186,7 +70105,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
         "object": "model",
@@ -70198,7 +70117,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70213,7 +70132,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
         "object": "model",
@@ -70225,7 +70144,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70245,7 +70164,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3-ultra-550b-a55b",
         "object": "model",
@@ -70257,7 +70176,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70277,7 +70196,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-bolt-e4b",
         "object": "model",
@@ -70289,7 +70208,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-24T04:19:47.314658+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70304,7 +70223,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-content-safety",
         "object": "model",
@@ -70316,7 +70235,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70331,7 +70250,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-embed-1b",
         "object": "model",
@@ -70343,7 +70262,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-21T04:25:39.322836+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70358,7 +70277,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-embed-8b",
         "object": "model",
@@ -70370,7 +70289,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-21T04:25:39.322836+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70385,7 +70304,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
         "object": "model",
@@ -70397,7 +70316,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70417,7 +70336,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
         "object": "model",
@@ -70429,7 +70348,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-16T04:15:44.511485+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70444,7 +70363,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "nvidia/riva-translate-4b-instruct-v2",
         "object": "model",
@@ -70456,7 +70375,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70471,7 +70390,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "poolside/laguna-xs-2.1",
         "object": "model",
@@ -70483,7 +70402,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70504,7 +70423,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "stepfun-ai/step-5-preview",
         "object": "model",
@@ -70516,7 +70435,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-16T04:15:44.511485+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70531,7 +70450,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.304747+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.187237+00:00",
       "providerMetadata": {
         "id": "z-ai/glm-5.3-flash",
         "object": "model",
@@ -70543,7 +70462,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:08.831453+00:00",
-        "lastSeen": "2026-11-26T07:58:00.304747+00:00",
+        "lastSeen": "2026-11-27T07:59:41.187237+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70559,12 +70478,163 @@
     },
     {
       "providerId": "groq",
+      "modelId": "openai/gpt-oss-20b",
+      "name": "GPT OSS 20B",
+      "eligibility": "eligible",
+      "eligibilityReason": "declared_text_output",
+      "providerStatus": "success",
+      "providerUpdatedAt": "2026-11-27T07:59:41.513022+00:00",
+      "providerMetadata": {
+        "model_card": "https://openai.com/index/gpt-oss-model-card",
+        "id": "openai/gpt-oss-20b",
+        "object": "model",
+        "created": 1754407957,
+        "owned_by": "OpenAI",
+        "active": true,
+        "context_window": 131072,
+        "public_apps": null,
+        "max_completion_tokens": 65536,
+        "hugging_face_id": "openai/gpt-oss-20b",
+        "name": "GPT OSS 20B",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "context_length": 131072,
+        "max_output_length": 65536,
+        "pricing": {
+          "prompt": "0.000000075",
+          "completion": "0.0000003",
+          "image": "0",
+          "request": "0",
+          "input_cache_read": "0.0000000375"
+        },
+        "supported_sampling_parameters": [
+          "temperature",
+          "top_p",
+          "stop",
+          "seed",
+          "max_tokens"
+        ],
+        "supported_features": [
+          "tools",
+          "json_mode",
+          "structured_outputs",
+          "reasoning"
+        ],
+        "rate_limits": {
+          "rpm": 30,
+          "rpd": 1000,
+          "tpm": 8000,
+          "tpd": 200000,
+          "ash": null,
+          "asd": null
+        },
+        "benchmarks": null,
+        "curated_benchmarks": null,
+        "swe_bench_score": null,
+        "swe_bench_tier": null,
+        "presence": "active",
+        "firstSeen": "2026-10-01T12:22:09.047123+00:00",
+        "lastSeen": "2026-11-27T07:59:41.513022+00:00",
+        "removedDate": null,
+        "status": null
+      },
+      "canonicalId": "checkpoint:openai/gpt-oss-20b",
+      "identityStatus": "established",
+      "identityEvidence": {
+        "providerId": "groq",
+        "modelId": "openai/gpt-oss-20b",
+        "expectedMetadata": {
+          "hugging_face_id": "openai/gpt-oss-20b"
+        },
+        "evidence": "https://api.groq.com/openai/v1/models declares hugging_face_id=openai/gpt-oss-20b; https://huggingface.co/openai/gpt-oss-20b.",
+        "canonicalId": "checkpoint:openai/gpt-oss-20b"
+      }
+    },
+    {
+      "providerId": "groq",
+      "modelId": "qwen/qwen3.8-27b",
+      "name": "Qwen/Qwen3.8-27B",
+      "eligibility": "eligible",
+      "eligibilityReason": "declared_text_output",
+      "providerStatus": "success",
+      "providerUpdatedAt": "2026-11-27T07:59:41.513022+00:00",
+      "providerMetadata": {
+        "id": "qwen/qwen3.8-27b",
+        "object": "model",
+        "created": 1786984846,
+        "owned_by": "Alibaba Cloud",
+        "active": true,
+        "context_window": 131072,
+        "public_apps": null,
+        "max_completion_tokens": 16384,
+        "name": "Qwen/Qwen3.8-27B",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "context_length": 131072,
+        "max_output_length": 16384,
+        "pricing": {
+          "prompt": "0.0000008",
+          "completion": "0.000004",
+          "image": "0",
+          "request": "0",
+          "input_cache_read": "0.0000004"
+        },
+        "supported_sampling_parameters": [
+          "temperature",
+          "top_p",
+          "stop",
+          "seed",
+          "max_tokens"
+        ],
+        "supported_features": [
+          "tools",
+          "json_mode",
+          "reasoning"
+        ],
+        "rate_limits": {
+          "rpm": 30,
+          "rpd": 1000,
+          "tpm": 8000,
+          "tpd": 200000,
+          "ash": null,
+          "asd": null
+        },
+        "benchmarks": null,
+        "curated_benchmarks": null,
+        "swe_bench_score": null,
+        "swe_bench_tier": null,
+        "presence": "active",
+        "firstSeen": "2026-10-01T12:22:09.047123+00:00",
+        "lastSeen": "2026-11-27T07:59:41.513022+00:00",
+        "removedDate": null,
+        "status": null
+      },
+      "canonicalId": "catalogue:qwen/qwen3.8-27b",
+      "identityStatus": "established",
+      "identityEvidence": {
+        "providerId": "groq",
+        "modelId": "qwen/qwen3.8-27b",
+        "evidence": "https://api.groq.com/openai/v1/models names this ID Qwen/Qwen3.8-27B. No linked precision/checkpoint declaration establishes cross-host equivalence, so this catalogue identity stays separate.",
+        "canonicalId": "catalogue:qwen/qwen3.8-27b"
+      }
+    },
+    {
+      "providerId": "groq",
       "modelId": "openai/gpt-oss-safeguard-20b",
       "name": "Safety GPT OSS 20B",
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.644253+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.513022+00:00",
       "providerMetadata": {
         "model_card": "openai/gpt-oss-safeguard-20b",
         "id": "openai/gpt-oss-safeguard-20b",
@@ -70619,7 +70689,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:09.047123+00:00",
-        "lastSeen": "2026-11-26T07:58:00.644253+00:00",
+        "lastSeen": "2026-11-27T07:59:41.513022+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70634,7 +70704,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.644253+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.513022+00:00",
       "providerMetadata": {
         "id": "allam-2-7b",
         "object": "model",
@@ -70670,7 +70740,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:09.047123+00:00",
-        "lastSeen": "2026-11-26T07:58:00.644253+00:00",
+        "lastSeen": "2026-11-27T07:59:41.513022+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70688,85 +70758,12 @@
     },
     {
       "providerId": "groq",
-      "modelId": "qwen/qwen3.8-27b",
-      "name": "Qwen/Qwen3.8-27B",
-      "eligibility": "eligible",
-      "eligibilityReason": "declared_text_output",
-      "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.644253+00:00",
-      "providerMetadata": {
-        "id": "qwen/qwen3.8-27b",
-        "object": "model",
-        "created": 1786984846,
-        "owned_by": "Alibaba Cloud",
-        "active": true,
-        "context_window": 131072,
-        "public_apps": null,
-        "max_completion_tokens": 16384,
-        "name": "Qwen/Qwen3.8-27B",
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "context_length": 131072,
-        "max_output_length": 16384,
-        "pricing": {
-          "prompt": "0.0000008",
-          "completion": "0.000004",
-          "image": "0",
-          "request": "0",
-          "input_cache_read": "0.0000004"
-        },
-        "supported_sampling_parameters": [
-          "temperature",
-          "top_p",
-          "stop",
-          "seed",
-          "max_tokens"
-        ],
-        "supported_features": [
-          "tools",
-          "json_mode",
-          "reasoning"
-        ],
-        "rate_limits": {
-          "rpm": 30,
-          "rpd": 1000,
-          "tpm": 8000,
-          "tpd": 200000,
-          "ash": null,
-          "asd": null
-        },
-        "benchmarks": null,
-        "curated_benchmarks": null,
-        "swe_bench_score": null,
-        "swe_bench_tier": null,
-        "presence": "active",
-        "firstSeen": "2026-10-01T12:22:09.047123+00:00",
-        "lastSeen": "2026-11-26T07:58:00.644253+00:00",
-        "removedDate": null,
-        "status": null
-      },
-      "canonicalId": "catalogue:qwen/qwen3.8-27b",
-      "identityStatus": "established",
-      "identityEvidence": {
-        "providerId": "groq",
-        "modelId": "qwen/qwen3.8-27b",
-        "evidence": "https://api.groq.com/openai/v1/models names this ID Qwen/Qwen3.8-27B. No linked precision/checkpoint declaration establishes cross-host equivalence, so this catalogue identity stays separate.",
-        "canonicalId": "catalogue:qwen/qwen3.8-27b"
-      }
-    },
-    {
-      "providerId": "groq",
       "modelId": "openai/gpt-oss-120b",
       "name": "GPT OSS 120B",
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.644253+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.513022+00:00",
       "providerMetadata": {
         "model_card": "https://openai.com/index/gpt-oss-model-card",
         "id": "openai/gpt-oss-120b",
@@ -70827,7 +70824,7 @@
         "swe_bench_tier": "B",
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:09.047123+00:00",
-        "lastSeen": "2026-11-26T07:58:00.644253+00:00",
+        "lastSeen": "2026-11-27T07:59:41.513022+00:00",
         "removedDate": null,
         "status": null
       },
@@ -70844,226 +70841,13 @@
       }
     },
     {
-      "providerId": "groq",
-      "modelId": "openai/gpt-oss-20b",
-      "name": "GPT OSS 20B",
-      "eligibility": "eligible",
-      "eligibilityReason": "declared_text_output",
-      "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.644253+00:00",
-      "providerMetadata": {
-        "model_card": "https://openai.com/index/gpt-oss-model-card",
-        "id": "openai/gpt-oss-20b",
-        "object": "model",
-        "created": 1754407957,
-        "owned_by": "OpenAI",
-        "active": true,
-        "context_window": 131072,
-        "public_apps": null,
-        "max_completion_tokens": 65536,
-        "hugging_face_id": "openai/gpt-oss-20b",
-        "name": "GPT OSS 20B",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "context_length": 131072,
-        "max_output_length": 65536,
-        "pricing": {
-          "prompt": "0.000000075",
-          "completion": "0.0000003",
-          "image": "0",
-          "request": "0",
-          "input_cache_read": "0.0000000375"
-        },
-        "supported_sampling_parameters": [
-          "temperature",
-          "top_p",
-          "stop",
-          "seed",
-          "max_tokens"
-        ],
-        "supported_features": [
-          "tools",
-          "json_mode",
-          "structured_outputs",
-          "reasoning"
-        ],
-        "rate_limits": {
-          "rpm": 30,
-          "rpd": 1000,
-          "tpm": 8000,
-          "tpd": 200000,
-          "ash": null,
-          "asd": null
-        },
-        "benchmarks": null,
-        "curated_benchmarks": null,
-        "swe_bench_score": null,
-        "swe_bench_tier": null,
-        "presence": "active",
-        "firstSeen": "2026-10-01T12:22:09.047123+00:00",
-        "lastSeen": "2026-11-26T07:58:00.644253+00:00",
-        "removedDate": null,
-        "status": null
-      },
-      "canonicalId": "checkpoint:openai/gpt-oss-20b",
-      "identityStatus": "established",
-      "identityEvidence": {
-        "providerId": "groq",
-        "modelId": "openai/gpt-oss-20b",
-        "expectedMetadata": {
-          "hugging_face_id": "openai/gpt-oss-20b"
-        },
-        "evidence": "https://api.groq.com/openai/v1/models declares hugging_face_id=openai/gpt-oss-20b; https://huggingface.co/openai/gpt-oss-20b.",
-        "canonicalId": "checkpoint:openai/gpt-oss-20b"
-      }
-    },
-    {
-      "providerId": "ollama-cloud",
-      "modelId": "gemma4:31b",
-      "name": "gemma4:31b",
-      "eligibility": "uncertain",
-      "eligibilityReason": "generation_capability_not_declared",
-      "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.765804+00:00",
-      "providerMetadata": {
-        "id": "gemma4:31b",
-        "object": "model",
-        "created": 1775149200,
-        "owned_by": "ollama",
-        "benchmarks": null,
-        "curated_benchmarks": null,
-        "swe_bench_score": null,
-        "swe_bench_tier": null,
-        "presence": "active",
-        "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-        "lastSeen": "2026-11-26T07:58:00.765804+00:00",
-        "removedDate": null,
-        "status": null
-      },
-      "canonicalId": "offering:ollama-cloud:gemma4:31b",
-      "identityStatus": "unresolved",
-      "identityEvidence": null
-    },
-    {
-      "providerId": "ollama-cloud",
-      "modelId": "gpt-oss:120b",
-      "name": "gpt-oss:120b",
-      "eligibility": "uncertain",
-      "eligibilityReason": "generation_capability_not_declared",
-      "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.765804+00:00",
-      "providerMetadata": {
-        "id": "gpt-oss:120b",
-        "object": "model",
-        "created": 1754352000,
-        "owned_by": "ollama",
-        "benchmarks": null,
-        "curated_benchmarks": null,
-        "swe_bench_score": null,
-        "swe_bench_tier": null,
-        "presence": "active",
-        "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-        "lastSeen": "2026-11-26T07:58:00.765804+00:00",
-        "removedDate": null,
-        "status": null
-      },
-      "canonicalId": "offering:ollama-cloud:gpt-oss:120b",
-      "identityStatus": "unresolved",
-      "identityEvidence": null
-    },
-    {
-      "providerId": "ollama-cloud",
-      "modelId": "beam",
-      "name": "beam",
-      "eligibility": "uncertain",
-      "eligibilityReason": "generation_capability_not_declared",
-      "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.765804+00:00",
-      "providerMetadata": {
-        "id": "beam",
-        "object": "model",
-        "created": 1792155600,
-        "owned_by": "ollama",
-        "benchmarks": null,
-        "curated_benchmarks": null,
-        "swe_bench_score": null,
-        "swe_bench_tier": null,
-        "presence": "active",
-        "firstSeen": "2026-10-25T04:23:38.921977+00:00",
-        "lastSeen": "2026-11-26T07:58:00.765804+00:00",
-        "removedDate": null,
-        "status": null
-      },
-      "canonicalId": "offering:ollama-cloud:beam",
-      "identityStatus": "unresolved",
-      "identityEvidence": null
-    },
-    {
-      "providerId": "ollama-cloud",
-      "modelId": "nemotron-3-super",
-      "name": "nemotron-3-super",
-      "eligibility": "uncertain",
-      "eligibilityReason": "generation_capability_not_declared",
-      "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.765804+00:00",
-      "providerMetadata": {
-        "id": "nemotron-3-super",
-        "object": "model",
-        "created": 1773187200,
-        "owned_by": "ollama",
-        "benchmarks": null,
-        "curated_benchmarks": null,
-        "swe_bench_score": null,
-        "swe_bench_tier": null,
-        "presence": "active",
-        "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-        "lastSeen": "2026-11-26T07:58:00.765804+00:00",
-        "removedDate": null,
-        "status": null
-      },
-      "canonicalId": "offering:ollama-cloud:nemotron-3-super",
-      "identityStatus": "unresolved",
-      "identityEvidence": null
-    },
-    {
-      "providerId": "ollama-cloud",
-      "modelId": "nemotron-3-ultra",
-      "name": "nemotron-3-ultra",
-      "eligibility": "uncertain",
-      "eligibilityReason": "generation_capability_not_declared",
-      "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.765804+00:00",
-      "providerMetadata": {
-        "id": "nemotron-3-ultra",
-        "object": "model",
-        "created": 1780531200,
-        "owned_by": "ollama",
-        "benchmarks": null,
-        "curated_benchmarks": null,
-        "swe_bench_score": null,
-        "swe_bench_tier": null,
-        "presence": "active",
-        "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-        "lastSeen": "2026-11-26T07:58:00.765804+00:00",
-        "removedDate": null,
-        "status": null
-      },
-      "canonicalId": "offering:ollama-cloud:nemotron-3-ultra",
-      "identityStatus": "unresolved",
-      "identityEvidence": null
-    },
-    {
       "providerId": "ollama-cloud",
       "modelId": "gpt-oss:20b",
       "name": "gpt-oss:20b",
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.765804+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.629609+00:00",
       "providerMetadata": {
         "id": "gpt-oss:20b",
         "object": "model",
@@ -71075,11 +70859,146 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:09.101984+00:00",
-        "lastSeen": "2026-11-26T07:58:00.765804+00:00",
+        "lastSeen": "2026-11-27T07:59:41.629609+00:00",
         "removedDate": null,
         "status": null
       },
       "canonicalId": "offering:ollama-cloud:gpt-oss:20b",
+      "identityStatus": "unresolved",
+      "identityEvidence": null
+    },
+    {
+      "providerId": "ollama-cloud",
+      "modelId": "nemotron-3-super",
+      "name": "nemotron-3-super",
+      "eligibility": "uncertain",
+      "eligibilityReason": "generation_capability_not_declared",
+      "providerStatus": "success",
+      "providerUpdatedAt": "2026-11-27T07:59:41.629609+00:00",
+      "providerMetadata": {
+        "id": "nemotron-3-super",
+        "object": "model",
+        "created": 1773187200,
+        "owned_by": "ollama",
+        "benchmarks": null,
+        "curated_benchmarks": null,
+        "swe_bench_score": null,
+        "swe_bench_tier": null,
+        "presence": "active",
+        "firstSeen": "2026-10-01T12:22:09.101984+00:00",
+        "lastSeen": "2026-11-27T07:59:41.629609+00:00",
+        "removedDate": null,
+        "status": null
+      },
+      "canonicalId": "offering:ollama-cloud:nemotron-3-super",
+      "identityStatus": "unresolved",
+      "identityEvidence": null
+    },
+    {
+      "providerId": "ollama-cloud",
+      "modelId": "beam",
+      "name": "beam",
+      "eligibility": "uncertain",
+      "eligibilityReason": "generation_capability_not_declared",
+      "providerStatus": "success",
+      "providerUpdatedAt": "2026-11-27T07:59:41.629609+00:00",
+      "providerMetadata": {
+        "id": "beam",
+        "object": "model",
+        "created": 1792155600,
+        "owned_by": "ollama",
+        "benchmarks": null,
+        "curated_benchmarks": null,
+        "swe_bench_score": null,
+        "swe_bench_tier": null,
+        "presence": "active",
+        "firstSeen": "2026-10-25T04:23:38.921977+00:00",
+        "lastSeen": "2026-11-27T07:59:41.629609+00:00",
+        "removedDate": null,
+        "status": null
+      },
+      "canonicalId": "offering:ollama-cloud:beam",
+      "identityStatus": "unresolved",
+      "identityEvidence": null
+    },
+    {
+      "providerId": "ollama-cloud",
+      "modelId": "gemma4:31b",
+      "name": "gemma4:31b",
+      "eligibility": "uncertain",
+      "eligibilityReason": "generation_capability_not_declared",
+      "providerStatus": "success",
+      "providerUpdatedAt": "2026-11-27T07:59:41.629609+00:00",
+      "providerMetadata": {
+        "id": "gemma4:31b",
+        "object": "model",
+        "created": 1775149200,
+        "owned_by": "ollama",
+        "benchmarks": null,
+        "curated_benchmarks": null,
+        "swe_bench_score": null,
+        "swe_bench_tier": null,
+        "presence": "active",
+        "firstSeen": "2026-10-01T12:22:09.101984+00:00",
+        "lastSeen": "2026-11-27T07:59:41.629609+00:00",
+        "removedDate": null,
+        "status": null
+      },
+      "canonicalId": "offering:ollama-cloud:gemma4:31b",
+      "identityStatus": "unresolved",
+      "identityEvidence": null
+    },
+    {
+      "providerId": "ollama-cloud",
+      "modelId": "nemotron-3-ultra",
+      "name": "nemotron-3-ultra",
+      "eligibility": "uncertain",
+      "eligibilityReason": "generation_capability_not_declared",
+      "providerStatus": "success",
+      "providerUpdatedAt": "2026-11-27T07:59:41.629609+00:00",
+      "providerMetadata": {
+        "id": "nemotron-3-ultra",
+        "object": "model",
+        "created": 1780531200,
+        "owned_by": "ollama",
+        "benchmarks": null,
+        "curated_benchmarks": null,
+        "swe_bench_score": null,
+        "swe_bench_tier": null,
+        "presence": "active",
+        "firstSeen": "2026-10-01T12:22:09.101984+00:00",
+        "lastSeen": "2026-11-27T07:59:41.629609+00:00",
+        "removedDate": null,
+        "status": null
+      },
+      "canonicalId": "offering:ollama-cloud:nemotron-3-ultra",
+      "identityStatus": "unresolved",
+      "identityEvidence": null
+    },
+    {
+      "providerId": "ollama-cloud",
+      "modelId": "gpt-oss:120b",
+      "name": "gpt-oss:120b",
+      "eligibility": "uncertain",
+      "eligibilityReason": "generation_capability_not_declared",
+      "providerStatus": "success",
+      "providerUpdatedAt": "2026-11-27T07:59:41.629609+00:00",
+      "providerMetadata": {
+        "id": "gpt-oss:120b",
+        "object": "model",
+        "created": 1754352000,
+        "owned_by": "ollama",
+        "benchmarks": null,
+        "curated_benchmarks": null,
+        "swe_bench_score": null,
+        "swe_bench_tier": null,
+        "presence": "active",
+        "firstSeen": "2026-10-01T12:22:09.101984+00:00",
+        "lastSeen": "2026-11-27T07:59:41.629609+00:00",
+        "removedDate": null,
+        "status": null
+      },
+      "canonicalId": "offering:ollama-cloud:gpt-oss:120b",
       "identityStatus": "unresolved",
       "identityEvidence": null
     },
@@ -71090,7 +71009,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "fe8904cf-e20e-4884-b829-ed7cec0a01cb",
         "source": 1,
@@ -71129,7 +71048,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71144,7 +71063,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "f9f2250b-1048-4a52-9910-d0bf976616a1",
         "source": 1,
@@ -71215,7 +71134,7 @@
         "swe_bench_tier": "B",
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71236,7 +71155,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "d27e5c9c-9bbb-41b7-9ef9-6beceeeb07ef",
         "source": 1,
@@ -71275,7 +71194,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-19T07:04:08.738264+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71290,7 +71209,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "c58c317b-0c15-4bda-abb6-93e275f282d9",
         "source": 1,
@@ -71319,7 +71238,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71340,7 +71259,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "bf419b23-844f-4a2c-8111-89dbd63152eb",
         "source": 1,
@@ -71373,7 +71292,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71394,7 +71313,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "87f39d62-116c-4b26-b2cd-562a9ba01f2f",
         "source": 1,
@@ -71441,7 +71360,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-02T03:35:33.068300+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71456,7 +71375,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "86b3e51a-4b05-43fa-a403-0f27821919d2",
         "source": 1,
@@ -71511,7 +71430,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71532,7 +71451,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "7a143886-c9bb-4a1c-be95-377b1973bc3b",
         "source": 1,
@@ -71584,7 +71503,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71605,7 +71524,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "7952d0cc-cb00-4e10-be02-667565c2ee0f",
         "source": 1,
@@ -71634,7 +71553,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71655,7 +71574,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "6b0b79c1-25e6-4498-bb62-5161df39f0ef",
         "source": 1,
@@ -71694,7 +71613,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-20T04:33:28.532117+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71709,7 +71628,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "56482a5b-020e-488d-9c56-11a3ed40719c",
         "source": 1,
@@ -71742,7 +71661,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71763,7 +71682,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "543fea3d-dcff-4c3b-af79-b83f601aa1cb",
         "source": 1,
@@ -71802,7 +71721,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-10T05:34:18.663795+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71817,7 +71736,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "51b71d5b-8bc0-4489-a107-95e542b69914",
         "source": 1,
@@ -71861,7 +71780,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71882,7 +71801,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "41ca173f-72d5-4420-8915-49e835d2676e",
         "source": 1,
@@ -71922,7 +71841,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -71943,7 +71862,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "328adb49-4a7d-43e3-a2d5-802ae8100fe7",
         "source": 1,
@@ -72015,7 +71934,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72036,7 +71955,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "31690291-ebdc-4f98-bcfc-a44844e215b7",
         "source": 1,
@@ -72084,7 +72003,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72105,7 +72024,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "2cbc033b-ded8-4e02-bbb2-47cf05d5cfe5",
         "source": 1,
@@ -72157,7 +72076,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72178,7 +72097,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "2b2b6dfb-2cd0-433f-802c-533d40508d9b",
         "source": 1,
@@ -72207,7 +72126,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-16T04:15:46.868795+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72222,7 +72141,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "22338608-b54d-4f04-884e-ab06f3dbbf3e",
         "source": 1,
@@ -72300,7 +72219,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72321,7 +72240,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "188a4e1e-253e-46d0-9616-0bf8c149763f",
         "source": 1,
@@ -72386,7 +72305,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72407,7 +72326,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "1161560b-87f9-4795-afb3-a905cf21bcf8",
         "source": 1,
@@ -72451,7 +72370,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72466,7 +72385,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "06455e78-19f7-487b-93cd-c05a3dd07813",
         "source": 1,
@@ -72522,7 +72441,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72543,7 +72462,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "059de3ad-d350-4cb6-8b31-e4f34847d10a",
         "source": 1,
@@ -72590,7 +72509,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-02T03:35:33.068300+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72605,7 +72524,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "0446c408-a932-495f-9ab6-9744760dbbe8",
         "source": 1,
@@ -72625,7 +72544,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-13T06:19:50.136189+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72640,7 +72559,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:02.174422+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.244655+00:00",
       "providerMetadata": {
         "id": "GLM-4.7-Flash",
         "object": "model",
@@ -72654,7 +72573,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.310670+00:00",
-        "lastSeen": "2026-11-26T07:58:02.174422+00:00",
+        "lastSeen": "2026-11-27T07:59:43.244655+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72669,7 +72588,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:02.174422+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.244655+00:00",
       "providerMetadata": {
         "id": "GLM-4.5-Flash",
         "object": "model",
@@ -72683,7 +72602,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.310670+00:00",
-        "lastSeen": "2026-11-26T07:58:02.174422+00:00",
+        "lastSeen": "2026-11-27T07:59:43.244655+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72698,7 +72617,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:02.174422+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.244655+00:00",
       "providerMetadata": {
         "id": "GLM-4.6V-Flash",
         "object": "model",
@@ -72712,7 +72631,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.310670+00:00",
-        "lastSeen": "2026-11-26T07:58:02.174422+00:00",
+        "lastSeen": "2026-11-27T07:59:43.244655+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72727,7 +72646,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:02.533473+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.562643+00:00",
       "providerMetadata": {
         "id": "orcarouter/free",
         "object": "model",
@@ -72745,7 +72664,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-        "lastSeen": "2026-11-26T07:58:02.533473+00:00",
+        "lastSeen": "2026-11-27T07:59:43.562643+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72760,7 +72679,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:02.533473+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.562643+00:00",
       "providerMetadata": {
         "id": "deepseek/deepseek-v4-flash-free",
         "object": "model",
@@ -72783,7 +72702,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-        "lastSeen": "2026-11-26T07:58:02.533473+00:00",
+        "lastSeen": "2026-11-27T07:59:43.562643+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72803,7 +72722,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:02.533473+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.562643+00:00",
       "providerMetadata": {
         "id": "deepseek/deepseek-v4.1-flash-free",
         "object": "model",
@@ -72829,7 +72748,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-18T04:13:46.849072+00:00",
-        "lastSeen": "2026-11-26T07:58:02.533473+00:00",
+        "lastSeen": "2026-11-27T07:59:43.562643+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72844,7 +72763,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:02.533473+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.562643+00:00",
       "providerMetadata": {
         "id": "tencent/hy3-free",
         "object": "model",
@@ -72862,7 +72781,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-        "lastSeen": "2026-11-26T07:58:02.533473+00:00",
+        "lastSeen": "2026-11-27T07:59:43.562643+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72882,7 +72801,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:02.533473+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.562643+00:00",
       "providerMetadata": {
         "id": "tencent/hy4-preview-free",
         "object": "model",
@@ -72900,7 +72819,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-        "lastSeen": "2026-11-26T07:58:02.533473+00:00",
+        "lastSeen": "2026-11-27T07:59:43.562643+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72920,7 +72839,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:02.533473+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.562643+00:00",
       "providerMetadata": {
         "id": "z-ai/glm-5.3-flash-free",
         "object": "model",
@@ -72945,7 +72864,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.042004+00:00",
-        "lastSeen": "2026-11-26T07:58:02.533473+00:00",
+        "lastSeen": "2026-11-27T07:59:43.562643+00:00",
         "removedDate": null,
         "status": null
       },
@@ -72965,7 +72884,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "kilo-auto/free",
         "name": "Auto Free",
@@ -73022,7 +72941,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -73037,7 +72956,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "inclusionai/ling-3.2-flash:free",
         "name": "inclusionAI: Ling 3.2 Flash (free)",
@@ -73115,7 +73034,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-14T06:00:13.386616+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -73130,7 +73049,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "baidu/ernie-5.5-flash-preview:free",
         "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
@@ -73200,7 +73119,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-12T06:56:24.108217+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -73215,7 +73134,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "liquid/lfm-3-1.7b:free",
         "name": "LiquidAI: LFM3-1.7B (free)",
@@ -73287,7 +73206,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-07T05:42:44.218449+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -73302,7 +73221,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "particle-ai/particle-1:free",
         "name": "Particle AI: Particle-1 (free)",
@@ -73322,7 +73241,7 @@
         "top_provider": {
           "is_moderated": false,
           "context_length": 1048576,
-          "max_completion_tokens": 131072
+          "max_completion_tokens": 943718
         },
         "pricing": {
           "prompt": "0",
@@ -73424,7 +73343,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-13T06:19:51.348283+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -73439,7 +73358,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "recursive/flint-v1.0:free",
         "name": "Recursive: Flint (free)",
@@ -73503,7 +73422,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-22T04:24:39.458389+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -73518,7 +73437,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-super-vl:free",
         "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
@@ -73593,7 +73512,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-16T04:15:49.424757+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -73608,7 +73527,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
@@ -73679,7 +73598,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -73694,7 +73613,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
@@ -73777,7 +73696,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -73799,7 +73718,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
         "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
@@ -73873,7 +73792,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -73895,7 +73814,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "openrouter/free",
         "name": "OpenRouter Free Models Router",
@@ -73958,7 +73877,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.544687+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -73973,7 +73892,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "reflection/beam-free",
         "name": "Reflection: Beam 1.0 (Free)",
@@ -74066,7 +73985,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-17T04:06:15.680348+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -74081,7 +74000,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.135185+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:43.836557+00:00",
       "providerMetadata": {
         "id": "stealth/glyph-cluster",
         "name": "Glyph Cluster",
@@ -74165,7 +74084,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-09T05:51:30.555631+00:00",
-        "lastSeen": "2026-11-26T07:58:03.135185+00:00",
+        "lastSeen": "2026-11-27T07:59:43.836557+00:00",
         "removedDate": null,
         "status": null
       },
@@ -74180,7 +74099,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.325387+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.090984+00:00",
       "providerMetadata": {
         "id": "community/scriptsnsenses-sys/gpt-6-luna:free",
         "object": "model",
@@ -74244,11 +74163,89 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-18T07:03:58.229466+00:00",
-        "lastSeen": "2026-11-26T07:58:03.325387+00:00",
+        "lastSeen": "2026-11-27T07:59:44.090984+00:00",
         "removedDate": null,
         "status": null
       },
       "canonicalId": "offering:pollinations:community/scriptsnsenses-sys/gpt-6-luna:free",
+      "identityStatus": "unresolved",
+      "identityEvidence": null
+    },
+    {
+      "providerId": "pollinations",
+      "modelId": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "name": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+      "eligibility": "eligible",
+      "eligibilityReason": "declared_text_output",
+      "providerStatus": "success",
+      "providerUpdatedAt": "2026-11-27T07:59:44.090984+00:00",
+      "providerMetadata": {
+        "id": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
+        "object": "model",
+        "created": 1793646818,
+        "owned_by": "Awesome Free AI API",
+        "aliases": [
+          "YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
+        ],
+        "category": "text",
+        "community": true,
+        "tags": [
+          {
+            "name": "text"
+          },
+          {
+            "name": "community"
+          }
+        ],
+        "title": "Mistral Large 4",
+        "description": "Mistral AI 1T-total / 52B-active granular MoE for text and image input with reasoning, function calling and structured outputs, served in NVFP4 with DSpark speculative decoding.",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "required_safety": [],
+        "supported_endpoints": [
+          "/v1/chat/completions",
+          "/text",
+          "/text/{prompt}",
+          "/v1/responses",
+          "/v1/messages"
+        ],
+        "paid_only": false,
+        "pricing": {
+          "currency": "pollen"
+        },
+        "top_provider": {
+          "max_completion_tokens": null
+        },
+        "capabilities": [
+          "tool_calling",
+          "reasoning"
+        ],
+        "tools": true,
+        "reasoning": true,
+        "alpha": true,
+        "context_length": 262000,
+        "per_user_rpm": null,
+        "health": {
+          "status": "healthy",
+          "success_rate": 98,
+          "requests": 50
+        },
+        "benchmarks": null,
+        "curated_benchmarks": null,
+        "swe_bench_score": null,
+        "swe_bench_tier": null,
+        "presence": "active",
+        "firstSeen": "2026-11-08T05:46:07.554146+00:00",
+        "lastSeen": "2026-11-27T07:59:44.090984+00:00",
+        "removedDate": null,
+        "status": null
+      },
+      "canonicalId": "offering:pollinations:community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
       "identityStatus": "unresolved",
       "identityEvidence": null
     },
@@ -74259,7 +74256,7 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_output",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.325387+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.090984+00:00",
       "providerMetadata": {
         "id": "community/YoannDev90/vercel-nemotron-3.5-lightning:free",
         "object": "model",
@@ -74321,7 +74318,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-21T04:25:43.047041+00:00",
-        "lastSeen": "2026-11-26T07:58:03.325387+00:00",
+        "lastSeen": "2026-11-27T07:59:44.090984+00:00",
         "removedDate": null,
         "status": null
       },
@@ -74336,11 +74333,11 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.461695+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.260027+00:00",
       "providerMetadata": {
         "id": "mimo-v2.6-flash-free",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "opencode",
         "name": "MiMo-V2.6-Flash Free",
         "canonical_id": "xiaomi/mimo-v2.6-flash",
@@ -74430,7 +74427,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.756466+00:00",
-        "lastSeen": "2026-11-26T07:58:03.461695+00:00",
+        "lastSeen": "2026-11-27T07:59:44.260027+00:00",
         "removedDate": null,
         "status": null
       },
@@ -74445,11 +74442,11 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.461695+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.260027+00:00",
       "providerMetadata": {
         "id": "deepseek-v4.1-flash-free",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "opencode",
         "name": "DeepSeek V4.1 Flash Free",
         "canonical_id": "deepseek/deepseek-v4.1-flash-1017",
@@ -74539,7 +74536,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-16T04:15:49.866960+00:00",
-        "lastSeen": "2026-11-26T07:58:03.461695+00:00",
+        "lastSeen": "2026-11-27T07:59:44.260027+00:00",
         "removedDate": null,
         "status": null
       },
@@ -74554,11 +74551,11 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.461695+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.260027+00:00",
       "providerMetadata": {
         "id": "iceman-free",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "opencode",
         "name": "Iceman Free",
         "type": "chat",
@@ -74622,7 +74619,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-07T05:42:44.562202+00:00",
-        "lastSeen": "2026-11-26T07:58:03.461695+00:00",
+        "lastSeen": "2026-11-27T07:59:44.260027+00:00",
         "removedDate": null,
         "status": null
       },
@@ -74637,11 +74634,11 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.461695+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.260027+00:00",
       "providerMetadata": {
         "id": "beam-free",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "opencode",
         "name": "Beam Free",
         "canonical_id": "reflection/beam-1.0-501b-a23b",
@@ -74729,7 +74726,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-17T04:06:16.559454+00:00",
-        "lastSeen": "2026-11-26T07:58:03.461695+00:00",
+        "lastSeen": "2026-11-27T07:59:44.260027+00:00",
         "removedDate": null,
         "status": null
       },
@@ -74744,11 +74741,11 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.461695+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.260027+00:00",
       "providerMetadata": {
         "id": "flint-40b-free",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "opencode",
         "name": "Flint 40B Free",
         "canonical_id": "recursive/flint",
@@ -74829,7 +74826,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-22T04:24:39.817399+00:00",
-        "lastSeen": "2026-11-26T07:58:03.461695+00:00",
+        "lastSeen": "2026-11-27T07:59:44.260027+00:00",
         "removedDate": null,
         "status": null
       },
@@ -74844,11 +74841,11 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.461695+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.260027+00:00",
       "providerMetadata": {
         "id": "nemotron-3.5-super-vl-free",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "opencode",
         "name": "Nemotron 3.5 Super VL Free",
         "canonical_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
@@ -74931,7 +74928,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-16T04:15:49.866960+00:00",
-        "lastSeen": "2026-11-26T07:58:03.461695+00:00",
+        "lastSeen": "2026-11-27T07:59:44.260027+00:00",
         "removedDate": null,
         "status": null
       },
@@ -74946,11 +74943,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.461695+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.260027+00:00",
       "providerMetadata": {
         "id": "jev-1.13-free",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "opencode",
         "name": "Jev 1.13 Free",
         "type": "decision",
@@ -75013,7 +75010,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.756466+00:00",
-        "lastSeen": "2026-11-26T07:58:03.461695+00:00",
+        "lastSeen": "2026-11-27T07:59:44.260027+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75028,11 +75025,11 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.461695+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.260027+00:00",
       "providerMetadata": {
         "id": "nemotron-3.5-lightning-free",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "opencode",
         "name": "Nemotron 3.5 Lightning Free",
         "canonical_id": "nvidia/nemotron-3.5-lightning",
@@ -75106,7 +75103,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:11.756466+00:00",
-        "lastSeen": "2026-11-26T07:58:03.461695+00:00",
+        "lastSeen": "2026-11-27T07:59:44.260027+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75121,11 +75118,11 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.461695+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.260027+00:00",
       "providerMetadata": {
         "id": "hy4-flash-free",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "opencode",
         "name": "Hy4 flash Free",
         "canonical_id": "tencent/hy4-flash",
@@ -75203,7 +75200,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-17T07:40:43.805517+00:00",
-        "lastSeen": "2026-11-26T07:58:03.461695+00:00",
+        "lastSeen": "2026-11-27T07:59:44.260027+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75218,11 +75215,11 @@
       "eligibility": "eligible",
       "eligibilityReason": "declared_text_generation",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.461695+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:44.260027+00:00",
       "providerMetadata": {
         "id": "seaglass-alpha-free",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "opencode",
         "name": "Seaglass Alpha Free",
         "type": "chat",
@@ -75298,7 +75295,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-26T07:58:03.461695+00:00",
-        "lastSeen": "2026-11-26T07:58:03.461695+00:00",
+        "lastSeen": "2026-11-27T07:59:44.260027+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75313,11 +75310,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "codestral-2508",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": true,
@@ -75360,7 +75357,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75375,11 +75372,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "glm-5-2",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": true,
@@ -75420,7 +75417,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-24T09:38:15.805110+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75435,11 +75432,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "zai-glm-5-3",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": true,
@@ -75482,7 +75479,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-24T09:38:15.805110+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75497,11 +75494,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "ministral-14b-2512",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": true,
@@ -75542,7 +75539,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75557,11 +75554,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "ministral-3b-2512",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": true,
@@ -75602,7 +75599,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75617,11 +75614,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "ministral-8b-2512",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": true,
@@ -75662,7 +75659,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75677,11 +75674,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "mistral-large-2512",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": true,
@@ -75720,7 +75717,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-24T09:38:15.805110+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75735,11 +75732,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "mistral-medium-latest",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": true,
@@ -75787,7 +75784,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75802,11 +75799,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "mistral-small-2603",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": true,
@@ -75849,7 +75846,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75864,11 +75861,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "voxtral-small-2507",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": true,
@@ -75909,7 +75906,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75924,7 +75921,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:04.254956+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.666723+00:00",
       "providerMetadata": {
         "id": "command-a-03-2025",
         "object": "model",
@@ -75935,7 +75932,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-        "lastSeen": "2026-11-26T07:58:04.254956+00:00",
+        "lastSeen": "2026-11-27T07:59:45.666723+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75950,7 +75947,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:04.254956+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.666723+00:00",
       "providerMetadata": {
         "id": "command-a-plus-05-2026",
         "object": "model",
@@ -75961,7 +75958,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-        "lastSeen": "2026-11-26T07:58:04.254956+00:00",
+        "lastSeen": "2026-11-27T07:59:45.666723+00:00",
         "removedDate": null,
         "status": null
       },
@@ -75976,7 +75973,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:04.254956+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.666723+00:00",
       "providerMetadata": {
         "id": "command-a-reasoning-08-2025",
         "object": "model",
@@ -75987,7 +75984,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-        "lastSeen": "2026-11-26T07:58:04.254956+00:00",
+        "lastSeen": "2026-11-27T07:59:45.666723+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76002,7 +75999,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:04.254956+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.666723+00:00",
       "providerMetadata": {
         "id": "command-a-translate-08-2025",
         "object": "model",
@@ -76013,7 +76010,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-        "lastSeen": "2026-11-26T07:58:04.254956+00:00",
+        "lastSeen": "2026-11-27T07:59:45.666723+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76028,7 +76025,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:04.254956+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.666723+00:00",
       "providerMetadata": {
         "id": "command-a-vision-07-2025",
         "object": "model",
@@ -76039,7 +76036,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-        "lastSeen": "2026-11-26T07:58:04.254956+00:00",
+        "lastSeen": "2026-11-27T07:59:45.666723+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76054,7 +76051,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:04.254956+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.666723+00:00",
       "providerMetadata": {
         "id": "command-r-08-2024",
         "object": "model",
@@ -76065,7 +76062,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-        "lastSeen": "2026-11-26T07:58:04.254956+00:00",
+        "lastSeen": "2026-11-27T07:59:45.666723+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76085,7 +76082,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:04.254956+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.666723+00:00",
       "providerMetadata": {
         "id": "command-r-plus-08-2024",
         "object": "model",
@@ -76096,7 +76093,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-        "lastSeen": "2026-11-26T07:58:04.254956+00:00",
+        "lastSeen": "2026-11-27T07:59:45.666723+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76116,7 +76113,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:04.254956+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.666723+00:00",
       "providerMetadata": {
         "id": "command-r7b-12-2024",
         "object": "model",
@@ -76127,7 +76124,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.301549+00:00",
-        "lastSeen": "2026-11-26T07:58:04.254956+00:00",
+        "lastSeen": "2026-11-27T07:59:45.666723+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76142,7 +76139,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:04.254956+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.666723+00:00",
       "providerMetadata": {
         "id": "north-mini-code-1.0",
         "object": "model",
@@ -76153,7 +76150,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-28T05:20:17.363575+00:00",
-        "lastSeen": "2026-11-26T07:58:04.254956+00:00",
+        "lastSeen": "2026-11-27T07:59:45.666723+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76168,11 +76165,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:04.820145+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.205849+00:00",
       "providerMetadata": {
         "id": "codestral-latest",
         "object": "model",
-        "created": 1795672858,
+        "created": 1795759306,
         "owned_by": "",
         "model_type": "chat",
         "schema_endpoints": [
@@ -76227,7 +76224,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-        "lastSeen": "2026-11-26T07:58:04.820145+00:00",
+        "lastSeen": "2026-11-27T07:59:46.205849+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76242,11 +76239,11 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:04.820145+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.205849+00:00",
       "providerMetadata": {
         "id": "gpt-oss:20b",
         "object": "model",
-        "created": 1795675822,
+        "created": 1795761895,
         "owned_by": "",
         "model_type": "chat",
         "schema_endpoints": [
@@ -76289,10 +76286,10 @@
           "requires_reference_image": false,
           "atlascloud_routes": []
         },
-        "availability_last_hour_percent": 100.0,
+        "availability_last_hour_percent": 99.36,
         "availability": {
           "old": 100.0,
-          "mid": 100.0,
+          "mid": 98.18,
           "recent": 100.0
         },
         "benchmarks": null,
@@ -76301,7 +76298,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.754811+00:00",
-        "lastSeen": "2026-11-26T07:58:04.820145+00:00",
+        "lastSeen": "2026-11-27T07:59:46.205849+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76316,7 +76313,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.389562+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.723579+00:00",
       "providerMetadata": {
         "id": "agnes-video-2.5-flash",
         "object": "model",
@@ -76331,7 +76328,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:13.541187+00:00",
-        "lastSeen": "2026-11-26T07:58:05.389562+00:00",
+        "lastSeen": "2026-11-27T07:59:46.723579+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76346,7 +76343,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.389562+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.723579+00:00",
       "providerMetadata": {
         "id": "agnes-3.0-flash",
         "object": "model",
@@ -76361,7 +76358,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:13.541187+00:00",
-        "lastSeen": "2026-11-26T07:58:05.389562+00:00",
+        "lastSeen": "2026-11-27T07:59:46.723579+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76376,7 +76373,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.389562+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.723579+00:00",
       "providerMetadata": {
         "id": "agnes-image-2.1-flash",
         "object": "model",
@@ -76391,7 +76388,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:13.541187+00:00",
-        "lastSeen": "2026-11-26T07:58:05.389562+00:00",
+        "lastSeen": "2026-11-27T07:59:46.723579+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76406,7 +76403,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.389562+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.723579+00:00",
       "providerMetadata": {
         "id": "agnes-image-2.0-flash",
         "object": "model",
@@ -76421,7 +76418,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:13.541187+00:00",
-        "lastSeen": "2026-11-26T07:58:05.389562+00:00",
+        "lastSeen": "2026-11-27T07:59:46.723579+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76436,7 +76433,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.389562+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.723579+00:00",
       "providerMetadata": {
         "id": "agnes-2.5-flash",
         "object": "model",
@@ -76451,7 +76448,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:13.541187+00:00",
-        "lastSeen": "2026-11-26T07:58:05.389562+00:00",
+        "lastSeen": "2026-11-27T07:59:46.723579+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76466,7 +76463,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.389562+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.723579+00:00",
       "providerMetadata": {
         "id": "agnes-image-2.5-flash",
         "object": "model",
@@ -76481,7 +76478,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:13.541187+00:00",
-        "lastSeen": "2026-11-26T07:58:05.389562+00:00",
+        "lastSeen": "2026-11-27T07:59:46.723579+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76496,7 +76493,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.754260+00:00",
       "providerMetadata": {
         "id": "inclusionai/ling-3.2-flash:free",
         "object": "model",
@@ -76508,7 +76505,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-14T06:00:16.616111+00:00",
-        "lastSeen": "2026-11-26T07:58:05.514544+00:00",
+        "lastSeen": "2026-11-27T07:59:46.754260+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76523,7 +76520,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.754260+00:00",
       "providerMetadata": {
         "id": "baidu/ernie-5.5-flash-preview:free",
         "object": "model",
@@ -76535,7 +76532,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-12T06:56:27.135657+00:00",
-        "lastSeen": "2026-11-26T07:58:05.514544+00:00",
+        "lastSeen": "2026-11-27T07:59:46.754260+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76550,7 +76547,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.754260+00:00",
       "providerMetadata": {
         "id": "liquid/lfm-3-1.7b:free",
         "object": "model",
@@ -76562,7 +76559,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-07T05:42:46.519565+00:00",
-        "lastSeen": "2026-11-26T07:58:05.514544+00:00",
+        "lastSeen": "2026-11-27T07:59:46.754260+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76577,7 +76574,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.754260+00:00",
       "providerMetadata": {
         "id": "particle-ai/particle-1:free",
         "object": "model",
@@ -76589,7 +76586,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-11-13T06:19:54.154268+00:00",
-        "lastSeen": "2026-11-26T07:58:05.514544+00:00",
+        "lastSeen": "2026-11-27T07:59:46.754260+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76604,7 +76601,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.754260+00:00",
       "providerMetadata": {
         "id": "recursive/flint-v1.0:free",
         "object": "model",
@@ -76616,7 +76613,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-22T04:24:42.333707+00:00",
-        "lastSeen": "2026-11-26T07:58:05.514544+00:00",
+        "lastSeen": "2026-11-27T07:59:46.754260+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76631,7 +76628,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.754260+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-super-vl:free",
         "object": "model",
@@ -76643,7 +76640,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-16T04:15:53.351467+00:00",
-        "lastSeen": "2026-11-26T07:58:05.514544+00:00",
+        "lastSeen": "2026-11-27T07:59:46.754260+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76658,7 +76655,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.754260+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3.5-lightning:free",
         "object": "model",
@@ -76670,7 +76667,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-        "lastSeen": "2026-11-26T07:58:05.514544+00:00",
+        "lastSeen": "2026-11-27T07:59:46.754260+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76685,7 +76682,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.754260+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "object": "model",
@@ -76697,7 +76694,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-        "lastSeen": "2026-11-26T07:58:05.514544+00:00",
+        "lastSeen": "2026-11-27T07:59:46.754260+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76719,7 +76716,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.754260+00:00",
       "providerMetadata": {
         "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
         "object": "model",
@@ -76731,7 +76728,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-        "lastSeen": "2026-11-26T07:58:05.514544+00:00",
+        "lastSeen": "2026-11-27T07:59:46.754260+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76753,7 +76750,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.754260+00:00",
       "providerMetadata": {
         "id": "google/gemma-4-26b-a4b-it:free",
         "object": "model",
@@ -76765,7 +76762,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-        "lastSeen": "2026-11-26T07:58:05.514544+00:00",
+        "lastSeen": "2026-11-27T07:59:46.754260+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76787,7 +76784,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:05.514544+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:46.754260+00:00",
       "providerMetadata": {
         "id": "google/gemma-4-31b-it:free",
         "object": "model",
@@ -76799,7 +76796,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:13.898396+00:00",
-        "lastSeen": "2026-11-26T07:58:05.514544+00:00",
+        "lastSeen": "2026-11-27T07:59:46.754260+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76864,7 +76861,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:06.742763+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:47.742700+00:00",
       "providerMetadata": {
         "id": "gpt-oss-120b",
         "object": "model",
@@ -76889,7 +76886,7 @@
         "swe_bench_tier": "B",
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-        "lastSeen": "2026-11-26T07:58:06.742763+00:00",
+        "lastSeen": "2026-11-27T07:59:47.742700+00:00",
         "removedDate": null,
         "status": null
       },
@@ -76909,7 +76906,7 @@
       "eligibility": "uncertain",
       "eligibilityReason": "generation_capability_not_declared",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:06.742763+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:47.742700+00:00",
       "providerMetadata": {
         "id": "qwen-3.8-27b",
         "object": "model",
@@ -76928,7 +76925,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:15.136455+00:00",
-        "lastSeen": "2026-11-26T07:58:06.742763+00:00",
+        "lastSeen": "2026-11-27T07:59:47.742700+00:00",
         "removedDate": null,
         "status": null
       },
@@ -77207,137 +77204,24 @@
     },
     {
       "providerId": "groq",
-      "modelId": "canopylabs/orpheus-arabic-saudi",
-      "name": "Canopy Labs Orpheus Arabic Saudi",
-      "eligibility": "excluded",
-      "eligibilityReason": "Speech output, not general text generation.",
-      "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.644253+00:00",
-      "providerMetadata": {
-        "id": "canopylabs/orpheus-arabic-saudi",
-        "object": "model",
-        "created": 1765926439,
-        "owned_by": "Canopy Labs",
-        "active": true,
-        "context_window": 4000,
-        "public_apps": null,
-        "max_completion_tokens": 50000,
-        "name": "Canopy Labs Orpheus Arabic Saudi",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "speech"
-        ],
-        "context_length": 4000,
-        "max_output_length": 50000,
-        "pricing": {
-          "prompt": "0.00004",
-          "image": "0",
-          "request": "0",
-          "input_cache_read": "0.00002"
-        },
-        "rate_limits": {
-          "rpm": 10,
-          "rpd": 100,
-          "tpm": 1200,
-          "tpd": 3600,
-          "ash": null,
-          "asd": null
-        },
-        "benchmarks": null,
-        "curated_benchmarks": null,
-        "swe_bench_score": null,
-        "swe_bench_tier": null,
-        "presence": "active",
-        "firstSeen": "2026-10-01T12:22:09.047123+00:00",
-        "lastSeen": "2026-11-26T07:58:00.644253+00:00",
-        "removedDate": null,
-        "status": null
-      },
-      "reviewedExclusion": {
-        "providerId": "groq",
-        "modelId": "canopylabs/orpheus-arabic-saudi",
-        "reason": "Speech output, not general text generation.",
-        "evidence": "https://api.groq.com/openai/v1/models declares input_modalities=[text] and output_modalities=[speech]."
-      }
-    },
-    {
-      "providerId": "groq",
-      "modelId": "canopylabs/orpheus-v1-english",
-      "name": "Canopy Labs Orpheus V1 English",
-      "eligibility": "excluded",
-      "eligibilityReason": "Speech output, not general text generation.",
-      "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.644253+00:00",
-      "providerMetadata": {
-        "id": "canopylabs/orpheus-v1-english",
-        "object": "model",
-        "created": 1766186316,
-        "owned_by": "Canopy Labs",
-        "active": true,
-        "context_window": 4000,
-        "public_apps": null,
-        "max_completion_tokens": 50000,
-        "name": "Canopy Labs Orpheus V1 English",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "speech"
-        ],
-        "context_length": 4000,
-        "max_output_length": 50000,
-        "pricing": {
-          "prompt": "0.000022",
-          "image": "0",
-          "request": "0",
-          "input_cache_read": "0.000011"
-        },
-        "rate_limits": {
-          "rpm": 10,
-          "rpd": 100,
-          "tpm": 1200,
-          "tpd": 3600,
-          "ash": null,
-          "asd": null
-        },
-        "benchmarks": null,
-        "curated_benchmarks": null,
-        "swe_bench_score": null,
-        "swe_bench_tier": null,
-        "presence": "active",
-        "firstSeen": "2026-10-01T12:22:09.047123+00:00",
-        "lastSeen": "2026-11-26T07:58:00.644253+00:00",
-        "removedDate": null,
-        "status": null
-      },
-      "reviewedExclusion": {
-        "providerId": "groq",
-        "modelId": "canopylabs/orpheus-v1-english",
-        "reason": "Speech output, not general text generation.",
-        "evidence": "https://api.groq.com/openai/v1/models declares input_modalities=[text] and output_modalities=[speech]."
-      }
-    },
-    {
-      "providerId": "groq",
-      "modelId": "whisper-large-v3-turbo",
-      "name": "Whisper Large V3 Turbo",
+      "modelId": "whisper-large-v3",
+      "name": "Whisper",
       "eligibility": "excluded",
       "eligibilityReason": "Audio transcription, not general text input/output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.644253+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.513022+00:00",
       "providerMetadata": {
-        "id": "whisper-large-v3-turbo",
+        "model_card": "https://huggingface.co/openai/whisper-large-v3",
+        "id": "whisper-large-v3",
         "object": "model",
-        "created": 1728413088,
+        "created": 1693721698,
         "owned_by": "OpenAI",
         "active": true,
         "context_window": 448,
         "public_apps": null,
         "max_completion_tokens": 448,
-        "hugging_face_id": "openai/whisper-large-v3-turbo",
-        "name": "Whisper Large V3 Turbo",
+        "hugging_face_id": "openai/whisper-large-v3",
+        "name": "Whisper",
         "input_modalities": [
           "audio"
         ],
@@ -77360,13 +77244,13 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:09.047123+00:00",
-        "lastSeen": "2026-11-26T07:58:00.644253+00:00",
+        "lastSeen": "2026-11-27T07:59:41.513022+00:00",
         "removedDate": null,
         "status": null
       },
       "reviewedExclusion": {
         "providerId": "groq",
-        "modelId": "whisper-large-v3-turbo",
+        "modelId": "whisper-large-v3",
         "reason": "Audio transcription, not general text input/output.",
         "evidence": "https://api.groq.com/openai/v1/models declares input_modalities=[audio] and output_modalities=[transcription]."
       }
@@ -77378,7 +77262,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Prompt classifier, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.644253+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.513022+00:00",
       "providerMetadata": {
         "id": "meta-llama/llama-prompt-guard-2-86m",
         "object": "model",
@@ -77428,7 +77312,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:09.047123+00:00",
-        "lastSeen": "2026-11-26T07:58:00.644253+00:00",
+        "lastSeen": "2026-11-27T07:59:41.513022+00:00",
         "removedDate": null,
         "status": null
       },
@@ -77441,65 +77325,12 @@
     },
     {
       "providerId": "groq",
-      "modelId": "whisper-large-v3",
-      "name": "Whisper",
-      "eligibility": "excluded",
-      "eligibilityReason": "Audio transcription, not general text input/output.",
-      "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.644253+00:00",
-      "providerMetadata": {
-        "model_card": "https://huggingface.co/openai/whisper-large-v3",
-        "id": "whisper-large-v3",
-        "object": "model",
-        "created": 1693721698,
-        "owned_by": "OpenAI",
-        "active": true,
-        "context_window": 448,
-        "public_apps": null,
-        "max_completion_tokens": 448,
-        "hugging_face_id": "openai/whisper-large-v3",
-        "name": "Whisper",
-        "input_modalities": [
-          "audio"
-        ],
-        "output_modalities": [
-          "transcription"
-        ],
-        "context_length": 448,
-        "max_output_length": 448,
-        "rate_limits": {
-          "rpm": 20,
-          "rpd": 2000,
-          "tpm": null,
-          "tpd": null,
-          "ash": 7200,
-          "asd": 28800
-        },
-        "benchmarks": null,
-        "curated_benchmarks": null,
-        "swe_bench_score": null,
-        "swe_bench_tier": null,
-        "presence": "active",
-        "firstSeen": "2026-10-01T12:22:09.047123+00:00",
-        "lastSeen": "2026-11-26T07:58:00.644253+00:00",
-        "removedDate": null,
-        "status": null
-      },
-      "reviewedExclusion": {
-        "providerId": "groq",
-        "modelId": "whisper-large-v3",
-        "reason": "Audio transcription, not general text input/output.",
-        "evidence": "https://api.groq.com/openai/v1/models declares input_modalities=[audio] and output_modalities=[transcription]."
-      }
-    },
-    {
-      "providerId": "groq",
       "modelId": "meta-llama/llama-prompt-guard-2-22m",
       "name": "Llama Prompt Guard 2 22M",
       "eligibility": "excluded",
       "eligibilityReason": "Prompt classifier, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:00.644253+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:41.513022+00:00",
       "providerMetadata": {
         "id": "meta-llama/llama-prompt-guard-2-22m",
         "object": "model",
@@ -77546,7 +77377,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:09.047123+00:00",
-        "lastSeen": "2026-11-26T07:58:00.644253+00:00",
+        "lastSeen": "2026-11-27T07:59:41.513022+00:00",
         "removedDate": null,
         "status": null
       },
@@ -77558,13 +77389,179 @@
       }
     },
     {
+      "providerId": "groq",
+      "modelId": "canopylabs/orpheus-v1-english",
+      "name": "Canopy Labs Orpheus V1 English",
+      "eligibility": "excluded",
+      "eligibilityReason": "Speech output, not general text generation.",
+      "providerStatus": "success",
+      "providerUpdatedAt": "2026-11-27T07:59:41.513022+00:00",
+      "providerMetadata": {
+        "id": "canopylabs/orpheus-v1-english",
+        "object": "model",
+        "created": 1766186316,
+        "owned_by": "Canopy Labs",
+        "active": true,
+        "context_window": 4000,
+        "public_apps": null,
+        "max_completion_tokens": 50000,
+        "name": "Canopy Labs Orpheus V1 English",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "speech"
+        ],
+        "context_length": 4000,
+        "max_output_length": 50000,
+        "pricing": {
+          "prompt": "0.000022",
+          "image": "0",
+          "request": "0",
+          "input_cache_read": "0.000011"
+        },
+        "rate_limits": {
+          "rpm": 10,
+          "rpd": 100,
+          "tpm": 1200,
+          "tpd": 3600,
+          "ash": null,
+          "asd": null
+        },
+        "benchmarks": null,
+        "curated_benchmarks": null,
+        "swe_bench_score": null,
+        "swe_bench_tier": null,
+        "presence": "active",
+        "firstSeen": "2026-10-01T12:22:09.047123+00:00",
+        "lastSeen": "2026-11-27T07:59:41.513022+00:00",
+        "removedDate": null,
+        "status": null
+      },
+      "reviewedExclusion": {
+        "providerId": "groq",
+        "modelId": "canopylabs/orpheus-v1-english",
+        "reason": "Speech output, not general text generation.",
+        "evidence": "https://api.groq.com/openai/v1/models declares input_modalities=[text] and output_modalities=[speech]."
+      }
+    },
+    {
+      "providerId": "groq",
+      "modelId": "canopylabs/orpheus-arabic-saudi",
+      "name": "Canopy Labs Orpheus Arabic Saudi",
+      "eligibility": "excluded",
+      "eligibilityReason": "Speech output, not general text generation.",
+      "providerStatus": "success",
+      "providerUpdatedAt": "2026-11-27T07:59:41.513022+00:00",
+      "providerMetadata": {
+        "id": "canopylabs/orpheus-arabic-saudi",
+        "object": "model",
+        "created": 1765926439,
+        "owned_by": "Canopy Labs",
+        "active": true,
+        "context_window": 4000,
+        "public_apps": null,
+        "max_completion_tokens": 50000,
+        "name": "Canopy Labs Orpheus Arabic Saudi",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "speech"
+        ],
+        "context_length": 4000,
+        "max_output_length": 50000,
+        "pricing": {
+          "prompt": "0.00004",
+          "image": "0",
+          "request": "0",
+          "input_cache_read": "0.00002"
+        },
+        "rate_limits": {
+          "rpm": 10,
+          "rpd": 100,
+          "tpm": 1200,
+          "tpd": 3600,
+          "ash": null,
+          "asd": null
+        },
+        "benchmarks": null,
+        "curated_benchmarks": null,
+        "swe_bench_score": null,
+        "swe_bench_tier": null,
+        "presence": "active",
+        "firstSeen": "2026-10-01T12:22:09.047123+00:00",
+        "lastSeen": "2026-11-27T07:59:41.513022+00:00",
+        "removedDate": null,
+        "status": null
+      },
+      "reviewedExclusion": {
+        "providerId": "groq",
+        "modelId": "canopylabs/orpheus-arabic-saudi",
+        "reason": "Speech output, not general text generation.",
+        "evidence": "https://api.groq.com/openai/v1/models declares input_modalities=[text] and output_modalities=[speech]."
+      }
+    },
+    {
+      "providerId": "groq",
+      "modelId": "whisper-large-v3-turbo",
+      "name": "Whisper Large V3 Turbo",
+      "eligibility": "excluded",
+      "eligibilityReason": "Audio transcription, not general text input/output.",
+      "providerStatus": "success",
+      "providerUpdatedAt": "2026-11-27T07:59:41.513022+00:00",
+      "providerMetadata": {
+        "id": "whisper-large-v3-turbo",
+        "object": "model",
+        "created": 1728413088,
+        "owned_by": "OpenAI",
+        "active": true,
+        "context_window": 448,
+        "public_apps": null,
+        "max_completion_tokens": 448,
+        "hugging_face_id": "openai/whisper-large-v3-turbo",
+        "name": "Whisper Large V3 Turbo",
+        "input_modalities": [
+          "audio"
+        ],
+        "output_modalities": [
+          "transcription"
+        ],
+        "context_length": 448,
+        "max_output_length": 448,
+        "rate_limits": {
+          "rpm": 20,
+          "rpd": 2000,
+          "tpm": null,
+          "tpd": null,
+          "ash": 7200,
+          "asd": 28800
+        },
+        "benchmarks": null,
+        "curated_benchmarks": null,
+        "swe_bench_score": null,
+        "swe_bench_tier": null,
+        "presence": "active",
+        "firstSeen": "2026-10-01T12:22:09.047123+00:00",
+        "lastSeen": "2026-11-27T07:59:41.513022+00:00",
+        "removedDate": null,
+        "status": null
+      },
+      "reviewedExclusion": {
+        "providerId": "groq",
+        "modelId": "whisper-large-v3-turbo",
+        "reason": "Audio transcription, not general text input/output.",
+        "evidence": "https://api.groq.com/openai/v1/models declares input_modalities=[audio] and output_modalities=[transcription]."
+      }
+    },
+    {
       "providerId": "cloudflare",
       "modelId": "eed32bc1-8775-4985-89ce-dd1405508ad8",
       "name": "@cf/baai/bge-m3",
       "eligibility": "excluded",
       "eligibilityReason": "Text embeddings, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "eed32bc1-8775-4985-89ce-dd1405508ad8",
         "source": 1,
@@ -77599,7 +77596,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -77617,7 +77614,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Text classification, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "eaf31752-a074-441f-8b70-d593255d2811",
         "source": 1,
@@ -77652,7 +77649,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -77670,7 +77667,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Image generation, not general text output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "e580c765-810c-4da3-936c-a2808892f14c",
         "source": 1,
@@ -77699,7 +77696,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -77717,7 +77714,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Content safety classifier, despite generic Text Generation task metadata.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "cc80437b-9a8d-4f1a-9c77-9aaf0d226922",
         "source": 1,
@@ -77766,7 +77763,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -77784,7 +77781,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Text embeddings, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "cb254e3b-372b-4d4e-8526-ada79940427a",
         "source": 1,
@@ -77819,7 +77816,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -77837,7 +77834,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Speech generation, not general text output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "c5255b94-2161-4779-bd25-54f061829a2a",
         "source": 1,
@@ -77884,7 +77881,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -77902,7 +77899,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Audio transcription, not general text input/output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "c1c12ce4-c36a-4aa6-8da4-f63ba4b8984d",
         "source": 1,
@@ -77927,7 +77924,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -77945,7 +77942,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Text embeddings, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "bc2b61f6-7eb3-4cdf-94f5-ffc128bd6aa4",
         "source": 1,
@@ -77976,7 +77973,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -77994,7 +77991,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Audio transcription, not general text input/output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "a2a2afba-b609-4325-8c41-5791ce962239",
         "source": 1,
@@ -78037,7 +78034,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78055,7 +78052,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Audio transcription, not general text input/output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "a226909f-eef8-4265-a3a0-90db0422762e",
         "source": 1,
@@ -78107,7 +78104,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78125,7 +78122,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Image generation, not general text output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "9e087485-23dc-47fa-997d-f5bfafc0c7cc",
         "source": 1,
@@ -78150,7 +78147,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78168,7 +78165,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Image classification, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "7f9a76e1-d120-48dd-a565-101d328bbb02",
         "source": 1,
@@ -78203,7 +78200,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78221,7 +78218,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Image generation, not general text output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "724608fa-983e-495d-b95c-340d6b7e78be",
         "source": 1,
@@ -78265,7 +78262,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78283,7 +78280,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Translation specialist, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "617e7ec3-bf8d-4088-a863-4f89582d91b5",
         "source": 1,
@@ -78335,7 +78332,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78353,7 +78350,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Translation specialist, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "60920ed4-cf72-449a-a0f3-a38456b78262",
         "source": 1,
@@ -78389,7 +78386,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78407,7 +78404,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Image generation, not general text output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "5cdffa8e-1b1e-48e8-85f1-ab9b943cdd32",
         "source": 1,
@@ -78436,7 +78433,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78454,7 +78451,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Text embeddings, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "57fbd08a-a4c4-411c-910d-b9459ff36c20",
         "source": 1,
@@ -78501,7 +78498,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78519,7 +78516,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Text embeddings, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "429b9e8b-d99e-44de-91ad-706cf8183658",
         "source": 1,
@@ -78570,7 +78567,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78588,7 +78585,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Image generation, not general text output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "3ae8936e-593e-4fb2-85ee-95dd8a057588",
         "source": 1,
@@ -78617,7 +78614,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78635,7 +78632,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Audio transcription, not general text input/output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "200f0812-148c-48c1-915d-fb3277a94a08",
         "source": 1,
@@ -78670,7 +78667,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78688,7 +78685,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Speech generation, not general text output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "1f55679f-009e-4456-aa4f-049a62b4b6a0",
         "source": 1,
@@ -78735,7 +78732,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78753,7 +78750,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Text classification, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "145337e7-cec3-4ebb-8e78-16ddfc75e580",
         "source": 1,
@@ -78784,7 +78781,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78802,7 +78799,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Image generation, not general text output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "0e372c11-8720-46c9-a02d-666188a22dae",
         "source": 1,
@@ -78846,7 +78843,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78864,7 +78861,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Text embeddings, not general text generation.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "01bc2fb0-4bca-4598-b985-d2584a3f46c0",
         "source": 1,
@@ -78911,7 +78908,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78929,7 +78926,7 @@
       "eligibility": "excluded",
       "eligibilityReason": "Speech generation, not general text output.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:01.815536+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:42.687908+00:00",
       "providerMetadata": {
         "id": "01564c52-8717-47dc-8efd-907a2ca18301",
         "source": 1,
@@ -78976,7 +78973,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:10.042945+00:00",
-        "lastSeen": "2026-11-26T07:58:01.815536+00:00",
+        "lastSeen": "2026-11-27T07:59:42.687908+00:00",
         "removedDate": null,
         "status": null
       },
@@ -78994,11 +78991,11 @@
       "eligibility": "excluded",
       "eligibilityReason": "No chat or FIM completion capability.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "codestral-embed",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": false,
@@ -79039,7 +79036,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -79057,11 +79054,11 @@
       "eligibility": "excluded",
       "eligibilityReason": "No chat or FIM completion capability.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "mistral-embed-2312",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": false,
@@ -79102,7 +79099,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -79120,11 +79117,11 @@
       "eligibility": "excluded",
       "eligibilityReason": "Explicit classification/moderation task.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "mistral-moderation-2603",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": false,
@@ -79163,7 +79160,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -79181,11 +79178,11 @@
       "eligibility": "excluded",
       "eligibilityReason": "Audio transcription without general chat completion.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "voxtral-mini-2602",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": false,
@@ -79254,7 +79251,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -79272,11 +79269,11 @@
       "eligibility": "excluded",
       "eligibilityReason": "Realtime audio transcription without general chat completion.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "voxtral-mini-transcribe-realtime-2602",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": false,
@@ -79338,7 +79335,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -79356,11 +79353,11 @@
       "eligibility": "excluded",
       "eligibilityReason": "Speech generation without general chat completion.",
       "providerStatus": "success",
-      "providerUpdatedAt": "2026-11-26T07:58:03.769999+00:00",
+      "providerUpdatedAt": "2026-11-27T07:59:45.014756+00:00",
       "providerMetadata": {
         "id": "voxtral-mini-tts-2603",
         "object": "model",
-        "created": 1795679883,
+        "created": 1795766384,
         "owned_by": "mistralai",
         "capabilities": {
           "completion_chat": false,
@@ -79414,7 +79411,7 @@
         "swe_bench_tier": null,
         "presence": "active",
         "firstSeen": "2026-10-01T12:22:12.064646+00:00",
-        "lastSeen": "2026-11-26T07:58:03.769999+00:00",
+        "lastSeen": "2026-11-27T07:59:45.014756+00:00",
         "removedDate": null,
         "status": null
       },
@@ -80391,7 +80388,7 @@
       "sourceId": "livebench",
       "benchmark": "LiveBench",
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:09.161501+00:00",
+      "updatedAt": "2026-11-27T07:59:50.207508+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
       "cachePath": "/home/runner/work/_temp/model-output/benchmarks/sources/livebench.json",
@@ -80404,7 +80401,7 @@
       "sourceId": "evalplus",
       "benchmark": "EvalPlus",
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:07.439017+00:00",
+      "updatedAt": "2026-11-27T07:59:48.585827+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
       "cachePath": "/home/runner/work/_temp/model-output/benchmarks/sources/evalplus.json",
@@ -80417,7 +80414,7 @@
       "sourceId": "aider_polyglot",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:07.394305+00:00",
+      "updatedAt": "2026-11-27T07:59:48.410563+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
       "cachePath": "/home/runner/work/_temp/model-output/benchmarks/sources/aider_polyglot.json",
@@ -80430,7 +80427,7 @@
       "sourceId": "bigcodebench",
       "benchmark": "BigCodeBench",
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:07.995686+00:00",
+      "updatedAt": "2026-11-27T07:59:48.736348+00:00",
       "lastFailedAt": "2026-11-09T02:26:13.948387+00:00",
       "lastFailedMessage": "HTTPError: HTTP Error 502: Bad Gateway",
       "cachePath": "/home/runner/work/_temp/model-output/benchmarks/sources/bigcodebench.json",
@@ -80443,7 +80440,7 @@
       "sourceId": "aider_python",
       "benchmark": "Aider",
       "status": "success",
-      "updatedAt": "2026-11-26T07:58:07.665202+00:00",
+      "updatedAt": "2026-11-27T07:59:48.755278+00:00",
       "lastFailedAt": null,
       "lastFailedMessage": null,
       "cachePath": "/home/runner/work/_temp/model-output/benchmarks/sources/aider_python.json",
