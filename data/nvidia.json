@@ -1,9 +1,9 @@
 {
-  "status": "success",
+  "status": "failed",
   "count": 18,
   "updatedAt": "2026-11-27T07:59:41.187237+00:00",
-  "lastFailedAt": null,
-  "lastFailedMessage": null,
+  "lastFailedAt": "2026-11-28T07:29:00.831221+00:00",
+  "lastFailedMessage": "ValueError: NVIDIA Free Endpoint page listed no free models; keeping existing data",
   "data": [
     {
       "id": "fastino/gliner2-pii",

@@ -1,83 +1,10 @@
 {
   "status": "success",
-  "count": 11,
-  "updatedAt": "2026-11-27T07:59:39.879883+00:00",
+  "count": 10,
+  "updatedAt": "2026-11-28T07:28:59.849577+00:00",
   "lastFailedAt": null,
   "lastFailedMessage": null,
   "data": [
-    {
-      "id": "inclusionai/ling-3.2-flash:free",
-      "canonical_slug": "inclusionai/ling-3.2-flash-20261113",
-      "hugging_face_id": "inclusionAI/Ling-3.2-flash",
-      "name": "inclusionAI: Ling 3.2 Flash (free)",
-      "created": 1794591958,
-      "description": "Ling 3.2 Flash is a hybrid reasoning model from inclusionAI that accepts text and image input, with a 1M-token context window and up to 200 images per request. Thinking can...",
-      "context_length": 1048576,
-      "architecture": {
-        "modality": "text+image->text",
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 262144,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/inclusionai/ling-3.2-flash-20261113/endpoints"
-      },
-      "endpoints": [
-        "/api/v1/chat/completions",
-        "/api/v1/completions",
-        "/api/v1/messages",
-        "/api/v1/responses"
-      ],
-      "reasoning": {
-        "mandatory": false,
-        "default_enabled": true
-      },
-      "benchmarks": null,
-      "curated_benchmarks": null,
-      "swe_bench_score": null,
-      "swe_bench_tier": null,
-      "presence": "active",
-      "firstSeen": "2026-11-14T06:00:09.057368+00:00",
-      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
-      "removedDate": null,
-      "status": null
-    },
     {
       "id": "baidu/ernie-5.5-flash-preview:free",
       "canonical_slug": "baidu/ernie-5.5-flash-preview-20261110",
@@ -149,7 +76,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-12T06:56:20.614072+00:00",
-      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
+      "lastSeen": "2026-11-28T07:28:59.849577+00:00",
       "removedDate": null,
       "status": null
     },
@@ -246,7 +173,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-07T05:42:39.442982+00:00",
-      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
+      "lastSeen": "2026-11-28T07:28:59.849577+00:00",
       "removedDate": null,
       "status": null
     },
@@ -334,7 +261,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-11-13T06:19:46.905996+00:00",
-      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
+      "lastSeen": "2026-11-28T07:28:59.849577+00:00",
       "removedDate": null,
       "status": null
     },
@@ -402,7 +329,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-22T04:24:33.015928+00:00",
-      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
+      "lastSeen": "2026-11-28T07:28:59.849577+00:00",
       "removedDate": null,
       "status": null
     },
@@ -467,37 +394,37 @@
           {
             "arena": "agents",
             "category": "pdf",
-            "elo": 1070,
+            "elo": 1074,
             "win_rate": 34.7,
             "rank": 47
           },
           {
             "arena": "models",
             "category": "3d",
-            "elo": 1094,
-            "win_rate": 28.9,
-            "rank": 90
+            "elo": 1092,
+            "win_rate": 28.7,
+            "rank": 93
           },
           {
             "arena": "models",
             "category": "codecategories",
             "elo": 1190,
-            "win_rate": 32,
+            "win_rate": 31.9,
             "rank": 94
           },
           {
             "arena": "models",
             "category": "dataviz",
-            "elo": 1090,
-            "win_rate": 27.1,
-            "rank": 111
+            "elo": 1097,
+            "win_rate": 27.5,
+            "rank": 108
           },
           {
             "arena": "models",
             "category": "gamedev",
-            "elo": 1066,
-            "win_rate": 27,
-            "rank": 108
+            "elo": 1064,
+            "win_rate": 26.8,
+            "rank": 111
           },
           {
             "arena": "models",
@@ -509,7 +436,7 @@
           {
             "arena": "models",
             "category": "website",
-            "elo": 1206,
+            "elo": 1207,
             "win_rate": 34.6,
             "rank": 92
           }
@@ -538,7 +465,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-16T04:15:42.260496+00:00",
-      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
+      "lastSeen": "2026-11-28T07:28:59.849577+00:00",
       "removedDate": null,
       "status": null
     },
@@ -620,7 +547,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
+      "lastSeen": "2026-11-28T07:28:59.849577+00:00",
       "removedDate": null,
       "status": null
     },
@@ -689,16 +616,16 @@
           {
             "arena": "agents",
             "category": "pdf",
-            "elo": 1105,
-            "win_rate": 35.5,
-            "rank": 44
+            "elo": 1114,
+            "win_rate": 36.5,
+            "rank": 43
           },
           {
             "arena": "models",
             "category": "3d",
             "elo": 1094,
             "win_rate": 37.8,
-            "rank": 91
+            "rank": 90
           },
           {
             "arena": "models",
@@ -725,7 +652,7 @@
             "arena": "models",
             "category": "gamedev",
             "elo": 1108,
-            "win_rate": 35.3,
+            "win_rate": 35.2,
             "rank": 92
           },
           {
@@ -782,7 +709,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
+      "lastSeen": "2026-11-28T07:28:59.849577+00:00",
       "removedDate": null,
       "status": null
     },
@@ -876,7 +803,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
+      "lastSeen": "2026-11-28T07:28:59.849577+00:00",
       "removedDate": null,
       "status": null
     },
@@ -966,7 +893,7 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
+      "lastSeen": "2026-11-28T07:28:59.849577+00:00",
       "removedDate": null,
       "status": null
     },
@@ -1059,8 +986,81 @@
       "swe_bench_tier": null,
       "presence": "active",
       "firstSeen": "2026-10-01T12:22:07.404025+00:00",
-      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
+      "lastSeen": "2026-11-28T07:28:59.849577+00:00",
       "removedDate": null,
+      "status": null
+    },
+    {
+      "id": "inclusionai/ling-3.2-flash:free",
+      "canonical_slug": "inclusionai/ling-3.2-flash-20261113",
+      "hugging_face_id": "inclusionAI/Ling-3.2-flash",
+      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "created": 1794591958,
+      "description": "Ling 3.2 Flash is a hybrid reasoning model from inclusionAI that accepts text and image input, with a 1M-token context window and up to 200 images per request. Thinking can...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 262144,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/inclusionai/ling-3.2-flash-20261113/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true
+      },
+      "benchmarks": null,
+      "curated_benchmarks": null,
+      "swe_bench_score": null,
+      "swe_bench_tier": null,
+      "presence": "removed",
+      "firstSeen": "2026-11-14T06:00:09.057368+00:00",
+      "lastSeen": "2026-11-27T07:59:39.879883+00:00",
+      "removedDate": "2026-11-28T07:28:59.849577+00:00",
       "status": null
     },
     {
